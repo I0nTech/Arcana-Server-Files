@@ -1,0 +1,120 @@
+id: a6b8fee4-ab01-4e65-8fb3-13afdb6ef186
+name: AltF0
+created: 1644791848157
+updated: 1645106490022
+last_cast: 0
+cooldown_expiration: 0
+last_death_location: ''
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  783f2316-86a3-4ef1-85e4-87ca74b58504: []
+spells:
+  criticalplayer:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    enabled: false
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Basic
+          Wand"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to AltF0"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"1 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":""}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 045fdb63-fabb-4e64-8595-0db21e60dead
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/y2Py27CMBREb0oQaeiaL+jWkp2XwpJNfyO6tq+FRWpHtgGhqv+Og1iexZyZqQEK+FQBTUI5U1FAeSFaihrKOzpdwdbfHQXYnub0wzdwOPskMUzW3cglHx6T8leXIGsq+LAavjvdHzm1nHVtI9hKTAqNrBFy7NSxV73J2tIq7+ArJqsufw3nvPmvoHp1TasFBzkaoo6h5NlCQ89GI1smWjRaDmTEOORAot9lxkRQS4xWTevmDexuFKLNfoBdvre/upgwnt8HM+rgl+WF8AQZffylAQEAAA==
+    wand:
+      owner: AltF0
+      hotbar_inventory_count: 1
+      id: 4d590e30-4321-4d59-b1da-21b84c95c5fd
+      icon: stick{20002}
+      owner_id: a6b8fee4-ab01-4e65-8fb3-13afdb6ef186
+      template: basic_wand
+      version: 7
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1644791848233
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1644791848233
+      basic_wand:
+        amount: 1
+        last_give: 1644791848233
+classes:
+  arcanamage:
+    mana: 150.0
+    mana_timestamp: 1645106489897
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

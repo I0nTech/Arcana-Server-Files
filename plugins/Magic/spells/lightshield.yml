@@ -1,0 +1,57 @@
+lightshield:
+  name: Shield of Light
+  description: Shield
+  icon: stick
+  actions:
+    cast:
+    - class: Cast
+      spell: castshield
+    - class: AreaOfEffect
+      actions:
+      - class: Asynchronous
+        actions:
+        - class: CustomProjectile
+          target: other
+          actions:
+          - class: Cast
+            spell: castshield
+  effects:
+    cast:
+    - location: origin
+      effectlib:
+        class: Sphere
+        particle: spell_mob_ambient
+        color: "#ffd700"
+        duration: 1000
+        radius: $radius
+        update_directions: false
+        update_locations: false
+    tick:
+    - location: target
+      particle: end_rod
+      particle_count: 1
+      particle_data: 0.01
+      particle_offset: 0
+  parameters:
+    target: self
+    target_type: Damageable
+    target_source: true
+    target_self: false
+    use_target_location: true
+    radius: 10
+    target_count: 3
+    velocity: 40
+    range: 64
+    ignore_blocks: true
+    track_target: false
+    track_speed: rand(0.2,0.35)
+    velocity_transform:
+      orient: true
+      x: rand(-3,3) * cos(t)
+      y: rand(4,6)
+      z: rand(-3,3) * sin(t)
+    plan:
+    - time: 100
+      track_target: true
+      velocity_transform: ''
+      velocity: 20

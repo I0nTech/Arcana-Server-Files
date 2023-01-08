@@ -1,0 +1,217 @@
+id: 7b6d33d7-c05f-4fd2-bb03-52013beaa07b
+name: penguin20006
+created: 1644967819779
+updated: 1644975554059
+last_cast: 1644975533194
+cooldown_expiration: 0
+last_death_location: ''
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  783f2316-86a3-4ef1-85e4-87ca74b58504: []
+spells:
+  criticalplayer:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  charge:
+    cast_count: 4
+    last_cast: 1644975281260
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  levitate:
+    cast_count: 4
+    last_cast: 1644975532261
+    last_earn: 0
+    cooldown_expiration: 1644975557261
+    charges: 0.0
+  launch:
+    cast_count: 5
+    last_cast: 1644975416680
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  fling:
+    cast_count: 3
+    last_cast: 1644975418826
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  push:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  slam:
+    cast_count: 3
+    last_cast: 1644975525552
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  whirlwind:
+    cast_count: 1
+    last_cast: 1644975508942
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  pull:
+    cast_count: 0
+    last_cast: 1644975139592
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  dive:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  glide:
+    cast_count: 2
+    last_cast: 1644975420799
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  progressmenu:
+    cast_count: 3
+    last_cast: 1644975098467
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  airslash:
+    cast_count: 0
+    last_cast: 1644975458631
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  voidwalker_staff:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: NETHERITE_SHOVEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DF00FF","text":"Voidwalker''s
+          Lament"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"light_purple","text":"☪ Abyssal Power"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to penguin20006"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"12 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"350"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"40"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":""}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 4173bfe7-823e-43fd-8fa1-655122e53e0c
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0WR3W6DMAyFTaErpdO2qz3BbpEyCEV7msrkB6KmAYUA6tvPQZOm3JzjOJ/tuABI4Cw86oCdVUkC2V2pKSkg29DJHI7j5pSH10m5fjGuYoxdU/gcxtChvxm3KhdG/7yJcXEBiJbDwUj4QtnoqmlVKTjnJWdclz9XxcsrVpq3WFeiwwLe50lZ+49J4UUM6HtFpCyFbFqsJXkgOVt8kASS0qwx4ZTCeRuMt5txMpZOIUfjKXEeyBZkrVpNwBCzj8S2uDgR715SeBPeBCPQThafNCGRUzhqa1xP+rwX3zkXCvfWyAjJ49l/5BaHbLurrGvZloI1uuRaVmXXsbpsKvZddwqRtV0Kp1X52YwutkzPg3pQSerpYx2N3NDeiTYH1JpWcVkcyXn4WwZZ6cdp2i38AsVBTPWtAQAA
+    wand:
+      owner: penguin20006
+      hotbar_inventory_count: 1
+      id: ad5f257e-c444-404f-96e4-6a2f47a32cba
+      spell_inventory:
+        charge: 4
+        pull: 2
+        slam: 0
+        dive: 7
+        whirlwind: 1
+        airslash: 10
+        levitate: 5
+        launch: 6
+        criticalplayer: 3
+        fling: 9
+        push: 11
+        glide: 8
+      owner_id: 7b6d33d7-c05f-4fd2-bb03-52013beaa07b
+      version: 7
+      template: voidwalker_staff
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1644975064538
+    given_items:
+      voidwalker_staff:
+        amount: 2
+        last_give: 1644975064538
+      iron_ingot:
+        amount: 128
+        last_give: 1644975064538
+      bread:
+        amount: 64
+        last_give: 1644975064538
+classes:
+  arcanamage:
+    mana: 269.48
+    spells:
+    - slam
+    - whirlwind
+    - pull
+    - criticalplayer
+    - charge
+    - levitate
+    - launch
+    - dive
+    - glide
+    - fling
+    - airslash
+    - push
+    mana_timestamp: 1644975539260
+transient_modifiers: {}
+active_class: arcanamage
+health: 18.5

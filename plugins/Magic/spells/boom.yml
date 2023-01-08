@@ -1,0 +1,103 @@
+boom:
+  name: Boom
+  description: Cause a high-power explosion
+  inherit: false
+  category: explosive
+  icon: glowstone_dust
+  upgrade_required_casts: 1500
+  worth: 4000
+  actions:
+      cast:
+      - class: CustomProjectile
+        actions:
+        - class: AreaOfEffect
+          actions:
+            - class: Damage
+            - class: Velocity
+        - class: Sphere
+          actions:
+            - class: BreakBlock
+  effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_ender_dragon_hurt
+           location: origin
+        -  sound: entity_generic_explode
+           sound_pitch: 2
+           sound_volume: 0.2
+           location: origin
+        -  sound: entity_ender_dragon_hurt
+           sound_pitch: 2
+           sound_volume: 1.5
+           location: origin
+        tick:
+        - particle: redstone
+          color: FACC2E
+          location: target
+          particle_offset: 0.2
+          particle_count: 3
+        - location: target
+          particle: fireworks_spark
+          particle_count: 3
+          particle_offset: 0.2
+        hit:
+        -  class: EffectSingle
+           sound: entity_generic_explode
+           sound_pitch: 0.3
+           location: target
+        -  class: EffectSingle
+           location: target
+           color: FACC2E
+           firework: burst
+        -  class: EffectSingle
+           target_offset: 0,0.5,0
+           location: target
+           color: FACC2E
+           firework: burst
+           particle: explosion_huge
+  parameters:
+    hit_on_miss: true
+    push: 1.5
+    range: 32
+    radius: 4
+    velocity: 80
+    falling: true
+    speed: 1
+    direction: 0,0.4,0
+    damage_type: explosion
+    entity_damage: 15
+    player_damage: 7.5
+    undo: 20000
+    undo_speed: 8
+    target_self_timeout: 100
+    destructible: solid
+    destructible_override: true
+    destructible_durability: 50
+    break_durability: 6
+    durability_max_distance: 4
+    damage_max_distance: 5
+    damage_min_distance: 1
+    damage_source_location: hit
+    distance_weight: 0.1
+    cooldown: 10000
+  costs:
+    mana: 60
+
+boom|2:
+  upgrade_required_casts: 2500
+  parameters:
+    entity_damage: 17
+    player_damage: 8.5
+    break_durability: 7
+    damage_min_distance: 2
+  costs:
+    mana: 75
+boom|3:
+  parameters:
+    entity_damage: 19
+    player_damage: 9.5
+    break_durability: 8
+    damage_min_distance: 3
+  costs:
+    mana: 90
+

@@ -1,0 +1,115 @@
+blast:
+    inherit: false
+    name: Blast
+    description: Blow your enemies to bits
+    icon: gunpowder
+    category: explosive
+    upgrade_required_casts: 500
+    worth: 3000
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: AreaOfEffect
+            actions:
+            - class: Damage
+            - class: Velocity
+          - class: Sphere
+            actions:
+            - class: BreakBlock
+    effects:
+        cast:
+        -  sound: entity_ender_dragon_hurt
+           sound_pitch: 2
+           sound_volume: 1.2
+           location: origin
+        -  class: EffectSingle
+           sound: entity_generic_explode
+           sound_pitch: 1.8
+           sound_volume: 0.8
+           location: origin
+           effectlib:
+             class: ConeEffect
+             iterations: 10
+             particle: spell_mob
+             color: FACC2E
+             lengthGrow: 0.4
+             update_directions: false
+             update_locations: false
+        tick:
+        - particle: fireworks_spark
+          location: target
+        hit:
+        -  class: EffectSingle
+           target_offset: 0,0.5,0
+           location: target
+           color: FACC2E
+           firework: burst
+           particle: explosion_large
+           sound: entity_generic_explode
+           sound_pitch: 0.6
+           sound_volume: 1.2
+    parameters:
+        velocity: 200
+        target_self_timeout: 20
+        allow_max_range: false
+        range: 32
+        direction: 0,0.6,0
+        falling: true
+        radius: 1
+        push: 1.4
+        durability_max_distance: 3
+        damage_max_distance: 2
+        undo: 15000
+        cooldown: 5000
+        destructible: solid
+        destructible_override: true
+        destructible_durability: 50
+        break_durability: 4
+        undo_speed: 0.5
+        damage_type: explosion
+        entity_damage: 14
+        player_damage: 7
+    costs:
+        mana: 45
+
+blast|2:
+  upgrade_required_casts: 1000
+  parameters:
+    destructible_durability: 200
+    break_durability: 5
+    radius: 2
+    durability_max_distance: 4
+    damage_max_distance: 3
+    player_damage: 8
+    entity_damage: 16
+    living_entity_speed: 0.8
+  costs:
+    mana: 60
+
+
+blast|3:
+  upgrade_required_casts: 2000
+  parameters:
+    destructible_durability: 500
+    break_durability: 6
+    radius: 2
+    damage: 6
+    player_damage: 9
+    entity_damage: 18
+  costs:
+    mana: 75
+
+
+blast|4:
+  parameters:
+    break_durability: 7
+    destructible_durability: 5000
+    radius: 3
+    durability_max_distance: 5
+    damage_max_distance: 4
+    player_damage: 10
+    entity_damage: 20
+  costs:
+    mana: 90
+

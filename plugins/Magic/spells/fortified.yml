@@ -1,0 +1,71 @@
+fortified:
+  name: Defensive
+  icon: stick
+  passive: true
+  triggers: sneak
+  toggle: undo
+  boss_bar:
+    bar_title: '&7$spell'
+    bar_color: blue
+    bar_style: segmented_20
+  actions:
+    cast:
+      - class: Interval
+        interval: 1 seconds
+        actions:
+        - class: PotionEffect
+        - class: AreaOfEffect
+          actions:
+          - class: PlayEffects
+            effect: buff
+          - class: Modifier
+  effects:
+    buff:
+    - location: target
+      effectlib:
+        class: Shield
+        particle: block_dust
+        material: diamond_block
+        particles: 1
+        radius: 1
+        duration: 100
+    deactivate:
+    - sound: entity.enderman.teleport
+      sound_pitch: 0.3
+      effectlib:
+        class: Modified
+        duration: 500
+        parameters:
+          radius: 1 - ((t/i) * 1)
+        effect:
+          class: Shield
+          particles: 3
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
+          particle: smoke_normal
+  parameters:
+    radius: 4
+    duration: 10000
+    remove_on_finish: true
+    target_type: Player
+    target: self
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true
+    effects_particles: false
+    cooldown: 5000
+    add_modifiers:
+      - fortifiedbuff
+    potion_effects:
+      slow: 2
+      jump: -5
+fortified|2:
+  parameters:
+    radius: 6
+    duration: 20000
+    add_modifiers:
+      - upgfortifiedbuff
+

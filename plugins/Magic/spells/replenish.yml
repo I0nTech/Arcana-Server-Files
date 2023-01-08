@@ -1,0 +1,93 @@
+replenish:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  name: Replenish
+  description: Gain hunger and saturation equal to eating bread
+  icon: bread
+  upgrade_required_casts: 500
+  worth: 1000
+  actions:
+    cast:
+    - class: Feed
+  effects:
+    cast:
+    - location: origin
+      source_location: head
+      relative_offset: 0.6,0,0
+      sound: entity_player_burp
+      particle: item_crack
+      material: bread
+      particle_offset: 0.2
+      particle_count: 5
+  parameters:
+    target: self
+    feed: 5
+    saturation: 6
+    cooldown: 120 seconds
+  costs:
+    mana: 50
+
+replenish|2:
+  description: Gain hunger and saturation equal to eating cooked mutton
+  icon: cooked_mutton
+  upgrade_required_casts: 1000
+  effects:
+    cast:
+    - location: origin
+      source_location: head
+      relative_offset: 0.6,0,0
+      sound: entity_player_burp
+      particle: item_crack
+      material: cooked_mutton
+      particle_offset: 0.2
+      particle_count: 5
+  parameters:
+    feed: 6
+    saturation: 9.6
+    cooldown: 100 seconds
+  costs:
+    mana: 65
+
+
+replenish|3:
+  description: Gain hunger and saturation equal to eating steak
+  icon: cooked_beef
+  upgrade_required_casts: 2000
+  effects:
+    cast:
+    - location: origin
+      source_location: head
+      relative_offset: 0.6,0,0
+      sound: entity_player_burp
+      particle: item_crack
+      material: cooked_beef
+      particle_offset: 0.2
+      particle_count: 5
+  parameters:
+    feed: 8
+    saturation: 12.8
+    cooldown: 80 seconds
+  costs:
+    mana: 80
+
+
+replenish|4:
+  description: Gain hunger and saturation equal to eating a golden carrot
+  icon: golden_carrot
+  effects:
+    cast:
+    - location: origin
+      source_location: head
+      relative_offset: 0.6,0,0
+      sound: entity_player_burp
+      particle: item_crack
+      material: golden_carrot
+      particle_offset: 0.2
+      particle_count: 5
+  parameters:
+    feed: 10
+    saturation: 14.4
+    cooldown: 60 seconds
+  costs:
+    mana: 90
+

@@ -1,0 +1,36 @@
+test:
+    icon: diamond_axe:35
+    category: combat
+    actions:
+        cast:
+          - class: PlayEffects
+            effects: test1
+    parameters:
+      target: self
+    effects:
+     test1:
+      - location: origin
+        orient: false
+        source_location: body
+        effectlib:
+           class: Modified
+           updateLocations: false
+           period: 1
+           effect:
+            class: ColoredImage
+            file_name: https://ciaccodavi.de/qbdp/acg/alchemymod.php?id=2114073584
+            step_x: 1
+            step_Y: 1
+            size: 0.14
+            particle_size: 0.3
+            duration: 6
+            plane: XY
+            update_directions: false
+            update_locations: false
+            transparency: true
+            enable_rotation: false
+            color: "dc143c"
+            particle: portal
+            particle_data: 0.08
+            rotation: 90,0,0
+            offset: 0,0.1,0

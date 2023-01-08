@@ -1,0 +1,158 @@
+id: 7fd6227c-03a9-4b3b-9449-30c92d860ad6
+name: TheAsianMan8921
+created: 1644272064124
+updated: 1644283122055
+last_cast: 1644275035978
+cooldown_expiration: 0
+last_death_location: 2067.493189353496,64.0,-1386.0281789508258,world,-138.47314,4.2831593
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  3ae08fb1-d48e-43ef-be5a-1bdc0b585fcf: []
+spells:
+  manabeam:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  criticalplayer:
+    cast_count: 0
+    last_cast: 1644275035978
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shatterbolt:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 1
+    last_cast: 1644272160555
+    last_earn: 1644272160555
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemeteor:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manablast:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanehail:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  reflect:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  auralburst:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  walls:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  repeaterspell:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  magicburst:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shell:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 6.0
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1644272064207
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1644272064207
+      basic_wand:
+        amount: 1
+        last_give: 1644272064207
+classes:
+  arcanamage:
+    spells:
+    - manabeam
+    - boon
+    - criticalplayer
+    - shatterbolt
+    - manabolt
+    - arcanemeteor
+    - manablast
+    - arcanehail
+    - reflect
+    - auralburst
+    - walls
+    - repeaterspell
+    - magicburst
+    - shell
+    - mendwounds
+    - scattershot
+    spell_levels:
+      boon: 2
+    mana: 150.0
+    mana_timestamp: 1644273137605
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

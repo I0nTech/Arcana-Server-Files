@@ -1,0 +1,232 @@
+id: d648bb98-3663-46d2-937c-d5f54132c890
+name: TheApotheosis
+created: 1643746592664
+updated: 1643746855744
+last_cast: 1643746836665
+cooldown_expiration: 0
+last_death_location: 3775.2793305576183,69.0,-3132.3763435887213,world,-7.0938416,18.47605
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  325ed72c-10be-4fb2-aeaa-c612d56e7b18: []
+spells:
+  criticalplayer:
+    cast_count: 0
+    last_cast: 1643746836665
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shatterbolt:
+    cast_count: 7
+    last_cast: 1643746836039
+    last_earn: 0
+    cooldown_expiration: 1643746843039
+    charges: 0.0
+  inflictcrit:
+    cast_count: 2
+    last_cast: 1643746670041
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 18
+    last_cast: 1643746836038
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 12
+    last_cast: 1643746772845
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  fling:
+    cast_count: 2
+    last_cast: 1643746761648
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  upgrades:
+    cast_count: 1
+    last_cast: 1643746805331
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanehail:
+    cast_count: 4
+    last_cast: 1643746754213
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  auralburst:
+    cast_count: 5
+    last_cast: 1643746759390
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 11
+    last_cast: 1643746826749
+    last_earn: 0
+    cooldown_expiration: 1643746832749
+    charges: 0.0
+  spellshop:
+    cast_count: 0
+    last_cast: 1643746815372
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 0
+    last_cast: 1643746819890
+    last_earn: 0
+    cooldown_expiration: 1643746879890
+    charges: 0.0
+  anchor:
+    cast_count: 5
+    last_cast: 1643746759389
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 9
+    last_cast: 1643746831512
+    last_earn: 0
+    cooldown_expiration: 1643746833512
+    charges: 0.0
+  progressmenu:
+    cast_count: 2
+    last_cast: 1643746814363
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Shatterbolts"},{"italic":false,"color":"white","text":"
+          ("},{"italic":false,"color":"dark_aqua","text":"Basic Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to TheApotheosis"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"10 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Shatterbolts"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 7d9ff186-b7b9-4864-a885-3105ed69f038
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/1VRzW6cMBAeYrbLkrS55QlyRWLBIXDsO/SOxj8EK14b2WZXUdR370ArVbnNfJr5fmZKgAxOMuCUUFidZZC/a71kJeQ3dKqAg785HeD7r1n/XHyatY8mMniafRIYRuOu2iUfPkbpV5eA6Aq4Mwqeh/o8aMV1de4brDjv+mp4FVPVTppzHLhsURTwgDKZqx7joq2F+zhjSjoIb1MBuZHewUNMRr5/NnVdN79LeNwn/+syKC7ocNsgcWCQC09bAAWDEoNEp2c0loB8A9aAVqwhbsMHRoJyF4wUh5A7BqfJyzX+o8vYF0sbP5FctFM3SqsiAUcGP2Qw5BHtYvGDbgVwYnCYrHFvVH+DAor9iON2FtXxXoihr9quayveqaYa2ldZqZfphZ/bRvZDTQtJX4gtaSgFRiPH7RkMjleyavZ4R/rb/epiQjL493PUquCXZW/hD35wHSLaAQAA
+    wand:
+      owner: TheApotheosis
+      hotbar_inventory_count: 1
+      id: 9019ed4e-182a-4468-97bf-3fe44a94c3ab
+      active_spell: shatterbolt
+      icon: stick{20002}
+      spell_inventory:
+        manabolt: 0
+        boon: 8
+        arcanehail: 4
+        auralburst: 5
+        scattershot: 2
+        focusbolt: 1
+        shatterbolt: 3
+        mendwounds: 7
+        criticalplayer: 9
+        fling: 6
+      owner_id: d648bb98-3663-46d2-937c-d5f54132c890
+      template: basic_wand
+      version: 7
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties: {}
+kits:
+  start:
+    last_give: 1643746592761
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1643746592761
+      basic_wand:
+        amount: 1
+        last_give: 1643746592761
+classes:
+  arcanamage:
+    spells:
+    - arcanehail
+    - boon
+    - criticalplayer
+    - auralburst
+    - focusbolt
+    - shatterbolt
+    - mendwounds
+    - manabolt
+    - scattershot
+    - fling
+    spell_levels:
+      boon: 2
+    mana_timestamp: 1643746855744
+    mana: 100.0
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

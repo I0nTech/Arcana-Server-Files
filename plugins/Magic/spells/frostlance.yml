@@ -1,0 +1,120 @@
+frostlance:
+  name: Frost Lance
+  description: Cast a piercing lance of ice. Crits on low HP enemies
+  icon: prismarine_shard
+  category: ice
+  upgrade_required_casts: 1500
+  worth: 4000
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+        - class: Damage
+        - class: PotionEffect
+        - class: CheckHealth
+          actions:
+          - class: ChangeContext
+            target_caster: true
+            actions:
+              - class: Cast
+                spell: inflictcrit
+                cooldown_free: true
+                cost_free: true
+        - class: Sphere
+          actions:
+            - class: Cover
+              actions:
+                - class: Freeze
+  effects:
+    cast:
+    - location: origin
+      sound: block_glass_break
+      sound_pitch: 2
+      delay: 75
+    - location: origin
+      sound: block_glass_break
+      sound_pitch: 3
+    tick:
+    - location: target
+      particle: block_crack
+      material: blue_ice
+      particle_count: 2
+      particle_offset: 0
+    - location: target
+      particle: redstone
+      particle_size: 0.6
+      particle_count: 3
+      particle_offset: 0.15
+      color: "#b0e0e6"
+    step:
+    - location: target
+      effectlib:
+        class: Vortex
+        duration: 100
+        helixes: 12
+        circles: 1
+        radius: 0.4
+        particle: redstone
+        particle_count: 1
+        particle_size: 0.6
+        color: "#b0e0e6"
+        grow: 0
+    hit:
+    - location: target
+      particle: block_crack
+      material: ice
+      particle_count: 15
+      particle_offset: 0.5
+    - location: target
+      sound: item_trident_hit
+      sound_pitch: 3
+      sound_volume: 2
+    hit_entity:
+    - location: target
+      particle: dust_color_transition
+      color: "#b0e0e6"
+      particle_count: 12
+      particle_offset: 0.6
+  parameters:
+    as_percentages: true
+    max_health: 40
+    hitbox: true
+    hitbox_size: 0.4
+    velocity: 180
+    range: 64
+    damage_type: ice
+    entity_damage: 16
+    player_damage: 8
+    no_damage_ticks: 0
+    potion_effects:
+      slow: 0
+      weakness: 0
+    duration: 2000
+    gravity: 0.008
+    cooldown: 5000
+    transparent: freeze_transparent,plants
+    destructible: water,destructible
+    ice: frosted_ice
+    radius: 2
+    y_size: 5
+    undo: 5000
+    undo_speed: 20
+    entity_hit_count: 2
+    block_hit_count: 3
+  costs:
+    mana: 100
+frostlance|2:
+  upgrade_required_casts: 2500
+  parameters:
+    entity_damage: 20
+    player_damage: 10
+    entity_hit_count: 3
+  costs:
+    mana: 125
+frostlance|3:
+  parameters:
+    entity_damage: 24
+    player_damage: 12
+    entity_hit_count: 4
+  costs:
+    mana: 150

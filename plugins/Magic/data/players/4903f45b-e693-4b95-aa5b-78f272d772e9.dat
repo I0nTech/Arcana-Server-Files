@@ -1,0 +1,227 @@
+id: 4903f45b-e693-4b95-aa5b-78f272d772e9
+name: JeremyS15
+created: 1643675469125
+updated: 1643676718251
+last_cast: 1643676662154
+cooldown_expiration: 0
+last_death_location: 3749.6145996107266,66.00133597911214,-3049.5653333837263,world,-71.32373,13.500065
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  325ed72c-10be-4fb2-aeaa-c612d56e7b18: []
+spells:
+  criticalplayer:
+    cast_count: 0
+    last_cast: 1643676662146
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shatterbolt:
+    cast_count: 9
+    last_cast: 1643676348837
+    last_earn: 0
+    cooldown_expiration: 1643676355837
+    charges: 0.0
+  inflictcrit:
+    cast_count: 13
+    last_cast: 1643676288355
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 24
+    last_cast: 1643676654344
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 3
+    last_cast: 1643676192803
+    last_earn: 1643676192803
+    cooldown_expiration: 1643676198803
+    charges: 0.0
+  manabolt:
+    cast_count: 42
+    last_cast: 1643676576137
+    last_earn: 0
+    cooldown_expiration: 1643676577137
+    charges: 0.0
+  fling:
+    cast_count: 4
+    last_cast: 1643676612296
+    last_earn: 0
+    cooldown_expiration: 1643676619296
+    charges: 0.0
+  arcanehail:
+    cast_count: 5
+    last_cast: 1643676268060
+    last_earn: 0
+    cooldown_expiration: 1643676278060
+    charges: 0.0
+  auralburst:
+    cast_count: 3
+    last_cast: 1643675630191
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 15
+    last_cast: 1643676654344
+    last_earn: 0
+    cooldown_expiration: 1643676660344
+    charges: 0.0
+  spellshop:
+    cast_count: 0
+    last_cast: 1643675796336
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 2
+    last_cast: 1643676646025
+    last_earn: 0
+    cooldown_expiration: 1643676706025
+    charges: 0.0
+  anchor:
+    cast_count: 3
+    last_cast: 1643675630191
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 85
+    last_cast: 1643676662155
+    last_earn: 0
+    cooldown_expiration: 1643676664155
+    charges: 0.0
+  progressmenu:
+    cast_count: 1
+    last_cast: 1643675794454
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Scattershot"},{"italic":false,"color":"white","text":"
+          ("},{"italic":false,"color":"dark_aqua","text":"Basic Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to JeremyS15"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"10 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Scattershot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 1900cf8c-033a-4b69-8c6d-709a26a744fe
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/1VR0Y6bMBBczqQh3Kl96wdUfUUiDoTyC33tB6DFrC/WOTayTaLo1H/vQk+q+uYZrWdnZ0qADA4qoE44WsoyyN+I5qyE/I5uKmDn744CHH5SoOvj17EV8PXi04hhMO5GLvnwGJRfXAKWKuDJTPC9051S5/5YSa111dSnY9Wfp76SZ9k21Mu2bk4FvKBK5kZDnMlaeI4KU6IQWb2A3Cjv4CUmo97eZV3X8ncJX7bJf3sFFFd0OHq7LgcBJS4B7biEuBLfViIodHRBY5nIBeSjZ12AnfhvITNPAg7aqyV+yGXrxGWb+GAE613JTXe+dopM7AV8VsGwR7SzxQfnBHAQsNPWuFd+f4ICii3AYY2l6euTbtqxonN/qpqxbytEht0PLTs5dZ2knj8kurJaIihHjEYNaxEC9je2ajbze+7seXExIRv82xrDKfh53iD8AUHr3cHWAQAA
+    wand:
+      owner: JeremyS15
+      hotbar_inventory_count: 1
+      id: 7f7cc691-2fff-4031-96d9-26254e925043
+      active_spell: scattershot
+      icon: stick{20002}
+      spell_inventory:
+        manabolt: 0
+        auralburst: 34
+        arcanehail: 4
+        boon: 5
+        scattershot: 2
+        focusbolt: 1
+        shatterbolt: 3
+        mendwounds: 7
+        criticalplayer: 9
+        fling: 6
+      owner_id: 4903f45b-e693-4b95-aa5b-78f272d772e9
+      template: basic_wand
+      version: 7
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 7.0
+properties: {}
+kits:
+  start:
+    last_give: 1643675469206
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1643675469206
+      basic_wand:
+        amount: 1
+        last_give: 1643675469206
+classes:
+  arcanamage:
+    spells:
+    - arcanehail
+    - boon
+    - criticalplayer
+    - auralburst
+    - focusbolt
+    - shatterbolt
+    - mendwounds
+    - manabolt
+    - scattershot
+    - fling
+    spell_levels:
+      boon: 2
+    mana_timestamp: 1643676718152
+    mana: 100.0
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

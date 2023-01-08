@@ -1,0 +1,364 @@
+id: 7b6d33d7-c05f-4fd2-bb03-52013beaa07b
+name: penguin20006
+created: 1644967819779
+updated: 1644975278527
+last_cast: 1644975264961
+cooldown_expiration: 0
+last_death_location: ''
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  783f2316-86a3-4ef1-85e4-87ca74b58504: []
+spells:
+  criticalplayer:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  charge:
+    cast_count: 3
+    last_cast: 1644975261031
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  levitate:
+    cast_count: 1
+    last_cast: 1644975164510
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  launch:
+    cast_count: 2
+    last_cast: 1644975264961
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  fling:
+    cast_count: 1
+    last_cast: 1644975093982
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  push:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  slam:
+    cast_count: 1
+    last_cast: 1644975125941
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  whirlwind:
+    cast_count: 1
+    last_cast: 1644975132637
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  pull:
+    cast_count: 0
+    last_cast: 1644975139592
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  dive:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  glide:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  progressmenu:
+    cast_count: 3
+    last_cast: 1644975098467
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  airslash:
+    cast_count: 0
+    last_cast: 1644975220874
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  voidwalker_staff:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: NETHERITE_SHOVEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Fling"},{"italic":false,"color":"white","text":"
+          ("},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DF00FF","text":"Voidwalker''s
+          Lament"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"light_purple","text":"☪ Abyssal Power"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to penguin20006"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"2 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"350"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"40"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Fling"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: dbbc4f7b-ee0e-4f33-a7cb-f01a96de2a98
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0WQzW6DMBCEl5IolEZtT3mCXi0ZEzBvg/yzTqy4NjIGlLevE0Xq3kY7+nZma4AC3lUUJgnpsChgd0Ocihp2m/C6gn3YPEY4Tugvi/WMUtqXcLqGJEUcrV/RpxDvowqLT5BpFbxZDT/IzHBmHSdtxww5K2zIILAjiiP2DUc6NH0FR6GSXXGcJ3QO9sZZf6nh6yn/4SV8qmiTVcJNTtxznDzly/64CRVUCX/zMiF8r8HqTbgbxnFOwpgSDivG2QafvYdsfVYaHym57HXbak4U7XJKoxmRkrakY7RpJQpBucz4j8Vn0nx9vShLHcM0PSX8AezwfNxDAQAA
+    wand:
+      owner: penguin20006
+      hotbar_inventory_count: 1
+      id: e2f84257-352f-4ce1-8ae5-c7ee617e0816
+      active_spell: fling
+      spell_inventory:
+        criticalplayer: 0
+        fling: 1
+      template: voidwalker_staff
+      version: 7
+      owner_id: 7b6d33d7-c05f-4fd2-bb03-52013beaa07b
+inventory:
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: NETHERITE_SHOVEL
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Fling"},{"italic":false,"color":"white","text":"
+      ("},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DF00FF","text":"Voidwalker''s
+      Lament"},{"italic":false,"color":"white","text":")"}],"text":""}'
+    lore:
+    - '{"italic":false,"extra":[{"color":"light_purple","text":"☪ Abyssal Power"}],"text":""}'
+    - '{"italic":true,"color":"dark_aqua","text":"Soulbound to penguin20006"}'
+    - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+      "},{"color":"#FF2288","text":"12 "},{"color":"white","text":"Spells"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+      "},{"color":"aqua","text":"350"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+      Rate: "},{"color":"aqua","text":"40"},{"color":"gray","text":"/s"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Fling"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+      "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to modify
+      this"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings and
+      learn spells"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 10.0
+        name: Equipment Modifier
+        slot: HAND
+        uuid: dbbc4f7b-ee0e-4f33-a7cb-f01a96de2a98
+        operation: 0
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    - HIDE_DESTROYS
+    - HIDE_PLACED_ON
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/0WQzW6DMBCEl5IolEZtT3mCXi0ZEzBvg/yzTqy4NjIGlLevE0XqnnaknW9GWwMU8K6iMElIh0UBuxviVNSw24TXFezD5jHCcUJ/WaxnlNK+hNM1JCniaP2KPoV4H1VYfIJMq+DNavhBZoYz6zhpO2bIWWFDBoEdURyxbzjSoekrOAqV7IrjPKFzsDfO+ksNX0/5Dy/hU0WbrBJucuKe6+QpX+ePTKigevYcH9Fc9rptNSeKdjnaaEakpC3pGG1aiUJQLks4rBhnG3z2H7I94W9mJ4TvNVi9CXfLtDkJYzL+Y/F5na+vF2WpY5imp4Q/o6HV0kMBAAA=
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: BREAD
+  amount: 64
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: IRON_INGOT
+  amount: 64
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: NETHERITE_SHOVEL
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Mana
+      Bolt"},{"italic":false,"color":"white","text":" ("},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DF00FF","text":"Voidwalker''s
+      Lament"},{"italic":false,"color":"white","text":")"}],"text":""}'
+    lore:
+    - '{"italic":false,"extra":[{"color":"light_purple","text":"☪ Abyssal Power"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: $wanddamage"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to cast "},{"color":"gold","text":""}],"keybind":"key.attack"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+      "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to modify
+      this"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings and
+      learn spells"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 10.0
+        name: Equipment Modifier
+        slot: HAND
+        uuid: f86741c2-ae72-4cad-9c65-f20fb10582b0
+        operation: 0
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    - HIDE_DESTROYS
+    - HIDE_PLACED_ON
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/y3MQQqAIBRF0ScJWk3aYfzyS6KpqNX2k2h2z+ROgMC4F7KNtsBCQHrmLCbIh6IZoG4u1aUIQGnoxmcO1BjLnZx5KHgua21kbf/MV+xZj//UaUrK+SNecpUz2WoAAAA=
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: IRON_INGOT
+  amount: 64
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+open_wand: true
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1644975064538
+    given_items:
+      voidwalker_staff:
+        amount: 2
+        last_give: 1644975064538
+      iron_ingot:
+        amount: 128
+        last_give: 1644975064538
+      bread:
+        amount: 64
+        last_give: 1644975064538
+classes:
+  arcanamage:
+    mana: 350.0
+    spells:
+    - slam
+    - whirlwind
+    - pull
+    - criticalplayer
+    - charge
+    - levitate
+    - launch
+    - dive
+    - glide
+    - fling
+    - airslash
+    - push
+    mana_timestamp: 1644975278525
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

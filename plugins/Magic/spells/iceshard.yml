@@ -1,0 +1,138 @@
+iceshard:
+  name: Ice Shard
+  description: Magical icicle that damages and slows. Crits on low HP enemies
+  icon: prismarine_crystals
+  category: ice
+  upgrade_required_casts: 300
+  upgrade_required_path: levelone
+  worth: 1000
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+        - class: Damage
+        - class: Modifier
+        - class: CheckHealth
+          actions:
+          - class: ChangeContext
+            target_caster: true
+            actions:
+              - class: Cast
+                spell: inflictcrit
+  effects:
+    cast:
+    - location: origin
+      sound: block_glass_break
+      sound_pitch: 2
+      delay: 50
+    - location: origin
+      sound: block_glass_break
+      sound_pitch: 1.5
+    tick:
+    - location: target
+      particle: block_crack
+      material: ice
+      particle_count: 2
+      particle_offset: 0
+    - location: target
+      particle: redstone
+      particle_size: 0.6
+      particle_count: 1
+      particle_offset: 0.03
+      color: "#b0e0e6"
+    hit:
+    - location: target
+      particle: block_crack
+      material: ice
+      particle_count: 15
+      particle_offset_x: 0.3
+      particle_offset_y: 0.5
+      particle_offset_z: 0.3
+    - location: target
+      sound: item_trident_hit
+      sound_pitch: 2
+      sound_volume: 2
+    - location: target
+      sound: entity_player_hurt_freeze
+      sound_pitch: 2
+      sound_volume: 2
+    hit_entity:
+    - location: target
+      particle: dust_color_transition
+      color: "#b0e0e6"
+      to_color: color
+      particle_count: 8
+      particle_offset: 0.6
+  parameters:
+    velocity: 70
+    range: 24
+    hitbox: true
+    hitbox_size: 0.15
+    damage_type: ice
+    damage: 5
+    no_damage_ticks: 0
+    add_modifiers:
+      - frozen
+    duration: 1500
+    gravity: 0.008
+    cooldown: 600
+    charges: 5
+    charge_regeneration: 0.75
+    as_percentages: true
+    max_health: 30
+  costs:
+    mana: 20
+iceshard|2:
+  upgrade_required_casts: 600
+  upgrade_required_path: leveltwo
+  effects:
+    tick:
+    - location: target
+      particle: block_crack
+      material: blue_ice
+      particle_count: 2
+      particle_offset: 0
+    - location: target
+      particle: redstone
+      particle_size: 0.6
+      particle_count: 2
+      particle_offset: 0.03
+      color: "#b0e0e6"
+    - location: target
+      particle: dust_color_transition
+      particle_size: 0.3
+      particle_count: 2
+      particle_offset: 0.2
+      color: "#b0e0e6"
+      to_color: color
+  parameters:
+    range: 32
+    hitbox_size: 0.175
+    damage: 5*1.25
+    duration_multiplier: 1.25
+  costs:
+    mana: 25
+iceshard|3:
+  effects:
+    step:
+    - location: target
+      effectlib:
+        class: Vortex
+        duration: 100
+        helixes: 6
+        circles: 1
+        radius: 0.4
+        particle: dust_color_transition
+        particle_count: 1
+        particle_size: 0.5
+        color: "#b0e0e6"
+        to_color: color
+        grow: 0
+  parameters:
+    range: 40
+    hitbox_size: 0.2
+    damage: 5*1.5
+    duration_multiplier: 1.5
+    hit_count: 2
+  costs:
+    mana: 30

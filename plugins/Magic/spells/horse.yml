@@ -1,0 +1,132 @@
+horse:
+    inherit: false
+    icon: saddle
+    name: Summon Mount
+    description: Summon a horse
+    cast_on_no_target: false
+    upgrade_required_casts: 500
+    worth: 1000
+    actions:
+      cast:
+      - class: ChangeContext
+        target_offset: 0,1,0
+        ignore_result: true
+        actions:
+        - class: Plane
+          radius: 1
+          actions:
+          - class: CheckBlock
+            allowed: passthrough
+            actions:
+              - class: Delay
+              - class: SpawnEntity
+              - class: Mount
+              - class: PlayEffects
+                effects: spawned
+              - class: Stop
+            fail:
+            - class: Message
+              ignore_result: true
+              message_type: action_bar
+              message_key: nospace
+            - class: CastResult
+              result: no_target
+              end_result: true
+            - class: Stop
+    worth: 200
+    effects:
+        cast:
+          - location: target
+            effectlib:
+              class: Circle
+              particle: block_crack
+              material: acacia_button
+              duration: $warmup
+              particles: 40
+              radius: 2
+              grow: 0.4
+              orient: false
+              whole_circle: true
+              enable_rotation: true
+        failed:
+        - sound: block_note_bass
+          sound_volume: 1.5
+          sound_pitch: 1.5
+        spawned:
+        -  class: EffectSingle
+           sound: entity_horse_angry
+           sound_pitch: 1.2
+           sound_volume: 1.1
+        undo_entity:
+           - location: target
+             sound: block_fire_extinguish
+             sound_volume: 1.7
+             sound_pitch: 0.4
+             effectlib:
+               class: Smoke
+               duration: 1000
+               particle_count: 40
+               particle_offset_x: 1.5
+               particle_offset_y: 1.5
+               particle_offset_z: 1.5
+    parameters:
+        target: block
+        set_target: true
+        tamed: true
+        saddle: saddle
+        saddle_temporary: true
+        track: false
+        type: horse
+        horse_color: chestnut
+        entity_attributes:
+          generic_movement_speed: 0.3
+          horse_jump_strength: 1
+        allow_max_range: true
+        cooldown: 300 seconds
+        warmup: 8 seconds
+        cancel_on_cast_other: true
+        cancel_on_damage: true
+        cancel_on_death: true
+        range: 2
+        undo: 30 seconds
+        loot: false
+    costs:
+      mana: 100
+horse|2:
+  upgrade_required_casts: 750
+  parameters:
+    cooldown: 200 seconds
+    warmup: 6 seconds
+    undo: 60 seconds
+    horse_color: white
+    armor: leather_horse_armor
+    entity_attributes:
+    generic_movement_speed: 0.4
+    horse_jump_strength: 1.2
+  costs:
+    mana: 125
+horse|3:
+  upgrade_required_casts: 1000
+  parameters:
+    cooldown: 150 seconds
+    warmup: 4 seconds
+    undo: 80 seconds
+    horse_color: gray
+    armor: iron_horse_armor
+    entity_attributes:
+    generic_movement_speed: 0.5
+    horse_jump_strength: 1.4
+  costs:
+    mana: 150
+horse|4:
+  parameters:
+    cooldown: 100 seconds
+    warmup: 2 seconds
+    undo: 100 seconds
+    horse_color: black
+    armor: diamond_horse_armor
+    entity_attributes:
+    generic_movement_speed: 0.6
+    horse_jump_strength: 1.6
+  costs:
+    mana: 175

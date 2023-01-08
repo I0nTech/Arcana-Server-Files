@@ -1,0 +1,28 @@
+inflictcrit:
+  icon: spider_eye
+  inherit: false
+  cast_on_no_target: false
+  actions:
+    cast:
+      - class: Damage
+      - class: PlayEffects
+        effects: crit
+  effects:
+    crit:
+      - location: target
+        particle: crit_magic
+        particle_count: 32
+        particle_offset: 0.25
+        particle_data: 0.5
+      - location: both
+        sound: entity_player_attack_knockback
+        sound_pitch: 2
+      - location: both
+        sound: entity_player_attack_crit
+        sound_pitch: 0.8
+  parameters:
+    no_damage_ticks: 0
+    damage_type: critical
+    target: damage_target
+    damage: "$damage_dealt * (%mmoitems_stat_critical_strike_power%)/100"
+    quiet: true

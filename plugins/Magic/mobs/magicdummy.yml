@@ -1,0 +1,33 @@
+magicdummy:
+  inherit: basemob
+  name: '&7Warforged Husk'
+  type: skeleton
+  health: 300
+  ai: true
+  entity_attributes:
+    generic_movement_speed: 0.2
+  attributes:
+    critdamage: 50
+  triggers:
+    attack:
+      cast:
+        focusbolt velocity 40 warmup 500 damage 5: 50
+        shatterbolt velocity 40 damage 2: 50
+      flee:
+        shadowcloak: 100
+  brain:
+    goals:
+      - type: trigger
+        trigger: flee
+        interval: 1000
+        goals:
+          - type: avoid_entity
+            distance: 6
+            speed: 1.5
+      - type: trigger
+        trigger: attack
+        interval: 2000
+        priority: 2
+        goals:
+          - type: look_at_player
+            distance: 34

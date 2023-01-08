@@ -1,0 +1,95 @@
+hellishrebuke:
+  name: Hellish Rebuke
+  description: The token goth girl of the party finally unleashes Hell on those who have wronged her.
+  worth: 1500
+  earns_sp: 1
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: diamond_axe:140
+  icon_disabled: diamond_hoe:140
+  icon_url: http://textures.minecraft.net/texture/b750768d23e447d95b662344f426cc96228a4047f7a8ced0f4861edbbeaced
+  actions:
+    cast:
+    - class: Asynchronous
+      actions:
+      - class: ChangeContext
+        target_self: true
+        target_caster: true
+        actions:
+        - class: Velocity
+          additive: true
+          living_entity_speed: -2
+    - class: Asynchronous
+      actions:
+      - class: DisablePhysics
+        ignore_result: true
+    - class: Asynchronous
+      actions:
+      - class: CustomProjectile
+        tick:
+        - class: Sphere
+          actions:
+          - class: ModifyBlock
+            ignore_result: true
+          - class: Undo
+            ignore_result: true
+          - class: AreaOfEffect
+            actions:
+            - class: Damage
+            - class: PlayEffects
+              effect: streamhit
+              ignore_result: true
+            - class: Velocity
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: block_campfire_crackle
+    projectile:
+    - location: origin
+      effectlib:
+        class: Sphere
+        particle: small_flame
+        radius: 2
+        particles: 20
+    - location: origin
+      effectlib:
+        class: Sphere
+        particle: small_flame
+        radius: 2
+        particles: 20
+    streamhit:
+    - class: EffectSingle
+      sound: block_campfire_crackle
+      sound_volume: 2
+      sound_pitch: 1.7
+    - location: target
+      effectlib:
+        class: SphereEffect
+        iterations: 4
+        particle: small_flame
+        radius: 0
+        particles: 20
+        speed: 0.1
+    tick:
+    - location: target
+    - class: EffectSingle
+      location: target
+      sound: block_campfire_crackle
+  parameters:
+    target: none
+    target_type: Damageable
+    track_range: 100
+    lifetime: 10000
+    brush: fire
+    increment_data: true
+    damage: wanddamage
+    destructible: destructible_replace
+    undo: 50
+    undo_to: 700
+    radius: 1
+    range: 100
+    velocity: 20
+    duration: 15000
+    cooldown: 45000
+  costs:
+    mana: 50

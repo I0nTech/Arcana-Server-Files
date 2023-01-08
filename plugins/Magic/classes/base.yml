@@ -1,0 +1,14 @@
+base:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  storage:
+    path: subclass
+    mana_max: class
+    mana_regeneration: class
+    mana: mana_regeneration
+    mana_timestamp: mana_regeneration
+    spell_levels: class
+    spells: mage
+    brushes: class
+    hotbar_count: subclass
+    attributes: mage,wand

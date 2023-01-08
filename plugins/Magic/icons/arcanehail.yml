@@ -1,0 +1,5 @@
+arcanehail:
+  inherit: false
+  item: 'dark_prismarine{1}'
+  item_disabled: 'dark_prismarine{1}'
+  glyph: "\uE92B"

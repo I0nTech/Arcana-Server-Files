@@ -1,0 +1,61 @@
+controlsmenu:
+    # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+    inherit: false
+    icon: oak_sign{18001}
+    icon_disabled: oak_sign{CustomModelData:18001}
+    legacy_icon: spell_icon:214
+    legacy_icon_disabled: diamond_hoe:214
+    icon_url: http://textures.minecraft.net/texture/f6d6ac2ee323f6497c6e2663a7e56ed9523567b68d18a17f8f39736b06ac3cd
+    category: npc
+    hidden: true
+    actions:
+        cast:
+        -  class: Selector
+    parameters:
+        show_unavailable: true
+        apply_to_wand: true
+        requirements:
+        - wand_slot: controls
+        options:
+          - item: none
+          - item: none
+          - item: none
+          - item: controls_inventory
+          - item: controls_cycle
+          - item: controls_hotbarswap
+          - nextrow
+          - item: none
+          - item: none
+          - item: none
+          - item: spellmode_inventory
+          - item: none
+          - item: spellmode_chest
+          - nextrow
+          - item: none
+          - item: none
+          - item: none
+          - item: swappable_false
+          - item: swappable_whenclosed
+          - item: swappable_always
+          - nextrow
+          - item: none
+          - item: none
+          - item: quickcast_disable
+          - item: quickcast_enable
+          - item: none
+          - item: quickcast_manual
+          - item: quickcast_normal
+          - nextrow
+          - item: none
+          - item: organizer
+            selected: "You organized your spell inventory"
+          - item: alphabetizer
+            selected: "You alphabetized your spell inventory"
+          - item: castsource_body
+          - item: castsource_eyes
+          - item: castsource_wand
+          - item: particles
+            apply_to: mage
+          - item: noparticles
+            apply_to: mage
+          - item: none

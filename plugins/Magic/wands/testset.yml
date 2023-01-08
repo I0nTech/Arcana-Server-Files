@@ -1,0 +1,88 @@
+test_sword:
+  name: "&fTest Sword"
+  description: "Test"
+  inherit: base_scepter
+  class: mage
+  icon: diamond_sword
+  alternate_spell: magicbullet
+  attributes:
+    attackdamage: 7.5
+    attackspeed: -2.4
+
+test_sword2:
+  name: "&fTest Sword 2"
+  description: "Test"
+  inherit: base_scepter
+#  class: mage
+  icon: diamond_sword
+  alternate_spell: pull
+  cost_reduction: 1
+  spells:
+    - shadowcloak
+  attributes:
+    attackdamage: 7
+    attackspeed: -2.4
+#    costreduction: 100
+
+test_axe:
+  name: "&fTest Axe"
+  description: "Infused with bullshit"
+  inherit: base_scepter
+  class: mage
+  icon: diamond_axe
+  alternate_spell: manamines
+  attributes:
+    attackdamage: 9
+    attackspeed: -3
+
+
+test_helmet:
+  name: Test Helmet
+  description: bee
+  inherit: base_helmet
+  icon: golden_helmet
+  sets: wizard_armor
+  enchantments:
+    protection_environmental: 4
+  attributes:
+    defense: 0
+    knockbackdefense: 1
+test_chestplate:
+  name: Test Chestplate
+  description: The bringer of the end
+  inherit: base_chestplate
+  icon: golden_chestplate
+  sets: wizard_armor
+  enchantments:
+    protection_environmental: 4
+  attributes:
+    defense: 0
+    knockbackdefense: 1
+    wandpower: 50
+    vitality: 6
+test_leggings:
+  name: Test Leggings
+  description: deee
+  inherit: base_leggings
+  icon: golden_leggings
+  sets: wizard_armor
+  enchantments:
+    protection_environmental: 4
+  attributes:
+    defense: 0
+    manaboost: 10
+    mage_mana: 100
+    knockbackdefense: 1
+test_boots:
+  name: Test Boots
+  description: Allows you to jump further
+  inherit: base_boots
+  icon: golden_boots
+  sets: wizard_armor
+  enchantments:
+    protection_environmental: 4
+  spells:
+    - doublejump
+  attributes:
+    defense: 0
+    knockbackdefense: 1

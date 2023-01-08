@@ -1,0 +1,72 @@
+smitemob:
+  name: Smite
+  description: Strike your target with lightning
+  icon: twisting_vines
+  icon_disabled: twisting_vines
+  category: lightning
+  inherit: false
+  upgrade_required_casts: 1500
+  worth: 5000
+  actions:
+    cast:
+    - class: Delay
+    - class: Multiply
+      actions:
+      - class: Lightning
+      - class: AreaOfEffect
+        actions:
+          - class: Damage
+          - class: Electrify
+  effects:
+    cast:
+      - class: EffectSingle
+        location: target
+        effectlib:
+          class: Modified
+          duration: $warmup
+          parameters:
+            radius: '(t/i) * 3 + 0.1'
+          effect:
+            class: Helix
+            particles: 1
+            strands: 50
+            relative_offset: 0,0.1,0
+            particle: crit_magic
+            update_directions: false
+            update_locations: false
+      - location: target
+        delay: $warmup
+        particle: end_rod
+        particle_count: 30
+        particle_offset: 0
+        particle_data: 0.2
+  parameters:
+    warmup: 800
+    target: other
+    target_type: players
+    bypass_pvp: true
+    range: 32
+    multiply: 1
+    radius: 3
+    y_radius: 20
+    damage_type: lightning
+    entity_damage: 16
+    player_damage: 8
+    damage_max_distance: 4
+    damage_min_distance: 2.5
+    no_damage_ticks: 0
+    effect_only: true
+    undo: 5000
+    undo_speed: 500
+    cooldown: 11000
+  cost:
+    mana: 120
+smite|2:
+  upgrade_required_casts: 2500
+  parameters:
+    warmup: 600
+    multiply: 2
+smite|3:
+  parameters:
+    warmup: 400
+    multiply: 3

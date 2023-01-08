@@ -1,0 +1,50 @@
+primevalskeleton:
+  type: skeleton
+  item: archer_bow
+  cast_requires_item: archer_bow
+  chestplate: primevalmobchestplate
+  leggings: primevalmobleggings
+  helmet: primevalmobhelmet
+  boots: primevalmobboots
+  inherit: basemob
+  name: '&f&l[LVL 60] &r&ePrimeval Skeleton'
+  health: 240
+  neolithicslayer: 1
+  triggers:
+    death:
+      cast:
+      - grant sp 6 money 180 fighting 90
+    interval:
+      cast:
+        arrow_poison: 70
+        none: 30
+        arrow_shock: 70
+        none: 30
+        arrow_fire: 70
+        none: 30
+        evade: 20
+        none: 80
+        napalm: 20
+        none: 80
+  drops:
+    - cocoa_beans@2: 99
+      cocoa_beans@4: 99
+  loot:
+    primevalchestplate:
+      count: 1
+      probability: 1/(1500-(1500/100)*luck)
+    primevalhelmet:
+      count: 1
+      probability: 1/(1500-(1500/100)*luck)
+    primevalleggings:
+      count: 1
+      probability: 1/(1500-(1500/100)*luck)
+    primevalboots:
+      count: 1
+      probability: 1/(1500-(1500/100)*luck)
+    pulse:
+      count: 1
+      probability: 1/(1500-(1500/100)*luck)
+  potion_effects:
+  - type: speed
+    amplifier: 1

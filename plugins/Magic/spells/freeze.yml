@@ -1,0 +1,143 @@
+freeze:
+  name: Freeze
+  description: Encase your target in ice
+  icon: ice
+  category: ice
+  upgrade_required_casts: 1500
+  worth: 3000
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+      - class: Asynchronous
+        actions:
+        - class: Volume
+          y_size: 2
+          z_size: 1
+          x_size: 1
+          orient: true
+          reorient: false
+          actions:
+          - class: ModifyBlock
+          - class: Skip
+            skip: 40
+            actions:
+            - class: PlayEffects
+              effects: column
+            - class: Delay
+              delay: 10
+      - class: Asynchronous
+        actions:
+        - class: Volume
+          y_size: 1
+          z_size: 2
+          x_size: 1
+          orient: true
+          reorient: false
+          actions:
+          - class: ModifyBlock
+          - class: Skip
+            skip: 20
+            actions:
+            - class: PlayEffects
+              effects: column
+            - class: Delay
+              delay: 20
+      - class: Asynchronous
+        actions:
+        - class: Volume
+          y_size: 3
+          z_size: 1
+          x_size: 1
+          orient: true
+          reorient: false
+          actions:
+          - class: ModifyBlock
+          - class: Skip
+            skip: 38
+            actions:
+            - class: PlayEffects
+              effects: column
+            - class: Delay
+              delay: 15
+      - class: Asynchronous
+        actions:
+        - class: Delay
+          delay: 5000
+        - class: AreaOfEffect
+          radius: 3
+          actions:
+          - class: Damage
+          - class: PlayEffects
+            effects: endFX
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: magic.shield
+      sound_pitch: 1.3
+      sound_volume: 0.5
+    - class: EffectTrail
+      particle: block_crack
+      material: ice
+      particle_count: 20
+      particle_offset_x: 0.2
+      particle_offset_y: 0.2
+      particle_offset_z: 0.2
+    column:
+    - location: target
+      particle: block_crack
+      material: ice
+      particle_count: 14
+      particle_offset_x: 0.2
+      particle_offset_y: 3
+      particle_offset_z: 0.2
+      offset: 0,-2,0
+    - class: EffectSingle
+      sound: block_glass_break
+      sound_pitch: 1.6
+      sound_volume: 1
+    endFX:
+    - class: EffectSingle
+      sound: block_glass_break
+      sound_pitch: 0.1
+      location: target
+      particle: redstone
+      color: "#b0e0e6"
+      particle_count: 300
+      particle_offset_x: 1.5
+      particle_offset_y: 3
+      particle_offset_z: 1.5
+    - class: EffectSingle
+      sound: entity_generic_explode
+      sound_pitch: 1.4
+  parameters:
+    target_type: LivingEntity
+    allow_max_range: true
+    range: 32
+    radius: 0
+    transparent: transparent_to_construction
+    undo: 1
+    undo_speed: 32
+    cooldown: 6000
+    brush: ice
+    breakable: 3
+    damage_type: ice
+    entity_damage: 10
+    player_damage: 5
+    destructible: destructible_replace
+    volume_type: xzy
+  costs:
+    mana: 80
+freeze|2:
+  upgrade_required_casts: 2500
+  parameters:
+    entity_damage: 15
+    player_damage: 7.5
+  costs:
+    mana: 110
+freeze|3:
+  parameters:
+    entity_damage: 20
+    player_damage: 10
+  costs:
+    mana: 140

@@ -1,0 +1,122 @@
+arcanehail:
+  name: Arcane Hail
+  description: Shower an area with falling arcane spears dealing 20x80% Attack Damage per second for 4 seconds.
+  category: arcane
+  icon: arcanehail
+  actions:
+    cast:
+    - class: Delay
+      delay: $warmup
+    - class: Multiply
+      actions:
+        - class: Spread
+          actions:
+            - class: ChangeContext
+              source_pitch: 90
+              actions:
+                - class: Delay
+                  delay: rand(0,16000)
+                - class: PlayEffects
+                  effects: summon
+                - class: Delay
+                  delay: $delay
+                - class: CustomProjectile
+                  requires_target: true
+                  ignore_hit_entities: true
+                  actions:
+                    - class: BreakBlock
+                    - class: AreaOfEffect
+                      radius: 1
+                      actions:
+                        - class: Damage
+                        - class: Velocity
+                          direction: 0,0,0
+  effects:
+    cast:
+      - class: EffectSingle
+        location: target
+        effectlib:
+           class: Modified
+           duration: 3000
+           parameters:
+             radius: "(t/i) * 8 + 0.1"
+           effect:
+             class: Vortex
+             particle_count: 1
+             radials: 30
+             grow: 0
+             particle: crit_magic
+             update_locations: false
+             update_directions: false
+             particle_data: 0
+             pitch: 90
+             offset: 0,0.2,0
+    summon:
+      - location: target
+        effectlib:
+           class: Modified
+           duration: 400
+           parameters:
+             radius: "(t/i) * -2 + 1.5"
+           effect:
+             class: Circle
+             particle_count: 1
+             whole_circle: true
+             orientPitch: true
+             x_rotation: 0
+             y_rotation: 0
+             z_rotation: 0
+             angular_velocity_x: 0
+             angular_velocity_y: 0
+             angular_velocity_z: 0
+             particle: crit_magic
+             update_locations: false
+             update_directions: false
+             orient: false
+    tick:
+      - location: target
+        particle: spell_witch
+        particle_offset: 0
+        particle_count: 1
+    hit_block:
+      - location: target
+        particle: spell_witch
+        speed: 1
+        particle_data: 0.2
+        particle_offset: 0.1
+        offset: 0,0.5,0
+        particle_count: 6
+      - sound: item_trident_hit
+        sound_pitch: 1
+        sound_volume: 0.4
+        location: target
+      - sound: entity_player_attack_knockback
+        sound_pitch: 1
+        sound_volume: 0.4
+        location: target
+  parameters:
+    warmup: 3000
+    delay: 1000
+    interval: 0.2
+    radius: 5
+    source_at_target: true
+    target_offset: 0,25,0
+    spread: 0.12
+    source_pitch: 90
+    source_yaw: 0
+    range: 64
+    velocity: 200
+    multiply: 320
+    damage_type: magic
+    damage: attack_damage*0.8
+    target_type: Damageable
+    destructible: solid
+    destructible_durability: 10
+    break_durability: 2
+    no_damage_ticks: 0
+    duration: 1000
+    undo: 5000
+    direction: 0,0,0
+    cooldown: 15000
+  costs:
+    mana: 150

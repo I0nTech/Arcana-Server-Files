@@ -1,0 +1,91 @@
+thunderstorm:
+  name: Thunderstorm
+  description: Charge up, then saturate an area with electric bolts
+  icon: end_crystal
+  category: lightning
+  worth: 7000
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+        - class: Spread
+          actions:
+          - class: ChangeContext
+            requires_target: true
+            actions:
+            - class: Delay
+            - class: PlayEffects
+              effects: thunder
+            - class: CustomProjectile
+              actions:
+                - class: AreaOfEffect
+                  radius: 3
+                  actions:
+                    - class: Damage
+                    - class: Electrify
+                    - class: Velocity
+  effects:
+    cast:
+      - class: EffectSingle
+        location: target
+        effectlib:
+          class: Modified
+          duration: 3000
+          parameters:
+            radius: '(t/i) * 8 + 1'
+          effect:
+            class: Warp
+            particles: 30
+            rings: 3
+            grow: 0.1
+            relative_offset: 0,0.1,0
+            update_directions: false
+            update_locations: false
+            particle: electric_spark
+    thunder:
+      - location: target
+        sound: entity_lightning_bolt_thunder
+        sound_pitch: 1.2
+        sound_volume: 5
+    tick:
+      - location: target
+        particle: end_rod
+        particle_count: 1
+        particle_offset: 0.01
+    hit:
+      - location: target
+        particle: end_rod
+        particle_count: 10
+        particle_offset: 0.1
+        particle_data: 0.2
+      - location: target
+        particle: flash
+        particle_count: 1
+        sound: entity_lightning_bolt_impact
+        sound_pitch: 0.7
+        sound_volume: 0.5
+  parameters:
+    radius: 5
+    source_at_target: true
+    target_offset: 0,25,0
+    source_pitch: 90
+    source_yaw: 0
+    delay: rand(3000,7500)
+    multiply: 50
+    hitbox: true
+    hitbox_size: 1
+    range: 64
+    damage_type: lightning
+    target_type: Damageable
+    target: block
+    damage: 7
+    no_damage_ticks: 0
+    velocity: 100
+    velocity_transform:
+      x: rand(90,150)
+      y: rand(-40,40)
+      z: rand(-40,40)
+    direction: 0,0,0
+    cooldown: 30000
+  costs:
+    mana: 200

@@ -1,0 +1,54 @@
+controls_cycle:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  hidden: true
+  icon: music_disc_wait{CustomModelData:18001}
+  legacy_icon: diamond_axe:205
+  slot: controls
+  upgrade: true
+  mode: inventory
+  drop: toggle
+  swap: alt_cast
+  swap_sneak: alt_cast2
+  right_click: cycle_active_hotbar
+  right_click_sneak: cycle_active_hotbar_reverse
+  drop_sneak: alt_cast3
+  alternate_spell3: progressmenu
+  use_active_name: true
+
+controls_hotbarswap:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  hidden: true
+  icon: oak_sign{CustomModelData:18001}
+  legacy_icon: spell_icon:214
+  upgrade: true
+  slot: controls
+  mode: inventory
+  drop: cycle_active_hotbar
+  swap: alt_cast
+  swap_sneak: alt_cast2
+  right_click: toggle
+  right_click_sneak: none
+  use_active_name: true
+  drop_sneak: alt_cast3
+  alternate_spell3: progressmenu
+
+controls_inventory:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  hidden: true
+  icon: oak_sign{CustomModelData:18001}
+  legacy_icon: spell_icon:214
+  upgrade: true
+  slot: controls
+  mode: inventory
+  drop: toggle
+  swap: alt_cast
+  swap_sneak: alt_cast2
+  right_click: toggle
+  right_click_sneak: none
+  drop_sneak: alt_cast3
+  alternate_spell3: progressmenu
+  use_active_name: true
+

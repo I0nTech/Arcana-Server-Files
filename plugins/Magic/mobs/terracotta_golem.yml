@@ -1,0 +1,10 @@
+terracotta_golem:
+  creator: dragoninja54
+  creator_id: 0335fb17-2f43-41ac-b070-011932852c24
+  name: '&fTerracotta Golem'
+  type: iron_golem
+  health: 40
+  entity_attributes:
+    generic_attack_damage: 5
+  transformable: false
+  default_drops: false

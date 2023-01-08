@@ -1,0 +1,77 @@
+mobaoe:
+  name: Eruption
+  icon: magma_block
+  actions:
+    cast:
+      - class: ChangeContext
+        actions:
+        - class: Repeat
+          actions:
+           - class: PlayEffects
+             effect: signal
+           - class: Delay
+           - class: AreaOfEffect
+             actions:
+             - class: Ignite
+             - class: Damage
+             - class: Velocity
+           - class: PlayEffects
+             effect: erupt
+  effects:
+    cast:
+    - location: target
+    signal:
+    -   location: target
+        effectlib:
+          class: Modified
+          duration: $warmup
+          parameters:
+            radius: '(t/i) + 4'
+          effect:
+            class: Warp
+            particles: 12
+            rings: 4
+            relative_offset: 0,0.1,0
+            particle: flame
+            grow: 0.15
+            update_directions: false
+            update_locations: false
+    -   location: target
+        effectlib:
+          class: Modified
+          duration: $warmup
+          parameters:
+            radius: '(t/i) * 0.5 + 4'
+          effect:
+            class: Helix
+            particles: 1
+            strands: 36
+            curve: 4
+            relative_offset: 0,0.1,0
+            particle: flame
+            update_directions: false
+            update_locations: false
+    erupt:
+      - location: target
+        effectlib:
+          class: Circle
+          particle: lava
+          particles: 12
+          radius: 3
+          whole_circle: true
+          duration: 400
+          update_directions: false
+  parameters:
+    range: 64
+    velocity: 200
+    radius: 4
+    y_radius: 2
+    repeat: 5
+    duration: 4000
+    damage_type: fire
+    entity_damage: 10
+    player_damage: 5
+    no_damage_ticks: 0
+    push: 0.4
+    warmup: 1000
+    target_offset: 0,-1,0

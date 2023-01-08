@@ -1,0 +1,6 @@
+uuid: 92deafa9-4307-42d9-b003-88601598d6c0
+skin: http://textures.minecraft.net/texture/916b8e98389c541bb36453850bcbd1f7bc5a57da62dcc505060409737ec5b72a
+profile: '{  "id" : "92deafa9430742d9b00388601598d6c0",  "name" : "MHF_Chicken",  "properties"
+  : [ {    "name" : "textures",    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTY0NDYyMzQ3MDA2NywKICAicHJvZmlsZUlkIiA6ICI5MmRlYWZhOTQzMDc0MmQ5YjAwMzg4NjAxNTk4ZDZjMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNSEZfQ2hpY2tlbiIsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85MTZiOGU5ODM4OWM1NDFiYjM2NDUzODUwYmNiZDFmN2JjNWE1N2RhNjJkY2M1MDUwNjA0MDk3MzdlYzViNzJhIgogICAgfQogIH0KfQ=="  }
+  ]}'
+name: MHF_Chicken

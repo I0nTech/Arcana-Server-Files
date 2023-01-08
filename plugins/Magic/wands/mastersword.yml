@@ -1,0 +1,12 @@
+mastersword:
+  inherit: base_wand
+  class: mage
+  icon: diamond_sword
+  legacy_icon: sword_icon
+  effect_color: 11FF88
+  alternate_spell: masterattack
+  drop: alt_cast
+  attributes:
+    attackdamage: 10
+    attackspeed: 1.6
+

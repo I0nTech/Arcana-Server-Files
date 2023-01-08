@@ -1,0 +1,187 @@
+cantrip:
+    name: Cantrip
+    inherit: default
+    upgrade: levelone
+    override_properties:
+      inventory_rows: 2
+    extra_spells:
+      - locator
+      - recall
+      - magicboat
+      - horse
+    spells:
+      - manabolt
+      - flareshot
+      - iceshard
+      - current
+      - fling
+      - evade
+      - mendwounds
+levelone:
+    name: Level One
+    inherit: default
+    upgrade: leveltwo
+    override_properties:
+      inventory_rows: 3
+    extra_spells:
+      - locator
+      - recall
+      - magicboat
+      - horse
+      - entangle
+      - flare
+      - harden
+      - lava
+      - extinguish
+    spells:
+      - laser
+      - reflect
+      - auralburst
+      - blast
+      - flashbang
+      - pull
+      - dive
+      - icewall
+      - frost
+      - flamethrower
+      - counterspell
+      - cure
+leveltwo:
+    name: Level Two
+    inherit: default
+    upgrade: levelthree
+    override_properties:
+      inventory_rows: 3
+    extra_spells:
+      - locator
+      - recall
+      - magicboat
+      - horse
+      - entangle
+      - flare
+      - harden
+      - lava
+      - extinguish
+      - stun
+      - torture
+      - rubberize
+      - gatling
+      - disintegrate
+      - stream
+      - fire
+    spells:
+      - manabeam
+      - shell
+      - ignition
+      - solarstrike
+      - freeze
+      - frostlance
+      - pulse
+      - lightning
+      - push
+      - slam
+      - boom
+      - grenade
+levelthree:
+    name: Level Three
+    inherit: default
+    upgrade: levelfour
+    override_properties:
+      inventory_rows: 4
+    extra_spells:
+      - locator
+      - recall
+      - magicboat
+      - horse
+      - entangle
+      - flare
+      - harden
+      - lava
+      - extinguish
+      - stun
+      - torture
+      - rubberize
+      - gatling
+      - disintegrate
+      - repeaterspell
+      - walls
+      - crimsonlotus
+      - sticky
+    spells:
+      - scattershot
+      - arcanemeteor
+      - fireballspell
+      - eruption
+      - snowballburst
+      - frostwave
+      - electrosurge
+      - smite
+      - bomb
+      - cluster
+levelfour:
+    name: Level Four
+    inherit: default
+    upgrade: levelfive
+    override_properties:
+      inventory_rows: 5
+    extra_spells:
+      - locator
+      - recall
+      - magicboat
+      - horse
+      - entangle
+      - flare
+      - harden
+      - lava
+      - extinguish
+      - stun
+      - torture
+      - rubberize
+      - gatling
+      - disintegrate
+      - repeaterspell
+      - walls
+      - crimsonlotus
+      - frostwave
+      - sticky
+    spells:
+      - scattershot
+      - arcanemeteor
+      - fireballspell
+      - eruption
+      - snowballburst
+      - glacier
+      - electrosurge
+      - smite
+      - bomb
+      - cluster
+levelfive:
+    name: Level Five
+    inherit: default
+    override_properties:
+      inventory_rows: 6
+    extra_spells:
+      - locator
+      - recall
+      - magicboat
+      - horse
+      - entangle
+      - flare
+      - harden
+      - lava
+      - extinguish
+      - stun
+      - torture
+      - rubberize
+      - gatling
+      - disintegrate
+      - repeaterspell
+      - walls
+      - crimsonlotus
+      - sticky
+    spells:
+      - napalm
+      - glacialspears
+      - blizzard
+      - multibang
+      - blink

@@ -1,0 +1,82 @@
+#
+# For Debugging, to remove eventually
+#
+
+validate_spells: false
+log_verbosity: -1
+cache_data_on_prelogin: false
+auto_save: 0
+logout_delay: 1
+
+default_mage_class: mage
+use_magic_damage: true
+wand_hide_flags: 126
+particle_range: 128
+
+#
+# Cast command and cost/CD reduction
+#
+
+reopen_wand_on_join: false
+cast_command_cooldown_free: true
+cast_console_cooldown_free: true
+max_power_damage_multiplier: 2.0
+max_power_construction_multiplier: 2.0
+max_power_radius_multiplier: 1.5
+max_power_radius_multiplier_max: 2.0
+max_power_range_multiplier: 2.0
+max_power_range_multiplier_max: 3.0
+max_power: 100.0
+max_cost_reduction: 1
+max_cooldown_reduction: 1
+console_bypass_locked_wands: true
+
+
+
+#
+# Override some defaults
+#
+
+default_spell_icon: globe_banner_pattern
+lore_wrap_limit: 32
+wands_break_hanging: false
+spell_glow: false
+cancel_interact_on_right_click: true
+cancel_interact_on_left_click: true
+prevent_wand_melee_damage: false
+offhand_cast_cooldown: 300
+click_cooldown: 50
+open_cooldown: 1000
+mage_update_frequency: 1
+undo_on_world_save: true
+max_velocity: 100
+enable_resource_pack: true
+resource_pack: https://download.mc-packs.net/pack/0c38912a89ab0459d5551cf1797755c5590fdeef.zip
+#resource_pack: https://download.mc-packs.net/pack/19624761f928be4e61d671e3829c4abae6f1f765.zip
+lore_wrap_prefix: ''
+range_formatter: "0.#"
+
+# This felt excessive
+# undo_depth: 2048
+undo_depth: 1024
+
+#
+# Important to prevent issues on changing worlds
+#
+
+close_wand_on_world_change: true
+
+#
+# Spells shoot out of your head I guess
+#
+
+default_cast_location: eyes
+
+#
+# Set up auto-undo vanilla explosions
+#
+
+auto_rollback_duration: 10000
+auto_rollback_explosions:
+- creeper
+

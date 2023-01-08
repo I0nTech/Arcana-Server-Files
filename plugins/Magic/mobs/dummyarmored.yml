@@ -1,0 +1,13 @@
+dummyarmored:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  type: husk
+  health: 10000
+  ai: false
+  entity_attributes:
+    generic_armor: 20
+    generic_armor_toughness: 0
+  helmet: test_helmet
+  chestplate: test_chestplate
+  leggings: test_leggings
+  boots: test_boots

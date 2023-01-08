@@ -1,0 +1,54 @@
+wizard2:
+  glow: ''
+  undroppable: false
+  rename: ''
+appearance_apprentice:
+  enabled: false
+appearance_architect:
+  enabled: false
+appearance_beginner:
+  enabled: false
+appearance_book:
+  enabled: true
+appearance_bow1:
+  enabled: false
+appearance_bow2:
+  enabled: false
+appearance_claw:
+  enabled: false
+appearance_conduit:
+  enabled: false
+appearance_demon:
+  enabled: false
+appearance_engineer:
+  enabled: false
+appearance_felm:
+  enabled: false
+appearance_green:
+  enabled: false
+appearance_lava:
+  enabled: false
+appearance_longbow:
+  enabled: false
+appearance_magicka:
+  enabled: false
+appearance_magma:
+  enabled: false
+appearance_master:
+  enabled: false
+appearance_moon:
+  enabled: false
+appearance_orb:
+  enabled: false
+appearance_riven:
+  enabled: false
+appearance_silver:
+  enabled: false
+appearance_spire:
+  enabled: false
+appearance_student:
+  enabled: false
+appearance_valk:
+  enabled: false
+appearance_whitedagger:
+  enabled: false

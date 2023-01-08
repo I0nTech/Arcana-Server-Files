@@ -1,0 +1,137 @@
+manabeam:
+  name: Mana Beam
+  description: Anchor, then fire a powerful, long-range beam of mana dealing 12 Magic Damage. Deals Critical Damage on Headshots.
+  icon: cyan_dye
+  icon_disabled: cyan_dye
+  category: arcane
+  actions:
+    cast:
+    - class: ChangeContext
+      target_self: true
+      target_caster: true
+      actions:
+      - class: Cast
+        spell: anchor
+        spell_parameters:
+          warmup: 1500
+    - class: Delay
+    - class: Retarget
+    - class: PlayEffects
+      effects: fire
+    - class: CustomProjectile
+      actions:
+        - class: Damage
+        - class: BreakBlock
+          ignore_result: true
+      headshot:
+        - class: Damage
+          damage_multiplier: 1.5
+        - class: BreakBlock
+          ignore_result: true
+        - class: PlayEffects
+          effect: crit
+
+  effects:
+      fire:
+      - sound: block_beacon_power_select
+        sound_pitch: 0.3
+        sound_volume: 0.7
+      - sound: block_beacon_power_select
+        sound_pitch: 1
+        sound_volume: 1
+      - location: origin
+        color_override: color
+        effectlib:
+          class: EquationEffect
+          particle: dust_color_transition
+          to_color: "#FF00FF"
+          particle_size: 0.8
+          particles: 4
+          particles2: 20
+          duration: 1200
+          iterations: 1
+          orientPitch: true
+          cycle: true
+          xEquation: 0.4 * t
+          yEquation: 0
+          zEquation: 0
+          x2Equation: 0
+          y2Equation: 8 * 2.7183^(-(0.1 * floor(t / 8) * 8 - 2.7183)^2) * sin(0.1*floor(t / 8) * 8) * cos(t/10 + 3.1415 * 2 / 30 * t2)
+          z2Equation: 8 * 2.7183^(-(0.1 * floor(t / 8) * 8 - 2.7183)^2) * sin(0.1*floor(t / 8) * 8) * sin(t/10 + 3.1415 * 2 / 30 * t2)
+          update_directions: false
+          update_locations: false
+      tick:
+      - location: target
+        color_override: color
+        effectlib:
+          class: ConeEffect
+          iterations: 12
+          particle: dust_color_transition
+          to_color: "#73FBD3"
+          lengthGrow: 0.05
+          update_directions: false
+          update_locations: false
+      hit:
+      - class: EffectSingle
+        location: target
+        particle: dust_color_transition
+        to_color: "#73FBD3"
+        particle_count: 6
+        particle_offset: 0.2
+      hit_block:
+      - class: EffectSingle
+        location: target
+        particle: block_crack
+        particle_count: 30
+        particle_offset_x: 0.2
+        particle_offset_y: 1
+        particle_offset_z: 0.2
+      hit_entity:
+      - class: EffectSingle
+        location: target
+        particle: dust_color_transition
+        size: 0.1
+        to_color: "#73FBD3"
+        particle_count: 6
+        particle_offset: 0.8
+      - sound: entity_player_attack_knockback
+        sound_pitch: 2
+        location: both
+      - sound: entity_player_attack_crit
+        sound_pitch: 4
+        location: both
+      - sound: entity_player_attack_knockback
+        location: target
+        sound_pitch: 4
+      crit:
+      - location: target
+        particle: crit_magic
+        particle_count: 24
+        particle_offset: 0.25
+        particle_data: rand(0.3,0.8)
+      - location: both
+        sound: entity_player_attack_knockback
+        sound_pitch: 2
+      - location: both
+        sound: entity_player_attack_crit
+        sound_pitch: 0.8
+  parameters:
+    warmup: 1500
+    hitbox: true
+    hitbox_size: 0.3
+    tick_size: 2
+    velocity: 125
+    range: 64
+    damage_type: magic
+    damage: 12
+    entity_hit_count: 10
+    block_hit_count: 3
+    no_damage_ticks: 0
+    target_type: Damageable
+    destructible: solid
+    destructible_durability: 50
+    break_durability: 4
+    undo: 10000
+    cooldown: 12000
+  costs:
+    mana: 100

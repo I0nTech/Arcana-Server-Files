@@ -1,0 +1,59 @@
+firetrail:
+  name: Flame Dash
+  description: Dash forwards, leaving behind a trail of fire
+  icon: fire_coral_fan
+  icon_disabled: barrier
+  actions:
+    cast:
+    - class: Parallel
+      actions:
+      - class: Interval
+        interval: 1
+        actions:
+        - class: ChangeContext
+          relative_source_offset: 0,-1,0
+          actions:
+          - class: CheckBlock
+        - class: PlayEffects
+          effects: ignite
+        - class: PotionEffect
+          duration: 500
+        - class: Modifier
+          duration: 5000
+      - class: Interval
+        interval: 100
+        actions:
+        - class: Retarget
+          actions:
+          - class: Cover
+            actions:
+            - class: Recurse
+              actions:
+                - class: Burn
+  effects:
+    ignite:
+      - location: targets
+        particle: lava
+        particle_offset: 0.8
+        particle_count: 4
+        particle_data: 0.5
+  parameters:
+    target: self
+    destructible: destructible_replace,destructible
+    add_modifiers:
+      - boost
+    duration: 5000
+    radius: 1
+    depth: 1
+    limit: 4
+    checkered: true
+    delay: 200
+    add_effects:
+      speed: 2
+    undo: 3000
+    undo_speed: 30
+    cooldown: 10000
+    target_caster: true
+    cancel_on_damage: 5
+  costs:
+    mana: 30

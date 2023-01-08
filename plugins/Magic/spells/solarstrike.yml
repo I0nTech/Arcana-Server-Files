@@ -1,0 +1,101 @@
+solarstrike:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  name: Solar Strike
+  icon: honeycomb
+  icon_disabled: honeycomb
+  category: fire
+  worth: 6000
+  actions:
+    cast:
+    - class: ChangeContext
+      actions:
+      - class: CustomProjectile
+        actions:
+        - class: AreaOfEffect
+          actions:
+          - class: Velocity
+          - class: Ignite
+          - class: Damage
+        - class: Sphere
+          radius: 1.5
+          ignore_result: true
+          actions:
+          - class: Cover
+            actions:
+            - class: Burn
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: entity_illusioner_cast_spell
+      sound_volume: 10
+      sound_pitch: -2.5
+      location: origin
+    tick:
+    - particle: flame
+      location: target
+      particle_count: 2
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+      particle_data: 0.1
+    - particle: enchantment_table
+      location: target
+      particle_count: 1
+      particle_offset_x: 0.4
+      particle_offset_y: 0.4
+      particle_offset_z: 0.4
+      particle_data: 1
+    hit:
+    - class: EffectSingle
+      location: target
+      particle: flame
+      particle_count: 75
+      particle_data: 0.25
+    - class: EffectSingle
+      location: target
+      particle: enchantment_table
+      particle_count: 100
+      particle_data: 2
+    - class: EffectSingle
+      sound: block_bubble_column_whirlpool_inside
+      sound_volume: 3
+      sound_pitch: 2.5
+      location: target
+    - class: EffectSingle
+      target_offset: 0,0.5,0
+      location: target
+      particle: explosion_large
+      particle_data: 1
+      particle_count: 3
+      firework: ball_large
+      color: ffa500
+      color2: ff4500
+      firework_silent: true
+    - class: EffectSingle
+      location: target
+      sound: entity_dragon_fireball_explode
+      sound_volume: 3
+      sound_pitch: -2.5
+  parameters:
+    source_at_target: true
+    target_offset: 0,50,0
+    source_pitch: 90
+    source_yaw: 0
+    range: 64
+    velocity: 90
+    hitbox: true
+    damage_type: fire
+    entity_damage: 18
+    player_damage: 9
+    no_damage_ticks: 0
+    damage_min_distance: 1
+    damage_max_distance: 3
+    radius: 2.5
+    duration: 4000
+    direction: 0,0.2,0
+    undo: 5000
+    push: 2
+    cooldown: 5000
+  costs:
+    mana: 100

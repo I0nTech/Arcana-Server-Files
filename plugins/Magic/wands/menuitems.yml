@@ -1,0 +1,124 @@
+close:
+  icon: barrier
+  name: '&cClose'
+whitepane:
+  icon: white_stained_glass_pane
+  name: '&c'
+graypane:
+  icon: gray_stained_glass_pane
+  name: '&c'
+goforward:
+  icon: arrow
+  name: '&aNext Page'
+goback:
+  icon: arrow
+  name: '&aPrevious Page'
+table:
+  icon: crafting_table
+  name: '&6Crafting Table'
+rightarrow:
+  icon: player_head:http://textures.minecraft.net/texture/4ef356ad2aa7b1678aecb88290e5fa5a3427e5e456ff42fb515690c67517b8
+  name: '&e'
+norng:
+  icon: barrier
+  name: '&eNEEDS RNG'
+arcanemenu:
+  icon: heart_of_the_sea
+  name: '&dArcane Spells'
+icemenu:
+  icon: snowball
+  name: '&dIce Spells'
+airmenu:
+  icon: feather
+  name: '&dAir Spells'
+firemenu:
+  icon: blaze_powder
+  name: '&dFire Spells'
+lightmenu:
+  icon: glowstone_dust
+  name: '&dLight Spells'
+explosivemenu:
+  icon: gunpowder
+  name: '&dExplosive Spells'
+lightningmenu:
+  icon: twisting_vines
+  name: '&dLightning Spells'
+understandsell:
+  icon: redstone_torch
+  name: '&a"WE WANT SELL ALL BUTTON"'
+  lore:
+  - §7I get it, this isn't the coolest
+  - §7way of doing a sell shop
+  - §7however this will have to work
+  - §7for now until it can be reworked.
+  - ''
+  - '&cSELL ALL + SHIFTCLICK SELLING SOON'
+understandfoundry:
+  icon: redstone_torch
+  name: '&a"WE WANT AUTO SMELTING"'
+  lore:
+  - §7I get it, this isn't the coolest
+  - §7way of doing a smelting system
+  - §7however this will have to work
+  - §7for now until it can be reworked.
+  - ''
+  - '&cAUTO-SMELT COMING SOON'
+notallarmor:
+  icon: redstone_torch
+  name: '&aThis is not every armor set.'
+  lore:
+  - §7This menu is used to show armor
+  - §7sets which are either crafted
+  - §7or created by buying them with
+  - §7resources. This menu does not
+  - §7show every armor set in the game.
+money:
+  icon: sunflower
+sandboxcapactior:
+  icon: white_dye
+  name: '&dCapacitors'
+  lore:
+  - §7This selector will show
+  - §7all currently available
+  - §7capacitors.
+  - ''
+  - §7Capacitors function
+  - §7as wand upgrades.
+sandboxattunement:
+  icon: white_stained_glass
+  name: '&dAttunements'
+  lore:
+  - §7This selector will show
+  - §7all currently available
+  - §7attunements.
+  - ''
+  - §7Attunements function
+  - §7as wand upgrades.
+sandboxconduit:
+  icon: white_concrete_powder
+  name: '&dConduits'
+  lore:
+  - §7This selector will show
+  - §7all currently available
+  - §7conduits.
+  - ''
+  - §7Conduits function
+  - §7as wand upgrades.
+sandboxtalisman:
+  icon: white_wool
+  name: '&dTalisman'
+  lore:
+  - §7This selector will show
+  - §7all currently available
+  - §7talisman.
+  - ''
+  - §7Talisman only function
+  - §7when held in your hand
+  - §7or in your off-hand.
+sandboxarmor:
+  icon: leather_chestplate:#FFFFFF
+  name: '&dArmor'
+  lore:
+  - §7This selector will show
+  - §7all currently available
+  - §7armor sets.

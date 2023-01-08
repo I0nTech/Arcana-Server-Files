@@ -1,0 +1,217 @@
+id: 37cb6087-e404-4648-b749-15b3a6cbf5ee
+name: SemGamerNL
+created: 1642934437457
+updated: 1642935797342
+last_cast: 1642935695244
+cooldown_expiration: 0
+last_death_location: ''
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  bd07beea-5923-481b-9b1a-7f8e7c3ffa78: []
+spells:
+  arcanehail:
+    cast_count: 1
+    last_cast: 1642935564246
+    last_earn: 0
+    cooldown_expiration: 1642935574246
+    charges: 0.0
+  criticalplayer:
+    cast_count: 0
+    last_cast: 1642935695244
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  auralburst:
+    cast_count: 1
+    last_cast: 1642935568392
+    last_earn: 0
+    cooldown_expiration: 1642935576392
+    charges: 0.0
+  focusbolt:
+    cast_count: 1
+    last_cast: 1642935655396
+    last_earn: 0
+    cooldown_expiration: 1642935661396
+    charges: 0.0
+  shatterbolt:
+    cast_count: 1
+    last_cast: 1642935560935
+    last_earn: 0
+    cooldown_expiration: 1642935567935
+    charges: 0.0
+  mendwounds:
+    cast_count: 0
+    last_cast: 1642935574890
+    last_earn: 0
+    cooldown_expiration: 1642935634890
+    charges: 0.0
+  anchor:
+    cast_count: 1
+    last_cast: 1642935568392
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  inflictcrit:
+    cast_count: 10
+    last_cast: 1642935625247
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 2
+    last_cast: 1642935655395
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 40
+    last_cast: 1642935632988
+    last_earn: 0
+    cooldown_expiration: 1642935633988
+    charges: 0.0
+  scattershot:
+    cast_count: 13
+    last_cast: 1642935695191
+    last_earn: 0
+    cooldown_expiration: 1642935697191
+    charges: 0.0
+  fling:
+    cast_count: 1
+    last_cast: 1642935573187
+    last_earn: 0
+    cooldown_expiration: 1642935580187
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Scattershot"},{"italic":false,"color":"white","text":"
+          ("},{"italic":false,"color":"dark_aqua","text":"Basic Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"For
+          Testing :D"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [BUILDER] SemGamerNL"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"9 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"150→"},{"color":"white","text":"("},{"color":"aqua","text":"156"},{"color":"white","text":")"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"30"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Capacitor "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Scattershot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 667d452a-69e5-48ac-80ca-2e2f80c5307a
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/1VRTUvDQBCdmNSmUfQinjx48BpIa5K2Vz8QQTwonkTC7O7ELiabsLtpEdGj/8F/509xUwvibd7j8ebNmwjAgxHXWFpkFXkeBC9ErRdBsEIlQhg0K0UaDh7PHq5vLi7vno7vqb7CmvTtjQ+Hi8Yy1IVUS1K20a8FbzplwbkGsFejwsLKmozFunXcx+cX/w5hSwo4mU+zccbzPBZsLOJ0IkTMZgxjns3H81nKE17mIewit3JJhWmpqmDHcLSWtHFrQwgkbxTsGiv5y9skSZLJewT7a+VfIB/CPgZrqj4V+BCh5qhogbJyOOiJTmPFOm16xcD/t8UxWz6MyoZ3ZuPh9YrFWrFhfGdSkxIrd7swjhj6MCgrqZ7dvA0DCPoI50cAIYSW6rZCSxAxNJIXvzWH65qLvpjTKWd5MpvGlCZpnObpLGbTdB6PM3aKOWdlRuTDcOkCSne/2+ZeuNMpV7KL9ftEB4Vu2nYN4QejoGRb5QEAAA==
+    wand:
+      owner: '[BUILDER] SemGamerNL'
+      hotbar_inventory_count: 1
+      mana_timestamp: 1642935706592
+      id: 97515c66-db1d-42dd-b8ba-c591984c0cf6
+      active_spell: scattershot
+      icon: stick{20002}
+      spell_inventory:
+        manabolt: 0
+        arcanehail: 4
+        auralburst: 5
+        scattershot: 2
+        focusbolt: 1
+        shatterbolt: 3
+        mendwounds: 7
+        fling: 6
+      mana: 156.0
+      template: basic_wand
+      owner_id: 37cb6087-e404-4648-b749-15b3a6cbf5ee
+      version: 7
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties: {}
+kits:
+  start:
+    last_give: 1642934437544
+    given_items:
+      bread:
+        amount: 16
+        last_give: 1642934437544
+      rogueboots:
+        amount: 1
+        last_give: 1642934437544
+      basic_wand:
+        amount: 1
+        last_give: 1642934437544
+      roguehelmet:
+        amount: 1
+        last_give: 1642934437544
+      roguechestplate:
+        amount: 1
+        last_give: 1642934437544
+      rogueleggings:
+        amount: 1
+        last_give: 1642934437544
+classes:
+  arcanamage:
+    spells:
+    - arcanehail
+    - criticalplayer
+    - auralburst
+    - focusbolt
+    - shatterbolt
+    - mendwounds
+    - manabolt
+    - scattershot
+    - fling
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

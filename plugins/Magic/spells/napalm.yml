@@ -1,0 +1,97 @@
+napalm:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  name: Napalm
+  description: Spray napalm in front of you, scorching terrain.
+  icon: lava_bucket
+  category: fire
+  upgrade_required_casts: 1500
+  pvp_restricted: true
+  worth: 6000
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+      - class: Delay
+        delay: rand(0,200)
+      - class: Spread
+        yaw_max: 30
+        pitch_max: 10
+        actions:
+        - class: EntityProjectile
+          actions:
+          - class: Sphere
+            radius: 2
+            y_size: 1
+            actions:
+            - class: ModifyBlock
+          - class: Repeat
+            actions:
+            - class: PlayEffects
+              effects: burn
+            - class: AreaOfEffect
+              requires_target: true
+              actions:
+              - class: Ignite
+              - class: Damage
+              - class: Velocity
+            - class: Delay
+              delay: 750
+  effects:
+    cast:
+    - location: target
+    tick:
+    - location: target
+      particle: drip_lava
+      particle_count: 1
+      particle_offset: 0.03
+    burn:
+    - location: target
+      particle: lava
+      particle_count: 10
+      particle_offset_x: 1.5
+      particle_offset_z: 1.5
+  parameters:
+    type: falling_block
+    range: 32
+    velocity: 40
+    gravity: 0.05
+    multiply: 4
+    repeat: 10
+    radius: 2
+    y_radius: 2
+    direction: 0,0,0
+    target_self_timeout: 1000
+    no_damage_ticks: 0
+    target: none
+    target_type: Damageable
+    destructible: destructible
+    brush: magma_block
+    undo: 2000
+    undo_speed: 3
+    damage_type: fire
+    entity_damage: 3
+    player_damage: 1.5
+    duration: 5000
+    cooldown: 18000
+  costs:
+    mana: 150
+
+napalm|2:
+  upgrade_required_casts: 2500
+  parameters:
+    range: 48
+    multiply: 5
+    repeat: 12
+  costs:
+    mana: 175
+
+
+napalm|3:
+  parameters:
+    range: 64
+    multiply: 6
+    repeat: 14
+  costs:
+    mana: 200
+

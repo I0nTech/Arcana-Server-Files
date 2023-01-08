@@ -1,0 +1,156 @@
+id: 5f66c56a-5550-4494-89a7-3092d70511f1
+name: trgfanchat
+created: 1644595311333
+updated: 1645110715195
+last_cast: 1644997773427
+cooldown_expiration: 0
+last_death_location: 32262.95953227629,67.1212968405392,-46629.39936752522,world,-170.47607,-35.54979
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  783f2316-86a3-4ef1-85e4-87ca74b58504: []
+spells:
+  criticalplayer:
+    cast_count: 0
+    last_cast: 1644997773427
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 1
+    last_cast: 1644997582114
+    last_earn: 0
+    cooldown_expiration: 1644997642114
+    charges: 0.0
+  boon|2:
+    cast_count: 7
+    last_cast: 1644997643211
+    last_earn: 1644997605163
+    cooldown_expiration: 1644997649211
+    charges: 0.0
+  fling:
+    cast_count: 6
+    last_cast: 1644997580586
+    last_earn: 0
+    cooldown_expiration: 1644997585586
+    charges: 0.0
+  progressmenu:
+    cast_count: 1
+    last_cast: 1644856010967
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Boon"},{"italic":false,"color":"white","text":"
+          ("},{"italic":false,"color":"dark_aqua","text":"Basic Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [ADMIN] trgfanchat"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"4 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Boon"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: bf3a8f1c-79b6-4de6-8e68-13af612a19e5
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0WQzWrDMBCE17FDXDdQ6KHnHnoVKI5lycdCLz2kL1CKkfWTiDiSkZSEUvrutd1C9zYwu/PtFAAJ3AjPdeRdr5IEsqNSQ1JAduVW5rB0V6s83L8/v+xe3z4eo99rbsWBxxQeDi523LfGXpSNzn+2wp1thPFmDgsj4UkwvRWslogKTFBFmy1ijNaIlpyXmtWUNTiHNRfRXFQbBtX3kHXO2RwyI5yFdYhGHL9KjHH5XcDdbPkPTH/dY+IiheKkrLyOBDJMCCksdW/sHqZJYXVRPpjZu8ohn99qJ0ai61qQmiNCCEZV1VSINZyiLW5KSTHZbPRmXIjqNPQ8Kig6Hoxop3rG7m7PNkQeDn/tjVJ6NwyzhB+OZYT7XgEAAA==
+    wand:
+      owner: '[ADMIN] trgfanchat'
+      hotbar_inventory_count: 1
+      id: c8f3c86d-7c05-4793-8876-72aa2f867890
+      active_spell: boon
+      icon: stick{20002}
+      spell_inventory:
+        boon: 2
+        mendwounds: 1
+        fling: 0
+      version: 7
+      owner_id: 5f66c56a-5550-4494-89a7-3092d70511f1
+      template: basic_wand
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 30.0
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1644595311538
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1644595311538
+      basic_wand:
+        amount: 1
+        last_give: 1644595311537
+classes:
+  arcanamage:
+    spells:
+    - boon
+    - criticalplayer
+    - mendwounds
+    - fling
+    spell_levels:
+      boon: 2
+    mana: 34.625
+    mana_timestamp: 1644998139110
+transient_modifiers: {}
+active_class: arcanamage
+health: 18.0

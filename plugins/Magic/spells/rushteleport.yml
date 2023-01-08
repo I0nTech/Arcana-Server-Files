@@ -1,0 +1,51 @@
+rushteleport:
+  creator: Finn_Lopes
+  creator_id: 72f3caf9-ec75-3590-8307-ffc534409f2e
+  name: you shouldn't have this
+  description: you shouldn't have this
+  icon: stick
+  actions:
+    cast:
+    - class: Parallel
+      actions:
+        - class: ChangeContext
+          relative_source_offset: -5,0,-0.5
+          target_caster: true
+          actions:
+            - class: PlayEffects
+              effect: spiral2
+            - class: Delay
+              delay: 10
+            - class: Velocity
+              speed: 1
+              additive: true
+        - class: Teleport
+          keep_velocity: true
+          direct: true
+  effects:
+    spiral2:
+      - location: origin
+        effectlib:
+          class: Dna
+          pitch: 0
+          iterations: 1
+          length: 15
+          radius: 2.5
+          radials: 0.7
+          particle_base1: redstone
+          particle_base2: redstone
+          particle_helix: redstone
+          particles_base: 0
+          particles_helix: 10
+          color_helix: "#f5f5f5"
+          duration: 700
+          update_directions: false
+          update_locations: false
+  parameters:
+    target: block
+    allow_max_range: true
+    range: 10
+    prevent_passthrough: nopassthrough
+    bypass_confusion: true
+    vertical_range: 8
+    ledge_range: 4

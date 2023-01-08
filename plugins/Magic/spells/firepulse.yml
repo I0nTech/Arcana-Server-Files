@@ -1,0 +1,31 @@
+firepulse:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  name: Fire Pulse
+  actions:
+    cast:
+    - class: AreaOfEffect
+      actions:
+      - class: Ignite
+  effects:
+    cast:
+    - location: origin
+      sound: magic.burn
+      sound_pitch: 1.2
+      effectlib:
+        class: Modified
+        duration: 500
+        parameters:
+          radius: 5*(t/i)
+        effect:
+          class: Sphere
+          particle: flame
+          particles: 1
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
+  parameters:
+    target: self
+    target_type: Damageable
+    radius: 3
+    duration: 10000

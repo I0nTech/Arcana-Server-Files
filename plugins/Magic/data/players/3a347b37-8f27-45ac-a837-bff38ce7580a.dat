@@ -1,0 +1,266 @@
+id: 3a347b37-8f27-45ac-a837-bff38ce7580a
+name: A_38
+created: 1651852803981
+updated: 1651861948689
+last_cast: 1651861941123
+cooldown_expiration: 0
+last_death_location: -9.347659889430519,-262.0494805016617,-91.69962630335112,Spawn,13.796387,-27.58763
+fall_protection_count: 2147483647
+fall_protection: 10755
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  33fb1329-03dd-4662-b8fa-b106f5b826b3: []
+spells:
+  charge:
+    cast_count: 15
+    last_cast: 1651859077056
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  inflictcrit:
+    cast_count: 2
+    last_cast: 1651854769202
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 13
+    last_cast: 1651861720579
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 20
+    last_cast: 1651854772017
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemeteor:
+    cast_count: 9
+    last_cast: 1651857789571
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  launch:
+    cast_count: 111
+    last_cast: 1651861931925
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  fling:
+    cast_count: 152
+    last_cast: 1651861933821
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemissiles:
+    cast_count: 13
+    last_cast: 1651861720579
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  magicbullet:
+    cast_count: 239
+    last_cast: 1651861782806
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 9.931000000000001
+  slam:
+    cast_count: 53
+    last_cast: 1651861948609
+    last_earn: 0
+    cooldown_expiration: 1651861956609
+    charges: 0.0
+  whirlwind:
+    cast_count: 4
+    last_cast: 1651856632249
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanehail:
+    cast_count: 1
+    last_cast: 1651854065005
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  pull:
+    cast_count: 18
+    last_cast: 1651860794991
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 41
+    last_cast: 1651861115587
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  dive:
+    cast_count: 17
+    last_cast: 1651861609224
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  progressmenu:
+    cast_count: 0
+    last_cast: 1651852925269
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  airslash:
+    cast_count: 12
+    last_cast: 1651861761676
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  castshield:
+    cast_count: 1
+    last_cast: 1651854370504
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  magicshield:
+    cast_count: 5
+    last_cast: 1651853785241
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  amethyst_scepter:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Slam"},{"italic":false,"color":"white","text":"
+          ("},{"italic":false,"color":"light_purple","text":"Amethyst Scepter"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to A_38"}'
+        - '{"italic":false,"extra":[{"color":"white","text":"Encoded: "},{"color":"#FF2288","text":"15
+          "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":" ✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":" ❃ "},{"color":"gray","text":"Mana
+          Maximum: "},{"color":"aqua","text":"125"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":" ❃ "},{"color":"gray","text":"Mana
+          Recharge: "},{"color":"aqua","text":"10"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          "},{"color":"white","text":"Attunement "},{"color":"gray","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          "},{"color":"white","text":"Conduit "},{"color":"gray","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          "},{"color":"white","text":"Engram "},{"color":"gray","text":"Slot"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"Empowered"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Slam"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 1.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: d2261bf2-0f0b-4ec0-b845-7359adc7882d
+            operation: 0
+          GENERIC_ATTACK_DAMAGE:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 4.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: e63a48b1-703c-46b8-846e-f61d036d9bed
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0VRy26DMBDcxKQhJGqrHnrp49QrUhpCoMd+CVrMEqwag2wTlL/vkqTqbWZk78zORgAzWEmLtcdS02wGwQ9RP4sgGNFUISy60ZCF4LtIcgHPTedLtIUyJzK+s+dCdoPxwFNCmKsKPuSurOs0LWMpJcX7vUzjryrJ4jqjz8N2lyIe6hA2KL06UeF60hoCp7GN4OHC/mcLuJMN2iPx+BcB6xaPSpaD1jQZgoCwRYNlpye64QdOovdkHYdkJRKwqLUyR8YLAUHFhgwDcfVjuBQcxEo01JKnzrL0LiC6Sg0qzcLbn7FrFOmKlbmA1dgoq0dlJv7KQVBZnumaKRbH1jgYOZE7Afc3B+Wc0uSmqjhBz2swfIIQwkvDxVRegsk+K7mtvN5l8T5FGWPOlCtNcklZmm+RP3hqe42e4BE5eHN2vnCSel5dwPLEBajOTOvxadeDcZ6D3Y7LtLJd318o/AJiJM8+/QEAAA==
+    wand:
+      owner: A_38
+      hotbar_inventory_count: 1
+      id: c2bff55b-ccce-44c5-9d37-f7e16025aa6f
+      active_spell: slam
+      spell_inventory:
+        charge: 27
+        magicbullet: 0
+        manabolt: 12
+        scattershot: 10
+        fling: 5
+        dive: 4
+        slam: 7
+        arcanemeteor: 30
+        arcanehail: 29
+        magicshield: 2
+        whirlwind: 28
+        airslash: 3
+        launch: 6
+        arcanemissiles: 1
+        pull: 18
+      version: 7
+      template: amethyst_scepter
+      owner_id: 3a347b37-8f27-45ac-a837-bff38ce7580a
+open_wand: true
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1651852804661
+    given_items:
+      iron_ingot:
+        amount: 64
+        last_give: 1651852804661
+      bread:
+        amount: 32
+        last_give: 1651852804661
+classes:
+  mage:
+    mana_timestamp: 1651861948589
+    mana: 105.49001
+    spells:
+    - charge
+    - manabolt
+    - arcanemeteor
+    - launch
+    - fling
+    - arcanemissiles
+    - magicbullet
+    - slam
+    - whirlwind
+    - arcanehail
+    - pull
+    - scattershot
+    - dive
+    - airslash
+    - magicshield
+transient_modifiers: {}
+active_class: mage
+health: 21.0

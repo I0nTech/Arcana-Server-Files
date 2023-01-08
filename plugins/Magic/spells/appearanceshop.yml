@@ -1,0 +1,217 @@
+appearanceshop:
+    # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+    inherit: false
+    # This refers to an icon defined in the icons folder/config
+    icon: wand
+    hidden: true
+    actions:
+        cast:
+        -  class: Selector
+    parameters:
+        confirm_filler: stained_glass:3
+        show_unavailable: true
+        requirements:
+        - wand_tags: transformable
+        unlock_section: wand_appearances
+        apply_to_wand: true
+        title: '&dWand Appearances:'
+        selected: ''
+        placeholder_icon: gray_stained_glass_pane
+        options:
+        - placeholder: true
+        - placeholder: true
+        - placeholder: true
+        - placeholder: true
+        - placeholder: true
+        - placeholder: true
+        - placeholder: true
+        - placeholder: true
+        - placeholder: true
+        - placeholder: true
+        - item: appearance_woodenhoe
+          confirm: true
+          unlock: 1
+          costs:
+            polygel: 1
+            wooden_hoe: 1
+        - item: appearance_stonehoe
+          unlock: 2
+          confirm: true
+          costs:
+            polygel: 1
+            stone_hoe: 1
+        - item: appearance_goldhoe
+          unlock: 3
+          confirm: true
+          costs:
+            polygel: 1
+            golden_hoe: 1
+        - item: appearance_ironhoe
+          unlock: 4
+          confirm: true
+          costs:
+            polygel: 1
+            iron_hoe: 1
+        - item: appearance_diamondhoe
+          unlock: 5
+          confirm: true
+          costs:
+            polygel: 1
+            diamond_hoe: 1
+        - item: appearance_netheritehoe
+          unlock: 6
+          confirm: true
+          costs:
+            polygel: 1
+            netherite_hoe: 1
+        - item: appearance_carrotonastick
+          unlock: 7
+          confirm: true
+          costs:
+            polygel: 1
+            carrot_on_a_stick: 1
+        - placeholder: true
+        - placeholder: true
+        - item: appearance_woodenshovel
+          unlock: 8
+          confirm: true
+          costs:
+            polygel: 1
+            wooden_shovel: 1
+        - item: appearance_stoneshovel
+          unlock: 9
+          confirm: true
+          costs:
+            polygel: 1
+            stone_shovel: 1
+        - item: appearance_goldshovel
+          unlock: 10
+          confirm: true
+          costs:
+            polygel: 1
+            golden_shovel: 1
+        - item: appearance_ironshovel
+          unlock: 11
+          confirm: true
+          costs:
+            polygel: 1
+            iron_shovel: 1
+        - item: appearance_diamondshovel
+          unlock: 12
+          confirm: true
+          costs:
+            polygel: 1
+            diamond_shovel: 1
+        - item: appearance_netheriteshovel
+          unlock: 13
+          confirm: true
+          costs:
+            polygel: 1
+            netherite_shovel: 1
+        - item: appearance_warpedfungusonastick
+          unlock: 14
+          confirm: true
+          costs:
+            polygel: 1
+            warped_fungus_on_a_stick: 1
+        - placeholder: true
+        - placeholder: true
+        - item: appearance_stick
+          unlock: 15
+          confirm: true
+          costs:
+            polygel: 1
+            stick: 1
+        - item: appearance_bone
+          unlock: 16
+          confirm: true
+          costs:
+            polygel: 1
+            bone: 1
+        - item: appearance_bamboo
+          unlock: 17
+          confirm: true
+          costs:
+            polygel: 1
+            bamboo: 1
+        - item: appearance_blazerod
+          unlock: 18
+          confirm: true
+          costs:
+            polygel: 1
+            blaze_rod: 1
+        - item: appearance_clock
+          unlock: 19
+          confirm: true
+          costs:
+            polygel: 1
+            clock: 1
+        - item: appearance_compass
+          unlock: 20
+          confirm: true
+          costs:
+            polygel: 1
+            compass: 1
+        - item: appearance_shears
+          unlock: 21
+          confirm: true
+          costs:
+            polygel: 1
+            shears: 1
+        - placeholder: true
+        - placeholder: true
+        - item: appearance_paper
+          unlock: 22
+          confirm: true
+          costs:
+            polygel: 1
+            paper: 1
+        - item: appearance_scroll
+          unlock: 23
+          confirm: true
+          costs:
+            polygel: 1
+            map: 1
+        - item: appearance_book
+          unlock: 24
+          confirm: true
+          costs:
+            polygel: 1
+            book: 1
+        - item: appearance_textbook
+          unlock: 25
+          confirm: true
+          costs:
+            polygel: 1
+            book: 1
+        - item: appearance_knowledgebook
+          unlock: 26
+          confirm: true
+          costs:
+            polygel: 1
+            heart_of_the_sea: 1
+        - item: appearance_emerald
+          unlock: 27
+          confirm: true
+          costs:
+            polygel: 1
+            emerald: 1
+        - item: appearance_diamond
+          unlock: 28
+          confirm: true
+          costs:
+            polygel: 1
+            diamond: 1
+        - placeholder: true
+        - placeholder: true
+        - placeholder: true
+        - placeholder: true
+        - item: glow_upgrade
+          unlock: 29
+          cost: 1000
+        - placeholder: true
+        - item: noglow_upgrade
+          free: true
+        - placeholder: true
+        - placeholder: true
+        - placeholder: true

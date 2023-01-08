@@ -1,0 +1,51 @@
+siphon:
+  name: Siphon
+  description: Leech life from entities around you
+  icon: mossy_cobblestone
+  upgrade_required_casts: 1500
+  worth: 1000
+  actions:
+    cast:
+    - class: AreaOfEffect
+      actions:
+        - class: Damage
+        - class: Cast
+  effects:
+    cast:
+      - location: origin
+        sound: entity_stray_ambient
+        sound_volume: 2
+      - location: targets
+        particle: crit
+        particle_offset: 0.5
+        particle_count: 8
+  parameters:
+    radius: 10
+    damage: 4
+    target_count: 3
+    spell: healbolt
+    target: self
+    target_type: Damageable
+    cooldown_free: true
+    cost_free: true
+    as_target: true
+    spell_parameters:
+      quiet: true
+    cooldown: 10000
+  costs:
+    mana: 100
+siphon|2:
+  upgrade_required_casts: 2500
+  parameters:
+    damage: 5
+    target_count: 5
+    radius: 15
+  costs:
+    mana: 150
+siphon|3:
+  parameters:
+    damage: 6
+    target_count: 7
+    radius: 20
+  costs:
+    mana: 200

@@ -1,0 +1,137 @@
+#
+
+base:
+  inherit: false
+  storage:
+    path: subclass
+    mana_max: class
+    mana_regeneration: class
+    mana: mana_regeneration
+    mana_timestamp: mana_regeneration
+    spell_levels: class
+    spells: mage
+    brushes: class
+    hotbar_count: subclass
+    attributes: mage,wand
+vanilla:
+  inherit: false
+  health_scale: 0
+  entity_attributes:
+    generic_max_health:
+      value: 20
+      operation: base
+    generic_follow_range:
+      value: 0
+      operation: base
+    generic_knockback_resistance:
+      value: 0
+      operation: base
+    generic_movement_speed:
+      value: 0.1
+      operation: base
+    generic_attack_damage:
+      value: 1
+      operation: base
+    generic_armor:
+      value: 0
+      operation: base
+    generic_armor_toughness:
+      value: 0
+      operation: base
+    generic_attack_knockback:
+      value: 0
+      operation: base
+    generic_attack_speed:
+      value: 0
+      operation: base
+    generic_luck:
+      value: 0
+      operation: base
+    generic_flying_speed:
+      value: 0.4
+      operation: base
+archer_mage:
+  inherit: base
+  locked: false
+  path: archer
+  active_spell: arrow_regular
+  spells:
+  - arrow_regular
+  - arrow_poison
+battle_mage:
+  parent: caster
+  locked: false
+  path: battle
+  spells:
+  - missile
+  - arrow
+  - fire
+  - push
+  mana_max: 50
+  mana_regeneration: 5
+broomrider:
+  storage:
+    spell_levels: class
+caster:
+  inherit: base
+  locked: false
+  spells:
+  - missile
+mage:
+  inherit: base
+  spell_inventory: true
+  spells:
+  - manashot
+  mana_max: mage_mana+100
+  mana_regeneration: mage_mana_regen+1
+  mana_max_boost: manaboost/100
+  mana_regeneration_boost: manaboost/100
+  entity_attributes:
+    generic_max_health:
+      value: vitality
+      operation: add
+    generic_knockback_resistance:
+      value: knockbackdefense/8
+      operation: add
+    generic_movement_speed:
+      value: 0
+      operation: add
+    generic_armor:
+      value: 0
+      operation: add
+    generic_armor_toughness:
+      value: toughness
+      operation: add
+    generic_attack_knockback:
+      value: 0
+      operation: add
+    generic_attack_damage:
+      value: attackdamage
+      operation: add
+    generic_attack_speed:
+      value: 4+attackspeed
+      operation: add
+    generic_luck:
+      value: 0
+      operation: add
+butterfly:
+  icon: feather
+  passive: true
+  locked: true
+  triggers:
+    join:
+      effects: butterfly
+crown:
+  icon: gold_nugget
+  passive: true
+  locked: true
+  triggers:
+    join:
+      effects: crown
+tail:
+  icon: leash
+  passive: true
+  locked: true
+  triggers:
+    join:
+      effects: tail

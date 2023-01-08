@@ -1,0 +1,77 @@
+blizzard:
+  name: Blizzard
+  description: Shower an area with slowing and damaging snowballs
+  icon: snow_block
+  category: ice
+  worth: 7000
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+        - class: Spread
+          actions:
+          - class: ChangeContext
+            requires_target: true
+            actions:
+            - class: Delay
+            - class: EntityProjectile
+              actions:
+                - class: AreaOfEffect
+                  radius: 2
+                  actions:
+                    - class: Damage
+                    - class: PotionEffect
+                    - class: Velocity
+  effects:
+    cast:
+      - location: target
+        effectlib:
+          class: Warp
+          particles: 30
+          rings: 3
+          radius: 8
+          duration: 6000
+          particle: snow_shovel
+          update_directions: false
+          update_locations: false
+    tick:
+      - location: target
+        particle: dust_color_transition
+        color: "#b0e0e6"
+        to_color: "#afeeee"
+        particle_count: 1
+        particle_offset: 0.01
+        particle_size: 0.4
+    hit:
+     - location: target
+       particle: snowball
+       particle_count: 5
+       particle_offset: 0.2
+     - class: EffectSingle
+       sound: entity_snowball_throw
+       sound_volume: 0.2
+       location: target
+  parameters:
+    type: snowball
+    radius: 7.5
+    source_at_target: true
+    target_offset: 0,25,0
+    hitbox: true
+    hitbox_size: 1
+    source_pitch: 90
+    source_yaw: 0
+    delay: rand(0,5000)
+    range: 64
+    velocity: 60
+    multiply: 150
+    damage_type: ice
+    damage: 2
+    no_damage_ticks: 0
+    potion_effects:
+      slow: 0
+      weakness: 0
+    duration: 1000
+    direction: 0,0,0
+    cooldown: 30000
+  costs:
+    mana: 200

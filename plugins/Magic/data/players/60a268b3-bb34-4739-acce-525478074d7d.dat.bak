@@ -1,0 +1,228 @@
+id: 60a268b3-bb34-4739-acce-525478074d7d
+name: WallofGeology
+created: 1643678817284
+updated: 1643680861389
+last_cast: 1643680817719
+cooldown_expiration: 0
+last_death_location: 3901.8767040328726,64.0,-2880.317092438987,world,76.42648,26.796572
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  325ed72c-10be-4fb2-aeaa-c612d56e7b18: []
+spells:
+  criticalplayer:
+    cast_count: 0
+    last_cast: 1643680777855
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shatterbolt:
+    cast_count: 31
+    last_cast: 1643680770202
+    last_earn: 0
+    cooldown_expiration: 1643680777202
+    charges: 0.0
+  inflictcrit:
+    cast_count: 25
+    last_cast: 1643680709007
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 63
+    last_cast: 1643680770202
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 12
+    last_cast: 1643680843755
+    last_earn: 1643680699054
+    cooldown_expiration: 1643680849755
+    charges: 0.0
+  manabolt:
+    cast_count: 61
+    last_cast: 1643680761173
+    last_earn: 0
+    cooldown_expiration: 1643680762173
+    charges: 0.0
+  fling:
+    cast_count: 3
+    last_cast: 1643678910877
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanehail:
+    cast_count: 19
+    last_cast: 1643680773888
+    last_earn: 0
+    cooldown_expiration: 1643680783888
+    charges: 0.0
+  auralburst:
+    cast_count: 20
+    last_cast: 1643679996347
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 32
+    last_cast: 1643680763704
+    last_earn: 0
+    cooldown_expiration: 1643680769704
+    charges: 0.0
+  spellshop:
+    cast_count: 0
+    last_cast: 1643679312600
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 0
+    last_cast: 1643678975441
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  anchor:
+    cast_count: 20
+    last_cast: 1643679996347
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 37
+    last_cast: 1643680767091
+    last_earn: 0
+    cooldown_expiration: 1643680769091
+    charges: 0.0
+  progressmenu:
+    cast_count: 1
+    last_cast: 1643679310805
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Arcane
+          Hail"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"Basic
+          Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to WallofGeology"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"10 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Arcane"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Hail"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: f75ebddc-e634-440e-a6e9-8a568a9e3da1
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/02R0U7DMAxFXdKJrNvgjS/gtVK3tWv3BXwCj5WTpiwiS6ok3TQh/h23TII3+8o6vr7OABJYSo99RGFUkkD6qdSQZJBe0XYcFu5qlYfNOxrj+jfljPu4MXg5uSjQt9pelI3O31rpRhuBcBwedAevdV1W20Y2eV90ZV52TZ8fZVPkhazwIMRelNuKwxpl1BfVhkEZAxl6iVadUBsOqZbOwjpELT+/dkVR7L4zeJ4H/9Yy4Ge0KJyZdgMjxOjRiNGHSdiw/0wSUgapcMQFWDBYBYkxKh/oGlIeGCx7J8dwxyXTxGmeuCuMeGdluysd2wUSOIMn6TV5RDMYvFFUAEsGi95o+0F1Bhz4nGE7pXIocHdoxD6nBCiVen/MUUqVV7uqrJuiLruaQudRnYkWFWQCg5bt9AsGjxeyqmfzj/S21WhDRDL4+zhqO++GYW7hB6AICEzZAQAA
+    wand:
+      owner: WallofGeology
+      hotbar_inventory_count: 1
+      id: 774518c8-f0d4-4d8f-9c80-0c5a6bb3b415
+      active_spell: arcanehail
+      icon: stick{20002}
+      spell_inventory:
+        manabolt: 0
+        auralburst: 13
+        arcanehail: 4
+        boon: 5
+        scattershot: 2
+        focusbolt: 1
+        shatterbolt: 3
+        mendwounds: 8
+        criticalplayer: 9
+        fling: 10
+      owner_id: 60a268b3-bb34-4739-acce-525478074d7d
+      template: basic_wand
+      version: 7
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 15.0
+properties: {}
+kits:
+  start:
+    last_give: 1643678817388
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1643678817388
+      basic_wand:
+        amount: 1
+        last_give: 1643678817388
+classes:
+  arcanamage:
+    spells:
+    - arcanehail
+    - boon
+    - criticalplayer
+    - auralburst
+    - focusbolt
+    - shatterbolt
+    - mendwounds
+    - manabolt
+    - scattershot
+    - fling
+    spell_levels:
+      boon: 2
+    mana_timestamp: 1643680861378
+    mana: 150.0
+transient_modifiers: {}
+active_class: arcanamage
+health: 0.5429410934448242

@@ -1,0 +1,134 @@
+teleportmenu:
+    # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+    inherit: false
+    # This refers to an icon defined in the icons folder/config
+    icon: acacia_door
+    name: Teleport Menu
+    description: Recall to known world locations
+    cast_on_no_target: false
+    world_border_restricted: false
+    quick_cast: true
+    show_undoable: false
+    actions:
+        cast:
+          - class: Recall
+    effects:
+        no_action: []
+        no_target: []
+        wait:
+        -  source_location: eyes
+           color_override: color
+           sound: block_note_block_bit
+           sound_pitch: 0.2
+           sound_volume: 0.3
+           effectlib:
+              class: WarpEffect
+              duration: $warmup
+              period: 1
+              particle: redstone
+              particle_offset_x: 0.9
+              particle_offset_y: 0.1
+              particle_offset_z: 0.9
+              radius: 1
+              offset: 0,-1,0
+        -  class: EffectSingle
+           source_location: eyes
+           effectlib:
+              class: WarpEffect
+              duration: 1000
+              period: 2
+              particle: portal
+              particle_count: 10
+              particle_offset_x: 0.9
+              particle_offset_y: 0.1
+              particle_offset_z: 0.9
+              radius: 1
+              offset: 0,-1,0
+        cast:
+        -  sound: block_beacon_activate
+           sound_pitch: 0.75
+           sound_volume: 0.8
+        -  sound: entity_enderman_teleport
+           sound_pitch: 0.25
+           sound_volume: 0.5
+        -  class: EffectSingle
+           sound: magic.teleport
+           sound_volume: 0.8
+           sound_pitch: 0.3
+           source_location: eyes
+           color_override: color
+           effectlib:
+              class: WarpEffect
+              duration: 1000
+              period: 1
+              particle: redstone
+              particle_offset_x: 0.9
+              particle_offset_y: 0.1
+              particle_offset_z: 0.9
+              radius: 1
+              offset: 0,-1,0
+        menu:
+          - sound: entity_enderman_teleport
+            sound_pitch: 1.5
+            sound_volume: 0.75
+        teleporting:
+        -  sound: entity_enderman_teleport
+           sound_pitch: 0.75
+           sound_volume: 0.75
+           location: both
+        -  class: EffectSingle
+           location: both
+           source_location: eyes
+           color_override: color
+           effectlib:
+             class: WarpEffect
+             particle: redstone
+             particle_offset_x: 0.9
+             particle_offset_y: 0.1
+             particle_offset_z: 0.9
+             offset: 0,-1,0
+             period: 2
+             update_locations: false
+        -  class: EffectSingle
+           sound: magic.teleport
+           sound_pitch: 1.2
+           location: both
+           source_location: eyes
+           effectlib:
+             class: WarpEffect
+             period: 1
+             particle: portal
+             particle_count: 10
+             particle_offset_x: 0.9
+             particle_offset_y: 0.1
+             particle_offset_z: 0.9
+             offset: 0,-1,0
+             update_locations: false
+    parameters:
+      title: "Teleport to:"
+      options:
+        - spawn
+        - desertcavern
+        - mountainmines
+      warmup: 10000
+      cancel_on_damage: true
+      cancel_on_death: true
+      auto_close: true
+      cancel_on_cast_other: true
+      cancel_on_no_permission: true
+      allow_spawn: false
+      allow_marker: false
+      allow_death: false
+      allow_souls: false
+      allow_wand: false
+      allow_home: false
+      allow_cross_world: true
+      allow_town: false
+      allow_fields: false
+      allow_friends: false
+      show_unavailable: true
+      unavailable_icon: skull:http://textures.minecraft.net/texture/d34e063cafb467a5c8de43ec78619399f369f4a52434da8017a983cdd92516a0
+      loud: true
+      cooldown: 15000
+      protection_duration: 5000
+      target: none

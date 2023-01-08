@@ -1,0 +1,29 @@
+bring:
+  inherit: goto
+  name: Bring
+  description: Bring a Living Entity to your side.
+  icon: gather
+  category: guardian
+  actions:
+    cast:
+    - class: EntitySelect
+      radius: 35
+      actions:
+        - class: ChangeContext
+          swap_source_and_target: true
+          actions:
+          - class: Teleport
+  parameters:
+    cancel_on_deactivate: true
+    cancel_on_damage: 1
+    cancel_on_cast_other: true
+    cancel_on_death: true
+    cancel_on_no_wand: true
+    allow_friends: true
+    target: self
+    target_type: LivingEntity
+    target_self: false
+    bypass_friendly_fire: true
+    bypass_pvp: true
+    loud: true
+    target_game_modes: survival,creative,adventure

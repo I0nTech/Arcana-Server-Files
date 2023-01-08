@@ -1,0 +1,135 @@
+seekerswarmengram1:
+  name: "&bSeeker Swarm Engram &6&l[I]"
+  icon: lime_dye
+  inherit: base_upgrade
+  slot: Engram
+  attributes:
+    seekerrepeats: 1
+    seekershots: 1
+  lore:
+  - $slot &e&l[DRAG+DROP]
+  - '§r§5✧ §7Shots: §a+1'
+  - '§r§5✦ §7Repeats: §a+1'
+  - $description
+  - '§8This item is used as a wand upgrade'
+  - '§8to increase spell related stats.'
+seekerswarmengram2:
+  name: "&bSeeker Swarm Engram &6&l[II]"
+  icon: lime_stained_glass
+  inherit: base_upgrade
+  slot: Engram
+  attributes:
+    seekerrepeats: 2
+    seekershots: 2
+  lore:
+  - $slot &e&l[DRAG+DROP]
+  - '§r§5✧ §7Shots: §a+2'
+  - '§r§5✦ §7Repeats: §a+2'
+  - $description
+  - '§8This item is used as a wand upgrade'
+  - '§8to increase spell related stats.'
+seekerswarmengram3:
+  name: "&bSeeker Swarm Engram &6&l[III]"
+  icon: lime_wool
+  inherit: base_upgrade
+  slot: Engram
+  attributes:
+    seekerrepeats: 3
+    seekershots: 3
+  lore:
+  - $slot &e&l[DRAG+DROP]
+  - '§r§5✧ §7Shots: §a+3'
+  - '§r§5✦ §7Repeats: §a+3'
+  - $description
+  - '§8This item is used as a wand upgrade'
+  - '§8to increase spell related stats.'
+seekerbarrageengram1:
+  name: "&bSeeker Barrage Engram &6&l[I]"
+  icon: purple_dye
+  inherit: base_upgrade
+  slot: Engram
+  attributes:
+    seekerrepeats: 1
+    seekershots: 1
+  lore:
+  - $slot &e&l[DRAG+DROP]
+  - '§r§5✧ §7Shots: §a+1'
+  - '§r§5✦ §7Repeats: §a+1'
+  - $description
+  - '§8This item is used as a wand upgrade'
+  - '§8to increase spell related stats.'
+seekerbarrageengram2:
+  name: "&bSeeker Barrage Engram &6&l[II]"
+  icon: purpled_stained_glass
+  inherit: base_upgrade
+  slot: Engram
+  attributes:
+    seekerrepeats: 2
+    seekershots: 2
+  lore:
+  - $slot &e&l[DRAG+DROP]
+  - '§r§5✧ §7Shots: §a+2'
+  - '§r§5✦ §7Repeats: §a+2'
+  - $description
+  - '§8This item is used as a wand upgrade'
+  - '§8to increase spell related stats.'
+seekerbarrageengram3:
+  name: "&bSeeker Barrage Engram &6&l[III]"
+  icon: purple_wool
+  inherit: base_upgrade
+  slot: Engram
+  attributes:
+    seekerrepeats: 3
+    seekershots: 3
+  lore:
+  - $slot &e&l[DRAG+DROP]
+  - '§r§5✧ §7Shots: §a+3'
+  - '§r§5✦ §7Repeats: §a+3'
+  - $description
+  - '§8This item is used as a wand upgrade'
+  - '§8to increase spell related stats.'
+seekerlauncherengram1:
+  name: "&bSeeker Launcher Engram &6&l[I]"
+  icon: light_blue_dye
+  inherit: base_upgrade
+  slot: Engram
+  attributes:
+    seekerrepeats: 1
+    seekershots: 1
+  lore:
+  - $slot &e&l[DRAG+DROP]
+  - '§r§5✧ §7Shots: §a+1'
+  - '§r§5✦ §7Repeats: §a+1'
+  - $description
+  - '§8This item is used as a wand upgrade'
+  - '§8to increase spell related stats.'
+seekerlauncherengram2:
+  name: "&bSeeker Launcher Engram &6&l[II]"
+  icon: light_blue_stained_glass
+  inherit: base_upgrade
+  slot: Engram
+  attributes:
+    seekerrepeats: 2
+    seekershots: 2
+  lore:
+  - $slot &e&l[DRAG+DROP]
+  - '§r§5✧ §7Shots: §a+2'
+  - '§r§5✦ §7Repeats: §a+2'
+  - $description
+  - '§8This item is used as a wand upgrade'
+  - '§8to increase spell related stats.'
+seekerlauncherengram3:
+  name: "&bSeeker Launcher Engram &6&l[III]"
+  icon: light_blue_wool
+  inherit: base_upgrade
+  slot: Engram
+  attributes:
+    seekerrepeats: 3
+    seekershots: 3
+  lore:
+  - $slot &e&l[DRAG+DROP]
+  - '§r§5✧ §7Shots: §a+3'
+  - '§r§5✦ §7Repeats: §a+3'
+  - $description
+  - '§8This item is used as a wand upgrade'
+  - '§8to increase spell related stats.'

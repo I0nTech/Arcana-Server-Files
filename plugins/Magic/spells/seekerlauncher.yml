@@ -1,0 +1,134 @@
+seeker_launcher:
+    name: Seeker Silo
+    icon: eye_of_ender
+    icon_disabled: ender_pearl
+    icon_url: http://textures.minecraft.net/texture/c64f6eeb78485e49b219f40a9d6a8131c539fef932f1cbb5f379adfebdd8c31
+    upgrade_required_path: master
+    upgrade_required_casts: 50
+    category: combat
+    worth: 2000
+    earns_sp: 8
+    actions:
+        cast:
+        - class: Delay
+        - class: Multiply
+          actions: 
+          - class: Repeat
+            repeat: 3
+            actions: 
+            - class: Delay
+              delay: 2500
+            - class: AreaOfEffect
+              actions:
+              - class: Asynchronous
+                actions:
+                - class: CustomProjectile
+                  target: other_entity
+                  actions: 
+                  - class: AreaOfEffect
+                    target_count: 100
+                    radius: 1
+                    actions: 
+                    - class: PotionEffect
+                      duration: 10000
+                    - class: ApplyCooldown
+                      duration: 100
+                    - class: Velocity
+                    - class: Damage
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.shimmer
+           sound_pitch: 5
+           location: origin
+           source_location: head
+           effectlib:
+             class: Sphere
+             duration: 8000
+             particle: end_rod
+             particle_data: 0.0075
+             particles: 5
+             radius: 0.2
+             update_locations: false
+        tick:
+        - particle: redstone
+          color: "8a2be2"
+          particle_count: 1
+          particle_offset_x: 0.001
+          particle_offset_y: 0.001
+          particle_offset_z: 0.001
+          location: target
+        - particle: spell_witch
+          particle_count: 1
+          particle_offset_x: 0.001
+          particle_offset_y: 0.001
+          particle_offset_z: 0.001
+          location: target
+        hit:
+        -  class: EffectSingle
+           sound: entity_blaze_hurt
+           sound_pitch: 4
+           sound_volume: 1
+           location: target
+        - location: target
+          particle: spell_witch
+          particle_count: 30
+          particle_offset_x: 0.1
+          particle_offset_y: 0.1
+          particle_offset_z: 0.1
+        target:
+        -  class: EffectSingle
+           location: source
+           sound: entity_guardian_attack
+           sound_pitch: 4
+           sound_volume: 1
+           particle: end_rod
+           particle_offset_x: 0.001
+           particle_offset_y: 0.001
+           particle_offset_z: 0.001
+           effectlib:
+             class: Sphere
+             duration: 100000
+             radius: 0.25
+             particle: nautilus
+             particles: 3
+    parameters:
+        multiply: 3
+        target: self
+        target_self: false
+        range: 1000
+        source_location: feet
+        radius: 100
+        velocity: 0
+        potion_effects: 
+          glowing: 1
+          confusion: 127
+        effects_particles: false
+        tick_size: 0.1
+        target_count: 4
+        push: -0.0001
+        knockback_resistance: 1
+        target_type: LivingEntity
+        damage: 2
+        ignore_blocks: true
+        cooldown: rand(200,300)
+        lifetime: 10000
+        target_self_timeout: 2000
+        track_speed: 0.35
+        use_target_location: false
+        velocity_transform:
+            orient: false
+            x: rand(-50,50) 
+            y: rand(25,25) 
+            z: rand(-50,50) 
+        plan:
+        - time: 1
+          track_target: true
+          velocity_transform: ""
+          velocity: 20
+          effects: target
+        - time: 100000
+          track_speed: 0.1
+    costs:
+        mana: 300
+

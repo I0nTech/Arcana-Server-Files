@@ -1,0 +1,59 @@
+magicboat:
+  icon: boat
+  name: Boat
+  description: Summon a magical boat. Can only be cast in water
+  worth: 100
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+        - class: Plane
+          radius: 0.1
+          y_size: 2
+          actions:
+          - class: CheckBlock
+            allowed: water
+            fail:
+              - class: ApplyCooldown
+                reduce: 99999999999
+            actions:
+            - class: PlayEffects
+              effects: boat
+            - class: Delay
+            - class: ChangeContext
+            - class: SpawnEntity
+              type: boat
+  effects:
+    boat:
+    - location: target
+      effectlib:
+        class: Circle
+        particle: block_crack
+        material: acacia_button
+        duration: $warmup
+        particles: 40
+        radius: 2
+        grow: 0.4
+        orient: false
+        whole_circle: true
+        enable_rotation: true
+    hit:
+    - location: target
+      particle: block_crack
+      material: stripped_oak_wood
+      particle_count: 15
+      particle_offset: 0.5
+  parameters:
+    loot: false
+    warmup: 8000
+    velocity: 80
+    range: 3
+    hitbox: true
+    hitbox_size: 0.3
+    target_offset: 0,-0.5,0
+    transparent: freeze_transparent,plants
+    destructible: water,destructible
+    undo: 300 seconds
+    cooldown: 120 seconds
+  costs:
+    mana: 100

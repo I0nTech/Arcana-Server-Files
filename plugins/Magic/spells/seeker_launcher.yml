@@ -1,0 +1,125 @@
+seeker_launcher:
+  inherit: false
+  name: Seeker Launcher
+  icon: eye_of_ender
+  category: ender
+  upgrade_required_casts: 6000
+  worth: 10000
+  actions:
+    cast:
+    - class: Delay
+    - class: Multiply
+      actions:
+      - class: Repeat
+        actions:
+        - class: Delay
+          delay: 2000
+        - class: AreaOfEffect
+          actions:
+          - class: Asynchronous
+            actions:
+            - class: EntityProjectile
+              target: other_entity
+              actions:
+              - class: Velocity
+              - class: Damage
+  effects:
+    cast:
+    - class: EffectSingle
+      location: origin
+      source_location: head
+      effectlib:
+        class: Sphere
+        duration: 8000
+        particle: end_rod
+        particle_data: 0.0075
+        particles: 5
+        radius: 0.2
+        update_locations: false
+    tick:
+    - particle: dragon_breath
+      particles: 1
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+      particle_data: 0.0175
+      location: target
+    - particle: spell_witch
+      particle_count: 1
+      particle_offset_x: 0.001
+      particle_offset_y: 0.001
+      particle_offset_z: 0.001
+      location: target
+    hit:
+    - class: EffectSingle
+      sound: entity_blaze_hurt
+      sound_pitch: 4
+      sound_volume: 1
+      location: target
+    - location: target
+      particle: spell_witch
+      particle_count: 30
+      particle_offset_x: 0.1
+      particle_offset_y: 0.1
+      particle_offset_z: 0.1
+    target:
+    - class: EffectSingle
+      location: source
+      sound: entity_guardian_attack
+      sound_pitch: 4
+      sound_volume: 1
+      effectlib:
+        class: Sphere
+        duration: 100000
+        radius: 0.25
+        particle: nautilus
+        particles: 3
+  parameters:
+    type: shulker_bullet
+    repeat: "3+seekershots"
+    multiply: "2+seekerrepeats"
+    target: self
+    target_self: false
+    range: 64
+    source_location: feet
+    radius: 16
+    velocity: 0
+    tick_size: 0.2
+    target_count: 3
+    push: -1.0E-4
+    target_type: Creature
+    damage: "3+seekerdamage"
+    no_damage_ticks: 0
+    ignore_blocks: false
+    cooldown: 25000
+    lifetime: 10000
+    target_self_timeout: 2000
+    track_speed: 0.35
+    use_target_location: false
+    velocity_transform:
+      orient: false
+      x: rand(-50,50)
+      y: 25
+      z: rand(-50,50)
+    plan:
+    - time: 1
+      track_target: true
+      velocity_transform: ''
+      velocity: 20
+      effects: target
+    - time: 2000
+      track_speed: 0.1
+  costs:
+    mana: 200
+seeker_launcher|2:
+  upgrade_required_casts: 9000
+  parameters:
+    damage_multiplier: 0.25
+    target_count: 4
+    repeat: "4+seekershots"
+seeker_launcher|3:
+  parameters:
+    damage_multiplier: 0.5
+    target_count: 5
+    repeat: "5+seekershots"
+

@@ -1,0 +1,107 @@
+gatling:
+  inherit: false
+  icon: prismarine_shard
+  name: Gatling Magic
+  description: Charge up and spray everything with magic bullets
+  category: arcane
+  disable_mana_regeneration: true
+  actions:
+    cast:
+      - class: Delay
+        delay: 1500
+      - class: Repeat
+        actions:
+        - class: Retarget
+        - class: Multiply
+          actions:
+          - class: Asynchronous
+            actions:
+            - class: CustomProjectile
+              actions:
+              - class: Damage
+              - class: Velocity
+              - class: BreakBlock
+          - class: PlayEffects
+            effect: fire
+            ignore_result: true
+          - class: Delay
+            delay: 1
+  effects:
+    cast:
+      - sound: block_grindstone_use
+        sound_pitch: 0.2
+      - sound: block_end_portal_frame_fill
+        sound_pitch: 0.1
+      - sound: block_beacon_activate
+        sound_pitch: 1.1
+      - class: EffectSingle
+        source_location: body
+        origin_offset: 0,0.55,0
+        effectlib:
+          class: Sphere
+          particle: fireworks_spark
+          duration: $warmup
+          particles: 5
+          radius: 0.2
+    fire:
+      - location: origin
+        sound: item_trident_hit
+        sound_pitch: 0.1
+        sound_volume: 0.3
+    tick:
+      - location: target
+        particle: dust_color_transition
+        color: color
+        to_color: "#73FBD3"
+        particle_count: 2
+        particle_offset: 0.01
+        particle_size: 0.4
+    hit_block:
+     -  class: EffectSingle
+        location: target
+        particle: block_crack
+        particle_count: 8
+        particle_offset_x: 0.1
+        particle_offset_y: 0.2
+        particle_offset_z: 0.1
+    hit_entity:
+     -  class: EffectSingle
+        location: target
+        particle: dust_color_transition
+        size: 0.1
+        to_color: "#73FBD3"
+        particle_count: 5
+        particle_offset: 0.8
+    hit:
+     -  sound: entity_player_attack_knockback
+        sound_pitch: 2
+        location: target
+     -  location: target
+        particle: redstone
+        particle_count: 6
+        particle_offset: 0.2
+  parameters:
+    warmup: 1500
+    range: 100
+    repeat: 100
+    multiply: 3
+    velocity: 80
+    push: 0.5
+    spread: 0.1
+    damage_type: magic
+    damage: 1
+    no_damage_ticks: 0
+    destructible: solid
+    destructible_durability: 10
+    break_durability: 0.5
+    undo: 2000
+    undo_speed: 0.5
+    gravity: 0.003
+    cooldown: 10000
+  active_costs:
+    mana: 20
+
+gatling|2:
+    parameters:
+      repeat: 60
+      warmup: 1000

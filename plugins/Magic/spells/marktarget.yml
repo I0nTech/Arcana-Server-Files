@@ -1,0 +1,85 @@
+marktarget:
+  inherit: false
+  name: Concentrate Attacks
+  description: Fire a homing projectile that marks a target for death.
+  icon: target
+  actions:
+    cast:
+     - class: ConeOfEffect
+       target_count: 1
+       actions:
+       - class: CustomProjectile
+         actions:
+         - class: PotionEffect
+         - class: Damage
+         - class: Stop
+     - class: ChangeContext
+       target_self: true
+     - class: Message
+       message_type: action_bar
+       message: "&fNo Target!"
+     - class: PlayEffects
+       effects: notarget
+  effects:
+    cast:
+    - sound: block_bell_resonate
+      sound_pitch: 0.3
+      sound_volume: 2
+    tick:
+      - location: target
+        particle: dust_color_transition
+        particle_offset: 0.03
+        particle_count: 2
+        particle_size: 0.6
+        to_color: "#8b0000"
+      - location: target
+        particle: dust_color_transition
+        particle_offset: 0.2
+        particle_count: 4
+        particle_size: 0.4
+        to_color: "#8b0000"
+    hit_entity:
+    - sound: entity_blaze_hurt
+      sound_volume: 0.2
+      sound_pitch: 0.2
+    - location: target
+      source_location: body
+      effectlib:
+        class: Modified
+        duration: $duration
+        parameters:
+          size: cos(t/10) + 0.8
+        effect:
+          class: AnimatedBall
+          iterations: 20
+          particle: dust_color_transition
+          to_color: "#8b0000"
+          particles: 60
+          particle_size: 0.8
+          y_offset: -0.5
+          y_factor: 1
+    notarget:
+      - location: origin
+        sound: entity_enderman_hurt
+        sound_pitch: 5
+        sound_volume: 0.5
+        sound_broadcast: false
+  parameters:
+    fov: 1
+    target: other
+    target_type: Damageable
+    lifetime: 8000
+    range: 64
+    velocity: 40
+    damage: 5
+    use_target_location: false
+    track_target: true
+    track_speed: 0.3
+    ignore_blocks: true
+    potion_effects:
+      glowing: 0
+      weakness: 1
+    duration: 4000
+    cooldown: 30000
+  costs:
+    mana: 90

@@ -1,0 +1,80 @@
+implosion:
+  # These track who created what spells, you can remove them if you want
+  creator: MrSqueeg
+  creator_id: 55441c60-c997-467c-975a-f42f629cce38
+  name: Arcane Sheild
+  description: Grants yourself and other nearby players Absorbtion and Resistence
+  category: arcane
+  icon: apple{18001}
+  actions:
+    cast:
+      - class: Delay
+      - class: AreaOfEffect
+        radius: 3
+        actions:
+          - class: PotionEffect
+  effects:
+    cast:
+      - class: EffectSingle
+      - location: origin
+        source_location: feet
+        effectlib:
+          class: Modified
+          duration: $warmup
+          parameters:
+            radius: '(t*0.3)'
+          effect:
+            class: Helix
+            particles: 3
+            particle: dust_color_transition
+            to_color: "#CB26AF"
+            update_directions: false
+            update_locations: false
+      - location: origin
+        source_location: feet
+        effectlib:
+          class: Modified
+          duration: $warmup
+          parameters:
+            radius: '(t/i) * 3 + 0.1'
+          effect:
+            class: Helix
+            particles: 1
+            strands: 30
+            particle: damage_indicator
+            update_directions: false
+            update_locations: false
+      - location: origin
+        source_location: feet
+        delay: $warmup
+        particle: spell_witch
+        particle_count: 30
+        particle_data: 0.5
+        sound: item_totem_use
+        sound_pitch: -3
+      - location: target
+        delay: $warmup
+        effectlib:
+          class: Sphere
+          radius: 3
+          particle: spell_instant
+          particles: 30
+          duration: 1000
+          update_directions: false
+          update_locations: false
+  parameters:
+    target: self
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true
+    effects_particles: false
+    warmup: 500
+    range: 32
+    velocity: 20
+    duration: 30000
+    potion_effects:
+      absorption: 3
+      damage_resistance: 1
+    cooldown: 90000

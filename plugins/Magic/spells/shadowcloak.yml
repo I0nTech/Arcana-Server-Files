@@ -1,0 +1,91 @@
+shadowcloak:
+    name: Shadow Cloak
+    boss_bar:
+      bar_title: "&7$spell"
+      bar_color: white
+      bar_style: segmented_20
+    description: "You shouldn't be seeing this"
+    disable_mana_regeneration: true
+    toggle: undo_if_active
+    triggers:
+      - trigger: sneak
+    actions:
+        cast:
+        - class: Vanish
+        - class: PotionEffect
+        - class: Modifier
+        - class: ModifyGameMode
+          game_mode: adventure
+        - class: AreaOfEffect
+          actions:
+            - class: Aggro
+              clear_target: true
+        - class: Interval
+          duration: $duration
+          interval: 1
+          actions:
+            - class: CheckTrigger
+              trigger: damage_dealt
+              actions:
+#                - class: ModifyGameMode
+#                  game_mode: survival
+#                - class: Modifier
+#                  remove_modifiers:
+#                    - hidden
+                - class: Undo
+                  cancel: true
+
+    effects:
+        cast:
+        - class: EffectSingle
+          sound: magic.vanish
+        - sound: entity.enderman.teleport
+          sound_pitch: 0.3
+          effectlib:
+            class: Modified
+            duration: 500
+            parameters:
+              radius: "(t/i) * 1.5"
+            effect:
+              class: Shield
+              particles: 3
+              particle_count: 3
+              particle_offset_x: 0.3
+              particle_offset_y: 0.6
+              particle_offset_z: 0.3
+              offset: 0,-1,0
+              particle: smoke_large
+        deactivate:
+        - class: EffectSingle
+          sound: magic.vanish
+        - sound: entity.enderman.teleport
+          sound_pitch: 0.3
+          effectlib:
+            class: Modified
+            duration: 500
+            parameters:
+              radius: "1.5 - ((t/i) * 1.5)"
+            effect:
+              class: Shield
+              particles: 3
+              particle_count: 3
+              particle_offset_x: 0.3
+              particle_offset_y: 0.6
+              particle_offset_z: 0.3
+              offset: 0,-1,0
+              particle: smoke_large
+    parameters:
+      target: self
+      duration: 30000
+      cooldown: 180000
+      remove_on_finish: true
+      potion_effects:
+        invisibility: 9
+      radius: 32
+      add_modifiers:
+        - hidden
+      cancel_on_cast_other: true
+      cancel_on_death: true
+      cancel_on_deactivate: true
+      cancel_on_no_permission: true
+      cancel_on_damage: 0.5

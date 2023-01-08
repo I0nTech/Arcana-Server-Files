@@ -1,0 +1,473 @@
+id: 73f12143-8d3f-4c2c-a0d6-1b06fcf682db
+name: MotorGorilla
+created: 1644277181024
+updated: 1644277705063
+last_cast: 1644277681708
+cooldown_expiration: 0
+last_death_location: 14.356084467161233,67.0,7.578475397632746,world,-161.80933,13.686143
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  3ae08fb1-d48e-43ef-be5a-1bdc0b585fcf:
+  - blocks:
+    - -65,71,106,world|stone
+    - -65,72,106,world|stone
+    - -65,73,106,world|stone
+    - -65,74,106,world|dirt
+    - -65,75,106,world|grass_block?minecraft:grass_block[snowy=false]
+    - -65,76,106,world|grass
+    - -66,71,105,world|stone
+    - -66,72,105,world|stone
+    - -66,73,105,world|stone
+    - -66,74,105,world|dirt
+    - -66,75,105,world|grass_block?minecraft:grass_block[snowy=false]
+    - -65,71,105,world|stone
+    - -65,72,105,world|stone
+    - -65,73,105,world|stone
+    - -65,74,105,world|dirt
+    - -65,75,105,world|grass_block?minecraft:grass_block[snowy=false]
+    - -64,71,105,world|stone
+    - -64,72,105,world|stone
+    - -64,73,105,world|stone
+    - -64,74,105,world|dirt
+    - -64,75,105,world|grass_block?minecraft:grass_block[snowy=false]
+    - -64,71,106,world|stone
+    - -64,72,106,world|stone
+    - -64,73,106,world|stone
+    - -64,74,106,world|dirt
+    - -64,75,106,world|grass_block?minecraft:grass_block[snowy=false]
+    - -64,71,107,world|stone
+    - -64,72,107,world|stone
+    - -64,73,107,world|stone
+    - -64,74,107,world|dirt
+    - -64,75,107,world|grass_block?minecraft:grass_block[snowy=false]
+    - -65,71,107,world|stone
+    - -65,72,107,world|stone
+    - -65,73,107,world|stone
+    - -65,74,107,world|dirt
+    - -65,75,107,world|grass_block?minecraft:grass_block[snowy=false]
+    - -66,71,107,world|stone
+    - -66,72,107,world|coal_ore
+    - -66,73,107,world|coal_ore
+    - -66,74,107,world|dirt
+    - -66,75,107,world|grass_block?minecraft:grass_block[snowy=false]
+    - -66,71,106,world|stone
+    - -66,72,106,world|stone
+    - -68,75,104,world|air
+    time_to_live: 5000
+    name: Arcane Meteor
+    mode: NO_PHYSICS
+  - blocks:
+    - 4,62,55,world|stone
+    - 4,63,55,world|stone
+    - 4,66,55,world|stone
+    - 3,62,54,world|stone
+    - 3,63,54,world|stone_slab?minecraft:stone_slab[type=bottom,waterlogged=false]
+    - 4,62,54,world|stone
+    - 4,63,54,world|stone
+    - 5,62,54,world|stone
+    - 5,63,54,world|stone
+    - 5,64,54,world|stone
+    - 5,65,54,world|stone
+    - 5,66,54,world|stone
+    - 5,62,55,world|stone
+    - 5,63,55,world|stone
+    - 5,64,55,world|stone
+    - 5,65,55,world|stone
+    - 5,66,55,world|stone
+    - 5,62,56,world|stone
+    - 5,63,56,world|stone
+    - 5,64,56,world|stone
+    - 5,65,56,world|stone
+    - 5,66,56,world|stone
+    - 4,62,56,world|stone
+    - 4,63,56,world|stone
+    - 4,64,56,world|stone
+    - 4,65,56,world|stone
+    - 4,66,56,world|stone
+    - 3,62,56,world|stone
+    - 3,63,56,world|stone
+    - 3,67,56,world|grass_block?minecraft:grass_block[snowy=false]
+    - 3,62,55,world|stone
+    - 2,63,53,world|stone
+    - 2,66,53,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,67,53,world|grass
+    - 3,63,53,world|stone_slab?minecraft:stone_slab[type=bottom,waterlogged=false]
+    - 4,63,53,world|stone_slab?minecraft:stone_slab[type=bottom,waterlogged=false]
+    - 5,63,53,world|stone
+    - 5,64,53,world|stone
+    - 5,65,53,world|stone
+    - 5,66,53,world|stone
+    - 6,63,53,world|stone
+    - 6,64,53,world|stone
+    - 6,65,53,world|stone
+    - 6,66,53,world|stone
+    - 6,63,54,world|stone
+    - 6,64,54,world|stone
+    - 6,65,54,world|dirt
+    - 6,66,54,world|grass_block?minecraft:grass_block[snowy=false]
+    - 6,63,55,world|stone
+    - 6,64,55,world|stone
+    - 6,65,55,world|dirt
+    - 6,66,55,world|grass_block?minecraft:grass_block[snowy=false]
+    - 6,63,56,world|stone
+    - 6,64,56,world|stone
+    - 6,65,56,world|dirt
+    - 6,66,56,world|grass_block?minecraft:grass_block[snowy=false]
+    - 6,63,57,world|stone
+    - 6,64,57,world|stone
+    - 6,65,57,world|dirt
+    - 6,66,57,world|grass_block?minecraft:grass_block[snowy=false]
+    - 6,67,57,world|fern
+    - 5,63,57,world|stone
+    - 5,64,57,world|stone
+    - 5,65,57,world|dirt
+    - 5,66,57,world|grass_block?minecraft:grass_block[snowy=false]
+    - 5,67,57,world|grass
+    - 4,63,57,world|stone
+    - 4,64,57,world|stone
+    - 4,65,57,world|stone
+    - 4,66,57,world|grass_block?minecraft:grass_block[snowy=false]
+    - 3,63,57,world|stone
+    - 3,64,57,world|stone
+    - 3,65,57,world|stone
+    - 3,66,57,world|grass_block?minecraft:grass_block[snowy=false]
+    - 3,67,57,world|grass
+    - 2,63,57,world|stone
+    - 2,64,57,world|stone
+    - 2,66,57,world|dirt
+    - 2,67,57,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,63,56,world|stone
+    - 2,67,56,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,67,55,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,63,54,world|iron_ore
+    - 1,66,52,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,66,52,world|grass_block?minecraft:grass_block[snowy=false]
+    - 5,64,52,world|stone
+    - 5,65,52,world|dirt
+    - 5,66,52,world|grass_block?minecraft:grass_block[snowy=false]
+    - 5,67,52,world|grass
+    - 6,64,52,world|stone
+    - 6,65,52,world|stone
+    - 6,66,52,world|stone
+    - 7,66,52,world|grass_block?minecraft:grass_block[snowy=false]
+    - 7,64,53,world|stone
+    - 7,65,53,world|dirt
+    - 7,66,53,world|grass_block?minecraft:grass_block[snowy=false]
+    - 7,64,54,world|stone
+    - 7,65,54,world|dirt
+    - 7,66,54,world|grass_block?minecraft:grass_block[snowy=false]
+    - 7,67,54,world|grass
+    - 7,63,55,world|stone
+    - 7,64,55,world|stone
+    - 7,65,55,world|dirt
+    - 7,66,55,world|grass_block?minecraft:grass_block[snowy=false]
+    - 7,64,56,world|stone
+    - 7,65,56,world|dirt
+    - 7,66,56,world|grass_block?minecraft:grass_block[snowy=false]
+    - 7,64,57,world|stone
+    - 7,65,57,world|dirt
+    - 7,66,57,world|grass_block?minecraft:grass_block[snowy=false]
+    - 7,66,58,world|grass_block?minecraft:grass_block[snowy=false]
+    - 6,64,58,world|stone
+    - 6,65,58,world|dirt
+    - 6,66,58,world|grass_block?minecraft:grass_block[snowy=false]
+    - 5,64,58,world|stone
+    - 5,65,58,world|dirt
+    - 5,66,58,world|grass_block?minecraft:grass_block[snowy=false]
+    - 5,67,58,world|grass
+    - 4,63,58,world|stone
+    - 4,64,58,world|stone
+    - 4,65,58,world|dirt
+    - 4,66,58,world|grass_block?minecraft:grass_block[snowy=false]
+    - 3,64,58,world|stone
+    - 3,65,58,world|stone
+    - 3,66,58,world|stone
+    - 2,64,58,world|stone_slab?minecraft:stone_slab[type=bottom,waterlogged=false]
+    - 1,67,57,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,65,57,world|air
+    - 2,68,59,world|air
+    - 2,67,46,world|tall_grass?minecraft:tall_grass[half=lower]
+    - 2,68,46,world|tall_grass?minecraft:tall_grass[half=upper]
+    - -3,66,60,world|air
+    time_to_live: 5000
+    name: Arcane Meteor
+    mode: NO_PHYSICS
+spells:
+  manabeam:
+    cast_count: 4
+    last_cast: 1644277613527
+    last_earn: 0
+    cooldown_expiration: 1644277622527
+    charges: 0.0
+  criticalplayer:
+    cast_count: 0
+    last_cast: 1644277681708
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shatterbolt:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  inflictcrit:
+    cast_count: 2
+    last_cast: 1644277532885
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 3
+    last_cast: 1644277610378
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 11
+    last_cast: 1644277590086
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 2.0
+  arcanemeteor:
+    cast_count: 7
+    last_cast: 1644277680735
+    last_earn: 0
+    cooldown_expiration: 1644277690735
+    charges: 0.0
+  upgrades:
+    cast_count: 1
+    last_cast: 1644277554551
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manablast:
+    cast_count: 3
+    last_cast: 1644277610378
+    last_earn: 0
+    cooldown_expiration: 1644277615378
+    charges: 0.0
+  arcanehail:
+    cast_count: 6
+    last_cast: 1644277616289
+    last_earn: 0
+    cooldown_expiration: 1644277626289
+    charges: 0.0
+  reflect:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  auralburst:
+    cast_count: 1
+    last_cast: 1644277318526
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  walls:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  repeaterspell:
+    cast_count: 1
+    last_cast: 1644277584434
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  wandinstructions:
+    cast_count: 1
+    last_cast: 1644277561158
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  magicburst:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shell:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  anchor:
+    cast_count: 5
+    last_cast: 1644277613527
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  progressmenu:
+    cast_count: 3
+    last_cast: 1644277559606
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Arcane
+          Meteor"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"Basic
+          Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to MotorGorilla"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"16 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana
+          Max: "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Arcane"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Meteor"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 9464dc4f-13aa-423c-ba8a-7ec466775242
+            operation: 0
+          GENERIC_ATTACK_DAMAGE:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 0.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 7d7cdc56-994d-431c-b5b9-ec07f18f3f1f
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/1WSQW7bMBBFx6Fcy7KT7HqCbgXIsuU4J8iqZxBG5KgmQpECSdsIit69QzpB0Z3+zOjN5ycrgAWspccx4mBosYDinWheVFDc0KoSlu5mycP2p4vOvzmvjUEB388uDuh7ba9kufHRS3exEZhWwoNW8KNTL217wqaWzf5YH147WWPXUa1kJ+Vhd3ptiOlblFFfqQ8zGcPKS7Q0USTnSyi0dBa2IWr5/rttmqb9U8FzHv23WMB6QsveMeT1AsqsCSeWD1/SmdQFAcXgGArwJGDlaTQkU6MSsAkSYyQf+GhcKQVUE/7Scrj4TP4mYHlDYwJ/bwU8epoJ03y2DrAS//vnUsGMe+mMOs2IVLh4NF/QJUPD+Q7YJA/n7OHT7jp5IKtunK1Kex8FPEmvORA0s8EPSlueoYQy31Kfgn/Zj7t2d9jXJ7Uf64NsOfhGHevd0BxHOR5PrRr4h0gTEyJBNWDQsk+3zZFc+UA6B7Tih7G52BCRTd2fBkvl3TxnCX8BGYtT/zsCAAA=
+    wand:
+      owner: MotorGorilla
+      hotbar_inventory_count: 1
+      id: 5d7228a0-c036-495c-a55e-dc5cc41890ed
+      active_spell: arcanemeteor
+      icon: stick{20002}
+      spell_inventory:
+        manablast: 1
+        manabeam: 2
+        manabolt: 0
+        boon: 14
+        reflect: 10
+        scattershot: 8
+        magicburst: 6
+        walls: 12
+        repeaterspell: 7
+        arcanemeteor: 4
+        arcanehail: 3
+        auralburst: 5
+        shell: 11
+        shatterbolt: 9
+        mendwounds: 13
+        criticalplayer: 15
+      owner_id: 73f12143-8d3f-4c2c-a0d6-1b06fcf682db
+      template: basic_wand
+      version: 7
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties: {}
+kits:
+  start:
+    last_give: 1644277181107
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1644277181107
+      basic_wand:
+        amount: 1
+        last_give: 1644277181107
+classes:
+  arcanamage:
+    spells:
+    - manabeam
+    - boon
+    - criticalplayer
+    - shatterbolt
+    - manabolt
+    - arcanemeteor
+    - manablast
+    - arcanehail
+    - reflect
+    - auralburst
+    - walls
+    - repeaterspell
+    - magicburst
+    - shell
+    - mendwounds
+    - scattershot
+    spell_levels:
+      boon: 2
+    mana: 150.0
+    mana_timestamp: 1644277697705
+transient_modifiers: {}
+active_class: arcanamage
+health: 4.446016311645508

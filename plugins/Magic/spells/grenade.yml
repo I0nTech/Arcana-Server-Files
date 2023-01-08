@@ -1,0 +1,97 @@
+grenade:
+  inherit: false
+  icon: tnt
+  name: Grenade
+  description: Throw a grenade that explodes after 3 seconds
+  category: explosive
+  upgrade_required_casts: 1500
+  worth: 4000
+  actions:
+      cast:
+        - class: TNT
+          fuse: 30
+          size: 0
+          actions:
+          - class: PlayEffects
+            effects: explode
+          - class: AreaOfEffect
+            actions:
+              - class: Damage
+              - class: Velocity
+          - class: Sphere
+            actions:
+              - class: BreakBlock
+  effects:
+        cast:
+        - class: EffectSingle
+          sound: block_lava_pop
+          sound_pitch: 0.3
+          sound_volume: 1.6
+        projectile:
+        - location: origin
+          effectlib:
+            class: Modified
+            iterations: 60
+            parameters:
+              size: "max(1, (t / i) * 3 - 1)"
+            effect:
+              class: AnimatedBall
+              particle: smoke_large
+              x_factor: 1
+              z_factor: 1
+              particles_per_iteration: 3
+        explode:
+        - location: target
+          particle: explosion_huge
+          particle_count: 2
+          sound: entity_generic_explode
+          sound_pitch: 0.3
+          sound_volume: 2
+        - location: target
+          particle: smoke_large
+          particle_count: 64
+          particle_offset: 3
+  parameters:
+    hit_on_miss: true
+    push: 1.5
+    radius: 3.5
+    falling: true
+    falling_probability: 0.6
+    speed: 1
+    direction: 0,0.4,0
+    damage_type: explosion
+    entity_damage: 25
+    player_damage: 12.5
+    undo: 20000
+    undo_speed: 6
+    target_self: true
+    destructible: solid
+    destructible_override: true
+    destructible_durability: 50
+    break_durability: 8
+    durability_max_distance: 6
+    damage_max_distance: 6
+    damage_min_distance: 1.5
+    damage_source_location: hit
+    distance_weight: 0.1
+    cooldown: 12000
+  costs:
+    mana: 100
+
+grenade|2:
+  upgrade_required_casts: 2500
+  parameters:
+    entity_damage: 30
+    player_damage: 15
+    radius: 4
+    break_durability: 7
+  costs:
+    mana: 125
+grenade|3:
+  parameters:
+    entity_damage: 35
+    player_damage: 17.5
+    radius: 4.5
+    break_durability: 8
+  costs:
+    mana: 150

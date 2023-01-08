@@ -1,0 +1,176 @@
+# This is the key name of this spell
+# It must be unique across the server, and is used in configs and commands such as /mage, /wand and /mgive
+# to refer to this spell.
+powerorb:
+  name: Power Orb
+  description: Deploy a power orb, applying various buffs to all players in it's radius
+  icon: beacon
+  upgrade_required_casts: 1500
+  worth: 6000
+  actions:
+    cast:
+      - class: Repeat
+        actions:
+          - class: AreaOfEffect
+            actions:
+              - class: Heal
+              - class: PlayEffects
+                effects: heal
+          - class: Delay
+  effects:
+    cast:
+    - location: origin
+      color_override: color
+      source_location: cast
+      effectlib:
+        class: Circle
+        radius: $radius
+        whole_circle: true
+        particle: redstone
+        particles: 100
+        duration: 10000
+        angular_velocity_y: 0.1
+        update_locations: false
+    - location: origin
+      source_location: cast
+      color_override: color
+      effectlib:
+        class: AnimatedBall
+        particle: redstone
+        particles: 100
+        duration: 10000
+        size: 0.5
+        y_factor: 1
+        y_offset: -0.2
+        update_locations: false
+    heal:
+      - location: targets
+        particle: heart
+        particle_count: 2
+        particle_offset_x: 0.4
+        particle_offset_y: 0.6
+        particle_offset_z: 0.4
+        source_location: body
+  parameters:
+    delay: 1000
+    repeat: 10
+    radius: 8
+    target_type: Player
+    target: self
+    percentage: 0.05
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true
+    cooldown: 300 seconds
+powerorb|2:
+  upgrade_required_casts: 2500
+  actions:
+    cast:
+      - class: Repeat
+        actions:
+          - class: AreaOfEffect
+            actions:
+              - class: Modifier
+                duration: 1000
+                add_modifiers:
+                  - manaregenboost(10%)
+              - class: Heal
+              - class: PlayEffects
+                effects: heal
+          - class: Delay
+  effects:
+    cast:
+    - location: origin
+      color_override: color
+      source_location: cast
+      effectlib:
+        class: Circle
+        radius: $radius
+        whole_circle: true
+        particle: redstone
+        particles: 150
+        duration: 15000
+        angular_velocity_y: 0.1
+        update_locations: false
+    - location: origin
+      source_location: cast
+      color_override: color
+      effectlib:
+        class: AnimatedBall
+        particle: redstone
+        particles: 100
+        duration: 15000
+        size: 0.5
+        y_factor: 1
+        y_offset: -0.2
+        update_locations: false
+  parameters:
+    delay: 1000
+    repeat: 15
+    radius: 10
+    target_type: Player
+    target: self
+    percentage: 0.1
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true
+    cooldown: 180 seconds
+powerorb|3:
+  actions:
+    cast:
+      - class: Repeat
+        actions:
+          - class: AreaOfEffect
+            actions:
+              - class: Modifier
+                duration: 1000
+                add_modifiers:
+                  - spgain(20%)
+                  - manaregenboost(15%)
+              - class: Heal
+              - class: PlayEffects
+                effects: heal
+          - class: Delay
+  effects:
+    cast:
+    - location: origin
+      color_override: color
+      source_location: cast
+      effectlib:
+        class: Circle
+        radius: $radius
+        whole_circle: true
+        particle: redstone
+        particles: 200
+        duration: 20000
+        angular_velocity_y: 0.1
+        update_locations: false
+    - location: origin
+      source_location: cast
+      color_override: color
+      effectlib:
+        class: AnimatedBall
+        particle: redstone
+        particles: 100
+        duration: 20000
+        size: 0.5
+        y_factor: 1
+        y_offset: -0.2
+        update_locations: false
+  parameters:
+    delay: 1000
+    repeat: 20
+    radius: 12
+    target_type: Player
+    target: self
+    percentage: 0.15
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true
+    cooldown: 120 seconds

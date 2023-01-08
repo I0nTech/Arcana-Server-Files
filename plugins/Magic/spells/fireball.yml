@@ -1,0 +1,108 @@
+fireballspell:
+  inherit: false
+  name: Fireball
+  description: Cast an explosive fireball.
+  icon: fire_charge
+  icon_disabled: fire_charge
+  category: explosive
+  upgrade_required_casts: 1500
+  worth: 5000
+  actions:
+    cast:
+    - class: EntityProjectile
+      actions:
+        - class: AreaOfEffect
+          actions:
+            - class: Ignite
+            - class: Damage
+            - class: Velocity
+        - class: Sphere
+          actions:
+            - class: BreakBlock
+  effects:
+    cast:
+    - location: origin
+      sound: entity_ghast_shoot
+      sound_pitch: 0.4
+    tick:
+    - location: target
+      particle: campfire_cosy_smoke
+      particle_offset: 0.16
+      particle_count: 1
+    - location: target
+      particle: lava
+      particle_offset: 0.08
+      particle_count: 2
+    - location: target
+      particle: smoke_normal
+      particle_offset: 0.3
+      particle_count: 3
+    hit:
+      - location: target
+        particle: explosion_huge
+        particle_count: 1
+        sound: entity_generic_explode
+        sound_pitch: 0.3
+        sound_volume: 2
+      - location: target
+        particle: lava
+        particle_count: 16
+        particle_offset: 2.3
+  parameters:
+    type: fireball
+    hit_on_miss: true
+    push: 1.2
+    range: 32
+    radius: 3
+    velocity: 40
+    falling: true
+    speed: 1
+    direction: 0,0.6,0
+    damage_type: fire
+    entity_damage: 20
+    player_damage: 10
+    duration: 3000
+    undo: 20000
+    undo_speed: 8
+    target_self_timeout: 100
+    destructible: solid
+    destructible_override: true
+    destructible_durability: 50
+    break_durability: 10
+    durability_max_distance: 4
+    damage_max_distance: 3
+    damage_min_distance: 1
+    damage_source_location: hit
+    distance_weight: 0.1
+    cooldown: 10000
+  costs:
+    mana: 100
+fireballspell|2:
+  upgrade_required_casts: 2500
+  parameters:
+    push: 1.4
+    range: 48
+    duration: 4000
+    entity_damage: 25
+    player_damage: 12.5
+    destructible_durability: 100
+    break_durability: 20
+    damage_max_distance: 3.5
+    damage_min_distance: 1.25
+    cooldown: 9000
+  costs:
+    mana: 125
+fireballspell|3:
+  parameters:
+    push: 1.6
+    range: 64
+    duration: 5000
+    entity_damage: 30
+    player_damage: 15
+    destructible_durability: 200
+    break_durability: 30
+    damage_max_distance: 4
+    damage_min_distance: 1.5
+    cooldown: 8000
+  costs:
+    mana: 150

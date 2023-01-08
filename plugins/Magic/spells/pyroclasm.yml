@@ -1,0 +1,77 @@
+pyroclasm:
+  name: Pyroclasm
+  description: Erupt in flames, igniting everything around you
+  icon: flint_and_steel
+  inherit: false
+  actions:
+    cast:
+    - class: ChangeContext
+      target_caster: true
+      actions:
+        - class: Modifier
+          duration: 8000
+          add_modifiers:
+            - boost
+    - class: Multiply
+      actions:
+        - class: Delay
+        - class: Retarget
+          actions:
+          - class: PlayEffects
+            effects: fire
+          - class: CustomProjectile
+            actions:
+              - class: AreaOfEffect
+                actions:
+                  - class: Damage
+                  - class: Ignite
+              - class: Cover
+                actions:
+                - class: Recurse
+                  actions:
+                  - class: Burn
+  effects:
+    fire:
+    - location: origin
+      sound: entity_firework_rocket_large_blast
+      sound_pitch: 0.4
+      sound_volume: 1
+    tick:
+      - location: target
+        particle: flame
+        particle_count: 1
+        particle_offset: 0.15
+    hit:
+      - location: target
+        source_location: hit
+        particle: lava
+        particle_count: 3
+        particle_offset: 0.2
+        sound: item_firecharge_use
+        sound_volume: 0.5
+        sound_pitch: 0.1
+  parameters:
+    range: 64
+    lifetime: 1000
+    velocity: rand(10,15)
+    gravity: rand(0.025,0.05)
+    spread: 360
+    multiply: 30
+    delay: rand(0,800)
+    damage_type: fire
+    entity_damage: 2
+    player_damage: 1
+    no_damage_ticks: 0
+    damage_min_distance: 1.5
+    damage_max_distance: 6
+    destructible: destructible_replace,destructible
+    duration: 5000
+    radius: 2
+    depth: 2
+    limit: 4
+    checkered: true
+    undo: 5000
+    undo_speed: 3
+    cooldown: 5000
+  costs:
+    mana: 60

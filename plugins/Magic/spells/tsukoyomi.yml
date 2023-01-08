@@ -1,0 +1,30 @@
+tsukoyomi:
+  name: Endless Abyss
+  icon: stick
+  actions:
+    cast:
+    - class: Parallel
+      actions:
+      - class: Sphere
+        actions:
+          - class: ModifyBlock
+      - class: Delay
+        delay: 5000
+      - class: Sphere
+        radius: 30
+        actions:
+          - class: ModifyBlock
+            brush: black_concrete
+  parameters:
+    target: self
+    target_self: true
+    thickness: 2
+    radius: 32
+    unbreakable: true
+    undo: 1200000
+    undo_speed: 128
+    type: sphere
+    brush: black_stained_glass
+    transparent: transparent_to_construction
+    destructible: destructible_replace
+    check_destructible: true

@@ -1,0 +1,90 @@
+magictrident:
+    name: Magic Sapphire
+    description: Throw a powerful magic trident
+    icon: trident
+    icon_disabled: ghast_tear
+    category: combat
+    worth: 8000
+    actions:
+        cast:
+          - class: Projectile
+            actions:
+              - class: Damage
+                player_damage: 12
+                entity_damage: 24
+                damage_type: projectile
+              - class: Delay
+                delay: 1000
+                actions:
+              - class: AreaOfEffect
+                radius: 4
+                y_radius: 10
+                requires_target: true
+                actions:
+                - class: Damage
+                  damage_type: lightning
+                  damage: 8
+                - class: Lightning
+                  effect_only: true
+                - class: Velocity
+                  direction: 0,0.2,0
+    effects:
+        cast:
+        - class: EffectSingle
+          sound: item_trident_throw
+        tick:
+        - particle: crit
+          location: target
+        - particle: crit_magic
+          color: false
+          particle_count: 1
+          particle_offset_x: 0.3
+          particle_offset_y: 0.3
+          particle_offset_z: 0.3
+          location: target
+        hit:
+        - class: EffectSingle
+          sound: item_trident_hit
+          effectlib:
+             class: Helix
+             particle: nautilus
+             iterations: 2
+             period: 400
+             radius: 4
+             particles: 100
+             curve: 3
+             type: instant
+             strands: 3
+        - class: EffectSingle
+          effectlib:
+            class: Helix
+            particle: warped_spore
+            iterations: 3
+            particles: 10
+            strands: 6
+            period: 10
+            curve: 6
+            radius: 4
+        -  class: EffectSingle
+           location: target
+           particle: explosion_normal
+           particle_count: 10
+           particle_offset_x: 0.3
+           particle_offset_y: 0.3
+           particle_offset_z: 0.3
+           sound: item_trident_thunder
+           sound_volume: 0.5
+           particle_data: 0.1
+    parameters:
+        target_self: false
+        source_location: cast
+        orient: true
+        projectile: ThrownTrident
+        pickup: disallowed
+        undo: 1
+        speed: 5
+        cooldown: 15000
+        spread: 0
+        set_target: true
+    costs:
+        mana: 200

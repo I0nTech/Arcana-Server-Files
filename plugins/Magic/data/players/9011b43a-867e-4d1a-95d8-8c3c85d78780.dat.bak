@@ -1,0 +1,136 @@
+id: 9011b43a-867e-4d1a-95d8-8c3c85d78780
+name: Mightykloon
+created: 1650664909442
+updated: 1651707087446
+last_cast: 1650665016435
+cooldown_expiration: 0
+last_death_location: -312.30000001192093,52.0,217.54737250134244,world,15.896711,32.76671
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  33fb1329-03dd-4662-b8fa-b106f5b826b3: []
+spells:
+  arcanebarrage:
+    cast_count: 1
+    last_cast: 1650664995148
+    last_earn: 0
+    cooldown_expiration: 1650665005148
+    charges: 0.0
+  arcanemeteor:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Arcane
+          Meteor"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"Basic
+          Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [Admin] Mightykloon"}'
+        - '{"italic":false,"extra":[{"color":"white","text":"Encoded: "},{"color":"#FF2288","text":"1
+          "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":" ✵ Spell Damage: 4.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":" ❃ "},{"color":"gray","text":"Mana
+          Maximum: "},{"color":"aqua","text":"100"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":" ❃ "},{"color":"gray","text":"Mana
+          Recharge: "},{"color":"aqua","text":"15"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          "},{"color":"white","text":"Attunement "},{"color":"gray","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          "},{"color":"white","text":"Conduit "},{"color":"gray","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          "},{"color":"white","text":"Engram "},{"color":"gray","text":"Slot"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Arcane"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Meteor"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 1.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: b3a990db-6daa-4482-a046-4263c2db6218
+            operation: 0
+          GENERIC_ATTACK_DAMAGE:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 3.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 796b41dc-6675-43a1-b48f-41005a61b828
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/y2PQU7DMBREf6CoJrDjAizYWkpUu3aWHIATIBT92D+tVce2HNOK22Milk+jeZppARp4NBnngpOnpoHdhSg1LexuGCyDO2fhbdC9PhopuBBGcjFb5MMgBy5Vp2i2ZiLUDB7iLVCGl893u7jw9frhTufyc/ExBgZsC8fN1vX9JA7I9VERF7avNmk11+ZgtLRKK93VQqEleSwE7YSrM+PfnnvYXymvLgYA2DN4RlPclcY1kfeVssFACxWKuf56+g5rwfX8/6yizTGlDeEX3SBuTPoAAAA=
+    wand:
+      version: 7
+      owner: '[Admin] Mightykloon'
+      template: basic_wand
+      owner_id: 9011b43a-867e-4d1a-95d8-8c3c85d78780
+      id: 98186c54-44c5-4fda-9959-5707efdcbea8
+      active_spell: arcanemeteor
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1650664909522
+    given_items:
+      iron_ingot:
+        amount: 64
+        last_give: 1650664909522
+      bread:
+        amount: 32
+        last_give: 1650664909521
+classes:
+  mage:
+    mana_timestamp: 1651707087397
+    mana: 100.0
+    spells:
+    - arcanemeteor
+transient_modifiers: {}
+active_class: mage
+health: 20.0

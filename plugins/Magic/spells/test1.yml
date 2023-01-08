@@ -1,0 +1,24 @@
+test1:
+  name: Effect test 1
+  description: Test of VFX
+  icon: acacia_door{18001}
+  actions:
+    cast:
+    - class: CustomProjectile
+  effects:
+    projectile:
+    - location: origin
+      effectlib:
+        class: EquationEffect
+        particle: REDSTONE
+        color: E224E8
+        particles: 20
+        x_equation: sin(0.05t)
+        y_equation: tan(0.05t)
+        z_equation: cos(0.05t)
+        pitch_offset: 90
+        orient_pitch: true
+        cycle: true
+  parameters:
+    range: 32
+    target: other

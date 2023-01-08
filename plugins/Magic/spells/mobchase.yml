@@ -1,0 +1,32 @@
+mobchase:
+  name: Chase
+  icon: stick
+  actions:
+    cast:
+    - class: Cast
+      spell: blink|2
+    - class: PotionEffect
+    - class: ChangeContext
+      actions:
+      - class: Repeat
+        actions:
+        - class: EntityAnimation
+          animation: swing_main_hand
+        - class: Cast
+          spell: wound
+        - class: Delay
+  # Parameters change how a spell behaves, these may be base spell parameters or
+  # specific to the set of actions you are using.
+  parameters:
+    target: self
+    velocity: 100
+    range: 3
+    delay: 500
+    repeat: 4
+    damage: 10
+    potion_effects:
+      speed: 1
+      absorption: 1
+    duration: 2000
+    cooldown_free: true
+    cost_free: true

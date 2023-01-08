@@ -1,0 +1,17 @@
+basemob:
+  type: zombie
+  show_name: true
+#  permissions: magic.team.allmobs
+#  targeting:
+#    radius: 32
+#    denied_permissions: magic.team.allmobs
+  transformable: false
+  default_drops: false
+  drops_require_player_killer: true
+  can_pickup_items: false
+  cast_requires_target: true
+  drop_xp: 0
+  aggro: true
+  angry: true
+  interval: 2000
+

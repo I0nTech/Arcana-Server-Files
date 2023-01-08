@@ -1,0 +1,591 @@
+id: aa940820-910b-46c9-9498-0d148a25ba28
+name: Qwestioneble
+created: 1642932325454
+updated: 1651954009858
+last_cast: 1651850126691
+cooldown_expiration: 0
+last_death_location: 88.5531872349703,64.9375,7.1708547507897,Spawn,-111.889175,25.623793
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  325ed72c-10be-4fb2-aeaa-c612d56e7b18: []
+  783f2316-86a3-4ef1-85e4-87ca74b58504: []
+  bd07beea-5923-481b-9b1a-7f8e7c3ffa78: []
+  33fb1329-03dd-4662-b8fa-b106f5b826b3: []
+spells:
+  blind:
+    cast_count: 4
+    last_cast: 1644961120275
+    last_earn: 1644688900083
+    cooldown_expiration: 1644961140275
+    charges: 0.0
+  phase_reverseside:
+    cast_count: 1
+    last_cast: 1643753400864
+    last_earn: 0
+    cooldown_expiration: 1643753415864
+    charges: 0.0
+  warphole:
+    cast_count: 0
+    last_cast: 1645024051779
+    last_earn: 0
+    cooldown_expiration: 1645024052779
+    charges: 0.0
+  arrow:
+    cast_count: 0
+    last_cast: 1644688905449
+    last_earn: 0
+    cooldown_expiration: 1644688907449
+    charges: 0.0
+  shatterbolt:
+    cast_count: 1
+    last_cast: 1644962255498
+    last_earn: 0
+    cooldown_expiration: 1644962262498
+    charges: 0.0
+  channel:
+    cast_count: 2
+    last_cast: 1644962255498
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mute30m:
+    cast_count: 1
+    last_cast: 1645127949041
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  meteor|2:
+    cast_count: 7
+    last_cast: 1645050259889
+    last_earn: 1645050143613
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 35
+    last_cast: 1650722611160
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.5939999999999999
+  fling:
+    cast_count: 2
+    last_cast: 1644962288649
+    last_earn: 0
+    cooldown_expiration: 1644962293649
+    charges: 0.0
+  assassin:
+    cast_count: 6
+    last_cast: 1651850156741
+    last_earn: 0
+    cooldown_expiration: 1651850336741
+    charges: 0.0
+  auralburst:
+    cast_count: 4
+    last_cast: 1644962532420
+    last_earn: 0
+    cooldown_expiration: 1644962540420
+    charges: 0.0
+  spellshop:
+    cast_count: 0
+    last_cast: 1643743618376
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  frost:
+    cast_count: 1
+    last_cast: 1644688998863
+    last_earn: 0
+    cooldown_expiration: 1644689008863
+    charges: 0.0
+  mendwounds:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  missile:
+    cast_count: 30
+    last_cast: 1643731452526
+    last_earn: 1643731452506
+    cooldown_expiration: 1643731453526
+    charges: 0.0
+  leap:
+    cast_count: 44
+    last_cast: 1644961558095
+    last_earn: 0
+    cooldown_expiration: 1644961563095
+    enabled: false
+    charges: 0.0
+  progressmenu:
+    cast_count: 5
+    last_cast: 1643743617668
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  recall|5:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabeam:
+    cast_count: 12
+    last_cast: 1650722344664
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  criticalplayer:
+    cast_count: 19
+    last_cast: 1645023860829
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  inflictcrit:
+    cast_count: 6
+    last_cast: 1650722345890
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  flameblade:
+    cast_count: 1
+    last_cast: 1645126948488
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanehail:
+    cast_count: 76
+    last_cast: 1645050359074
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanebarrage:
+    cast_count: 7
+    last_cast: 1650722428228
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 1
+    last_cast: 1642934733754
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  levitate|6:
+    cast_count: 23
+    last_cast: 1644959761460
+    last_earn: 0
+    cooldown_expiration: 1644959761960
+    charges: 0.0
+  anchor:
+    cast_count: 16
+    last_cast: 1650722344663
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  sword_netherite:
+    cast_count: 1
+    last_cast: 1645123373418
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 7
+    last_cast: 1643664123211
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  airslash:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  locator:
+    cast_count: 0
+    last_cast: 1645129097600
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  missile|2:
+    cast_count: 50
+    last_cast: 1644960330394
+    last_earn: 1644960329256
+    cooldown_expiration: 1644960331394
+    charges: 0.0
+  missile|3:
+    cast_count: 3
+    last_cast: 1644960649556
+    last_earn: 1644960649556
+    cooldown_expiration: 1644960650556
+    charges: 0.0
+wands:
+  voidwalker_staff:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Aural
+          Burst"},{"italic":false,"color":"white","text":" ("},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DF00FF","text":"Voidwalker''s
+          Lament"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"light_purple","text":"☪ Abyssal Power"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [OWNER] IonTech"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"9 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"350"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"40"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Aural"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Burst"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 281bacc3-374b-4758-89e0-20bd8adf6a93
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        - HIDE_DYE
+        internal: H4sIAAAAAAAA/01STY/TMBCdrtttmnZ3gRUIIUAcuEZKP3f7A/bABSSExAGhauJMGmtdO3KcRPvvGbuLIKd54/i9N8+TAoxgJh1WHgtNoxGMH4maUQrjAU0pYNzgkYC/BCZ2MOTg5te3n18fvv/+9MWaHyRrAW9q6wt0B2V6Mt66p4O0nfF8aZTAhSrh84ZWuNvmVVasV3m2kfk+KyTts1wSruV2tZabuwQWKL3q6dA2pDWk2DnURedan8JN7P1TEJCc0GBhdZCZC5g6qjTJgK4FpCc8KhnvcuOlgMlRqzLM8ZrrAbVuuX4v4MpRQ+jJnTUBPoj/hblxKWA21MrpQZmS8UeW1tQrz7fChALmbY2eKZ7NTARcauyMrBm8Cwl2bSjHsYwign+RNbqY7MXfWQhPDF+xXoQao/5VEJBRoOWcz/NNKq3Mkespk5ac2dnouNWRgy0s0Ek0dCJP1nHrNswVWzWq4GHBOpWVXftse8asbX0O4S1bQuWYLTqfhkDJlAO/ahmCSwRcS6e8kqgbjU8UFFJekcTTiRuczIveqpKDfiR3aD1WFR/G/TmEfaDl5v5uV2C2xV2VbbbFPsN8iVlxj+scV/vdEpHftOeZlTXBAq/pvDPMxGGfF5Vh6WzTRAh/ANZLC8HJAgAA
+    wand:
+      owner: '[OWNER] IonTech'
+      page: 0
+      hotbar_inventory_count: 1
+      id: 4e2a650f-b320-4c09-bce9-0cea3c523c47
+      active_spell: auralburst
+      spell_inventory:
+        manabolt: 11
+        reflect: 14
+        magicburst: 17
+        walls: 28
+        glide: 21
+        repeaterspell: 29
+        auralburst: 6
+        whirlwind: 30
+        shatterbolt: 5
+        levitate: 1
+        launch: 26
+        push: 4
+        manabeam: 18
+        charge: 2
+        pull: 3
+        manablast: 13
+        scattershot: 14
+        fling: 7
+        dive: 6
+        slam: 5
+        arcanemeteor: 19
+        arcanehail: 12
+        focusbolt: 9
+        airslash: 7
+        shell: 24
+        mendwounds: 8
+        criticalplayer: 10
+      version: 7
+      owner_id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
+      template: voidwalker_staff
+  muteaxe30m:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"Mute
+          Axe 30m"}],"text":""}'
+        lore:
+        - '{"text":"Cut off their Lips."}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [CM] Qwestioneble"}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"Mute for Thirty Minutes"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"blue","text":"Range: "},{"color":"gold","text":"3
+          "},{"color":"blue","text":"meters"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_green","text":"Earns up to "},{"color":"gold","text":"8
+          "},{"color":"aqua","text":"SP"}],"text":""}'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        - HIDE_DYE
+        internal: H4sIAAAAAAAA/y2OsQrCMBRFX7DSUif/wME1kMYoyezs4Cwir+aBxTYNTWr8fIN0vJx74NQADDazCwm9x7YnxqB4E3lWQ5HQ2QrWY3I0wfZ2vtx310QhdqOjfK2g+qNHZ2GPaJTQUnDTiJar09Nwo4zmwjZKozy2KPUKyg9NIesAUGY90uB7jAT1MEfCLx3EsPREDK+lJ087jUse/ACz524MsgAAAA==
+    wand:
+      owner: '[CM] Qwestioneble'
+      template: muteaxe30m
+      version: 7
+      owner_id: aa940820-910b-46c9-9498-0d148a25ba28
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Mana
+          Beam"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"Basic
+          Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [Admin] Qwestioneble"}'
+        - '{"italic":false,"extra":[{"color":"white","text":"Encoded: "},{"color":"#FF2288","text":"4
+          "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":" ✵ Spell Damage: 4.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":" ❃ "},{"color":"gray","text":"Mana
+          Maximum: "},{"color":"aqua","text":"100"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":" ❃ "},{"color":"gray","text":"Mana
+          Recharge: "},{"color":"aqua","text":"15"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          "},{"color":"white","text":"Attunement "},{"color":"gray","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          "},{"color":"white","text":"Conduit "},{"color":"gray","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          "},{"color":"white","text":"Engram "},{"color":"gray","text":"Slot"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Mana"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Beam"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        custom-model-data: 1
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 1.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: c5d455db-1393-4e57-ac3b-5746b49b4b9e
+            operation: 0
+          GENERIC_ATTACK_DAMAGE:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 3.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 7c3780f6-a730-4991-9bbb-3af5731e4397
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0WQwU6EMBCGh+2aRYzxYjx78NoESlnL0UfwbDZkoLNCLC0p3SW+vV1W4/FLZr5//skAErjtPB4DtoaSBLZfRFOSwXZBq1O4cYslD48fb3oc7OH5faE5DM5SnGbw1LvQom8GeyYbnP9uOneyAaI1hc2g4QWPQstKCq7KvORSF8SxKvdcCSG1eu1KVGUGD/NExvxrGNyj7zCmoPf4SVG4YZCOaLElHCPCHzpziWMMsutGj4O55EMKaaBxMhgIshbnoWuuldK1UrNeh7XMlch5XeQtl/uu5rWsFc91IRWKqkWhGOzO5OfYOWp3UXx3snPAuf99WETt3TStCD+N8jPAUQEAAA==
+    wand:
+      owner: '[Admin] Qwestioneble'
+      hotbar_inventory_count: 1
+      id: af2d4542-8303-4d1e-a536-8224d87c3a83
+      spell_inventory:
+        arcanebarrage: 2
+        manabeam: 0
+        manabolt: 3
+        arcanehail: 1
+      version: 7
+      owner_id: aa940820-910b-46c9-9498-0d148a25ba28
+      template: basic_wand
+  wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Recall"},{"italic":false,"color":"white","text":"
+          ("},{"italic":false,"color":"dark_aqua","text":"Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"gray","text":"Beginner "},{"color":"white","text":"Magic
+          Wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [CM] Qwestioneble"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"9 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 0.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"50"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"5"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Recall"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        custom-model-data: 18001
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: dfc76432-6762-4e6b-aaac-14fb2dd4107c
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0VRwU7jMBCdkpRmu0iIy573gPZEpCQNiX3mzGHPK1SN7YlqYezINo1WiH9nWpDwyU/vad68N1uAFfzQEaeMytFqBeUz0bzaQrmgNxWsw+Ipws2/h8en338XStkGTywt4NchZIVxb/2RfA7x/16HV5+BR1ZwYQ3ctn2np6mRtVYG614i1bIVQ73rpelGI0RjxgquUGd7pH2ayTm4jKTRuQpKq4OHKzbUz2+taJr2fQvXZ9G3ZQGlI5zZc13AeoohnfyLAqoF43wIjk7rFLB5sSnZMypZiDGGhf8XLEQbk8N0YHjJlHLWGzi9CqpML7PDTJ9t8JgjxcQFMLth+tzN/pQUUfaN6BrO16i6H7SsZS9F3Zi2F9jdK+wEJ6VpIp25Jxci/BnkeN+1Qik5iLud6sZJtS2qSdzJYZRS7sad6Ts+0M9XnzKv+HUihiaGeT5D+ACNFtPzwwEAAA==
+    wand:
+      owner: '[CM] Qwestioneble'
+      hotbar_inventory_count: 1
+      id: 142cff09-cbda-49ae-9186-349d27d880d7
+      active_spell: recall
+      icon: stick{18001}
+      spell_inventory:
+        frost: 3
+        leap: 5
+        warphole: 1
+        arrow: 2
+        missile: 4
+        airslash: 6
+        blind: 0
+      owner_id: aa940820-910b-46c9-9498-0d148a25ba28
+      version: 7
+      template: wand
+      effect_color: 6975218bb968,3b27fb11abf8,967999373d42
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 173.0
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1642932325552
+    given_items:
+      bread:
+        amount: 16
+        last_give: 1642932325549
+      rogueboots:
+        amount: 1
+        last_give: 1642932325550
+      basic_wand:
+        amount: 1
+        last_give: 1642932325549
+      roguehelmet:
+        amount: 1
+        last_give: 1642932325552
+      roguechestplate:
+        amount: 1
+        last_give: 1642932325551
+      rogueleggings:
+        amount: 1
+        last_give: 1642932325551
+classes:
+  caster:
+    mana_max: 50
+    mana_regeneration: 5
+    mana_timestamp: 1645137834950
+    mana: 50.0
+    spell_levels:
+      missile: 3
+      recall: 5
+    spells:
+    - blind
+    - warphole
+    - arrow
+    - frost
+    - recall
+    - missile
+    - leap
+    - airslash
+    - locator
+  mage:
+    effect_color: 73d5b61a223d,1ec37149430e,1a14fae67672
+    mana_timestamp: 1651954009843
+    mana: 100.0
+    spells:
+    - manabeam
+    - arcanehail
+    - arcanebarrage
+    - manabolt
+  arcanamage:
+    spells:
+    - arcanehail
+    - criticalplayer
+    - auralburst
+    - focusbolt
+    - shatterbolt
+    - mendwounds
+    - manabolt
+    - scattershot
+    - fling
+    mana: 301.71994
+    mana_timestamp: 1644962784147
+transient_modifiers: {}
+active_class: mage
+health: 20.0

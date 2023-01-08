@@ -1,0 +1,55 @@
+# This is the key name of this spell
+# It must be unique across the server, and is used in configs and commands such as /mage, /wand and /mgive
+# to refer to this spell.
+firecircle:
+  name: Fire Circle
+  passive: true
+  triggers:
+    - trigger: sneak
+  actions:
+    cast:
+    - class: Delay
+    - class: AreaOfEffect
+      actions:
+        - class: Damage
+        - class: Ignite
+        - class: Velocity
+        - class: PlayEffects
+          effects: fire
+  effects:
+    cast:
+      - location: origin
+        source_location: feet
+        effectlib:
+          class: Modified
+          duration: $warmup
+          parameters:
+            radius: '(t/i) * 6 + 0.1'
+          effect:
+            class: Helix
+            iterations: 5
+            curve: 1
+            particles: 5
+            strands: 15
+            relative_offset: 0,0.1,0
+            particle: flame
+            update_locations: false
+    fire:
+      - location: targets
+        particle: lava
+        particle_count: 4
+        particle_offset: 0.2
+  parameters:
+    warmup: 200
+    y_radius: 3
+    duration: 10000
+    damage_type: fire
+    entity_damage: 10
+    player_damage: 5
+    target: self
+    target_self: false
+    no_damage_ticks: 0
+    radius: 6
+    direction: 0,0.3,0
+    push: 0.5
+    cooldown: 60000

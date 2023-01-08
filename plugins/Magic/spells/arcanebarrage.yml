@@ -1,0 +1,109 @@
+arcanebarrage:
+  name: Arcane Barrage
+  description: Launch a precision barrage of arcane spears dealing 20x80% Attack Damage.
+  icon: prismarine_shard{18001}
+  actions:
+    cast:
+    - class: CustomProjectile
+      ignore_hit_entities: true
+      hit_on_miss: true
+      target: block
+      range: 30
+      velocity: 1000
+      tick_effects: tick2
+      actions:
+        - class: ChangeContext
+          source_location: hit
+          actions:
+            - class: Multiply
+              multiply: 40
+              actions:
+                  - class: CustomProjectile
+                    ignore_blocks: true
+                    ignore_hit_entities: true
+                    hit_on_miss: true
+                    target: none
+                    spread: 180
+                    range: 30
+                    velocity: 1000
+                    tick_effects: tick2
+                    actions:
+                      - class: ChangeContext
+                        source_location: hit
+                        random_target_offset: 3,3,3
+                        actions:
+                          - class: Delay
+                            delay: rand(0,1000)
+                          - class: PlayEffects
+                            effects: summon
+                          - class: Delay
+                            delay: $delay
+                          - class: CustomProjectile
+                            tick_effects: tick
+                            velocity: 80
+                            range: 100
+                            reverse: true
+
+
+  effects:
+    summon:
+      - class: EffectSingle
+        location: target
+        effectlib:
+           class: Modified
+           duration: $delay
+           parameters:
+             radius: "(t/i) * 2 + 0.1"
+           effect:
+             class: Vortex
+             particle_count: 1
+             grow: 0
+             particle: crit_magic
+             update_locations: false
+             update_directions: false
+             particle_data: 0
+      - sound: entity_illusioner_cast_spell
+        sound_pitch: 0.1
+        sound_volume: 0.8
+        delay: 0
+      - sound: entity_illusioner_cast_spell
+        sound_pitch: 0.6
+        sound_volume: 0.4
+        delay: 100
+      - sound: entity_illusioner_cast_spell
+        sound_pitch: 1.2
+        sound_volume: 0.2
+        delay: 200
+    fire:
+      - sound: item_trident_return
+        sound_pitch: -1
+        sound_volume: 0.5
+        color_override: color
+    tick:
+      - location: target
+        particle: spell_witch
+        particle_offset: 0
+        particle_count: 1
+    tick2:
+    hit_block:
+      - location: target
+        particle: spell_witch
+        speed: 1
+        particle_data: 0.2
+        particle_offset: 0.1
+        offset: 0,0.5,0
+        particle_count: 6
+      - sound: item_trident_hit
+        sound_pitch: 1
+        sound_volume: 0.4
+        location: target
+    hit_entity:
+      - sound: entity_player_attack_knockback
+        sound_pitch: 1
+        sound_volume: 0.4
+        location: target
+  parameters:
+    delay: 1000
+    range: 10
+  costs:
+    mana: 0

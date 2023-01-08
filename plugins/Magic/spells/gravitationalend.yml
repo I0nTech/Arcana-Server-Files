@@ -1,0 +1,114 @@
+gravitationalend:
+  creator: MrSlushie96
+  creator_id: 67f4346f-7203-4a3e-a439-ff92c2eda6c7
+  name: Gravitational End
+  description: Channel Your Inner Energy, creating a personal gravitational pull at your feed and explode. Fly temporarily for 15 seconds.
+  icon: wither_skeleton_skull{18001}
+  worth: 5000
+  earns_sp: 1
+  upgrade_required_casts: 250
+  actions:
+    cast:
+    - class: ChangeContext
+      target_self: true
+      target_caster: true
+      actions:
+      - class: Cast
+        spell: channel
+        spell_parameters:
+          warmup: 1500
+    - class: Delay
+      delay: 1500
+    - class: Asynchronous
+      actions:
+      - class: Velocity
+        direction: 0,1,0
+        additive: true
+        speed: 1
+      - class: Delay
+        delay: 100
+      - class: Fly
+        duration: 15000
+      - class: FallProtection
+        duration: 20000
+    - class: Asynchronous
+      actions:
+      - class: AreaOfEffect
+        actions:
+        - class: Damage
+        - class: PotionEffect
+          duration: 10000
+          add_effects:
+            slow: 10
+            jump: -10
+        - class: Velocity
+          speed: 1
+          push: -1
+          direction: 0, -5,0
+          additive: true
+      - class: Sphere
+        actions:
+        - class: BreakBlock
+          direction: 0,0.2,0
+      - class: Explosion
+        break_blocks: false
+      - class: Stop
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: block_anvil_break
+      sound_volume: 1
+      effectlib:
+        class: Sphere
+        iterations: 5
+        particle_offset_x: 1
+        particle_offset_y: 1
+        particle_offset_z: 1
+        particle_count: 2
+        speed: 2
+        particle: redstone
+        color: "#000000"
+  parameters:
+    target: self
+    target_caster: true
+    target_location: feet
+    direction: 0,-4,0
+    radius: 8
+    gravity: 50
+    break_durability: 10
+    destructible_durability: 100
+    durability_max_distance: $radius
+    damage_max_distance: $radius
+    cooldown: 100000
+    destructible: solid
+    destructible_override: true
+    select_self: false
+    undo: 10000
+    undo_speed: 50
+    damage: rand(10,25)
+  costs:
+    mana: 50
+gravitationalend|2:
+  parameters:
+    damage: rand(15,30)
+    cooldown: 90000
+  costs:
+    mana: 60
+gravitationalend|3:
+  parameters:
+    damage: rand(25,40)
+    cooldown: 80000
+  costs:
+    mana: 70
+gravitationalend|4:
+  parameters:
+    damage: rand(35,50)
+    cooldown: 70000
+  costs:
+    mana: 80
+gravitationalend|5:
+  parameters:
+    damage: rand(40,60)
+    cooldown: 60000
+  costs:
+    mana: 90

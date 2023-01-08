@@ -1,0 +1,40 @@
+flameblade:
+  creator: MrSlushie96
+  creator_id: 67f4346f-7203-4a3e-a439-ff92c2eda6c7
+  name: Flame Blade
+  description: Get a Flaming Netherite Sword for 30 seconds
+  icon: netherite_chestplate
+  actions:
+    cast:
+    - class: Equip
+      item: netherite_sword{18011}
+      slot: main_hand
+      enchantments:
+        damage_all: 5
+        fire_aspect: 10
+        damage_arthropods: 5
+        damage_undead: 5
+    - class: PotionEffect
+      potion_effects:
+        speed: 3
+        jump: 2
+      duration: 30000
+  effects:
+    cast:
+    - location: target
+      effectlib:
+        class: Flame
+        particle: small_flame
+        particles: 5
+        iterations: 5
+        color: red
+        duration: 500
+        offset: 0,-1.5,0
+        radius: 3.5
+    - sound: magic.zap
+  parameters:
+    target: self
+    undo: 30000
+    duration: 30000
+  costs:
+    mana: 10

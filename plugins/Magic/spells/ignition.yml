@@ -1,0 +1,102 @@
+ignition:
+  name: Ignition
+  description: Trigger spontaneous combustion, crits on burning targets
+  icon: fire_coral
+  category: fire
+  upgrade_required_casts: 1500
+  worth: 4000
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+        - class: CheckEntity
+          on_fire: true
+          actions:
+          - class: ChangeContext
+            target_caster: true
+            actions:
+              - class: Cast
+                spell: inflictcrit
+                cooldown_free: true
+                cost_free: true
+        - class: AreaOfEffect
+          actions:
+          - class: Ignite
+          - class: Damage
+        - class: Sphere
+          radius: 1.5
+          ignore_result: true
+          actions:
+          - class: Cover
+            actions:
+            - class: Burn
+  effects:
+    cast:
+    - location: origin
+      sound: block_campfire_crackle
+      sound_volume: 5
+    - location: origin
+      sound: entity_firework_rocket_large_blast
+      sound_pitch: 0.2
+      sound_volume: 1.5
+    tick:
+    - location: target
+      particle_count: 1
+      particle_offset: 0.01
+      particle: flame
+    hit:
+    - location: target
+      particle: explosion_large
+      particle_count: 2
+      particle_offset: 0.2
+    - location: target
+      particle: lava
+      particle_offset: 0.2
+      particle_count: 8
+    - location: target
+      particle: flame
+      particle_offset: 0.6
+      particle_count: 8
+    - location: target
+      sound: entity_generic_burn
+      sound_pitch: 0.6
+      sound_volume: 1
+    - location: target
+      sound: entity_generic_explode
+      sound_pitch: 0.3
+  parameters:
+    range: 32
+    radius: 2.5
+    damage_type: fire
+    entity_damage: 12
+    player_damage: 6
+    duration: 6000
+    undo: 6000
+    undo_speed: 4
+    damage_min_distance: 1.5
+    damage_max_distance: 3.5
+    cooldown: 5000
+    no_damage_ticks: 0
+    velocity_transform:
+      x: 100
+      y: rand(-8,8)
+      z: rand(-8,8)
+  costs:
+    mana: 90
+ignition|2:
+  upgrade_required_casts: 2500
+  parameters:
+    entity_damage: 14
+    player_damage: 7
+    radius: 3
+    duration: 7000
+  costs:
+    mana: 110
+ignition|3:
+  parameters:
+    entity_damage: 16
+    player_damage: 8
+    radius: 3.5
+    duration: 8000
+  costs:
+    mana: 130

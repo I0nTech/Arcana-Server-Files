@@ -1,0 +1,110 @@
+flashbang:
+    inherit: false
+    name: Flashbang
+    description: Throw a volitile orb of light
+    icon: shroomlight
+    category: explosive
+    upgrade_required_casts: 1500
+    worth: 3000
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: AreaOfEffect
+            actions:
+            - class: PotionEffect
+            - class: Damage
+    effects:
+        cast:
+        -  sound: item.trident.throw
+           sound_pitch: 0.8
+        tick:
+        - location: target
+          particle_count: 2
+          particle: end_rod
+          particle_offset_x: 0.05
+          particle_offset_y: 0.05
+          particle_offset_z: 0.05
+        hit:
+        -  particle: flash
+           particle_count: 3
+           location: target
+        -  class: EffectSingle
+           location: target
+           color: CC9933
+           firework: burst
+           sound: entity_generic_explode
+           effectlib:
+             class: SphereEffect
+             iterations: 70
+             particle: redstone
+             color: 0A2A0A
+             radius: 2
+             particles: 20
+        -  location: target
+           effectlib:
+             class: Modified
+             duration: $duration
+             parameters:
+               radius: $radius/$time
+             effect:
+               class: SphereEffect
+               particle: smoke_normal
+               particles: 5
+               particle_offset_x: 0.5
+               particle_offset_y: 0.5
+               particle_offset_z: 0.5
+        reflect:
+        - sound: item.trident.throw
+          sound_pitch: 1.3
+          sound_volume: 0.5
+          location: target
+        - class: EffectSingle
+          location: target
+          particle: fireworks_spark
+          particle_count: 3
+          particle_offset_x: 0.1
+          particle_offset_y: 0.1
+          particle_offset_z: 0.1
+          sound: magic.bonk
+          sound_volume: 0.3
+    parameters:
+      hitbox: true
+      hitbox_size: 1
+      undo: 10000
+      duration: 2000
+      potion_effects:
+        blindness: 5
+        night_vision: 5
+        confusion: 137
+      radius: 2
+      target_self_timeout: 2000
+      cooldown: 10000
+      speed: 1
+      velocity: 20
+      reflective: solid
+      reflect_count: 2
+      range: 20
+      lifetime: 2000
+      gravity: 0.06
+      hit_on_miss: true
+      damage_type: explosion
+      entity_damage: 8
+      player_damage: 4
+    costs:
+        mana: 50
+flashbang|2:
+  upgrade_required_casts: 2500
+  parameters:
+    entity_damage: 10
+    player_damage: 5
+    duration: 3000
+  costs:
+    mana: 70
+flashbang|3:
+  parameters:
+    entity_damage: 12
+    player_damage: 6
+    duration: 4000
+  costs:
+    mana: 90

@@ -1,0 +1,807 @@
+id: 1277d71f-3380-46e2-98d9-0c9fe4055f00
+name: 56ms
+created: 1643850671300
+updated: 1643852961262
+last_cast: 1643852954087
+cooldown_expiration: 0
+last_death_location: 3713.525092146927,64.0,-3162.1556298888704,world,-170.92113,4.7671432
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  325ed72c-10be-4fb2-aeaa-c612d56e7b18: []
+spells:
+  criticalplayer:
+    cast_count: 6
+    last_cast: 1643852949943
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shatterbolt:
+    cast_count: 2
+    last_cast: 1643852938636
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  inflictcrit:
+    cast_count: 1
+    last_cast: 1643850703599
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 12
+    last_cast: 1643852938635
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  healbolt:
+    cast_count: 0
+    last_cast: 1643852939453
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 3
+    last_cast: 1643852956340
+    last_earn: 1643852928586
+    cooldown_expiration: 1643852962340
+    charges: 0.0
+  manabolt:
+    cast_count: 4
+    last_cast: 1643851029416
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 2.0
+  fling:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanehail:
+    cast_count: 1
+    last_cast: 1643851018990
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  auralburst:
+    cast_count: 1
+    last_cast: 1643851021069
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 10
+    last_cast: 1643852453336
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  repeaterspell|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 1
+    last_cast: 1643852945842
+    last_earn: 0
+    cooldown_expiration: 1643853005842
+    charges: 0.0
+  anchor:
+    cast_count: 1
+    last_cast: 1643851021068
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 42
+    last_cast: 1643852949742
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Scattershot"},{"italic":false,"color":"white","text":"
+          ("},{"italic":false,"color":"dark_aqua","text":"Basic Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [OWNER] 56ms"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"10 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Scattershot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 5c12b778-4b4a-45fd-9398-9184719535c9
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/1WRMW/bMBCFT6Fcy4rRbl2yZMgqgJYt2/oBXVMgS4YgEE7UqSZCkwJJ2QiK/vee1ABFOPEejt87vssBElgpj33E1lCSQPpGNCQ5pFe0XQYLd7XkYf3y8/nxx9PrfbU/BwHfTy626BttL2Sj8++NcqONwLQMbnQHDySPldr2VSFVWxe7sqKiVuW+2JRlTyi7za5m+hpV1BdqwkDGwG1QGCP5wPQMUq2chXWIWr39LqWU5Z8cvs2d/30FZGe02Dozmd8JyHH0aNrRh0lYTIJXaOmE2rCQCkhbx1w+4pMhCzcCVr1TY/jAJVPHae74UATzzmS7K/+2CywsBXxVXvOMaAaD7xwVwErAojfa/uL7F7ZZXthCz6bLDLI50WYKaVMeDt1h0xfb7VEWuz2VRX3sas6s7mknq6qXkh9EOjM7EuQtBq2aaTO8ttvRhog84L/Fcdl5NwxzCX8BRdl2UNkBAAA=
+    wand:
+      owner: '[OWNER] 56ms'
+      hotbar_inventory_count: 1
+      id: e085c3f5-0cb9-425e-9c26-122fea0d149d
+      active_spell: scattershot
+      icon: stick{20002}
+      spell_inventory:
+        manabolt: 27
+        auralburst: 5
+        arcanehail: 4
+        boon: 0
+        scattershot: 2
+        focusbolt: 1
+        shatterbolt: 3
+        mendwounds: 7
+        criticalplayer: 9
+        fling: 6
+      version: 7
+      owner_id: 1277d71f-3380-46e2-98d9-0c9fe4055f00
+      template: basic_wand
+inventory:
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: STICK
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Scattershot"},{"italic":false,"color":"white","text":"
+      ("},{"italic":false,"color":"dark_aqua","text":"Basic Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+    lore:
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+      simple wand"}],"text":""}'
+    - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [OWNER] 56ms"}'
+    - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+      "},{"color":"#FF2288","text":"10 "},{"color":"white","text":"Spells"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+      "},{"color":"aqua","text":"150"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+      Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gold","text":"Scattershot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+      "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to modify
+      this"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+    custom-model-data: 20002
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 10.0
+        name: Equipment Modifier
+        slot: HAND
+        uuid: 5c12b778-4b4a-45fd-9398-9184719535c9
+        operation: 0
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    - HIDE_DESTROYS
+    - HIDE_PLACED_ON
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/1VRsW7bMBR8CuVaVox265IlQ1YBtGzZ1gd0TYEsGYJAeKKeaiI0KZCUjaDov/dJDVCEE9/heHe8lwMksFIe+4itoSSB9I1oSHJIr2i7DBbuasnD+uXn8+OPp9f7an8OAr6fXGzRN9peyEbn3xvlRhuB1TK40R08kDxWattXhVRtXezKiopalftiU5Y9oew2u5rV16iivlATBjIGboPCGMkHVs8g1cpZWIeo1dvvUkpZ/snh28z87ysgO6PF1pnJ/E5A2jp+xUdAjl6hpRNqw3M6AaNH044+TOSF+GTIyI2AVe/UGD7kkolxmhkfiGCRM9nuyr/tAgNLAV+V15wRzWDwnasCWAlY9EbbX3z/wkGWF7bQc6xlBtncaDOVtCkPh+6w6Yvt9iiL3Z7Koj52NXdW97STVdVLyQ8inVk7EuQtBq2aaTO8ttvRhogc8N/ieOy8G4Z5hL+HQfUo2QEAAA==
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: IRON_AXE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"bold":true,"italic":true,"color":"aqua","text":"\"Double or Nothing\""}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Halberd"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"color":"yellow","text":"Requires Lvl 10"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_aqua","text":"🗡 "},{"color":"gray","text":"Attack
+      Damage: "},{"color":"green","text":"+1.4"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_aqua","text":"🗡 "},{"color":"gray","text":"Attack
+      Speed: "},{"color":"green","text":"+1.1"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"blue","text":"⚔ "},{"color":"gray","text":"Critical
+      Chance: "},{"color":"green","text":"+51%"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"blue","text":"🗡 "},{"color":"gray","text":"Critical
+      Damage: "},{"color":"green","text":"+844.6%"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"blue","text":"⚔ "},{"color":"green","text":"+12%
+      "},{"color":"white","text":"PvP Damage"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"green","text":"\u003e"},{"color":"dark_gray","text":"|
+      "},{"color":"gray","text":"Attack "},{"color":"dark_gray","text":"|"},{"color":"yellow","text":"|"},{"color":"dark_gray","text":"|
+      "},{"bold":true,"color":"gray","text":"Slow"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_aqua","text":"\u003e"},{"color":"dark_gray","text":"|"},{"color":"gray","text":"
+      Duration"},{"color":"dark_gray","text":": "},{"color":"white","text":"4"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_aqua","text":"\u003e"},{"color":"dark_gray","text":"|"},{"color":"gray","text":"
+      Cooldown"},{"color":"dark_gray","text":": "},{"color":"white","text":"30"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_aqua","text":"\u003e"},{"color":"dark_gray","text":"|"},{"color":"gray","text":"
+      Amplifier"},{"color":"dark_gray","text":": "},{"color":"white","text":"2"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"Red
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"Uncolored
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"Green
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"Blue
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":true,"color":"gray","text":"A very powerful yet hard"}'
+    - '{"italic":true,"color":"gray","text":"to manipulate weapon..."}'
+    - '{"italic":true,"color":"gray","text":"Be very careful!"}'
+    enchants:
+      DURABILITY: 5
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    Damage: 10
+    internal: H4sIAAAAAAAA/61UTW8SQRieeEBiomk1ajyo48RuTGwQWloqB8uyO4FNFxZ3lzYNJTjA0JIuO7gsJQ1FDyYePOvFk148eDMxMTHRGP0F/oVeTRNvHrw4y263rbY3OQDv+zzzvJ8zZwCIgEuFgqaYuGDURNMUpaWaLBbEHF78dfXH1/mnuxFw8W+CUcJYXvz5++Pj94W3UTAR4t53TZHBpKyVsyquaXqtqJl5pZiLggshK8dJhqkVsQEyQ4Q7XXfbsJjbQ+kK0mkTTaOy3WAWc8b/cw6lNv/NWn2KqtymnZ7LbOrRq6MoOBvqFsUCBleEumAJDMmsX7coZA4sMnejba+jKJgMqbgo5cWiaYCJCurbdYeSTU6Bc6gaAZdDlo7vlxUdyzUVL2M1cxOMPxFwLWRIumIqkqjyenRlCddK2grWM8+aX8rdgRM5VHNpuRT0NXPLl4mC80f7Zq6WMDidF9Us1uUoOJfnmqsHmZaGyHCJi9Jo38WbouUMlznbvBVD9E9xtW/veq7DD1TWjhS5hqpo5LXuYHBiVlEVcxU84DpKkx8xVG2F60uk5xZYk3KPP3vu43a71aYOH8AQNfsOcdvMRulkLD6NGoxZTTbg5mzcs0mna43JKD0Ti49GvL3XT2yel7WEM8oj+/uLJ5cPT1bVdAzKFSSkBCbCLepswy4bUKfVt+A2deEGcbxV8WCXwQ6x292+RVwKB5R0mR2LxQI0S/3TDeJQfvgGqkYPrbe8yldIkcbhTt3h4Rp5YtXpWNsToDp92G87tAfVLQsm4r4bCrN7rz7tfXgNhZTouqSxCWXSIes0DQVyOxFLHs8xupQ2A0piTLm7+/I5xyWn7bYbxILSBrEbvspcYsqnhCoh61CshWQyNj+1n5Uvx+VnpqDQKm2VAmpQDLknLOwcpMMNge74LsHi93Hgp+2xhBSUgzkLCzxSK3kEk4Kh+9hs/Ago7m+Aj84E0VO7bz7zSOPLz9382nPLewWOAcPX4GTK+JE4GfbejgM02IX/vEjgD2136G5NBQAA
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: GOLDEN_HELMET
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"italic":false,"color":"white","text":"Golden Helmet"}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Armor"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_gray","text":"🛡 "},{"color":"gray","text":"Armor:
+      "},{"color":"green","text":"+2"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"#00ffff","text":"❃ "},{"color":"gray","text":"Mana
+      Boost: "},{"color":"green","text":"+15%"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"#00ffff","text":"✵ "},{"color":"green","text":"+10%
+      "},{"color":"white","text":"Magic Resistance"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"#00ffff","text":"✵ "},{"color":"green","text":"+10%
+      "},{"color":"white","text":"Magic Damage"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"color":"white","text":"Perfected, Unbreakable"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"Tier: "},{"bold":true,"color":"#f90000","text":"M"},{"bold":true,"color":"#ea0202","text":"A"},{"bold":true,"color":"#db0303","text":"S"},{"bold":true,"color":"#cc0505","text":"T"},{"bold":true,"color":"#bd0707","text":"E"},{"bold":true,"color":"#ae0909","text":"R"},{"bold":true,"color":"#9e0a0a","text":"P"},{"bold":true,"color":"#8f0c0c","text":"I"},{"bold":true,"color":"#800e0e","text":"E"},{"bold":true,"color":"#710f0f","text":"C"},{"bold":true,"color":"#621111","text":"E"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/61Tz4vTQBQe91CKsIs/EE+yYXB7sUi6sr+KSGMzpoEmKUkqW0II03ZaitNmSXJwKXvy31DQizl78CR6qP/J3vd/8GW60+2iqxfD65f0fd+8982b5DZCJXTXshzTJ5YXWdox/Gyt8RSJq4zurbgCI7/XIWjztWab7bYWaa7luGV057rG1NFDg9jENZtRi7Qt4keG09aJHe2X0eZKa2sWlDJiPmQzpcX4lGVldH9FG1DJ8x2beKg5x2R6kp16PM5SXA9w0D0ZJ3TIQly94TmsYoNN0yyesWJFeFZCW6vSwnYDyS1ebZ/YzZZm+x7aCMIy2mp5vtu7Sjbm2MtohutYpqClY3hZnJxCjzn+rU7080uaJbAgCPFZ4WF7bdIGjEfX4E4il+jdpm86duPx0lQJPfijUvLlNV7vwSRB0XZcsjEJcGWgJdM4AW8QSuXw4uP3i2+flMqBSNeVCn2yWzDPW+RYVV/B9eL8wzvgLTqjyss4TjMQjUBW29u5rLKuff+1KFFTd0Bk0fFkoLgsnaQZnQ3Yv7U6ndIxW5atHJx//gGNxeGCYnV8kCvO+r9JIBb5qMOSERtkbFhVurN+wugb2ucrK/6EwXAW+VtQLvKjRa6uBbcEwRY5Ff93JXJNEMNF3hepZxK5J4iBCEjtSeS+IPpiEaQOJHIiCCraqNICIHcFcSQJKpF3BHEoHKuyEyA3JbG0zyRe9oBuNZEaSeRNQeyLTdXW4gZXOFz/lH2TuOjWta+7eBvRo+Avcw/RL/gu07V9BAAA
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: GOLDEN_CHESTPLATE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"italic":false,"color":"white","text":"Golden Chestplate"}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Armor"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_gray","text":"🛡 "},{"color":"gray","text":"Armor:
+      "},{"color":"green","text":"+5"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"#00ffff","text":"❃ "},{"color":"gray","text":"Mana
+      Boost: "},{"color":"green","text":"+15%"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"#00ffff","text":"✵ "},{"color":"green","text":"+10%
+      "},{"color":"white","text":"Magic Resistance"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"#00ffff","text":"✵ "},{"color":"green","text":"+10%
+      "},{"color":"white","text":"Magic Damage"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"color":"white","text":"Perfected, Unbreakable"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"Tier: "},{"bold":true,"color":"#f90000","text":"M"},{"bold":true,"color":"#ea0202","text":"A"},{"bold":true,"color":"#db0303","text":"S"},{"bold":true,"color":"#cc0505","text":"T"},{"bold":true,"color":"#bd0707","text":"E"},{"bold":true,"color":"#ae0909","text":"R"},{"bold":true,"color":"#9e0a0a","text":"P"},{"bold":true,"color":"#8f0c0c","text":"I"},{"bold":true,"color":"#800e0e","text":"E"},{"bold":true,"color":"#710f0f","text":"C"},{"bold":true,"color":"#621111","text":"E"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/61TTW/TQBBdeogspFaUjxOqsCyaCxFyQGnaCKEYZ3EsxXZkO6hRZFmbZBMiNnFk+0AV9cTfAAku5MyBE4JD+Ce99z8w3nTdVFC4YI2f7XlvZ55n7ZsIFdCuZTmmjy0vtLRjOG2t/hjxQ0K3cy7D0O+2Mdp+pdlmq6WFmms5roRuXdWYDXTfwDZ2TT3Um9jz2y3Nx6HhtBrYDg8ktJ3rbc3CaNeI2JDOZP01TdI5IymV0J1cYkBFz3ds7CF9oeDpPD3xWJQmSq2n9DrzcUyGNFBK19wHJcWg0ySNZjRbEZwW0E5emtuv3xWvejkGbOtNzfY9tNULJLTT9Hy3e5msLxQvJalSU0QKWjqGl0bxCfRYKL/VCX9+SdIYFvQC5TTz8GBj4gaMqaHBFYcubnR033Ts+sO1qQK690el4KUNvtGFaYKi5bh4a9JTigMtnkYxeIOQi4fnH7+ff/skF6s8XZOL5FElY5418bGqvoTj+dmHd8BbZEbkF1GUpCAagaxc2b+osql9/zUrUVb3QWSR8WQguzSZJCmZDei/tQ0yJWO6Llusnn3+AY355oIi3z7IZXv93yQQq+WoTeMRHaR0WJI7s35MyRvSZ7kVf0JhOKvlW1CulkerpboRzOIEXS0Jf34ikGmcGK6WfZ56KpB5nBjwgFRFIPM50eeLIFUVyDAnCG+jCguAzOXEkSCIQNbmxCF3rIpOgMwUxNo+FXjRA7qVeWokkOmcOOAvVd6Ia1wpwebv7JvYRTeu/OHZ14j2en+Ze4B+AXvGFsqFBAAA
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: GOLDEN_LEGGINGS
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"italic":false,"color":"white","text":"Golden Leggings"}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Armor"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_gray","text":"🛡 "},{"color":"gray","text":"Armor:
+      "},{"color":"green","text":"+3"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"#00ffff","text":"❃ "},{"color":"gray","text":"Mana
+      Boost: "},{"color":"green","text":"+15%"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"#00ffff","text":"✵ "},{"color":"green","text":"+10%
+      "},{"color":"white","text":"Magic Resistance"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"#00ffff","text":"✵ "},{"color":"green","text":"+10%
+      "},{"color":"white","text":"Magic Damage"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"color":"white","text":"Perfected, Unbreakable"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"Tier: "},{"bold":true,"color":"#f90000","text":"M"},{"bold":true,"color":"#ea0202","text":"A"},{"bold":true,"color":"#db0303","text":"S"},{"bold":true,"color":"#cc0505","text":"T"},{"bold":true,"color":"#bd0707","text":"E"},{"bold":true,"color":"#ae0909","text":"R"},{"bold":true,"color":"#9e0a0a","text":"P"},{"bold":true,"color":"#8f0c0c","text":"I"},{"bold":true,"color":"#800e0e","text":"E"},{"bold":true,"color":"#710f0f","text":"C"},{"bold":true,"color":"#621111","text":"E"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/61TTW/TQBBdeogspJYvceCAsFY0FyLkULVpI4Ri4sWxFNuR7aBWkWVtko0V4cSV7QNV1BN/AyS4kDMHTggO4Z/03v/AeNN1XUHhgjV+tue9nXmetW8iVEF3TNM2PGK6gakewmmpraeIHxK6W3A5Bt5Rj6DN16pldLtqoDqm7Ujo9lWNoaEHOrGIY7SDLtF1w9LdQLe7GrGCPQltFmpLNQm6pcfRmM3lLgvD6TxMJXSvEOhQzfVsi7iovcBkdpyduFGcpbg5wIP+cZjQMfNx7Zp7v4Z1NkuzeM7yFf5pBW0Vpbn1liRe83IExGp3VMtz0cbAl9BWx/Wco8tka4HdjGa4iUUKWtq6m8XJCfRY4N/qBD+/pFkCCwY+Ps09PCpNW4cRaSpcSeAQrd/2DNtqPV6bqqD7f1QKXirx2hHMMh+37ZCN6QBXR2oyixPwBiFX988/fj//9kmuNni6KVfpk52ced4hh4ryCo4XZx/eAW/SOZVfxnGagWgCsvru9kWVsvb917xEXdkGkUnD6Uh2WDpNMzofsX9rNTqjIVuXrTbOPv+AxnxzQVFsH+Tyvf5vEojVctJjyYSNMjauyf35MGH0DR1GhRVvymA4q+VbUK6WB6ulUorI5ARbLSl/fiYwUjkxXi2HPLUjMHI5MeIBqV2BkceJIV8EqYbAiHCC8jaKsAAYOZw4EAQVGPU4sc8dK6ITYGQIYm2fCbzoAd3qPDURGLU5scdfql6Ka1xhv/wzewZx0I0r/3f+NaKHg7/M3Ue/AKFzb9iBBAAA
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: GOLDEN_BOOTS
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"italic":false,"color":"white","text":"Golden Boots"}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Armor"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_gray","text":"🛡 "},{"color":"gray","text":"Armor:
+      "},{"color":"green","text":"+3"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"#00ffff","text":"❃ "},{"color":"gray","text":"Mana
+      Boost: "},{"color":"green","text":"+15%"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"#00ffff","text":"✵ "},{"color":"green","text":"+10%
+      "},{"color":"white","text":"Magic Resistance"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"#00ffff","text":"✵ "},{"color":"green","text":"+10%
+      "},{"color":"white","text":"Magic Damage"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"color":"white","text":"Perfected, Unbreakable"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"Tier: "},{"bold":true,"color":"#f90000","text":"M"},{"bold":true,"color":"#ea0202","text":"A"},{"bold":true,"color":"#db0303","text":"S"},{"bold":true,"color":"#cc0505","text":"T"},{"bold":true,"color":"#bd0707","text":"E"},{"bold":true,"color":"#ae0909","text":"R"},{"bold":true,"color":"#9e0a0a","text":"P"},{"bold":true,"color":"#8f0c0c","text":"I"},{"bold":true,"color":"#800e0e","text":"E"},{"bold":true,"color":"#710f0f","text":"C"},{"bold":true,"color":"#621111","text":"E"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/61TTW/TQBBdeogsRCs+BLcKy6K5ECGHqk0bIRQ3XhxLsR3ZDmpkWdYm2UQRTlzZPlBFPfE3QIILPnPghOBg/knv/Q+MN103FRQuWJNnZ97bmbez9m2EKuieYVi6iw0nMJRj+JlK6xlil4Dul1yBgTvoYbT5WjH1blcJFNuwbAHdva7RVfRIwya29XZwZFmuE2hWV8VmsC+gzVJqKgZGd7QoHNOFeBRFaSKgByWrQR3HtUzsoPZSwvOT9NQJQSM1Pcnrn0xjMqa+VLvh2a9JGp0nabSgxQr/rIK2ytLMdEvgG7zaPDbbHcV0HbTh+QLa6jiuPbhKtpaSk5JUako8BS0tzUmj+BR6LKXf6gQ/vyRpDAs8XzorPDxem7MGw1EVuOPAxmq/7eqW2XqyMlVBD/+o5LywxqsDGCQoupaNN2aeVB0p8TyKwRuEWD24+Pj94tsnsdpg6aZYJU93C+ZFBx/L8iu4Xp5/eAe8QRakOIckBdEEZPW9ncsq69r3X4sSdXkHRAaZzkaiTZNZkpLFiP5bq5I5mdJV2Wrj/PMPaMwOFxTl8UGuOOv/JoHIs0mPxhM6Sum4JvYXw5iSN2QYllbcGYXh5NlbUObZYZ7JaxEajKB5Rtj/5xxDhRHjPBuy1C7H0GHEiAWk9jiGLiOGbBGkGhxDzAjC2sjcAmBoM+KQE4Rj2GPEAXMs806Aoc6JlX3K8bIHdKuz1IRj2GbEPttUfS1ucCX561+yq2Mb3br2cRdvI9r2/jJ3H/0CxYDwlHsEAAA=
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: NETHERITE_SHOVEL
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Repeater"},{"italic":false,"color":"white","text":"
+      ("},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DF00FF","text":"Voidwalker''s
+      Lament"},{"italic":false,"color":"white","text":")"}],"text":""}'
+    lore:
+    - '{"italic":false,"extra":[{"color":"light_purple","text":"☪ Abyssal Power"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+      "},{"color":"#FF2288","text":"26 "},{"color":"white","text":"Spells"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"white","text":" "},{"color":"gray","text":"Cooldown
+      Reduction: "},{"color":"green","text":"+"},{"color":"green","text":"40%"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gold","text":"Repeater"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+      "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to modify
+      this"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 10.0
+        name: Equipment Modifier
+        slot: HAND
+        uuid: 6e11bb3e-c2b2-4af3-99c2-f59a89b8d1f7
+        operation: 0
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    - HIDE_DESTROYS
+    - HIDE_PLACED_ON
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/y3MSwqAMAwFwFcU6mfjDSXaiMV+Qlr1+oq4nM0MgEG/Km2VlsDGoD2YxQxob0qugb1Yi88JgO3QVY4SqDKmK3t3UzhYZ1Ef+X3GM5VKZf+nl06zyEc8VTElSWoAAAA=
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: FEATHER
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: LEATHER_LEGGINGS
+  meta:
+    ==: ItemMeta
+    meta-type: LEATHER_ARMOR
+    display-name: '{"italic":false,"color":"white","text":"Leather Leggings"}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Armor"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_gray","text":"🛡 "},{"color":"gray","text":"Armor:
+      "},{"color":"green","text":"+2"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"white","text":"🌊 "},{"color":"gray","text":"Movement
+      Speed: "},{"color":"green","text":"+0.6"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"white","text":"🌊 "},{"color":"gray","text":"Dodge
+      Frequency: "},{"color":"green","text":"+20%"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"white","text":"🌊 "},{"color":"gray","text":"Dodge
+      Chance: "},{"color":"green","text":"+10%"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"color":"white","text":"Perfected, Unbreakable"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"Tier: "},{"bold":true,"color":"#f90000","text":"M"},{"bold":true,"color":"#ea0202","text":"A"},{"bold":true,"color":"#db0303","text":"S"},{"bold":true,"color":"#cc0505","text":"T"},{"bold":true,"color":"#bd0707","text":"E"},{"bold":true,"color":"#ae0909","text":"R"},{"bold":true,"color":"#9e0a0a","text":"P"},{"bold":true,"color":"#8f0c0c","text":"I"},{"bold":true,"color":"#800e0e","text":"E"},{"bold":true,"color":"#710f0f","text":"C"},{"bold":true,"color":"#621111","text":"E"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/61UTYvTQBge91CCsMuqiCAsxEF7sUi7arvbiw3JmAbyUZJ0lxJCSNtpdzVNahplS6k/wKt/YL2Ys2erh/hPvPcPeHI6dWJ3XT0ZXh4m7/O8H5N5J9cB4MBtTTMUG2mWJ3V0QVNETzVMtHXswGJPiEdRDEuQGF88WJ5/WX7+wBdr1F3ni/7DfcoMlueL5eIdYbToDR7hMOGtMcZ9Kik/ql4SSVF/iPnnMX71Goe96TpR+cGVKvHED3uYSipUQqxY+/7xK1Gg0TiZkhCnPR7Gfh+7xGcFUfLfJMSydNDC8QD3Etwv8e2wG2P/pd8NMGvFPsXkU2TpGVFm6WGWljcs0CiBs9Sn7/sMA4ES/SztUtdjhoFFiR414nrKMLAp0aVBxFVjGCBK+LRMmbVAMDApccgIn2HQosQB7bjMKhEMFEas28cMf9Ug1SrUNWAYiJSo0k1VNuwvXUGXAzfzgVuhZ3daCGwfCbqiqoInmJphcmD3okaRwF0Z6chcTSeSZUWXLbIQ7CYyvSoHtnM5mWAEdlXsJyc45lU8HJ6GwwkHbuUKmeSzbENHFhBnkJ7+6rgnsO7AfAbI0V69dktQxqNJEoV4FeHOC2AnT02bb4D1U9i8WYYkI88UbNJ44z7j7+S8ZhwhDem2Z7UQkp6dvU8WL97+4MCNXIF0sSnotgW2HLcA7l3KLBqGKhnHumciqS3aiqE3nqyrcGCnadlm53eCxgxaiZ/AOmQuskFDtpIonpIdzeAfNb1vnyZJTAIcF87d+ebnthVkgmsXTmD19wB7zj9ujgt+AvKp12d5BAAA
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: LEATHER_BOOTS
+  meta:
+    ==: ItemMeta
+    meta-type: LEATHER_ARMOR
+    display-name: '{"italic":false,"color":"white","text":"Leather Boots"}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Armor"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_gray","text":"🛡 "},{"color":"gray","text":"Armor:
+      "},{"color":"green","text":"+1"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"white","text":"🌊 "},{"color":"gray","text":"Movement
+      Speed: "},{"color":"green","text":"+0.6"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"white","text":"🌊 "},{"color":"gray","text":"Dodge
+      Frequency: "},{"color":"green","text":"+20%"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"white","text":"🌊 "},{"color":"gray","text":"Dodge
+      Chance: "},{"color":"green","text":"+10%"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"color":"white","text":"Perfected, Unbreakable"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"Tier: "},{"bold":true,"color":"#f90000","text":"M"},{"bold":true,"color":"#ea0202","text":"A"},{"bold":true,"color":"#db0303","text":"S"},{"bold":true,"color":"#cc0505","text":"T"},{"bold":true,"color":"#bd0707","text":"E"},{"bold":true,"color":"#ae0909","text":"R"},{"bold":true,"color":"#9e0a0a","text":"P"},{"bold":true,"color":"#8f0c0c","text":"I"},{"bold":true,"color":"#800e0e","text":"E"},{"bold":true,"color":"#710f0f","text":"C"},{"bold":true,"color":"#621111","text":"E"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/61UTW/TMBg2O1QR0iY+hHZCChb0QoXaAe3Wy5olJo3UxFXibqqiKEpbdxukTUkDWlWVH8CVPzAu9MyZwqH8E+6VOHPCdXHoxuBE9OpR8j7P+2G/dq4DIIE7pokNgkzH15qWYhqqX8M22jhyYbatxL0ohjnITM7uLs4/Lz69l7Ml7i7L2eBhgTPdxflsMXvLGDN6TXu0n8jOgNIOl+QfFS+JtKhzTOVnMX35ivbbI67ayT+4UqWeBP02XdXiEmbZ0rcPX5gC9QbJiIW4jcFxHHSox3xOGCX/TcJsPu3Wadyl7YR2cnKj34pp8CJohVS0Qk4p24r59Iwp59O9+TS/ZqHJCTqfBvx7R2CocKIzn7a467HA0OFEmxtzPRUYEk60eBBzlQSGiBMBL5MXLTAMbU7sCSIQGNY5scs7zotKDENDEKv2qcBfNVi1And1BYYqJ4p8UYU1+0tX0JPArfTALdEnzToCm4eKZdRqiq/YJrYlcOOixtDAto4sZLPTeYAxcfwaUkgV2X5RApuplh1flqpGg+SExvJBFCVDCdxOaZ1lcgi2kAPUMeRzXw56CMsuTKfPhnr1u5eDOu0Nk6hPlxHeJAO20tS87f3vgD+Z9TuFNR35tkIMS6/cF/x2ypv4EJnIIr5TR0jbP3uXzJ6/+SGBm6kCWWpVsYgDNlwvA+5dyqxiXNPwkeXbSGuoxMBW5cmqigS2qg6xm78TVMbQSYIElqFwsQVi3UmieMRWNIZ/1PS/fhwmMQtwPTjxJut7TQxkg2sXtn/53wB33X/cGQ/8BGHBY/NzBAAA
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: LEATHER_CHESTPLATE
+  meta:
+    ==: ItemMeta
+    meta-type: LEATHER_ARMOR
+    display-name: '{"italic":false,"color":"white","text":"Leather Chestplate"}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Armor"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_gray","text":"🛡 "},{"color":"gray","text":"Armor:
+      "},{"color":"green","text":"+3"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"white","text":"🌊 "},{"color":"gray","text":"Movement
+      Speed: "},{"color":"green","text":"+0.6"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"white","text":"🌊 "},{"color":"gray","text":"Dodge
+      Frequency: "},{"color":"green","text":"+20%"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"white","text":"🌊 "},{"color":"gray","text":"Dodge
+      Chance: "},{"color":"green","text":"+10%"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"color":"white","text":"Perfected, Unbreakable"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"Tier: "},{"bold":true,"color":"#f90000","text":"M"},{"bold":true,"color":"#ea0202","text":"A"},{"bold":true,"color":"#db0303","text":"S"},{"bold":true,"color":"#cc0505","text":"T"},{"bold":true,"color":"#bd0707","text":"E"},{"bold":true,"color":"#ae0909","text":"R"},{"bold":true,"color":"#9e0a0a","text":"P"},{"bold":true,"color":"#8f0c0c","text":"I"},{"bold":true,"color":"#800e0e","text":"E"},{"bold":true,"color":"#710f0f","text":"C"},{"bold":true,"color":"#621111","text":"E"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/61Uy27TQBQduogspFZQhNhQKYwgGyKUtJC02RDLHhJLfkT2pFUUWZaTTFrAeeAMqFEUPoAtP1A2ZM2awCL8Cfv8ACsmt4xJS2GFdXVk33PuY2bu+DpCCrptWY5BieUFesNWLUMLTMclG0dNnGmrcW8Q4ywWls7sL8++LD9/SGeK4C6lM+HDPWC6y7P5cv5OMNbgDeuxPk97Q8Y6IMk9KlwS6YPOMUs/i9mr16zfHoNqN/fgSpV2EvbbDCR5kAjLFL9//CoUpDfkYxHSrA+P47DDfOHzogH/bxJhi1m3xuIua3PWyabr/VbMwpdhK2KyFfqcia1YzE6FcjE7WMxyaxZZQLDFLITvXYmRCkRnMWuBa09i5AHRBhOuJxIjCkQLgoSrKDEiQIRQJidbEBi5QBxIIpQY1YDYh45zspLAyJDEeftM4q8aoloeXF2JkQZEARaVX7O/dIV9BW0nA7fCgDZqBG0eqrZhmmqgupbjKujGRY2ho7sVYhNXTKdWJR6tmSolgUlUWiVuUFDQZhIgZpigbZOF/ITFYn7YiA+jkDMF3Uo0FZHTo45NPKRNMEzA6shHuNTEyRyI47363c/iCuuN+KDPVhH+NIW2ktSwgLKC4Emt3y5Hr5DAValhV8r3JX8n4S3nkFjEpoFXI0R/evqez1+8/aGgm4mC2FpVtamHNpp+Ct27lFlzHFN3juzAJXpdo4Zjlx+fV1HQVtWjbuN3gvIEezzkuISlSyzQqXh8EI/Fiib4j5rBt08jHouApo+n/nR9w6lBXHTtwhms/iBop/mP2+Ojn4a71UJ9BAAA
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: LEATHER_HELMET
+  meta:
+    ==: ItemMeta
+    meta-type: LEATHER_ARMOR
+    display-name: '{"italic":false,"color":"white","text":"Leather Helmet"}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Armor"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_gray","text":"🛡 "},{"color":"gray","text":"Armor:
+      "},{"color":"green","text":"+1"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"white","text":"🌊 "},{"color":"gray","text":"Movement
+      Speed: "},{"color":"green","text":"+0.6"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"white","text":"🌊 "},{"color":"gray","text":"Dodge
+      Frequency: "},{"color":"green","text":"+20%"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"white","text":"🌊 "},{"color":"gray","text":"Dodge
+      Chance: "},{"color":"green","text":"+10%"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"color":"white","text":"Perfected, Unbreakable"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"Tier: "},{"bold":true,"color":"#f90000","text":"M"},{"bold":true,"color":"#ea0202","text":"A"},{"bold":true,"color":"#db0303","text":"S"},{"bold":true,"color":"#cc0505","text":"T"},{"bold":true,"color":"#bd0707","text":"E"},{"bold":true,"color":"#ae0909","text":"R"},{"bold":true,"color":"#9e0a0a","text":"P"},{"bold":true,"color":"#8f0c0c","text":"I"},{"bold":true,"color":"#800e0e","text":"E"},{"bold":true,"color":"#710f0f","text":"C"},{"bold":true,"color":"#621111","text":"E"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/61UTY/SQBge90AakyV+xOhlkzpRLhIDq8Iul6Vpx9KkH6QddkOapikw7KqFYqlmCcEf4NU/sF7s2bPoAf+JdxLPnhwGp7Lr6snmzZP2fZ73Y+ad6VUABHDLMCwNI8PxlbYpGZrs65aNto5cWOhK8SCKYRFSEwt7y7PPy0/vxUKVuWtiIXhQZkx/eTZfzt9SxohekwEZJqIzIqTHJKWHlQsiJeodE/FpTF6+IsPuhKl2S/cvVcknwbBL1rWYhFqh+u3DF6pAg1EyoSFua3QcBz3iUZ8TRsl/k1BbpP0mifukm5BeUWwNOzEJXgSdkPBW8DNCt2KRnlLlIt1fpKUNCw1GkEUasO9djqHEiN4i7TDXI46hw4guM+p6wjHEjOiwIOqqcgwRIwJWpsRboBjajNjnRMAxbDJij3Vc4pUohhon1u0Tjr9q0Gpl5upzDGVGVNiiyhv2l66gJ4Ab2YFboY/bTQS2DyVT03XJl2zDsgVw7bxGU8AdFZnIpqezgXQDYV9HEm4g268IYDsT0/OLQF4nQXJCYrFBwgFJBHAz41Way8GWiRwgTyGb/GrUY1hzYTZ/OtbL370iVMlgnERDsorwZjmQz1Kzxg++A/bkNm+VpajItyWsmWr9HudvZ7xhHSIDmdh3mggpB6fvkvnzNz8EcD1TIFNuSCZ2wJbr5cDdC5lly9IV68j0baS0ZKxZZv3xuooA8g0H2+3fCepT6CRBAmuQu+gCLdVJonhCVzSFf9T0v34cJzENcD0482abm401ZIMr5/Z/9ecAO+4/bo0HfgJcnJwBdQQAAA==
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: DIAMOND
+  amount: 56
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: ROTTEN_FLESH
+  amount: 6
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: CRAFTING_TABLE
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: BONE
+  amount: 3
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: DIAMOND_CHESTPLATE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"italic":false,"color":"white","text":"Diamond Chestplate"}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Armor"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_gray","text":"🛡 "},{"color":"gray","text":"Armor:
+      "},{"color":"green","text":"+8"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"dark_gray","text":"🛡 "},{"color":"gray","text":"Armor
+      Toughness: "},{"color":"green","text":"+2"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"aqua","text":"⛨ "},{"color":"gray","text":"Reflect
+      Chance: "},{"color":"green","text":"+6.8%"}],"text":""}'
+    - '{"italic":false,"extra":[{"text":" "},{"color":"blue","text":"⚔ "},{"color":"gray","text":"Critical
+      Chance: "},{"color":"green","text":"+3.8%"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ Empty "},{"color":"white","text":"[Upgrade]
+      "},{"color":"gray","text":"Slot"}],"text":""}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"Tier: "},{"bold":true,"color":"#6f7dff","text":"S"},{"bold":true,"color":"#7677ff","text":"P"},{"bold":true,"color":"#7d70ff","text":"E"},{"bold":true,"color":"#846aff","text":"C"},{"bold":true,"color":"#8b63ff","text":"T"},{"bold":true,"color":"#925dff","text":"A"},{"bold":true,"color":"#9956ff","text":"C"},{"bold":true,"color":"#a050ff","text":"U"},{"bold":true,"color":"#a749ff","text":"L"},{"bold":true,"color":"#ae43ff","text":"A"},{"bold":true,"color":"#b53cff","text":"R"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+    internal: H4sIAAAAAAAA/42TTYvTQBiAx0VKELZoRRAUDAFzcRHZdpu2p4ZkSIP5KJOpbCkhpG26W2ibkkRwKf0XnvSiF+NJ8CwqRPAq+BN634u/wOnUjNl1D4YhhPd53o+ZITcAKIG7pmnrGJqOJyPTRh62e1rHgo7TBruHAxWmbN8e7nch2H8mW7phyLssDty86OgquK9BCyJd8ZQOdHDXkDH0VF02bUv1ahzYZwmWbEJQUaf+PFyMeeU0iJPlzE8CDtxmjkZqOtgmcwFpJcD5MjlzZmESC62BMOgtTyJ/HLjCQeHbPRC0YB4n4SLYWu66BMoXt9rm8w3eYgBaSke2sAP2Bm4JPGBxBelYV2SDDIH0p9DbWgpsl2sfvl+Pf5TAHWZ2ZYT6HpKxbmnte+rX4+NfPzlQ7pDE/t/y7ZXgJH4itIQ8RIa3NScJozMy7Ur4ZyLv28c4iUjCwBXW7portFT75AjJQRs2gnuVgSCO5GgeRqQiWbzYOH/z+fzTW16UaLjFi/6jxlWEx+Hzk1NyXjF1Dqkz3Lx+TwQUTGbBKCHX4y9GAeX1x42HVGluXr0kihJNk+nInxWd6s4hS5Q2774Qi94dL07YTZHY9ir/T6EWngZkF1n6IkvrWTrJUilLx/SDrJlDgUSZRNcf0M3BmL6fMAApaGRpjSb5DCg5GFJQZQBT0MzSwyw9KjaXc9CkoH6plE/bHhWb93Ig0f5NBowcBBRUL/UY0jokOmIAXQkEt/izYR0icK0GfgPvgvAM/AMAAA==
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+open_wand: true
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 12.0
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1643850671394
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1643850671394
+      basic_wand:
+        amount: 1
+        last_give: 1643850671394
+classes:
+  arcanamage:
+    spells:
+    - arcanehail
+    - boon
+    - criticalplayer
+    - auralburst
+    - focusbolt
+    - shatterbolt
+    - mendwounds
+    - manabolt
+    - scattershot
+    - fling
+    spell_levels:
+      boon: 2
+    mana: 92.295
+    mana_timestamp: 1643852960943
+transient_modifiers: {}
+active_class: arcanamage
+health: 11.141874313354492

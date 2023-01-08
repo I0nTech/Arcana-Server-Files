@@ -1,0 +1,64 @@
+launch:
+  inherit: false
+  name: Launch
+  description: Launch yourself into the air, then gently float down.
+  category: wind
+  icon: rabbit_foot
+  glide_restricted: true
+  actions:
+    cast:
+    - class: PlayEffects
+      effects: launch
+    - class: Velocity
+      direction: 0,1,0
+    - class: FallProtection
+    - class: PotionEffect
+    - class: Interval
+      actions:
+        - class: CheckTrigger
+          trigger: land
+          actions:
+            - class: Stop
+        - class: CheckTrigger
+          trigger: sneak
+          actions:
+            - class: Stop
+  effects:
+    launch:
+    - location: origin
+      source_location: feet
+      particle: cloud
+      particle_count: 15
+      particle_data: 0.2
+    - class: EffectSingle
+      sound: entity_ender_dragon_flap
+      sound_volume: 1
+      effectlib:
+        class: Trace
+        duration: 2000
+        particle_offset: 1
+        particle_count: 2
+        speed: 1
+        particle: spell
+    land:
+    - sound: block_stone_step
+      sound_pitch: 0.7
+    - class: EffectRing
+      particle: block_crack
+      source_location: feet
+      period: 4
+      particle_count: 10
+      radius: 2
+      particle_offset: 0.4
+  parameters:
+    target: self
+    min_speed: 2
+    max_speed: 2.5
+    cooldown: 10000
+    protection_count: 1
+    duration: 10000
+    remove_on_finish: true
+    add_effects:
+      slow_falling: 0
+  costs:
+    mana: 75

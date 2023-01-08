@@ -1,0 +1,84 @@
+icewall:
+    icon: ice
+    name: Ice Barrier
+    description: Summon a fragile barrier of ice
+    category: ice
+    upgrade_required_casts: 1500
+    worth: 2000
+    actions:
+        cast:
+        - class: Volume
+          orient: true
+          reorient: false
+          actions:
+          - class: ModifyBlock
+          - class: Skip
+            actions:
+            - class: PlayEffects
+              effects: column
+            - class: Delay
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.shield
+           sound_pitch: 0.7
+           sound_volume: 0.5
+        -  class: EffectTrail
+           particle: block_crack
+           material: ice
+           particle_count: 20
+           particle_offset_x: 0.2
+           particle_offset_y: 0.2
+           particle_offset_z: 0.2
+        column:
+        -  location: target
+           particle: block_crack
+           material: ice
+           particle_count: 14
+           particle_offset_x: 0.2
+           particle_offset_y: 5
+           particle_offset_z: 0.2
+           offset: 0,-2,0
+        -  class: EffectSingle
+           sound: block_glass_break
+           sound_pitch: 0.7
+           sound_volume: 0.2
+    parameters:
+        y_size: 4
+        z_size: 0.1
+        x_size: 2
+        orient: true
+        reorient: false
+        orient_pitch_snap: 12
+        skip: 12
+        delay: 5
+        allow_max_range: false
+        range: 8
+        transparent: transparent_to_construction
+        undo: 8000
+        undo_speed: 16
+        cooldown: 6000
+        brush: ice
+        brushcolor: true
+        breakable: 4
+        destructible: destructible_replace
+        volume_type: xzy
+    costs:
+        mana: 60
+icewall|2:
+  upgrade_required_casts: 2500
+  parameters:
+    y_size: 5
+    z_size: 0.1
+    x_size: 3
+    undo: 9000
+  costs:
+    mana: 70
+icewall|3:
+  parameters:
+    y_size: 7
+    z_size: 0.1
+    x_size: 4
+    undo: 10000
+  costs:
+    mana: 80

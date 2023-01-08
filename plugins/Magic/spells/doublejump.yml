@@ -1,0 +1,55 @@
+doublejump:
+  name: Double Jump
+  description: Jump once, jump twice, doesnt work in midair
+  icon: none
+  inherit: base_passive
+  hidden: true
+  triggers:
+    - jump
+  actions:
+    cast:
+    - class: Serial
+      actions:
+        - class: Delay
+          delay: 100
+        - class: ModifyVariable
+          variable: my_y
+          value: location_y
+        - class: Fly
+          duration: 100
+        - class: Delay
+          delay: 100
+        - class: ModifyVariable
+          variable: my_y
+          value: location_y - my_y
+        - class: CheckRequirements
+          actions:
+            - class: PlayEffects
+              effect: poof
+            - class: Feed
+              feed: -2
+            - class: ChangeContext
+              source_use_movement_direction: true
+              orient_pitch: true
+              actions:
+                - class: Velocity
+                  speed: 1
+                  y_offset: -0.3
+          fail:
+            - class: Stop
+  effects:
+    poof:
+    - location: origin
+      source_location: feet
+      effectlib:
+        class: Particle
+        particle: cloud
+        particle_count: 4
+        speed: 0.2
+    - sound: entity_ender_dragon_flap
+      sound_pitch: 5
+  parameters:
+    requirements:
+      - variables:
+        - variable: my_y
+          min: 0.5

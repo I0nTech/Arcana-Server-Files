@@ -1,0 +1,90 @@
+lightblink:
+  name: Flash Step
+  description: Dash forward, leaving a contrail of sonic booms
+  icon: stick
+  actions:
+    cast:
+    - class: ChangeContext
+      target_caster: true
+      source_pitch_offset: -10
+      actions:
+      - class: Velocity
+      - class: FallProtection
+    - class: Delay
+      delay: 20
+    - class: Teleport
+    - class: PlayEffects
+      effects: arrival
+  effects:
+    arrival:
+      - location: origin
+        effectlib:
+          class: Modified
+          duration: 1000
+          parameters:
+            radius: "-(1-t/i)^2 *1.5 + 2"
+            particles: "16 + (t/i) * 32"
+          effect:
+            class: Circle
+            relative_offset: -1,0,0
+            source_location: eyes
+            pitch_offset: 90
+            orientPitch: true
+            whole_circle: true
+            enable_rotation: false
+            particle: redstone
+            color: "#f5f5f5"
+            update_directions: false
+            update_locations: false
+      - location: origin
+        effectlib:
+          class: Modified
+          duration: 1000
+          parameters:
+            radius: "-(1-t/i)^2 *1.5 + 3"
+            particles: "16 + (t/i) * 32"
+          effect:
+            class: Circle
+            relative_offset: -5,0,0
+            source_location: eyes
+            pitch_offset: 90
+            orientPitch: true
+            whole_circle: true
+            enable_rotation: false
+            particle: redstone
+            color: "#f5f5f5"
+            update_directions: false
+            update_locations: false
+      - location: origin
+        effectlib:
+          class: Modified
+          duration: 1000
+          parameters:
+            radius: "-(1-t/i)^2 *1.5 + 4"
+            particles: "16 + (t/i) * 32"
+          effect:
+            class: Circle
+            relative_offset: -9,0,0
+            source_location: eyes
+            pitch_offset: 90
+            orientPitch: true
+            whole_circle: true
+            enable_rotation: false
+            particle: redstone
+            color: "#f5f5f5"
+            update_directions: false
+            update_locations: false
+  parameters:
+    duration: 2000
+    speed: 1
+    additive: true
+    range: 10
+    target: block
+    source_location: eyes
+    allow_max_range: true
+    safe: false
+    keep_velocity: true
+    vertical_range: 4
+    ledge_range: 3
+    prevent_passthrough: nopassthrough
+    allow_passthrough: false

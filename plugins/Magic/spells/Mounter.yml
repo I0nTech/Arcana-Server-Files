@@ -1,0 +1,15 @@
+Mounter:
+  name: Mounter
+  description: AHHHHH
+  icon: ender_eye
+  category: ender
+  actions:
+    cast:
+    - class: EntityProjectile
+      actions:
+        - class: Mount
+  parameters:
+    type: ender_signal
+    bypass_pvp: true
+    velocity: 50
+    gravity: 0.02

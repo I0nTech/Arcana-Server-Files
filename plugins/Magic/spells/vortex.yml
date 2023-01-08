@@ -1,0 +1,77 @@
+vortex:
+  creator: MrSqueeg
+  creator_id: 55441c60-c997-467c-975a-f42f629cce38
+  name: Withering Cloud
+  description: Deal your foe high damage but lose them in a shroud of mist
+  category: arcane
+  icon: soul_lantern{18001}
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+      - class: Sphere
+        radius: 3
+        actions:
+          - class: Damage
+          - class: PotionEffect
+  effects:
+    cast:
+      - sound: entity_wither_ambient
+    tick:
+    - location: target
+      particle: soul
+      effectlib:
+        class: Vortex
+        iterations: 1
+        radius: .7
+        particle: ash
+        particle_count: 2
+    - location: target
+      particle: enchantment_table
+      particle_count: 2
+      particle_offset: .25
+      effectlib:
+        class: Vortex
+        iterations: 3
+        radius: .7
+        particle: crit_magic
+    hit:
+    - location: both
+      sound: entity_generic_explode
+    - location: both
+      sound: block_lava_extinguish
+    - location: target
+      particle: explosion_huge
+      effectlib:
+        class: Sphere
+        radius: 3
+        particle_count: 2
+        duration: 2000
+  parameters:
+    range: 32
+    velocity: 20
+    damage_type: magic
+    damage: attack_damage*1.2
+    duration: 1000
+    cooldown: 5000
+    potion_effects:
+      blindness: 3
+      wither: 3
+  costs:
+    mana: 75
+vortex|2:
+  parameters:
+    damage_type: magic
+    damage: attack_damage*1.6
+    duration: 2500
+    potion_effects:
+      blindness: 4
+      wither: 4
+vortex|3:
+  parameters:
+    damage_type: magic
+    damage: attack_damage*2
+    duration: 4000
+    potion_effects:
+      blindness: 5
+      wither: 5

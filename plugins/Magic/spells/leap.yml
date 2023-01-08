@@ -1,0 +1,48 @@
+# This is the key name of this spell
+# It must be unique across the server, and is used in configs and commands such as /mage, /wand and /mgive
+# to refer to this spell.
+leap:
+    icon: feather{CustomModelData:18001}
+    icon_disabled: feather{CustomModelData:18002}
+    passive: true
+    triggers:
+      - trigger: sneak
+      - trigger: jump
+    actions:
+        cast:
+        - class: CheckBlock
+          allowed: solid
+          source_location: feet
+          direction: down
+          fail:
+            - class: ApplyCooldown
+              clear: true
+          actions:
+          - class: ChangeContext
+            source_pitch_min: -30
+            actions:
+              - class: Velocity
+              - class: FallProtection
+              - class: PlayEffects
+                effects: leap
+    effects:
+        leap:
+        -  class: EffectSingle
+           sound: entity_ender_dragon_flap
+           sound_volume: 1
+           effectlib:
+             class: Trace
+             iterations: 30
+             particle_offset_x: 1
+             particle_offset_y: 1
+             particle_offset_z: 1
+             particle_count: 2
+             speed: 2
+             particle: spell
+    parameters:
+        quiet: true
+        duration: 4000
+        target: self
+        speed: 2
+        cooldown: 5000
+        source_use_movement_direction: true

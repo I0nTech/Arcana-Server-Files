@@ -1,0 +1,66 @@
+# .
+# !! IMPORTANT !!
+# .
+# If you wish to customize this plugin, edit the "modifiers.yml" file instead.
+# .
+# DO NOT JUST COPY THIS WHOLE FILE INTO YOUR modifiers.yml !!!!
+# If you do this, updating the plugin in the future may not work as expected.
+# .
+# This file is merged from the files in the following folder:
+# .
+# https://github.com/elBukkit/MagicPlugin/tree/master/Magic/src/main/resources/defaults/modifiers
+
+antiknockback:
+  entity_attributes:
+    generic_knockback_resistance:
+      value: 2
+      operation: base
+hidden:
+  ignored_by_mobs: true
+localrain:
+  triggers:
+    added:
+      cast: localrain
+    removed:
+      cast: restorelocalweather
+protected:
+  protected: true
+reflective:
+  reflect_chance: 0.5
+magicdamageboost:
+  stack: true
+tundradebuff:
+  stack: true
+assassinbuff:
+  stack: true
+twilightbuff:
+  stack: true
+twilightbuffupgraded:
+  stack: true
+emeraldbuff:
+  stack: true
+fortifiedbuff:
+  stack: true
+upgfortifiedbuff:
+  stack: true
+manaregenboost(10%):
+  mana_regeneration_boost: 0.1
+manaregenboost(15%):
+  mana_regeneration_boost: 0.15
+boost:
+  potion_effects:
+    fire_resistance: 0
+  strength:
+    magic: 0.4
+shielded:
+  stack: true
+  protection:
+    overall: 0.8
+stunned:
+  potion_effects:
+    slow_digging: 4
+    jump: -4
+frozen:
+  potion_effects:
+    weakness: 2
+    slow: 2

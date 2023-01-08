@@ -1,0 +1,21 @@
+dragon_fang:
+  creator_id: f4cbd5ef-8484-4b69-808f-b7f4248886b9
+  creator: TheaAmastacia
+  worth: 0.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2730
+    type: NETHERITE_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_purple","text":"Dragon
+        Fang"}],"text":""}'
+      lore:
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"light_purple","text":"A
+        fang from a slain dragon. Can cut through anything."}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"italic":true,"color":"gray","text":"(Sneak + Left Click) Teleports
+        you behind your target"}],"text":""}'
+      Unbreakable: true

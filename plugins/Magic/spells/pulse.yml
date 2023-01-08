@@ -1,0 +1,106 @@
+pulse:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  name: Pulse
+  description: Stunning wave of lightning bolts.
+  icon: horn_coral
+  category: lightning
+  upgrade_required_casts: 1500
+  worth: 4000
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+      - class: CustomProjectile
+        actions:
+        - class: Damage
+        - class: PotionEffect
+        - class: Electrify
+      - class: Delay
+  effects:
+    cast:
+    - location: origin
+      sound: entity_lightning_bolt_impact
+      sound_pitch: 0.4
+      sound_volume: 0.8
+    tick:
+    - location: target
+      particle: dust_color_transition
+      particle_count: 1
+      particle_offset: 0
+      particle_size: 0.35
+      color: '#ffff00'
+      to_color: color
+    hit:
+    - sound: entity_guardian_attack
+      sound_pitch: 1.5
+      sound_volume: 0.2
+    hit_entity:
+    - class: EffectSingle
+      sound: block_lava_extinguish
+      sound_volume: 0.2
+      sound_pitch: -5
+      location: target
+      particle: electric_spark
+      particle_count: 3
+      particle_offset: 0.01
+      particle_data: 0.2
+    hit_block:
+    - class: EffectSingle
+      location: target
+      particle: electric_spark
+      particle_count: 2
+      particle_offset: 0.2
+      particle_data: 0.2
+  parameters:
+    tick_size: 0.15
+    fov: 1
+    multiply: 8
+    range: rand(48,68)
+    hitbox: true
+    hitbox_size: 0.4
+    target: other
+    entity_hit_count: 2
+    damage_type: lightning
+    entity_damage: 12
+    player_damage: 6
+    delay: rand(0,300)
+    track_target: true
+    track_range: 3
+    track_speed: 0.02
+    update_launch_location: false
+    no_damage_ticks: false
+    cooldown: 5000
+    potion_effects:
+      slow: 4
+      slow_digging: 4
+      jump: -4
+    duration: 500
+    velocity_transform:
+      orient: true
+      x: 120
+      y: rand(-12,12) * sin(rand(1,2)t)
+      z: rand(-12,12) * cos(rand(1,4)t)
+  costs:
+    mana: 60
+
+pulse|2:
+  upgrade_required_casts: 2500
+  parameters:
+    multiply: 10
+    entity_damage: 14
+    player_damage: 7
+    duration: 600
+  costs:
+    mana: 80
+
+
+pulse|3:
+  parameters:
+    multiply: 12
+    entity_damage: 16
+    player_damage: 8
+    duration: 700
+  costs:
+    mana: 100
+

@@ -1,0 +1,40 @@
+hellhound:
+  name: '&fHellhound'
+  description: Flaming Hounds that Emerge from Hell
+  inherit: false
+  type: wolf
+  silent: true
+  health: 200
+  potion_effects:
+    invisibility: 0
+    fire_resistance: 0
+    slow_falling: 0
+  default_drops: false
+  transformable: false
+  item: ghost_touch
+  offhand: ghost_touch
+  effect_particle: lava
+  effect_particle_interval: 1000
+  effect_particle_count: 10
+  effect_particle_radius: 1
+  protection:
+    physical: 1.0
+    projectile: 10.0
+    fire: 10
+    lava: 10
+  entity_attributes:
+    generic_movement_speed: 0.35
+    generic_knockback_resistance: 1.0
+    generic_armor: 0
+    generic_attack_damage: 5
+  interval: 1000
+  triggers:
+    death:
+      effects: fire_death
+    damage:
+      effects: fire_damage
+      cast:
+        none: 5
+        firepulse: 2
+    interval:
+      effects: fire

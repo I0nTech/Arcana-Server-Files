@@ -1,0 +1,30 @@
+sword_netherite:
+  creator: TheaAmastacia
+  creator_id: f4cbd5ef-8484-4b69-808f-b7f4248886b9
+  name: Earth Sword
+  description: Get a Netherite Sword
+  icon: netherite_chestplate
+  actions:
+    cast:
+    - class: Equip
+      item: netherite_sword
+      slot: main_hand
+      enchantments:
+        damage_all: 1
+        fire_aspect: 1
+  effects:
+    cast:
+    - location: target
+      effectlib:
+        class: Explode
+        color: black
+        duration: 500
+        offset: 0,-1.5,0
+        radius: 3.5
+    - sound: magic.zap
+  parameters:
+    target: self
+    undo: 10000
+    duration: 10000
+  costs:
+    mana: 0

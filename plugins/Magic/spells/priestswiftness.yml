@@ -1,0 +1,92 @@
+priestswiftness:
+  inherit: false
+  name: Blessing of Swiftness
+  description: Imbue your target with your faith, temporarily granting Swiftness
+  icon: potion:#7DF9FF
+  actions:
+    cast:
+     - class: ConeOfEffect
+       requires_target: true
+       actions:
+       - class: CustomProjectile
+         actions:
+         - class: PlayEffects
+           effects: swiftness
+         - class: PotionEffect
+         - class: Stop
+     - class: ChangeContext
+       target_self: true
+     - class: PlayEffects
+       effects: swiftness
+     - class: PotionEffect
+  effects:
+    cast:
+    - sound: item.trident.return
+      sound_pitch: 0.3
+      sound_volume: 2
+    - sound: item.trident.riptide_1
+      sound_pitch: 0.4
+      sound_volume: 2
+    tick:
+    - location: target
+      particle: nautilus
+      particle_count: 2
+    - location: target
+      effectlib:
+        duration: 100
+        class: Arc
+        height: 1
+        particles: 1
+        particle: spell_mob
+        color: "#7DF9FF"
+        update_directions: true
+        update_locations: true
+    swiftness:
+    - sound: block_fire_extinguish
+      sound_volume: 0.2
+      location: target
+      source_location: body
+      effectlib:
+        class: Modified
+        duration: $duration
+        parameters:
+          size: sin(t/20) + 0.4
+        effect:
+          class: AnimatedBall
+          iterations: 70
+          particle: spell_mob_ambient
+          particle_size: 0.8
+          color: '#7DF9FF'
+          particles: 60
+          y_offset: -0.5
+          y_factor: 1
+    - class: EffectSingle
+      sound: entity_phantom_flap
+      source_location: feet
+      location: target
+      effectlib:
+        class: Helix
+        particle: nautilus
+        iterations: 2
+        period: 400
+        radius: 4
+        particles: 100
+        curve: 3
+        type: instant
+        strands: 3
+  parameters:
+    target: any_entity
+    target_type: Player
+    range: 32
+    velocity: 400
+    ignore_blocks: true
+    target_self_timeout: 200
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    potion_effects:
+      speed: 0
+      fast_digging: 1
+    duration: 5000
+    cooldown: 30000
+  costs:
+    mana: 90

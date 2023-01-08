@@ -1,0 +1,93 @@
+slam:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  name: Slam
+  description: Slam the ground, dealing +50% Attack Damage for every block fallen. Minimum of 5 blocks fallen required to activate.
+  icon: anvil
+  icon_disabled: anvil
+  category: wind
+  glide_restricted: true
+  actions:
+    cast:
+      - class: Velocity
+      - class: FallProtection
+      - class: Interval
+        actions:
+        - class: CheckTrigger
+          trigger: land
+          actions:
+          - class: ModifyParameters
+            actions:
+            - class: CheckRequirements
+              requirements:
+              - attributes:
+                - attribute: fall_distance
+                  min: 5
+              actions:
+              - class: ChangeContext
+                actions:
+                - class: Retarget
+                - class: AreaOfEffect
+                  actions:
+                  - class: Damage
+                  - class: Velocity
+                    speed: 2
+                    push: 1
+                - class: Sphere
+                  actions:
+                  - class: BreakBlock
+                    direction: 0,0.2,0
+                - class: PlayEffects
+                  effects: slam
+                - class: Stop
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: entity_ender_dragon_flap
+      sound_volume: 1
+      effectlib:
+        class: Trace
+        iterations: 30
+        particle_offset_x: 1
+        particle_offset_y: 1
+        particle_offset_z: 1
+        particle_count: 2
+        speed: 2
+        particle: spell
+    slam:
+      - location: target
+        particle: explosion_huge
+        particle_count: 1
+        sound: entity_generic_explode
+        sound_volume: 2
+      - location: target
+        particle: explosion_normal
+        particle_count: 10
+        particle_data: 0.4
+        particle_offset: 0
+  parameters:
+    duration: 20000
+    target: self
+    target_type: Damageable
+    target_caster: true
+    target_location: feet
+    speed: 3
+    direction: 0,-2,0
+    falling: true
+    radius: 4
+    break_durability: 4
+    destructible_durability: 50
+    durability_max_distance: 4
+    damage_max_distance: 6
+    cooldown: 8000
+    destructible: solid
+    destructible_override: true
+    select_self: false
+    undo: 15000
+    undo_speed: 2
+    damage_type: wind
+    damage: fall_distance*$attack_damage/5
+  costs:
+    mana: 60
+
+

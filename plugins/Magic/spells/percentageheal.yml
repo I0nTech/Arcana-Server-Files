@@ -1,0 +1,30 @@
+percentageheal:
+  name: Mend Wounds
+  icon: potion:#FF0000
+  actions:
+    cast:
+    - class: Repeat
+      actions:
+        - class: Heal
+        - class: PlayEffects
+          effects: heal
+        - class: PotionEffect
+          add_effects:
+            speed: 0
+        - class: Delay
+  effects:
+    heal:
+    - location: origin
+      particle: heart
+      particle_count: 3
+  parameters:
+    target: self
+    delay: 200
+    percentage: 0.05
+    repeat: 20
+    duration: 10000
+    remove_on_finish: true
+    cancel_on_damage: true
+    cooldown: 60000
+  costs:
+    mana: 50

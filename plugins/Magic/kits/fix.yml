@@ -1,0 +1,27 @@
+# This is the key name of the kit
+# It must be unique across the server, and is used in the /mkit command and other configs
+# to refer to this kit
+fix:
+  starter: false
+  items:
+    # Item amounts can be specified using the "@" syntax
+    # This can also be done by putting an `amount` property in the sectoin
+    - item: basic_wand
+      slot: 0
+    - item: itemmenuitem
+      slot: 1
+    - item: bread@16
+      slot: 2
+    - item: rogueaxe
+      slot: 3
+    - item: roguepickaxe
+      slot: 4
+    - item: rogueboots
+      slot: 5
+    - item: rogueleggings
+      slot: 6
+    - item: roguechestplate
+      slot: 7
+    - item: roguehelmet
+      slot: 8
+    - item: mossyfrag@24

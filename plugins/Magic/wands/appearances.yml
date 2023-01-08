@@ -1,0 +1,196 @@
+appearance_woodenhoe:
+  name: '&fWooden Hoe Appearance'
+  description: "&7Change your wand's icon to a Wooden Hoe. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: wooden_hoe
+  upgrade_icon: wooden_hoe
+appearance_stonehoe:
+  name: '&fStone Hoe Appearance'
+  description: "&7Change your wand's icon to a Stone Hoe. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: stone_hoe
+  upgrade_icon: stone_hoe
+appearance_ironhoe:
+  name: '&fIron Hoe Appearance'
+  description: "&7Change your wand's icon to a Iron Hoe. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: iron_hoe
+  upgrade_icon: iron_hoe
+appearance_goldhoe:
+  name: '&fGold Hoe Appearance'
+  description: "&7Change your wand's icon to a Gold Hoe. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: gold_hoe
+  upgrade_icon: gold_hoe
+appearance_diamondhoe:
+  name: '&fDiamond Hoe Appearance'
+  description: "&7Change your wand's icon to a Diamond Hoe. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: diamond_hoe
+  upgrade_icon: diamond_hoe
+appearance_netheritehoe:
+  name: '&fNetherite Hoe Appearance'
+  description: "&7Change your wand's icon to a Netherite Hoe. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: netherite_hoe
+  upgrade_icon: netherite_hoe
+appearance_woodenshovel:
+  name: '&fWooden Shovel Appearance'
+  description: "&7Change your wand's icon to a Wooden Shovel. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: wooden_shovel
+  upgrade_icon: wooden_shovel
+appearance_stoneshovel:
+  name: '&fStone Shovel Appearance'
+  description: "&7Change your wand's icon to a Stone Shovel. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: stone_shovel
+  upgrade_icon: stone_shovel
+appearance_ironshovel:
+  name: '&fIron Shovel Appearance'
+  description: "&7Change your wand's icon to a Iron Shovel Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: iron_shovel
+  upgrade_icon: iron_shovel
+appearance_goldshovel:
+  name: '&fGold Shovel Appearance'
+  description: "&7Change your wand's icon to a Gold Shovel. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: golden_shovel
+  upgrade_icon: golden_shovel
+appearance_diamondshovel:
+  name: '&fDiamond Shovel Appearance'
+  description: "&7Change your wand's icon to a Diamond Shovel. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: diamond_shovel
+  upgrade_icon: diamond_shovel
+appearance_netheriteshovel:
+  name: '&fNetherite Shovel Appearance'
+  description: "&7Change your wand's icon to a Netherite Shovel. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: netherite_shovel
+  upgrade_icon: netherite_shovel
+appearance_carrotonastick:
+  name: '&fCarrot on a Stick Appearance'
+  description: "&7Change your wand's icon to a Carrot on a Stick. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: carrot_on_a_stick
+  upgrade_icon: carrot_on_a_stick
+appearance_warpedfungusonastick:
+  name: '&fWarped Fungus on a Stick Appearance'
+  description: "&7Change your wand's icon to a Warped Fungus on a Stick. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: warped_fungus_on_a_stick
+  upgrade_icon: warped_fungus_on_a_stick
+appearance_stick:
+  name: '&fStick Appearance'
+  description: "&7Change your wand's icon to a Stick. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: stick
+  upgrade_icon: stick
+appearance_bone:
+  name: '&fBone Appearance'
+  description: "&7Change your wand's icon to a Bone. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: bone
+  upgrade_icon: bone
+appearance_bamboo:
+  name: '&fBamboo Appearance'
+  description: "&7Change your wand's icon to Bamboo. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: bamboo
+  upgrade_icon: bamboo
+appearance_blazerod:
+  name: '&fBlaze Rod Appearance'
+  description: "&7Change your wand's icon to a Blaze Rod. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: blaze_rod
+  upgrade_icon: blaze_rod
+appearance_clock:
+  name: '&fClock Appearance'
+  description: "&7Change your wand's icon to a Clock. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: clock
+  upgrade_icon: clock
+appearance_compass:
+  name: '&fCompass Appearance'
+  description: "&7Change your wand's icon to a Compass. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: compass
+  upgrade_icon: compass
+appearance_shears:
+  name: '&fShears Appearance'
+  description: "&7Change your wand's icon to Shears. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: shears
+  upgrade_icon: shears
+appearance_paper:
+  name: '&fPaper Appearance'
+  description: "&7Change your wand's icon to Paper. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: paper
+  upgrade_icon: paper
+appearance_scroll:
+  name: '&fScroll Appearance'
+  description: "&7Change your wand's icon to a Scroll. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: globe_banner_pattern
+  upgrade_icon: globe_banner_pattern
+appearance_book:
+  name: '&fBook Appearance'
+  description: "&7Change your wand's icon to a Book. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: book
+  upgrade_icon: book
+appearance_textbook:
+  name: '&fEnchanted book Appearance'
+  description: "&7Change your wand's icon to a Enchanted book. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: enchanted_book
+  upgrade_icon: enchanted_book
+appearance_knowledgebook:
+  name: '&fHeart Of The Sea Appearance'
+  description: "&7Change your wand's icon to a Heart Of The Sea. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: heart_of_the_sea
+  upgrade_icon: heart_of_the_sea
+appearance_emerald:
+  name: '&fEmerald Appearance'
+  description: "&7Change your wand's icon to an Emerald. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: emerald
+  upgrade_icon: emerald
+appearance_diamond:
+  name: '&fDiamond Appearance'
+  description: "&7Change your wand's icon to a Diamond. Purely cosmetic - offers no additional functionality."
+  inherit: false
+  upgrade: true
+  icon: diamond
+  upgrade_icon: diamond

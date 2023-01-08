@@ -1,0 +1,257 @@
+id: aa7ce187-abbc-4ad8-92bb-ab83ac9a8aea
+name: Poge7
+created: 1644339470873
+updated: 1644959616056
+last_cast: 1644341682569
+cooldown_expiration: 0
+last_death_location: -366.30000001192093,69.0,-135.95222157359106,world,64.26672,14.549505
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  783f2316-86a3-4ef1-85e4-87ca74b58504: []
+  3ae08fb1-d48e-43ef-be5a-1bdc0b585fcf: []
+spells:
+  criticalplayer:
+    cast_count: 0
+    last_cast: 1644341682569
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 4
+    last_cast: 1644341652619
+    last_earn: 0
+    cooldown_expiration: 1644341712619
+    charges: 0.0
+  inflictcrit:
+    cast_count: 57
+    last_cast: 1644341672323
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 2
+    last_cast: 1644340182340
+    last_earn: 1644340182340
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 323
+    last_cast: 1644341682451
+    last_earn: 0
+    cooldown_expiration: 1644341682851
+    charges: 1.8249999999999997
+  progressmenu:
+    cast_count: 2
+    last_cast: 1644340171519
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  upgrades:
+    cast_count: 1
+    last_cast: 1644340173009
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  voidwalker_staff:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: NETHERITE_SHOVEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Mana
+          Bolt"},{"italic":false,"color":"white","text":" ("},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DF00FF","text":"Voidwalker''s
+          Lament"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"light_purple","text":"☪ Abyssal Power"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [LEGEND+] Poge7"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"4 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"350"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"40"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Mana"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Bolt"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 60d6bf2c-2984-40a6-af77-ae4a9b8d1546
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0WQMU/DMBBGL01QQ5AoEzMDG7KUkJA4OxULQuwIVWf7QqM6duS4jfrvcSMktnvDve+7ywAiuJYOO49CUxRBciAaowySGY1K4crOhhxsvt63b9uP16fvh0/7Q00M93vrBbpdb05kvHXnnbRH4yEIU1j1Ch6xanJZtzlTHeasIioZx6Ji2PH6pS66hpd5BptpJK3/NTGkAxoUVl9ccQyJsNbAZYZsIKPmEKOmwKsYbqXrfS9RjxrPoeblmhTSpfNu6YCNpII3DIWQrELFWfssREBeomyRI2EM6xO5qV9S1mHd0xB8nuDuZHs1oz4E2+Sx64L+5mjCOO3/3hVQOTuOC8Ivl956HU8BAAA=
+    wand:
+      owner: '[LEGEND+] Poge7'
+      hotbar_inventory_count: 1
+      id: a470c690-dfa0-4ee3-8a14-af86561f7830
+      spell_inventory:
+        manabolt: 3
+        boon: 0
+        mendwounds: 2
+        criticalplayer: 1
+      owner_id: aa7ce187-abbc-4ad8-92bb-ab83ac9a8aea
+      version: 7
+      template: voidwalker_staff
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Mana
+          Bolt"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"Basic
+          Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [LEGEND+] Poge7"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"4 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana
+          Max: "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Mana"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Bolt"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 1f867498-7fdb-4fb8-837f-d1e1b0679618
+            operation: 0
+          GENERIC_ATTACK_DAMAGE:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 0.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 6ab6e127-addf-4284-a0c7-7ebf609acead
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0VQz0/CMBR+czOUSeTm2YM302SwAeMu8WKMd2OW1+5VGka7tAVCjP+7dZpw/PLe9zMHSGAsHaqAoqMkgWxH1Cc5ZCc0LYNrezLkYPr+snnevD49fty/2U9apXC3tUGga7Q5kgnWnRtpDyZAFGRwpVt4KKhcqpIUX9SLklfr5ZKjlBUvVYHVTNVSKMVggjLoIzW+p64DtkeDwnaBQaalNTDxQcvd17woivl3DtPh7WKaXhjRGVLIhI0sgHEK+Z5Me4qhWv+bKoVb6XRUw67v8BxLAbDIGB3JeT2QRgxYoH08B4JcoNey+ZuBDTM0v7UQV5Jm9YqjEJJX2NZ8PRciwrpEucYaCeOoNwfjA/rt/6wRts72/QDhB/jmA1d3AQAA
+    wand:
+      owner: '[LEGEND+] Poge7'
+      hotbar_inventory_count: 1
+      id: 0e36f3ef-5853-4966-acc4-3f0a41f8cbff
+      active_spell: manabolt
+      icon: stick{20002}
+      spell_inventory:
+        manabolt: 0
+        boon: 9
+        mendwounds: 1
+        criticalplayer: 8
+      version: 7
+      template: basic_wand
+      owner_id: aa7ce187-abbc-4ad8-92bb-ab83ac9a8aea
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 10.0
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1644959600453
+    given_items:
+      voidwalker_staff:
+        amount: 1
+        last_give: 1644959600453
+      iron_ingot:
+        amount: 64
+        last_give: 1644959600453
+      bread:
+        amount: 64
+        last_give: 1644959600453
+      basic_wand:
+        amount: 1
+        last_give: 1644339470966
+classes:
+  arcanamage:
+    spells:
+    - boon
+    - criticalplayer
+    - mendwounds
+    - manabolt
+    spell_levels:
+      boon: 2
+    mana: 350.0
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

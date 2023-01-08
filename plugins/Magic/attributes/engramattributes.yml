@@ -1,0 +1,12 @@
+seekershots:
+  default: 0
+  min: -999
+  max: 999
+seekerrepeats:
+  default: 0
+  min: -999
+  max: 999
+seekerdamage:
+  default: 0
+  min: -999
+  max: 999

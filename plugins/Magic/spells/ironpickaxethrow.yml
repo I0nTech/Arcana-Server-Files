@@ -1,0 +1,62 @@
+ironpickaxethrow:
+    name: Diamond Pickaxe Throw
+    inherit: false
+    legacy_icon: iron_axe
+    actions:
+        cast:
+        - class: ChangeContext
+          source_offset: 0,-0.7,0
+          actions:
+          - class: ArmorStandProjectile
+            actions:
+            - class: Damage
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: block_wood_step
+           sound_volume: 1.7
+        -  class: EffectSingle
+           sound: entity_drowned_shoot
+           sound_pitch: 0.4
+        projectile:
+        - location: origin
+          material: anvil
+          effectlib:
+             class: Sphere
+             duration: 5000
+             period: 2
+             particles: 2
+             particle: block_crack
+             particle_count: 3
+             particle_offset_x: 0.1
+             particle_offset_y: 0.1
+             particle_offset_z: 0.1
+        hit:
+          - location: target
+            particle: fireworks_spark
+            particle_count: 16
+            particle_offset_x: 1
+            particle_offset_y: 1
+            particle_offset_z: 1
+            sound: block_anvil_place
+            sound_pitch: 0.2
+            sound_volume: 0.5
+    parameters:
+        target_type: Player
+        player_damage: 4
+        velocity: 20
+        hitbox: true
+        hitbox_size: 0.5
+        right_arm_item: iron_pickaxe
+        bypass_undo: true
+        allow_max_range: true
+        range: 32
+        cooldown: 5000
+        reorient: true
+        location_offset: 1,0,0
+        right_arm_transform:
+            x: 0
+            y: "3*(t/i)"
+            z: 0
+    costs:
+        mana: 80

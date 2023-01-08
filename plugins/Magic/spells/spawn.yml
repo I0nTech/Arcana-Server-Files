@@ -1,0 +1,12 @@
+spawn:
+  name: Spawn
+  description: Warp to spawn
+  inherit: false
+  icon: wooden_axe{18002}
+  earns: 1
+  actions:
+    cast:
+    - class: Command
+      commands:
+      - warp spawn
+      console: true

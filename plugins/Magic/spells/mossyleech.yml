@@ -1,0 +1,30 @@
+mossyleech:
+  icon: mossy_cobblestone
+  name: mossyleech
+  description: leech
+  actions:
+    cast:
+      - class: Heal
+        requires_entity_target: true
+      - class: AreaOfEffect
+        requires_entity_target: true
+        actions:
+          - class: Damage
+  effects:
+    cast:
+      - location: origin
+        particle: heart
+        particle_count: 4
+
+  parameters:
+    range: 10
+    target: self
+    target_type: Player
+    target_self: false
+    effect_only: true
+    player_damage: 2
+    entity_damage: 4
+    amount: 0.5
+    radius: 10
+    target_count: 1
+    quiet: true

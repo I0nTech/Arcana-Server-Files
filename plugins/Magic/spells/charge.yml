@@ -1,0 +1,111 @@
+charge:
+    name: Charge
+    description: Charge forwards dealing 250% Attack Damage, deal +50% Attack Damage for every block charged.
+    icon: iron_axe
+    category: wind
+    glide_restricted: true
+    actions:
+        cast:
+        - class: ChangeContext
+          source_pitch: 0
+          actions:
+          - class: CustomProjectile
+            actions:
+            - class: ChangeContext
+              target_caster: true
+            - class: Interval
+              interval: 1
+              duration: 750
+              actions:
+              - class: ModifyVariable
+              - class: PotionEffect
+              - class: Retarget
+              - class: PlayEffects
+                effects: charge
+              - class: Velocity
+                speed: 1.5
+              - class: ChangeContext
+                relative_source_offset: 0.5,-1,0
+              - class: AreaOfEffect
+                radius: 1
+                y_radius: 2
+                requires_entity_target: true
+                stop_on_success: true
+                actions:
+                  - class: PlayEffects
+                    effects: chargeend
+                  - class: ChangeContext
+                    target_caster: true
+                    actions:
+                    - class: Velocity
+                      direction: 0,1,0
+                    - class: FallProtection
+                    - class: AreaOfEffect
+                      actions:
+                      - class: Damage
+                      - class: Velocity
+                        push: 4
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_ender_dragon_growl
+           sound_pitch: 0.3
+           sound_volume: 0.5
+           location: origin
+           effectlib:
+             class: ConeEffect
+             iterations: 15
+             particle: sweep_attack
+             lengthGrow: 0.1
+             radiusGrow: 0.02
+             yaw_offset: 90
+             updateLocations: false
+             updateDirections: false
+        charge:
+        - location: target
+          particle: explosion_large
+          particle_offset: 0
+          particle_count: 1
+          relative_offset: -0.5,0,0
+        - location: target
+          particle: explosion_normal
+          particle_count: 3
+          particle_data: 0.2
+        chargeend:
+        -  class: EffectSingle
+           sound: item_shield_block
+           sound_pitch: -3
+           sound_volume: 2
+           location: target
+           particle: explosion_huge
+        -  sound: entity_generic_explode
+           sound_pitch: 3
+           sound_volume: 2
+    parameters:
+        source_location: eyes
+        target: self
+        target_type: Damageable
+        potion_effects:
+          damage_resistance: 3
+        duration: 2000
+        range: 200
+        velocity: 200
+        hitbox: true
+        hitbox_size: 1
+        hitbox_block_size: 1
+        cancel_on_cast_other: true
+        allow_max_range: true
+        reorient: false
+        radius: 3.5
+        damage_type: wind
+        variable: chargedamage
+        default: 5
+        value: chargedamage+1
+        damage: chargedamage*$attack_damage/5
+        damage_min_distance: 0.5
+        damage_max_distance: 6
+        no_damage_ticks: 0
+        target_breakables: 1
+        cooldown: 10000
+    costs:
+        mana: 85

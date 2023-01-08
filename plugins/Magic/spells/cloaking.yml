@@ -1,0 +1,53 @@
+cloaking:
+  name: Cloaking
+  description: Hides you under a veil of shadows
+  inherit: false
+  icon: ink_sac
+  quick_cast: true
+  toggle: cancel
+  disable_mana_regeneration: true
+  boss_bar:
+    bar_title: "&#301934$spell"
+    bar_color: white
+  actions:
+    cast:
+    - class: Repeat
+      actions:
+      - class: Feed
+      - class: PotionEffect
+        duration: 2000
+      - class: Delay
+        delay: 1000
+  effects:
+    cast:
+    - sound: entity_experience_orb_pickup
+      sound_pitch: 0.2
+      sound_volume: 0.8
+    - sound: entity_generic_drink
+      sound_pitch: 1.75
+      sound_volume: 0.6
+    - sound: entity_generic_drink
+      sound_pitch: 1.75
+      sound_volume: 0.6
+    - sound: block_beacon_activate
+      sound_pitch: 1.5
+      sound_volume: 0.75
+    - location: origin
+      source_location: body
+      particle: smoke_normal
+      particle_offset: 0.3,0.6,0.3
+      particle_count: 30
+      particle_data: 0.4
+  parameters:
+    target: self
+    feed: -1
+    add_effects:
+      invisibility: 0
+      speed: 1
+    cooldown: 1000
+    cancel_on_death: true
+    repeat: infinite
+  costs:
+    mana: 30
+  active_costs:
+    mana: 10

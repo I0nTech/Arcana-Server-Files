@@ -1,0 +1,58 @@
+id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
+name: IonTech
+created: 1673144327285
+updated: 1673147250583
+last_cast: 1673147249417
+cooldown_expiration: 0
+last_death_location: 78.06917020443441,67.0,15.505601450774972,world,-154.76819,6.400856
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  455c86ed-c4e7-4ba1-a15a-8b7e61e0c0fa: []
+spells:
+  critical:
+    cast_count: 2
+    last_cast: 1673146973576
+    last_earn: 0
+    cooldown_expiration: 0
+    enabled: false
+    charges: 0.0
+  manashot:
+    cast_count: 85
+    last_cast: 1673147248813
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  spells:
+  - critical
+  - manashot
+  version: 7
+kits:
+  start:
+    last_give: 1673144327438
+    given_items:
+      iron_ingot:
+        amount: 64
+        last_give: 1673144327438
+      bread:
+        amount: 32
+        last_give: 1673144327438
+classes:
+  mage:
+    mana_timestamp: 1673147250482
+    mana: 22.772432
+transient_modifiers: {}
+active_class: mage
+health: 18.0

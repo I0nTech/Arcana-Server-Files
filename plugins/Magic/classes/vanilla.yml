@@ -1,0 +1,38 @@
+vanilla:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  health_scale: 0
+  entity_attributes:
+    generic_max_health:
+      value: 20
+      operation: base
+    generic_follow_range:
+      value: 0
+      operation: base
+    generic_knockback_resistance:
+      value: 0
+      operation: base
+    generic_movement_speed:
+      value: 0.1
+      operation: base
+    generic_attack_damage:
+      value: 1
+      operation: base
+    generic_armor:
+      value: 0
+      operation: base
+    generic_armor_toughness:
+      value: 0
+      operation: base
+    generic_attack_knockback:
+      value: 0
+      operation: base
+    generic_attack_speed:
+      value: 0
+      operation: base
+    generic_luck:
+      value: 0
+      operation: base
+    generic_flying_speed:
+      value: 0.4
+      operation: base

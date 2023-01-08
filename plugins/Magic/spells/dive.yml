@@ -1,0 +1,102 @@
+dive:
+  inherit: false
+  name: Dive
+  description: Launch yourself into the air, then dive back down dealing 275% Attack Damage to nearby enemies upon landing
+  icon: rabbit_foot
+  category: wind
+  glide_restricted: true
+  actions:
+    cast:
+    - class: Velocity
+      direction: 0,1,0
+    - class: Delay
+    - class: ChangeContext
+      actions:
+        - class: FallProtection
+        - class: Interval
+          actions:
+            - class: Velocity
+              speed: 5
+              max_speed: 20
+            - class: CheckTrigger
+              trigger: land
+              fail:
+              - class: Retarget
+              - class: PlayEffects
+                effects: dive
+              actions:
+                - class: Velocity
+                  speed: 0
+                  direction: 0,0.2,0
+                - class: Retarget
+                - class: PlayEffects
+                  effects: diveend
+                - class: AreaOfEffect
+                  actions:
+                   - class: Damage
+                   - class: Velocity
+                     push: 2
+                - class: Stop
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: entity_ender_dragon_flap
+      sound_volume: 1
+      effectlib:
+        class: Trace
+        iterations: 30
+        particle_offset_x: 1
+        particle_offset_y: 1
+        particle_offset_z: 1
+        particle_count: 2
+        speed: 2
+        particle: spell
+    dive:
+      - location: target
+        particle: explosion_large
+        particle_offset: 0
+        particle_count: 1
+        relative_offset: -0.5,0,0
+      - location: target
+        particle: explosion_normal
+        particle_count: 3
+        particle_data: 0.2
+    diveend:
+     -  location: target
+        class: EffectSingle
+        sound: item_shield_block
+        sound_pitch: -3
+        sound_volume: 2
+        particle: explosion_huge
+     -  sound: entity_generic_explode
+        sound_pitch: 3
+        sound_volume: 2
+    land:
+    - sound: block_stone_step
+      sound_pitch: 0.7
+    - class: EffectRing
+      particle: block_crack
+      source_location: feet
+      period: 4
+      particle_count: 20
+      radius: 2
+      particle_offset_x: 0.9
+      particle_offset_z: 0.9
+      particle_offset_y: 0.1
+  parameters:
+    target: self
+    duration: 2500
+    target_type: Damageable
+    delay: 500
+    min_speed: 1.5
+    max_speed: 2
+    source_pitch_max: 20
+    cancel_on_cast_other: true
+    radius: 4
+    damage: $attack_damage*2.75
+    damage_min_distance: 1
+    damage_max_distance: 6
+    damage_type: wind
+    cooldown: 8000
+  costs:
+    mana: 75

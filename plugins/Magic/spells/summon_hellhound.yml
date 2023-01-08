@@ -1,0 +1,36 @@
+summon_hellhound:
+  creator: MrSlushie96
+  creator_id: 67f4346f-7203-4a3e-a439-ff92c2eda6c7
+  name: Summon Hell Hounds
+  description: Summon Hell Hounds to fight for you for a minute and a half
+  inherit: false
+  icon: salmon_bucket{18001}
+  actions:
+    cast:
+    - class: ChangeContext
+      source_is_target: true
+      actions:
+      - class: Repeat
+        actions:
+        - class: Spread
+          actions:
+          - class: SpawnEntity
+            set_target: true
+          - class: Aggro
+          - class: Delay
+  parameters:
+    allow_replacement: false
+    entity_types:
+        hellhound: 100
+    max: 5
+    target_type: LivingEntity
+    allow_max_range: false
+    tamed: true
+    range: 16
+    cooldown: 90000
+    undo: 90000
+    repeat: 5
+    radius: 1
+    delay: 500
+  costs:
+    mana: 25

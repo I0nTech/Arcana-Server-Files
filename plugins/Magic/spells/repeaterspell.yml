@@ -1,0 +1,110 @@
+repeaterspell:
+  name: Arcane Barrage
+  description: Anchor for 1.2 seconds, then launch a barrage of piercing arcane spears dealing 20x30% Attack Damage
+  icon: prismarine_crystals
+  category: arcane
+  actions:
+    cast:
+    - class: Delay
+    - class: Multiply
+      actions:
+        - class: Spread
+          radius: 0
+          actions:
+            - class: ChangeContext
+              actions:
+                - class: Delay
+                  delay: rand(0,4000)
+                - class: PlayEffects
+                  effects: summon
+                - class: CustomProjectile
+                  ignore_hit_entities: true
+                  actions:
+                    - class: BreakBlock
+                    - class: AreaOfEffect
+                      radius: 2
+                      actions:
+                        - class: Damage
+                        - class: Velocity
+                          direction: 0,0,0
+  effects:
+    fire:
+      - location: origin
+        sound: item_trident_hit
+        sound_pitch: 0.1
+        sound_volume: 0.3
+    summon:
+      - location: target
+        effectlib:
+           class: Modified
+           duration: 400
+           parameters:
+             radius: "(t/i) * -2 + 1.5"
+           effect:
+             class: Circle
+             particle_count: 1
+             whole_circle: true
+             orientPitch: true
+             x_rotation: 0
+             y_rotation: 0
+             z_rotation: 0
+             angular_velocity_x: 0
+             angular_velocity_y: 0
+             angular_velocity_z: 0
+             particle: crit_magic
+             update_locations: false
+             update_directions: false
+             orient: false
+    tick:
+      - location: target
+        particle: spell_witch
+        particle_offset: 0
+        particle_count: 1
+    hit_block:
+      - location: target
+        particle: spell_witch
+        speed: 1
+        particle_data: 0.2
+        particle_offset: 0.1
+        offset: 0,0.5,0
+        particle_count: 6
+      - sound: item_trident_hit
+        sound_pitch: 1
+        sound_volume: 0.4
+        location: target
+    hit_entity:
+      - class: EffectSingle
+        location: target
+        particle: dust_color_transition
+        to_color: "#73FBD3"
+        particle_count: 6
+        particle_offset: 0.3
+        particle_size: 0.4
+      - sound: entity_player_attack_knockback
+        sound_pitch: 1
+        sound_volume: 0.4
+        location: target
+  parameters:
+    target: other
+    range: 32
+    velocity: 80
+    damage_type: magic
+    damage: $attack_damage*0.2
+    push: 0.5
+    no_damage_ticks: 0
+    multiply: 20
+    destructible: solid
+    destructible_durability: 10
+    break_durability: 0.25
+    undo: 2000
+    undo_speed: 0.5
+    gravity: 0.003
+    delay: rand(0,400)
+    cooldown: 8000
+    source_location: eyes
+    relative_source_offset:
+      x: -1
+      y: rand(-2,2)
+      z: rand(-4,4)
+  costs:
+    mana: 80

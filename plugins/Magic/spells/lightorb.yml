@@ -1,0 +1,139 @@
+lightorb:
+  name: Ethereal Pylon
+  description: Throw an orb of light which detonates multiple times upon impact. Cast again while active to teleport to the orb.
+  icon: stick
+  icon_disabled: barrier
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+        - class: Delay
+        - class: Parallel
+          actions:
+          - class: Interval
+            interval: 250
+            actions:
+              - class: PlayEffects
+                effects: ring
+          - class: Interval
+            interval: 100
+            actions:
+              - class: PlayEffects
+                effects: pulse
+              - class: AreaOfEffect
+                actions:
+                  - class: Damage
+                  - class: Velocity
+                  - class: PotionEffect
+                    duration: 200
+          - class: Asynchronous
+            actions:
+              - class: Interval
+                interval: 1
+                actions:
+                - class: CheckTrigger
+                  trigger: left_click
+                  actions:
+                   - class: PlayEffects
+                     effects: arrival
+                   - class: Teleport
+                     safe: false
+                   - class: Stop
+  effects:
+    arrival:
+      - location: target
+        effectlib:
+          class: Circle
+          duration: 100
+          radius: 1.5
+          offset: 0,0.3,0
+          whole_circle: true
+          orient: false
+          pitch: 0
+          x_rotation: 0
+          y_rotation: 0
+          z_rotation: 0
+          angular_velocity_x: 0
+          angular_velocity_y: 20
+          angular_velocity_z: 0
+          particle: end_rod
+          particles: 24
+          particle_data: 0.03
+          update_directions: false
+          update_locations: false
+    tick:
+      - location: target
+        particle: end_rod
+        particle_offset: 0
+        particle_count: 1
+    cast:
+    - location: origin
+      sound: magic.zap
+    hit:
+     - location: target
+       effectlib:
+         class: Modified
+         duration: $warmup
+         parameters:
+           radius: '(t/i) * 4'
+         effect:
+           class: Vortex
+           pitch: -90
+           particles: 50
+           grow: 0
+           rings: 1
+           radials:  10
+           relative_offset: 0,0.1,0
+           particle: electric_spark
+           update_directions: false
+           update_locations: false
+     - location: target
+       effectlib:
+         class: Circle
+         particle: electric_spark
+         duration: $duration
+         particles: 40
+         radius: 4
+         orient: false
+         whole_circle: true
+         enable_rotation: true
+    ring:
+      - location: target
+        effectlib:
+          class: Modified
+          parameters:
+            radius: (t/i) * 2 + 4
+          effect:
+            class: Circle
+            duration: 250
+            offset: 0,0.1,0
+            whole_circle: false
+            orient: false
+            pitch: 0
+            x_rotation: 0
+            y_rotation: 0
+            z_rotation: 0
+            angular_velocity_x: 0
+            angular_velocity_y: 30
+            angular_velocity_z: 0
+            particle: end_rod
+            particle_offset: 0
+            particles: 24
+            particle_data: 0.01
+            update_directions: false
+            update_locations: false
+  parameters:
+    warmup: 1000
+    radius: 4
+    hit_on_miss: true
+    range: 64
+    velocity: 32
+    gravity: 0.05
+    drag: 0.025
+    damage: 1
+    push: 0.1
+    add_effects:
+      jump: -2
+      slow: 2
+    duration: 12000
+    cooldown: 1000

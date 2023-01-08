@@ -1,0 +1,37 @@
+slash:
+  name: Slash Test
+  description: Damage Your Target
+  icon: diamond_sword{18104}
+  actions:
+    cast:
+    - class: Message
+      message: "test"
+    - class: CustomProjectile
+  effects:
+    cast:
+    - location: target
+      source_location: body
+      effectlib:
+        class: Equation
+        particle: redstone
+        particle_offset: 0.2
+        particles: 180
+        x_equation: "(t*-4+6)sin(0.05t-1)"
+        y_equation: "0"
+        z_equation: "(t*-4+6)cos(0.05t-1)"
+        update_locations: false
+        update_directions: false
+        orient: false
+    tick:
+      - location: target
+        particle: redstone
+        particle_offset: 0
+        particle_count: 2
+  parameters:
+    range: 32
+    velocity: 0
+    velocity_transform:
+      x: 3sin(0.05t-1)
+      y: 0
+      z: 3cos(0.05t-1)
+    target: other

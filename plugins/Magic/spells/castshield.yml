@@ -1,0 +1,48 @@
+castshield:
+  name: Shielded With Light
+  description: "&cYou shouldn't see this."
+  actions:
+    cast:
+    - class: Message
+      message: "&l&eSHIELDED WITH LIGHT"
+      message_type: action_bar
+    - class: Modifier
+      add_modifiers:
+        - shielded
+    - class: PlayEffects
+      effects: buff
+  effects:
+    buff:
+    - location: origin
+      source_location: body
+      delay: 500
+      effectlib:
+        class: Trace
+        max_way_points: 2
+        particle: end_rod
+        duration: $duration
+        particle_offset_x: 0.3
+        particle_offset_y: 0.5
+        particle_offset_z: 0.3
+        particle_data: 0.05
+        particle_count: 2
+    - location: origin
+      source_location: feet
+      effectlib:
+        class: EquationEffect
+        particle: dust_color_transition
+        color: "#eee8aa"
+        to_color: "#ffd700"
+        particle_size: 0.8
+        particles: 20
+        particles2: 5
+        duration: 1000
+        iterations: 1
+        orientPitch: false
+        cycle: true
+        xEquation: (t / 100) * cos((t / 10) ^ 0.5 - 2 * 3.1415 / 5 * t2)
+        yEquation: 3 * 2.7183^(-t / 100)
+        zEquation: (t / 100) * sin((t / 10) ^ 0.5 - 2 * 3.1415 / 5 * t2)
+  parameters:
+    target: self
+    duration: 8000

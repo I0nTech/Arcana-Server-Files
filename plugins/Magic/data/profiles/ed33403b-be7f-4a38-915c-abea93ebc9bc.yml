@@ -1,0 +1,6 @@
+uuid: ed33403b-be7f-4a38-915c-abea93ebc9bc
+skin: http://textures.minecraft.net/texture/a950e5d391b82433f92669cee08954191847a43250bad28d6b5c8afff8035fd2
+profile: '{  "id" : "ed33403bbe7f4a38915cabea93ebc9bc",  "name" : "MHF_Stray",  "properties"
+  : [ {    "name" : "textures",    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTY1MTcwODc2MjE3MywKICAicHJvZmlsZUlkIiA6ICJlZDMzNDAzYmJlN2Y0YTM4OTE1Y2FiZWE5M2ViYzliYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJNSEZfU3RyYXkiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTk1MGU1ZDM5MWI4MjQzM2Y5MjY2OWNlZTA4OTU0MTkxODQ3YTQzMjUwYmFkMjhkNmI1YzhhZmZmODAzNWZkMiIKICAgIH0KICB9Cn0="  }
+  ]}'
+name: MHF_Stray

@@ -1,0 +1,6 @@
+uuid: 5ad55f34-41b6-4bd2-9c32-18983c635936
+skin: http://textures.minecraft.net/texture/f61a49541a836aa8f4f76e0d4cb2ff04888c62f9411ea10cbacf1f2a54424240
+profile: '{  "id" : "5ad55f3441b64bd29c3218983c635936",  "name" : "MHF_Spider",  "properties"
+  : [ {    "name" : "textures",    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTY0NDYyMzQ3MDA2NywKICAicHJvZmlsZUlkIiA6ICI1YWQ1NWYzNDQxYjY0YmQyOWMzMjE4OTgzYzYzNTkzNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNSEZfU3BpZGVyIiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y2MWE0OTU0MWE4MzZhYThmNGY3NmUwZDRjYjJmZjA0ODg4YzYyZjk0MTFlYTEwY2JhY2YxZjJhNTQ0MjQyNDAiCiAgICB9CiAgfQp9"  }
+  ]}'
+name: MHF_Spider

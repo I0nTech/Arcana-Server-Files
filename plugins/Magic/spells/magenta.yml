@@ -1,0 +1,39 @@
+
+magenta:
+
+  creator: junk2013
+  creator_id: not your friend
+
+  name: Health_but_die
+  description: Health but die
+  icon: beef{18001}
+
+
+  actions:
+
+    cast:
+    - class: PotionEffect
+
+  effects:
+    cast:
+    - location: target
+      effectlib:
+        class: Sphere
+        particle: suspended
+        particles: 1
+        particle_offset_y: -0.5
+        particle_offset_x: -0.5
+        particle_offset_z: -0.5
+        duration: 30000
+    - sound: ambient_cave
+      
+      parameters:
+        potion_effects:
+          absorption: 4
+          poison: 1
+        duration: 30000
+
+        range: 32
+        damage: 0
+
+      

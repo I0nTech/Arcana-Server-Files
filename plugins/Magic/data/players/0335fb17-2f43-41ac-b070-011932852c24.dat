@@ -1,0 +1,1146 @@
+id: 0335fb17-2f43-41ac-b070-011932852c24
+name: dragoninja54
+created: 1642971665656
+updated: 1651954309843
+last_cast: 1651800129117
+cooldown_expiration: 0
+last_death_location: 105.47557201415904,65.0,-6.832243210002095,Spawn,-8.46984,0.58000576
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: 4
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  325ed72c-10be-4fb2-aeaa-c612d56e7b18: []
+  783f2316-86a3-4ef1-85e4-87ca74b58504: []
+  bd07beea-5923-481b-9b1a-7f8e7c3ffa78:
+  - blocks:
+    - 36,76,-16,world|large_fern?minecraft:large_fern[half=lower]
+    - 36,77,-16,world|large_fern?minecraft:large_fern[half=upper]
+    - 37,75,-17,world|grass_block?minecraft:grass_block[snowy=false]
+    - 37,76,-18,world|crafting_table
+    - 39,75,-18,world|clay
+    - 40,75,-17,world|clay
+    - 41,75,-15,world|clay
+    - 39,75,-9,world|grass_block?minecraft:grass_block[snowy=false]
+    - 40,75,-10,world|grass_block?minecraft:grass_block[snowy=false]
+    - 41,75,-8,world|grass_block?minecraft:grass_block[snowy=false]
+    - 39,76,-10,world|tall_grass?minecraft:tall_grass[half=lower]
+    - 39,77,-10,world|tall_grass?minecraft:tall_grass[half=upper]
+    - 40,75,-8,world|grass_block?minecraft:grass_block[snowy=false]
+    - 39,75,-10,world|grass_block?minecraft:grass_block[snowy=false]
+    - 40,75,-9,world|grass_block?minecraft:grass_block[snowy=false]
+    - 37,76,-6,world|grass_block?minecraft:grass_block[snowy=false]
+    - 37,75,-7,world|grass_block?minecraft:grass_block[snowy=false]
+    - 38,75,-6,world|grass_block?minecraft:grass_block[snowy=false]
+    - 38,75,-7,world|grass_block?minecraft:grass_block[snowy=false]
+    - 39,76,-7,world|grass_block?minecraft:grass_block[snowy=false]
+    - 38,76,-5,world|grass_block?minecraft:grass_block[snowy=false]
+    - 37,76,-5,world|grass_block?minecraft:grass_block[snowy=false]
+    - 39,75,-5,world|grass_block?minecraft:grass_block[snowy=false]
+    - 38,75,-5,world|dirt
+    - 39,75,-6,world|grass_block?minecraft:grass_block[snowy=false]
+    - 37,75,-6,world|dirt
+    - 39,74,-7,world|dirt
+    - 39,75,-7,world|dirt
+    - 35,76,-7,world|grass_block?minecraft:grass_block[snowy=false]
+    - 36,75,-8,world|grass_block?minecraft:grass_block[snowy=false]
+    - 36,76,-6,world|grass_block?minecraft:grass_block[snowy=false]
+    - 37,75,-8,world|grass_block?minecraft:grass_block[snowy=false]
+    - 35,77,-6,world|grass_block?minecraft:grass_block[snowy=false]
+    - 35,78,-6,world|tall_grass?minecraft:tall_grass[half=lower]
+    - 35,79,-6,world|tall_grass?minecraft:tall_grass[half=upper]
+    - 32,77,-8,world|grass_block?minecraft:grass_block[snowy=false]
+    - 33,77,-8,world|grass_block?minecraft:grass_block[snowy=false]
+    - 34,78,-8,world|tall_grass?minecraft:tall_grass[half=upper]
+    - 34,77,-8,world|tall_grass?minecraft:tall_grass[half=lower]
+    - 34,78,-7,world|tall_grass?minecraft:tall_grass[half=lower]
+    - 34,79,-7,world|tall_grass?minecraft:tall_grass[half=upper]
+    - 32,78,-8,world|grass
+    - 34,77,-7,world|grass_block?minecraft:grass_block[snowy=false]
+    - 33,78,-6,world|grass_block?minecraft:grass_block[snowy=false]
+    - 33,77,-7,world|grass_block?minecraft:grass_block[snowy=false]
+    - 32,78,-6,world|grass_block?minecraft:grass_block[snowy=false]
+    - 34,77,-6,world|grass_block?minecraft:grass_block[snowy=false]
+    - 34,76,-8,world|grass_block?minecraft:grass_block[snowy=false]
+    - 35,76,-8,world|grass_block?minecraft:grass_block[snowy=false]
+    - 33,76,-9,world|dirt
+    - 35,76,-9,world|grass_block?minecraft:grass_block[snowy=false]
+    - 35,75,-9,world|dirt
+    - 34,76,-9,world|grass_block?minecraft:grass_block[snowy=false]
+    - 32,79,-5,world|grass_block?minecraft:grass_block[snowy=false]
+    - 33,80,-5,world|tall_grass?minecraft:tall_grass[half=upper]
+    - 33,79,-5,world|tall_grass?minecraft:tall_grass[half=lower]
+    - 31,79,-6,world|grass_block?minecraft:grass_block[snowy=false]
+    - 31,79,-5,world|grass_block?minecraft:grass_block[snowy=false]
+    - 33,78,-5,world|grass_block?minecraft:grass_block[snowy=false]
+    - 31,78,-7,world|grass_block?minecraft:grass_block[snowy=false]
+    - 32,78,-5,world|dirt
+    - 31,78,-6,world|dirt
+    - 31,78,-5,world|dirt
+    - 34,78,-5,world|grass_block?minecraft:grass_block[snowy=false]
+    - 35,77,-5,world|grass_block?minecraft:grass_block[snowy=false]
+    - 34,77,-5,world|dirt
+    - 38,78,-3,world|grass_block?minecraft:grass_block[snowy=false]
+    - 40,77,-5,world|tall_grass?minecraft:tall_grass[half=upper]
+    - 40,76,-5,world|tall_grass?minecraft:tall_grass[half=lower]
+    - 33,75,-14,world|grass_block?minecraft:grass_block[snowy=false]
+    - 32,75,-14,world|grass_block?minecraft:grass_block[snowy=false]
+    - 31,75,-15,world|dirt
+    - 31,75,-14,world|stone
+    - 32,75,-16,world|grass_block?minecraft:grass_block[snowy=false]
+    - 31,76,-15,world|grass_block?minecraft:grass_block[snowy=false]
+    - 31,76,-14,world|grass_block?minecraft:grass_block[snowy=false]
+    - 31,76,-16,world|grass
+    - 32,75,-15,world|grass_block?minecraft:grass_block[snowy=false]
+    - 33,75,-15,world|grass_block?minecraft:grass_block[snowy=false]
+    - 34,76,-14,world|grass
+    - 48,80,-27,world|birch_leaves?minecraft:birch_leaves[distance=2,persistent=false]
+    - 49,80,-27,world|birch_leaves?minecraft:birch_leaves[distance=3,persistent=false]
+    - 49,80,-28,world|birch_leaves?minecraft:birch_leaves[distance=2,persistent=false]
+    - 48,79,-28,world|birch_log?minecraft:birch_log[axis=y]
+    - 47,80,-28,world|birch_leaves?minecraft:birch_leaves[distance=2,persistent=false]
+    - 48,80,-28,world|birch_leaves?minecraft:birch_leaves[distance=1,persistent=false]
+    - 47,80,-27,world|birch_leaves?minecraft:birch_leaves[distance=3,persistent=false]
+    - 42,75,-21,world|cyan_terracotta
+    - 41,75,-20,world|cyan_terracotta
+    - 42,75,-20,world|cyan_terracotta
+    - 41,75,-21,world|cyan_terracotta
+    - 25,76,-26,world|clay
+    - 25,76,-25,world|clay
+    - 23,77,-26,world|grass_block?minecraft:grass_block[snowy=false]
+    - 23,77,-25,world|grass_block?minecraft:grass_block[snowy=false]
+    - 24,76,-25,world|light_gray_terracotta
+    - 24,76,-26,world|light_gray_terracotta
+    - 3,81,-67,world|oak_leaves?minecraft:oak_leaves[distance=5,persistent=false]
+    - 5,82,-67,world|oak_leaves?minecraft:oak_leaves[distance=6,persistent=false]
+    - 4,82,-67,world|oak_leaves?minecraft:oak_leaves[distance=5,persistent=false]
+    - 4,80,-67,world|oak_leaves?minecraft:oak_leaves[distance=3,persistent=false]
+    - 5,80,-67,world|oak_leaves?minecraft:oak_leaves[distance=4,persistent=false]
+    - 4,81,-67,world|oak_leaves?minecraft:oak_leaves[distance=4,persistent=false]
+    - 5,81,-67,world|oak_leaves?minecraft:oak_leaves[distance=5,persistent=false]
+    - 3,82,-67,world|oak_leaves?minecraft:oak_leaves[distance=6,persistent=false]
+    - 3,80,-67,world|oak_leaves?minecraft:oak_leaves[distance=4,persistent=false]
+    - 24,76,-22,world|light_gray_terracotta
+    - 23,76,-22,world|light_gray_terracotta
+    - 24,76,-23,world|light_gray_terracotta
+    - 23,76,-23,world|light_gray_terracotta
+    - 23,78,-19,world|grass_block?minecraft:grass_block[snowy=false]
+    - 22,78,-20,world|light_gray_terracotta
+    - 21,79,-19,world|light_gray_terracotta
+    - 22,78,-19,world|light_gray_terracotta
+    - 18,77,-20,world|stone
+    - 19,78,-18,world|stone
+    - 18,78,-19,world|stone
+    - 20,77,-18,world|stone
+    - 18,78,-20,world|stone
+    - 19,76,-20,world|stone
+    - 18,78,-18,world|stone
+    - 18,77,-19,world|stone
+    - 19,76,-19,world|stone
+    - 19,77,-18,world|stone
+    - 18,77,-18,world|stone
+    - 16,79,-25,world|grass_block?minecraft:grass_block[snowy=false]
+    - 16,79,-26,world|grass_block?minecraft:grass_block[snowy=false]
+    - 15,80,-25,world|grass_block?minecraft:grass_block[snowy=false]
+    - 15,80,-24,world|grass_block?minecraft:grass_block[snowy=false]
+    - 16,79,-24,world|stone
+    - 34,76,-27,world|light_gray_terracotta
+    - 32,76,-26,world|light_gray_terracotta
+    - 34,76,-25,world|light_gray_terracotta
+    - 33,76,-26,world|light_gray_terracotta
+    - 33,76,-25,world|light_gray_terracotta
+    - 34,76,-26,world|light_gray_terracotta
+    - 12,81,-24,world|grass_block?minecraft:grass_block[snowy=false]
+    - 12,80,-25,world|stone
+    - 12,80,-26,world|grass_block?minecraft:grass_block[snowy=false]
+    - 13,80,-26,world|grass_block?minecraft:grass_block[snowy=false]
+    - 13,80,-25,world|grass_block?minecraft:grass_block[snowy=false]
+    - 14,80,-25,world|grass_block?minecraft:grass_block[snowy=false]
+    - 12,81,-25,world|grass_block?minecraft:grass_block[snowy=false]
+    - 10,85,-18,world|grass_block?minecraft:grass_block[snowy=false]
+    - 11,83,-18,world|stone
+    - 10,84,-19,world|stone
+    - 11,83,-20,world|grass_block?minecraft:grass_block[snowy=false]
+    - 11,83,-19,world|stone
+    - 12,83,-18,world|stone
+    - 11,84,-18,world|stone
+    - 12,83,-19,world|grass_block?minecraft:grass_block[snowy=false]
+    - 10,84,-18,world|stone
+    - 10,83,-19,world|stone
+    - 8,85,-19,world|grass_block?minecraft:grass_block[snowy=false]
+    - 9,85,-19,world|grass_block?minecraft:grass_block[snowy=false]
+    - 8,84,-20,world|grass_block?minecraft:grass_block[snowy=false]
+    - 9,86,-21,world|birch_log?minecraft:birch_log[axis=y]
+    - -2,84,-20,world|stone
+    - -2,84,-19,world|stone
+    - -2,85,-19,world|stone
+    - -1,84,-20,world|stone
+    - -2,85,-20,world|grass_block?minecraft:grass_block[snowy=false]
+    - -1,84,-19,world|stone
+    - 0,83,-21,world|grass_block?minecraft:grass_block[snowy=false]
+    - -1,83,-20,world|stone
+    - -2,83,-20,world|stone
+    - -1,83,-21,world|stone
+    - -1,83,-22,world|grass_block?minecraft:grass_block[snowy=false]
+    - -2,84,-21,world|stone
+    - 3,82,-24,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,82,-25,world|grass_block?minecraft:grass_block[snowy=false]
+    - 4,83,-24,world|grass_block?minecraft:grass_block[snowy=false]
+    - 3,82,-25,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,82,-24,world|grass_block?minecraft:grass_block[snowy=false]
+    - 3,83,-23,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Criticals
+    mode: NO_PHYSICS
+  33fb1329-03dd-4662-b8fa-b106f5b826b3:
+  - blocks:
+    - 8,67,-78,world|grass_block?minecraft:grass_block[snowy=false]
+    - 5,67,-76,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,68,-85,world|grass_block?minecraft:grass_block[snowy=false]
+    - 3,68,-88,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 5,68,-91,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,69,-94,world|grass_block?minecraft:grass_block[snowy=false]
+    - 6,67,-85,world|grass_block?minecraft:grass_block[snowy=false]
+    - 1,66,-107,world|grass_block?minecraft:grass_block[snowy=false]
+    - 3,64,-110,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,65,-109,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 1,68,-84,world|grass_block?minecraft:grass_block[snowy=false]
+    - 3,64,-108,world|grass_block?minecraft:grass_block[snowy=false]
+    - 3,65,-108,world|grass
+    - 1,66,-109,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 4,68,-93,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 2,67,-82,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,68,-82,world|grass
+    - 7,67,-85,world|grass_block?minecraft:grass_block[snowy=false]
+    - 0,68,-84,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - -3,67,-110,world|grass_block?minecraft:grass_block[snowy=false]
+    - -4,67,-110,world|grass_block?minecraft:grass_block[snowy=false]
+    - -4,67,-109,world|grass_block?minecraft:grass_block[snowy=false]
+    - -2,67,-109,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - -4,66,-110,world|dirt
+    - -5,67,-110,world|grass_block?minecraft:grass_block[snowy=false]
+    - -9,68,-110,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - -1,68,-83,world|grass_block?minecraft:grass_block[snowy=false]
+    - -4,67,-111,world|grass_block?minecraft:grass_block[snowy=false]
+    - -4,66,-116,world|grass_block?minecraft:grass_block[snowy=false]
+    - -4,67,-116,world|grass
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - -7,67,-117,world|grass_block?minecraft:grass_block[snowy=false]
+    - -3,66,-116,world|grass_block?minecraft:grass_block[snowy=false]
+    - -6,67,-116,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - -2,68,-85,world|grass_block?minecraft:grass_block[snowy=false]
+    - -7,66,-124,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 4,67,-80,world|grass_block?minecraft:grass_block[snowy=false]
+    - 2,68,-86,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - -2,68,-88,world|grass_block?minecraft:grass_block[snowy=false]
+    - -2,69,-88,world|grass
+    - 10,67,-95,world|grass_block?minecraft:grass_block[snowy=false]
+    - 10,68,-95,world|grass
+    - 1,68,-87,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - -1,68,-93,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 3,68,-86,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 7,67,-77,world|grass_block?minecraft:grass_block[snowy=false]
+    - 7,68,-77,world|grass
+    - 7,67,-82,world|grass_block?minecraft:grass_block[snowy=false]
+    - 7,68,-82,world|grass
+    - 6,67,-84,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 13,69,-72,world|grass_block?minecraft:grass_block[snowy=false]
+    - 15,69,-72,world|grass_block?minecraft:grass_block[snowy=false]
+    - 17,68,-71,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 16,67,-69,world|grass_block?minecraft:grass_block[snowy=false]
+    - 16,68,-69,world|grass
+    - 16,69,-72,world|grass_block?minecraft:grass_block[snowy=false]
+    - 14,69,-72,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - -3,68,-102,world|grass_block?minecraft:grass_block[snowy=false]
+    - -3,68,-101,world|grass_block?minecraft:grass_block[snowy=false]
+    - -3,68,-100,world|grass_block?minecraft:grass_block[snowy=false]
+    - -3,68,-103,world|grass_block?minecraft:grass_block[snowy=false]
+    - -2,68,-101,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - -5,68,-102,world|grass_block?minecraft:grass_block[snowy=false]
+    - -6,68,-102,world|grass_block?minecraft:grass_block[snowy=false]
+    - -6,69,-102,world|grass
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 11,67,-79,world|grass_block?minecraft:grass_block[snowy=false]
+    - 12,67,-78,world|grass_block?minecraft:grass_block[snowy=false]
+    - 10,67,-78,world|grass_block?minecraft:grass_block[snowy=false]
+    - 12,67,-79,world|grass_block?minecraft:grass_block[snowy=false]
+    - 14,67,-87,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 9,67,-82,world|grass_block?minecraft:grass_block[snowy=false]
+    - 9,68,-92,world|grass
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 82,66,-193,world|grass_block?minecraft:grass_block[snowy=false]
+    - 82,66,-190,world|grass_block?minecraft:grass_block[snowy=false]
+    - 78,66,-186,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 84,67,-178,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 84,70,-174,world|grass_block?minecraft:grass_block[snowy=false]
+    - 92,68,-172,world|grass_block?minecraft:grass_block[snowy=false]
+    - 89,71,-169,world|grass_block?minecraft:grass_block[snowy=false]
+    - 87,68,-174,world|grass_block?minecraft:grass_block[snowy=false]
+    - 83,67,-178,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 86,70,-173,world|grass_block?minecraft:grass_block[snowy=false]
+    - 87,69,-173,world|grass_block?minecraft:grass_block[snowy=false]
+    - 86,71,-157,world|grass_block?minecraft:grass_block[snowy=false]
+    - 86,72,-157,world|grass
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 83,70,-174,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 80,70,-173,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 72,67,-161,world|grass_block?minecraft:grass_block[snowy=false]
+    - 73,68,-164,world|grass_block?minecraft:grass_block[snowy=false]
+    - 77,69,-166,world|grass_block?minecraft:grass_block[snowy=false]
+    - 77,70,-166,world|grass
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 85,66,-188,world|grass_block?minecraft:grass_block[snowy=false]
+    - 84,66,-189,world|grass_block?minecraft:grass_block[snowy=false]
+    - 84,66,-188,world|grass_block?minecraft:grass_block[snowy=false]
+    - 84,67,-188,world|grass
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 85,66,-189,world|grass_block?minecraft:grass_block[snowy=false]
+    - 81,66,-189,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 79,66,-193,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 35,68,-196,world|grass_block?minecraft:grass_block[snowy=false]
+    - 34,69,-193,world|grass_block?minecraft:grass_block[snowy=false]
+    - 34,70,-193,world|grass
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 99,74,-205,world|grass_block?minecraft:grass_block[snowy=false]
+    - 99,75,-205,world|tall_grass?minecraft:tall_grass[half=lower]
+    - 99,76,-205,world|tall_grass?minecraft:tall_grass[half=upper]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 94,67,-201,world|grass_block?minecraft:grass_block[snowy=false]
+    - 94,68,-201,world|grass
+    - 81,66,-195,world|grass_block?minecraft:grass_block[snowy=false]
+    - 81,67,-195,world|grass
+    - 79,66,-194,world|grass_block?minecraft:grass_block[snowy=false]
+    - 78,66,-193,world|grass_block?minecraft:grass_block[snowy=false]
+    - 78,67,-193,world|grass
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 77,66,-192,world|grass_block?minecraft:grass_block[snowy=false]
+    - 73,65,-188,world|grass_block?minecraft:grass_block[snowy=false]
+    - 73,65,-187,world|grass_block?minecraft:grass_block[snowy=false]
+    - 84,68,-177,world|grass_block?minecraft:grass_block[snowy=false]
+    - 83,70,-173,world|grass_block?minecraft:grass_block[snowy=false]
+    - 91,69,-171,world|grass_block?minecraft:grass_block[snowy=false]
+    - 82,71,-167,world|grass_block?minecraft:grass_block[snowy=false]
+    - 82,72,-167,world|grass
+    - 84,71,-172,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 97,68,-227,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 90,66,-187,world|grass_block?minecraft:grass_block[snowy=false]
+    - 88,66,-195,world|grass_block?minecraft:grass_block[snowy=false]
+    - 88,67,-195,world|grass
+    - 96,66,-179,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 57,94,-164,world|grass_block?minecraft:grass_block[snowy=false]
+    - 55,94,-165,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 57,94,-170,world|grass_block?minecraft:grass_block[snowy=false]
+    - 56,94,-171,world|grass_block?minecraft:grass_block[snowy=false]
+    - 57,94,-171,world|grass_block?minecraft:grass_block[snowy=false]
+    - 58,94,-169,world|grass_block?minecraft:grass_block[snowy=false]
+    - 57,94,-172,world|grass_block?minecraft:grass_block[snowy=false]
+    - 55,94,-170,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 65,94,-174,world|grass_block?minecraft:grass_block[snowy=false]
+    - 57,94,-193,world|grass_block?minecraft:grass_block[snowy=false]
+    - 45,94,-192,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 84,94,-162,world|grass_block?minecraft:grass_block[snowy=false]
+    - 85,94,-165,world|grass_block?minecraft:grass_block[snowy=false]
+    - 95,94,-189,world|grass_block?minecraft:grass_block[snowy=false]
+    - 94,94,-188,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 83,94,-172,world|grass_block?minecraft:grass_block[snowy=false]
+    - 86,94,-171,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 55,94,-169,world|grass_block?minecraft:grass_block[snowy=false]
+    - 52,94,-170,world|grass_block?minecraft:grass_block[snowy=false]
+    - 53,94,-171,world|grass_block?minecraft:grass_block[snowy=false]
+    - 50,94,-170,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 65,94,-181,world|grass_block?minecraft:grass_block[snowy=false]
+    - 68,94,-172,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 59,94,-179,world|grass_block?minecraft:grass_block[snowy=false]
+    - 63,94,-180,world|grass_block?minecraft:grass_block[snowy=false]
+    - 56,94,-164,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 65,94,-188,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 66,94,-175,world|grass_block?minecraft:grass_block[snowy=false]
+    - 62,94,-172,world|grass_block?minecraft:grass_block[snowy=false]
+    - 57,94,-176,world|grass_block?minecraft:grass_block[snowy=false]
+    - 65,94,-171,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 67,94,-178,world|grass_block?minecraft:grass_block[snowy=false]
+    - 67,94,-177,world|grass_block?minecraft:grass_block[snowy=false]
+    - 65,94,-178,world|grass_block?minecraft:grass_block[snowy=false]
+    - 67,94,-179,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 69,94,-182,world|grass_block?minecraft:grass_block[snowy=false]
+    - 72,94,-182,world|grass_block?minecraft:grass_block[snowy=false]
+    - 81,94,-177,world|grass_block?minecraft:grass_block[snowy=false]
+    - 94,94,-163,world|grass_block?minecraft:grass_block[snowy=false]
+    - 91,94,-165,world|grass_block?minecraft:grass_block[snowy=false]
+    - 90,94,-166,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 103,94,-174,world|grass_block?minecraft:grass_block[snowy=false]
+    - 103,94,-175,world|grass_block?minecraft:grass_block[snowy=false]
+    - 104,94,-172,world|grass_block?minecraft:grass_block[snowy=false]
+    - 103,94,-176,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 64,94,-181,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 52,94,-184,world|grass_block?minecraft:grass_block[snowy=false]
+    - 52,94,-185,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 45,94,-169,world|grass_block?minecraft:grass_block[snowy=false]
+    - 47,94,-170,world|grass_block?minecraft:grass_block[snowy=false]
+    - 46,94,-166,world|grass_block?minecraft:grass_block[snowy=false]
+    - 47,94,-164,world|grass_block?minecraft:grass_block[snowy=false]
+    - 47,94,-172,world|grass_block?minecraft:grass_block[snowy=false]
+    - 48,94,-161,world|grass_block?minecraft:grass_block[snowy=false]
+    - 51,94,-167,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 52,94,-191,world|grass_block?minecraft:grass_block[snowy=false]
+    - 62,94,-191,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 70,94,-186,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+  - blocks:
+    - 72,94,-179,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Arcane Missiles
+    mode: NO_PHYSICS
+spells:
+  boon:
+    cast_count: 1
+    last_cast: 1643215703290
+    last_earn: 1643215703290
+    cooldown_expiration: 1643215709290
+    charges: 0.0
+  current|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabeam|3:
+    cast_count: 1
+    last_cast: 1643855369927
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shatterbolt:
+    cast_count: 2
+    last_cast: 1643298979173
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 262
+    last_cast: 1650913984851
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  healbolt:
+    cast_count: 6
+    last_cast: 1643853040642
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 423
+    last_cast: 1643855152778
+    last_earn: 0
+    cooldown_expiration: 1643855153178
+    charges: 2.0
+  fling:
+    cast_count: 44
+    last_cast: 1643855359124
+    last_earn: 0
+    cooldown_expiration: 1643855366124
+    charges: 0.0
+  cluster|4:
+    cast_count: 28
+    last_cast: 1643855821927
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemissiles:
+    cast_count: 179
+    last_cast: 1650913984852
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  snowballburst|3:
+    cast_count: 172
+    last_cast: 1643855594616
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  auralburst:
+    cast_count: 10
+    last_cast: 1643744977011
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  crimsonlotus:
+    cast_count: 56
+    last_cast: 1651800129117
+    last_earn: 0
+    cooldown_expiration: 1651800073977
+    charges: 0.0
+  virus_death:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  eat_food:
+    cast_count: 0
+    last_cast: 1643855365428
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 12
+    last_cast: 1643855110276
+    last_earn: 0
+    cooldown_expiration: 1643855170276
+    charges: 0.0
+  missile:
+    cast_count: 10
+    last_cast: 1643674142245
+    last_earn: 1643674134445
+    cooldown_expiration: 1643674143245
+    charges: 0.0
+  icewall|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  smite|3:
+    cast_count: 76
+    last_cast: 1643855706426
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  castshield:
+    cast_count: 1
+    last_cast: 1651335384461
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemeteor|3:
+    cast_count: 5
+    last_cast: 1643855382030
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabeam:
+    cast_count: 84
+    last_cast: 1650913976297
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  criticalplayer:
+    cast_count: 119
+    last_cast: 1650393659334
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  inflictcrit:
+    cast_count: 109
+    last_cast: 1650913977734
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 14
+    last_cast: 1643744948655
+    last_earn: 1643744948655
+    cooldown_expiration: 1643744954655
+    charges: 0.0
+  slam:
+    cast_count: 2
+    last_cast: 1643723696663
+    last_earn: 0
+    cooldown_expiration: 1643723704663
+    charges: 0.0
+  arcanehail:
+    cast_count: 9
+    last_cast: 1643854134586
+    last_earn: 0
+    cooldown_expiration: 1643854144586
+    charges: 0.0
+  arcanebarrage:
+    cast_count: 45
+    last_cast: 1650913979668
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 81
+    last_cast: 1650913981797
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  repeaterspell|3:
+    cast_count: 178
+    last_cast: 1643855674683
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  anchor:
+    cast_count: 94
+    last_cast: 1650913976296
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  iceshard|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 2
+    last_cast: 1643298972819
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  missile|5:
+    cast_count: 2
+    last_cast: 1643855617777
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  lightblink:
+    cast_count: 31
+    last_cast: 1651799936265
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  birth_virus:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Focus
+          Bolt"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"Basic
+          Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [Admin] dragoninja54"}'
+        - '{"italic":false,"extra":[{"color":"white","text":"Encoded: "},{"color":"#FF2288","text":"4
+          "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":" ✵ Spell Damage: 13.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":" ❃ "},{"color":"gray","text":"Mana
+          Maximum: "},{"color":"aqua","text":"162"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":" ❃ "},{"color":"gray","text":"Mana
+          Recharge: "},{"color":"aqua","text":"21"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          "},{"color":"white","text":"Attunement "},{"color":"gray","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          "},{"color":"white","text":"Conduit "},{"color":"gray","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          "},{"color":"white","text":"Engram "},{"color":"gray","text":"Slot"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Focus"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Bolt"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        custom-model-data: 1
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 1.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: bc68e37f-1627-4e58-8611-43a8b3faf28b
+            operation: 0
+          GENERIC_ATTACK_DAMAGE:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 3.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 0a1f3f45-fb14-4d6b-ba52-fd2e4ebe90f1
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0WQwU7DMBBEN7SoaQBxQZw5cLUUOw5Jj3wHQtF641BDake2k4q/xw1I7G32MPNmCoAM9uRxiKhGnWWw/dJ6ygrYntH2OVy7s9UeHt5e+5Ox70+9xw9njf3EWm7g8eiiQt8Zu2gbnf/uyM02QnLN4cr08Cy4IhL4wmRdIpOtbBi2VcsqThJbzg8HSim3SNEsuguTHkfYD47moNwYC7hfX/8BG7hDT2h1ik0oGi6XQx71aRoxaigUBkPdL32+0ncXkLKq6kHxholBVkxyJKbKpmRlYqhEWwsSqdBu0T4YZ5PpLi1zM9sQMRz/tkmy926aVgk/m+wLGDwBAAA=
+    wand:
+      owner: '[Admin] dragoninja54'
+      hotbar_inventory_count: 1
+      id: 21bcc2a6-450a-4847-a838-31c4a81199cd
+      active_spell: focusbolt
+      spell_inventory:
+        arcanebarrage: 0
+      version: 7
+      owner_id: 0335fb17-2f43-41ac-b070-011932852c24
+      template: basic_wand
+  draconic_staff_true:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: NETHERITE_INGOT
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Cluster
+          Bomb"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"Draconic
+          Staff"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"text":"The power of ancient beasts rests in"}'
+        - '{"text":"your palms"}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [ADMIN] dragoninja54"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"13 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"48000"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"300"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":" "},{"color":"gray","text":"Arcane
+          Damage: "},{"color":"green","text":"+"},{"color":"green","text":"50%"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":" "},{"color":"gray","text":"Lightning
+          Damage: "},{"color":"green","text":"+"},{"color":"green","text":"50%"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":" "},{"color":"gray","text":"Ice
+          Damage: "},{"color":"green","text":"+"},{"color":"green","text":"50%"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":" "},{"color":"gray","text":"Armor:
+          "},{"color":"green","text":"+"},{"color":"green","text":"20"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":" "},{"color":"gray","text":"Arcane
+          Resistance: "},{"color":"green","text":"+"},{"color":"green","text":"30%"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Cluster Bomb"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 18001
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 76b95f26-48d4-4064-b421-a57ac63f2223
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        - HIDE_DYE
+        internal: H4sIAAAAAAAA/0VSTW/UMBCdbbLddLfQA6hnDlwj5bO7ewOJCwf4AwhZY2fSGBI7sp1dVQh+VLlx49fwN5ikEtz87Jk3773xFmAFV8phG1D2tFpB/JVoXG0hPqNpEljbsyEHLz+9fffh/cfPrxqH99Zo8wXrKoLbzgaJTmhzIhOsexDKTiYAsyZwjSroEwk/Ut/DRvWTD+QSuNANvM4OZZZjU6ZVWxdppeRdinfHKqWibo5yT8e6kTE8H9CgCHogH3AYmfbH78efvxKItbIGbg2FjpwOxArubfiWH7Is/76Fm2Xmf1kRPPPGniX2vZycnwVuIkhmdkk4MFxHsDtpN3nREIaOb665QCvyHbqG4VXEFibnaLGXMBq097onRsDNUrvQiYWCL3bczDyitXZujqN//udqluNo5HdyT+GwsYjzcgoNDRTIzmWXEaz9wOb4fMEELOaMS/EWLiGexb/5M87jIYFk2ZNYoi3LupX5Pi3aivPNUaUy22dplufHsjjUhSp4dZsTD9ccIkfB7YGGsWdB8II3zNlqJTjythXBTcR/ZDcZxhzG0y9h2Dg7jguEv+wD6PBGAgAA
+    wand:
+      owner: '[ADMIN] dragoninja54'
+      hotbar_inventory_count: 1
+      mana_timestamp: 1643927221178
+      id: 08301ad3-4f52-4cb6-a694-e25d9b7e95db
+      active_spell: cluster
+      icon: netherite_ingot{18001}
+      spell_inventory:
+        virus_death: 12
+        manabeam: 5
+        snowballburst: 7
+        iceshard: 9
+        current: 8
+        missile: 0
+        birth_virus: 11
+        cluster: 3
+        eat_food: 4
+        repeaterspell: 1
+        arcanemeteor: 6
+        smite: 2
+        icewall: 10
+      mana: 48000.0
+      template: draconic_staff_true
+      version: 7
+      owner_id: 0335fb17-2f43-41ac-b070-011932852c24
+  wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Flash
+          Step"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [Admin] dragoninja54"}'
+        - '{"italic":false,"extra":[{"color":"white","text":"Encoded: "},{"color":"#FF2288","text":"5
+          "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":" ✵ Spell Damage: 1.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":" ❃ "},{"color":"gray","text":"Mana
+          Maximum: "},{"color":"aqua","text":"162"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":" ❃ "},{"color":"gray","text":"Mana
+          Recharge: "},{"color":"aqua","text":"16"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"text":"Mage "},{"color":"white","text":"Magic Wand"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Flash"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Step"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        custom-model-data: 18001
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 1.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 42c49d4c-9dd2-47c0-ab99-a1f0bfcdb614
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/01Ry27bMBBcRy6iuGl7KXrOIegpAvgQZfmY7ygKY0ktY9YUKZC0g6Lov5d2CrTHmR3szsxuAFZwZxLagtrTagXrI9Gy2sD6FcPUwrv4GijB52/P0+zC94cp4UsMLvxA1Tfw5RCLxrR34UyhxPRzb+IpFKhbW7hxEzxyIjNOGjs9qKHr9WA6NFx3bGKKtkLupBpbuEdT3Jn2eSHvYePdy6Fo78KxhbUzMcB9Ls4cf/GRMf57A5+uwn9nG/iAyWCgaqYapIuBBtoZA2rCuUJo4OObZHY5O0/5wjX/36rEuoE7G80p6+gvKW6ghbbQvHgs9FZJA7dnStlVUwC3dXwtaH/JyqRUVvNtJ2wvu56j6TTbso5xvpNiVMKIvmYla8mU2pSPCb5qbewgd0MvLHsSRBKZlWpQ8glRWSsEjRPH+qX3p5AL5sPfP1U4pbgsVwh/AJQpylfIAQAA
+    wand:
+      owner: '[Admin] dragoninja54'
+      hotbar_inventory_count: 1
+      id: 1eec8dba-b656-4b6c-ac1b-0d05e7239358
+      active_spell: lightblink
+      icon: stick{18001}
+      spell_inventory:
+        arcanebarrage: 1
+        manabeam: 0
+        lightblink: 4
+        arcanemissiles: 3
+        focusbolt: 2
+      owner_id: 0335fb17-2f43-41ac-b070-011932852c24
+      version: 7
+      template: wand
+      effect_color: bbcf639642f0,2ee3a0f35653,aa5ff22e8d1a
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 176.0
+  recall_friends: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1642971665748
+    given_items:
+      bread:
+        amount: 16
+        last_give: 1642971665747
+      rogueboots:
+        amount: 1
+        last_give: 1642971665747
+      basic_wand:
+        amount: 1
+        last_give: 1642971665746
+      roguehelmet:
+        amount: 1
+        last_give: 1642971665748
+      roguechestplate:
+        amount: 1
+        last_give: 1642971665748
+      rogueleggings:
+        amount: 1
+        last_give: 1642971665747
+classes:
+  caster:
+    mana_max: 50
+    mana_regeneration: 5
+    mana_timestamp: 1643674957802
+    mana: 50.0
+  mage:
+    effect_color: a5f9f9dff6a5,b952c596faed,b765b21451f
+    mana_timestamp: 1651954309843
+    mana: 162.0
+    spells:
+    - manabeam
+    - arcanebarrage
+    - focusbolt
+    - arcanemissiles
+    - lightblink
+  arcanamage:
+    spells:
+    - slam
+    - arcanehail
+    - boon
+    - criticalplayer
+    - auralburst
+    - focusbolt
+    - shatterbolt
+    - mendwounds
+    - manabolt
+    - scattershot
+    - fling
+    mana: 150.0
+    spell_levels:
+      boon: 2
+    mana_timestamp: 1643927225779
+transient_modifiers: {}
+active_class: mage
+health: 7.3333330154418945

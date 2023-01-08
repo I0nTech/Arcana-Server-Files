@@ -1,0 +1,115 @@
+manablast:
+  name: Mana Blast
+  description: Channel, then fire a volitile overcharged mana bolt dealing 10 Magic Damage in an area upon impact.
+  category: arcane
+  icon: prismarine_shard
+  actions:
+    cast:
+      - class: ChangeContext
+        target_self: true
+        target_caster: true
+        actions:
+        - class: Cast
+          spell: channel
+          spell_parameters:
+            warmup: 800
+      - class: Delay
+      - class: Retarget
+      - class: PlayEffects
+        effects: fire
+      - class: CustomProjectile
+        hit_on_miss: true
+        actions:
+          - class: Delay
+            delay: 200
+          - class: PlayEffects
+            effects: explode
+          - class: AreaOfEffect
+            actions:
+            - class: Velocity
+            - class: Damage
+          - class: Sphere
+            actions:
+              - class: BreakBlock
+  effects:
+      fire:
+      - sound: item_axe_scrape
+        sound_pitch: 2
+        sound_volume: 0.5
+        color_override: color
+      tick:
+      - location: target
+        particle: dust_color_transition
+        particle_offset: 0.4
+        particle_count: 3
+        particle_size: 0.9
+        to_color: "#73FBD3"
+      - location: target
+        particle: dust_color_transition
+        particle_offset: 0.2
+        particle_count: 4
+        particle_size: rand(1,1.4)
+        to_color: "#73FBD3"
+      hit:
+      - class: EffectSingle
+        location: target
+        particle: sonic_boom
+        to_color: "#73FBD3"
+        particle_count: 1
+        particle_data: 4
+        particle_offset: 0
+      step:
+      - location: target
+        color_override: color
+        effectlib:
+          class: Vortex
+          duration: 100
+          helixes: 12
+          circles: 1
+          radius: 0.8
+          particle: enchantment_table
+          particle_count: 1
+          speed: 0.5
+      explode:
+      - sound: entity_dragon_fireball_explode
+        sound_pitch: 0.4
+        sound_volume: 2
+      - sound: entity_player_attack_knockback
+        sound_pitch: 2
+        location: both
+      - sound: entity_player_attack_crit
+        sound_pitch: 4
+        location: both
+      - sound: entity_player_attack_knockback
+        location: target
+        sound_pitch: 4
+  parameters:
+    warmup: 800
+    range: 48
+    velocity: 60
+    gravity: 0.025
+    drag: 0.3
+    hitbox: true
+    hitbox_size: 0.5
+    damage_type: magic
+    damage: 10
+    falling: true
+    target_self_timeout: 300
+    target: none
+    radius: 2.5
+    target_type: Damageable
+    push: 1
+    direction: 0,0.2,0
+    durability_max_distance: 3
+    damage_max_distance: 4
+    damage_min_distance: 1.5
+    undo: 5000
+    cooldown: 8000
+    destructible: solid
+    destructible_override: true
+    destructible_durability: 50
+    break_durability: 6
+    undo_speed: 0.5
+    no_damage_ticks: 0
+  costs:
+    mana: 80

@@ -1,0 +1,23 @@
+unstablemob:
+  legacy_icon: nether_star
+  name: Unstable
+  passive: true
+  triggers:
+    - trigger: interval
+      interval: 10000
+  description: Strike a nearby entity with lightning
+  actions:
+    cast:
+      - class: AreaOfEffect
+        actions:
+         - class: Lightning
+         - class: Damage
+  parameters:
+    target: self
+    target_type: Player
+    effect_only: true
+    damage: 4
+    bypass_pvp: true
+    radius: 10
+    target_count: 1
+    quiet: true

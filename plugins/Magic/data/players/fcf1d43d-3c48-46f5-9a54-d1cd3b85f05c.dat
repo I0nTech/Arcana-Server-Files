@@ -1,0 +1,319 @@
+id: fcf1d43d-3c48-46f5-9a54-d1cd3b85f05c
+name: Uprizing
+created: 1643739608281
+updated: 1645135476918
+last_cast: 1645135001755
+cooldown_expiration: 0
+last_death_location: 32.97583222074915,-212.62910240954164,-386.1759309146067,spawn,-55.74025,12.6761265
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  325ed72c-10be-4fb2-aeaa-c612d56e7b18: []
+  783f2316-86a3-4ef1-85e4-87ca74b58504: []
+spells:
+  criticalplayer:
+    cast_count: 9
+    last_cast: 1645059601539
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  charge:
+    cast_count: 27
+    last_cast: 1645059375442
+    last_earn: 0
+    cooldown_expiration: 1645059385442
+    charges: 0.0
+  shatterbolt:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  inflictcrit:
+    cast_count: 7
+    last_cast: 1645056897406
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 4
+    last_cast: 1645058335888
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 1
+    last_cast: 1645059269647
+    last_earn: 1645059269648
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 80
+    last_cast: 1645058972232
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 2.0
+  fling:
+    cast_count: 1
+    last_cast: 1645058284428
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  slam:
+    cast_count: 3
+    last_cast: 1644778165903
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanehail:
+    cast_count: 2
+    last_cast: 1645058554900
+    last_earn: 0
+    cooldown_expiration: 1645058564900
+    charges: 0.0
+  auralburst:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 4
+    last_cast: 1645058335888
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 5
+    last_cast: 1645059322798
+    last_earn: 0
+    cooldown_expiration: 1645059382798
+    charges: 0.0
+  scattershot:
+    cast_count: 4
+    last_cast: 1645058333340
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  airslash:
+    cast_count: 52
+    last_cast: 1645135001755
+    last_earn: 0
+    cooldown_expiration: 1645135004255
+    charges: 0.0
+wands:
+  voidwalker_staff:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: NETHERITE_SHOVEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Slashing
+          Wind"},{"italic":false,"color":"white","text":" ("},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DF00FF","text":"Voidwalker''s
+          Lament"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"light_purple","text":"☪ Abyssal Power"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [BUILDER] Uprizing"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"13 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 15.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"350"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"40"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Slashing Wind"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 803065f8-4780-48e2-90ca-bc2bec40e84c
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0VRsW7cMAylq0vj+IIkTYFuLTp0NZDL2Rd7LdKhQKcCmYrCoCkpFqKTDEm+Q/r1pZ0A0UQ+Uo+PjwVABmcUUCfsrcoyWD0pNWYFrI7oZA4n/uhUgOs/3x9+/rr/8fvv14cxmH/GPQpYjfiogJ+AT4NPPYbOuINyyYfnjvzkEteyHN4ZCd/abYNSayrbtr8tq91Olm21uy0bvLupm4aI7jY5nCMlc1BdHJW1kKMJ0WIcCrhckDd+Ae9pwLDMz1gKt+05vBCQ79Fh7+08/FxAgVNA208hzkA+A4HQqQGNZWDNf3vvHYeXAtaRMCUVIq/DyGcBZ9rTFF/pvswdw9LxinwQbyJfnCj2yskjLy8j51cCLiiYZAjtaPGZrQT4KOBEW7aQ4wJyyJPaczEpuDp4I49on1ToYkKtubgcoJst1KQ3strKcktVwxbqumyxrkq5Ibntm1rf1CTg9MD6zbLRKR93PTlmYtUv5+VUBj+OSwr/AdW5I8z/AQAA
+    wand:
+      owner: '[BUILDER] Uprizing'
+      page: 0
+      hotbar_inventory_count: 1
+      id: 938adffc-99b2-466d-9462-8a70588ccc71
+      active_spell: airslash
+      spell_inventory:
+        charge: 1
+        slam: 14
+        manabolt: 12
+        auralburst: 8
+        arcanehail: 11
+        boon: 15
+        scattershot: 29
+        focusbolt: 30
+        shatterbolt: 17
+        airslash: 0
+        mendwounds: 16
+        criticalplayer: 19
+        fling: 10
+      template: voidwalker_staff
+      owner_id: fcf1d43d-3c48-46f5-9a54-d1cd3b85f05c
+      version: 7
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Slam"},{"italic":false,"color":"white","text":"
+          ("},{"italic":false,"color":"dark_aqua","text":"Basic Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [ADMIN] Uprizing"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"13 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Slam"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: b5238083-ccbe-4641-a2d3-56fbb86f11db
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0VRPW/bMBR8LpWalt0kXTp36CrAtqTGGgt0yZBsnYpCePxQRIQmBZKykQT9731SDHTjHQ/37t3LARawkgG7hMLqxQKyZ62HRQ7ZGZ3icOXPTge4/f3j58P945+vv4ZgXo17YvCl90lgaI07aZd8eGmlH10CcuTwwSj41jVl09UHWei9FkW1F1jg3Z0qRHUQza4sxaEpOWxQJnPSbRy0tZBFi0cOmZHewSYmI5/f9tvtdv83h5tZ8n8gg4+yx/Ckp5kM+BEdCm+nCJxBJjxZAGwY5BgkOt2jsUR8nogxoBVjiJP4lsE6SkxJh0hLEbNisOq8HOPF7npS9LPiwtzQPDSB0saeIJDnUTt1pgpUJLxmcC2DofxoB4sv1CHAJwZXnaX26J0DB570kT6ThlxgNLJ975zPnbdzhbLbqapURSmrQ1F97+qiwboq1E4q6q/utrVksDxRcjNvu6R7rkcXE+W6XJSgCn4YZgj/AP4Xw//yAQAA
+    wand:
+      owner: '[ADMIN] Uprizing'
+      hotbar_inventory_count: 1
+      id: f939f58c-e2eb-42ba-a77d-b48b9133b893
+      active_spell: slam
+      icon: stick{20002}
+      spell_inventory:
+        charge: 1
+        manabolt: 8
+        boon: 12
+        arcanehail: 17
+        auralburst: 16
+        scattershot: 9
+        focusbolt: 14
+        shatterbolt: 15
+        airslash: 0
+        mendwounds: 11
+        criticalplayer: 13
+        fling: 10
+      template: basic_wand
+      owner_id: fcf1d43d-3c48-46f5-9a54-d1cd3b85f05c
+      version: 7
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 6.0
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1643739608381
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1643739608381
+      basic_wand:
+        amount: 1
+        last_give: 1643739608380
+classes:
+  arcanamage:
+    spells:
+    - boon
+    - criticalplayer
+    - charge
+    - shatterbolt
+    - manabolt
+    - fling
+    - slam
+    - arcanehail
+    - auralburst
+    - focusbolt
+    - mendwounds
+    - scattershot
+    - airslash
+    spell_levels:
+      boon: 2
+    mana: 350.0
+    mana_timestamp: 1645135377869
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

@@ -1,0 +1,65 @@
+mobbarrage:
+  name: Barrage
+  description: Damage Your Target
+  icon: stick
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+        - class: Delay
+        - class: Retarget
+        - class: PlayEffects
+          effects: fire
+        - class: ChangeContext
+          actions:
+            - class: CustomProjectile
+              actions:
+                - class: Damage
+  effects:
+    fire:
+      - location: origin
+        sound: item_trident_hit
+        sound_pitch: 0.1
+        sound_volume: 0.3
+    tick:
+      - location: target
+        particle: redstone
+        particle_count: 2
+        particle_offset: 0.01
+        particle_size: 0.4
+    hit_block:
+     -  class: EffectSingle
+        location: target
+        particle: block_crack
+        particle_count: 8
+        particle_offset_x: 0.1
+        particle_offset_y: 0.2
+        particle_offset_z: 0.1
+    hit_entity:
+     -  class: EffectSingle
+        location: target
+        particle: dust_color_transition
+        size: 0.1
+        to_color: "#73FBD3"
+        particle_count: 5
+        particle_offset: 0.8
+    hit:
+     -  sound: entity_player_attack_knockback
+        sound_pitch: 2
+        location: target
+     -  location: target
+        particle: redstone
+        particle_count: 6
+        particle_offset: 0.2
+  parameters:
+    range: 32
+    velocity: 20
+    damage: 4
+    no_damage_ticks: 0
+    multiply: 20
+    delay: rand(100,600)
+    target_offset: 0,-2,0
+    relative_source_offset:
+      x: rand(-0.5,0.5)
+      y: rand(-0.5,1.5)
+      z: rand(-4,4)

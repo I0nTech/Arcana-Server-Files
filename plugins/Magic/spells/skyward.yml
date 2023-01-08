@@ -1,0 +1,94 @@
+skyward:
+  name: Skyward
+  description: Test
+  icon: snow_block
+  category: ice
+  worth: 7000
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+        - class: Spread
+          actions:
+          - class: ChangeContext
+            requires_target: true
+            actions:
+            - class: Delay
+            - class: EntityProjectile
+              spread: 0.2
+              actions:
+                - class: AreaOfEffect
+                  radius: 2
+                  actions:
+                    - class: Damage
+                    - class: PotionEffect
+                    - class: Velocity
+  effects:
+    cast:
+      - location: target
+        effectlib:
+          class: Modified
+          parameters:
+            radius: '(t/2) * 1/2 + 2'
+          effect:
+            class: Warp
+            iterations: 1
+            rotation: 2
+            period: 500
+            particle_count: 1
+            rings: 3
+            radius: 8
+            particle: snow_shovel
+            update_directions: false
+            update_locations: false
+    tick:
+      - location: target
+        particle: dust_color_transition
+        color: "#b0e0e6"
+        to_color: "#afeeee"
+        particle_count: 1
+        particle_offset: 2
+        particle_size: 0.5
+    hit:
+     - location: target
+       particle: snowball
+       particle_count: 5
+       particle_offset: 0.2
+     - class: EffectSingle
+       sound: block_powder_snow_break
+       sound_volume: 0.2
+       location: target
+  parameters:
+    type: snowball
+    radius: 1
+    source_at_target: true
+    target_offset: 0,0.4,0
+    hitbox: true
+    hitbox_size: 1
+    source_pitch: -90
+    source_yaw: 0
+    delay: rand(0,2000)
+    range: 64
+    velocity: 60
+    multiply: 100
+    damage_type: ice
+    target_type: Damageable
+    target_self: false
+    target: other
+    damage: 2
+    gravity: 0.06
+    no_damage_ticks: 0
+    variant: true
+    fov: 1
+    plan:
+      - time: 1000
+        velocity: 16
+        gravity: 0.001
+    potion_effects:
+      slow: 0
+      weakness: 0
+    duration: 1000
+    direction: 0,0,0
+    cooldown: 0
+  costs:
+    mana: 200

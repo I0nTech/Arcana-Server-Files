@@ -1,0 +1,134 @@
+seeker_swarm:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  name: Seeker Swarm
+  icon: ender_eye
+  icon_disabled: ender_pearl
+  category: ender
+  upgrade_required_casts: 6000
+  worth: 10000
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+      - class: Repeat
+        actions:
+        - class: AreaOfEffect
+          actions:
+          - class: Asynchronous
+            actions:
+            - class: EntityProjectile
+              target: other
+              actions:
+              - class: Velocity
+              - class: Damage
+        - class: Delay
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: magic.ignite
+      location: origin
+      source_location: head
+      effectlib:
+        class: SphereEffect
+        duration: 100
+        particle: crit
+        particle_count: 3
+        radius: 0.5
+    tick:
+    - particle: dragon_breath
+      particles: 1
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+      particle_data: 0.0175
+      location: target
+    - particle: spell_witch
+      particle_count: 1
+      particle_offset_x: 0.001
+      particle_offset_y: 0.001
+      particle_offset_z: 0.001
+      location: target
+    - particle: spell_witch
+      particles: 5
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+      particle_data: 0.0125
+      location: target
+    hit:
+    - class: EffectSingle
+      sound: entity_elder_guardian_hurt
+      sound_pitch: 2
+      sound_volume: 5
+      particle: explosion_large
+      particle_data: 2
+      location: target
+      color: ffff00
+      color2: ff0000
+    - location: target
+      particle: redstone
+      color: 4b0082
+      particle_count: 50
+      particle_offset_x: 0.1
+      particle_offset_y: 0.1
+      particle_offset_z: 0.1
+      particle_data: 0.1
+    target:
+    - class: EffectSingle
+      location: source
+      sound: entity_evoker_fangs_attack
+      sound_pitch: 4
+      sound_volume: 2
+      particle: explosion_large
+      particle_offset_x: 0.001
+      particle_offset_y: 0.001
+      particle_offset_z: 0.001
+  parameters:
+    type: shulker_bullet
+    target: self
+    target_self: false
+    repeat: "1+seekerrepeats"
+    multiply: "2+seekershots"
+    delay: 1000
+    range: 128
+    push: 1
+    living_entity_speed: 1
+    velocity: 40
+    source_location: head
+    radius: 32
+    tick_size: 0.2
+    target_count: 3
+    target_type: Creature
+    damage: "3+seekerdamage"
+    no_damage_ticks: 0
+    ignore_blocks: false
+    cooldown: 20000
+    lifetime: 10000
+    target_self_timeout: 2000
+    track_speed: rand(0.2,0.35)
+    use_target_location: false
+    velocity_transform:
+      orient: false
+      x: rand(-3,3) * cos(t)
+      y: rand(3,10)
+      z: rand(-3,3) * sin(t)
+    plan:
+    - time: 100
+      track_target: true
+      velocity_transform: ''
+      velocity: 20
+      effects: target
+  costs:
+    mana: 150
+seeker_swarm|2:
+  upgrade_required_casts: 9000
+  parameters:
+    target_count: 4
+    damage_multiplier: 1.25
+seeker_swarm|3:
+  parameters:
+    target_count: 5
+    damage_multiplier: 1.5
+
+

@@ -1,0 +1,14 @@
+locatorcompass:
+  name: '&2Locator Compass'
+  icon: compass
+  glow: true
+  cost_reduction: 2
+  right_click: cast
+  active_spell: locator
+  lore:
+  - '§6Ability: Locator &e&l[RIGHT-CLICK]'
+  - §7Upon activating the &6Locator
+  - §7ability a particle effect will
+  - §7appear to direct you in the
+  - §7direction of the specified landmark.
+  - §8Compass needle is not accurate.

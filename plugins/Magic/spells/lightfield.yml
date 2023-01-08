@@ -1,0 +1,57 @@
+lightfield:
+  name: Ward of Dawn
+  description: 
+  icon: stick
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+        - class: Interval
+          interval: 100
+          actions:
+            - class: AreaOfEffect
+              actions:
+                - class: PlayEffects
+                  effects: shield
+                - class: PotionEffect
+                  duration: 200
+  effects:
+    hit:
+    - location: target
+      effectlib:
+        class: Modified
+        parameters:
+          radius: "(t/i)*10+5"
+          particles: "32 + (t/i) * 32"
+        effect:
+          class: Shield
+          particle: wax_off
+          duration: 11000
+    shield:
+    - location: target
+      particle: wax_on
+      particle_offset_x: 0.3
+      particle_offset_y: 0.5
+      particle_offset_z: 0.3
+      particle_data: 0.05
+      particle_count: 2
+    tick:
+      - location: target
+        particle: end_rod
+        particle_data: 0.05
+        particle_offset: 0
+        particle_count: 1
+  parameters:
+    range: 32
+    velocity: 30
+    gravity: 0.1
+    drag: 0.05
+    radius: 10
+    duration: 8000
+    target_self_timeout: 200
+    target_type: Damageable
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    add_effects:
+      damage_resistance: 4

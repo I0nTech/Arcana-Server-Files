@@ -1,0 +1,264 @@
+id: 7b2b648c-7d57-46c2-8529-690e2290eb29
+name: IKEAmat
+created: 1644271558331
+updated: 1644276045104
+last_cast: 1644276040129
+cooldown_expiration: 0
+last_death_location: 610.7293235215909,63.0,-147.31306633621773,world,168.19159,21.336208
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  3ae08fb1-d48e-43ef-be5a-1bdc0b585fcf: []
+spells:
+  manabeam:
+    cast_count: 18
+    last_cast: 1644276036125
+    last_earn: 0
+    cooldown_expiration: 1644276045125
+    charges: 0.0
+  criticalplayer:
+    cast_count: 0
+    last_cast: 1644276040129
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shatterbolt:
+    cast_count: 5
+    last_cast: 1644274787082
+    last_earn: 0
+    cooldown_expiration: 1644274794082
+    charges: 0.0
+  inflictcrit:
+    cast_count: 15
+    last_cast: 1644275780960
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 33
+    last_cast: 1644275076335
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 16
+    last_cast: 1644276025001
+    last_earn: 1644275919800
+    cooldown_expiration: 1644276031001
+    charges: 0.0
+  manabolt:
+    cast_count: 170
+    last_cast: 1644275785385
+    last_earn: 0
+    cooldown_expiration: 1644275785785
+    charges: 2.0
+  arcanemeteor:
+    cast_count: 8
+    last_cast: 1644275265282
+    last_earn: 0
+    cooldown_expiration: 1644275275282
+    charges: 0.0
+  manablast:
+    cast_count: 28
+    last_cast: 1644275076336
+    last_earn: 0
+    cooldown_expiration: 1644275081336
+    charges: 0.0
+  arcanehail:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  reflect:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  auralburst:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  walls:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  repeaterspell:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  magicburst:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shell:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 16
+    last_cast: 1644275859225
+    last_earn: 0
+    cooldown_expiration: 1644275919225
+    charges: 0.0
+  anchor:
+    cast_count: 18
+    last_cast: 1644276036125
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  progressmenu:
+    cast_count: 3
+    last_cast: 1644273473806
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Mana
+          Beam"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"Basic
+          Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to IKEAmat"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"16 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana
+          Max: "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Mana"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Beam"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 32efd4f7-c8f8-48de-be9f-2baf7fea210d
+            operation: 0
+          GENERIC_ATTACK_DAMAGE:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 0.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 44cd799f-dca7-4311-b5e2-bd02253312f0
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0VQTWuEMBAdq2WzdqG3/oJeA5p1dT320EPpj5BJMrJhNRGTdSml/71RCp3DwIM38z5ygAT2asY+oBwoSSC7Ek1JDtkdrWbw6O6WZth9fL6/jRhSeLm4IHHujF3IBjd/dcrdbID4iMGD0fBatpqaSkguBZW8OvZHjqJqeVmTxqJve6wrBgdUwSzU+YmGAdiIFiXhyCAzylk4+GDU9VsURSF+cnjeaP+iKWTSRVpUTSEfyep7dKE9rMOAba671U0jhayrs+KNPjW8qpXg55Noed0WJERcUrTxINA4DRgIconeqG5Nn8JuodmbTWcXi3q6WR/QX/6qilDPbpo2CL97KUZ3SwEAAA==
+    wand:
+      owner: IKEAmat
+      hotbar_inventory_count: 1
+      id: 19de742b-b2e1-43f3-a249-16eda0f9fa64
+      active_spell: manabeam
+      icon: stick{20002}
+      spell_inventory:
+        boon: 1
+        mendwounds: 0
+      owner_id: 7b2b648c-7d57-46c2-8529-690e2290eb29
+      template: basic_wand
+      version: 7
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 21.0
+properties: {}
+kits:
+  start:
+    last_give: 1644271558411
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1644271558411
+      basic_wand:
+        amount: 1
+        last_give: 1644271558410
+classes:
+  arcanamage:
+    spells:
+    - manabeam
+    - boon
+    - criticalplayer
+    - shatterbolt
+    - manabolt
+    - arcanemeteor
+    - manablast
+    - arcanehail
+    - reflect
+    - auralburst
+    - walls
+    - repeaterspell
+    - magicburst
+    - shell
+    - mendwounds
+    - scattershot
+    spell_levels:
+      boon: 2
+    mana: 107.82
+    mana_timestamp: 1644276042755
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

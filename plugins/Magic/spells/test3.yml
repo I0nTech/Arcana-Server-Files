@@ -1,0 +1,21 @@
+test3:
+  name: Effect test 3
+  description: Projectile VFX
+  icon: acacia_door{18001}
+  actions:
+    cast:
+    - class: CustomProjectile
+      velocity_transform:
+        x: 3t
+        y: 3sin(t)
+        z: 3cos(t)
+  effects:
+    tick:
+      - location: target
+        particle: end_rod
+        particle_offset: 0
+  parameters:
+    interval: 0.001
+    range: 32
+    speed: 20
+    target: other

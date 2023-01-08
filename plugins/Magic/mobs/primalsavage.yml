@@ -1,0 +1,67 @@
+primalsavage:
+  creator: Cikuq
+  creator_id: 5b7dabd7-d6e6-4c23-922a-fad49dd25cc6
+  name: Primal Savage
+  type: ghast
+  inherit: false
+  interval: 1000
+  transformable: false
+  cast_requires_target: false
+  aggro: true
+  health: 2500
+  split: false
+  offhand: dragonwingleftblack
+  item: dragonwingrightblack
+  disguise:
+    type: player
+    skin: dragonbreath
+    invisible: false
+    swimming: true
+    flying: true
+    arms: true
+  boss_bar:
+    bar_color: blue
+    bar_flags:
+      - play_boss_music
+      - create_fog
+      - darken_sky
+  triggers:
+    interval:
+      cast:
+        demonstouch: 100
+        demonspull: 50
+        demonbomb: 10
+        demonglare: 75
+        demonlove: 75
+        demonblackhole: 35
+        highreiastu: 25
+        explosionfury: 10
+        dragonfire: 100
+        withering: 75
+        ifritmeteor: 10
+    damage:
+      cast:
+        dragonexplodefire: 25
+        demonbomb: 25
+    block:
+      cast:
+        magnetizeattract: 100
+  entity_attributes:
+    generic_attack_damage: 50
+    generic_flying_speed: 30
+  face_player: true
+  potion_effects:
+    fire_resistance: 5
+    increase_damage: 5
+  drop_xp: 10000
+  drops:
+  - demonhelmet: 25
+    demonchestplate: 25
+    demonleggings: 25
+    demontrophy: 25
+    demonsword: 25
+  - diamond@18: 100
+    emerald@18: 150
+    gold_ingot@18: 50
+    gold_ingot@16: 100
+  - sp:750

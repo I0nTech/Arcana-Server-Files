@@ -1,0 +1,166 @@
+id: 5e0c20cf-f3dc-463f-8f18-e55775457b5f
+name: Bubbys_Wrath
+created: 1645059459909
+updated: 1645063590037
+last_cast: 1645062800871
+cooldown_expiration: 0
+last_death_location: 33127.69999998808,96.49520087700593,-46733.064628207256,world,-89.76007,0.48139673
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  783f2316-86a3-4ef1-85e4-87ca74b58504: []
+spells:
+  criticalplayer:
+    cast_count: 0
+    last_cast: 1645062793500
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  inflictcrit:
+    cast_count: 32
+    last_cast: 1645062793507
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 190
+    last_cast: 1645062800872
+    last_earn: 0
+    cooldown_expiration: 1645062801272
+    charges: 2.0
+  progressmenu:
+    cast_count: 8
+    last_cast: 1645062753058
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  fling:
+    cast_count: 2
+    last_cast: 1645062548937
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  airslash:
+    cast_count: 2
+    last_cast: 1645062786129
+    last_earn: 0
+    cooldown_expiration: 1645062788629
+    charges: 0.0
+  upgrades:
+    cast_count: 1
+    last_cast: 1645062505273
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  voidwalker_staff:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: NETHERITE_SHOVEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Mana
+          Bolt"},{"italic":false,"color":"white","text":" ("},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DF00FF","text":"Voidwalker''s
+          Lament"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"light_purple","text":"☪ Abyssal Power"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [LEGEND] Bubbys_Wrath"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"4 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 15.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"350"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"40"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Mana"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Bolt"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 03345ff9-8c68-441b-a0dd-f1182a9528bd
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0VQsU7DMBC9NK0aCgIWGJgYWC2lxG7DiqhYECsDQtHZOVOrrh05bqr+PW6F1O3evad3794MIIMLFVBHlJayDMYboi6bwXiPri1g4veOAtx9f6zeV59vP4+vOykPffMVMK5zuF/7KDE0xg3kog+HRvmdi5BsCxiZFp64XMhKyxdGc8UZL2XFask5q7iqealqNUdRwBWqaAZq+o6shWKLDqW3cQY3p83ZPz+TxyM5XKtgolFoO4uHlBTgIYeJtsb9pnkEBRSRtomMBLeDN+0e7YZC00fUOofpQKE33iXtNElP3zbH3IJK9VwqzXTVKsYXlWa1nteMhFguBRdLKXTq7nLnklO//m8vwTb4rjtB+AMfOs1jXgEAAA==
+    wand:
+      owner: '[LEGEND] Bubbys_Wrath'
+      hotbar_inventory_count: 1
+      id: 4b6b3fb9-e1c4-40b3-8b44-34c840c8c1a5
+      active_spell: manabolt
+      spell_inventory:
+        manabolt: 1
+        criticalplayer: 26
+        fling: 2
+      template: voidwalker_staff
+      version: 7
+      owner_id: 5e0c20cf-f3dc-463f-8f18-e55775457b5f
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties: {}
+kits:
+  start:
+    last_give: 1645059460005
+    given_items:
+      voidwalker_staff:
+        amount: 1
+        last_give: 1645059460005
+      iron_ingot:
+        amount: 64
+        last_give: 1645059460005
+      bread:
+        amount: 32
+        last_give: 1645059460005
+classes:
+  arcanamage:
+    mana: 350.0
+    spells:
+    - criticalplayer
+    - manabolt
+    - fling
+    - airslash
+    mana_timestamp: 1645062804096
+transient_modifiers: {}
+active_class: arcanamage
+health: 18.78131866455078

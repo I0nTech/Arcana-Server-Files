@@ -1,0 +1,112 @@
+sticky:
+    inherit: false
+    name: Sticky Bomb
+    description: Toss a sticky bomb that explodes after 5 seconds
+    icon: sticky
+    category: explosive
+    upgrade_required_casts: 1500
+    worth: 5000
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: PlayEffects
+            effects: explode
+            ignore_result: true
+          - class: AreaOfEffect
+            actions:
+            - class: Damage
+            - class: Velocity
+          - class: Sphere
+            actions:
+            - class: BreakBlock
+    effects:
+        cast:
+        -  sound: entity_witch_throw
+           sound_pitch: 0.2
+        -  class: EffectSingle
+           sound: magic.zap_crack
+           location: origin
+        tick:
+        - class: EffectSingle
+          location: target
+          effectlib:
+             class: SphereEffect
+             particle: redstone
+             color: "FFA500"
+             radius: 0.01
+             particle_count: 1
+             particle_size: 0.3
+             duration: 100
+        hit:
+        -  sound: block_honey_block_slide
+           sound_pitch: 1.7
+           location: target
+        -  class: EffectSingle
+           sound: magic.zap
+           sound_volume: .3
+           location: target
+           effectlib:
+             class: Modified
+             duration: $attach_duration
+             parameters:
+               radius: "sin(t/8) * 0.5"
+             effect:
+               class: SphereEffect
+               particle: redstone
+               particles: 10
+               particle_count: 4
+               particle_offset_x: 0.01
+               particle_offset_y: 0.01
+               particle_offset_z: 0.01
+        explode:
+        - location: target
+          particle: explosion_huge
+          sound: entity_generic_explode
+    parameters:
+        target: other
+        push: 0.8
+        hitbox: true
+        allow_max_range: true
+        velocity: 30
+        gravity: 0.04
+        range: 48
+        target_type: Damageable
+        player_damage: 8
+        entity_damage: 16
+        target_breakables: 0
+        cooldown: 10000
+        target_self_timeout: 100
+        attach_duration: 5000
+        speed: 1.2
+        falling: true
+        direction: 0,0.5,0
+        undo: 15000
+        destructible_durability: 200
+        break_durability: 5
+        radius: 2
+        durability_max_distance: 4
+        damage_max_distance: 3
+    costs:
+        mana: 80
+
+sticky|2:
+  upgrade_required_casts: 2500
+  parameters:
+    radius: 2.5
+    player_damage: 10
+    entity_damage: 20
+    break_durability: 6
+  costs:
+    mana: 100
+
+
+sticky|3:
+  parameters:
+    radius: 3
+    player_damage: 12
+    entity_damage: 24
+    break_durability: 7
+  costs:
+    mana: 120
+

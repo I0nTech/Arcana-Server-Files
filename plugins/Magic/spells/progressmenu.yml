@@ -1,0 +1,44 @@
+progressmenu:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  # This refers to an icon defined in the icons folder/config
+  icon: buyshop
+  category: npc
+  hidden: true
+  actions:
+      cast:
+      -  class: Selector
+  parameters:
+    show_unavailable: true
+    bypass_cooldown: true
+    bypass_deactivate: true
+    bypass_mage_cooldown: true
+    options:
+    - icon: ENCHANTED_BOOK
+      name: '&dLearn Spells - Arcane'
+      description: '&7Click to learn Arcane Spells'
+      command: techtree open arcanespells @p
+    - icon: ENCHANTED_BOOK
+      name: '&dLearn Spells - Wind'
+      description: '&7Click to learn Wind Spells'
+      command: techtree open windspells @p
+    - cast_spell: upgrades
+    - placeholder: true
+    - cast_spell: wandinstructions
+    - placeholder: true
+    - cast_spell: appearanceshop
+      requirements:
+      - wand_tags: transformable
+      cast_for_tags:
+        bowcaster: bowappearanceshop
+        magicsword: swordappearanceshop
+    - cast_spell: colorshop
+      requirements:
+      - holding_wand: true
+    - cast_spell: effectshop
+      requirements:
+      - wand_tags: effectable
+    - cast_spell: controlsmenu
+      requirements:
+      - holding_wand: true
+      - wand_tags: wand

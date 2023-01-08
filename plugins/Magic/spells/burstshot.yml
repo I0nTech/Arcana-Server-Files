@@ -1,0 +1,93 @@
+burstshot:
+  name: Burst Shot
+  description: Fire a quick burst of 4 mana orbs each dealing 2 Magic Damage. Deals Critical Damage on Headshots.
+  icon: prismarine_shard
+  category: arcane
+  actions:
+    cast:
+    - class: Interval
+      actions:
+        - class: Asynchronous
+          actions:
+            - class: PlayEffects
+              effects: fire
+            - class: CustomProjectile
+              actions:
+                - class: Damage
+                - class: BreakBlock
+              headshot:
+                - class: Damage
+                  damage_multiplier: 1.5
+                - class: BreakBlock
+                  ignore_result: true
+                - class: PlayEffects
+                  effect: crit
+  effects:
+      fire:
+      - location: origin
+        sound: item_trident_hit
+        sound_pitch: 0.1
+        sound_volume: 0.3
+      tick:
+      - location: target
+        particle: dust_color_transition
+        particle_count: 2
+        particle_offset: 0.01
+        particle_size: 0.4
+        to_color: "#73FBD3"
+      hit:
+      - class: EffectSingle
+        location: target
+        particle: dust_color_transition
+        to_color: "#73FBD3"
+        particle_count: 4
+        particle_offset: 0.2
+      hit_block:
+      - class: EffectSingle
+        location: target
+        particle: block_crack
+        particle_count: 6
+        particle_offset_x: 0.2
+        particle_offset_y: 1
+        particle_offset_z: 0.2
+      hit_entity:
+      - class: EffectSingle
+        location: target
+        particle: dust_color_transition
+        size: 0.1
+        to_color: "#73FBD3"
+        particle_count: 4
+        particle_offset: 0.4
+      - sound: entity_player_attack_knockback
+        sound_pitch: 2
+        location: both
+      crit:
+      - location: target
+        particle: crit_magic
+        particle_count: 12
+        particle_offset: 0.25
+        particle_data: rand(0.3,0.8)
+      - location: both
+        sound: entity_player_attack_crit
+        sound_pitch: 0.8
+        sound_volume: 0.5
+  parameters:
+    interval: 40
+    duration: 160
+    first:
+      spread: 0
+    spread: 0.06
+    range: 24
+    velocity: 80
+    gravity: 0.003
+    target_type: Damageable
+    damage_type: magic
+    damage: 2
+    no_damage_ticks: 0
+    destructible: solid
+    destructible_durability: 5
+    break_durability: 0.5
+    undo: 2000
+    cooldown: 1200
+  costs:
+    mana: 40

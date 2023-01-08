@@ -1,0 +1,50 @@
+bulletpattern:
+  name: Bullet Pattern
+  description: Cast a ring of magic bullets
+  icon: stick
+  actions:
+    cast:
+    - class: Repeat
+      actions:
+        - class: ModifyVariable
+          variable: rot
+          default: 0
+          value: rot+15
+        - class: ChangeContext
+          source_pitch: 0
+          source_yaw_offset: rot
+          actions:
+          - class: Asynchronous
+            actions:
+            - class: CustomProjectile
+  effects:
+    cast:
+    - location: target
+    step:
+      - location: target
+        particle: sweep_attack
+        particle_count: 1
+        particle_data: 1
+        orient: true
+        particle_offset_x: 0
+  parameters:
+    target: none
+    lifetime: 10 seconds
+    damage: 10
+    repeat: 24
+    delay: 1000
+    velocity: 0
+    persist_target: true
+    plan:
+      - time: 1
+        velocity: 40
+        velocity_transform:
+          x: 1
+          y: 0
+          z: (t/6)^3
+      - time: 5000
+        velocity_transform:
+          x: -7
+          y: cos(t)
+          z: -(t/3)^3
+

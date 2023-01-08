@@ -1,0 +1,325 @@
+id: d4c80cbb-39b4-498c-a7f6-5f81f6a40749
+name: offonyes
+created: 1644344628075
+updated: 1644350044009
+last_cast: 1644349725571
+cooldown_expiration: 0
+last_death_location: 85.30000001192093,59.0,457.98668199836754,world,-66.18945,26.544668
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  3ae08fb1-d48e-43ef-be5a-1bdc0b585fcf: []
+spells:
+  shatterbolt:
+    cast_count: 6
+    last_cast: 1644345848833
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 11
+    last_cast: 1644345848833
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 298
+    last_cast: 1644349725571
+    last_earn: 0
+    cooldown_expiration: 1644349725971
+    charges: 1.6870000000000003
+  appearanceshop:
+    cast_count: 1
+    last_cast: 1644348003868
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  upgrades:
+    cast_count: 4
+    last_cast: 1644348818400
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  controlsmenu:
+    cast_count: 0
+    last_cast: 1644347968589
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manablast:
+    cast_count: 5
+    last_cast: 1644345825638
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  reflect:
+    cast_count: 10
+    last_cast: 1644345829484
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  walls:
+    cast_count: 2
+    last_cast: 1644344981047
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  auralburst:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  effectshop:
+    cast_count: 0
+    last_cast: 1644347992096
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  magicburst:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 2
+    last_cast: 1644345172281
+    last_earn: 0
+    cooldown_expiration: 1644345232281
+    charges: 0.0
+  progressmenu:
+    cast_count: 17
+    last_cast: 1644348816710
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabeam:
+    cast_count: 3
+    last_cast: 1644348398455
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  criticalplayer:
+    cast_count: 10
+    last_cast: 1644347617411
+    last_earn: 0
+    cooldown_expiration: 0
+    enabled: false
+    charges: 0.0
+  inflictcrit:
+    cast_count: 53
+    last_cast: 1644349554159
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 34
+    last_cast: 1644349546058
+    last_earn: 1644349494355
+    cooldown_expiration: 1644349552058
+    charges: 0.0
+  arcanemeteor:
+    cast_count: 1
+    last_cast: 1644348998234
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanehail:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  wandinstructions:
+    cast_count: 2
+    last_cast: 1644348017443
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  repeaterspell:
+    cast_count: 1
+    last_cast: 1644349040785
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shell:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  anchor:
+    cast_count: 3
+    last_cast: 1644348398455
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  colorshop:
+    cast_count: 0
+    last_cast: 1644348000054
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Mana
+          Bolt"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"Basic
+          Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to offonyes"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"17 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"150→"},{"color":"white","text":"("},{"color":"aqua","text":"163"},{"color":"white","text":")"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Mana"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Bolt"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: ee010992-e95a-4f55-8538-12438a8ada08
+            operation: 0
+          GENERIC_ATTACK_DAMAGE:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 0.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: c293e593-ea06-4153-a0a9-77831014ca49
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0WS3W7iMBCFhzosIdCfq32CvY2UQqDkaaKJPS5RHTuyHRCq9t13HFjVV5mJfc43xy4AFrCWHnXEztBiAdkX0bgoILuiVTks3dWSh9xp7eyNgoDfZxc79G1vL2Sj87dWuslGYKUctihjf6E2jGQM5ANa7JyJOTz1Cv7IRsm93B1L2nd1WVdqXzanI5X6cFAH3cimVjsm+DTuCjlkvXQWtiH28ut7V1XV7m8Br7Pyj7mA9WxiMCSEpXiYEg5c5uKHgctMQNY5FmVWAStP2pBMP34J2ASJMZIPPB53tgKKAT972U1+Vi4ELK9oTODvlYBnTyNh2j9Pykvw8F6ipYEiOc+dN9a4t87Ypz3r1Jg8mv+iz4yvnZzCA/AlcZxnjkdHsG043y02iYmsunLeKnG8CniRvueA0IwGb5Rcnzi6fL61NmWuanmqZNeV+yZl3pxkiR/6WB706V0fsa4+6oYPRBpYIRIUHYZetun2OaILD9jPga34oWwmGyIy4P2pcKm8G8e5hH919zbjSwIAAA==
+    wand:
+      owner: offonyes
+      hotbar_inventory_count: 1
+      active_spell: manabolt
+      id: c9dc3c26-e3b4-40d3-986e-f55d5f9c94d2
+      glow: false
+      icon: stick{20002}
+      spell_inventory:
+        manablast: 5
+        manabeam: 8
+        manabolt: 4
+        boon: 1
+        reflect: 6
+        scattershot: 12
+        magicburst: 10
+        walls: 7
+        repeaterspell: 0
+        arcanemeteor: 16
+        arcanehail: 9
+        auralburst: 13
+        focusbolt: 14
+        shatterbolt: 3
+        shell: 11
+        mendwounds: 15
+        criticalplayer: 2
+      owner_id: d4c80cbb-39b4-498c-a7f6-5f81f6a40749
+      template: basic_wand
+      version: 7
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 27.0
+properties: {}
+kits:
+  start:
+    last_give: 1644344628160
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1644344628160
+      basic_wand:
+        amount: 1
+        last_give: 1644344628160
+classes:
+  arcanamage:
+    spells:
+    - manabeam
+    - boon
+    - criticalplayer
+    - shatterbolt
+    - manabolt
+    - arcanemeteor
+    - manablast
+    - arcanehail
+    - reflect
+    - walls
+    - auralburst
+    - focusbolt
+    - repeaterspell
+    - magicburst
+    - shell
+    - mendwounds
+    - scattershot
+    spell_levels:
+      boon: 2
+    mana: 163.0
+    mana_timestamp: 1644350043204
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

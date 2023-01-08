@@ -1,0 +1,411 @@
+id: 6c7e57e8-49ec-401a-aa6b-a69805c05cab
+name: VoidGivenFocus
+created: 1644959726058
+updated: 1644974678532
+last_cast: 1644974675832
+cooldown_expiration: 0
+last_death_location: 18.27877758467867,31.492969455986312,-1.3670991835151507,world_nether,-141.94678,37.782036
+fall_protection_count: 2147483647
+fall_protection: 4705
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  783f2316-86a3-4ef1-85e4-87ca74b58504: []
+spells:
+  shatterbolt:
+    cast_count: 1
+    last_cast: 1644959958128
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 2
+    last_cast: 1644961428034
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 0
+    last_cast: 1644959832936
+    last_earn: 0
+    cooldown_expiration: 1644959833336
+    charges: 2.0
+  fling:
+    cast_count: 56
+    last_cast: 1644974602694
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  controlsmenu:
+    cast_count: 3
+    last_cast: 1644960260501
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manablast:
+    cast_count: 1
+    last_cast: 1644961428035
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  reflect:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  walls:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  magicburst:
+    cast_count: 20
+    last_cast: 1644961401123
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 2.0
+  dive:
+    cast_count: 1
+    last_cast: 1644973808331
+    last_earn: 0
+    cooldown_expiration: 1644973818081
+    charges: 0.0
+  progressmenu:
+    cast_count: 23
+    last_cast: 1644973922266
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabeam:
+    cast_count: 26
+    last_cast: 1644974214985
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  criticalplayer:
+    cast_count: 8
+    last_cast: 1644974287211
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  charge:
+    cast_count: 13
+    last_cast: 1644974673931
+    last_earn: 0
+    cooldown_expiration: 1644974683681
+    charges: 0.0
+  inflictcrit:
+    cast_count: 1
+    last_cast: 1644974215817
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemeteor:
+    cast_count: 9
+    last_cast: 1644974218333
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  launch:
+    cast_count: 40
+    last_cast: 1644974673132
+    last_earn: 0
+    cooldown_expiration: 1644974682882
+    charges: 0.0
+  slam:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  wandinstructions:
+    cast_count: 2
+    last_cast: 1644960251083
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  repeaterspell:
+    cast_count: 25
+    last_cast: 1644974286697
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shell:
+    cast_count: 13
+    last_cast: 1644963044425
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  anchor:
+    cast_count: 26
+    last_cast: 1644974214984
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  glide:
+    cast_count: 34
+    last_cast: 1644974675833
+    last_earn: 0
+    cooldown_expiration: 1644974695333
+    charges: 0.0
+  airslash:
+    cast_count: 65
+    last_cast: 1644974665934
+    last_earn: 0
+    cooldown_expiration: 1644974668372
+    charges: 0.0
+wands:
+  voidwalker_staff:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: NETHERITE_SHOVEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Slashing
+          Wind"},{"italic":false,"color":"white","text":" ("},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DF00FF","text":"Voidwalker''s
+          Lament"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"light_purple","text":"☪ Abyssal Power"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to VoidGivenFocus"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"20 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"350→"},{"color":"white","text":"("},{"color":"aqua","text":"385"},{"color":"white","text":")"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"40→"},{"color":"white","text":"("},{"color":"aqua","text":"44"},{"color":"white","text":")"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Slashing Wind"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 55652734-2c0d-4a33-b86d-d3cfd1d281ae
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0VSQW7bMBBch3YsK20aoG3aQ9tTrwJsWJajD7Q/6FVYkSuLMEWqJGUjv+9SSRGBh52RdnaGqxxgARvpsYvYGlosYHkmGhc5LK9oVQYrd7Xk4f6P0+q3vpD95eQUBDz2LrboG22Zi84/N9JNNgLrZXCjFfxU1V5V5WFb1HX5VJTVURW431FRlvtu127bqqvbDN6hjCzbhJGMgQy1DwZDn8OHmXnTF3Are/Qn4hErAdmAFlvCgeHyP3QmGdgIWHvqDMmEPgu4CxJjJB/YMzOfBOQDnrRsJx8S8VXAqjPanpJ7AUvFhrj8wSWbSRMe+IuT0SrRN1xf0ZjA9UcB7z2NhEl9TsCP4FBeoqWBIjmfmOShnz28evwiYNOlm3zFjywa+heBtXi7B4bfObnBycoEbgXcS6+jlmhGg8+U5DMWm/NzRxL7xjvN/05anhvJDEdaX9ifdjapZ5BFGrg5EjxceK0c5ky+CRG7jl/OC2/SBit5pMOReHk1yaLc7rBArNoCq/ppe5B8sOVRd5PlXs738gMxVN6N4wzhHw1l5jRhAgAA
+    wand:
+      owner: VoidGivenFocus
+      hotbar_inventory_count: 1
+      id: d63d6450-9948-467d-a31e-443f1b0b6f9b
+      active_spell: airslash
+      spell_inventory:
+        charge: 5
+        manabeam: 4
+        manabolt: 9
+        reflect: 21
+        scattershot: 20
+        magicburst: 24
+        fling: 1
+        dive: 30
+        slam: 16
+        glide: 2
+        walls: 19
+        repeaterspell: 0
+        arcanemeteor: 3
+        shatterbolt: 23
+        focusbolt: 22
+        shell: 7
+        airslash: 29
+        launch: 6
+        criticalplayer: 8
+        manablast: 28
+      quick_cast: true
+      version: 7
+      template: voidwalker_staff
+      owner_id: 6c7e57e8-49ec-401a-aa6b-a69805c05cab
+inventory:
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: NETHERITE_SHOVEL
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Slashing
+      Wind"},{"italic":false,"color":"white","text":" ("},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DF00FF","text":"Voidwalker''s
+      Lament"},{"italic":false,"color":"white","text":")"}],"text":""}'
+    lore:
+    - '{"italic":false,"extra":[{"color":"light_purple","text":"☪ Abyssal Power"}],"text":""}'
+    - '{"italic":true,"color":"dark_aqua","text":"Soulbound to VoidGivenFocus"}'
+    - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+      "},{"color":"#FF2288","text":"20 "},{"color":"white","text":"Spells"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+      "},{"color":"aqua","text":"350→"},{"color":"white","text":"("},{"color":"aqua","text":"385"},{"color":"white","text":")"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+      Rate: "},{"color":"aqua","text":"40→"},{"color":"white","text":"("},{"color":"aqua","text":"44"},{"color":"white","text":")"},{"color":"gray","text":"/s"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gold","text":"Slashing Wind"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+      "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to modify
+      this"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings and
+      learn spells"}],"text":""}'
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 10.0
+        name: Equipment Modifier
+        slot: HAND
+        uuid: 55652734-2c0d-4a33-b86d-d3cfd1d281ae
+        operation: 0
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    - HIDE_DESTROYS
+    - HIDE_PLACED_ON
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/0VSwW7bMAylq6R13K0r0K3rodtpVwMJ4jj1D7R/sKtBy3QsRJY8SU7Qvx/ltqjhAx/B9/hIKgNIYCUddgEbTUkCiyPRmGSwOKNpU1jasyEHN3+tal/UicyzlZMXcN/b0KCrleFcsO61lnYyAVgvhQvVwp+23LZlsVvnVVU85UW5b3Pcbigvim23adZN2VVNCl9QBpat/UhaQ4rKeY2+z+DbnPnUF3Ape3QH4hZLAemABhvCgeHiA1odDawEXDnqNMmIfgi49hJDIOfZM2e+C8gGPCjZTM7HxIOAZaeVOUT3AhYtG+Lwt4CvjkbCSJ3t8celZ9Tac3jH8UGrNtZeMI2NRze3godyEg0NFMi6SIoe+tnDu8efAlZd3OQ7vmct37/1uBKfe2D4iyfXOBkZwaWAG+lUUBL1qPGVonzKYvP8zIhij5BCOt+tjoco5Z52e+IbVCTzYr3BHLFsciyrp/VO8o98iDTQwIqB4PbEt+Yhj8z3AbuO93niFShrorsEsn+TksdacreEn8/1ZLiM53t7QAxbZ8dxhvAfTpjDYWECAAA=
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+open_wand: true
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1644959726171
+    given_items:
+      voidwalker_staff:
+        amount: 1
+        last_give: 1644959726171
+      iron_ingot:
+        amount: 64
+        last_give: 1644959726171
+      bread:
+        amount: 32
+        last_give: 1644959726171
+classes:
+  arcanamage:
+    mana: 369.89267
+    spells:
+    - manabeam
+    - criticalplayer
+    - charge
+    - shatterbolt
+    - arcanemeteor
+    - manabolt
+    - launch
+    - fling
+    - slam
+    - manablast
+    - reflect
+    - walls
+    - focusbolt
+    - repeaterspell
+    - magicburst
+    - shell
+    - scattershot
+    - dive
+    - glide
+    - airslash
+    mana_timestamp: 1644974678528
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

@@ -1,0 +1,68 @@
+mobmultishot:
+  name: Mana Burst
+  icon: stick
+  actions:
+    cast:
+    - class: Repeat
+      actions:
+      - class: Multiply
+        actions:
+          - class: Delay
+          - class: Spread
+            yaw_max: 30
+            actions:
+            - class: CustomProjectile
+              actions:
+                - class: Damage
+                - class: PlayEffects
+  effects:
+      fire:
+      - sound: item_trident_return
+        sound_pitch: 2
+        sound_volume: 0.9
+        color_override: color
+      tick:
+      - location: target
+        particle: redstone
+        particle_offset: 0.1
+        particle_count: 2
+        particle_size: 0.8
+      - location: target
+        particle: spell_mob_ambient
+        particle_offset: 0
+        particle_count: 1
+        color: "#00ff00"
+      hit_block:
+      - class: EffectSingle
+        location: target
+        particle: block_crack
+        particle_count: 30
+        particle_offset_x: 0.2
+        particle_offset_y: 1
+        particle_offset_z: 0.2
+      hit_entity:
+      - class: EffectSingle
+        location: target
+        particle: dust_color_transition
+        size: 0.1
+        to_color: "#73FBD3"
+        particle_count: 15
+        particle_offset: 0.8
+      hit:
+      - sound: entity_player_attack_knockback
+        sound_pitch: 2
+        location: target
+      - class: EffectSingle
+        location: target
+        particle: redstone
+        particle_count: 6
+        particle_offset: 0.2
+  parameters:
+    effects: fire
+    range: 32
+    damage: 4
+    velocity: 45
+    multiply: 6
+    repeat: 2
+    no_damage_ticks: 0
+    delay: rand(20,400)

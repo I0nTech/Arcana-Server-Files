@@ -1,0 +1,64 @@
+windslash:
+  name: Slashing Wind
+  description: Cast forth a slashing wind which deals 6x50% Attack Damage
+  icon: iron_sword
+  category: wind
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+        - class: Repeat
+          actions:
+          - class: AreaOfEffect
+            actions:
+              - class: Velocity
+              - class: Damage
+          - class: Delay
+  effects:
+    cast:
+    - location: origin
+      sound: block_lava_extinguish
+      sound_volume: 1
+      sound_pitch: 3
+    tick:
+    - location: target
+      particle: sweep_attack
+      particle_offset: 1,0.2,1
+      sound: entity_player_attack_sweep
+      sound_volume: 0.2
+      sound_pitch: 3
+    hit:
+    - location: target
+      particle: cloud
+      particle_count: 20
+      particle_data: 0.15
+    - class: EffectSingle
+      location: target
+      effectlib:
+        class: Sphere
+        radius: 0
+        particles: 10
+        radius_increase: 1
+        duration: 250
+        iterations: 1
+        particle: sweep_attack
+  parameters:
+    range: 32
+    velocity: 50
+    hitbox: true
+    hitbox_size: 0.8
+    radius: 3.5
+    target_type: Damageable
+    damage_type: wind
+    damage: $attack_damage*0.5
+    damage_max_distance: 6
+    damage_min_distance: 1
+    no_damage_ticks: 0
+    push: 0.6
+    living_entity_speed: 1
+    direction: 0,0.3,0
+    repeat: 5
+    delay: 70
+    cooldown: 2500
+  costs:
+    mana: 75

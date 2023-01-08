@@ -1,0 +1,669 @@
+id: 55dd0bb6-9f78-4bca-9a02-3f4e6fa4b3fb
+name: mikitayu
+created: 1643690552163
+updated: 1651678041754
+last_cast: 1645136289310
+cooldown_expiration: 0
+last_death_location: 7521.219070552411,62.0,-7056.405187082367,world,-26.944708,-23.97189
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: 1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  325ed72c-10be-4fb2-aeaa-c612d56e7b18: []
+  783f2316-86a3-4ef1-85e4-87ca74b58504: []
+  33fb1329-03dd-4662-b8fa-b106f5b826b3: []
+spells:
+  shell|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  current|3:
+    cast_count: 0
+    last_cast: 1645133291982
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 2.6575
+  shatterbolt:
+    cast_count: 4
+    last_cast: 1645009947945
+    last_earn: 0
+    cooldown_expiration: 1645009954945
+    charges: 0.0
+  channel:
+    cast_count: 4
+    last_cast: 1645009947944
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 813
+    last_cast: 1645132774235
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 1.2070000000000003
+  appearanceshop:
+    cast_count: 0
+    last_cast: 1645009839474
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  fling:
+    cast_count: 348
+    last_cast: 1645133120341
+    last_earn: 0
+    cooldown_expiration: 1645133125154
+    charges: 0.0
+  flareshot|7:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  cluster|4:
+    cast_count: 8
+    last_cast: 1645136289311
+    last_earn: 0
+    cooldown_expiration: 1645136295311
+    charges: 0.0
+  controlsmenu:
+    cast_count: 2
+    last_cast: 1645009971346
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  snowballburst|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  reflect:
+    cast_count: 39
+    last_cast: 1645131256360
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  auralburst:
+    cast_count: 31
+    last_cast: 1645132449721
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  crimsonlotus:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  effectshop:
+    cast_count: 0
+    last_cast: 1643690824881
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  spellshop:
+    cast_count: 0
+    last_cast: 1643693663541
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  fireballspell|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  eat_food:
+    cast_count: 7
+    last_cast: 1645136175642
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  fling|4:
+    cast_count: 604
+    last_cast: 1645136181541
+    last_earn: 0
+    cooldown_expiration: 1645136181734
+    charges: 0.0
+  flamethrower:
+    cast_count: 1
+    last_cast: 1645133217569
+    last_earn: 0
+    cooldown_expiration: 1645133219882
+    charges: 0.0
+  mendwounds:
+    cast_count: 25
+    last_cast: 1645136135143
+    last_earn: 0
+    cooldown_expiration: 1645136192893
+    charges: 0.0
+  pulse|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  icewall|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  dive:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  progressmenu:
+    cast_count: 13
+    last_cast: 1645136153627
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  smite|3:
+    cast_count: 1
+    last_cast: 1645135272984
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  glacier:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabeam:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  criticalplayer:
+    cast_count: 7
+    last_cast: 1645136248571
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  multibang:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  electrosurge|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  blizzard:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  inflictcrit:
+    cast_count: 128
+    last_cast: 1645132319153
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 6
+    last_cast: 1643711870852
+    last_earn: 1643711813132
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemeteor:
+    cast_count: 0
+    last_cast: 1645133238793
+    last_earn: 0
+    cooldown_expiration: 1645133243418
+    charges: 0.0
+  frostlance:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  push:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  slam:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanehail:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  wandinstructions:
+    cast_count: 1
+    last_cast: 1645009841734
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  repeaterspell:
+    cast_count: 3
+    last_cast: 1645135269964
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  anchor:
+    cast_count: 31
+    last_cast: 1645132449721
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  iceshard|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  eruption:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 46
+    last_cast: 1645135462248
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  missile|5:
+    cast_count: 2
+    last_cast: 1645135004948
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  birth_virus:
+    cast_count: 0
+    last_cast: 1644595319094
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  voidwalker_staff:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Scattershot"},{"italic":false,"color":"white","text":"
+          ("},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DF00FF","text":"Voidwalker''s
+          Lament"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"light_purple","text":"☪ Abyssal Power"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [CHATMOD] mikitayu"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"34 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 15.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"350→"},{"color":"white","text":"("},{"color":"aqua","text":"360"},{"color":"white","text":")"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"40"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Scattershot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: bdb148d4-e341-4671-ad13-5b22caae34de
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        - HIDE_DYE
+        internal: H4sIAAAAAAAA/1VTS2/TQBCe1K3ipE8KlDcUKNwshTSP9ojgwAVx4YZQNLs7jldde619JEp/PbNOC8KnmZ3Zb77vm/UQoAcD6bAMKAz1erB7Q9T2hrC7xkblsGfXDTk4/fXl2+ef3398/X1e6xsdcBMz2G1xScBfBmeVDQLdQjcraoJ1m4W0sQlc6w2g740NgRgtTTuW6IO30Ula0IZ8DjtawcXs+tNYzKbzYjpXqpjMr8pCXI5kQWo8mY3VSKrZLIcDlEGvaOFbMgb2vUQGdp6nD+G4O/xHIYOD0mBNoXJ2zRoAhhnkNTYorEnUXnIHGZLBWR9dJ+WUVQlrGw6PuVlL8hU6xenTDPqOytTO2asMBgzuKI3m/C1Xlwal7uYcZnDoqCVM3DqmAK8zGGJ0aER0Pl05z2DP1zqkse8y1lJ1Wu64vUj2Rl9x+OSeNWHN6QMG941dCzR/sQbZf15sd9KX0TnqlvCB0RT7xuE+jy2NbpYc77CKOpqgBXb5w0Sp2vJ9w1PJxTbozo33jOBNR+AZ24ZOYkPsLdkk+HES1x1VqNPtE+6RTtfeNrz76PkoZ0Bh9O3t1s9HyUEro78TfMAQJS8iGGxkInrGZNpofIovWHOpHSXN94Z+5As1NWrND02lAb0Mjnhm0BJNa3DTreKIfeAtrrG78xxyyAPVXGbfT1ZWK67ckFv4gGXJvSt2cKu4z63d41+k5zmdKjUSYlZcl/OrYiIkFtc4GheX5YRmJU7EZSn4ce/HhpF4ldufiVPlbNt2KfwBhl3Rb20DAAA=
+    wand:
+      page: 0
+      owner: '[CHATMOD] mikitayu'
+      hotbar_inventory_count: 1
+      active_spell: scattershot
+      id: 6912b657-57dd-478f-b30c-ed2462d0cd66
+      slotted:
+      - castsource_eyes
+      spell_inventory:
+        flamethrower: 10
+        manabolt: 28
+        electrosurge: 18
+        iceshard: 24
+        boon: 15
+        reflect: 29
+        glacier: 13
+        flareshot: 33
+        repeaterspell: 30
+        auralburst: 32
+        shatterbolt: 27
+        smite: 34
+        push: 23
+        manabeam: 17
+        snowballburst: 9
+        current: 37
+        scattershot: 0
+        multibang: 19
+        fling: 2
+        dive: 11
+        fireballspell: 38
+        slam: 25
+        eruption: 35
+        arcanemeteor: 21
+        arcanehail: 16
+        crimsonlotus: 8
+        blizzard: 20
+        frostlance: 22
+        focusbolt: 12
+        pulse: 36
+        shell: 31
+        mendwounds: 1
+        criticalplayer: 14
+        icewall: 26
+      owner_id: 55dd0bb6-9f78-4bca-9a02-3f4e6fa4b3fb
+      version: 7
+      template: voidwalker_staff
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Mana
+          Bolt"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"Basic
+          Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [LEGEND] mikitayu"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"10 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Mana"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Bolt"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 753b7f7d-9b1c-4df9-a413-d37b1f51c391
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0VRwW7bMAyl5xRxnKzZLjv30KsBJ7G95N5il6E/UAwGJdGNEEUyJDlBMOzfS3sFqpP48Pj4+JgDJLCQHruIwlCSwOxE1Cc5zK5oVQqzHt8I+GVw566WPHx//f386/nl6c/DWZ90xNuQwo+jiwJ9q+2FbHT+1ko32MhtSQYrlFFfqA09GQPZGS0KZ2IGX7SCx8Om3u6lrIrNHrGoqlIU2NS7Yl+VVO7qZiMatYB5MC5GUtkoCWuJIQY3eEkt3ShkMNPSWViFqOXp77Ysy+2/HNbTxE9T6efwcSNeTjjuYsUUcvQSLR1RGwa+jsDg0YjBh5F8n8IySGQLPvCujCxTWHRODuFDLh8Zx4nxgaxY5ExWXTkKFRj4lsK99Jo9oukN3jhMgEUKd53R9o3/a/Y0v/AIPdmaZ5BFOjM1EuQCg5bteBWGp1O0Y351rVQpRFMcup/7ohISiwOW22LXVdR0WIldJziy5WBDRDb4/8pcKu/6firhHT0NId8GAgAA
+    wand:
+      owner: '[LEGEND] mikitayu'
+      page: 0
+      hotbar_inventory_count: 1
+      slotted:
+      - castsource_eyes
+      id: 91528cc4-18aa-440b-a653-840e03561b6d
+      active_spell: manabolt
+      icon: stick{20002}
+      spell_inventory:
+        manabolt: 0
+        auralburst: 14
+        arcanehail: 13
+        boon: 1
+        scattershot: 11
+        focusbolt: 10
+        shatterbolt: 12
+        mendwounds: 16
+        criticalplayer: 9
+        fling: 15
+      owner_id: 55dd0bb6-9f78-4bca-9a02-3f4e6fa4b3fb
+      template: basic_wand
+      version: 7
+  draconic_staff_broken:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Cluster
+          Bomb"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"My
+          New Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"text":"The shadow of a replica of the real"}'
+        - '{"text":"thing..."}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to [CHATMOD] mikitayu"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"5 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 0.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana:
+          "},{"color":"aqua","text":"800→"},{"color":"white","text":"("},{"color":"aqua","text":"824"},{"color":"white","text":")"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"75"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Cluster Bomb"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings
+          and learn spells"}],"text":""}'
+        custom-model-data: 18001
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: cfafa668-5cda-4e52-bc7d-243f56a2752c
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        - HIDE_DYE
+        internal: H4sIAAAAAAAA/0VRsU7DMBC9NClNSwEJCWYG1khJm5ZmQALBwIJY2BCKzo5NrSZ25LitKoSY+Ay+hm9i59Ii8GDp3fP5vXc3APCgzy1Kh6wUngfBQojaG0CwRl34ENT4IoBOCF2z1sLC8dPN3fXj/cPt81mlFsrhZunD6dw4hjZXeiW0M3aTc7PUjvq8AA4r1Jg7VYnGYVVT7b3/9fkdQkcVcC4nLBvLjEdTTEWUplMezUZ0TZIky2IcxSlPQhgid2ol8qYWZQk9Xi4bJ2wIgeJGw7Bxii9ek1kcJ28DONq++jfj/zWQIZ9QpZpGlW2urg8HVtQCidz9TfZ86DaVci3f8SEkMpfGFAQD2IOgjXP1cQm7sYTbseRtlMmkKGLGplEmL2ZRyjhGGcajaCxTMZWYsrFkpL4iKUWuAXrU7kRVlyQPJ4VFCqN4TmOSMmfWLISm/ewvNVWa+e+GCBbW1PUWwg80oUkhwgEAAA==
+    wand:
+      owner: '[CHATMOD] mikitayu'
+      page: 0
+      hotbar_inventory_count: 1
+      active_spell: cluster
+      id: f5b93f9c-6a4e-446c-826c-511990a204c1
+      mana_timestamp: 1645136289269
+      icon: stick{18001}
+      spell_inventory:
+        cluster: 3
+        missile: 5
+        repeaterspell: 1
+        eat_food: 4
+        smite: 2
+      mana: 679.625
+      template: draconic_staff_broken
+      version: 7
+      owner_id: 55dd0bb6-9f78-4bca-9a02-3f4e6fa4b3fb
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 12.0
+properties:
+  version: 7
+kits:
+  start:
+    last_give: 1644975139074
+    given_items:
+      voidwalker_staff:
+        amount: 1
+        last_give: 1644975139074
+      iron_ingot:
+        amount: 64
+        last_give: 1644975139074
+      bread:
+        amount: 64
+        last_give: 1644975139074
+      basic_wand:
+        amount: 1
+        last_give: 1643690552253
+classes:
+  arcanamage:
+    spells:
+    - boon
+    - flareshot
+    - shatterbolt
+    - smite
+    - manabolt
+    - fling
+    - fireballspell
+    - reflect
+    - current
+    - auralburst
+    - crimsonlotus
+    - snowballburst
+    - flamethrower
+    - mendwounds
+    - dive
+    - glacier
+    - manabeam
+    - criticalplayer
+    - electrosurge
+    - multibang
+    - blizzard
+    - arcanemeteor
+    - frostlance
+    - push
+    - iceshard
+    - slam
+    - arcanehail
+    - icewall
+    - focusbolt
+    - repeaterspell
+    - shell
+    - eruption
+    - pulse
+    - scattershot
+    spell_levels:
+      boon: 2
+      manabolt: 7
+      manabeam: 3
+      snowballburst: 3
+      electrosurge: 3
+      iceshard: 7
+      scattershot: 3
+      current: 7
+      flareshot: 7
+      fling: 4
+      repeaterspell: 3
+      smite: 3
+      fireballspell: 3
+      pulse: 3
+      shell: 3
+      icewall: 3
+    mana: 360.0
+    mana_timestamp: 1645136201219
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

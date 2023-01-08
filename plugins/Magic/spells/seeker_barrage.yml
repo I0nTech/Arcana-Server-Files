@@ -1,0 +1,122 @@
+seeker_barrage:
+  inherit: false
+  name: Seeker Barrage
+  icon: ender_eye
+  icon_disabled: firework_star
+  category: ender
+  upgrade_required_casts: 6000
+  worth: 10000
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+      - class: Repeat
+        actions:
+        - class: Delay
+          delay: 250
+        - class: AreaOfEffect
+          actions:
+          - class: Asynchronous
+            actions:
+            - class: EntityProjectile
+              target: other
+              actions:
+              - class: Velocity
+              - class: Damage
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: magic.ignite
+      location: origin
+      source_location: head
+      effectlib:
+        class: SphereEffect
+        duration: 100
+        particle: crit
+        particle_count: 3
+        radius: 0.5
+    tick:
+    - particle: redstone
+      particles: 1
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+      particle_data: 0.0175
+      color: "#800080"
+      location: target
+    - particle: spell_witch
+      particle_count: 1
+      particle_offset_x: 0.001
+      particle_offset_y: 0.001
+      particle_offset_z: 0.001
+      location: target
+    hit:
+    - class: EffectSingle
+      sound: entity_blaze_hurt
+      sound_pitch: 4
+      sound_volume: 1
+      location: target
+    - location: target
+      particle: spell_witch
+      particle_count: 30
+      particle_offset: 0.4
+      particle_data: 0.5
+    target:
+    - class: EffectSingle
+      location: source
+      sound: entity_guardian_attack
+      sound_pitch: 4
+      sound_volume: 1
+      effectlib:
+        class: Sphere
+        duration: 100000
+        radius: 0.15
+        particle: crit
+        particles: 1
+  parameters:
+    type: shulker_bullet
+    repeat: "3+seekershots"
+    multiply: "1+seekerrepeats"
+    damage: "0.5+seekerdamage"
+    spread: 1
+    delay: 1000
+    target: self
+    target_self: false
+    range: 1000
+    source_location: feet
+    radius: 16
+    velocity: 10
+    tick_size: 0.2
+    target_count: 5
+    push: 1
+    target_type: Creature
+    cooldown: 10000
+    lifetime: 10000
+    target_self_timeout: 2000
+    track_speed: 0.35
+    use_target_location: false
+    y_radius: 10
+    velocity_transform:
+      orient: false
+      x: rand(-50,50)
+      y: rand(50,50)
+      z: rand(-50,50)
+    plan:
+    - time: 1
+      track_target: true
+      velocity_transform: ''
+      velocity: 10
+      effects: target
+    - time: 100000
+      track_speed: 0.1
+  costs:
+    mana: 120
+seeker_barrage|2:
+  upgrade_required_casts: 9000
+  parameters:
+    target_count: 4
+    damage_multiplier: 1.25
+seeker_barrage|3:
+  parameters:
+    target_count: 5
+    damage_multiplier: 1.5

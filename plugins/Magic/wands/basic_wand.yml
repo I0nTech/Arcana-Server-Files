@@ -1,0 +1,13 @@
+basic_wand:
+  class: mage
+  inherit: base_wand
+  name: '&bManastone Wand'
+  renamable: true
+  description: '&8Bursting with power.'
+  effect_color: '#7fffd4'
+  active_spell: magicbullet
+  icon: 'stick{1}'
+  attributes:
+    mage_mana: 100
+    mage_mana_regen: 10
+    wandpower: 50

@@ -1,0 +1,50 @@
+sniperarrow:
+  creator: dragoninja54
+  creator_id: 0335fb17-2f43-41ac-b070-011932852c24
+  name: sniperarrow
+  description: ""
+  icon: arrow
+  costs:
+   arrow: 1
+  effects:
+    cast:
+      - sound: entity_arrow_shoot
+        sound_pitch: 0.8
+        sound_volume: 0.8
+      - location: origin
+        effectlib:
+          class: Particle
+          particle: block_crack
+          color: "#8b0000"
+          size: 20
+          particle_count: 18
+          particle_offset_x: 1.5
+          particle_offset_y: 0.8
+          particle_offset_z: 1.5
+    projectile:
+      - location: origin
+        effectlib:
+          class: Particle
+          iterations: 25
+          period: 2
+          particle_count: 6
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
+          particle: end_rod
+          color: "#000000"
+          disappear_with_origin_entity: true
+    hit:
+      - class: EffectSingle
+        location: target
+        particle: crit_magic
+        size: 4
+        color: "#73FBD3"
+        particle_count: 15
+        particle_offset: 0.8
+  actions:
+    cast:
+    - class: Projectile
+      speed: "bowpull * 5"
+      spread: 0
+      arrow_damage: "bowpull * 3"

@@ -1,0 +1,148 @@
+id: f6c3fdf4-95e9-4b53-824b-dc7a9456f058
+name: AltayD
+created: 1644336005172
+updated: 1644336352075
+last_cast: 1644336242731
+cooldown_expiration: 0
+last_death_location: -125.19753228986109,80.0,-92.64051776308105,world,-103.1637,13.049807
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  3ae08fb1-d48e-43ef-be5a-1bdc0b585fcf: []
+spells:
+  criticalplayer:
+    cast_count: 0
+    last_cast: 1644336206536
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 0
+    last_cast: 1644336238631
+    last_earn: 0
+    cooldown_expiration: 1644336298631
+    charges: 0.0
+  boon|2:
+    cast_count: 4
+    last_cast: 1644336268765
+    last_earn: 1644336268766
+    cooldown_expiration: 1644336274765
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Criticals"},{"italic":false,"color":"white","text":"
+          ("},{"italic":false,"color":"dark_aqua","text":"Basic Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to AltayD"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"3 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana
+          Max: "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Criticals"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 515b254b-bc5e-4b77-a1c9-76ef03e60f68
+            operation: 0
+          GENERIC_ATTACK_DAMAGE:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 0.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: aac2dc55-70cd-41d3-a1cc-4844613153fd
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0VQy07DMBDckEBNqODWL+BqKUnzPCLxH9H6pVpN7ch2G0WIf8cNSOxtdkczs5MDJPDMHaqAbJJJAtlZyjnJIVvQCAKPdjHSwdPHFHD9TOFwsoGhG7W5SROsW0duryZA1CHwoAW8H3nZYVe0lIte0bpqWsqwRlpUZVmqgfGh7wjskQd9k6Of5TTBK3c6aI7TPOEqHYFMc2tg7+Py/FUVRVF95/C2kf+tU8iYjbTonUJ+kUYsMYvwcJ8UdjfpvN7uOwIkyEtUDxJyhl7z8fc/sv033oOrlh+VUDUdGjnQmjVH2lc1o4J3ONRNq4qmj229XI0P6E9/fUUonJ3nDcIPu4C16VABAAA=
+    wand:
+      owner: AltayD
+      hotbar_inventory_count: 1
+      id: 3c17a706-cd8f-4256-ba4a-02111f9bc987
+      active_spell: criticalplayer
+      icon: stick{20002}
+      spell_inventory:
+        boon: 1
+        mendwounds: 0
+      version: 7
+      template: basic_wand
+      owner_id: f6c3fdf4-95e9-4b53-824b-dc7a9456f058
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 7.0
+properties: {}
+kits:
+  start:
+    last_give: 1644336005266
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1644336005266
+      basic_wand:
+        amount: 1
+        last_give: 1644336005266
+classes:
+  arcanamage:
+    spells:
+    - boon
+    - criticalplayer
+    - mendwounds
+    spell_levels:
+      boon: 2
+    mana: 150.0
+    mana_timestamp: 1644336352074
+transient_modifiers: {}
+active_class: arcanamage
+health: 20.0

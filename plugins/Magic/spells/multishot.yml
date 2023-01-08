@@ -1,0 +1,21 @@
+multishot:
+    # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+    inherit: false
+    # This refers to an icon defined in the icons folder/config
+    icon: arrow
+    legacy_icon: arrow
+    category: combat
+    worth: 100
+    earns: 2
+    actions:
+        cast:
+        - class: Parallel
+          actions:
+            - class: Projectile
+              count: 3
+              spread: 20
+    effects:
+      cast:
+        -  class: EffectSingle
+           sound: entity_arrow_shoot
+           location: origin

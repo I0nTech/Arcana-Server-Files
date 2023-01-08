@@ -1,0 +1,54 @@
+frostbite:
+  name: Frostbite
+  passive: true
+  triggers:
+    - trigger: sneak
+  actions:
+    cast:
+    - class: Delay
+    - class: ChangeContext
+      target_location: feet
+      actions:
+      - class: AreaOfEffect
+        actions:
+        - class: PlayEffects
+          effects: freeze
+        - class: Damage
+        - class: Modifier
+          add_modifiers:
+            - tundradebuff
+  effects:
+    cast:
+      - location: origin
+        source_location: feet
+        effectlib:
+          class: Warp
+          particles: 30
+          rings: 3
+          radius: $radius
+          duration: $warmup
+          particle: snow_shovel
+    freeze:
+    - location: target
+      source_location: body
+      effectlib:
+        class: AnimatedBall
+        particle: item_crack
+        material: snowball
+        particle_offset: 0.1
+        particle_count: 1
+        y_factor: -0.5
+        particles_per_iteration: 10
+        duration: $duration
+  parameters:
+    target: self
+    target_type: Damageable
+    damage_type: ice
+    entity_damage: 12
+    player_damage: 6
+    damage_min_distance: 4
+    damage_max_distance: 12
+    radius: 8
+    duration: 4000
+    warmup: 4000
+    cooldown: 30000

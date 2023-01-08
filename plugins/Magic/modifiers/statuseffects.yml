@@ -1,0 +1,8 @@
+stunned:
+  potion_effects:
+    slow_digging: 4
+    jump: -4
+frozen:
+  potion_effects:
+    weakness: 2
+    slow: 2

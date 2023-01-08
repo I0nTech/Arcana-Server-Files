@@ -1,0 +1,26 @@
+ion_space_helmet:
+  name: §cIon's Space Helmet
+  inherit: false
+  icon: red_stained_glass
+  stackable: false
+  cast_spell: ion_space_helm_spell
+  cast_interval: 100
+  passive: true
+  wearable: helmet
+  item_attribute_slot: head
+  craftable: false
+  worn: true
+  indestructible: true
+  enchantable: false
+  show_enchantment_lore: false
+  effect_bubbles: false
+  renamable: true
+  stack: true
+  unique: true
+  modifiable: false
+  quiet: 2
+  lore:
+  - §7§oA rare space helmet forged
+  - §7§ofrom shards of moon glass
+  - null
+  - §c§lSPECIAL HELMET

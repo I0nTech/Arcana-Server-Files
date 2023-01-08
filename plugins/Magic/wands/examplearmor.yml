@@ -1,0 +1,48 @@
+examplehelmet:
+  inherit: base_helmet
+  name: WhyamIhere Helmet
+  icon: golden_helmet
+examplechestplate:
+  inherit: base_chestplate
+  name: Example Chestplate
+  icon: leather_chestplate:#0000FF
+  attributes:
+    #Other:
+    vitality: -10  #Represents +10 extra health (1 heart)
+    defense: -10  #Represents +10 extra defense (1 armor bar)
+    knockbackdefense: -10  #Represents 10% knockback resistance
+    critchance: -10 #Represents a +10% chance to crit
+    critdamage: -10  #Represents a +10% increase to crit damage
+    walkspeed: -10  #Represents a ~+10% player speed increase
+    favor: -10 #Should be a 10% luck increase, but no clue. (tf is the luck equation)
+    # Protections:
+    magicresistance: -10   #Represents taking 10% less damage from all magic
+    arcaneresistance: -10      #Represents taking 10% less damage from arcane spells
+    fireresistance: -10  #Represents 10% taking less damage from fire spells
+    iceresistance: -10 #Represents 10% taking less damage from ice spells
+    lightningresistance: -10 #Represents taking 10% less damage from lightning spells
+    explosiveresistance: -10 #Represents taking 10% less damage from explosive spells
+    # Strengths:
+    magicdamage: -10   #Represents dealing 10% more damage with all magic
+    arcanedamage: -10      #Represents dealing 10% more damage with arcane spells
+    firedamage: -10  #Represents dealing 10% more damage with fire spells
+    icedamage: -10  #Represents dealing 10% more damage with ice spells
+    lightningdamage: -10 #Represents dealing 10% more damage with lightning spells
+    explosivedamage: -10 #Represents dealing 10% more damage with explosive spells
+    #Wand Stats
+    cooldownreduction: -10 #Represents a 10% cooldown reduction
+    costreduction: -10 #Represents a 10% mana cost reduction
+    wandpower: -10 #Represents a 10% wand power increase
+    manaboost: -10 #Represents a 10% mana multiplier
+    manaregenboost: -10 #Represents a 10% mana regen multiplier
+  lore:
+  - $attributes    #Autolore. Shows all attributes on the wand
+
+exampleleggings:
+  inherit: base_leggings
+  name: WhyamIhere Leggings
+  icon: golden_leggings
+exampleboots:
+  inherit: base_boots
+  name: WhyamIhere Boots
+  icon: leather_boots:#0000FF

@@ -1,0 +1,74 @@
+flameon:
+  creator: MrSlushie96
+  creator_id: 67f4346f-7203-4a3e-a439-ff92c2eda6c7
+  name: Flame On
+  description: Become Fire and Fly around in Flames
+  icon: water_bucket{18001}
+  quick_cast: true
+  toggle: cancel
+  earns: 1
+  requires: LibsDisguises
+  disable_mana_regeneration: true
+  actions:
+    cast:
+    - class: Asynchronous
+      actions:
+      - class: Repeat
+        actions:
+        - class: AreaOfEffect
+          target: self
+          radius: 50
+          actions:
+          - class: PotionEffect
+            potion_effects:
+              glowing: 5
+    - class: Asynchronous
+      actions:
+      - class: Repeat
+        actions:
+        - class: Delay
+          delay: 100
+        - class: Fly
+        - class: FallProtection
+    - class: Asynchronous
+      actions:
+        - class: PotionEffect
+          potion_effects:
+            fire_resistance: 100
+    - class: Asynchronous
+      actions:
+      - class: Repeat
+        actions:
+        - class: Disguise
+        - class: PotionEffect
+          duration: 5000
+        - class: Delay
+          delay: 1000
+    - class: Asynchronous
+      actions:
+      - class: Repeat
+        actions:
+        - class: Retarget
+        - class: Sphere
+          actions:
+          - class: ModifyBlock
+        - class: Delay
+    - class: FallProtection
+      duration: 50000
+  parameters:
+    disguise:
+      type: small_fireball
+    target: self
+    radius: 1
+    brush: fire
+    repeat: infinite
+    delay: 0
+    modifiable: "all_air,all_water,all_lava"
+    total_duration: 1000
+    undo: 1000
+    undo_speed: 1000
+    cooldown: 2000
+  costs:
+    mana: 50
+  active_costs:
+    mana: 5

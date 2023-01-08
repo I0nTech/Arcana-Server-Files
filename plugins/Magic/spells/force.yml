@@ -1,0 +1,70 @@
+force:
+  inherit: false
+  icon: force
+  category: ender
+  toggle: cancel
+  disable_mana_regeneration: true
+  actions:
+    cast:
+      - class: CustomProjectile
+        actions:
+          - class: CheckEntity
+            actions:
+              - class: PlayEffects
+                effects: selected
+              - class: Interval
+                actions:
+                  - class: Retarget
+                    range: 6
+                    allow_max_range: true
+                    target: block
+                    actions:
+                      - class: PlayEffects
+                        effects: targeting
+                      - class: ChangeContext
+                        swap_source_and_target: true
+                        actions:
+                          - class: ChangeContext
+                            use_parent_target_entity: true
+                            target_entity: true
+                            actions:
+                              - class: Velocity
+                                push: -1
+  effects:
+    cast:
+      - sound: magic.zap_big
+        sound_pitch: 2
+    targeting:
+      - location: target
+        particle: redstone
+        particle_offset: 0
+    projectile:
+      - effectlib:
+          class: Sphere
+          particles: 20
+          radius: 0.2
+          particle: spell_mob
+          duration: 2000
+    selected:
+      - location: target
+        effectlib:
+          class: AnimatedBall
+          y_rotation: 10 degrees
+          duration: $duration
+          disappear_with_origin_entity: true
+          particle: spell_mob
+  parameters:
+    bypass_pvp: true
+    bypass_protection: true
+    velocity: 10
+    range: 16
+    target_breakables: 2
+    living_entity_speed: 0.3
+    item_speed: 0.05
+    cancel_on_damage: 0.5
+    cooldown: 45000
+    duration: 999999
+  costs:
+    mana: 100
+  active_costs:
+    mana: 10

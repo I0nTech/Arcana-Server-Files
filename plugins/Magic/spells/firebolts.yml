@@ -1,0 +1,18 @@
+firebolts:
+  name: Firebolts
+  description: Cast a barrage of firebolts
+  icon: blaze_powder
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+        - class: Delay
+        - class: Cast
+  parameters:
+    target: self
+    spell: minor_firebolt
+    multiply: 10
+    delay: rand(0,400)
+    spell_parameters:
+      spread: 0.1
+      velocity: 50

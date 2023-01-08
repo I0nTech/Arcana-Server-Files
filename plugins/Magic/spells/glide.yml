@@ -1,0 +1,37 @@
+glide:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: glide
+  category: wind
+  cancel_effects: true
+  show_undoable: false
+  disable_mana_regeneration: true
+  actions:
+    cast:
+    - class: FallProtection
+    - class: Glide
+      wait_for_landing: true
+      actions:
+      - class: Stop
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: entity_parrot_fly
+      sound_pitch: 0.3
+      sound_volume: 2
+      location: origin
+      source_location: eyes
+      effectlib:
+        class: IconEffect
+        duration: 30000
+        particle: spell
+        particle_offset_x: 1
+        particle_offset_y: 1
+        particle_offset_z: 1
+        particle_count: 40
+        y_offset: 0
+  parameters:
+    target: self
+    cooldown: 20000
+  costs:
+    mana: 100

@@ -1,0 +1,110 @@
+arcanemeteor:
+    name: Arcane Meteor
+    description: Call down a meteor of condensed mana from the skies dealing 12 Magic Damage to enemies within the blast radius.
+    icon: soul_lantern
+    icon_disabled: soul_lantern
+    category: arcane
+    actions:
+        cast:
+        - class: ChangeContext
+          actions:
+            - class: CustomProjectile
+              requires_target: true
+              actions:
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: Velocity
+              - class: Sphere
+                actions:
+                - class: BreakBlock
+                  ignore_result: true
+    effects:
+      cast:
+        - location: target
+          effectlib:
+            class: Modified
+            duration: 1000
+            parameters:
+              radius: '(t/i) * 3.5 + 0.5'
+            effect:
+              class: Warp
+              particles: 50
+              rings: 2
+              grow: 0.2
+              relative_offset: 0,0,0
+              particle: crit_magic
+              update_directions: false
+              update_locations: false
+      tick:
+      - location: target
+        particle: dust_color_transition
+        particle_offset: 0.5
+        particle_count: 3
+        particle_size: 1
+        to_color: "#73FBD3"
+      - location: target
+        particle: dust_color_transition
+        particle_offset: 0.3
+        particle_count: 6
+        particle_size: rand(1.4,1.8)
+        to_color: "#73FBD3"
+      step:
+      - location: target
+        color_override: color
+        effectlib:
+          class: Vortex
+          duration: 100
+          helixes: 12
+          circles: 1
+          radius: 0.8
+          particle: enchantment_table
+          particle_count: 1
+          speed: 0.5
+      hit:
+      - location: target
+        particle: explosion_huge
+        particle_count: 1
+        particle_offset: 0
+      - sound: entity_dragon_fireball_explode
+        sound_pitch: 0.6
+        sound_volume: 2
+        location: both
+      - sound: entity_player_attack_knockback
+        sound_pitch: 2
+        location: both
+      - sound: entity_player_attack_crit
+        sound_pitch: 4
+        location: both
+      - sound: entity_player_attack_knockback
+        location: target
+        sound_pitch: 4
+    parameters:
+        push: 1.2
+        direction: 0,0.2,0
+        random_source_offset: 10,0,10
+        source_offset: 0,40,0
+        target_self_timeout: 1000
+        hit_on_miss: true
+        damage_type: magic
+        damage_min_distance: 2
+        damage_max_distance: 6
+        damage: 16
+        destructible: solid
+        destructible_override: true
+        destructible_durability: 50
+        break_durability: 10
+        durability_max_distance: $radius
+        speed: 1
+        radius: 4
+        range: 64
+        velocity: 40
+        target: other
+        falling: true
+        y_offset: 1
+        lifetime: 20000
+        cooldown: 16000
+        undo: 5000
+        undo_speed: 0.5
+    costs:
+        mana: 125

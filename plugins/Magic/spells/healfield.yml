@@ -1,0 +1,97 @@
+healfield:
+  name: Healing Field
+  description: Generate a healing field healing 5% hp/second for 10 seconds
+  icon: potion:#FF0000
+  actions:
+    cast:
+      - class: Delay
+      - class: PlayEffects
+        effects: field
+      - class: Repeat
+        actions:
+          - class: AreaOfEffect
+            requires_target: true
+            actions:
+              - class: PlayEffects
+                effects: heal
+              - class: Heal
+          - class: Delay
+            delay: 1000
+  effects:
+    cast:
+      - class: EffectSingle
+        location: target
+        effectlib:
+          class: Modified
+          duration: $warmup
+          update_directions: false
+          update_locations: false
+          parameters:
+            radius: '(t/i) * 6 + 0.1'
+          effect:
+            class: Helix
+            particles: 1
+            strands: 50
+            particle: composter
+            update_directions: false
+            update_locations: false
+    heal:
+      - class: EffectSingle
+        location: target
+        effectlib:
+           class: Modified
+           duration: 500
+           parameters:
+               radius: "(t/i) * -1 + 1"
+           effect:
+             class: Sphere
+             particle_increase: 0.25
+             particles: 2
+             particle_offset_x: 0.3
+             particle_offset_z: 0.3
+             particle_offset_y: 0.6
+             offset: 0,-0.8,0
+             particle: spell_mob_ambient
+             color: "#FF00FF"
+             update_locations: true
+    field:
+      - class: EffectSingle
+        location: target
+        effectlib:
+          duration: 10000
+          radius: 5.5
+          class: Circle
+          particle_count: 3
+          whole_circle: true
+          x_rotation: 0
+          y_rotation: 30
+          z_rotation: 0
+          offset: 0,0.5,0
+          particle: composter
+          particle_offset_y: 0.1
+          particle_offset_x: 0.1
+          particle_offset_z: 0.1
+          angular_velocity_x: 0
+          angular_velocity_y: 180
+          angular_velocity_z: 0
+          update_locations: false
+          update_directions: false
+          pitch: 0
+          particle_data: 0.2
+  parameters:
+    range: 32
+    repeat: 10
+    warmup: 3000
+    radius: 5
+    percentage: 0.05
+    target: block
+    target_type: Damageable
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true
+    effects_particles: false
+    cooldown: 20000
+  costs:
+    mana: 80

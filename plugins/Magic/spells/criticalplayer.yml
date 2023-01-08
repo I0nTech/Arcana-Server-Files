@@ -1,0 +1,48 @@
+criticalplayer:
+  icon: red_dye
+  name: Criticals
+  description: Cast to disable critical hits - toggleable on/off
+  cast_on_no_target: false
+  inherit: false
+  passive: true
+  triggers:
+    - trigger: damage_dealt
+      damage_types: physical,projectile,magic,fire,lightning,ice,explosion
+  actions:
+    cast:
+      - class: Probability
+        actions:
+          #- class: Message
+          #  equation: "$damage_dealt * (critdamage+%mmoitems_stat_critical_strike_power%)/100"
+          #  message_type: "action_bar"
+          #  message: "&cCritical! &f(&7+&4@equation&f) CC %mmoitems_stat_critical_strike_chance% CD %mmoitems_stat_critical_strike_power%"
+          - class: PlayEffects
+            effects: crit
+          - class: Damage
+  effects:
+    crit:
+      - location: target
+        particle: crit_magic
+        particle_count: 32
+        particle_offset: 0.25
+        particle_data: 0.5
+      - location: both
+      - sound: entity_player_attack_crit
+        sound_pitch: 1.5
+      - sound: entity_player_attack_knockback
+        sound_pitch: 2
+      - location: target
+        particle: block_dust
+        material: redstone_block
+        particle_offset: 0.2
+        particle_count: 20
+        speed: 1
+  parameters:
+    no_damage_ticks: 0
+    target_self: false
+    target: damage_target
+    target_type: Damageable
+    probability: (critchance+%mmoitems_stat_critical_strike_chance%)/100
+    damage_type: critical
+    damage: "$damage_dealt * (critdamage+%mmoitems_stat_critical_strike_power%)/100"
+    quiet: true

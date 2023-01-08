@@ -1,0 +1,300 @@
+oretali1:
+  legacy_icon: iron_axe
+  name: Ore Multiplier
+  triggers:
+    - trigger: block_broken
+  actions:
+    cast:
+      - class: Probability
+        actions:
+          - class: CheckBlock
+            allowed: gold_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: gold_ingot
+
+          - class: CheckBlock
+            allowed: iron_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: iron_ingot
+
+          - class: CheckBlock
+            allowed: coal_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: coal
+
+          - class: CheckBlock
+            allowed: lapis_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: lapis_block
+
+          - class: CheckBlock
+            allowed: diamond_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: diamond
+
+          - class: CheckBlock
+            allowed: redstone_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: redstone_block
+
+          - class: CheckBlock
+            allowed: emerald_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: emerald
+  parameters:
+    passive: true
+    target: block_broken
+    probability: 0.05
+oretali2:
+  legacy_icon: iron_axe
+  name: Ore Multiplier
+  triggers:
+    - trigger: block_broken
+  actions:
+    cast:
+      - class: Probability
+        actions:
+          - class: CheckBlock
+            allowed: gold_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: gold_ingot
+
+          - class: CheckBlock
+            allowed: iron_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: iron_ingot
+
+          - class: CheckBlock
+            allowed: coal_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: coal
+
+          - class: CheckBlock
+            allowed: lapis_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: lapis_block
+
+          - class: CheckBlock
+            allowed: diamond_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: diamond
+
+          - class: CheckBlock
+            allowed: redstone_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: redstone_block
+
+          - class: CheckBlock
+            allowed: emerald_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: emerald
+  parameters:
+    passive: true
+    target: block_broken
+    probability: 0.1
+oretali3:
+  legacy_icon: iron_axe
+  name: Ore Multiplier
+  triggers:
+    - trigger: block_broken
+  actions:
+    cast:
+      - class: Probability
+        actions:
+          - class: CheckBlock
+            allowed: gold_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: gold_ingot
+
+          - class: CheckBlock
+            allowed: iron_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: iron_ingot
+
+          - class: CheckBlock
+            allowed: coal_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: coal
+
+          - class: CheckBlock
+            allowed: lapis_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: lapis_block
+
+          - class: CheckBlock
+            allowed: diamond_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: diamond
+
+          - class: CheckBlock
+            allowed: redstone_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: redstone_block
+
+          - class: CheckBlock
+            allowed: emerald_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: emerald
+  parameters:
+    passive: true
+    target: block_broken
+    probability: 0.15
+oretali4:
+  legacy_icon: iron_axe
+  name: Ore Multiplier
+  triggers:
+    - trigger: block_broken
+  actions:
+    cast:
+      - class: Probability
+        actions:
+          - class: CheckBlock
+            allowed: gold_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: gold_ingot
+
+          - class: CheckBlock
+            allowed: iron_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: iron_ingot
+
+          - class: CheckBlock
+            allowed: coal_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: coal
+
+          - class: CheckBlock
+            allowed: lapis_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: lapis_block
+
+          - class: CheckBlock
+            allowed: diamond_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: diamond
+
+          - class: CheckBlock
+            allowed: redstone_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: redstone_block
+
+          - class: CheckBlock
+            allowed: emerald_ore
+            actions:
+              - class: PlaySound
+                sound: block_anvil_break
+                pitch: 0.5
+              - class: DropItem
+                item: emerald
+  parameters:
+    passive: true
+    target: block_broken
+    probability: 0.2

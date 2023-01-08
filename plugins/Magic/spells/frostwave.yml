@@ -1,0 +1,100 @@
+frostwave:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  name: Frost Wave
+  description: Summon a damaging wave of falling ice
+  icon: ice
+  category: ice
+  upgrade_required_casts: 1500
+  actions:
+    cast:
+    - class: Repeat
+      actions:
+      - class: ModifyVariable
+        variable: rot
+      - class: ChangeContext
+        relative_source_offset: 0,-2,0
+        source_pitch: 0
+        source_yaw_offset: rot
+        actions:
+        - class: Asynchronous
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: AreaOfEffect
+              actions:
+              - class: Damage
+              - class: PotionEffect
+            - class: SpawnEntity
+              type: falling_block
+              material: ice
+              set_target: true
+            - class: Velocity
+              direction: 0,0.2,0
+              speed: 1
+  effects:
+    cast:
+    - location: target
+    tick:
+    - location: target
+      sound: block_glass_break
+      sound_pitch: 0.9
+      sound_volume: 0.6
+      particle: block_crack
+      material: ice
+      particle_count: 20
+      particle_offset_x: 0.4
+      particle_offset_y: 0.2
+      particle_offset_z: 0.4
+      offset: 0,1,0
+      particle_data: 1
+    - location: target
+      particle: spell_mob
+      color: '#b0e0e6'
+      particle_count: 20
+      particle_offset_x: 0.8
+      particle_offset_y: 0.4
+      particle_offset_z: 0.8
+  parameters:
+    target: none
+    repeat: 3
+    range: 12
+    damage_type: ice
+    player_damage: 9
+    entity_damage: 18
+    potion_effects:
+      slow: 0
+      weakness: 0
+    duration: 1000
+    undo: 5000
+    transformable: false
+    radius: 1.5
+    y_radius: 3
+    hit_count: 999
+    ignore_blocks: true
+    cooldown: 8000
+    default: -30
+    value: rot+15
+  costs:
+    mana: 80
+
+frostwave|2:
+  upgrade_required_casts: 2500
+  parameters:
+    range: 16
+    repeat: 4
+    default: -36
+    value: rot+12
+  costs:
+    mana: 110
+
+
+frostwave|3:
+  parameters:
+    range: 20
+    repeat: 5
+    default: -45
+    value: rot+15
+  costs:
+    mana: 140
+

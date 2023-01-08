@@ -1,0 +1,41 @@
+repulse:
+  name: Replusion Wave
+  description: Fire a wave of psychic force which knocks away enemies.
+  icon: firework_star
+  actions:
+    cast:
+    - class: ModifyVariable
+      value: 0
+    - class: Interval
+      actions:
+        - class: Message
+          message: $size
+        - class: PlayEffects
+          effects: wave
+        - class: ModifyVariable
+          variable: size
+          value: $size+1
+  effects:
+    wave:
+      - class: EffectSingle
+        location: target
+        effectlib:
+           class: Modified
+           duration: $warmup
+           parameters:
+               radius: "$size"
+           effect:
+             class: Sphere
+             particle_increase: 0.25
+             particles: 4
+             particle_offset: 0
+             offset: 0,-0.5,0
+             speed: 1
+             particle_data: 0
+             particle: end_rod
+             update_locations: true
+  parameters:
+    variable: size
+    target: self
+    interval: 100
+    duration: 1000

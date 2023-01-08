@@ -1,0 +1,14 @@
+# This is the key name of the kit
+# It must be unique across the server, and is used in the /mkit command and other configs
+# to refer to this kit
+start:
+  starter: true
+  items:
+    # Item amounts can be specified using the "@" syntax
+    # This can also be done by putting an `amount` property in the sectoin
+    - item: voidwalker_staff
+      slot: 0
+    - item: bread@32
+      slot: 1
+    - item: iron_ingot@64
+      slot: 2

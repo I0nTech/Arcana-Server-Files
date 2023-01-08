@@ -1,0 +1,7 @@
+compressed_diamond:
+  inherit: base_wand
+  name: Compressed Diamond
+  icon: diamond
+  craftable: true
+  description: Test
+  stackable: true

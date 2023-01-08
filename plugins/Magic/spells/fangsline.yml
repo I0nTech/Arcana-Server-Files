@@ -1,0 +1,54 @@
+fangsline:
+    name: Fangs Line
+    icon: diamond_axe:170
+    icon_disabled: diamond_hoe:170
+    icon_url: http://textures.minecraft.net/texture/1d7cb6f2a4b2c2059621b7f6f84b5f0bc84c19ce981d054c26cec012ac
+    category: elemental
+    pvp_restricted: true
+    worth: 400
+    earns_sp: 8
+    upgrade_required_path: master
+    upgrade_required_casts: 50
+    actions:
+        cast:
+        -  class: Line
+           actions:
+           - class: Cover
+             actions: 
+             - class: SpawnEntity
+               set_target: true
+           - class: Delay
+    effects:
+        cast:
+        - class: EffectSingle
+          sound: entity_elder_guardian_hurt
+          sound_volume: 1
+          sound_pitch: 7
+          location: origin
+        - class: EffectSingle
+          location: origin
+          source_location: feet
+          effectlib:
+            class: Warp
+            radius: 0.6
+            rings: 12
+            particle: crit
+            particles: 6
+            particle_count: 2
+            duration: 1000
+    parameters:
+        type: evoker_fangs
+        target: block
+        target_type: Damageable
+        start_at_target: true
+        x_size: 100
+        y_size: 1
+        z_size: 1
+        size: 15
+        range: 15
+        delay: 1
+        allow_max_range: true
+        cooldown: 15
+    costs:
+        mana: 40
+

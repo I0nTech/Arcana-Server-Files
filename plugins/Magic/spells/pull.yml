@@ -1,0 +1,52 @@
+pull:
+    inherit: false
+    icon: pull
+    category: wind
+    actions:
+        cast:
+        - class: ConeOfEffect
+          actions:
+          - class: Repeat
+            actions:
+            - class: PlayEffects
+              effects: pull
+            - class: Velocity
+              direction: 0,4,0
+            - class: Delay
+            - class: Velocity
+            - class: FallProtection
+    effects:
+        pull:
+        - class: EffectSingle
+          sound: block_fire_extinguish
+        - class: EffectTrail
+          particle: spell
+          reverse: true
+          length: 16
+          particle_count: 20
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
+        - location: target
+          effectlib:
+            class: Sphere
+            particle: spell
+            particles: 2
+            period: 2
+            duration: 500
+            particle_count: 4
+            particle_offset_x: 0.5
+            particle_offset_y: 0.5
+            particle_offset_z: 0.5
+            radius: 1.5
+    parameters:
+        delay: 100
+        repeat: 3
+        target_count: 1
+        target_type: Damageable
+        range: 24
+        push: -1
+        duration: 200
+        cooldown: 4000
+    costs:
+        mana: 25

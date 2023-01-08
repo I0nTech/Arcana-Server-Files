@@ -1,0 +1,147 @@
+seeker_shards:
+    name: Seeker Barrage
+    icon: prismarine_shard
+    icon_disabled: firework_star
+    category: combat
+    worth: 2000
+    earns_sp: 8
+    actions:
+        cast:
+          - class: 
+          - class: Delay
+            delay: 0.001
+          - class: Multiply
+            actions: 
+            - class: Repeat
+              repeat: 3
+              actions: 
+              - class: Delay
+                delay: 100
+              - class: AreaOfEffect
+                actions:
+                - class: Asynchronous
+                  actions:
+                  - class: CustomProjectile
+                    target: other
+                    actions: 
+                    - class: AreaOfEffect
+                      target_count: 4
+                      radius: 1
+                      actions: 
+                      - class: PotionEffect
+                        duration: 250
+                      - class: ApplyCooldown
+                        duration: 1000
+                      - class: Velocity
+                      - class: Damage
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.shimmer
+           sound_pitch: 5
+           location: origin
+           source_location: body
+           effectlib:
+             class: Sphere
+             duration: 0
+             particle: ash
+             particles: 0
+             radius: 0.1
+             update_locations: false
+        -  class: EffectSingle
+           sound: magic.shimmer
+           sound_pitch: 5
+           location: origin
+           source_location: head
+           effectlib:
+             class: AnimatedBall
+             offset: 0,-1,0
+             duration: 0
+             particle: block_crack
+             material: netherite_block
+             particles: 0
+             y_factor: 1
+             size: 0.0001
+             update_locations: false
+        tick:
+        - particle: crit
+          particle_offset_x: 0.1
+          particle_offset_y: 0.1
+          particle_offset_z: 0.1
+          location: target
+        - particle: ash
+          particle_count: 1
+          particle_offset_x: 0.001
+          particle_offset_y: 0.001
+          particle_offset_z: 0.001
+          location: target
+        hit:
+        -  class: EffectSingle
+           sound: entity_blaze_hurt
+           sound_pitch: 2
+           sound_volume: 1
+           location: target
+        - location: target
+          particle: block_crack
+          material: redstone_block
+          particle_count: 15
+          particle_offset_x: 0.25
+          particle_offset_y: 0.25
+          particle_offset_z: 0.25
+        - location: target
+          particle: crit
+          particle_count: 15
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
+        target:
+        -  class: EffectSingle
+           location: source
+           sound: entity_elder_guardian_curse
+           sound_pitch: 5
+           sound_volume: 1
+    parameters:
+        spread: 1
+        first:
+          spread: 1
+        delay: 1000
+        multiply: 1
+        target: self
+        target_self: false
+        range: 1000
+        source_location: feet
+        radius: 25
+        velocity: 10
+        potion_effects: 
+          night_vision: 1
+          slow: 10
+          jump: -3
+        effects_particles: false
+        tick_size: 0.125
+        target_count: 5
+        push: 1
+        target_type: LivingEntity
+        damage: 5
+        cooldown: 5000
+        lifetime: 10000
+        target_self_timeout: 2000
+        track_speed: 0.35
+        magic_damage: true
+        use_target_location: false
+        y_radius: 10
+        velocity_transform:
+            orient: false
+            x: rand(-50,50) 
+            y: rand(50,50) 
+            z: rand(-50,50) 
+        plan:
+        - time: 1
+          track_target: true
+          velocity_transform: ""
+          velocity: 10
+          effects: target
+        - time: 100000
+          track_speed: 0.1
+    costs:
+        mana: 100
+

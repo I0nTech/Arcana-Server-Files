@@ -1,0 +1,94 @@
+priestinvincible:
+  inherit: false
+  name: Blessing of Immovability
+  description: Imbue your target with your faith, temporarily granting invincibility
+  icon: anvil
+  actions:
+    cast:
+     - class: ConeOfEffect
+       requires_target: true
+       actions:
+       - class: CustomProjectile
+         actions:
+         - class: PlayEffects
+           effects: invincible
+         - class: PotionEffect
+         - class: Stop
+     - class: ChangeContext
+       target_self: true
+     - class: PlayEffects
+       effects: invincible
+     - class: PotionEffect
+  effects:
+    cast:
+    - sound: item.trident.return
+      sound_pitch: 0.3
+      sound_volume: 2
+    - sound: item.trident.riptide_1
+      sound_pitch: 0.4
+      sound_volume: 2
+    tick:
+    - location: target
+      particle: wax_on
+      particle_count: 2
+    - location: target
+      effectlib:
+        duration: 100
+        class: Arc
+        height: 1
+        particles: 1
+        particle: spell_mob
+        color: "#ffd700"
+        update_directions: true
+        update_locations: true
+    invincible:
+    - sound: block_fire_extinguish
+      sound_volume: 0.2
+      location: target
+      source_location: body
+      effectlib:
+        class: Modified
+        duration: $duration
+        parameters:
+          size: sin(t/20) + 0.4
+        effect:
+          class: AnimatedBall
+          iterations: 70
+          particle: redstone
+          particle_size: 0.8
+          color: FFD700
+          particles: 60
+          y_offset: -0.5
+          y_factor: 1
+    - location: target
+      source_location: body
+      effectlib:
+        class: Modified
+        duration: $duration
+        parameters:
+          size: cos(t/20) + 0.4
+        effect:
+          class: AnimatedBall
+          iterations: 70
+          particle: redstone
+          color: C0C0C0
+          particles: 60
+          particle_size: 0.8
+          y_offset: -0.5
+          y_factor: 1
+  parameters:
+    target: any_entity
+    target_type: Player
+    range: 32
+    velocity: 400
+    ignore_blocks: true
+    target_self_timeout: 200
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    potion_effects:
+      damage_resistance: 4
+      slow: 1
+    duration: 5000
+    cooldown: 30000
+  costs:
+    mana: 90

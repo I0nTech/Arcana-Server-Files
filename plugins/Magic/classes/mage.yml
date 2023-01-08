@@ -1,0 +1,39 @@
+mage:
+  inherit: base
+  spell_inventory: true
+  spells:
+    - manashot
+  mana_max: mage_mana+100
+  mana_regeneration: mage_mana_regen+1
+  mana_max_boost: manaboost/100
+  mana_regeneration_boost: manaboost/100
+  entity_attributes:
+    generic_max_health:
+      value: vitality
+      operation: add
+    generic_knockback_resistance:
+      value: knockbackdefense/8
+      operation: add
+    generic_movement_speed:
+      value: 0
+      operation: add
+    generic_armor:
+      value: 0
+      operation: add
+    generic_armor_toughness:
+      value: toughness
+      operation: add
+    generic_attack_knockback:
+      value: 0
+      operation: add
+    generic_attack_damage:
+      value: attackdamage
+      operation: add
+    generic_attack_speed:
+      value: 4+attackspeed
+      operation: add
+    generic_luck:
+      value: 0
+      operation: add
+
+    # 1-1/(1+0.2*%mmoitems_stat_DEFENSE%)   [Defense Equation]

@@ -1,0 +1,125 @@
+glacialspears:
+  name: Glacial Spears
+  description: Summon spears of ice to impale your enemies from above
+  icon: packed_ice
+  category: ice
+  upgrade_required_casts: 1500
+  worth: 7000
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+        - class: Spread
+          actions:
+          - class: ChangeContext
+            actions:
+            - class: Delay
+            - class: CustomProjectile
+              requires_target: true
+              actions:
+                - class: AreaOfEffect
+                  radius: 1.5
+                  y_radius: 2
+                  actions:
+                  - class: Damage
+                  - class: PotionEffect
+                  - class: Velocity
+  effects:
+    cast:
+      - location: target
+        effectlib:
+          class: Modified
+          duration: 200
+          parameters:
+            radius: '(t/i) + 3.7'
+          effect:
+            class: Warp
+            particles: 16
+            rings: 4
+            relative_offset: 0,0.1,0
+            particle: redstone
+            color: "#b0e0e6"
+            grow: 0.15
+            update_directions: false
+            update_locations: false
+    tick:
+    - location: target
+      particle: block_crack
+      material: frosted_ice
+      particle_count: 2
+      particle_offset: 0
+    - location: target
+      particle: redstone
+      particle_size: 0.4
+      particle_count: 2
+      particle_offset: 0.15
+      color: "#b0e0e6"
+    step:
+    - location: target
+      effectlib:
+        class: Vortex
+        duration: 100
+        helixes: 12
+        circles: 1
+        radius: 0.4
+        particle: redstone
+        particle_count: 1
+        particle_size: 0.6
+        color: "#b0e0e6"
+        grow: 0
+    hit:
+    - location: target
+      particle: block_crack
+      material: blue_stained_glass_pane
+      particle_count: 15
+      particle_offset: 0.5
+    - location: target
+      sound: item_trident_hit
+      sound_pitch: 3
+      sound_volume: 2
+    hit_entity:
+    - location: target
+      particle: dust_color_transition
+      color: "#b0e0e6"
+      particle_count: 12
+      particle_offset: 0.6
+  parameters:
+    spread: 0.12
+    source_at_target: true
+    target_offset: 0,50,0
+    random_target_offset: 0.5,0,0.5
+    source_pitch: 90
+    source_yaw: 0
+    delay: rand(200,1000)
+    range: 64
+    velocity: rand(70,90)
+    multiply: 10
+    hitbox: true
+    damage_type: ice
+    entity_damage: 10
+    player_damage: 5
+    no_damage_ticks: 0
+    potion_effects:
+      slow: 0
+      weakness: 0
+    duration: 2000
+    direction: 0,0,0
+    push: 0
+    cooldown: 15000
+  costs:
+    mana: 125
+glacialspears|2:
+  upgrade_required_casts: 2500
+  parameters:
+    entity_damage: 12
+    player_damage: 6
+    multiply: 12
+  costs:
+    mana: 150
+glacialspears|3:
+  parameters:
+    multiply: 14
+    entity_damage: 14
+    player_damage: 7
+  costs:
+    mana: 175

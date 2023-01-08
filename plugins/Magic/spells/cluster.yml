@@ -1,0 +1,136 @@
+cluster:
+  name: Cluster Bomb
+  description: Throw TNT that splits into more TNT after detonating
+  inherit: false
+  icon: pumpkin_seeds
+  category: explosive
+  upgrade_required_casts: 1500
+  worth: 6000
+  actions:
+    cast:
+    - class: EntityProjectile
+      actions:
+      - class: AreaOfEffect
+        actions:
+        - class: Damage
+        - class: Velocity
+        - class: Sphere
+          actions:
+          - class: BreakBlock
+      - class: ChangeContext
+        source_at_target: true
+        source_pitch: -90
+        actions:
+        - class: Multiply
+          actions:
+          - class: EntityProjectile
+            spread: 1.2
+            range: 12
+            velocity: rand(14,20)
+            gravity: 0.1
+            lifetime: rand(1500,2000)
+            hitbox_size: 0
+            target: none
+            actions:
+            - class: AreaOfEffect
+              actions:
+              - class: Damage
+              - class: Velocity
+            - class: Sphere
+              actions:
+              - class: BreakBlock
+          - class: Retarget
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: block_lava_pop
+      sound_pitch: 0.3
+      sound_volume: 1.6
+    projectile:
+    - location: origin
+      effectlib:
+        class: Modified
+        iterations: 60
+        parameters:
+          size: max(1, (t / i) * 3 - 1)
+        effect:
+          class: AnimatedBall
+          particle: spell_witch
+          x_factor: 2
+          z_factor: 2
+          particles_per_iteration: 3
+    tick:
+    - location: target
+      particle: spell_witch
+      particle_offset: 0
+      particle_count: 3
+    reflect:
+    - location: target
+      sound: item_trident_throw
+      sound_volume: 0.5
+      sound_pitch: 0.1
+      particle: fireworks_spark
+      color: '#00ffff'
+      particle_count: 1
+    hit:
+    - location: target
+      particle: explosion_huge
+      particle_count: 1
+      sound: entity_generic_explode
+      sound_pitch: 0.8
+      sound_volume: 1
+  parameters:
+    type: primed_tnt
+    velocity: 20
+    gravity: 0.04
+    lifetime: 6000
+    hit_on_miss: true
+    target_self: false
+    target: other
+    multiply: 5
+    damage_type: explosion
+    player_damage: 6
+    entity_damage: 12
+    no_damage_ticks: 0
+    target_type: Damageable
+    radius: 3.5
+    cooldown: 15000
+    speed: 1
+    push: 1.2
+    undo: 10000
+    undo_speed: 8
+    target_self_timeout: 100
+    destructible: solid
+    destructible_override: true
+    destructible_durability: 50
+    break_durability: 4
+    durability_min_distance: 1
+    durability_max_distance: 3
+  costs:
+    mana: 150
+
+cluster|2:
+  parameters:
+    repeat: 3
+    player_damage: 7
+    entity_damage: 14
+    multiply: 6
+    size: 3
+    break_durability: 5
+  upgrade_required_casts: 2500
+
+
+cluster|3:
+  parameters:
+    repeat: 4
+    player_damage: 8
+    entity_damage: 16
+    multiply: 7
+    size: 3
+    break_durability: 6
+
+
+cluster|4:
+  parameters:
+    repeat: 5
+

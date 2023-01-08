@@ -1,0 +1,73 @@
+# This is the key name of this spell
+# It must be unique across the server, and is used in configs and commands such as /mage, /wand and /mgive
+# to refer to this spell.
+manamines:
+  name: Mana Mines
+  description: Scatter floating orbs of mana that detonate upon contact
+  icon: fire_coral_fan
+  worth: 7000
+  triggers:
+    - trigger: damage
+      max_health: 6
+  actions:
+    cast:
+    - class: Message
+    - class: Multiply
+      actions:
+        - class: CustomProjectile
+          actions:
+            - class: Damage
+            - class: AreaOfEffect
+              actions:
+                - class: Velocity
+        - class: Retarget
+  effects:
+    cast:
+    - location: origin
+      sound: block_bell_resonate
+      sound_pitch: 3
+      sound_volume: 2
+    tick:
+      - location: target
+        particle: redstone
+        particle_count: 4
+        particle_offset: 0
+        size: 0.5
+    hit:
+      - location: target
+        particle: explosion_large
+        sound: entity_elder_guardian_curse
+        sound_pitch: 5
+        sound_volume: 1
+      - location: target
+        particle: crit_magic
+        particle_count: 8
+        particle_offset: 0.6
+  parameters:
+    message: '&d@spell Deployed.'
+    message_type: action_bar
+    push: 0.6
+    tick_size: 0.2
+    player_damage: 3
+    entity_damage: 6
+    lifetime: 30000
+    velocity: rand(2,4)
+    hitbox: true
+    spread: 360
+    hitbox_size: 0.4
+    multiply: 40
+    no_damage_ticks: 0
+    radius: 2
+    reflective: solid
+    target: other_entity
+    quiet: true
+    plan:
+    - time: rand(200,1200)
+      velocity: 0.1
+      tick_size: 0.02
+    cooldown: 30000
+
+
+
+
+

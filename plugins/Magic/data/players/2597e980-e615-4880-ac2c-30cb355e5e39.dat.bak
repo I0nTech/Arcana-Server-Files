@@ -1,0 +1,481 @@
+id: 2597e980-e615-4880-ac2c-30cb355e5e39
+name: Turtlescientist
+created: 1644344480976
+updated: 1644344936492
+last_cast: 1644344933078
+cooldown_expiration: 0
+last_death_location: 5.165143861860976,67.41999998688698,23.75243213705433,world,-164.99107,10.524306
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  3ae08fb1-d48e-43ef-be5a-1bdc0b585fcf: []
+spells:
+  manabeam:
+    cast_count: 3
+    last_cast: 1644344907834
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  criticalplayer:
+    cast_count: 0
+    last_cast: 1644344818962
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  inflictcrit:
+    cast_count: 5
+    last_cast: 1644344818985
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shatterbolt:
+    cast_count: 1
+    last_cast: 1644344747496
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 3
+    last_cast: 1644344813834
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|2:
+    cast_count: 3
+    last_cast: 1644344921078
+    last_earn: 1644344921079
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 22
+    last_cast: 1644344900035
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.4890000000000003
+  arcanemeteor:
+    cast_count: 0
+    last_cast: 1644344807536
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  upgrades:
+    cast_count: 1
+    last_cast: 1644344840532
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manablast:
+    cast_count: 2
+    last_cast: 1644344813834
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanehail:
+    cast_count: 1
+    last_cast: 1644344721971
+    last_earn: 0
+    cooldown_expiration: 1644344731971
+    charges: 0.0
+  reflect:
+    cast_count: 3
+    last_cast: 1644344724591
+    last_earn: 0
+    cooldown_expiration: 1644344727591
+    charges: 0.0
+  walls:
+    cast_count: 1
+    last_cast: 1644344933078
+    last_earn: 0
+    cooldown_expiration: 1644344948078
+    charges: 0.0
+  auralburst:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  repeaterspell:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  magicburst:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shell:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mendwounds:
+    cast_count: 3
+    last_cast: 1644344905036
+    last_earn: 0
+    cooldown_expiration: 1644344965036
+    charges: 0.0
+  anchor:
+    cast_count: 3
+    last_cast: 1644344907833
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  progressmenu:
+    cast_count: 7
+    last_cast: 1644344845210
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+wands:
+  basic_wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Shatterbolts"},{"italic":false,"color":"white","text":"
+          ("},{"italic":false,"color":"dark_aqua","text":"Basic Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+        lore:
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+          simple wand"}],"text":""}'
+        - '{"italic":true,"color":"dark_aqua","text":"Soulbound to Turtlescientist"}'
+        - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+          "},{"color":"#FF2288","text":"17 "},{"color":"white","text":"Spells"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana
+          Max: "},{"color":"aqua","text":"150"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+          Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+          Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cast"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gold","text":"Shatterbolts"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+          "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+          "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+          "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to
+          modify this"}],"text":""}'
+        - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+        custom-model-data: 20002
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 0f2c1ab9-8c99-49f3-acb6-ac8cd9bac0f4
+            operation: 0
+          GENERIC_ATTACK_DAMAGE:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 0.0
+            name: Equipment Modifier
+            slot: HAND
+            uuid: 4df3880e-b8d6-40dd-8ebb-d3d95a816323
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        Unbreakable: true
+        internal: H4sIAAAAAAAA/0VQwW6DMAw1g6kZrdTbvmDXSAEaBv+xOwqJUaPSBCUu1TTt35fSw3zys5/83nMJkMGbDmoiNc6YZVBcEJeshOKunGHw6u8OAxy/boFmjNqiIxsph/ezp1GFwbo1jXz4HrS/OYJ0kMGLNfCBbT+hqRreilbxU6173gus+FTV0jQSdas6Bgelya44xAXnGfbxrIgwjH4mBoXV3sEhktWXn1oIUf+WcNyY/7o5FKNPtCScQ3lFZ+7JiInwqBx2K4Zot/2OASO8LrMihHJU0erhmZJtKYeH61r2n9h3gmNbSX7qUqd0rXkj9NhIiRKbPv1sf3ORVHL7/FqCJvhl2SD8AVFgSQNWAQAA
+    wand:
+      owner: Turtlescientist
+      hotbar_inventory_count: 1
+      id: e69fed13-606a-42c9-90e1-f125d35ec6a8
+      active_spell: shatterbolt
+      icon: stick{20002}
+      spell_inventory:
+        boon: 1
+        mendwounds: 0
+      version: 7
+      template: basic_wand
+      owner_id: 2597e980-e615-4880-ac2c-30cb355e5e39
+inventory:
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: STICK
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Mana
+      Beam"},{"italic":false,"color":"white","text":" ("},{"italic":false,"color":"dark_aqua","text":"Basic
+      Wand"},{"italic":false,"color":"white","text":")"}],"text":""}'
+    lore:
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"dark_gray","text":"A
+      simple wand"}],"text":""}'
+    - '{"italic":true,"color":"dark_aqua","text":"Soulbound to Turtlescientist"}'
+    - '{"italic":false,"extra":[{"color":"dark_purple","text":"▎ "},{"color":"white","text":"Encoded:
+      "},{"color":"#FF2288","text":"17 "},{"color":"white","text":"Spells"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"white","text":"✵ Spell Damage: 5.0"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Mana
+      Max: "},{"color":"aqua","text":"150"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#00FFFF","text":"❃ "},{"color":"gray","text":"Recharge
+      Rate: "},{"color":"aqua","text":"20"},{"color":"gray","text":"/s"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"#27d679","text":"▎ "},{"color":"white","text":"Upgrades:"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Attunement "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Conduit "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"⦾ "},{"color":"gray","text":"Empty
+      Engram "},{"color":"#27d679","text":"Slot"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"dark_gray","text":"------------------------"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Swing
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to cast "},{"color":"gold","text":"Mana"}],"keybind":"key.attack"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gold","text":"Beam"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Interact
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to cycle"}],"keybind":"key.use"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"the active spell"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"white","text":"Drop
+      "},{"color":"gray","text":"("},{"color":"green","extra":[{"extra":[{"color":"gray","text":")
+      "},{"color":"gray","text":"to open the spell"}],"keybind":"key.drop"}],"text":""}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"inventory"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"aqua","text":"• "},{"color":"yellow","text":"Press
+      "},{"color":"aqua","text":"Sneak + Drop "},{"color":"yellow","text":"to modify
+      this"}],"text":""}'
+    - '{"italic":false,"extra":[{"color":"yellow","text":"wand\u0027s settings"}],"text":""}'
+    custom-model-data: 20002
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 10.0
+        name: Equipment Modifier
+        slot: HAND
+        uuid: 0f2c1ab9-8c99-49f3-acb6-ac8cd9bac0f4
+        operation: 0
+      GENERIC_ATTACK_DAMAGE:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: Equipment Modifier
+        slot: HAND
+        uuid: 4df3880e-b8d6-40dd-8ebb-d3d95a816323
+        operation: 0
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    - HIDE_DESTROYS
+    - HIDE_PLACED_ON
+    Unbreakable: true
+    internal: H4sIAAAAAAAA/0VQ0WqEMBBcq+VSe3Bv/YK+BqJerP5H32VNVi6cJpLkPErpvzcnhe7TzjC7M0wJkMGL8jhFHGfKMiiuRGtWQnFHqxk8u7slD6fPm48zBWXIRhNiDm8XF0f0g7Fbopz/GpS72QjpIYMno+Gd2n4iXTW8FS3yc6163guq+FTVUjeSVIsdgyOqaDYawkrzDGxBiyPhwqAwylk4hmjU9bsWQtQ/JZx22b9pDsXokiy55lAuZPU9pdABHsOA7emHR5pa9h/Ud4JTW0l+7tKGqla8EWpspCRJTZ8OIi3rjJGgHDEYNTxayOGwkQ9m9zmkwl5vNkQMl7/KEtTeresO4RdNzwNOUwEAAA==
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: BREAD
+  amount: 31
+- null
+- null
+- null
+- null
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: BONE
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: POTION
+  meta:
+    ==: ItemMeta
+    meta-type: POTION
+    display-name: '{"italic":false,"color":"light_purple","text":"Arcanium"}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Material"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"color":"gray","text":"Purified magic. The liquid inside"}'
+    - '{"italic":false,"color":"gray","text":"shines with untapped potential"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"Tier: "},{"bold":true,"color":"#6f7dff","text":"S"},{"bold":true,"color":"#7677ff","text":"P"},{"bold":true,"color":"#7d70ff","text":"E"},{"bold":true,"color":"#846aff","text":"C"},{"bold":true,"color":"#8b63ff","text":"T"},{"bold":true,"color":"#925dff","text":"A"},{"bold":true,"color":"#9956ff","text":"C"},{"bold":true,"color":"#a050ff","text":"U"},{"bold":true,"color":"#a749ff","text":"L"},{"bold":true,"color":"#ae43ff","text":"A"},{"bold":true,"color":"#b53cff","text":"R"}],"text":""}'
+    enchants:
+      LUCK: 1
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_POTION_EFFECTS
+    internal: H4sIAAAAAAAA/62SzW7UMBSFnV0EAgFSJRYsIi+6QgjoT5jZmdS0kfIzil2kURpZbuJhLKaZaeIIUNWX4CWy5hXCi+EaYqYtS6QrK/J3zzly7n0AgAt24jgNKY4JO5onKA4DFqUZdr7ncLeMuRKN5Cv4Euoaen/WNXIhReVd8E+yfOXRpfBW8rKTlSfrVlbid1u7lLVovS9SLb2uVnyz0ZLNWolaWbddn0rRTL2h/zr0h0O/0Lqhr8yHrhUxwDfMN/UHzEZQmfO1BdiAd0O/b0TcgmAE5wbsWUANmAz926E/2A5HI5gYcHjHipvYg+3w0xH4Jn9iQTQCYcDenYxz46NvSwuyfwJYuOCZndXNyeh8hoEbI4qzEEUueHIbh0fgUYyO9UQxITgJsANe/B12SND7CLMw0WoU0DBNHFf3j1yvAgYP9T9BTclr2V244PEJodmcaacTlFACTq8gUVzBKRyv9FjTY6LWzTc4za+gNRs5+/mjVY0W5Gdw1ZWf2XrB1FKwVnDvzRks4HVx7YKn93RgJ7/fDwsHPLetGY7Tj5ilCQsy9IHeesvNQoMo/38LXGy70xBnwNkHvwCS6QG9TgMAAA==
+    custom-color:
+      ==: Color
+      RED: 176
+      BLUE: 255
+      GREEN: 38
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: POTION
+  meta:
+    ==: ItemMeta
+    meta-type: POTION
+    display-name: '{"italic":false,"color":"light_purple","text":"Arcanium"}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Material"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"color":"gray","text":"Purified magic. The liquid inside"}'
+    - '{"italic":false,"color":"gray","text":"shines with untapped potential"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"Tier: "},{"bold":true,"color":"#6f7dff","text":"S"},{"bold":true,"color":"#7677ff","text":"P"},{"bold":true,"color":"#7d70ff","text":"E"},{"bold":true,"color":"#846aff","text":"C"},{"bold":true,"color":"#8b63ff","text":"T"},{"bold":true,"color":"#925dff","text":"A"},{"bold":true,"color":"#9956ff","text":"C"},{"bold":true,"color":"#a050ff","text":"U"},{"bold":true,"color":"#a749ff","text":"L"},{"bold":true,"color":"#ae43ff","text":"A"},{"bold":true,"color":"#b53cff","text":"R"}],"text":""}'
+    enchants:
+      LUCK: 1
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_POTION_EFFECTS
+    internal: H4sIAAAAAAAA/62SzW7UMBSFnV0EAgFSJRYsIi+6QgjoT5jZmdS0kfIzil2kURpZbuJhLKaZaeIIUNWX4CWy5hXCi+EaYqYtS6QrK/J3zzly7n0AgAt24jgNKY4JO5onKA4DFqUZdr7ncLeMuRKN5Cv4Euoaen/WNXIhReVd8E+yfOXRpfBW8rKTlSfrVlbid1u7lLVovS9SLb2uVnyz0ZLNWolaWbddn0rRTL2h/zr0h0O/0Lqhr8yHrhUxwDfMN/UHzEZQmfO1BdiAd0O/b0TcgmAE5wbsWUANmAz926E/2A5HI5gYcHjHipvYg+3w0xH4Jn9iQTQCYcDenYxz46NvSwuyfwJYuOCZndXNyeh8hoEbI4qzEEUueHIbh0fgUYyO9UQxITgJsANe/B12SND7CLMw0WoU0DBNHFf3j1yvAgYP9T9BTclr2V244PEJodmcaacTlFACTq8gUVzBKRyv9FjTY6LWzTc4za+gNRs5+/mjVY0W5Gdw1ZWf2XrB1FKwVnDvzRks4HVx7YKn93RgJ7/fDwsHPLetGY7Tj5ilCQsy9IHeesvNQoMo/38LXGy70xBnwNkHvwCS6QG9TgMAAA==
+    custom-color:
+      ==: Color
+      RED: 176
+      BLUE: 255
+      GREEN: 38
+- ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: POTION
+  meta:
+    ==: ItemMeta
+    meta-type: POTION
+    display-name: '{"italic":false,"color":"light_purple","text":"Arcanium"}'
+    lore:
+    - '{"italic":false,"color":"red","text":"Material"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"color":"gray","text":"Purified magic. The liquid inside"}'
+    - '{"italic":false,"color":"gray","text":"shines with untapped potential"}'
+    - '{"italic":false,"text":""}'
+    - '{"italic":false,"extra":[{"color":"gray","text":"Tier: "},{"bold":true,"color":"#6f7dff","text":"S"},{"bold":true,"color":"#7677ff","text":"P"},{"bold":true,"color":"#7d70ff","text":"E"},{"bold":true,"color":"#846aff","text":"C"},{"bold":true,"color":"#8b63ff","text":"T"},{"bold":true,"color":"#925dff","text":"A"},{"bold":true,"color":"#9956ff","text":"C"},{"bold":true,"color":"#a050ff","text":"U"},{"bold":true,"color":"#a749ff","text":"L"},{"bold":true,"color":"#ae43ff","text":"A"},{"bold":true,"color":"#b53cff","text":"R"}],"text":""}'
+    enchants:
+      LUCK: 1
+    attribute-modifiers:
+      GENERIC_ATTACK_SPEED:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.0
+        name: mmoitemsDecoy
+        uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+        operation: 0
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_POTION_EFFECTS
+    internal: H4sIAAAAAAAA/62SzW7UMBSFnV0EAgFSJRYsIi+6QgjoT5jZmdS0kfIzil2kURpZbuJhLKaZaeIIUNWX4CWy5hXCi+EaYqYtS6QrK/J3zzly7n0AgAt24jgNKY4JO5onKA4DFqUZdr7ncLeMuRKN5Cv4Euoaen/WNXIhReVd8E+yfOXRpfBW8rKTlSfrVlbid1u7lLVovS9SLb2uVnyz0ZLNWolaWbddn0rRTL2h/zr0h0O/0Lqhr8yHrhUxwDfMN/UHzEZQmfO1BdiAd0O/b0TcgmAE5wbsWUANmAz926E/2A5HI5gYcHjHipvYg+3w0xH4Jn9iQTQCYcDenYxz46NvSwuyfwJYuOCZndXNyeh8hoEbI4qzEEUueHIbh0fgUYyO9UQxITgJsANe/B12SND7CLMw0WoU0DBNHFf3j1yvAgYP9T9BTclr2V244PEJodmcaacTlFACTq8gUVzBKRyv9FjTY6LWzTc4za+gNRs5+/mjVY0W5Gdw1ZWf2XrB1FKwVnDvzRks4HVx7YKn93RgJ7/fDwsHPLetGY7Tj5ilCQsy9IHeesvNQoMo/38LXGy70xBnwNkHvwCS6QG9TgMAAA==
+    custom-color:
+      ==: Color
+      RED: 176
+      BLUE: 255
+      GREEN: 38
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+open_wand: true
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 8.0
+properties: {}
+kits:
+  start:
+    last_give: 1644344481094
+    given_items:
+      bread:
+        amount: 32
+        last_give: 1644344481094
+      basic_wand:
+        amount: 1
+        last_give: 1644344481093
+classes:
+  arcanamage:
+    spells:
+    - manabeam
+    - boon
+    - criticalplayer
+    - shatterbolt
+    - manabolt
+    - arcanemeteor
+    - manablast
+    - arcanehail
+    - reflect
+    - walls
+    - auralburst
+    - focusbolt
+    - repeaterspell
+    - magicburst
+    - shell
+    - mendwounds
+    - scattershot
+    spell_levels:
+      boon: 2
+    mana: 143.74
+    mana_timestamp: 1644344936491
+transient_modifiers: {}
+active_class: arcanamage
+health: 8.666666984558105

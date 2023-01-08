@@ -1,0 +1,89 @@
+multibang:
+  name: 9-Bang
+  description: Concuss, blind, and violate the geneva convention all in one.
+  icon: spider_eye
+  icon_disabled: fermented_spider_eye
+  category: explosive
+  worth: 8000
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+        - class: ChangeContext
+          source_pitch: -90
+          source_yaw: 0
+          source_at_target: true
+          actions:
+            - class: Multiply
+              actions:
+               - class: CustomProjectile
+                 spread: 360
+                 range: rand(3,10)
+                 lifetime: rand(2000,3000)
+                 reflect_count: 2
+                 hitbox_size: 0
+                 target: none
+                 actions:
+                   - class: AreaOfEffect
+                     actions:
+                       - class: Damage
+                       - class: PotionEffect
+                       - class: Ignite
+               - class: Retarget
+  effects:
+    cast:
+    - location: origin
+      sound: item.trident.throw
+      sound_pitch: 0.8
+    tick:
+      - location: target
+        particle: block_dust
+        material: glowstone
+        particle_offset: 0
+        particle_count: 3
+    reflect:
+      - location: target
+        sound: item_trident_throw
+        sound_volume: 0.5
+        sound_pitch: 0.1
+        particle: fireworks_spark
+        color: "#00ffff"
+        particle_count: 1
+    hit:
+      - location: target
+        particle: flash
+        class: EffectSingle
+        firework: burst
+        color: "#ffffe0"
+        color2: color
+        firework_flicker: false
+  parameters:
+    hitbox: true
+    hitbox_size: 1
+    range: 20
+    lifetime: 5000
+    reset_time_on_path_change: false
+    reflective: solid
+    velocity: 40
+    gravity: 0.03
+    hit_on_miss: true
+    target_self: false
+    multiply: 9
+    reflect_count: 1
+    player_damage: 2
+    entity_damage: 4
+    no_damage_ticks: 0
+    damage_min_distance: 3
+    damage_max_distance: 6
+    target_type: Damageable
+    potion_effects:
+      glowing: 0
+      night_vision: 1
+      blindness: 1
+    duration: 3000
+    radius: 4
+    cooldown: 10000
+  costs:
+    mana: 120
+
+

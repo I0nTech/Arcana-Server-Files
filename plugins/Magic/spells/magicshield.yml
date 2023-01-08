@@ -1,0 +1,68 @@
+magicshield:
+  name: Deflector
+  description: Summon a continuous forward-facing magic barrier which deflects entities and deals 20% Attack Damage on contact. Does not reflect magic.
+  icon: shield
+  category: arcane
+  toggle: cancel
+  disable_mana_regeneration: true
+  boss_bar:
+    bar_title: "&7$spell"
+    bar_color: blue
+    bar_style: progress
+  actions:
+    cast:
+    - class: Interval
+      actions:
+        - class: ChangeContext
+          source_pitch: 0
+          actions:
+          - class: PlayEffects
+            effects: shield
+          - class: ConeOfEffect
+            actions:
+              - class: PlayEffects
+                effects: block
+              - class: Velocity
+              - class: Damage
+  effects:
+    shield:
+    - location: origin
+      source_location: feet
+      effectlib:
+        class: Wave
+        particle: crit_magic
+        pitch: 0
+        rows: 12
+        height: 4
+        height_back: 0
+        length_back: 0
+        yaw_offset: 180
+        relative_offset: -3,-1.5,0
+        particle_data: 0.1
+        type: instant
+        cloud_particle: crit
+        update_directions: true
+        update_locations: true
+    block:
+    - location: target
+      particle: fireworks_spark
+      particle_count: 4
+      particle_data: 0.5
+      sound: item_shield_break
+      sound_volume: 2
+      sound_pitch: 4
+  parameters:
+    target: other_entity
+    interval: 50
+    range: 3
+    push: 0.8
+    duration: 8000
+    no_damage_ticks: 0
+    damage_type: magic
+    damage: $attack_damage*0.2
+    cooldown: 16000
+    cancel_on_cast_other: true
+  costs:
+    mana: 30
+  active_costs:
+    mana: 20

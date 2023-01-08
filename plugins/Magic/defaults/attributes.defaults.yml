@@ -1,0 +1,142 @@
+# .
+# !! IMPORTANT !!
+# .
+# If you wish to customize this plugin, edit the "attributes.yml" file instead.
+# .
+# DO NOT JUST COPY THIS WHOLE FILE INTO YOUR attributes.yml !!!!
+# If you do this, updating the plugin in the future may not work as expected.
+# .
+# This file is merged from the files in the following folder:
+# .
+# https://github.com/elBukkit/MagicPlugin/tree/master/Magic/src/main/resources/defaults/attributes
+# .
+# See RPG configs for an example:
+# .
+# https://github.com/elBukkit/MagicPlugin/blob/master/Magic/src/main/resources/examples/rpg/attributes.yml
+
+attackdamage:
+  icon: potion:#FF0000
+  default: 0
+  min: -999
+  max: 999
+attackspeed:
+  icon: potion:#FF0000
+  default: 0
+  min: -999
+  max: 999
+vitality:
+  icon: potion:#FF0000
+  default: 0
+  min: -999
+  max: 999
+defense:
+  icon: iron_chestplate
+  default: 0
+  min: -999
+  max: 999
+toughness:
+  icon: iron_chestplate
+  default: 0
+  min: -999
+  max: 999
+knockbackdefense:
+  default: 0
+  min: -999
+  max: 999
+walkspeed:
+  icon: feather
+  default: 0
+  min: -999
+  max: 999
+critchance:
+  icon: iron_sword
+  default: 0
+  min: 0
+  max: 100
+critdamage:
+  icon: iron_axe
+  default: 50
+  min: -999
+  max: 999
+favor:
+  icon: lily_of_the_valley
+  default: 0
+  min: -999
+  max: 100
+magicresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+arcaneresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+fireresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+iceresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+lightningresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+explosiveresistance:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+manaboost:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+manaregenboost:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+cooldownreduction:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+costreduction:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+wandpower:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+mage_mana:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 9999999
+mage_mana_regen:
+  icon: chain_chestplate
+  default: 0
+  min: -999999
+  max: 9999999
+seekershots:
+  default: 0
+  min: -999
+  max: 999
+seekerrepeats:
+  default: 0
+  min: -999
+  max: 999
+seekerdamage:
+  default: 0
+  min: -999
+  max: 999

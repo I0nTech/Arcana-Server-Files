@@ -1,0 +1,45 @@
+minor_firebolt:
+  name: Minor Firebolt
+  description: Firebolt lite
+  icon: blaze_powder
+  icon_disabled: blaze_powder
+  actions:
+    cast:
+      - class: EntityProjectile
+        actions:
+          - class: Damage
+          - class: Ignite
+  effects:
+    cast:
+    - sound: item_firecharge_use
+      sound_pitch: 0.5
+      sound_volume: 0.3
+    hit:
+    - location: target
+      particle: lava
+      particle_offset: 0.1
+      particle_count: 2
+    - location: target
+      particle: flame
+      particle_offset: 0.6
+      particle_count: 2
+    hit_entity:
+    - location: target
+      sound: entity_generic_burn
+      sound_pitch: 1.2
+      sound_volume: 0.3
+  parameters:
+    fov: 3
+    type: small_fireball
+    hitbox: true
+    hitbox_size: 0.1
+    velocity: 30
+    target_self: false
+    duration: 1300
+    range: rand(24,32)
+    damage_type: fire
+    no_damage_ticks: 0
+    entity_damage: 2
+    player_damage: 1
+    undo: 10000
+    undo_speed: 0.5

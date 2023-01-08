@@ -1,0 +1,99 @@
+crimsonlotus:
+  name: Crimson Lotus
+  description: Fires a spray of homing fireballs
+  icon: crimson_roots
+  category: fire
+  upgrade_required_casts: 1500
+  worth: 6000
+  actions:
+    cast:
+    - class: CustomProjectile
+      hitbox: true
+      hitbox_size: 4
+      ignore_blocks: true
+      range: 64
+      velocity: 500
+      tick_effects: none
+      hit_effects: none
+      projectile_effects: none
+      actions:
+      - class: Repeat
+        actions:
+        - class: Asynchronous
+          actions:
+          - class: PlayEffects
+            effects: fire
+          - class: EntityProjectile
+            actions:
+              - class: Damage
+              - class: Ignite
+              - class: Velocity
+                push: 0.1
+        - class: Delay
+  effects:
+      cast:
+      - sound: block_lava_extinguish
+        sound_pitch: 2
+        sound_volume: 0.9
+      fire:
+      - sound: item_firecharge_use
+        sound_pitch: 0.5
+        sound_volume: 0.3
+      tick:
+      - location: target
+        particle: redstone
+        particle_offset: 0
+        particle_count: 1
+        particle_size: 0.6
+        color: "#dc143c"
+      hit:
+      - location: target
+        particle: lava
+        particle_offset: 0.1
+        particle_count: 2
+      - location: target
+        particle: flame
+        particle_offset: 0.6
+        particle_count: 2
+      none:
+  parameters:
+    type: small_fireball
+    repeat: 8
+    delay: rand(0,2)
+    spread: 0.5
+    hitbox: true
+    hitbox_size: 0.2
+    damage_type: fire
+    damage: 5
+    duration: 3000
+    plan:
+      - time: 1
+        velocity: 30
+      - time: 200
+        velocity: 15
+        track_target: true
+        track_speed: 0.2
+        track_range: 2
+    lifetime: 20000
+    no_damage_ticks: 0
+    undo: 2000
+    cooldown: 12000
+  costs:
+    mana: 125
+crimsonlotus|2:
+  upgrade_required_casts: 2500
+  parameters:
+    repeat: 10
+    player_damage: 1.25
+    entity_damage: 2.5
+    duration: 3500
+  costs:
+    mana: 150
+crimsonlotus|3:
+  parameters:
+    repeat: 12
+    player_damage: 1.5
+    entity_damage: 3
+    duration: 4000
+  costs:
+    mana: 175

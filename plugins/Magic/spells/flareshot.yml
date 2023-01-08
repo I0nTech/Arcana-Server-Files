@@ -1,0 +1,175 @@
+flareshot:
+  name: Flare Shot
+  description: Small fireball that ignites and crits on burning enemies
+  icon: blaze_powder
+  icon_disabled: blaze_powder
+  category: fire
+  upgrade_required_casts: 500
+  worth: 1000
+  actions:
+    cast:
+    - class: EntityProjectile
+      actions:
+        - class: CheckEntity
+          on_fire: true
+          actions:
+          - class: ChangeContext
+            target_caster: true
+            actions:
+              - class: Cast
+                spell: inflictcrit
+                cooldown_free: true
+                cost_free: true
+        - class: Ignite
+        - class: Damage
+  effects:
+    cast:
+    - sound: item_firecharge_use
+      sound_pitch: 0.7
+    hit:
+    - location: target
+      particle: lava
+      particle_offset: 0.1
+      particle_count: 5
+    - location: target
+      particle: flame
+      particle_offset: 0.6
+      particle_count: 8
+    hit_entity:
+    - location: target
+      sound: entity_generic_burn
+      sound_pitch: 1.2
+    tick:
+    - location: target
+      particle: ash
+      particle_offset: 0.1
+  parameters:
+    type: small_fireball
+    item: fire_charge
+    hitbox: true
+    hitbox_size: 0.1
+    velocity: 50
+    duration: 1300
+    range: 24
+    damage_type: fire
+    no_damage_ticks: 0
+    entity_damage: 4
+    player_damage: 2
+    gravity: 0.007
+    undo: 10000
+    undo_speed: 0.5
+    charges: 3
+    charge_regeneration: 1
+    cooldown: 600
+  costs:
+    mana: 20
+flareshot|2:
+  upgrade_required_casts: 1000
+  parameters:
+    duration: 1600
+    entity_damage: 5
+    player_damage: 2.5
+    range: 32
+  costs:
+    mana: 25
+flareshot|3:
+  upgrade_required_casts: 2000
+  parameters:
+    duration: 2000
+    entity_damage: 6
+    player_damage: 3
+    range: 40
+  costs:
+    mana: 30
+flareshot|4:
+  upgrade_required_casts: 3500
+  parameters:
+    duration: 3500
+    entity_damage: 7
+    player_damage: 3.5
+    range: 48
+  costs:
+    mana: 35
+flareshot|5:
+  description: Small fireball that ignites flammable terrain, crits on burning enemies
+  upgrade_required_casts: 5000
+  actions:
+    cast:
+    - class: EntityProjectile
+      actions:
+        - class: CheckEntity
+          on_fire: true
+          actions:
+          - class: ChangeContext
+            target_caster: true
+            actions:
+              - class: Cast
+                spell: inflictcrit
+                cooldown_free: true
+                cost_free: true
+        - class: AreaOfEffect
+          actions:
+          - class: Ignite
+          - class: Damage
+        - class: Sphere
+          radius: 1.5
+          ignore_result: true
+          actions:
+          - class: Cover
+            actions:
+            - class: Burn
+  effects:
+    cast:
+    - sound: item_firecharge_use
+      sound_pitch: 0.5
+    hit:
+    - location: target
+      particle: lava
+      particle_offset: 0.15
+      particle_count: 10
+    - location: target
+      particle: flame
+      particle_offset: 0.6
+      particle_count: 8
+    hit_entity:
+    - location: target
+      sound: entity_generic_burn
+      sound_pitch: 2
+    tick:
+      - location: target
+        particle: drip_lava
+        particle_offset: 0.03
+        particle_count: 1
+      - location: target
+        particle: ash
+        particle_offset: 0.1
+  parameters:
+    hitbox_size: 0.2
+    velocity: 60
+    duration: 4000
+    damage_type: fire
+    entity_damage: 8
+    player_damage: 4
+    cooldown: 500
+    radius: 1
+  costs:
+    mana: 40
+flareshot|6:
+  upgrade_required_casts: 7000
+  parameters:
+    duration: 4500
+    entity_damage: 9
+    player_damage: 4.5
+    range: 56
+    radius: 1.25
+  costs:
+    mana: 50
+flareshot|7:
+  parameters:
+    duration: 5000
+    entity_damage: 10
+    player_damage: 5
+    range: 64
+    radius: 1.55
+  costs:
+    mana: 60

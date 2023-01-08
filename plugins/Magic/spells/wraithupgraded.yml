@@ -1,0 +1,33 @@
+wraithupgraded:
+  name: Wraith
+  icon: stick
+  passive: true
+  triggers:
+  - trigger: interval
+    interval: 1000
+  actions:
+    cast:
+     - class: CheckRequirements
+       requirements:
+        - time:
+            min: 12000
+            max: 23999
+       actions:
+        - class: PotionEffect
+        - class: Modifier
+        - class: PlayEffects
+          effect: buff
+  parameters:
+    target: self
+    target_type: Player
+    remove_on_finish: false
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true
+    effects_particles: false
+    add_modifiers: twilightbuffupgraded
+    potion_effects:
+      invisibility: 0
+    duration: 2000

@@ -1,0 +1,9 @@
+compresseddiamond:
+  name: Compressed Diamond
+  inherit: base_resource
+  icon: diamond
+  craftable: true
+  description: Test
+  stackable: true
+  glowing: true
+  unique: true

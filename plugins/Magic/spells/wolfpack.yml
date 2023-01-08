@@ -1,0 +1,84 @@
+wolfpack:
+    creator: MrSlushie96
+    name: Wolf Pack
+    description: People attacking you? Not anymore. Kill them
+    icon: sheep_spawn_egg
+    category: combat
+    worth: 1000
+    earns: 8
+    quick_cast: true
+    disable_mana_regeneration: true
+    toggle: cancel
+    requires: LibsDisguises
+    actions:
+      cast:
+      - class: Asynchronous
+        actions:
+        - class: Repeat
+          repeat: 10
+          actions:
+          - class: Spread
+            actions:
+            - class: SpawnEntity
+              set_target: true
+            - class: Aggro
+            - class: PlayEffects
+              effects: spawned
+            - class: Delay
+        - class: Repeat
+          repeat: infinite
+          actions:
+          - class: Disguise
+          - class: PotionEffect
+            duration: 5000
+          - class: Delay
+            delay: 1000
+    effects:
+        cast:
+        -  sound: block_beacon_power_select
+           sound_pitch: 1.8
+           sound_volume: 0.6
+        -  class: EffectSingle
+           sound: magic.zap_big
+        -  class: EffectSingle
+           sound: magic.zap
+        tick:
+        - location: target
+          particle: fireworks_spark
+          particle_count: 3
+          particle_offset_x: 0.11
+          particle_offset_y: 0.11
+          particle_offset_z: 0.11
+        hit:
+        - class: EffectSingle
+          location: target
+          color: F5EFFB
+          firework: ball
+        - class: EffectSingle
+          sound: block_note_block_chime
+          sound_pitch: 0.2
+          sound_volume: 2
+          location: target
+          requires_entity_target: true
+          particle_override: particle_orbital
+          effectlib:
+             class: AtomEffect
+             particle_nucleus: fireworks_spark
+             particle_orbital: fireworks_spark
+             iterations: 40
+    parameters:
+        disguise:
+          type: wolf
+        undo: 1000
+        entity_types:
+            wolf: 15000
+        cancel_on_death: true
+        target: self
+        effect_speed: 2
+        effect_increase_damage: 5
+        hitbox: true
+        cooldown: 0
+    costs:
+        mana: 50
+    active_costs:
+        mana: 5

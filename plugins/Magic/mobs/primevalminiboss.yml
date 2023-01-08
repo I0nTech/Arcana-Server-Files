@@ -1,0 +1,56 @@
+primevalminiboss:
+  type: zombie
+  item: primevalbuffedcocoabeans
+  chestplate: primevalbuffedchestplate
+  leggings: primevalbuffedleggings
+  helmet: primevalbuffedhelmet
+  boots: primevalbuffedboots
+  inherit: basemob
+  name: '&f&l[LVL 86] &r&c♦ &r&e&lPrimeval Zombie &r&c♦'
+  health: 344
+  neolithicslayer: 4
+  triggers:
+    death:
+      cast:
+      - grant sp 9 money 258 fighting 129
+    interval:
+      cast:
+        pulse|3: 90
+        none: 10
+        evade: 30
+        none: 70
+        repeaterspell|3: 80
+        none: 20
+        current|5: 80
+        none: 20
+        manabolt|7: 80
+        none: 20
+        napalm: 50
+        none: 50
+  drops:
+    - cocoa_beans@10: 99
+      cocoa_beans@12: 99
+  loot:
+    primevalchestplate:
+      count: 1
+      probability: 3/(1800-(1800/100)*luck)
+    primevalhelmet:
+      count: 1
+      probability: 3/(1800-(1800/100)*luck)
+    primevalleggings:
+      count: 1
+      probability: 3/(1800-(1800/100)*luck)
+    primevalboots:
+      count: 1
+      probability: 3/(1800-(1800/100)*luck)
+    repeaterspell:
+      count: 1
+      probability: 3/(1800-(1800/100)*luck)
+    primalartifact:
+      count: 1
+      probability: 3/(1800-(1800/100)*luck)
+  potion_effects:
+  - type: speed
+    amplifier: 3
+  entity_attributes:
+    generic_knockback_resistance: 1

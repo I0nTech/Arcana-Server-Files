@@ -1,0 +1,3 @@
+action_bar_queue_interval: 100
+world_modification:
+  remove_invalid_entities: true

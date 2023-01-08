@@ -1,0 +1,39 @@
+# This is the key name of this spell
+# It must be unique across the server, and is used in configs and commands such as /mage, /wand and /mgive
+# to refer to this spell.
+mossysiphon:
+  name: Siphon
+  description: Leech life from entities around you
+  triggers:
+    - trigger: interval
+      interval: 20000
+  icon: mossy_cobblestone
+  actions:
+    cast:
+    - requires_entity_target: true
+    - class: AreaOfEffect
+      actions:
+        - class: Damage
+        - class: Cast
+        - class: PlayEffects
+          effects: siphon
+  effects:
+    siphon:
+      - location: origin
+        sound: entity_stray_ambient
+        sound_volume: 2
+      - location: targets
+        particle: crit
+        particle_offset: 0.5
+        particle_count: 8
+  parameters:
+    radius: 10
+    damage: 4
+    target_count: 3
+    spell: healbolt
+    target: self
+    target_type: Creature
+    cooldown_free: true
+    cost_free: true
+    spell_parameters:
+      quiet: true

@@ -1,0 +1,492 @@
+flamewave:
+  name: Flame Wave
+  description: Create Flames all around you
+  worth: 5000
+  earns_sp: 10
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: diamond_axe:24
+  icon_disabled: diamond_hoe:24
+  actions:
+    cast:
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: 160
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: -160
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: 140
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: -140
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: 120
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: -120
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: 100
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: -100
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: 80
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: 80
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: -80
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: 60
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: -60
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: 40
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: -40
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: 20
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: -20
+          actions:
+          - class: CustomProjectile
+            tick:
+            - class: Sphere
+              y_size: 0
+              z_size: 2
+              x_size: 2
+              orient: true
+              reorient: false
+              actions:
+              - class: ModifyBlock
+                ignore_result: true
+              - class: Undo
+                ignore_result: true
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: PlayEffects
+                  effect: waterballhit
+                  ignore_result: true
+                - class: Velocity
+                  speed: 0.8
+      - class: Asynchronous
+        actions:
+        - class: CustomProjectile
+          tick:
+          - class: Sphere
+            y_size: 0
+            z_size: 2
+            x_size: 2
+            orient: true
+            reorient: false
+            actions:
+            - class: ModifyBlock
+              ignore_result: true
+            - class: Undo
+              ignore_result: true
+            - class: AreaOfEffect
+              actions:
+              - class: Damage
+              - class: PlayEffects
+                effect: waterballhit
+                ignore_result: true
+              - class: Velocity
+                speed: 0.8
+  parameters:
+    range: 24
+    destructible: destructible_replace
+    undo: 1000
+    target: none
+    target_type: Damageable
+    radius: 2
+    velocity: 4
+    undo_speed: 1000
+    cooldown: 45000
+    brush: fire
+    damage: wanddamage
+    undo_to: 1000
+    start: 1
+  costs:
+    mana: 50

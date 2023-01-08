@@ -1,0 +1,67 @@
+smite:
+  name: Smite
+  description: Strike your target with holy lightning
+  icon: twisting_vines
+  icon_disabled: twisting_vines
+  inherit: false
+  category: lightning
+  upgrade_required_casts: 1500
+  worth: 5000
+  actions:
+    cast:
+    - class: Delay
+    - class: Repeat
+      actions:
+      - class: Lightning
+      - class: AreaOfEffect
+        actions:
+          - class: Damage
+          - class: Velocity
+          - class: Electrify
+    - class: Delay
+      delay: 300
+  effects:
+    cast:
+      - class: EffectSingle
+        location: target
+        effectlib:
+          class: Modified
+          duration: $warmup
+          parameters:
+            radius: '(t/i) * -3 + 3'
+          effect:
+            class: Warp
+            particles: 30
+            rings: 3
+            grow: 0.1
+            relative_offset: 0,0.1,0
+            update_directions: false
+            update_locations: false
+            particle: electric_spark
+      - location: target
+        delay: $warmup
+        particle: end_rod
+        particle_count: 30
+        particle_offset: 0.1
+        particle_data: 0.2
+      - location: target
+        delay: $warmup
+        particle: flash
+        particle_count: 3
+  parameters:
+    warmup: 1200
+    target: other
+    range: 32
+    repeat: 3
+    radius: 3
+    y_radius: 10
+    push: 0.1
+    damage_type: lightning
+    damage: 4
+    damage_max_distance: 4
+    damage_min_distance: 2.5
+    no_damage_ticks: 0
+    effect_only: true
+    cooldown: 11000
+  cost:
+    mana: 120

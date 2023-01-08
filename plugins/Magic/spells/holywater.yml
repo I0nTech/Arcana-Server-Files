@@ -1,0 +1,67 @@
+holywater:
+  name: Holy Water
+  description: Throw a vial of Holy Water that heals allies and damages undead
+  icon: honey_bottle
+  actions:
+    cast:
+    - class: EntityProjectile
+      actions:
+        - class: AreaOfEffect
+          actions:
+          - class: CheckEntity
+            actions:
+              - class: Heal
+            fail:
+              - class: Damage
+              - class: PotionEffect
+  effects:
+    cast:
+    - location: origin
+      sound: entity_splash_potion_throw
+      sound_pitch: 0.3
+    step:
+    - location: target
+      particle: spell_mob_ambient
+      color: "#eee8aa"
+      particle_count: 1
+      particle_offset: 0
+    hit:
+     - location: target
+       sound: entity_splash_potion_break
+     - class: EffectSingle
+       location: target
+       effectlib:
+         class: Modified
+         duration: 400
+         parameters:
+           radius: '(t/i) * 3 + 0.1'
+         effect:
+           color: "#eee8aa"
+           class: Warp
+           particles: 20
+           rings: 1
+           relative_offset: 0,0.1,0
+           particle: spell_mob
+           particle_data: 0.9
+           update_directions: false
+           update_locations: false
+  parameters:
+    type: ender_signal
+    item: honey_bottle
+    allowed_entities:
+      - player
+    potion_effects:
+      wither: 1
+    duration: 4000
+    percentage: 0.3
+    target_self_timeout: 200
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    velocity: 20
+    gravity: 0.04
+    drag: 0.3
+    radius: 3
+    range: 32
+    cooldown: 10000
+  costs:
+    mana: 50

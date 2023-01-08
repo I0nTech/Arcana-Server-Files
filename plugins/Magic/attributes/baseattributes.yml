@@ -1,0 +1,125 @@
+attackdamage:
+  icon: potion:#FF0000
+  default: 0
+  min: -999
+  max: 999
+attackspeed:
+  icon: potion:#FF0000
+  default: 0
+  min: -999
+  max: 999
+vitality:
+  icon: potion:#FF0000
+  default: 0
+  min: -999
+  max: 999
+defense:
+  icon: iron_chestplate
+  default: 0
+  min: -999
+  max: 999
+toughness:
+  icon: iron_chestplate
+  default: 0
+  min: -999
+  max: 999
+knockbackdefense:
+  default: 0
+  min: -999
+  max: 999
+walkspeed:
+  icon: feather
+  default: 0
+  min: -999
+  max: 999
+critchance:
+  icon: iron_sword
+  default: 0
+  min: 0
+  max: 100
+critdamage:
+  icon: iron_axe
+  default: 50
+  min: -999
+  max: 999
+favor:
+  icon: lily_of_the_valley
+  default: 0
+  min: -999
+  max: 100
+#Resistances (Protection)
+magicresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+
+arcaneresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+
+fireresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+
+iceresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+
+lightningresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+
+explosiveresistance:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+
+
+
+manaboost:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+manaregenboost:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+cooldownreduction:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+costreduction:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+wandpower:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+mage_mana:
+#  hidden: true
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 9999999
+mage_mana_regen:
+#  hidden: true
+  icon: chain_chestplate
+  default: 0
+  min: -999999
+  max: 9999999

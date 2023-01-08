@@ -1,0 +1,42 @@
+minor_heal:
+  name: Minor Healing
+  icon: potion:#FF0000
+  upgrade_required_casts: 1500
+  worth: 4000
+  actions:
+    cast:
+    - class: PotionEffect
+    - class: Heal
+    - class: PlayEffects
+      effects: heal
+  effects:
+    heal:
+    - location: origin
+      particle: heart
+      particle_count: 3
+  parameters:
+    target: self
+    amount: 2
+    duration: 10000
+    potion_effects:
+      regeneration: 1
+    cooldown: 60000
+  costs:
+    mana: 50
+
+minor_heal|2:
+  upgrade_required_casts: 2500
+  parameters:
+    potion_effects:
+      regeneration: 2
+    duration: 15000
+  costs:
+    mana: 75
+
+minor_heal|3:
+  parameters:
+    potion_effects:
+      regeneration: 3
+    duration: 20000
+  costs:
+    mana: 100

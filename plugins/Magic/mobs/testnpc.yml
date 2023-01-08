@@ -1,0 +1,3 @@
+testnpc:
+  inherit: base_npc
+  name: testnpc

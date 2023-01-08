@@ -1,0 +1,21 @@
+wayfarercompass:
+  name: "Wayfarer's Compass"
+  description: "&7The Explorer's ultimate tool. Can be used to locate and teleport to known POIs, your home and spawn."
+  attributes:
+    mage_mana: 100
+    mage_mana_regen: 10
+  icon: compass
+  left_click: cast
+  right_click: cycle
+  renamable: false
+  unique: true
+  indestructible: true
+  enchantable: false
+  allow_offhand: true
+  craftable: true
+  spells:
+  - locator
+  - recall
+  lore:
+  - $description
+  - $instructions

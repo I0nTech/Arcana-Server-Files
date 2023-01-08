@@ -1,0 +1,23 @@
+# This is the key name of this wand
+# It must be unique across the server, and is used in commands such as /wand and /mgive to refer to this wand.
+castsource_wand:
+  name: Cast from Wand
+  description: All spells begin from the tip of your wand
+  icon: stick
+  upgrade: true
+  slot: castsource
+  cast_location: 0.5,0,0.35
+castsource_body:
+  name: Cast from Body
+  description: All spells begin from your body
+  icon: leather_chestplate
+  upgrade: true
+  slot: castsource
+  cast_location: 0.5,-0.2,0
+castsource_eyes:
+  name: Cast from Eyes
+  description: All spells begin from your eyes
+  icon: player_head
+  upgrade: true
+  slot: castsource
+  cast_location: 0.5,0,0

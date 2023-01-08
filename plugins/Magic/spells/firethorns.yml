@@ -1,0 +1,20 @@
+firethorns:
+  name: Fire Thorns
+  passive: true
+  triggers:
+    - trigger: damage
+      damage_type: physical
+    - trigger: damage
+      damage_type: projectile
+    - trigger: damage
+      damage_type: magic
+  actions:
+    cast:
+    - class: Ignite
+  parameters:
+    target: last_damager
+    range: 10
+    target_self: false
+    quiet: true
+    duration: 3000
+    cooldown: 4000

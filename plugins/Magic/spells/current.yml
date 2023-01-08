@@ -1,0 +1,146 @@
+current:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  name: Electric Current
+  description: Stunning, land all bolts to deal maximum damage
+  icon: yellow_dye
+  icon_disabled: yellow_dye
+  category: lightning
+  upgrade_required_path: levelone
+  upgrade_required_casts: 300
+  worth: 1000
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+      - class: Delay
+      - class: CustomProjectile
+        actions:
+        - class: Damage
+        - class: Modifier
+        - class: Electrify
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: entity_lightning_bolt_impact
+      sound_volume: 0.6
+      sound_pitch: 0.3
+      location: origin
+    tick:
+    - location: target
+      particle: dust_color_transition
+      particle_count: 1
+      particle_offset: 0
+      particle_size: 0.35
+      color: '#ffff00'
+      to_color: color
+    hit:
+    - sound: entity_guardian_attack
+      sound_pitch: 1.5
+      sound_volume: 0.2
+    - location: target
+      particle: dust_color_transition
+      particle_count: 10
+      particle_offset: 0.5
+      particle_size: 0.4
+      color: '#ffff00'
+      to_color: color
+    hit_entity:
+    - class: EffectSingle
+      sound: block_lava_extinguish
+      sound_volume: 0.2
+      sound_pitch: -5
+      location: target
+      particle: electric_spark
+      particle_count: 3
+      particle_offset: 0.01
+      particle_data: 0.2
+    hit_block:
+    - class: EffectSingle
+      location: target
+      particle: electric_spark
+      particle_count: 2
+      particle_offset: 0.2
+      particle_data: 0.2
+  parameters:
+    tick_size: 0.25
+    delay: rand(0,100)
+    hitbox: true
+    hitbox_size: 0.1
+    range: rand(16,24)
+    target: other
+    target_type: Damageable
+    damage_type: lightning
+    damage: 5*0.5
+    add_modifiers:
+      - stunned
+    duration: 750
+    multiply: 3
+    track_target: true
+    track_speed: 0.04
+    update_launch_location: false
+    velocity_transform:
+      x: 80
+      y: rand(-8,8)
+      z: rand(-8,8)
+    no_damage_ticks: 0
+    cooldown: 600
+    charges: 5
+    charge_regeneration: 0.75
+  costs:
+    mana: 20
+
+current|2:
+  upgrade_required_path: leveltwo
+  upgrade_required_casts: 600
+  parameters:
+    tick_size: 0.2
+    range: rand(24,32)
+    damage: 5*0.6
+    duration_multiplier: 1.25
+    hit_count: 2
+    multiply: 4
+  costs:
+    mana: 25
+current|3:
+  actions:
+    cast:
+    - class: Multiply
+      actions:
+      - class: Delay
+      - class: CustomProjectile
+        actions:
+        - class: Damage
+        - class: Modifier
+        - class: Electrify
+        - class: AreaOfEffect
+          actions:
+          - requires_entity_target: true
+          - class: Asynchronous
+            actions:
+            - class: CustomProjectile
+              actions:
+              - class: Damage
+                damage_multiplier: 0.5
+              - class: Modifier
+              - class: Electrify
+  effects:
+    tick:
+    - location: target
+      particle: dust_color_transition
+      particle_count: 1
+      particle_offset: 0.005
+      particle_size: 0.35
+      color: '#ffff00'
+      to_color: color
+  parameters:
+    tick_size: 0.2
+    range: rand(32,40)
+    duration_multiplier: 1.5
+    hit_count: 1
+    target_count: 4
+    radius: 2
+  costs:
+    mana: 30
+
+

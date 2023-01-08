@@ -1,0 +1,105 @@
+whirlwind:
+  name: Whirlwind
+  description: Generate a whirlwind which pulls in and immobilizes entities
+  icon: wool
+  category: wind
+  actions:
+    cast:
+    - class: AreaOfEffect
+      actions:
+      - class: Velocity
+    - class: Interval
+      interval: 4
+      actions:
+      - class: AreaOfEffect
+        actions:
+        - class: Velocity
+          speed: 0.5
+          y_offset: -0.5
+          item_speed: 1
+    - class: PlayEffects
+      effects: end
+    - class: AreaOfEffect
+      actions:
+      - class: Velocity
+        push: 2
+  effects:
+    end:
+    - sound: entity_iron_golem_death
+      sound_pitch: 0.3
+      sound_volume: 0.2
+    - sound: block_conduit_deactivate
+      sound_pitch: 0.7
+      sound_volume: 0.5
+      location: target
+      effectlib:
+        class: Modified
+        iterations: 3
+        duration: 150
+        parameters:
+          radius: 1.5 + (t/i) * 10
+        effect:
+          class: Sphere
+          particle: spell
+          color: '#000000'
+          radius: 0.6
+          particles: 150
+    cast:
+    - sound: entity_wither_shoot
+      sound_pitch: 0.4
+    - class: EffectSingle
+      sound: magic.bonk
+      sound_pitch: 0.2
+      sound_volume: 0.3
+      location: origin
+    - sound: block_conduit_deactivate
+      sound_pitch: 0.7
+      sound_volume: 0.5
+    - sound: entity_bee_loop
+      sound_pitch: 2
+      location: target
+    - sound: entity_wither_death
+      sound_pitch: 0.5
+      location: target
+      target_location: block_center
+    - class: EffectSingle
+      location: target
+      target_location: block_center
+      effectlib:
+        class: Modified
+        duration: $duration
+        period: 3
+        parameters:
+          radius: '(t/i) * -4 + 8'
+          rotation: t/6
+        effect:
+          class: Helix
+          particle: cloud
+          particle_offset_y: 0.2
+          particles: 20
+          strands: 3
+          curve: -2
+          pitch: -90
+          yaw: 0
+          offset: 0,0.5,0
+          update_locations: false
+          update_directions: false
+  parameters:
+    target_type: Entity
+    range: 12
+    target: block
+    allow_max_range: true
+    undo: 15000
+    duration: 5000
+    speed: 0.75
+    item_speed: 0.75
+    entity_speed: 0.75
+    target_self_timeout: 2000
+    target_self: true
+    push: -0.1
+    radius: 5
+    y_radius: 0.75
+    cooldown: 16000
+  costs:
+    mana: 125
+

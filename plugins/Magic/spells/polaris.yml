@@ -1,0 +1,23 @@
+polaris:
+  creator: MrSlushie96
+  creator_id: 67f4346f-7203-4a3e-a439-ff92c2eda6c7
+  name: Polaris
+  description: Just as others use Polaris to navigate through the dark, Polaris sees all that is below it
+  inherit: false
+  icon: tracking
+  category: utility
+  earns: 1
+  actions:
+    cast:
+    - class: AreaOfEffect
+      actions:
+      - class: PotionEffect
+  parameters:
+    target: self
+    radius: 200
+    potion_effects:
+    - type: glowing
+      duration: 25000
+    cooldown: 15000
+  cost:
+    mana: 25

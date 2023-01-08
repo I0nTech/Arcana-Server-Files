@@ -1,0 +1,21 @@
+basicskeleton:
+  name: '&7Skeleton Peasant'
+  type: skeleton
+  angry: true
+  entity_attributes:
+    generic_attack_damage: 2
+  health: 10
+  item: irondagger
+  helmet: roguehelmet
+  transformable: false
+  default_drops: false
+  drops:
+  - bone: 100
+
+  - bone: 30
+    air: 70
+
+  - air: 95
+    irondagger: 5
+
+  - sp:16

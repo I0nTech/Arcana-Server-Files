@@ -1,0 +1,5 @@
+fire_death:
+- location: origin
+  sound: block_fire_extinguish
+  sound_pitch: 1
+  sound_volume: 1

@@ -1,0 +1,17 @@
+floweringzombie:
+  name: '&bFlowering Zombie'
+  type: zombie
+  health: 60
+  item: allium
+  helmet: armor_helmetflowering
+  transformable: false
+  default_drops: false
+  drops:
+    - rotten_flesh: 100
+    - rotten_flesh: 70
+      air: 30
+    - rotten_flesh: 20
+      air: 80
+    - sp: 5
+    - armor_helmetflowering: 5
+      air: 95

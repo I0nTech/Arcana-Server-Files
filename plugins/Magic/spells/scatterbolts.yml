@@ -1,0 +1,93 @@
+scatterbolts:
+  name: Scatter Bolts
+  description: Fire multiple mana bolts
+  icon: stick
+  actions:
+    cast:
+    - class: Repeat
+      actions:
+      - class: ModifyVariable
+        variable: rot
+        default: -12.5
+        value: rot+5
+      - class: ChangeContext
+        source_yaw_offset: rot
+        actions:
+        - class: Asynchronous
+          actions:
+          - class: CustomProjectile
+            actions:
+              - class: Damage
+              - class: BreakBlock
+                ignore_result: true
+            headshot:
+              - class: Damage
+              - class: BreakBlock
+                ignore_result: true
+              - class: ChangeContext
+                target_caster: true
+                actions:
+                  - class: Cast
+                    spell: inflictcrit
+                    cooldown_free: true
+                    cost_free: true
+  effects:
+      cast:
+      - sound: item_trident_return
+        sound_pitch: 2
+        sound_volume: 0.9
+        color_override: color
+      tick:
+      - location: target
+        particle: redstone
+        particle_offset: 0.1
+        particle_count: 2
+        particle_size: 0.8
+      - location: target
+        particle: redstone
+        particle_offset: 0
+        particle_count: 2
+      hit_block:
+      - class: EffectSingle
+        location: target
+        particle: block_crack
+        particle_count: 30
+        particle_offset_x: 0.2
+        particle_offset_y: 1
+        particle_offset_z: 0.2
+      hit_entity:
+      - class: EffectSingle
+        location: target
+        particle: dust_color_transition
+        size: 0.1
+        to_color: "#73FBD3"
+        particle_count: 15
+        particle_offset: 0.8
+      hit:
+      - sound: entity_player_attack_knockback
+        sound_pitch: 2
+        location: target
+      - class: EffectSingle
+        location: target
+        particle: redstone
+        particle_count: 6
+        particle_offset: 0.2
+  # Parameters change how a spell behaves, these may be base spell parameters or
+  # specific to the set of actions you are using.
+  parameters:
+    repeat: 5
+    range: 24
+    velocity: 60
+    gravity: 0.01
+    hitbox: true
+    hitbox_size: 0.15
+    damage_type: magic
+    player_damage: 2.5
+    entity_damage: 5
+    target: none
+    target_type: Damageable
+    destructible: solid
+    destructible_durability: 5
+    break_durability: 0.5
+    no_damage_ticks: 0
+    undo: 2000

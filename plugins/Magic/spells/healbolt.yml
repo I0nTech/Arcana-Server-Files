@@ -1,0 +1,56 @@
+healbolt:
+  name: Heal Bolt
+  description: Healing
+  icon: glistering_melon_slice
+  worth: 4000
+  actions:
+    cast:
+    - class: ConeOfEffect
+      actions:
+      - class: CustomProjectile
+        actions:
+           - class: Heal
+  effects:
+    cast:
+    - location: origin
+      sound: entity_mooshroom_shear
+    tick:
+      - location: target
+        particle: spell_mob
+        color: "#c71585"
+        particle_count: 3
+      - location: target
+        particle: redstone
+        particle_offset: 0.1
+        particle_count: 3
+        color: "#00ff7f"
+        particle_size: 0.4
+    hit_entity:
+    - location: target
+      particle: heart
+      particle_count: 1
+    - sound: entity_experience_orb_pickup
+      sound_pitch: 5
+      sound_volume: 0.2
+  parameters:
+    source_location: body
+    fov: 360
+    spread: 3
+    range: 32
+    velocity: 6
+    percentage: 0.1
+    hitbox: true
+    hitbox_size: 0.1
+    target_type: Player
+    only_friendly: true
+    track_target: true
+    velocity_transform:
+      orient: false
+      x: rand(-6,6) * cos(t)
+      y: 4
+      z: rand(-6,6) * sin(t)
+    plan:
+    - time: 400
+      track_speed: 0.6
+      velocity_transform: ''
+      velocity: 30

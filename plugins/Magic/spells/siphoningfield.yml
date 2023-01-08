@@ -1,0 +1,86 @@
+siphoningfield:
+  name: Siphoning Field
+  description: Generate a field that continuously siphons HP from entities inside
+  icon: mossy_stone_bricks
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+        - class: Repeat
+          actions:
+            - class: Delay
+            - class: PlayEffects
+              effects: siphon
+            - class: AreaOfEffect
+              requires_target: true
+              actions:
+                - class: Damage
+                - class: Velocity
+                - class: Probability
+                  actions:
+                  - class: Cast
+                    as_target: true
+  effects:
+    cast:
+    - location: origin
+    hit:
+      - class: EffectSingle
+        location: target
+        effectlib:
+          class: Modified
+          duration: $warmup
+          update_directions: false
+          update_locations: false
+          parameters:
+            radius: '(t/i) * 5 + 0.1'
+          effect:
+            class: Helix
+            particles: 1
+            strands: 50
+            relative_offset: 0,0.1,0
+            particle: redstone
+            particle_size: 0.4
+            color: "#3cb371"
+            update_directions: false
+            update_locations: false
+    siphon:
+      - location: target
+        source_location: hit
+        effectlib:
+          class: Sphere
+          particle: spell_mob_ambient
+          particles: 60
+          color: "#3cb371"
+          radius: $radius
+          update_directions: false
+          update_locations: false
+          duration: 100
+      - location: target
+        source_location: hit
+        effectlib:
+          class: Warp
+          particle: redstone
+          particles: 60
+          color: "#3cb371"
+          radius: $radius
+          rings: 4
+          grow: 0.1
+          offset: 0,0.2,0
+          update_directions: false
+          update_locations: false
+          duration: 1000
+  parameters:
+    range: 32
+    velocity: 200
+    direction: 0,0,0
+    repeat: 10
+    warmup: 1000
+    radius: 5
+    probability: 0.5
+    target: other
+    target_type: Damageable
+    damage: 2
+    spell: healbolt
+    cooldown: 30000
+  costs:
+    mana: 200
