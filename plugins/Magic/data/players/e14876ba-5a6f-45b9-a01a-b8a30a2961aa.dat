@@ -1,8 +1,8 @@
 id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
 name: IonTech
 created: 1673144327285
-updated: 1673147250583
-last_cast: 1673147249417
+updated: 1673492013691
+last_cast: 1673492012682
 cooldown_expiration: 0
 last_death_location: 78.06917020443441,67.0,15.505601450774972,world,-154.76819,6.400856
 fall_protection_count: 0
@@ -24,9 +24,15 @@ spells:
     cooldown_expiration: 0
     enabled: false
     charges: 0.0
+  manabolt:
+    cast_count: 0
+    last_cast: 1673492012683
+    last_earn: 0
+    cooldown_expiration: 1673492013483
+    charges: 0.0
   manashot:
-    cast_count: 85
-    last_cast: 1673147248813
+    cast_count: 94
+    last_cast: 1673492007679
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -37,6 +43,7 @@ data: {}
 properties:
   spells:
   - critical
+  - manabolt
   - manashot
   version: 7
 kits:
@@ -51,8 +58,8 @@ kits:
         last_give: 1673144327438
 classes:
   mage:
-    mana_timestamp: 1673147250482
-    mana: 22.772432
+    mana_timestamp: 1673492013473
+    mana: 94.72784
 transient_modifiers: {}
 active_class: mage
-health: 18.0
+health: 20.0

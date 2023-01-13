@@ -1,0 +1,118 @@
+manashot:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue901"
+  type: spell
+  
+manabolt:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue902"
+  type: spell
+  
+focusbolt:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue903"
+  type: spell
+  
+triplebolt:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue904"
+  type: spell
+
+manablast:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue905"
+  type: spell
+
+manabeam:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue906"
+  type: spell
+  
+arcanemeteor:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue907"
+  type: spell
+
+arcanebarrage:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue908"
+  type: spell
+
+arcanemissiles:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue909"
+  type: spell
+
+arcanehail:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue90a"
+  type: spell
+
+arcanestar:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue90b"
+  type: spell
+
+scattershot:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue90c"
+  type: spell
+
+burstshot:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue90d"
+  type: spell
+
+barrier:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue90e"
+  type: spell
+
+shell:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue90f"
+  type: spell
+
+construct:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue910"
+  type: spell
+
+deflector:
+  inherit: false
+  item: 'globe_banner_pattern{1}'
+  item_disabled: 'flower_banner_pattern{1}'
+  glyph: "\ue911"
+  type: spell

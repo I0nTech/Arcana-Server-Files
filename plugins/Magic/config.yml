@@ -51,8 +51,8 @@ mage_update_frequency: 1
 undo_on_world_save: true
 max_velocity: 100
 enable_resource_pack: true
-resource_pack: https://download.mc-packs.net/pack/0c38912a89ab0459d5551cf1797755c5590fdeef.zip
-#resource_pack: https://download.mc-packs.net/pack/19624761f928be4e61d671e3829c4abae6f1f765.zip
+#resource_pack: https://download.mc-packs.net/pack/0c38912a89ab0459d5551cf1797755c5590fdeef.zip
+resource_pack: https://download.mc-packs.net/pack/dede1432a6179bb49fa45969de347d98b8f077c3.zip
 lore_wrap_prefix: ''
 range_formatter: "0.#"
 

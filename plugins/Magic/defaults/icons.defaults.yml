@@ -1060,13 +1060,11 @@ sharpen_sword:
   type: spell
   glyph: 
 shell:
-  item: scute{18001}
-  item_disabled: scute{18002}
-  legacy_item: spell_icon:22
-  legacy_item_disabled: spell_icon_disabled:22
-  url: http://textures.minecraft.net/texture/3dbb78853b526f9b712b4e431fb332eae0e6cd3dea9a610e9ecf54c31f7c6d
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
   type: spell
-  glyph: 
 shrink:
   item: red_mushroom{18001}
   item_disabled: red_mushroom{18002}
@@ -1370,17 +1368,99 @@ wound:
   url: http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a
   type: spell
   glyph: 
-arcanehail:
-  inherit: false
-  item: dark_prismarine{1}
-  item_disabled: dark_prismarine{1}
-  glyph: 
 manashot:
   inherit: false
-  item: oak_door{18001}
-  item_disabled: oak_door{18002}
-  legacy_item: spell_icon:182
-  legacy_item_disabled: spell_icon_disabled:182
-  url: http://textures.minecraft.net/texture/3944e12e8e67fd67a55359df56c3c59c99550f6eaccb23813769afb2f1992
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
   type: spell
+manabolt:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
   glyph: 
+  type: spell
+focusbolt:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+triplebolt:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+manablast:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+manabeam:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+arcanemeteor:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+arcanebarrage:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+arcanemissiles:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+arcanehail:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+arcanestar:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+scattershot:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+burstshot:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+barrier:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+construct:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell
+deflector:
+  inherit: false
+  item: globe_banner_pattern{1}
+  item_disabled: flower_banner_pattern{1}
+  glyph: 
+  type: spell

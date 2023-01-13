@@ -2,8 +2,8 @@ manabolt:
   name: Mana Bolt
   description: Fire a concentrated bolt of mana dealing 4 Magic Damage. Deals Critical Damage on Headshots.
   category: arcane
-  icon: 'prismarine_shard{2}'
-  icon_disabled: 'prismarine_shard{2}'
+  icon: manabolt
+  icon_disabled: manabolt
   actions:
     cast:
       - class: CustomProjectile
