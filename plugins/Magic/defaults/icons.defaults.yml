@@ -1061,8 +1061,8 @@ sharpen_sword:
   glyph: 
 shell:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{15}
+  item_disabled: flower_banner_pattern{15}
   glyph: 
   type: spell
 shrink:
@@ -1376,91 +1376,90 @@ manashot:
   type: spell
 manabolt:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{2}
+  item_disabled: flower_banner_pattern{2}
   glyph: 
   type: spell
 focusbolt:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{3}
   glyph: 
   type: spell
 triplebolt:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{4}
+  item_disabled: flower_banner_pattern{4}
   glyph: 
   type: spell
 manablast:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{5}
+  item_disabled: flower_banner_pattern{5}
   glyph: 
   type: spell
 manabeam:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{6}
+  item_disabled: flower_banner_pattern{6}
   glyph: 
   type: spell
 arcanemeteor:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{7}
+  item_disabled: flower_banner_pattern{7}
   glyph: 
   type: spell
 arcanebarrage:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{8}
+  item_disabled: flower_banner_pattern{8}
   glyph: 
   type: spell
 arcanemissiles:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{9}
+  item_disabled: flower_banner_pattern{9}
   glyph: 
   type: spell
 arcanehail:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{10}
+  item_disabled: flower_banner_pattern{10}
   glyph: 
   type: spell
 arcanestar:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{11}
+  item_disabled: flower_banner_pattern{11}
   glyph: 
   type: spell
 scattershot:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{12}
+  item_disabled: flower_banner_pattern{12}
   glyph: 
   type: spell
 burstshot:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{13}
+  item_disabled: flower_banner_pattern{13}
   glyph: 
   type: spell
 barrier:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{14}
+  item_disabled: flower_banner_pattern{14}
   glyph: 
   type: spell
 construct:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{16}
+  item_disabled: flower_banner_pattern{16}
   glyph: 
   type: spell
 deflector:
   inherit: false
-  item: globe_banner_pattern{1}
-  item_disabled: flower_banner_pattern{1}
+  item: globe_banner_pattern{17}
+  item_disabled: flower_banner_pattern{17}
   glyph: 
   type: spell

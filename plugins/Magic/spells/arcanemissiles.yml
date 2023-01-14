@@ -1,7 +1,9 @@
 arcanemissiles:
   name: Arcane Missiles
   description: Channel for 0.8 Seconds, then launch a swarm of seeking arcane missiles dealing 9x25% Attack Damage.
-  icon: prismarine_shard
+  category: arcane
+  icon: arcanemissiles
+  icon_disabled: arcanemissiles
   actions:
     cast:
     - class: ChangeContext

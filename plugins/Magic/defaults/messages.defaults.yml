@@ -1616,8 +1616,8 @@ spells:
     insufficient: a:&fRequires &4$cost
     cooldown: a:&3$spell &fis on cooldown for &6$time
     charges: a:&fOut of Charges! Wait &6$time
-    cancelled: a:&f$spell was Interrupted
-    cancel: a:&fSpell Interrupted
+    cancelled: a:&f $spell was Interrupted
+    cancel: a:&f $spell Interrupted
     cancel_selection: a:&cCancelled &6$spell
     entity_required: An entity is required
     living_entity_required: A living entity is required

@@ -8,8 +8,9 @@ base_passive:
     quiet: true
     target: self
 default:
+  inherit: false
   earns_cooldown: 15 minutes
-  world_border_restricted: false
+  world_border_restricted: true
   effects:
     target_selected:
     - location: origin
@@ -122,11 +123,12 @@ default:
     reflect:
     - class: EffectSingle
       location: target
-      particle: fireworks_spark
-      particle_count: 3
-      particle_offset_x: 0.1
-      particle_offset_y: 0.1
-      particle_offset_z: 0.1
+      particle: electric_spark
+      particle_count: 4
+      particle_offset_x: 0
+      particle_offset_y: 0
+      particle_offset_z: 0
+      particle_data: 1
       sound: magic.shimmer_quiet
     fizzle:
     - location: origin
@@ -137,9 +139,10 @@ default:
     - sound: block_beacon_deactivate
       sound_pitch: 0.9
       sound_volume: 0.3
-      particle: fireworks_spark
+      particle: electric_spark
       particle_count: 16
-      particle_offset: 0.5
+      particle_offset: 0
+      particle_data: 4
     headshot: hit
     cast_self: cast
     no_target: cast
@@ -14637,7 +14640,8 @@ recall_death:
     warmup: 0
 reflect:
   inherit: false
-  icon: pink_dye
+  icon: barrier
+  icon_disabled: barrier
   category: arcane
   name: Reflect
   description: Summon a disk-shaped reflective shield.
@@ -14646,6 +14650,11 @@ reflect:
     - class: Disc
       actions:
       - class: ModifyBlock
+      - class: Skip
+        skip: 8
+        actions:
+        - class: Delay
+          delay: 1
   effects:
     cast:
     - class: EffectSingle
@@ -14694,7 +14703,7 @@ reflect:
     destructible: destructible_replace
     check_destructible: true
     brushcolor: true
-    undo: 2000
+    undo: 8000
     cooldown: 3000
     breakable: 3
     reflect_chance: 1
@@ -15357,6 +15366,11 @@ shell:
       - class: Sphere
         actions:
         - class: ModifyBlock
+        - class: Skip
+          skip: 12
+          actions:
+          - class: Delay
+            delay: 1
   effects:
     cast:
     - sound: block_stone_place
@@ -18685,9 +18699,10 @@ walls:
   name: Walls
   description: Fire a projectile which forms a cylinder-shaped reflective shield on
     impact.
+  icon: construct
+  icon_disabled: construct
   inherit: false
   category: arcane
-  icon: white_stained_glass
   actions:
     cast:
     - class: Cylinder
@@ -20935,7 +20950,9 @@ anchor:
 arcanebarrage:
   name: Arcane Barrage
   description: Launch a precision barrage of arcane spears dealing 20x80% Attack Damage.
-  icon: prismarine_shard{18001}
+  category: arcane
+  icon: arcanebarrage
+  icon_disabled: arcanebarrage
   actions:
     cast:
     - class: CustomProjectile
@@ -20956,7 +20973,7 @@ arcanebarrage:
             ignore_blocks: true
             ignore_hit_entities: true
             hit_on_miss: true
-            target: none
+            target: block
             spread: 180
             range: 30
             velocity: 1000
@@ -21044,6 +21061,7 @@ arcanehail:
     per second for 4 seconds.
   category: arcane
   icon: arcanehail
+  icon_disabled: arcanehail
   actions:
     cast:
     - class: Delay
@@ -21165,8 +21183,8 @@ arcanemeteor:
   name: Arcane Meteor
   description: Call down a meteor of condensed mana from the skies dealing 12 Magic
     Damage to enemies within the blast radius.
-  icon: soul_lantern
-  icon_disabled: soul_lantern
+  icon: arcanemeteor
+  icon_disabled: arcanemeteor
   category: arcane
   actions:
     cast:
@@ -21276,7 +21294,9 @@ arcanemissiles:
   name: Arcane Missiles
   description: Channel for 0.8 Seconds, then launch a swarm of seeking arcane missiles
     dealing 9x25% Attack Damage.
-  icon: prismarine_shard
+  category: arcane
+  icon: arcanemissiles
+  icon_disabled: arcanemissiles
   actions:
     cast:
     - class: ChangeContext
@@ -21522,8 +21542,8 @@ auralburst:
   name: Aural Detonation
   description: Anchor for 2 seconds, then erupt in a self-centered burst of Mana dealing
     6x150% Attack Damage.
-  icon: prismarine{1}
-  icon_disabled: prismarine{1}
+  icon: arcanestar
+  icon_disabled: arcanestar
   category: arcane
   actions:
     cast:
@@ -21558,7 +21578,6 @@ auralburst:
       sound_volume: 5
       sound_pitch: -2
       location: origin
-      color_override: color
       effectlib:
         class: Sphere
         radius: 1
@@ -21567,6 +21586,7 @@ auralburst:
         duration: 500
         iterations: 1
         particle: dust_color_transition
+        color_override: color
         to_color: '#73FBD3'
         offset: 0,-1,0
   parameters:
@@ -21804,7 +21824,8 @@ burstshot:
   name: Burst Shot
   description: Fire a quick burst of 4 mana orbs each dealing 2 Magic Damage. Deals
     Critical Damage on Headshots.
-  icon: prismarine_shard
+  icon: burstshot
+  icon_disabled: burstshot
   category: arcane
   actions:
     cast:
@@ -21876,7 +21897,7 @@ burstshot:
       sound_volume: 0.5
   parameters:
     interval: 40
-    duration: 160
+    duration: 120
     first:
       spread: 0
     spread: 0.06
@@ -21891,9 +21912,9 @@ burstshot:
     destructible_durability: 5
     break_durability: 0.5
     undo: 2000
-    cooldown: 1200
+    cooldown: 2000
   costs:
-    mana: 40
+    mana: 50
 castshield:
   name: Shielded With Light
   description: '&cYou shouldn''t see this.'
@@ -21952,10 +21973,28 @@ channel:
       target_self: true
       target_caster: true
       actions:
-      - class: PotionEffect
-    - class: Interval
-    - class: PlayEffects
-      effect: burst
+      - class: ModifyVariable
+        variable: cast_health
+        value: health
+      - class: Interval
+        interval: 1
+        duration: $warmup
+        actions:
+        - class: Modifier
+        - class: ModifyVariable
+          variable: health_change
+          value: health - cast_health
+        - class: CheckRequirements
+          requirements:
+          - variables:
+            - variable: health_change
+              max: -2
+          actions:
+          - class: Undo
+        - class: CheckTrigger
+          trigger: left_click
+          actions:
+          - class: Undo
   effects:
     cast:
     - class: EffectSingle
@@ -21967,14 +22006,35 @@ channel:
           radius: (t/i) * -4 + 4
         effect:
           class: Sphere
-          particle_increase: 0.25
-          particles: 10
+          particles: 4
           particle_offset_x: 0.3
           particle_offset_z: 0.3
           particle_offset_y: 0.6
           offset: 0,-0.5,0
           radius: 5
-          particle: crit_magic
+          particle: dust_color_transition
+          particle_size: 0.8
+          color: '#73FBD3'
+          to_color: '#6C2DC7'
+          update_locations: true
+    - class: EffectSingle
+      location: target
+      effectlib:
+        class: Modified
+        duration: $warmup
+        parameters:
+          radius: '0'
+        effect:
+          class: Sphere
+          particle_increase: 0.25
+          particles: 1
+          particle_offset_x: 0.3
+          particle_offset_z: 0.3
+          particle_offset_y: 0.6
+          offset: 0,-0.5,0
+          speed: 1
+          particle_data: 3
+          particle: enchantment_table
           update_locations: true
     - sound: entity_illusioner_cast_spell
       sound_pitch: 0.1
@@ -21986,13 +22046,12 @@ channel:
       sound_pitch: 1.2
       delay: 200
   parameters:
+    warmup: $warmup
     target: self
-    warmup: 500
-    duration: $warmup
+    add_modifiers:
+    - channelling
     remove_on_finish: true
-    add_effects:
-      slow: 4
-      jump: -5
+    cancel: true
 charge:
   name: Charge
   description: Charge forwards dealing 250% Attack Damage, deal +50% Attack Damage
@@ -24888,55 +24947,24 @@ flashbang|3:
     duration: 4000
   costs:
     mana: 90
-focusbolt_cast:
+focusbolt:
   name: Focus Bolt
   description: Channel, then fire an amplified mana bolt dealing 8 Magic Damage. Deals
     Critical Damage on Headshots.
+  icon: focusbolt
+  icon_disabled: focusbolt
   category: arcane
-  icon: prismarine_shard{3}
-  icon_disabled: prismarine_shard{3}
   actions:
     cast:
     - class: ChangeContext
       target_caster: true
       actions:
-      - class: ModifyVariable
-        variable: cast_health
-        value: health
       - class: Cast
         spell: channel
         spell_parameters:
           warmup: $warmup
-      - class: Interval
-        interval: 1
-        duration: $warmup
-        actions:
-        - class: ModifyVariable
-          variable: health_change
-          value: health - cast_health
-        - class: CheckRequirements
-          actions:
-          - class: Undo
-        - class: CheckTrigger
-          trigger: left_click
-          actions:
-          - class: Undo
-      - class: Cast
-        spell: focusbolt
-  parameters:
-    requirements:
-    - variables:
-      - variable: health_change
-        max: -2
-    warmup: 800
-    cancel: true
-    cancel_on_no_wand: true
-    cooldown: 6000
-  costs:
-    mana: 50
-focusbolt:
-  actions:
-    cast:
+    - class: Delay
+    - class: Retarget
     - class: PlayEffects
       effects: fire
     - class: CustomProjectile
@@ -25029,9 +25057,9 @@ focusbolt:
       sound: entity_player_attack_crit
       sound_pitch: 0.8
   parameters:
-    warmup: 600
+    warmup: 800
     range: 32
-    velocity: 70
+    velocity: 60
     gravity: 0.01
     hitbox: true
     hitbox_size: 0.3
@@ -25045,6 +25073,9 @@ focusbolt:
     destructible_durability: 10
     break_durability: 2
     undo: 2000
+    cooldown: 6000
+  costs:
+    mana: 50
 fortified:
   name: Defensive
   icon: stick
@@ -27774,9 +27805,10 @@ replenish|4:
       particle_count: 5
 magicshield:
   name: Deflector
-  description: Summon a continuous forward-facing magic barrier which deflects entities
-    and deals 20% Attack Damage on contact. Does not reflect magic.
-  icon: shield
+  description: Summon a continuous forward-facing magic barrier which deflects entities.
+    Does not reflect magic.
+  icon: deflector
+  icon_disabled: deflector
   category: arcane
   toggle: cancel
   disable_mana_regeneration: true
@@ -27806,8 +27838,9 @@ magicshield:
       effectlib:
         class: Wave
         particle: crit_magic
+        particle_count: 1
         pitch: 0
-        rows: 12
+        rows: 8
         height: 4
         height_back: 0
         length_back: 0
@@ -27820,23 +27853,25 @@ magicshield:
         update_locations: true
     block:
     - location: target
-      particle: fireworks_spark
-      particle_count: 4
+      particle: electric_spark
+      particle_count: 2
       particle_data: 0.5
       sound: item_shield_break
-      sound_volume: 2
+      sound_volume: 0.2
       sound_pitch: 4
   parameters:
     target: other_entity
+    target_type: LivingEntity
     interval: 50
     range: 3
-    push: 0.8
+    push: 2
     duration: 8000
     no_damage_ticks: 0
     damage_type: magic
-    damage: $attack_damage*0.2
+    damage: 0
     cooldown: 16000
     cancel_on_cast_other: true
+    cancel_on_no_wand: true
   costs:
     mana: 30
   active_costs:
@@ -27935,8 +27970,8 @@ manabeam:
   name: Mana Beam
   description: Anchor, then fire a powerful, long-range beam of mana dealing 12 Magic
     Damage. Deals Critical Damage on Headshots.
-  icon: cyan_dye
-  icon_disabled: cyan_dye
+  icon: manabeam
+  icon_disabled: manabeam
   category: arcane
   actions:
     cast:
@@ -28075,7 +28110,8 @@ manablast:
   description: Channel, then fire a volitile overcharged mana bolt dealing 10 Magic
     Damage in an area upon impact.
   category: arcane
-  icon: prismarine_shard
+  icon: manablast
+  icon_disabled: manablast
   actions:
     cast:
     - class: ChangeContext
@@ -31107,8 +31143,8 @@ scattershot:
   name: Scattershot
   description: Fire a short-range spray of 6 mana orbs each dealing 2 Magic Damage.
     Deals Critical Damage on Headshots.
-  icon: prismarine_shard{4}
-  icon_disabled: prismarine_shard{4}
+  icon: scattershot
+  icon_disabled: scattershot
   category: arcane
   actions:
     cast:
@@ -33280,13 +33316,13 @@ thunderstorm:
     cooldown: 30000
   costs:
     mana: 200
-tribolt:
+triplebolt:
   name: Triple Bolt
   description: Channel, then fire a spread of mana bolts in a \|/ pattern, each dealing
     4 Magic Damage. Deals Critical Damage on Headshots.
-  icon: prismarine_shard{5}
+  icon: triplebolt
   category: arcane
-  icon_disabled: prismarine_shard{5}
+  icon_disabled: triplebolt
   actions:
     cast:
     - class: ChangeContext
@@ -33295,7 +33331,7 @@ tribolt:
       - class: Cast
         spell: channel
         spell_parameters:
-          warmup: 500
+          warmup: $warmup
     - class: Delay
     - class: Retarget
     - class: PlayEffects
@@ -33388,7 +33424,7 @@ tribolt:
       sound: entity_player_attack_crit
       sound_pitch: 0.8
   parameters:
-    warmup: 500
+    warmup: 800
     repeat: 3
     range: 24
     velocity: 60
@@ -33403,6 +33439,7 @@ tribolt:
     destructible_durability: 5
     break_durability: 0.5
     no_damage_ticks: 0
+    undo: 2000
     cooldown: 6000
   costs:
     mana: 50

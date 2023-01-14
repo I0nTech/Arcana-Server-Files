@@ -1,8 +1,8 @@
 manabeam:
   name: Mana Beam
   description: Anchor, then fire a powerful, long-range beam of mana dealing 12 Magic Damage. Deals Critical Damage on Headshots.
-  icon: cyan_dye
-  icon_disabled: cyan_dye
+  icon: manabeam
+  icon_disabled: manabeam
   category: arcane
   actions:
     cast:

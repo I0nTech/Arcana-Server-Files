@@ -69,7 +69,6 @@ basic_wand:
   active_spell: magicbullet
   icon: stick{1}
   attributes:
-    mage_mana: 100
     mage_mana_regen: 10
     wandpower: 50
 base_wand:

@@ -1,8 +1,8 @@
 scattershot:
   name: Scattershot
   description: Fire a short-range spray of 6 mana orbs each dealing 2 Magic Damage. Deals Critical Damage on Headshots.
-  icon: 'prismarine_shard{4}'
-  icon_disabled: 'prismarine_shard{4}'
+  icon: scattershot
+  icon_disabled: scattershot
   category: arcane
   actions:
     cast:

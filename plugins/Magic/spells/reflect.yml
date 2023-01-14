@@ -1,14 +1,20 @@
 reflect:
     inherit: false
-    icon: pink_dye
+    icon: barrier
+    icon_disabled: barrier
     category: arcane
     name: Reflect
     description: Summon a disk-shaped reflective shield.
     actions:
         cast:
-        -  class: Disc
-           actions:
-           -  class: ModifyBlock
+        - class: Disc
+          actions:
+           - class: ModifyBlock
+           - class: Skip
+             skip: 8
+             actions:
+              - class: Delay
+                delay: 1
     effects:
         cast:
         -  class: EffectSingle
@@ -57,7 +63,7 @@ reflect:
         destructible: destructible_replace
         check_destructible: true
         brushcolor: true
-        undo: 2000
+        undo: 8000
         cooldown: 3000
         breakable: 3
         reflect_chance: 1

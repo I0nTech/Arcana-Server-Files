@@ -3,6 +3,7 @@ arcanehail:
   description: Shower an area with falling arcane spears dealing 20x80% Attack Damage per second for 4 seconds.
   category: arcane
   icon: arcanehail
+  icon_disabled: arcanehail
   actions:
     cast:
     - class: Delay

@@ -1,7 +1,8 @@
 burstshot:
   name: Burst Shot
   description: Fire a quick burst of 4 mana orbs each dealing 2 Magic Damage. Deals Critical Damage on Headshots.
-  icon: prismarine_shard
+  icon: burstshot
+  icon_disabled: burstshot
   category: arcane
   actions:
     cast:
@@ -73,7 +74,7 @@ burstshot:
         sound_volume: 0.5
   parameters:
     interval: 40
-    duration: 160
+    duration: 120
     first:
       spread: 0
     spread: 0.06
@@ -88,6 +89,6 @@ burstshot:
     destructible_durability: 5
     break_durability: 0.5
     undo: 2000
-    cooldown: 1200
+    cooldown: 2000
   costs:
-    mana: 40
+    mana: 50

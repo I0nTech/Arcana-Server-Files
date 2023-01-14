@@ -1,0 +1,126 @@
+triplebolt:
+  name: Triple Bolt
+  description: Channel, then fire a spread of mana bolts in a \|/ pattern, each dealing 4 Magic Damage. Deals Critical Damage on Headshots.
+  icon: triplebolt
+  category: arcane
+  icon_disabled: triplebolt
+  actions:
+    cast:
+    - class: ChangeContext
+      target_caster: true
+      actions:
+      - class: Cast
+        spell: channel
+        spell_parameters:
+          warmup: $warmup
+    - class: Delay
+    - class: Retarget
+    - class: PlayEffects
+      effects: fire
+    - class: Repeat
+      actions:
+      - class: ModifyVariable
+        variable: rot
+        default: -20
+        value: rot+10
+      - class: ChangeContext
+        source_yaw_offset: rot
+        source_location: wand
+        actions:
+        - class: Asynchronous
+          actions:
+          - class: CustomProjectile
+            actions:
+              - class: Damage
+              - class: BreakBlock
+                ignore_result: true
+            headshot:
+              - class: Damage
+                damage_multiplier: 1.5
+              - class: BreakBlock
+                ignore_result: true
+              - class: PlayEffects
+                effect: crit
+  effects:
+      fire:
+      - sound: item_trident_return
+        sound_pitch: 2
+        sound_volume: 0.9
+        color_override: color
+      tick:
+      - location: target
+        particle: dust_color_transition
+        particle_offset: 0.03
+        particle_count: 2
+        particle_size: 0.6
+        to_color: "#73FBD3"
+      - location: target
+        particle: dust_color_transition
+        particle_offset: 0.2
+        particle_count: 4
+        particle_size: 0.4
+        to_color: "#73FBD3"
+      hit:
+      - class: EffectSingle
+        location: target
+        particle: dust_color_transition
+        to_color: "#73FBD3"
+        particle_count: 6
+        particle_offset: 0.2
+      hit_block:
+      - class: EffectSingle
+        location: target
+        particle: block_crack
+        particle_count: 30
+        particle_offset_x: 0.2
+        particle_offset_y: 1
+        particle_offset_z: 0.2
+      hit_entity:
+      - class: EffectSingle
+        location: target
+        particle: dust_color_transition
+        size: 0.1
+        to_color: "#73FBD3"
+        particle_count: 6
+        particle_offset: 0.8
+      - sound: entity_player_attack_knockback
+        sound_pitch: 2
+        location: both
+      - sound: entity_player_attack_crit
+        sound_pitch: 4
+        location: both
+      - sound: entity_player_attack_knockback
+        location: target
+        sound_pitch: 4
+      crit:
+      - location: target
+        particle: crit_magic
+        particle_count: 24
+        particle_offset: 0.25
+        particle_data: rand(0.3,0.8)
+      - location: both
+        sound: entity_player_attack_knockback
+        sound_pitch: 2
+      - location: both
+        sound: entity_player_attack_crit
+        sound_pitch: 0.8
+  parameters:
+    warmup: 800
+    repeat: 3
+    range: 24
+    velocity: 60
+    gravity: 0.01
+    hitbox: true
+    hitbox_size: 0.15
+    damage_type: magic
+    damage: 4
+    target: none
+    target_type: Damageable
+    destructible: solid
+    destructible_durability: 5
+    break_durability: 0.5
+    no_damage_ticks: 0
+    undo: 2000
+    cooldown: 6000
+  costs:
+    mana: 50

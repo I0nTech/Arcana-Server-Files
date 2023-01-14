@@ -1,9 +1,10 @@
 walls:
     name: Walls
     description: Fire a projectile which forms a cylinder-shaped reflective shield on impact.
+    icon: construct
+    icon_disabled: construct
     inherit: false
     category: arcane
-    icon: white_stained_glass
     actions:
         cast:
         - class: Cylinder

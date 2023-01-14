@@ -1,10 +1,10 @@
 id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
 name: IonTech
 created: 1673144327285
-updated: 1673491985726
-last_cast: 1673491985328
+updated: 1673738811737
+last_cast: 1673738423297
 cooldown_expiration: 0
-last_death_location: 78.06917020443441,67.0,15.505601450774972,world,-154.76819,6.400856
+last_death_location: -117.72057675444442,74.0,170.509637376533,world,-149.4118,5.4472294
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -15,7 +15,68 @@ brush:
   scale: 1.0
   erase: true
 undo:
-  455c86ed-c4e7-4ba1-a15a-8b7e61e0c0fa: []
+  455c86ed-c4e7-4ba1-a15a-8b7e61e0c0fa:
+  - blocks:
+    - 113,71,93,world|spruce_log?minecraft:spruce_log[axis=y]
+    - 113,71,91,world|spruce_leaves?minecraft:spruce_leaves[distance=2,persistent=false,waterlogged=false]
+    - 114,71,95,world|spruce_leaves?minecraft:spruce_leaves[distance=3,persistent=false,waterlogged=false]
+    time_to_live: 0
+    name: Triple Bolt
+    mode: NO_PHYSICS
+  - blocks:
+    - 118,64,-37,world|packed_ice
+    time_to_live: 0
+    name: Triple Bolt
+    mode: NO_PHYSICS
+  - blocks:
+    - 92,64,-10,world|packed_ice
+    time_to_live: 0
+    name: Triple Bolt
+    mode: NO_PHYSICS
+  - blocks:
+    - 114,64,-8,world|packed_ice
+    time_to_live: 0
+    name: Triple Bolt
+    mode: NO_PHYSICS
+  - blocks:
+    - 117,63,-9,world|packed_ice
+    time_to_live: 0
+    name: Triple Bolt
+    mode: NO_PHYSICS
+  - blocks:
+    - -27,71,150,world|grass_block?minecraft:grass_block[snowy=false]
+    - -26,71,148,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Triple Bolt
+    mode: NO_PHYSICS
+  - blocks:
+    - 99,62,212,world|ice
+    - 110,62,199,world|ice
+    - 92,62,205,world|ice
+    time_to_live: 0
+    name: Triple Bolt
+    mode: NO_PHYSICS
+  - blocks:
+    - 112,62,209,world|ice
+    time_to_live: 0
+    name: Triple Bolt
+    mode: NO_PHYSICS
+  - blocks:
+    - -81,74,181,world|oak_leaves?minecraft:oak_leaves[distance=1,persistent=false,waterlogged=false]
+    time_to_live: 0
+    name: Triple Bolt
+    mode: NO_PHYSICS
+  - blocks:
+    - -115,69,199,world|grass_block?minecraft:grass_block[snowy=false]
+    - -109,69,198,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Triple Bolt
+    mode: NO_PHYSICS
+  - blocks:
+    - -106,69,195,world|grass_block?minecraft:grass_block[snowy=false]
+    time_to_live: 0
+    name: Triple Bolt
+    mode: NO_PHYSICS
 spells:
   critical:
     cast_count: 2
@@ -24,27 +85,266 @@ spells:
     cooldown_expiration: 0
     enabled: false
     charges: 0.0
-  manabolt:
-    cast_count: 0
-    last_cast: 1673491984930
+  channel:
+    cast_count: 281
+    last_cast: 1673738423297
     last_earn: 0
-    cooldown_expiration: 1673491985730
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 86
+    last_cast: 1673738235744
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  fling:
+    cast_count: 20
+    last_cast: 1673660145408
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  seeker_launcher:
+    cast_count: 5
+    last_cast: 1673721964020
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  test1:
+    cast_count: 0
+    last_cast: 1673737787614
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemissiles:
+    cast_count: 7
+    last_cast: 1673738408048
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  tribolt:
+    cast_count: 5
+    last_cast: 1673634081929
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manablast:
+    cast_count: 44
+    last_cast: 1673738418147
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  reflect:
+    cast_count: 51
+    last_cast: 1673718416343
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  auralburst:
+    cast_count: 5
+    last_cast: 1673719911197
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  walls:
+    cast_count: 10
+    last_cast: 1673718426094
+    last_earn: 0
+    cooldown_expiration: 1673718441094
+    charges: 0.0
+  seeker_shards:
+    cast_count: 1
+    last_cast: 1673721830916
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  tripleshuriken:
+    cast_count: 15
+    last_cast: 1673719545301
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  dive:
+    cast_count: 26
+    last_cast: 1673660233210
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  tocreative:
+    cast_count: 4
+    last_cast: 1673631979290
+    last_earn: 0
+    cooldown_expiration: 0
     charges: 0.0
   manashot:
-    cast_count: 90
-    last_cast: 1673491475580
+    cast_count: 305
+    last_cast: 1673717584546
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  magicshield:
+    cast_count: 9
+    last_cast: 1673714351540
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabeam:
+    cast_count: 8
+    last_cast: 1673719924343
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  seeker_barrage:
+    cast_count: 6
+    last_cast: 1673721823490
+    last_earn: 0
+    cooldown_expiration: 1673721805917
+    charges: 0.0
+  burstshot:
+    cast_count: 43
+    last_cast: 1673737585144
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt_cast:
+    cast_count: 61
+    last_cast: 1673715409092
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  counterspell:
+    cast_count: 0
+    last_cast: 1673716142080
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemeteor:
+    cast_count: 6
+    last_cast: 1673660126059
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  launch:
+    cast_count: 7
+    last_cast: 1673721999192
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  triplebolt:
+    cast_count: 95
+    last_cast: 1673738290996
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shadowcloak:
+    cast_count: 7
+    last_cast: 1673737364342
+    last_earn: 0
+    cooldown_expiration: 1673737544342
+    charges: 0.0
+  arcanehail:
+    cast_count: 3
+    last_cast: 1673660443329
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  pull:
+    cast_count: 5
+    last_cast: 1673738088693
+    last_earn: 0
+    cooldown_expiration: 1673738092693
+    charges: 0.0
+  test2:
+    cast_count: 0
+    last_cast: 1673738209115
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanebarrage:
+    cast_count: 0
+    last_cast: 1673721700656
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 41
+    last_cast: 1673738423297
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  glacialspears:
+    cast_count: 0
+    last_cast: 1673632043261
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  tosurvival:
+    cast_count: 4
+    last_cast: 1673631980135
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shell:
+    cast_count: 24
+    last_cast: 1673737357492
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  anchor:
+    cast_count: 13
+    last_cast: 1673719924343
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 8
+    last_cast: 1673658612758
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  force:
+    cast_count: 0
+    last_cast: 1673738384087
+    last_earn: 0
+    cooldown_expiration: 1673738429087
+    charges: 0.0
+  seeker_swarm:
+    cast_count: 6
+    last_cast: 1673721847445
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
 open_wand: false
 gave_welcome_wand: false
-resource_pack_preference: default
+resource_pack_preference: automatic
 data: {}
 properties:
   spells:
   - critical
+  - channel
   - manabolt
+  - fling
+  - arcanemissiles
+  - tribolt
+  - manablast
+  - reflect
+  - auralburst
+  - walls
+  - dive
+  - tocreative
   - manashot
+  - magicshield
+  - manabeam
+  - burstshot
+  - focusbolt_cast
+  - arcanemeteor
+  - launch
+  - triplebolt
+  - arcanehail
+  - arcanebarrage
+  - focusbolt
+  - tosurvival
+  - shell
+  - scattershot
   version: 7
 kits:
   start:
@@ -58,8 +358,8 @@ kits:
         last_give: 1673144327438
 classes:
   mage:
-    mana_timestamp: 1673491985525
-    mana: 153.59993
+    mana_timestamp: 1673738811689
+    mana: 100.0
 transient_modifiers: {}
 active_class: mage
-health: 18.0
+health: 9.16702651977539

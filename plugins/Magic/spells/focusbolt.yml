@@ -1,56 +1,20 @@
-focusbolt_cast:
+focusbolt:
   name: Focus Bolt
   description: Channel, then fire an amplified mana bolt dealing 8 Magic Damage. Deals Critical Damage on Headshots.
+  icon: focusbolt
+  icon_disabled: focusbolt
   category: arcane
-  icon: 'prismarine_shard{3}'
-  icon_disabled: 'prismarine_shard{3}'
   actions:
     cast:
       - class: ChangeContext
         target_caster: true
         actions:
-        - class: ModifyVariable
-          variable: cast_health
-          value: health
         - class: Cast
           spell: channel
           spell_parameters:
             warmup: $warmup
-        - class: Interval
-          interval: 1
-          duration: $warmup
-          actions:
-            - class: ModifyVariable
-              variable: health_change
-              value: health - cast_health
-            - class: CheckRequirements
-              actions:
-               - class: Undo
-            - class: CheckTrigger
-              trigger: left_click
-              actions:
-                - class: Undo
-        - class: Cast
-          spell: focusbolt
-  parameters:
-    requirements:
-     - variables:
-        - variable: health_change
-          max: -2
-#    triggers:
-#      - trigger: damage
-#        damage_types: physical,projectile,magic,explosion
-#      - trigger: left_click
-    warmup: 800
-    cancel: true
-    cancel_on_no_wand: true
-    cooldown: 6000
-  costs:
-    mana: 50
-
-focusbolt:
-  actions:
-    cast:
+      - class: Delay
+      - class: Retarget
       - class: PlayEffects
         effects: fire
       - class: CustomProjectile
@@ -143,9 +107,9 @@ focusbolt:
         sound: entity_player_attack_crit
         sound_pitch: 0.8
   parameters:
-    warmup: 600
+    warmup: 800
     range: 32
-    velocity: 70
+    velocity: 60
     gravity: 0.01
     hitbox: true
     hitbox_size: 0.3
@@ -159,4 +123,6 @@ focusbolt:
     destructible_durability: 10
     break_durability: 2
     undo: 2000
-
+    cooldown: 6000
+  costs:
+    mana: 50

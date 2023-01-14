@@ -47,6 +47,14 @@ manaregenboost(10%):
   mana_regeneration_boost: 0.1
 manaregenboost(15%):
   mana_regeneration_boost: 0.15
+channelling:
+  potion_effects:
+    slow: 3
+    jump: -4
+higherchanneling:
+  potion_effects:
+    slow: 5
+    jump: -5
 boost:
   potion_effects:
     fire_resistance: 0

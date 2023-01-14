@@ -2,7 +2,8 @@ manablast:
   name: Mana Blast
   description: Channel, then fire a volitile overcharged mana bolt dealing 10 Magic Damage in an area upon impact.
   category: arcane
-  icon: prismarine_shard
+  icon: manablast
+  icon_disabled: manablast
   actions:
     cast:
       - class: ChangeContext

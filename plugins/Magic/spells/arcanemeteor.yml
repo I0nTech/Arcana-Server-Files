@@ -1,8 +1,8 @@
 arcanemeteor:
     name: Arcane Meteor
     description: Call down a meteor of condensed mana from the skies dealing 12 Magic Damage to enemies within the blast radius.
-    icon: soul_lantern
-    icon_disabled: soul_lantern
+    icon: arcanemeteor
+    icon_disabled: arcanemeteor
     category: arcane
     actions:
         cast:

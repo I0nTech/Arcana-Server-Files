@@ -1,7 +1,9 @@
 arcanebarrage:
   name: Arcane Barrage
   description: Launch a precision barrage of arcane spears dealing 20x80% Attack Damage.
-  icon: prismarine_shard{18001}
+  category: arcane
+  icon: arcanebarrage
+  icon_disabled: arcanebarrage
   actions:
     cast:
     - class: CustomProjectile
@@ -22,7 +24,7 @@ arcanebarrage:
                     ignore_blocks: true
                     ignore_hit_entities: true
                     hit_on_miss: true
-                    target: none
+                    target: block
                     spread: 180
                     range: 30
                     velocity: 1000

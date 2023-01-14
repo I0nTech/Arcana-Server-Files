@@ -9,7 +9,12 @@ shell:
            actions:
            - class: Sphere
              actions:
-             -  class: ModifyBlock
+               - class: ModifyBlock
+               - class: Skip
+                 skip: 12
+                 actions:
+                   - class: Delay
+                     delay: 1
     effects:
         cast:
         -  sound: block_stone_place
