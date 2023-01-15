@@ -1,0 +1,128 @@
+fire_missile:
+    icon: flint_and_steel
+    icon_disabled: firework_star
+    category: combat
+    worth: 2000
+    earns_sp: 8
+    actions:
+        cast:
+        - class: AreaOfEffect
+          actions:
+          - class: Asynchronous
+            actions:
+            - class: CustomProjectile
+              target: other
+              actions:
+              - class: AreaOfEffect
+                radius: 1
+                actions: 
+                - class: Velocity
+                - class: Damage
+                - class: Ignite
+                  duration: 3000
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.ignite
+           location: origin
+           source_location: head
+           effectlib:
+             class: SphereEffect
+             duration: 100
+             particle: crit
+             particle_count: 3
+             radius: 0.5
+        tick:
+        - particle: flame
+          particle_count: 2
+          particle_offset_x: 0.05
+          particle_offset_y: 0.05
+          particle_offset_z: 0.05
+          particle_data: 0.0125
+          location: target
+        - particle: crit
+          particle_count: 5
+          particle_offset_x: 0.05
+          particle_offset_y: 0.05
+          particle_offset_z: 0.05
+          particle_data: 0.025
+          location: target
+        - particle: end_rod
+          particles: 1
+          particle_offset_x: 0.01
+          particle_offset_y: 0.01
+          particle_offset_z: 0.01
+          particle_data: 0.0175
+          location: target
+        hit:
+        -  class: EffectSingle
+           sound: entity_elder_guardian_hurt
+           sound_pitch: 2
+           sound_volume: 5
+           particle: explosion_large
+           particle_data: 2
+           location: target
+           color: "ffff00"
+           color2: "ff0000"
+           firework: ball
+        - location: target
+          particle: flame
+          particle_count: 50
+          particle_offset_x: 0.1
+          particle_offset_y: 0.1
+          particle_offset_z: 0.1
+          particle_data: 0.1
+        target:
+        -  class: EffectSingle
+           location: source
+           sound: entity_evoker_fangs_attack
+           sound_pitch: 4
+           sound_volume: 2
+           particle: explosion_large
+           particle_offset_x: 0.001
+           particle_offset_y: 0.001
+           particle_offset_z: 0.001
+           effectlib:
+             class: Vortex
+             duration: 100000
+             helixes: 25
+             circles: 1
+             radius: 0.5
+             particle: crit
+             particle_count: 1
+    parameters:
+        target: self
+        target_self: false
+        range: 1000
+        push: 1
+        living_entity_speed: 1
+        velocity: 30
+        source_location: head
+        radius: 30
+        tick_size: 0.2
+        target_count: 5
+        target_type: Damageable
+        entity_damage: 10
+        player_damage: 8
+        target_breakables: 1
+        ignore_blocks: false
+        cooldown: 3
+        lifetime: 100000
+        target_self_timeout: 2000
+        track_speed: rand(0.2,0.35)
+        use_target_location: false
+        velocity_transform:
+            orient: false
+            x: rand(-3,3) * cos(t)
+            y: rand(3,10)
+            z: rand(-3,3) * sin(t)
+        plan:
+        - time: 3000
+          track_target: true
+          velocity_transform: ""
+          velocity: 30
+          effects: target
+        - time: 100000
+          track_speed: 0.25
+    costs:
+        mana: 1
