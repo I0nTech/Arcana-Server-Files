@@ -32,8 +32,35 @@ channel:
                 - class: Undo
   effects:
     cast:
-      - class: EffectSingle
-        location: target
+      - location: target
+        effectlib:
+          class: EquationEffect
+          xEquation: "sin(0.3141 * 0.5t)"
+          yEquation: "0.5sin(0.2t)"
+          zEquation: "cos(0.3141 * 0.5t)"
+          duration: $warmup
+          particles: 2
+          particle: dust_color_transition
+          particle_size: 0.8
+          offset: 0,-0.5,0
+          color: "#73FBD3"
+          to_color: "#6C2DC7"
+          cycle: true
+      - location: target
+        effectlib:
+          class: EquationEffect
+          xEquation: "-sin(0.3141 * 0.5t)"
+          yEquation: "0.5sin(0.2t)"
+          zEquation: "-cos(0.3141 * 0.5t)"
+          duration: $warmup
+          particles: 2
+          particle: dust_color_transition
+          particle_size: 0.8
+          offset: 0,-0.5,0
+          color: "#73FBD3"
+          to_color: "#6C2DC7"
+          cycle: true
+      - location: target
         effectlib:
            class: Modified
            duration: $warmup
@@ -52,8 +79,7 @@ channel:
              color: "#73FBD3"
              to_color: "#6C2DC7"
              update_locations: true
-      - class: EffectSingle
-        location: target
+      - location: target
         effectlib:
            class: Modified
            duration: $warmup
@@ -66,7 +92,6 @@ channel:
              particle_offset_x: 0.3
              particle_offset_z: 0.3
              particle_offset_y: 0.6
-             offset: 0,-0.5,0
              speed: 1
              particle_data: 3
              particle: enchantment_table

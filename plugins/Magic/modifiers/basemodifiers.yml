@@ -3,7 +3,7 @@ channelling:
     slow: 3
     jump: -4
 
-higherchanneling:
+higherchannelling:
   potion_effects:
     slow: 5
     jump: -5

@@ -7,10 +7,102 @@ anchor:
   icon: ender_eye{18001}
   actions:
     cast:
-    - class: PotionEffect
-    - class: Delay
+    - class: ChangeContext
+      target_self: true
+      target_caster: true
+      actions:
+        - class: ModifyVariable
+          variable: cast_health
+          value: health
+        - class: Interval
+          interval: 1
+          duration: $warmup
+          actions:
+            - class: Modifier
+            - class: ModifyVariable
+              variable: health_change
+              value: health - cast_health
+            - class: CheckRequirements
+              requirements:
+              - variables:
+                - variable: health_change
+                  max: -5
+              actions:
+               - class: Undo
+            - class: CheckTrigger
+              trigger: left_click
+              actions:
+                - class: Undo
   effects:
     cast:
+      - location: target
+        effectlib:
+           class: Modified
+           duration: $warmup
+           parameters:
+             radius: "(t/i) * -3 + 4"
+           effect:
+             class: Circle
+             particle_count: 1
+             whole_circle: false
+             x_rotation: 0
+             y_rotation: 30
+             z_rotation: 0
+             angular_velocity_x: 0
+             angular_velocity_y: 0
+             angular_velocity_z: 0
+             offset: 0,-1.2,0
+             particle: dust_color_transition
+             color: "#73FBD3"
+             to_color: "#6C2DC7"
+             update_locations: true
+             update_directions: false
+             pitch: 0
+             particle_data: 0.15
+      - location: target
+        effectlib:
+           class: Modified
+           duration: $warmup
+           parameters:
+             radius: "(t/i) * -3 + 4"
+           effect:
+             class: Circle
+             particle_count: 1
+             whole_circle: false
+             x_rotation: 0
+             y_rotation: -30
+             z_rotation: 0
+             angular_velocity_x: 0
+             angular_velocity_y: 0
+             angular_velocity_z: 0
+             offset: 0,-1.2,0
+             particle: dust_color_transition
+             color: "#73FBD3"
+             to_color: "#6C2DC7"
+             update_locations: true
+             update_directions: false
+             pitch: 0
+             particle_data: 0.15
+      - class: EffectSingle
+        location: target
+        effectlib:
+           class: Modified
+           duration: $warmup
+           parameters:
+               radius: "(t/i) * -4 + 4"
+           effect:
+             class: Sphere
+             particles: 4
+             particle_offset_x: 0.3
+             particle_offset_z: 0.3
+             particle_offset_y: 0.6
+             offset: 0,-0.5,0
+             radius: 5
+             particle: dust_color_transition
+             particle_size: 0.8
+             color: "#73FBD3"
+             to_color: "#6C2DC7"
+             update_locations: true
       - class: EffectSingle
         location: target
         effectlib:
@@ -21,7 +113,7 @@ anchor:
            effect:
              class: Sphere
              particle_increase: 0.25
-             particles: 4
+             particles: 1
              particle_offset_x: 0.3
              particle_offset_z: 0.3
              particle_offset_y: 0.6
@@ -30,69 +122,6 @@ anchor:
              particle_data: 3
              particle: enchantment_table
              update_locations: true
-      - class: EffectSingle
-        location: target
-        effectlib:
-           class: Modified
-           duration: $warmup
-           parameters:
-               radius: "(t/i) * -5 + 5"
-           effect:
-             class: Sphere
-             particles: 4
-             particle_offset_x: 0.3
-             particle_offset_z: 0.3
-             particle_offset_y: 0.6
-             offset: 0,-0.5,0
-             radius: 5
-             particle: crit_magic
-             update_locations: true
-      - class: EffectSingle
-        location: target
-        effectlib:
-           class: Modified
-           duration: $warmup
-           parameters:
-             radius: "(t/i) * -2.5 + 4"
-           effect:
-             class: Circle
-             particle_count: 4
-             whole_circle: false
-             x_rotation: 0
-             y_rotation: 30
-             z_rotation: 0
-             angular_velocity_x: 0
-             angular_velocity_y: 0
-             angular_velocity_z: 0
-             offset: 0,-1,0
-             particle: crit_magic
-             update_locations: true
-             update_directions: false
-             pitch: 0
-             particle_data: 0.15
-      - class: EffectSingle
-        location: target
-        effectlib:
-           class: Modified
-           duration: $warmup
-           parameters:
-             radius: "(t/i) * -2.5 + 4"
-           effect:
-             class: Circle
-             particle_count: 4
-             whole_circle: false
-             x_rotation: 0
-             y_rotation: -30
-             z_rotation: 0
-             angular_velocity_x: 0
-             angular_velocity_y: 0
-             angular_velocity_z: 0
-             offset: 0,-1,0
-             particle: crit_magic
-             update_locations: true
-             update_directions: false
-             pitch: 0
-             particle_data: 0.15
       - sound: entity_illusioner_cast_spell
         sound_pitch: 0.1
         delay: 0
@@ -103,10 +132,9 @@ anchor:
         sound_pitch: 1.2
         delay: 200
   parameters:
+   warmup: $warmup
    target: self
-   warmup: 500
-   duration: $warmup
+   add_modifiers:
+    - higherchannelling
    remove_on_finish: true
-   potion_effects:
-     slow: 9
-     jump: -5
+   cancel: true

@@ -20844,10 +20844,102 @@ anchor:
   icon: ender_eye{18001}
   actions:
     cast:
-    - class: PotionEffect
-    - class: Delay
+    - class: ChangeContext
+      target_self: true
+      target_caster: true
+      actions:
+      - class: ModifyVariable
+        variable: cast_health
+        value: health
+      - class: Interval
+        interval: 1
+        duration: $warmup
+        actions:
+        - class: Modifier
+        - class: ModifyVariable
+          variable: health_change
+          value: health - cast_health
+        - class: CheckRequirements
+          requirements:
+          - variables:
+            - variable: health_change
+              max: -5
+          actions:
+          - class: Undo
+        - class: CheckTrigger
+          trigger: left_click
+          actions:
+          - class: Undo
   effects:
     cast:
+    - location: target
+      effectlib:
+        class: Modified
+        duration: $warmup
+        parameters:
+          radius: (t/i) * -3 + 4
+        effect:
+          class: Circle
+          particle_count: 1
+          whole_circle: false
+          x_rotation: 0
+          y_rotation: 30
+          z_rotation: 0
+          angular_velocity_x: 0
+          angular_velocity_y: 0
+          angular_velocity_z: 0
+          offset: 0,-1.2,0
+          particle: dust_color_transition
+          color: '#73FBD3'
+          to_color: '#6C2DC7'
+          update_locations: true
+          update_directions: false
+          pitch: 0
+          particle_data: 0.15
+    - location: target
+      effectlib:
+        class: Modified
+        duration: $warmup
+        parameters:
+          radius: (t/i) * -3 + 4
+        effect:
+          class: Circle
+          particle_count: 1
+          whole_circle: false
+          x_rotation: 0
+          y_rotation: -30
+          z_rotation: 0
+          angular_velocity_x: 0
+          angular_velocity_y: 0
+          angular_velocity_z: 0
+          offset: 0,-1.2,0
+          particle: dust_color_transition
+          color: '#73FBD3'
+          to_color: '#6C2DC7'
+          update_locations: true
+          update_directions: false
+          pitch: 0
+          particle_data: 0.15
+    - class: EffectSingle
+      location: target
+      effectlib:
+        class: Modified
+        duration: $warmup
+        parameters:
+          radius: (t/i) * -4 + 4
+        effect:
+          class: Sphere
+          particles: 4
+          particle_offset_x: 0.3
+          particle_offset_z: 0.3
+          particle_offset_y: 0.6
+          offset: 0,-0.5,0
+          radius: 5
+          particle: dust_color_transition
+          particle_size: 0.8
+          color: '#73FBD3'
+          to_color: '#6C2DC7'
+          update_locations: true
     - class: EffectSingle
       location: target
       effectlib:
@@ -20858,7 +20950,7 @@ anchor:
         effect:
           class: Sphere
           particle_increase: 0.25
-          particles: 4
+          particles: 1
           particle_offset_x: 0.3
           particle_offset_z: 0.3
           particle_offset_y: 0.6
@@ -20867,69 +20959,6 @@ anchor:
           particle_data: 3
           particle: enchantment_table
           update_locations: true
-    - class: EffectSingle
-      location: target
-      effectlib:
-        class: Modified
-        duration: $warmup
-        parameters:
-          radius: (t/i) * -5 + 5
-        effect:
-          class: Sphere
-          particles: 4
-          particle_offset_x: 0.3
-          particle_offset_z: 0.3
-          particle_offset_y: 0.6
-          offset: 0,-0.5,0
-          radius: 5
-          particle: crit_magic
-          update_locations: true
-    - class: EffectSingle
-      location: target
-      effectlib:
-        class: Modified
-        duration: $warmup
-        parameters:
-          radius: (t/i) * -2.5 + 4
-        effect:
-          class: Circle
-          particle_count: 4
-          whole_circle: false
-          x_rotation: 0
-          y_rotation: 30
-          z_rotation: 0
-          angular_velocity_x: 0
-          angular_velocity_y: 0
-          angular_velocity_z: 0
-          offset: 0,-1,0
-          particle: crit_magic
-          update_locations: true
-          update_directions: false
-          pitch: 0
-          particle_data: 0.15
-    - class: EffectSingle
-      location: target
-      effectlib:
-        class: Modified
-        duration: $warmup
-        parameters:
-          radius: (t/i) * -2.5 + 4
-        effect:
-          class: Circle
-          particle_count: 4
-          whole_circle: false
-          x_rotation: 0
-          y_rotation: -30
-          z_rotation: 0
-          angular_velocity_x: 0
-          angular_velocity_y: 0
-          angular_velocity_z: 0
-          offset: 0,-1,0
-          particle: crit_magic
-          update_locations: true
-          update_directions: false
-          pitch: 0
-          particle_data: 0.15
     - sound: entity_illusioner_cast_spell
       sound_pitch: 0.1
       delay: 0
@@ -20940,13 +20969,12 @@ anchor:
       sound_pitch: 1.2
       delay: 200
   parameters:
+    warmup: $warmup
     target: self
-    warmup: 500
-    duration: $warmup
+    add_modifiers:
+    - higherchannelling
     remove_on_finish: true
-    potion_effects:
-      slow: 9
-      jump: -5
+    cancel: true
 arcanebarrage:
   name: Arcane Barrage
   description: Launch a precision barrage of arcane spears dealing 20x80% Attack Damage.
@@ -21997,8 +22025,35 @@ channel:
           - class: Undo
   effects:
     cast:
-    - class: EffectSingle
-      location: target
+    - location: target
+      effectlib:
+        class: EquationEffect
+        xEquation: sin(0.3141 * 0.5t)
+        yEquation: 0.5sin(0.2t)
+        zEquation: cos(0.3141 * 0.5t)
+        duration: $warmup
+        particles: 2
+        particle: dust_color_transition
+        particle_size: 0.8
+        offset: 0,-0.5,0
+        color: '#73FBD3'
+        to_color: '#6C2DC7'
+        cycle: true
+    - location: target
+      effectlib:
+        class: EquationEffect
+        xEquation: -sin(0.3141 * 0.5t)
+        yEquation: 0.5sin(0.2t)
+        zEquation: -cos(0.3141 * 0.5t)
+        duration: $warmup
+        particles: 2
+        particle: dust_color_transition
+        particle_size: 0.8
+        offset: 0,-0.5,0
+        color: '#73FBD3'
+        to_color: '#6C2DC7'
+        cycle: true
+    - location: target
       effectlib:
         class: Modified
         duration: $warmup
@@ -22017,8 +22072,7 @@ channel:
           color: '#73FBD3'
           to_color: '#6C2DC7'
           update_locations: true
-    - class: EffectSingle
-      location: target
+    - location: target
       effectlib:
         class: Modified
         duration: $warmup
@@ -22031,7 +22085,6 @@ channel:
           particle_offset_x: 0.3
           particle_offset_z: 0.3
           particle_offset_y: 0.6
-          offset: 0,-0.5,0
           speed: 1
           particle_data: 3
           particle: enchantment_table
@@ -23466,6 +23519,84 @@ fangsline:
     cooldown: 15
   costs:
     mana: 40
+finder:
+  creator: TheBugWhisperer
+  name: Into The Depths
+  description: Finds ancient debris
+  worth: 300
+  icon: brown_dye{CustomModelData:18001}
+  actions:
+    cast:
+    - class: Brush
+      sample: true
+      actions:
+      - class: Recurse
+        actions:
+        - class: CheckBlock
+          allow_brush: true
+          actions:
+          - class: Skip
+            skip: 1
+            repeat_skip: false
+            actions:
+            - class: Message
+              message: Found It!
+            - class: Orient
+            - class: PlayEffects
+              effects: found
+            - class: SpawnEntity
+              type: shulker
+              ai: false
+              silent: true
+              set_target: true
+              potion_effects: glowing,invisibility
+            - class: Stop
+  effects:
+    cast:
+    - location: origin
+      sound: magic.zap
+      sound_volume: 0.5
+    - location: both
+      sound: entity_illusioner_prepare_mirror
+      sound_volume: 0.5
+      sound_pitch: 1.6
+    - location: target
+      use_block_location: true
+      color_override: color
+      effectlib:
+        class: CubeEffect
+        duration: 1000
+        particle: redstone
+        color: 00FFAA
+        edge_length: 1.2
+        enable_rotation: false
+        offset: 0.5,0.5,0.5
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: spell_instant
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    found:
+    - class: EffectSingle
+      effectlib:
+        class: LineEffect
+        particle: villager_happy
+        particle_count: 5
+        particle_offset_x: 0.1
+        particle_offset_y: 0.1
+        particle_offset_z: 0.1
+  parameters:
+    depth: 32
+    range: 8
+    cooldown: 20000
+    duration: 5000
+    undo: 5000
+    target_block: true
+    destructible: '!all_air'
+    transparent: '!all_air'
 fireballspell:
   inherit: false
   name: Fireball
@@ -33151,21 +33282,42 @@ test3:
   icon: acacia_door{18001}
   actions:
     cast:
-    - class: CustomProjectile
-      velocity_transform:
-        x: 3t
-        y: 3sin(t)
-        z: 3cos(t)
+    - class: PlayEffects
+    - class: Delay
+      delay: $warmup
   effects:
-    tick:
+    cast:
     - location: target
-      particle: end_rod
-      particle_offset: 0
+      effectlib:
+        class: EquationEffect
+        xEquation: sin(0.3141 * 0.5t)
+        yEquation: 0.5sin(0.2t)
+        zEquation: cos(0.3141 * 0.5t)
+        duration: $warmup
+        particles: 2
+        particle: dust_color_transition
+        particle_size: 0.8
+        offset: 0,-0.5,0
+        color: '#73FBD3'
+        to_color: '#6C2DC7'
+        cycle: true
+    - location: target
+      effectlib:
+        class: EquationEffect
+        xEquation: -sin(0.3141 * 0.5t)
+        yEquation: 0.5sin(0.2t)
+        zEquation: -cos(0.3141 * 0.5t)
+        duration: $warmup
+        particles: 2
+        particle: dust_color_transition
+        particle_size: 0.8
+        offset: 0,-0.5,0
+        color: '#73FBD3'
+        to_color: '#6C2DC7'
+        cycle: true
   parameters:
-    interval: 0.001
-    range: 32
-    speed: 20
-    target: other
+    target: self
+    warmup: $warmup
 testmenu:
   parameters:
     auto_close: true
