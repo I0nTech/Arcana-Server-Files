@@ -1,330 +1,1068 @@
-[17:06:31] [ServerMain/INFO]: Building unoptimized datafixer
-[17:06:33] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[17:06:34] [ServerMain/INFO]: Loaded 7 recipes
-[17:06:34] [Server thread/INFO]: Starting minecraft server version 1.19.3
-[17:06:34] [Server thread/INFO]: Loading properties
-[17:06:35] [Server thread/INFO]: This server is running Paper version git-Paper-376 (MC: 1.19.3) (Implementing API version 1.19.3-R0.1-SNAPSHOT) (Git: 1719345)
-[17:06:35] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:06:35] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:06:35] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[17:06:35] [Server thread/INFO]: Default game type: SURVIVAL
-[17:06:35] [Server thread/INFO]: Generating keypair
-[17:06:35] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:06:35] [Server thread/INFO]: Using default channel type
-[17:06:35] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[17:06:35] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[17:06:36] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v2.5.1-SNAPSHOT-332;f8acaf5
-[17:06:37] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@5261e965]
-[17:06:37] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.11.2
-[17:06:37] [Server thread/INFO]: [WebConsole] Loading WebConsole v2.4
-[17:06:37] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v4.5.1
-[17:06:37] [Server thread/INFO]: [ViaVersion] ViaVersion 4.5.1 is now loaded, injecting!
-[17:06:37] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.12 -> 1.13 mappings...
-[17:06:37] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13 -> 1.13.2 mappings...
-[17:06:37] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.14 mappings...
-[17:06:37] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.14 -> 1.15 mappings...
-[17:06:37] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[17:06:37] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.15 -> 1.16 mappings...
-[17:06:37] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.16 -> 1.16.2 mappings...
-[17:06:37] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.16.2 -> 1.17 mappings...
-[17:06:37] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.17 -> 1.18 mappings...
-[17:06:37] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.18 -> 1.19 mappings...
-[17:06:37] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.19 -> 1.19.3 mappings...
-[17:06:37] [Server thread/INFO]: [CorrectFallDamage] Loading CorrectFallDamage v1.0
-[17:06:37] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v4.5.1
-[17:06:37] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[17:06:37] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.10 -> 1.9.4 mappings...
-[17:06:37] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.11 -> 1.10 mappings...
-[17:06:37] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.12 -> 1.11 mappings...
-[17:06:37] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.13 -> 1.12 mappings...
-[17:06:37] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.13.2 -> 1.13 mappings...
-[17:06:37] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.14 -> 1.13.2 mappings...
-[17:06:37] [Via-Mappingloader-0/INFO]: [ViaBackwards] Loading 1.15 -> 1.14 mappings...
-[17:06:37] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.16 -> 1.15 mappings...
-[17:06:37] [Via-Mappingloader-0/INFO]: [ViaBackwards] Loading 1.16.2 -> 1.16 mappings...
-[17:06:37] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.17 -> 1.16.2 mappings...
-[17:06:37] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.18 -> 1.17 mappings...
-[17:06:37] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.19 -> 1.18 mappings...
-[17:06:37] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.19.3 -> 1.19 mappings...
-[17:06:37] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.0.0-SNAPSHOT-b608
-[17:06:38] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.55
-[17:06:39] [Server thread/INFO]: [Essentials] Loading Essentials v2.20.0-dev+20-582a357
-[17:06:39] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.20.0-dev+20-582a357
-[17:06:39] [Server thread/INFO]: [TAB] Loading TAB v3.2.1
-[17:06:39] [Server thread/INFO]: [HoloMobHealth] Loading HoloMobHealth v2.3.2.0
-[17:06:39] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn v2.20.0-dev+20-582a357
-[17:06:39] [Server thread/INFO]: [Magic] Loading Magic v10.8.6-SNAPSHOT-394e5e7
-[17:06:39] [Server thread/INFO]: [Magic] Loading modern compatibility layer for server version 1.19.3
-[17:06:39] [Server thread/INFO]: [Magic] Async chunk loading API found
-[17:06:39] [Server thread/INFO]: [Magic] Chat component API found
-[17:06:39] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:06:39] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.5.1-SNAPSHOT-332;f8acaf5
-[17:06:39] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
-[17:06:39] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
-[17:06:39] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[17:06:39] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[17:06:39] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_19_R2.PaperweightFaweAdapter as the Bukkit adapter
-[17:06:41] [Server thread/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 8 build(s) out of date.
+[18:38:02] [ServerMain/INFO]: Building unoptimized datafixer
+[18:38:03] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[18:38:06] [ServerMain/INFO]: Loaded 7 recipes
+[18:38:06] [Server thread/INFO]: Starting minecraft server version 1.19.3
+[18:38:06] [Server thread/INFO]: Loading properties
+[18:38:07] [Server thread/INFO]: This server is running Paper version git-Paper-376 (MC: 1.19.3) (Implementing API version 1.19.3-R0.1-SNAPSHOT) (Git: 1719345)
+[18:38:07] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:38:07] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:38:07] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[18:38:07] [Server thread/INFO]: Default game type: SURVIVAL
+[18:38:07] [Server thread/INFO]: Generating keypair
+[18:38:07] [Server thread/INFO]: Starting Minecraft server on *:25565
+[18:38:07] [Server thread/INFO]: Using default channel type
+[18:38:07] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[18:38:07] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[18:38:09] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v2.5.1-SNAPSHOT-332;f8acaf5
+[18:38:09] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@75981d9c]
+[18:38:09] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.11.2
+[18:38:09] [Server thread/INFO]: [WebConsole] Loading WebConsole v2.4
+[18:38:09] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v4.5.1
+[18:38:09] [Server thread/INFO]: [ViaVersion] ViaVersion 4.5.1 is now loaded, injecting!
+[18:38:10] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.12 -> 1.13 mappings...
+[18:38:10] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13 -> 1.13.2 mappings...
+[18:38:10] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.14 mappings...
+[18:38:10] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.14 -> 1.15 mappings...
+[18:38:10] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[18:38:10] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.15 -> 1.16 mappings...
+[18:38:10] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.16 -> 1.16.2 mappings...
+[18:38:10] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.16.2 -> 1.17 mappings...
+[18:38:10] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.17 -> 1.18 mappings...
+[18:38:10] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.18 -> 1.19 mappings...
+[18:38:10] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.19 -> 1.19.3 mappings...
+[18:38:10] [Server thread/INFO]: [CorrectFallDamage] Loading CorrectFallDamage v1.0
+[18:38:10] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v4.5.1
+[18:38:10] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[18:38:10] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.10 -> 1.9.4 mappings...
+[18:38:10] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.11 -> 1.10 mappings...
+[18:38:10] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.12 -> 1.11 mappings...
+[18:38:10] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.13 -> 1.12 mappings...
+[18:38:10] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.13.2 -> 1.13 mappings...
+[18:38:10] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.14 -> 1.13.2 mappings...
+[18:38:10] [Via-Mappingloader-0/INFO]: [ViaBackwards] Loading 1.15 -> 1.14 mappings...
+[18:38:10] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.16 -> 1.15 mappings...
+[18:38:10] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.16.2 -> 1.16 mappings...
+[18:38:10] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.17 -> 1.16.2 mappings...
+[18:38:10] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.18 -> 1.17 mappings...
+[18:38:10] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.19 -> 1.18 mappings...
+[18:38:10] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.19.3 -> 1.19 mappings...
+[18:38:10] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.0.0-SNAPSHOT-b608
+[18:38:11] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.55
+[18:38:11] [Server thread/INFO]: [MythicMobs] Loading MythicMobs v5.2.1-fd1d0777
+[18:38:11] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[18:38:11] [Server thread/INFO]: [Essentials] Loading Essentials v2.20.0-dev+20-582a357
+[18:38:11] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.20.0-dev+20-582a357
+[18:38:11] [Server thread/INFO]: [TAB] Loading TAB v3.2.1
+[18:38:11] [Server thread/INFO]: [HoloMobHealth] Loading HoloMobHealth v2.3.2.0
+[18:38:11] [Server thread/INFO]: [ModelEngine] Loading ModelEngine vR3.1.2
+[18:38:11] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn v2.20.0-dev+20-582a357
+[18:38:11] [Server thread/INFO]: [Magic] Loading Magic v10.8.6-SNAPSHOT-394e5e7
+[18:38:12] [Server thread/INFO]: [Magic] Loading modern compatibility layer for server version 1.19.3
+[18:38:12] [Server thread/INFO]: [Magic] Async chunk loading API found
+[18:38:12] [Server thread/INFO]: [Magic] Chat component API found
+[18:38:12] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:38:12] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.5.1-SNAPSHOT-332;f8acaf5
+[18:38:12] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[18:38:12] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[18:38:12] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[18:38:12] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[18:38:12] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_19_R2.PaperweightFaweAdapter as the Bukkit adapter
+[18:38:14] [Server thread/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 8 build(s) out of date.
 You are running build 332, the latest version is build 340.
 Update at https://www.spigotmc.org/resources/13932/
-[17:06:41] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0-SNAPSHOT-b608
-[17:06:41] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.55
-[17:06:41] [Server thread/INFO]:         __    
-[17:06:41] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.55
-[17:06:41] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[17:06:41] [Server thread/INFO]: 
-[17:06:41] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[17:06:41] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[17:06:42] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[17:06:42] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[17:06:42] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1253ms)
-[17:06:42] [Server thread/INFO]: [Magic] Enabling Magic v10.8.6-SNAPSHOT-394e5e7
-[17:06:42] [Server thread/INFO]: [Magic] EffectLib initialized
-[17:06:43] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_19_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[17:06:46] [Server thread/INFO]: [Magic] Loaded 26 attributes
-[17:06:47] [Server thread/INFO]: Magic checking resource pack for updates: https://download.mc-packs.net/pack/dd13ccedf3d829e54d73833f97ad560a0194cbf1.zip
-[17:06:47] [Server thread/INFO]: Preparing level "world"
-[17:06:47] [Server thread/INFO]: -------- World Settings For [world] --------
-[17:06:47] [Server thread/INFO]: Item Merge Radius: 6.0
-[17:06:47] [Server thread/INFO]: Item Despawn Rate: 4000
-[17:06:47] [Server thread/INFO]: View Distance: 10
-[17:06:47] [Server thread/INFO]: Simulation Distance: 10
-[17:06:47] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[17:06:47] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[17:06:47] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[17:06:47] [Server thread/INFO]: Experience Merge Radius: 4.0
-[17:06:47] [Server thread/INFO]: Mob Spawn Range: 6
-[17:06:47] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Cane Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Melon Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Potato Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Vine Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: CaveVines Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: GlowBerry Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 28 / Ra 48 / Mi 8 / Tiv false / Isa false
-[17:06:47] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[17:06:47] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
-[17:06:47] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
-[17:06:47] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
-[17:06:47] [Server thread/INFO]: Max TNT Explosions: 100
-[17:06:47] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[17:06:47] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[17:06:47] [Server thread/INFO]: Item Merge Radius: 6.0
-[17:06:47] [Server thread/INFO]: Item Despawn Rate: 4000
-[17:06:47] [Server thread/INFO]: View Distance: 10
-[17:06:47] [Server thread/INFO]: Simulation Distance: 10
-[17:06:47] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[17:06:47] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[17:06:47] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[17:06:47] [Server thread/INFO]: Experience Merge Radius: 4.0
-[17:06:47] [Server thread/INFO]: Mob Spawn Range: 6
-[17:06:47] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Cane Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Melon Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Potato Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Vine Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: CaveVines Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: GlowBerry Growth Modifier: 100%
-[17:06:47] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 28 / Ra 48 / Mi 8 / Tiv false / Isa false
-[17:06:47] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[17:06:47] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
-[17:06:47] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
-[17:06:47] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
-[17:06:47] [Server thread/INFO]: Max TNT Explosions: 100
-[17:06:47] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[17:06:48] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[17:06:48] [Server thread/INFO]: Item Merge Radius: 6.0
-[17:06:48] [Server thread/INFO]: Item Despawn Rate: 4000
-[17:06:48] [Server thread/INFO]: View Distance: 10
-[17:06:48] [Server thread/INFO]: Simulation Distance: 10
-[17:06:48] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[17:06:48] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[17:06:48] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[17:06:48] [Server thread/INFO]: Experience Merge Radius: 4.0
-[17:06:48] [Server thread/INFO]: Mob Spawn Range: 6
-[17:06:48] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Cane Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Melon Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Potato Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Vine Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: CaveVines Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: GlowBerry Growth Modifier: 100%
-[17:06:48] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 28 / Ra 48 / Mi 8 / Tiv false / Isa false
-[17:06:48] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[17:06:48] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
-[17:06:48] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
-[17:06:48] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
-[17:06:48] [Server thread/INFO]: Max TNT Explosions: 100
-[17:06:48] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[17:06:48] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[17:06:48] [Server thread/INFO]: Time elapsed: 72 ms
-[17:06:48] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[17:06:48] [Server thread/INFO]: Time elapsed: 14 ms
-[17:06:48] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[17:06:48] [Server thread/INFO]: Time elapsed: 10 ms
-[17:06:48] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.2
-[17:06:48] [Server thread/WARN]: [PlaceholderAPI] Loaded class com.viaversion.viaversion.api.type.Type from ViaVersion v4.5.1 which is not a depend or softdepend of this plugin.
-[17:06:48] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[17:06:48] [Server thread/INFO]: [WebConsole] Enabling WebConsole v2.4
-[17:06:48] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.5.1
-[17:06:48] [Server thread/INFO]: [CorrectFallDamage] Enabling CorrectFallDamage v1.0
-[17:06:48] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.5.1
-[17:06:48] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0-dev+20-582a357
-[17:06:49] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[17:06:49] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[17:06:49] [WebSocketSelector-75/INFO]: [WebConsole] WebSocket Server started successfully.
-[17:06:49] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
-[17:06:49] [Server thread/INFO]: [Essentials] Using locale en_CA
-[17:06:49] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[17:06:49] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[17:06:49] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
-[17:06:49] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
-[17:06:49] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
-[17:06:49] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.20.0-dev+20-582a357
-[17:06:49] [Server thread/INFO]: [EssentialsChat] Secure signed chat and previews are enabled.
-[17:06:49] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
-[17:06:49] [Server thread/INFO]: [TAB] Enabling TAB v3.2.1
-[17:06:49] [Server thread/INFO]: [TAB] Server version: 1.19.3 (v1_19_R2)
-[17:06:49] [Server thread/INFO]: [TAB] Loaded NMS hook in 51ms
-[17:06:50] [Server thread/INFO]: [TAB] Enabled in 487ms
-[17:06:50] [Server thread/INFO]: [HoloMobHealth] Enabling HoloMobHealth v2.3.2.0
-[17:06:51] [Server thread/INFO]: [HoloMobHealth] Loading languages...
-[17:06:51] [Server thread/INFO]: [HoloMobHealth] Hooked into PlaceholderAPI!
-[17:06:51] [Server thread/INFO]: [HoloMobHealth] Opened Sqlite database successfully
-[17:06:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: holomobhealth [1.0.0]
-[17:06:51] [Server thread/INFO]: [HoloMobHealth] HoloMobHealth has been Enabled!
-[17:06:51] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.20.0-dev+20-582a357
-[17:06:51] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
-[17:06:51] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[17:06:51] [Server thread/INFO]: Running delayed init tasks
-[17:06:51] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.19.3 (761)
-[17:06:52] [Craft Scheduler Thread - 4 - Essentials/INFO]: [Essentials] Fetching version information...
-[17:06:53] [Craft Scheduler Thread - 4 - Essentials/WARN]: [Essentials] You're 19 EssentialsX dev build(s) out of date!
-[17:06:53] [Craft Scheduler Thread - 4 - Essentials/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html
-[17:06:53] [Server thread/INFO]: [Magic] Factions not found
-[17:06:53] [Server thread/INFO]: [Magic] WorldGuard not found, region protection and pvp checks will not be used.
-[17:06:53] [Server thread/INFO]: [Magic] Towny not found, region protection and pvp checks will not be used.
-[17:06:53] [Server thread/INFO]: [Magic] Lockette nor LockettePro found, will not integrate.
-[17:06:53] [Server thread/INFO]: [Magic] GriefPrevention not found, claim protection will not be used.
-[17:06:53] [Server thread/INFO]: [Magic] NoCheatPlus not found, will not integrate.
-[17:06:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: magic [10.8.6-SNAPSHOT-394e5e7]
-[17:06:53] [Server thread/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
-[17:06:53] [Server thread/INFO]: Resource pack has not changed, using hash 3RPM7fPYKeVNc4M/l61WCgGUy/E= (1673714666000 <= 1673714666000)
-[17:06:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ascii [1.0.0]
-[17:06:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: checkitem [2.6.4]
-[17:06:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: math [1.4.1]
-[17:06:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player [2.0.3]
-[17:06:53] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion playerstats due to a missing plugin: PlayerStats
-[17:06:53] [Server thread/INFO]: 4 placeholder hook(s) registered!
-[17:06:53] [Server thread/INFO]: Done (18.652s)! For help, type "help"
-[17:06:53] [Server thread/INFO]: Timings Reset
-[17:06:58] [Craft Scheduler Thread - 2 - HoloMobHealth/INFO]: [HoloMobHealth] Loaded all 1 languages!
-[17:52:00] [User Authenticator #0/INFO]: UUID of player IonTech is e14876ba-5a6f-45b9-a01a-b8a30a2961aa
-[17:52:00] [Server thread/INFO]: IonTech joined the game
-[17:52:00] [Server thread/INFO]: IonTech[/127.0.0.1:53476] logged in with entity id 47 at ([world]-44.99600687904576, 70.0, 243.59984077372826)
-[18:01:46] [Server thread/INFO]: IonTech issued server command: /heal
-[18:08:27] [Server thread/INFO]: IonTech issued server command: //mconfig load 17oh0lfr
-[18:09:47] [Server thread/INFO]: IonTech issued server command: /cast test1
-[18:09:49] [Server thread/INFO]: IonTech issued server command: /cast test2
-[18:09:53] [Server thread/INFO]: IonTech issued server command: /fly
-[18:10:01] [Server thread/INFO]: IonTech issued server command: /meditor spell test2
-[18:12:41] [Server thread/INFO]: IonTech issued server command: //mconfig load 17oh0lfr
-[18:16:39] [Server thread/INFO]: IonTech issued server command: /cast test2
-[18:16:49] [Server thread/INFO]: IonTech issued server command: /cast test2
-[18:19:28] [Server thread/INFO]: IonTech issued server command: /cast force
-[18:19:42] [Server thread/INFO]: IonTech issued server command: /cast force
-[18:20:54] [Server thread/INFO]: IonTech issued server command: /meditor spell channel
-[18:27:19] [Server thread/INFO]: IonTech issued server command: /stop
-[18:27:19] [Server thread/INFO]: [IonTech: Stopping the server]
-[18:27:19] [Server thread/INFO]: Stopping server
-[18:27:19] [Server thread/INFO]: [Magic] Disabling Magic v10.8.6-SNAPSHOT-394e5e7
-[18:27:19] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion magic
-[18:27:19] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin Magic was disabled.
-[18:27:19] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.20.0-dev+20-582a357
-[18:27:19] [Server thread/INFO]: [HoloMobHealth] Disabling HoloMobHealth v2.3.2.0
-[18:27:19] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion holomobhealth
-[18:27:19] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin HoloMobHealth was disabled.
-[18:27:19] [Server thread/INFO]: [HoloMobHealth] HoloMobHealth has been Disabled!
-[18:27:19] [Server thread/INFO]: [TAB] Disabling TAB v3.2.1
-[18:27:19] [Server thread/INFO]: [TAB] Disabled in 3ms
-[18:27:19] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.20.0-dev+20-582a357
-[18:27:19] [Server thread/INFO]: [Essentials] Disabling Essentials v2.20.0-dev+20-582a357
-[18:27:19] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.55
-[18:27:19] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[18:27:19] [Server thread/INFO]: [LuckPerms] Closing storage...
-[18:27:19] [Server thread/INFO]: [LuckPerms] Goodbye!
-[18:27:19] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0-SNAPSHOT-b608
-[18:27:19] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v4.5.1
-[18:27:19] [Server thread/INFO]: [CorrectFallDamage] Disabling CorrectFallDamage v1.0
-[18:27:19] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v4.5.1
-[18:27:19] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
-[18:27:19] [Server thread/INFO]: [WebConsole] Disabling WebConsole v2.4
-[18:27:19] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.2
-[18:27:19] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.5.1-SNAPSHOT-332;f8acaf5
-[18:27:19] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[18:27:19] [Server thread/INFO]: Saving players
-[18:27:19] [Server thread/INFO]: IonTech lost connection: Server closed
-[18:27:19] [Server thread/INFO]: IonTech left the game
-[18:27:19] [Server thread/INFO]: Saving worlds
-[18:27:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[18:27:19] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[18:27:19] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[18:27:19] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[18:27:19] [Server thread/INFO]: [ChunkHolderManager] Saved 8 block chunks, 131 entity chunks, 0 poi chunks in world 'world' in 0.07s
-[18:27:19] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[18:27:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[18:27:19] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[18:27:19] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[18:27:19] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[18:27:19] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 5 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
-[18:27:19] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[18:27:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[18:27:19] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[18:27:19] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[18:27:19] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[18:27:20] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.12s
-[18:27:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[18:27:20] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[18:27:20] [Server thread/INFO]: Saving usercache.json
-[18:27:20] [Server thread/INFO]: Flushing Chunk IO
-[18:27:20] [Server thread/INFO]: Closing Thread Pool
-[18:27:20] [Server thread/INFO]: Closing Server
+[18:38:14] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0-SNAPSHOT-b608
+[18:38:14] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.55
+[18:38:14] [Server thread/INFO]:         __    
+[18:38:14] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.55
+[18:38:14] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[18:38:14] [Server thread/INFO]: 
+[18:38:14] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[18:38:14] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[18:38:15] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[18:38:15] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[18:38:15] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1303ms)
+[18:38:15] [Server thread/INFO]: [Magic] Enabling Magic v10.8.6-SNAPSHOT-394e5e7
+[18:38:15] [Server thread/INFO]: [Magic] EffectLib initialized
+[18:38:16] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_19_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[18:38:20] [Server thread/INFO]: [Magic] Loaded 26 attributes
+[18:38:20] [Server thread/INFO]: Magic checking resource pack for updates: https://download.mc-packs.net/pack/dd13ccedf3d829e54d73833f97ad560a0194cbf1.zip
+[18:38:20] [Server thread/INFO]: Preparing level "world"
+[18:38:21] [Server thread/INFO]: -------- World Settings For [world] --------
+[18:38:21] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[18:38:21] [Server thread/INFO]: Simulation Distance: 10
+[18:38:21] [Server thread/INFO]: View Distance: 10
+[18:38:21] [Server thread/INFO]: Item Merge Radius: 6.0
+[18:38:21] [Server thread/INFO]: Item Despawn Rate: 4000
+[18:38:21] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[18:38:21] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[18:38:21] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[18:38:21] [Server thread/INFO]: Experience Merge Radius: 4.0
+[18:38:21] [Server thread/INFO]: Mob Spawn Range: 6
+[18:38:21] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Cane Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Melon Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Potato Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Vine Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: CaveVines Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: GlowBerry Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 28 / Ra 48 / Mi 8 / Tiv false / Isa false
+[18:38:21] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
+[18:38:21] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[18:38:21] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[18:38:21] [Server thread/INFO]: Max TNT Explosions: 100
+[18:38:21] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[18:38:21] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[18:38:21] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[18:38:21] [Server thread/INFO]: Simulation Distance: 10
+[18:38:21] [Server thread/INFO]: View Distance: 10
+[18:38:21] [Server thread/INFO]: Item Merge Radius: 6.0
+[18:38:21] [Server thread/INFO]: Item Despawn Rate: 4000
+[18:38:21] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[18:38:21] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[18:38:21] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[18:38:21] [Server thread/INFO]: Experience Merge Radius: 4.0
+[18:38:21] [Server thread/INFO]: Mob Spawn Range: 6
+[18:38:21] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Cane Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Melon Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Potato Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Vine Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: CaveVines Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: GlowBerry Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 28 / Ra 48 / Mi 8 / Tiv false / Isa false
+[18:38:21] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
+[18:38:21] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[18:38:21] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[18:38:21] [Server thread/INFO]: Max TNT Explosions: 100
+[18:38:21] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[18:38:21] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[18:38:21] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[18:38:21] [Server thread/INFO]: Simulation Distance: 10
+[18:38:21] [Server thread/INFO]: View Distance: 10
+[18:38:21] [Server thread/INFO]: Item Merge Radius: 6.0
+[18:38:21] [Server thread/INFO]: Item Despawn Rate: 4000
+[18:38:21] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[18:38:21] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[18:38:21] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[18:38:21] [Server thread/INFO]: Experience Merge Radius: 4.0
+[18:38:21] [Server thread/INFO]: Mob Spawn Range: 6
+[18:38:21] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Cane Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Melon Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Potato Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Vine Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: CaveVines Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: GlowBerry Growth Modifier: 100%
+[18:38:21] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 28 / Ra 48 / Mi 8 / Tiv false / Isa false
+[18:38:21] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
+[18:38:21] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[18:38:21] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[18:38:21] [Server thread/INFO]: Max TNT Explosions: 100
+[18:38:21] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[18:38:21] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[18:38:22] [Server thread/INFO]: Time elapsed: 111 ms
+[18:38:22] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[18:38:22] [Server thread/INFO]: Time elapsed: 17 ms
+[18:38:22] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[18:38:22] [Server thread/INFO]: Time elapsed: 13 ms
+[18:38:22] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.2
+[18:38:22] [Server thread/WARN]: [PlaceholderAPI] Loaded class com.viaversion.viaversion.api.type.Type from ViaVersion v4.5.1 which is not a depend or softdepend of this plugin.
+[18:38:22] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[18:38:22] [Server thread/INFO]: [WebConsole] Enabling WebConsole v2.4
+[18:38:22] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.5.1
+[18:38:22] [Server thread/INFO]: [CorrectFallDamage] Enabling CorrectFallDamage v1.0
+[18:38:22] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.5.1
+[18:38:22] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.2.1-fd1d0777
+[18:38:23] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.19.3)...[0m
+[18:38:23] [Server thread/INFO]: [MythicMobs] The server is running PaperSpigot; enabled PaperSpigot exclusive functionality[0m
+[18:38:23] [Server thread/WARN]: [MythicMobs] Loaded class org.slf4j.impl.StaticLoggerBinder from WebConsole v2.4 which is not a depend or softdepend of this plugin.
+[18:38:23] [WebSocketSelector-75/INFO]: [WebConsole] WebSocket Server started successfully.
+[18:38:23] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 97 ms to scan 1 urls, producing 3 keys and 21 values 
+[18:38:23] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 10 ms to scan 1 urls, producing 6 keys and 101 values 
+[18:38:23] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 44 ms to scan 114 urls, producing 0 keys and 0 values 
+[18:38:23] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 4 ms to scan 1 urls, producing 3 keys and 36 values 
+[18:38:23] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 5 ms to scan 1 urls, producing 4 keys and 14 values 
+[18:38:23] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 7 ms to scan 1 urls, producing 4 keys and 14 values 
+[18:38:23] [Server thread/INFO]: [MythicMobs] MythicMobs PlaceholderAPI Support has been enabled![0m
+[18:38:23] [Server thread/INFO]: [MythicMobs] MythicMobs ProtocolLib Support has been enabled![0m
+[18:38:23] [Server thread/INFO]: [MythicMobs] Base directory C:\Users\Ethan Wei\Desktop\Minecraft Server Stuff\Arcana Server\plugins\MythicMobs\SavedData
+[18:38:23] [Server thread/INFO]: [MythicMobs] Module directory C:\Users\Ethan Wei\Desktop\Minecraft Server Stuff\Arcana Server\plugins\MythicMobs\SavedData\worlds
+[18:38:23] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 21 ms to scan 1 urls, producing 11 keys and 445 values 
+[18:38:23] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 30 ms to scan 1 urls, producing 29 keys and 885 values 
+[18:38:23] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 9 ms to scan 1 urls, producing 9 keys and 152 values 
+[18:38:24] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 6 ms to scan 1 urls, producing 2 keys and 11 values 
+[18:38:24] [Server thread/INFO]: [MythicMobs] [36mLOADED[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] File stats.yml not found! Creating a new one...
+[18:38:24] [Server thread/INFO]: [MythicMobs] File config.yml not found! Creating a new one...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] File packs.yml not found! Creating a new one...
+[18:38:24] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] File ExampleItems.yml not found! Creating a new one...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] File ExampleSkills.yml not found! Creating a new one...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] File VanillaMobs.yml not found! Creating a new one...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] File ExampleMobs.yml not found! Creating a new one...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] File ExampleDropTables.yml not found! Creating a new one...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] File ExampleRandomSpawns.yml not found! Creating a new one...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] Spawners folder not found! Creating...[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 8 mobs.[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 skills.[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics[0m
+[18:38:24] [Server thread/INFO]: [MythicMobs] [32m✓ MythicMobs Premium v5.2.1 ( build fd1d0777 ) has been successfully loaded![0m[0m
+[18:38:25] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0-dev+20-582a357
+[18:38:25] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[18:38:25] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[18:38:25] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
+[18:38:25] [Server thread/INFO]: [Essentials] Using locale en_CA
+[18:38:25] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[18:38:26] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[18:38:26] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
+[18:38:26] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
+[18:38:26] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[18:38:26] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.20.0-dev+20-582a357
+[18:38:26] [Server thread/INFO]: [EssentialsChat] Secure signed chat and previews are enabled.
+[18:38:26] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[18:38:26] [Server thread/INFO]: [TAB] Enabling TAB v3.2.1
+[18:38:26] [Server thread/INFO]: [TAB] Server version: 1.19.3 (v1_19_R2)
+[18:38:26] [Server thread/INFO]: [TAB] Loaded NMS hook in 40ms
+[18:38:26] [Server thread/INFO]: [TAB] Enabled in 707ms
+[18:38:26] [Server thread/INFO]: [HoloMobHealth] Enabling HoloMobHealth v2.3.2.0
+[18:38:28] [Server thread/INFO]: [HoloMobHealth] Loading languages...
+[18:38:28] [Server thread/INFO]: [HoloMobHealth] Hooked into MythicMobs!
+[18:38:28] [Server thread/INFO]: [HoloMobHealth] Hooked into PlaceholderAPI!
+[18:38:28] [Server thread/INFO]: [HoloMobHealth] Opened Sqlite database successfully
+[18:38:28] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: holomobhealth [1.0.0]
+[18:38:28] [Server thread/INFO]: [HoloMobHealth] HoloMobHealth has been Enabled!
+[18:38:28] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR3.1.2
+[18:38:28] [Server thread/INFO]: [MythicMobs] Model Engine Compatibility Loaded.[0m
+[18:38:28] [Server thread/INFO]: [ModelEngine] Compatibility applied: MythicMobs[0m
+[18:38:28] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.20.0-dev+20-582a357
+[18:38:28] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[18:38:28] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[18:38:29] [Server thread/INFO]: Running delayed init tasks
+[18:38:29] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.19.3 (761)
+[18:38:30] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Fetching version information...
+[18:38:31] [ForkJoinPool.commonPool-worker-1/WARN]: [PlaceholderAPI] Loaded class org.checkerframework.checker.calledmethods.qual.EnsuresCalledMethodsVarArgs from MythicMobs v5.2.1-fd1d0777 which is not a depend or softdepend of this plugin.
+[18:38:31] [Craft Scheduler Thread - 5 - Essentials/WARN]: [Essentials] You're 19 EssentialsX dev build(s) out of date!
+[18:38:31] [Craft Scheduler Thread - 5 - Essentials/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html
+[18:38:31] [Server thread/INFO]: [Magic] Factions not found
+[18:38:31] [Server thread/INFO]: [Magic] WorldGuard not found, region protection and pvp checks will not be used.
+[18:38:31] [Server thread/INFO]: [Magic] Towny not found, region protection and pvp checks will not be used.
+[18:38:31] [Server thread/INFO]: [Magic] Lockette nor LockettePro found, will not integrate.
+[18:38:31] [Server thread/INFO]: [Magic] GriefPrevention not found, claim protection will not be used.
+[18:38:31] [Server thread/INFO]: [Magic] NoCheatPlus not found, will not integrate.
+[18:38:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: magic [10.8.6-SNAPSHOT-394e5e7]
+[18:38:31] [Server thread/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[18:38:31] [Server thread/INFO]: Resource pack has not changed, using hash 3RPM7fPYKeVNc4M/l61WCgGUy/E= (1673734011000 <= 1673734611000)
+[18:38:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ascii [1.0.0]
+[18:38:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: checkitem [2.6.4]
+[18:38:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: math [1.4.1]
+[18:38:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player [2.0.3]
+[18:38:31] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion playerstats due to a missing plugin: PlayerStats
+[18:38:31] [Server thread/INFO]: 4 placeholder hook(s) registered!
+[18:38:31] [Server thread/INFO]: Done (24.798s)! For help, type "help"
+[18:38:31] [Server thread/INFO]: Timings Reset
+[18:38:38] [Craft Scheduler Thread - 3 - HoloMobHealth/INFO]: [HoloMobHealth] Loaded all 1 languages!
+[18:46:30] [Craft Scheduler Thread - 3 - ModelEngine/INFO]: [ModelEngine] [0m
+[18:46:30] [Craft Scheduler Thread - 3 - ModelEngine/INFO]: [ModelEngine] [36mGenerating fire_fx.bbmodel.[0m
+[18:46:30] [Craft Scheduler Thread - 3 - ModelEngine/WARN]: [ModelEngine] [33m--Warning: Missing hitbox.[0m
+[18:46:30] [Craft Scheduler Thread - 3 - ModelEngine/INFO]: [ModelEngine] [0m
+[18:46:30] [Craft Scheduler Thread - 3 - ModelEngine/INFO]: [ModelEngine] [38;5;46m1 models loaded.[0m
+[18:46:31] [Craft Scheduler Thread - 3 - ModelEngine/INFO]: [ModelEngine] [0m
+[18:46:31] [Craft Scheduler Thread - 3 - ModelEngine/INFO]: [ModelEngine] [38;5;46mResource pack zipped.[0m
+[19:02:55] [User Authenticator #0/INFO]: UUID of player IonTech is e14876ba-5a6f-45b9-a01a-b8a30a2961aa
+[19:02:56] [lumine-scheduler-0/WARN]: java.io.IOException: The system cannot find the path specified
+[19:02:56] [lumine-scheduler-0/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:02:56] [lumine-scheduler-0/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:02:56] [lumine-scheduler-0/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:02:56] [lumine-scheduler-0/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:02:56] [lumine-scheduler-0/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:02:56] [lumine-scheduler-0/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:02:56] [lumine-scheduler-0/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:02:56] [lumine-scheduler-0/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:02:56] [lumine-scheduler-0/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:02:56] [Server thread/INFO]: IonTech joined the game
+[19:02:56] [Server thread/INFO]: IonTech[/127.0.0.1:58380] logged in with entity id 26 at ([world]-216.26403305382772, 69.0, 259.5994375757128)
+[19:03:07] [Server thread/INFO]: IonTech issued server command: /getrp auto
+[19:03:12] [Server thread/INFO]: IonTech issued server command: /heal
+[19:03:16] [Server thread/INFO]: IonTech lost connection: Disconnected
+[19:03:16] [lumine-scheduler-0/WARN]: java.io.IOException: The system cannot find the path specified
+[19:03:16] [lumine-scheduler-0/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:03:16] [lumine-scheduler-0/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:03:16] [lumine-scheduler-0/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:03:16] [lumine-scheduler-0/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:03:16] [lumine-scheduler-0/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:03:16] [lumine-scheduler-0/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:03:16] [lumine-scheduler-0/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:03:16] [lumine-scheduler-0/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:03:16] [lumine-scheduler-0/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:03:16] [Server thread/INFO]: IonTech left the game
+[19:03:20] [User Authenticator #0/INFO]: UUID of player IonTech is e14876ba-5a6f-45b9-a01a-b8a30a2961aa
+[19:03:21] [Server thread/INFO]: IonTech joined the game
+[19:03:21] [Server thread/INFO]: IonTech[/127.0.0.1:54688] logged in with entity id 82 at ([world]-208.73157494388195, 68.0, 241.4826987241167)
+[19:03:21] [lumine-scheduler-0/WARN]: java.io.IOException: The system cannot find the path specified
+[19:03:21] [lumine-scheduler-0/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:03:21] [lumine-scheduler-0/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:03:21] [lumine-scheduler-0/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:03:21] [lumine-scheduler-0/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:03:21] [lumine-scheduler-0/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:03:21] [lumine-scheduler-0/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:03:21] [lumine-scheduler-0/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:03:21] [lumine-scheduler-0/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:03:21] [lumine-scheduler-0/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:03:29] [lumine-scheduler-7/WARN]: java.io.IOException: The system cannot find the path specified
+[19:03:29] [lumine-scheduler-7/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:03:29] [lumine-scheduler-7/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:03:29] [lumine-scheduler-7/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:03:29] [lumine-scheduler-7/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:03:29] [lumine-scheduler-7/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:03:29] [lumine-scheduler-7/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:03:29] [lumine-scheduler-7/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:03:29] [lumine-scheduler-7/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:03:29] [lumine-scheduler-7/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:08:29] [lumine-scheduler-9/WARN]: java.io.IOException: The system cannot find the path specified
+[19:08:29] [lumine-scheduler-9/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:08:29] [lumine-scheduler-9/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:08:29] [lumine-scheduler-9/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:08:29] [lumine-scheduler-9/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:08:29] [lumine-scheduler-9/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:08:29] [lumine-scheduler-9/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:08:29] [lumine-scheduler-9/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:08:29] [lumine-scheduler-9/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:08:29] [lumine-scheduler-9/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:08:54] [Server thread/INFO]: IonTech issued server command: /mm mobs spawn AngrySludge
+[19:09:31] [Server thread/INFO]: IonTech issued server command: /cast arcanehail
+[19:09:52] [Server thread/INFO]: IonTech issued server command: /heal
+[19:10:04] [Server thread/INFO]: IonTech issued server command: /heal
+[19:10:14] [Server thread/INFO]: IonTech issued server command: /cast seeker_barrage
+[19:10:18] [Server thread/INFO]: IonTech issued server command: /cast seeker_barrage
+[19:10:25] [Server thread/INFO]: IonTech issued server command: /cast kill|2
+[19:10:33] [Server thread/INFO]: IonTech issued server command: /fly
+[19:10:37] [Server thread/INFO]: IonTech issued server command: /god
+[19:10:57] [Server thread/INFO]: Named entity EntitySlime['Angry Sludge'/203, uuid='7d6124a7-dfbc-42b9-8eb6-0d33f3896bcf', l='ServerLevel[world]', x=-214.20, y=69.80, z=218.44, cpos=[-14, 13], tl=2461, v=true] died: Angry Sludge was slain by IonTech using [Test Sword 2]
+[19:13:29] [lumine-scheduler-11/WARN]: java.io.IOException: The system cannot find the path specified
+[19:13:29] [lumine-scheduler-11/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:13:29] [lumine-scheduler-11/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:13:29] [lumine-scheduler-11/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:13:29] [lumine-scheduler-11/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:13:29] [lumine-scheduler-11/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:13:29] [lumine-scheduler-11/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:13:29] [lumine-scheduler-11/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:13:29] [lumine-scheduler-11/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:13:29] [lumine-scheduler-11/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:15:07] [Server thread/INFO]: IonTech issued server command: /mgive leather_horse_armor
+[19:15:09] [Server thread/INFO]: IonTech issued server command: /mgive leather_horse_armor{1}
+[19:17:28] [Server thread/INFO]: IonTech issued server command: /mm skills
+[19:17:34] [Server thread/INFO]: IonTech issued server command: /mm test cast SmashAttack
+[19:17:34] [Server thread/ERROR]: [MythicMobs] [31m[SCHEDULER] Exception thrown whilst executing task[37m
+[19:17:34] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "io.lumine.mythic.api.adapters.AbstractEntity.getLocation()" because "target" is null
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.core.skills.mechanics.SoundEffect.castAtEntity(SoundEffect.java:85)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.core.skills.SkillMechanic.lambda$executeTargetedEntitySkill$8(SkillMechanic.java:549)
+[19:17:34] [Server thread/WARN]: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.core.skills.SkillMechanic.executeTargetedEntitySkill(SkillMechanic.java:545)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.core.skills.SkillMechanic.lambda$executeSkills$4(SkillMechanic.java:501)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.Delegates$RunnableToSupplier.get(Delegates.java:121)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise.executeSync(LuminePromise.java:133)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise.supplySync(LuminePromise.java:264)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.Promise.supply(Promise.java:435)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.Promise.supplying(Promise.java:104)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.TaskScheduler.run(TaskScheduler.java:63)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.core.skills.SkillMechanic.runMechanic(SkillMechanic.java:536)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.core.skills.SkillMechanic.executeSkills(SkillMechanic.java:501)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.core.skills.SkillMechanic.execute(SkillMechanic.java:418)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.core.skills.MetaSkill.execute(MetaSkill.java:294)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.core.skills.MetaSkill.execute(MetaSkill.java:269)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.BukkitAPIHelper.castSkill(BukkitAPIHelper.java:178)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.BukkitAPIHelper.castSkill(BukkitAPIHelper.java:140)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.commands.test.CastCommand.onCommand(CastCommand.java:46)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.commands.Command.onCommand(Command.java:64)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.commands.Command.onCommand(Command.java:55)
+[19:17:34] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.commands.Command.onCommand(Command.java:55)
+[19:17:34] [Server thread/WARN]: 	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45)
+[19:17:34] [Server thread/WARN]: 	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155)
+[19:17:34] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R2.CraftServer.dispatchCommand(CraftServer.java:929)
+[19:17:34] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R2.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64)
+[19:17:34] [Server thread/WARN]: 	at com.mojang.brigadier.CommandDispatcher.execute(CommandDispatcher.java:264)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.commands.CommandDispatcher.performCommand(CommandDispatcher.java:313)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.commands.CommandDispatcher.a(CommandDispatcher.java:297)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.server.network.PlayerConnection.a(PlayerConnection.java:2288)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.server.network.PlayerConnection.lambda$handleChatCommand$20(PlayerConnection.java:2248)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.util.thread.IAsyncTaskHandler.b(IAsyncTaskHandler.java:59)
+[19:17:34] [Server thread/WARN]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.server.TickTask.run(TickTask.java:18)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.util.thread.IAsyncTaskHandler.d(IAsyncTaskHandler.java:153)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.util.thread.IAsyncTaskHandlerReentrant.d(IAsyncTaskHandlerReentrant.java:24)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1341)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.util.thread.IAsyncTaskHandler.x(IAsyncTaskHandler.java:126)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.bh(MinecraftServer.java:1318)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1311)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.util.thread.IAsyncTaskHandler.c(IAsyncTaskHandler.java:136)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.i_(MinecraftServer.java:1289)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1177)
+[19:17:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316)
+[19:17:34] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:17:35] [Server thread/INFO]: IonTech issued server command: /mm test cast SmashAttack
+[19:17:42] [Server thread/INFO]: IonTech issued server command: /mmob summon zombie
+[19:17:43] [Server thread/INFO]: IonTech issued server command: /mm test cast SmashAttack
+[19:17:45] [Server thread/INFO]: IonTech issued server command: /mm test cast SmashAttack
+[19:17:47] [Server thread/INFO]: IonTech issued server command: /mm test cast SmashAttack
+[19:17:50] [Server thread/INFO]: IonTech issued server command: /mm test cast SmashAttack
+[19:17:53] [Server thread/INFO]: IonTech issued server command: /mm test cast SmashAttack
+[19:18:29] [lumine-scheduler-13/WARN]: java.io.IOException: The system cannot find the path specified
+[19:18:29] [lumine-scheduler-13/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:18:29] [lumine-scheduler-13/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:18:29] [lumine-scheduler-13/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:18:29] [lumine-scheduler-13/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:18:29] [lumine-scheduler-13/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:18:29] [lumine-scheduler-13/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:18:29] [lumine-scheduler-13/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:18:29] [lumine-scheduler-13/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:18:29] [lumine-scheduler-13/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:23:29] [lumine-scheduler-15/WARN]: java.io.IOException: The system cannot find the path specified
+[19:23:29] [lumine-scheduler-15/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:23:29] [lumine-scheduler-15/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:23:29] [lumine-scheduler-15/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:23:29] [lumine-scheduler-15/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:23:29] [lumine-scheduler-15/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:23:29] [lumine-scheduler-15/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:23:29] [lumine-scheduler-15/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:23:29] [lumine-scheduler-15/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:23:29] [lumine-scheduler-15/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:28:29] [lumine-scheduler-17/WARN]: java.io.IOException: The system cannot find the path specified
+[19:28:29] [lumine-scheduler-17/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:28:29] [lumine-scheduler-17/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:28:29] [lumine-scheduler-17/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:28:29] [lumine-scheduler-17/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:28:29] [lumine-scheduler-17/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:28:29] [lumine-scheduler-17/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:28:29] [lumine-scheduler-17/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:28:29] [lumine-scheduler-17/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:28:29] [lumine-scheduler-17/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:29:53] [Server thread/INFO]: IonTech issued server command: /mm reload
+[19:29:53] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[19:29:53] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 8 ms to scan 1 urls, producing 4 keys and 14 values 
+[19:29:53] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 8 mobs.[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 4 skills.[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
+[19:29:53] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[19:29:53] [lumine-scheduler-20/WARN]: java.io.IOException: The system cannot find the path specified
+[19:29:53] [lumine-scheduler-20/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:29:53] [lumine-scheduler-20/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:29:53] [lumine-scheduler-20/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:29:53] [lumine-scheduler-20/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:29:53] [lumine-scheduler-20/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:29:53] [lumine-scheduler-20/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:29:53] [lumine-scheduler-20/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:29:53] [lumine-scheduler-20/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:29:53] [lumine-scheduler-20/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:29:54] [lumine-scheduler-21/WARN]: java.io.IOException: The system cannot find the path specified
+[19:29:54] [lumine-scheduler-21/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:29:54] [lumine-scheduler-21/WARN]: java.io.IOException: The system cannot find the path specified
+[19:29:54] [lumine-scheduler-21/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:29:54] [lumine-scheduler-21/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:30:03] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:30:04] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:30:05] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:30:06] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:30:07] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:30:08] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:30:09] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:30:11] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:31:21] [Server thread/INFO]: IonTech issued server command: /mm reload
+[19:31:21] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[19:31:21] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 5 ms to scan 1 urls, producing 4 keys and 14 values 
+[19:31:21] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 8 mobs.[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 4 skills.[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
+[19:31:21] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[19:31:21] [Server thread/WARN]: [MythicMobs] ✗[31m[1m Configuration Error in Mechanic [36mCustomMechanic[0m[0m
+[19:31:21] [Server thread/WARN]: [MythicMobs] --| [31mSkill: [36mfireslash[37m | [31mFile: [37mC:\Users\Ethan Wei\Desktop\Minecraft Server Stuff\Arcana Server\plugins\MythicMobs\Skills\ExampleSkills.yml[0m[0m
+[19:31:21] [Server thread/WARN]: [MythicMobs] --| [35mError Message: [0mFailed to load custom mechanic VFXSPAWN[0m[0m
+[19:31:21] [Server thread/WARN]: [MythicMobs] --| [35mMechanic Line: [0mvfxspawn[0m[0m
+[19:31:21] [lumine-scheduler-25/WARN]: java.io.IOException: The system cannot find the path specified
+[19:31:21] [lumine-scheduler-25/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:31:21] [lumine-scheduler-25/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:31:21] [lumine-scheduler-25/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:31:21] [lumine-scheduler-25/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:31:21] [lumine-scheduler-25/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:31:21] [lumine-scheduler-25/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:31:21] [lumine-scheduler-25/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:31:21] [lumine-scheduler-25/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:31:21] [lumine-scheduler-25/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:31:21] [lumine-scheduler-26/WARN]: java.io.IOException: The system cannot find the path specified
+[19:31:21] [lumine-scheduler-26/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:31:21] [lumine-scheduler-26/WARN]: java.io.IOException: The system cannot find the path specified
+[19:31:21] [lumine-scheduler-26/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:31:21] [lumine-scheduler-26/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:31:22] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:31:23] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:31:23] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:31:24] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:32:59] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:33:00] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:33:00] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:33:01] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:36:21] [lumine-scheduler-29/WARN]: java.io.IOException: The system cannot find the path specified
+[19:36:21] [lumine-scheduler-29/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:36:21] [lumine-scheduler-29/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:36:21] [lumine-scheduler-29/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:36:21] [lumine-scheduler-29/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:36:21] [lumine-scheduler-29/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:36:21] [lumine-scheduler-29/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:36:21] [lumine-scheduler-29/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:36:21] [lumine-scheduler-29/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:36:21] [lumine-scheduler-29/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:36:50] [Server thread/INFO]: IonTech issued server command: /mm reload
+[19:36:50] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[19:36:50] [lumine-scheduler-28/WARN]: java.io.IOException: The system cannot find the path specified
+[19:36:50] [lumine-scheduler-28/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:36:50] [lumine-scheduler-28/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:36:50] [lumine-scheduler-28/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:36:50] [lumine-scheduler-28/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:36:50] [lumine-scheduler-28/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:36:50] [lumine-scheduler-28/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:36:50] [lumine-scheduler-28/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:36:50] [lumine-scheduler-28/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:36:50] [lumine-scheduler-28/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:36:50] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 5 ms to scan 1 urls, producing 4 keys and 14 values 
+[19:36:50] [lumine-scheduler-23/WARN]: java.io.IOException: The system cannot find the path specified
+[19:36:50] [lumine-scheduler-23/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:36:50] [lumine-scheduler-23/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:36:50] [lumine-scheduler-23/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:36:50] [lumine-scheduler-23/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:36:50] [lumine-scheduler-23/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:36:50] [lumine-scheduler-23/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:36:50] [lumine-scheduler-23/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:36:50] [lumine-scheduler-23/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:36:50] [lumine-scheduler-23/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:36:50] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 8 mobs.[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 4 skills.[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
+[19:36:50] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[19:36:50] [Server thread/WARN]: [MythicMobs] ✗[31m[1m Configuration Error in Mechanic [36mCustomMechanic[0m[0m
+[19:36:50] [Server thread/WARN]: [MythicMobs] --| [31mSkill: [36mfireslash[37m | [31mFile: [37mC:\Users\Ethan Wei\Desktop\Minecraft Server Stuff\Arcana Server\plugins\MythicMobs\Skills\ExampleSkills.yml[0m[0m
+[19:36:50] [Server thread/WARN]: [MythicMobs] --| [35mError Message: [0mFailed to load custom mechanic VFXSPAWN[0m[0m
+[19:36:50] [Server thread/WARN]: [MythicMobs] --| [35mMechanic Line: [0mvfxspawn{}[0m[0m
+[19:36:50] [lumine-scheduler-29/WARN]: java.io.IOException: The system cannot find the path specified
+[19:36:50] [lumine-scheduler-29/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:36:50] [lumine-scheduler-29/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:36:50] [lumine-scheduler-29/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:36:50] [lumine-scheduler-29/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:36:50] [lumine-scheduler-29/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:36:50] [lumine-scheduler-29/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:36:50] [lumine-scheduler-29/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:36:50] [lumine-scheduler-29/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:36:50] [lumine-scheduler-29/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:37:24] [Server thread/INFO]: IonTech issued server command: /mm reload
+[19:37:24] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[19:37:24] [lumine-scheduler-23/WARN]: java.io.IOException: The system cannot find the path specified
+[19:37:24] [lumine-scheduler-23/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:37:24] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 4 ms to scan 1 urls, producing 4 keys and 14 values 
+[19:37:24] [lumine-scheduler-29/WARN]: java.io.IOException: The system cannot find the path specified
+[19:37:24] [lumine-scheduler-29/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:37:24] [lumine-scheduler-29/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:37:24] [lumine-scheduler-29/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:37:24] [lumine-scheduler-29/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:37:24] [lumine-scheduler-29/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:37:24] [lumine-scheduler-29/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:37:24] [lumine-scheduler-29/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:37:24] [lumine-scheduler-29/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:37:24] [lumine-scheduler-29/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:37:24] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 8 mobs.[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 4 skills.[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
+[19:37:24] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[19:37:24] [Server thread/WARN]: [MythicMobs] ✗[31m[1m Configuration Error in Mechanic [36mCustomMechanic[0m[0m
+[19:37:24] [Server thread/WARN]: [MythicMobs] --| [31mSkill: [36mfireslash[37m | [31mFile: [37mC:\Users\Ethan Wei\Desktop\Minecraft Server Stuff\Arcana Server\plugins\MythicMobs\Skills\ExampleSkills.yml[0m[0m
+[19:37:24] [Server thread/WARN]: [MythicMobs] --| [35mError Message: [0mFailed to load custom mechanic VFXSPAWN[0m[0m
+[19:37:24] [Server thread/WARN]: [MythicMobs] --| [35mMechanic Line: [0mvfxspawn{delay=20}[0m[0m
+[19:37:24] [lumine-scheduler-23/WARN]: java.io.IOException: The system cannot find the path specified
+[19:37:24] [lumine-scheduler-23/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:37:24] [lumine-scheduler-23/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:37:25] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:37:26] [Server thread/INFO]: IonTech issued server command: /mm test cast fireslash
+[19:39:30] [Server thread/INFO]: IonTech issued server command: /gms
+[19:39:33] [Server thread/INFO]: IonTech issued server command: /god
+[19:42:24] [lumine-scheduler-31/WARN]: java.io.IOException: The system cannot find the path specified
+[19:42:24] [lumine-scheduler-31/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:42:24] [lumine-scheduler-31/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:42:24] [lumine-scheduler-31/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:42:24] [lumine-scheduler-31/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:42:24] [lumine-scheduler-31/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:42:24] [lumine-scheduler-31/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:42:24] [lumine-scheduler-31/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:42:24] [lumine-scheduler-31/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:42:24] [lumine-scheduler-31/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:43:35] [Server thread/INFO]: IonTech issued server command: /mm reload
+[19:43:35] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[19:43:35] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 4 ms to scan 1 urls, producing 4 keys and 14 values 
+[19:43:35] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 8 mobs.[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 4 skills.[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
+[19:43:35] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[19:43:35] [lumine-scheduler-34/WARN]: java.io.IOException: The system cannot find the path specified
+[19:43:35] [lumine-scheduler-34/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:43:35] [lumine-scheduler-34/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:43:35] [lumine-scheduler-34/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:43:35] [lumine-scheduler-34/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:43:35] [lumine-scheduler-34/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:43:35] [lumine-scheduler-34/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:43:35] [lumine-scheduler-34/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:43:35] [lumine-scheduler-34/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:43:35] [lumine-scheduler-34/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:43:35] [lumine-scheduler-35/WARN]: java.io.IOException: The system cannot find the path specified
+[19:43:35] [lumine-scheduler-35/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:43:35] [lumine-scheduler-35/WARN]: java.io.IOException: The system cannot find the path specified
+[19:43:35] [lumine-scheduler-35/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:43:35] [lumine-scheduler-35/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:43:42] [Server thread/INFO]: IonTech issued server command: /mm mobs spawn SkeletalKnight
+[19:44:07] [Server thread/INFO]: Named entity EntitySkeletonWither['Skeletal Knight'/1000, uuid='9709c5da-be5e-41ab-af12-19282804cfde', l='ServerLevel[world]', x=-198.42, y=68.00, z=183.82, cpos=[-13, 11], tl=502, v=true] died: Skeletal Knight was killed by IonTech using [Focus Bolt (Manastone Wand)]
+[19:45:25] [Server thread/INFO]: IonTech issued server command: /heal
+[19:46:38] [Server thread/INFO]: IonTech issued server command: /mm reload
+[19:46:38] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[19:46:38] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 4 ms to scan 1 urls, producing 4 keys and 14 values 
+[19:46:38] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 8 mobs.[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 4 skills.[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
+[19:46:38] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[19:46:38] [lumine-scheduler-39/WARN]: java.io.IOException: The system cannot find the path specified
+[19:46:38] [lumine-scheduler-39/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:46:38] [lumine-scheduler-39/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:46:38] [lumine-scheduler-39/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:46:38] [lumine-scheduler-39/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:46:38] [lumine-scheduler-39/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:46:38] [lumine-scheduler-39/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:46:38] [lumine-scheduler-39/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:46:38] [lumine-scheduler-39/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:46:38] [lumine-scheduler-39/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:46:39] [lumine-scheduler-40/WARN]: java.io.IOException: The system cannot find the path specified
+[19:46:39] [lumine-scheduler-40/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:46:39] [lumine-scheduler-40/WARN]: java.io.IOException: The system cannot find the path specified
+[19:46:39] [lumine-scheduler-40/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:46:39] [lumine-scheduler-40/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:46:41] [Server thread/INFO]: IonTech issued server command: /mm mobs spawn SkeletalKnight
+[19:46:49] [Server thread/INFO]: IonTech withered away whilst fighting Skeletal Knight
+[19:46:55] [Server thread/INFO]: IonTech issued server command: /mmob summon SkeletonKing
+[19:47:04] [Server thread/INFO]: IonTech was slain by Skeleton King using [Greatsword of the Skeleton King]
+[19:47:12] [Server thread/INFO]: IonTech was slain by Skeleton King using [Greatsword of the Skeleton King]
+[19:47:19] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1179, uuid='102598de-0726-4480-8b18-6b631aa7e3e9', l='ServerLevel[world]', x=-86.63, y=70.00, z=214.61, cpos=[-6, 13], tl=170, v=true] died: Skeletal Minion was burnt to a crisp whilst fighting Skeletal Minion
+[19:47:20] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1178, uuid='3e3ee53a-cdcc-418e-83be-623e23aefc06', l='ServerLevel[world]', x=-89.59, y=70.00, z=209.95, cpos=[-6, 13], tl=187, v=true] died: Skeletal Minion burned to death
+[19:47:20] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1182, uuid='f022d7d5-ee4b-4018-8618-87042046e632', l='ServerLevel[world]', x=-83.37, y=69.00, z=208.24, cpos=[-6, 13], tl=174, v=true] died: Skeletal Minion burned to death
+[19:47:22] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1181, uuid='ffa28fab-51e0-4aaf-a1cc-2da266d3bf04', l='ServerLevel[world]', x=-86.63, y=69.23, z=209.58, cpos=[-6, 13], tl=206, v=true] died: Skeletal Minion burned to death
+[19:47:23] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1185, uuid='857d39fe-03d9-4bbf-ab9b-a7fed0a30eb0', l='ServerLevel[world]', x=-86.26, y=69.00, z=202.30, cpos=[-6, 12], tl=206, v=true] died: Skeletal Minion burned to death
+[19:47:23] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1184, uuid='7385d24a-5254-4ae5-aee9-df8b5a230747', l='ServerLevel[world]', x=-92.81, y=70.00, z=203.42, cpos=[-6, 12], tl=203, v=true] died: Skeletal Minion burned to death
+[19:47:40] [Server thread/INFO]: IonTech was slain by Skeleton King using [Greatsword of the Skeleton King]
+[19:47:48] [Server thread/INFO]: IonTech was slain by Skeleton King using [Greatsword of the Skeleton King]
+[19:47:58] [Server thread/INFO]: IonTech issued server command: /heal
+[19:47:59] [Server thread/INFO]: IonTech issued server command: /fly
+[19:48:00] [Server thread/INFO]: IonTech issued server command: /heal
+[19:48:18] [Server thread/INFO]: IonTech issued server command: /mm mobs spawn SkeletalKnight
+[19:48:20] [Server thread/INFO]: IonTech issued server command: /heal
+[19:48:25] [Server thread/INFO]: IonTech issued server command: /mm reload
+[19:48:25] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[19:48:25] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 4 ms to scan 1 urls, producing 4 keys and 14 values 
+[19:48:25] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 8 mobs.[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 4 skills.[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
+[19:48:25] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[19:48:25] [lumine-scheduler-44/WARN]: java.io.IOException: The system cannot find the path specified
+[19:48:25] [lumine-scheduler-44/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:48:25] [lumine-scheduler-44/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:48:25] [lumine-scheduler-44/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:48:25] [lumine-scheduler-44/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:48:25] [lumine-scheduler-44/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:48:25] [lumine-scheduler-44/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:48:25] [lumine-scheduler-44/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:48:25] [lumine-scheduler-44/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:48:25] [lumine-scheduler-44/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:48:25] [lumine-scheduler-45/WARN]: java.io.IOException: The system cannot find the path specified
+[19:48:25] [lumine-scheduler-45/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:48:25] [lumine-scheduler-45/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:48:25] [lumine-scheduler-45/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:48:25] [lumine-scheduler-45/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:48:25] [lumine-scheduler-45/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:48:25] [lumine-scheduler-45/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:48:25] [lumine-scheduler-45/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:48:25] [lumine-scheduler-45/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:48:25] [lumine-scheduler-45/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:48:26] [lumine-scheduler-45/WARN]: java.io.IOException: The system cannot find the path specified
+[19:48:26] [lumine-scheduler-45/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:48:26] [lumine-scheduler-45/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:48:26] [lumine-scheduler-45/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:48:26] [lumine-scheduler-45/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:48:26] [lumine-scheduler-45/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:48:26] [lumine-scheduler-45/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:48:26] [lumine-scheduler-45/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:48:26] [lumine-scheduler-45/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:48:26] [lumine-scheduler-45/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:49:17] [Server thread/INFO]: IonTech issued server command: /mm reload
+[19:49:17] [Server thread/INFO]: [MythicMobs] Mythic beginning reload procedure...[0m
+[19:49:17] [lumine-scheduler-46/WARN]: java.io.IOException: The system cannot find the path specified
+[19:49:17] [lumine-scheduler-46/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:49:17] [Server thread/INFO]: [io.lumine.mythic.utils.reflections.Reflections] Reflections took 3 ms to scan 1 urls, producing 4 keys and 14 values 
+[19:49:17] [lumine-scheduler-45/WARN]: java.io.IOException: The system cannot find the path specified
+[19:49:17] [lumine-scheduler-45/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:49:17] [lumine-scheduler-45/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:49:17] [lumine-scheduler-45/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:49:17] [lumine-scheduler-45/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:49:17] [lumine-scheduler-45/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:49:17] [lumine-scheduler-45/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:49:17] [lumine-scheduler-45/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:49:17] [lumine-scheduler-45/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:49:17] [lumine-scheduler-45/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:49:17] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 8 mobs.[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 4 skills.[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
+[19:49:17] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading![0m
+[19:49:17] [lumine-scheduler-46/WARN]: java.io.IOException: The system cannot find the path specified
+[19:49:17] [lumine-scheduler-46/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:49:17] [lumine-scheduler-46/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:51:20] [Server thread/INFO]: IonTech issued server command: /heal
+[19:51:47] [Server thread/INFO]: Stopping the server
+[19:51:47] [Server thread/INFO]: Stopping server
+[19:51:47] [Server thread/INFO]: [Magic] Disabling Magic v10.8.6-SNAPSHOT-394e5e7
+[19:51:47] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion magic
+[19:51:47] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin Magic was disabled.
+[19:51:47] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.20.0-dev+20-582a357
+[19:51:47] [Server thread/INFO]: [ModelEngine] Disabling ModelEngine vR3.1.2
+[19:51:47] [Server thread/INFO]: [HoloMobHealth] Disabling HoloMobHealth v2.3.2.0
+[19:51:47] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion holomobhealth
+[19:51:47] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin HoloMobHealth was disabled.
+[19:51:47] [Server thread/INFO]: [HoloMobHealth] HoloMobHealth has been Disabled!
+[19:51:47] [Server thread/INFO]: [TAB] Disabling TAB v3.2.1
+[19:51:47] [Server thread/INFO]: [TAB] Disabled in 3ms
+[19:51:47] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.20.0-dev+20-582a357
+[19:51:47] [Server thread/INFO]: [Essentials] Disabling Essentials v2.20.0-dev+20-582a357
+[19:51:47] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v5.2.1-fd1d0777
+[19:51:47] [Server thread/INFO]: [MythicMobs] Disabling Mythic Mobs...[0m
+[19:51:47] [Server thread/INFO]: [MythicMobs] All active settings have been saved.[0m
+[19:51:47] [Server thread/INFO]: [MythicMobs] [36mUNLOADED[0m
+[19:51:47] [Server thread/WARN]: java.io.IOException: The system cannot find the path specified
+[19:51:47] [Server thread/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:51:47] [Server thread/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:51:47] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:51:47] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.PlayerRepository.unload(PlayerRepository.java:94)
+[19:51:47] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.plugin.PluginModule.close(PluginModule.java:50)
+[19:51:47] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.terminable.composite.AbstractCompositeTerminable.close(AbstractCompositeTerminable.java:31)
+[19:51:47] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.terminable.composite.CompositeTerminable.closeAndReportException(CompositeTerminable.java:63)
+[19:51:47] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.plugin.LuminePlugin.close(LuminePlugin.java:103)
+[19:51:47] [Server thread/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.plugin.LuminePlugin.onDisable(LuminePlugin.java:98)
+[19:51:47] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:266)
+[19:51:47] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:400)
+[19:51:47] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:581)
+[19:51:47] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:558)
+[19:51:47] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R2.CraftServer.disablePlugins(CraftServer.java:512)
+[19:51:47] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.t(MinecraftServer.java:944)
+[19:51:47] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.t(DedicatedServer.java:797)
+[19:51:47] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1212)
+[19:51:47] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316)
+[19:51:47] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:51:47] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.55
+[19:51:47] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[19:51:47] [Server thread/INFO]: [LuckPerms] Closing storage...
+[19:51:47] [lumine-scheduler-49/WARN]: java.io.IOException: The system cannot find the path specified
+[19:51:47] [lumine-scheduler-49/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:51:47] [lumine-scheduler-49/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:51:47] [lumine-scheduler-49/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:51:47] [lumine-scheduler-49/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:51:47] [lumine-scheduler-49/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:51:47] [lumine-scheduler-49/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:51:47] [lumine-scheduler-49/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:51:47] [lumine-scheduler-49/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:51:47] [lumine-scheduler-49/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:51:47] [lumine-scheduler-50/WARN]: java.io.IOException: The system cannot find the path specified
+[19:51:47] [lumine-scheduler-50/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:51:47] [lumine-scheduler-50/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:51:47] [lumine-scheduler-50/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:51:47] [lumine-scheduler-50/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:51:47] [lumine-scheduler-50/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:51:47] [lumine-scheduler-50/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:51:47] [lumine-scheduler-50/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:51:47] [lumine-scheduler-50/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:51:47] [lumine-scheduler-50/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:51:48] [lumine-scheduler-47/WARN]: java.io.IOException: The system cannot find the path specified
+[19:51:48] [lumine-scheduler-47/WARN]: 	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+[19:51:48] [lumine-scheduler-47/WARN]: 	at java.base/java.io.File.createNewFile(File.java:1043)
+[19:51:48] [lumine-scheduler-47/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.saveSync(JsonPlayerStorageAdapter.java:67)
+[19:51:48] [lumine-scheduler-47/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.storage.players.adapters.file.JsonPlayerStorageAdapter.lambda$save$1(JsonPlayerStorageAdapter.java:57)
+[19:51:48] [lumine-scheduler-47/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[19:51:48] [lumine-scheduler-47/WARN]: 	at MythicMobs-5.2.1.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[19:51:48] [lumine-scheduler-47/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:51:48] [lumine-scheduler-47/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:51:48] [lumine-scheduler-47/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:51:48] [Server thread/INFO]: [LuckPerms] Goodbye!
+[19:51:48] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0-SNAPSHOT-b608
+[19:51:48] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v4.5.1
+[19:51:48] [Server thread/INFO]: [CorrectFallDamage] Disabling CorrectFallDamage v1.0
+[19:51:48] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v4.5.1
+[19:51:48] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
+[19:51:48] [Server thread/INFO]: [WebConsole] Disabling WebConsole v2.4
+[19:51:48] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.2
+[19:51:48] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.5.1-SNAPSHOT-332;f8acaf5
+[19:51:48] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[19:51:48] [Server thread/INFO]: Saving players
+[19:51:48] [Server thread/INFO]: IonTech lost connection: Server closed
+[19:51:48] [Server thread/INFO]: IonTech left the game
+[19:51:48] [Server thread/INFO]: Saving worlds
+[19:51:48] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:51:48] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[19:51:48] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[19:51:48] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[19:51:48] [Server thread/INFO]: [ChunkHolderManager] Saved 234 block chunks, 275 entity chunks, 0 poi chunks in world 'world' in 0.70s
+[19:51:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:51:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[19:51:49] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[19:51:49] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[19:51:49] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[19:51:49] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 5 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[19:51:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:51:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[19:51:49] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[19:51:49] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[19:51:49] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[19:51:49] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[19:51:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:51:49] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19:51:49] [Server thread/INFO]: Saving usercache.json
+[19:51:49] [Server thread/INFO]: Flushing Chunk IO
+[19:51:49] [Server thread/INFO]: Closing Thread Pool
+[19:51:49] [Server thread/INFO]: Closing Server

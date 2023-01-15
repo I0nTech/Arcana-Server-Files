@@ -1,10 +1,10 @@
 id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
 name: IonTech
 created: 1673144327285
-updated: 1673738839371
-last_cast: 1673738423297
+updated: 1673743907535
+last_cast: 1673743653437
 cooldown_expiration: 0
-last_death_location: -117.72057675444442,74.0,170.509637376533,world,-149.4118,5.4472294
+last_death_location: -80.97003148057924,69.0,196.30461939565168,world,94.43536,22.334635
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -85,15 +85,21 @@ spells:
     cooldown_expiration: 0
     enabled: false
     charges: 0.0
+  kill|2:
+    cast_count: 0
+    last_cast: 1673741425086
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
   channel:
-    cast_count: 281
-    last_cast: 1673738423297
+    cast_count: 297
+    last_cast: 1673743645288
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   manabolt:
-    cast_count: 86
-    last_cast: 1673738235744
+    cast_count: 96
+    last_cast: 1673743652340
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -128,8 +134,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   manablast:
-    cast_count: 44
-    last_cast: 1673738418147
+    cast_count: 49
+    last_cast: 1673743639019
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -195,7 +201,7 @@ spells:
     charges: 0.0
   seeker_barrage:
     cast_count: 6
-    last_cast: 1673721823490
+    last_cast: 1673741418085
     last_earn: 0
     cooldown_expiration: 1673721805917
     charges: 0.0
@@ -230,28 +236,28 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   triplebolt:
-    cast_count: 95
-    last_cast: 1673738290996
+    cast_count: 98
+    last_cast: 1673743196687
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   shadowcloak:
-    cast_count: 7
-    last_cast: 1673737364342
+    cast_count: 9
+    last_cast: 1673741739536
     last_earn: 0
-    cooldown_expiration: 1673737544342
+    cooldown_expiration: 1673741919536
     charges: 0.0
   arcanehail:
-    cast_count: 3
-    last_cast: 1673660443329
+    cast_count: 4
+    last_cast: 1673741371846
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   pull:
-    cast_count: 5
-    last_cast: 1673738088693
+    cast_count: 6
+    last_cast: 1673743264489
     last_earn: 0
-    cooldown_expiration: 1673738092693
+    cooldown_expiration: 1673743268489
     charges: 0.0
   test2:
     cast_count: 0
@@ -266,8 +272,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   focusbolt:
-    cast_count: 41
-    last_cast: 1673738423297
+    cast_count: 49
+    last_cast: 1673743645289
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -296,8 +302,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   scattershot:
-    cast_count: 8
-    last_cast: 1673658612758
+    cast_count: 14
+    last_cast: 1673743190241
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -358,8 +364,8 @@ kits:
         last_give: 1673144327438
 classes:
   mage:
-    mana_timestamp: 1673738839288
+    mana_timestamp: 1673743907418
     mana: 100.0
 transient_modifiers: {}
 active_class: mage
-health: 9.16702651977539
+health: 20.0

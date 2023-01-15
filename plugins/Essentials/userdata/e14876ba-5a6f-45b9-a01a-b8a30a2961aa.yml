@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1673738839393
-  login: 1673736721639
+  logout: 1673743907560
+  login: 1673741001104
 money: '0'
 lastlocation:
   world: 455c86ed-c4e7-4ba1-a15a-8b7e61e0c0fa
@@ -31,8 +31,8 @@ last-account-name: IonTech
 logoutlocation:
   world: 455c86ed-c4e7-4ba1-a15a-8b7e61e0c0fa
   world-name: world
-  x: -216.26403305382772
-  y: 69.0
-  z: 259.5994375757128
-  yaw: -18.162841796875
-  pitch: 13.024932861328125
+  x: -187.950696277808
+  y: 90.0
+  z: 144.30000001192093
+  yaw: -75.78369140625
+  pitch: 32.68595886230469
