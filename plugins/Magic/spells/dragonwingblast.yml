@@ -1,0 +1,156 @@
+dragonwingblast:
+    # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+    inherit: false
+    name: Winged Fury
+    hidden: true
+    actions:
+        cast:
+          - class: Delay
+          - class: AreaOfEffect
+            actions:
+            - class: Asynchronous
+              actions:
+              - class: CustomProjectile
+                target: other
+                actions:
+                - class: AreaOfEffect
+                  target_count: 100
+                  radius: 1
+                  actions:
+                  - class: Repeat
+                    repeat: 30
+                    actions:
+                    - class: Damage
+                    - class: Delay
+                      delay: 10
+                  - class: PotionEffect
+                    duration: 2500
+                  - class: ApplyCooldown
+                    duration: 6000
+    effects:
+        cast:
+        -  class: EffectSingle
+           location: origin
+           source_location: feet
+           effectlib:
+             class: Warp
+             duration: 2000
+             particle: redstone
+             color: "ffffff"
+             particles: 6
+             particle_count: 15
+             rings: 14
+             radius: 0.75
+             update_locations: false
+        -  class: EffectSingle
+           sound: entity_ender_dragon_flap
+           sound_pitch: 1
+           sound_volume: 0.5
+           location: origin
+           source_location: feet
+           effectlib:
+             class: Warp
+             duration: 2000
+             particle: sweep_attack
+             particle_data: 0.0075
+             particles: 4
+             rings: 14
+             radius: 0.75
+             update_locations: false
+        projectile:
+        - class: EffectSingle
+          effectlib:
+            class: Line
+            particle: redstone
+            particles: 25
+            length: 0.1
+            color: "ffffff"
+        tick:
+        - particle: redstone
+          color: "ffffff"
+          particle_count: 2
+          particle_offset_x: 0.05
+          particle_offset_y: 0.05
+          particle_offset_z: 0.05
+          location: target
+        - particle: sweep_attack
+          particle_count: 1
+          particle_offset_x: 0.05
+          particle_offset_y: 0.05
+          particle_offset_z: 0.05
+          particle_data: 0.0075
+          location: target
+        hit:
+        -  class: EffectSingle
+           sound: entity_player_attack_sweep
+           sound_pitch: 2
+           sound_volume: 0.5
+           location: target
+        - location: target
+          particle: cloud
+          particle_count: 15
+          particle_offset_x: 0.3
+          particle_offset_y: 0.3
+          particle_offset_z: 0.3
+          particle_data: 0.5
+        - location: target
+          particle: sweep_attack
+          particle_count: 25
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
+          particle_data: 0.5
+        target:
+        -  class: EffectSingle
+           location: source
+           sound: entity_player_attack_crit
+           sound_pitch: 4
+           sound_volume: 2
+           particle: spit
+           particle_offset_x: 0.001
+           particle_offset_y: 0.001
+           particle_offset_z: 0.001
+           effectlib:
+             class: Line
+             duration: 100000
+             length: 0.1
+             particle: sweep_attack
+             particles: 10
+             particle_data: 0.005
+    parameters:
+        target: self
+        target_self: false
+        range: 100
+        warmup: 0
+        source_location: feet
+        radius: 70
+        velocity: 0
+        potion_effects:
+          confusion: 100
+          slow: 3
+          jump: -2
+        effects_particles: false
+        tick_size: 0.2
+        target_count: 12
+        target_type: LivingEntity
+        damage: rand(8,16)
+        target_breakables: 1
+        ignore_blocks: false
+        cooldown: 15000
+        lifetime: 25000
+        target_self_timeout: 2000
+        track_speed: 1000
+        use_target_location: false
+        velocity_transform:
+            orient: false
+            x: rand(-50,50)
+            y: rand(2,15)
+            z: rand(-50,50)
+        plan:
+        - time: 1000
+          track_target: true
+          velocity_transform: ""
+          velocity: 150
+          effects: target
+        - time: 100000
+          track_speed: 0.1

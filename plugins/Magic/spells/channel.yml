@@ -1,7 +1,7 @@
 channel:
   name: Channelling
   description: "You shouldn't see this..."
-  icon: ender_eye{18001}
+  icon: tnt{18003}
   actions:
     cast:
     - class: ChangeContext
@@ -15,10 +15,19 @@ channel:
           interval: 1
           duration: $warmup
           actions:
+            - class: ModifyVariable
+              variable: power
+              value: power+1
+            - class: BossBar
             - class: Modifier
             - class: ModifyVariable
               variable: health_change
               value: health - cast_health
+            - class: CheckRequirements
+              requirements:
+               - wand_tags: wand
+              fail:
+               - class: Undo
             - class: CheckRequirements
               requirements:
               - variables:
@@ -29,7 +38,12 @@ channel:
             - class: CheckTrigger
               trigger: left_click
               actions:
+                - class: PlayEffects
+                  effects: inturrupt
+                - class: ModifyMana
                 - class: Undo
+#            - class: Message
+#              message: Time $power
   effects:
     cast:
       - location: target
@@ -105,8 +119,23 @@ channel:
       - sound: entity_illusioner_cast_spell
         sound_pitch: 1.2
         delay: 200
+    inturrupt:
+      - location: origin
+        source_location: body
+        particle: glow
+        particle_count: 6
+        particle_offset_x: 0.3
+        particle_offset_z: 0.3
+        particle_offset_y: 0.6
+        particle_data: 0.3
   parameters:
    warmup: $warmup
+   bar_style: solid
+   bar_color: blue
+   bar_title: "&fChannelling Spell..."
+   bar_progress: $power/($warmup/50)
+   bar_interval: 1
+   mana: 25
    target: self
    add_modifiers:
     - channelling

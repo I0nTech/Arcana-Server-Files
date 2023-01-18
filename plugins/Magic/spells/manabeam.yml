@@ -1,6 +1,6 @@
 manabeam:
   name: Mana Beam
-  description: Anchor, then fire a powerful, long-range beam of mana dealing 12 Magic Damage. Deals Critical Damage on Headshots.
+  description: Channel, then fire a powerful, long-range beam of mana dealing 12 Magic Damage. Deals Critical Damage on Headshots.
   icon: manabeam
   icon_disabled: manabeam
   category: arcane
@@ -11,9 +11,9 @@ manabeam:
       target_caster: true
       actions:
       - class: Cast
-        spell: anchor
+        spell: channel
         spell_parameters:
-          warmup: 1500
+          warmup: $warmup
     - class: Delay
     - class: Retarget
     - class: PlayEffects
@@ -65,10 +65,12 @@ manabeam:
         color_override: color
         effectlib:
           class: ConeEffect
-          iterations: 12
+          iterations: 6
+          particle_size: 0.8
           particle: dust_color_transition
           to_color: "#73FBD3"
           lengthGrow: 0.05
+          radius_grow: 0.01
           update_directions: false
           update_locations: false
       hit:
@@ -116,7 +118,7 @@ manabeam:
         sound: entity_player_attack_crit
         sound_pitch: 0.8
   parameters:
-    warmup: 1500
+    warmup: 2000
     hitbox: true
     hitbox_size: 0.3
     tick_size: 2

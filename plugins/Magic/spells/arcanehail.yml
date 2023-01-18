@@ -1,46 +1,43 @@
 arcanehail:
   name: Arcane Hail
-  description: Shower an area with falling arcane spears dealing 20x80% Attack Damage per second for 4 seconds.
+  description: Summon arcane spears to fall from the sky, each dealing 8 Magic Damage upon impact.
   category: arcane
   icon: arcanehail
   icon_disabled: arcanehail
   actions:
     cast:
-    - class: Delay
-      delay: $warmup
     - class: Multiply
       actions:
-        - class: Spread
-          actions:
-            - class: ChangeContext
-              source_pitch: 90
+      - class: ChangeContext
+        actions:
+          - class: Delay
+            delay: rand(0,1500)
+          - class: CustomProjectile
+            hit_effects: none
+            tick_effects: none
+            miss_effects: none
+            velocity: 1000
+            range: 1000
+            actions:
+            - class: PlayEffects
+              effects: summon
+          - class: Delay
+            delay: $warmup
+          - class: CustomProjectile
+            actions:
+            - class: AreaOfEffect
               actions:
-                - class: Delay
-                  delay: rand(0,16000)
-                - class: PlayEffects
-                  effects: summon
-                - class: Delay
-                  delay: $delay
-                - class: CustomProjectile
-                  requires_target: true
-                  ignore_hit_entities: true
-                  actions:
-                    - class: BreakBlock
-                    - class: AreaOfEffect
-                      radius: 1
-                      actions:
-                        - class: Damage
-                        - class: Velocity
-                          direction: 0,0,0
+                - class: Velocity
+                - class: Damage
   effects:
-    cast:
+    summon:
       - class: EffectSingle
         location: target
         effectlib:
            class: Modified
-           duration: 3000
+           duration: $warmup
            parameters:
-             radius: "(t/i) * 8 + 0.1"
+             radius: "(t/i) * 2 + 0.1"
            effect:
              class: Vortex
              particle_count: 1
@@ -52,34 +49,13 @@ arcanehail:
              particle_data: 0
              pitch: 90
              offset: 0,0.2,0
-    summon:
-      - location: target
-        effectlib:
-           class: Modified
-           duration: 400
-           parameters:
-             radius: "(t/i) * -2 + 1.5"
-           effect:
-             class: Circle
-             particle_count: 1
-             whole_circle: true
-             orientPitch: true
-             x_rotation: 0
-             y_rotation: 0
-             z_rotation: 0
-             angular_velocity_x: 0
-             angular_velocity_y: 0
-             angular_velocity_z: 0
-             particle: crit_magic
-             update_locations: false
-             update_directions: false
-             orient: false
+    none: []
     tick:
       - location: target
         particle: spell_witch
         particle_offset: 0
         particle_count: 1
-    hit_block:
+    hit:
       - location: target
         particle: spell_witch
         speed: 1
@@ -91,33 +67,28 @@ arcanehail:
         sound_pitch: 1
         sound_volume: 0.4
         location: target
+    hit_entity:
       - sound: entity_player_attack_knockback
         sound_pitch: 1
         sound_volume: 0.4
         location: target
   parameters:
-    warmup: 3000
-    delay: 1000
-    interval: 0.2
-    radius: 5
+    multiply: 12(1+wandpower/200)
+    target_offset: 0,30,0
+    random_target_offset: 15,0,15
+    source_pitch: 180
     source_at_target: true
-    target_offset: 0,25,0
-    spread: 0.12
-    source_pitch: 90
-    source_yaw: 0
-    range: 64
-    velocity: 200
-    multiply: 320
+    velocity: 100
+    radius: 2
+    push: 0.4
+    direction: 0,0.2,0
+    target: block
+    target_self: true
     damage_type: magic
-    damage: attack_damage*0.8
-    target_type: Damageable
-    destructible: solid
-    destructible_durability: 10
-    break_durability: 2
     no_damage_ticks: 0
-    duration: 1000
-    undo: 5000
-    direction: 0,0,0
-    cooldown: 15000
+    damage: 8
+    warmup: 1000
+    range: 100
+    cooldown: 16000
   costs:
-    mana: 150
+    mana: 100

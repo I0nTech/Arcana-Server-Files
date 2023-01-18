@@ -1,6 +1,6 @@
 test3:
   name: Effect test 3
-  description: Projectile VFX
+  description: Self VFX
   icon: acacia_door{18001}
   actions:
     cast:

@@ -233,6 +233,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/white_dye": {
+    "criteria": {
+      "has_bone_meal": "2023-01-17 19:35:34 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/packed_ice": {
+    "criteria": {
+      "has_ice": "2023-01-17 18:10:38 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/spruce_boat": {
     "criteria": {
       "in_water": "2022-12-23 11:45:43 -0500"
@@ -260,6 +272,12 @@
   "minecraft:recipes/redstone/dispenser": {
     "criteria": {
       "has_bow": "2022-12-26 15:53:07 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_smelting_deepslate_gold_ore": {
+    "criteria": {
+      "has_deepslate_gold_ore": "2023-01-16 21:29:44 -0500"
     },
     "done": true
   },
@@ -609,6 +627,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2023-01-15 22:33:47 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "in_water": "2022-12-23 11:45:43 -0500"
@@ -713,11 +737,14 @@
       "minecraft:creeper": "2022-12-23 20:07:07 -0500",
       "minecraft:slime": "2023-01-14 19:10:57 -0500",
       "minecraft:phantom": "2022-12-24 23:20:04 -0500",
+      "minecraft:zombified_piglin": "2023-01-16 22:01:08 -0500",
+      "minecraft:witch": "2023-01-16 22:33:58 -0500",
       "minecraft:wither_skeleton": "2023-01-14 19:44:07 -0500",
       "minecraft:husk": "2022-12-23 12:59:04 -0500",
       "minecraft:stray": "2022-12-23 12:56:49 -0500",
       "minecraft:enderman": "2022-12-23 22:09:31 -0500",
       "minecraft:zombie": "2022-12-23 11:55:59 -0500",
+      "minecraft:drowned": "2023-01-17 15:49:37 -0500",
       "minecraft:zombie_villager": "2023-01-05 20:10:31 -0500"
     },
     "done": false
@@ -1274,6 +1301,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/gold_ingot_from_blasting_deepslate_gold_ore": {
+    "criteria": {
+      "has_deepslate_gold_ore": "2023-01-16 21:29:44 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_porkchop_from_smoking": {
     "criteria": {
       "has_porkchop": "2022-12-23 20:51:03 -0500"
@@ -1283,6 +1316,12 @@
   "minecraft:recipes/building_blocks/prismarine_bricks": {
     "criteria": {
       "has_prismarine_shard": "2022-12-23 11:44:21 -0500"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2023-01-15 22:33:47 -0500"
     },
     "done": true
   },
@@ -1610,6 +1649,12 @@
   "minecraft:recipes/food/cooked_mutton": {
     "criteria": {
       "has_mutton": "2022-12-23 21:13:12 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bone_block": {
+    "criteria": {
+      "has_bone_meal": "2023-01-17 19:35:34 -0500"
     },
     "done": true
   },

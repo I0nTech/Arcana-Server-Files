@@ -1,12 +1,13 @@
 mage:
   inherit: base
   spell_inventory: true
+# The default mage class. Please do not modify anything here.
   spells:
     - manashot
-  mana_max: mage_mana+100
-  mana_regeneration: mage_mana_regen+1
-  mana_max_boost: manaboost/100
-  mana_regeneration_boost: manaboost/100
+  mana_max: (mage_mana+100)*(1+manaboost/100)
+  mana_regeneration: (mage_mana_regen+5)*(1+manaregenboost/100)
+#  mana_max_boost: manaboost/100
+#  mana_regeneration_boost: manaregenboost/100
   entity_attributes:
     generic_max_health:
       value: vitality
@@ -36,4 +37,3 @@ mage:
       value: 0
       operation: add
 
-    # 1-1/(1+0.2*%mmoitems_stat_DEFENSE%)   [Defense Equation]

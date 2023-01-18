@@ -5449,6 +5449,7 @@ dragonfire:
     track_speed: 0.25
     use_target_location: false
 dragonwingblast:
+  inherit: false
   name: Winged Fury
   hidden: true
   actions:
@@ -5580,8 +5581,8 @@ dragonwingblast:
     effects_particles: false
     tick_size: 0.2
     target_count: 12
-    target_type: Player
-    damage: rand(4,8)
+    target_type: LivingEntity
+    damage: rand(8,16)
     target_breakables: 1
     ignore_blocks: false
     cooldown: 15000
@@ -5768,6 +5769,7 @@ dragonpoison:
     track_speed: 0.25
     use_target_location: false
 dragonlightning:
+  inherit: false
   name: Dragon Breath
   hidden: true
   actions:
@@ -5838,7 +5840,7 @@ dragonlightning:
     velocity: 45
     range: 78
     hitbox_size: 0.7
-    target_type: Player
+    target_type: LivingEntity
     damage: rand(6,10)
     target_breakables: 1
     cooldown: 4000
@@ -21085,48 +21087,45 @@ arcanebarrage:
     mana: 0
 arcanehail:
   name: Arcane Hail
-  description: Shower an area with falling arcane spears dealing 20x80% Attack Damage
-    per second for 4 seconds.
+  description: Summon arcane spears to fall from the sky, each dealing 8 Magic Damage
+    upon impact.
   category: arcane
   icon: arcanehail
   icon_disabled: arcanehail
   actions:
     cast:
-    - class: Delay
-      delay: $warmup
     - class: Multiply
       actions:
-      - class: Spread
+      - class: ChangeContext
         actions:
-        - class: ChangeContext
-          source_pitch: 90
+        - class: Delay
+          delay: rand(0,1500)
+        - class: CustomProjectile
+          hit_effects: none
+          tick_effects: none
+          miss_effects: none
+          velocity: 1000
+          range: 1000
           actions:
-          - class: Delay
-            delay: rand(0,16000)
           - class: PlayEffects
             effects: summon
-          - class: Delay
-            delay: $delay
-          - class: CustomProjectile
-            requires_target: true
-            ignore_hit_entities: true
+        - class: Delay
+          delay: $warmup
+        - class: CustomProjectile
+          actions:
+          - class: AreaOfEffect
             actions:
-            - class: BreakBlock
-            - class: AreaOfEffect
-              radius: 1
-              actions:
-              - class: Damage
-              - class: Velocity
-                direction: 0,0,0
+            - class: Velocity
+            - class: Damage
   effects:
-    cast:
+    summon:
     - class: EffectSingle
       location: target
       effectlib:
         class: Modified
-        duration: 3000
+        duration: $warmup
         parameters:
-          radius: (t/i) * 8 + 0.1
+          radius: (t/i) * 2 + 0.1
         effect:
           class: Vortex
           particle_count: 1
@@ -21138,34 +21137,13 @@ arcanehail:
           particle_data: 0
           pitch: 90
           offset: 0,0.2,0
-    summon:
-    - location: target
-      effectlib:
-        class: Modified
-        duration: 400
-        parameters:
-          radius: (t/i) * -2 + 1.5
-        effect:
-          class: Circle
-          particle_count: 1
-          whole_circle: true
-          orientPitch: true
-          x_rotation: 0
-          y_rotation: 0
-          z_rotation: 0
-          angular_velocity_x: 0
-          angular_velocity_y: 0
-          angular_velocity_z: 0
-          particle: crit_magic
-          update_locations: false
-          update_directions: false
-          orient: false
+    none: []
     tick:
     - location: target
       particle: spell_witch
       particle_offset: 0
       particle_count: 1
-    hit_block:
+    hit:
     - location: target
       particle: spell_witch
       speed: 1
@@ -21177,40 +21155,35 @@ arcanehail:
       sound_pitch: 1
       sound_volume: 0.4
       location: target
+    hit_entity:
     - sound: entity_player_attack_knockback
       sound_pitch: 1
       sound_volume: 0.4
       location: target
   parameters:
-    warmup: 3000
-    delay: 1000
-    interval: 0.2
-    radius: 5
+    multiply: 12(1+wandpower/200)
+    target_offset: 0,30,0
+    random_target_offset: 15,0,15
+    source_pitch: 180
     source_at_target: true
-    target_offset: 0,25,0
-    spread: 0.12
-    source_pitch: 90
-    source_yaw: 0
-    range: 64
-    velocity: 200
-    multiply: 320
+    velocity: 100
+    radius: 2
+    push: 0.4
+    direction: 0,0.2,0
+    target: block
+    target_self: true
     damage_type: magic
-    damage: attack_damage*0.8
-    target_type: Damageable
-    destructible: solid
-    destructible_durability: 10
-    break_durability: 2
     no_damage_ticks: 0
-    duration: 1000
-    undo: 5000
-    direction: 0,0,0
-    cooldown: 15000
+    damage: 8
+    warmup: 1000
+    range: 100
+    cooldown: 16000
   costs:
-    mana: 150
+    mana: 100
 arcanemeteor:
   name: Arcane Meteor
-  description: Call down a meteor of condensed mana from the skies dealing 12 Magic
-    Damage to enemies within the blast radius.
+  description: Call a mana fragment from the stars to strike the world, dealing 12
+    Magic Damage to enemies within the blast radius.
   icon: arcanemeteor
   icon_disabled: arcanemeteor
   category: arcane
@@ -21219,33 +21192,56 @@ arcanemeteor:
     - class: ChangeContext
       actions:
       - class: CustomProjectile
-        requires_target: true
+        hit_effects: none
+        tick_effects: none
+        miss_effects: none
+        velocity: 1000
+        range: 1000
+        reflect_count: 0
         actions:
-        - class: AreaOfEffect
+        - class: PlayEffects
+          effects: summon
+        - class: CustomProjectile
+          requires_target: true
           actions:
-          - class: Damage
-          - class: Velocity
-        - class: Sphere
-          actions:
-          - class: BreakBlock
-            ignore_result: true
+          - class: AreaOfEffect
+            actions:
+            - class: Damage
+            - class: Velocity
+          - class: Sphere
+            actions:
+            - class: BreakBlock
+              ignore_result: true
   effects:
-    cast:
+    summon:
     - location: target
       effectlib:
         class: Modified
-        duration: 1000
+        duration: 1400
         parameters:
-          radius: (t/i) * 3.5 + 0.5
+          radius: (t/i) * 4 + 0.1
         effect:
-          class: Warp
-          particles: 50
-          rings: 2
-          grow: 0.2
-          relative_offset: 0,0,0
+          class: Vortex
+          particle_count: 1
+          grow: 0
+          pitch: 90
+          offset: 0,0.2,0
           particle: crit_magic
-          update_directions: false
           update_locations: false
+          update_directions: false
+          particle_data: 0
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.1
+      sound_volume: 0.8
+      delay: 0
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.6
+      sound_volume: 0.4
+      delay: 100
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.2
+      sound_volume: 0.2
+      delay: 200
     tick:
     - location: target
       particle: dust_color_transition
@@ -21308,7 +21304,7 @@ arcanemeteor:
     speed: 1
     radius: 4
     range: 64
-    velocity: 40
+    velocity: 30
     target: other
     falling: true
     y_offset: 1
@@ -21320,8 +21316,8 @@ arcanemeteor:
     mana: 125
 arcanemissiles:
   name: Arcane Missiles
-  description: Channel for 0.8 Seconds, then launch a swarm of seeking arcane missiles
-    dealing 9x25% Attack Damage.
+  description: Channel, then launch a swarm of seeking arcane missiles, each dealing
+    3 Magic Damage. Number of missiles scales with Wand Power.
   category: arcane
   icon: arcanemissiles
   icon_disabled: arcanemissiles
@@ -21333,55 +21329,53 @@ arcanemissiles:
       - class: Cast
         spell: channel
         spell_parameters:
-          warmup: 800
+          warmup: $warmup
     - class: Delay
-    - class: Multiply
+      delay: $warmup
+    - class: Retarget
+    - class: CustomProjectile
+      track_target: false
+      ignore_blocks: true
+      hitbox: true
+      hitbox_size: 4
+      target: other
+      range: 30
+      velocity: 1000
+      tick_effects: tick2
+      hit_effects: tick2
       actions:
-      - class: Delay
-        delay: rand(0,400)
-      - class: PlayEffects
-        effects: fire
-      - class: CustomProjectile
+      - class: Message
+        message: lock_on
+        message_type: action_bar
+        message_target: true
+      - class: Multiply
+        multiply: 6*(1+$wandpower/200)
         actions:
-        - class: Damage
-        - class: Velocity
-        - class: BreakBlock
+        - class: Delay
+          delay: rand(0,800)
+        - class: PlayEffects
+          effects: fire
+        - class: ChangeContext
+          source_location: body
+          source_pitch_offset: 45
+          source_pitch_min: 90
+          source_pitch_max: 45
+          actions:
+          - class: Spread
+            pitch_max: 30
+            yaw_max: 60
+            outer_probability: 100
+            actions:
+            - class: CustomProjectile
+              reverse: true
+              range: 1000
+              actions:
+              - class: PlayEffects
+                effects: summon
+              - class: Damage
+                no_damage_ticks: 0
+                damage: 3
   effects:
-    summon:
-    - location: origin
-      effectlib:
-        class: Modified
-        duration: $delay
-        parameters:
-          radius: (t/i) * -2 + 1.5
-        effect:
-          class: Circle
-          particle_count: 1
-          pitch_offset: 90
-          whole_circle: true
-          orientPitch: true
-          x_rotation: 0
-          y_rotation: 0
-          z_rotation: 0
-          angular_velocity_x: 0
-          angular_velocity_y: 0
-          angular_velocity_z: 0
-          particle: crit_magic
-          update_locations: false
-          update_directions: false
-          orient: false
-    - sound: entity_illusioner_cast_spell
-      sound_pitch: 0.1
-      sound_volume: 0.8
-      delay: 0
-    - sound: entity_illusioner_cast_spell
-      sound_pitch: 0.6
-      sound_volume: 0.4
-      delay: 100
-    - sound: entity_illusioner_cast_spell
-      sound_pitch: 1.2
-      sound_volume: 0.2
-      delay: 200
     fire:
     - sound: item_trident_return
       sound_pitch: -1
@@ -21392,7 +21386,11 @@ arcanemissiles:
       particle: spell_witch
       particle_offset: 0
       particle_count: 1
-    hit_block:
+    tick2:
+    - particle: redstone
+      location: target
+      particle_offset: 0
+    hit:
     - location: target
       particle: spell_witch
       speed: 1
@@ -21405,49 +21403,21 @@ arcanemissiles:
       sound_volume: 0.4
       location: target
     hit_entity:
-    - class: EffectSingle
-      location: target
-      particle: dust_color_transition
-      to_color: '#73FBD3'
-      particle_count: 6
-      particle_offset: 0.3
-      particle_size: 0.4
     - sound: entity_player_attack_knockback
       sound_pitch: 1
       sound_volume: 0.4
       location: target
   parameters:
-    warmup: 800
-    multiply: 9
-    velocity: 20
-    range: 96
-    lifetime: 3000
-    spread: 0.6
-    target_type: Damageable
-    damage_type: magic
-    damage: $attack_damage*0.25
-    no_damage_ticks: 0
-    fov: 0.2
+    warmup: 1000
+    velocity: 40
+    range: 48
+    target_type: LivingEntity
+    damage: rand(6,10)
+    track_target: true
+    lifetime: 2000
+    track_speed: 0.25
     use_target_location: false
-    undo: 5000
-    cooldown: 12000
-    plan:
-    - time: 100
-      track_target: true
-      track_speed: 0.05
-      velocity: 80
-    - time: 200
-      track_target: true
-      track_speed: 0.1
-      velocity: 70
-    - time: 300
-      track_target: true
-      track_speed: 0.2
-      velocity: 60
-    - time: 400
-      track_target: true
-      track_speed: 0.3
-      velocity: 50
+    cooldown: 8000
   costs:
     mana: 80
 arrowstorm:
@@ -21994,7 +21964,7 @@ castshield:
 channel:
   name: Channelling
   description: You shouldn't see this...
-  icon: ender_eye{18001}
+  icon: tnt{18003}
   actions:
     cast:
     - class: ChangeContext
@@ -22008,10 +21978,19 @@ channel:
         interval: 1
         duration: $warmup
         actions:
+        - class: ModifyVariable
+          variable: power
+          value: power+1
+        - class: BossBar
         - class: Modifier
         - class: ModifyVariable
           variable: health_change
           value: health - cast_health
+        - class: CheckRequirements
+          requirements:
+          - wand_tags: wand
+          fail:
+          - class: Undo
         - class: CheckRequirements
           requirements:
           - variables:
@@ -22022,6 +22001,9 @@ channel:
         - class: CheckTrigger
           trigger: left_click
           actions:
+          - class: PlayEffects
+            effects: inturrupt
+          - class: ModifyMana
           - class: Undo
   effects:
     cast:
@@ -22098,8 +22080,23 @@ channel:
     - sound: entity_illusioner_cast_spell
       sound_pitch: 1.2
       delay: 200
+    inturrupt:
+    - location: origin
+      source_location: body
+      particle: glow
+      particle_count: 6
+      particle_offset_x: 0.3
+      particle_offset_z: 0.3
+      particle_offset_y: 0.6
+      particle_data: 0.3
   parameters:
     warmup: $warmup
+    bar_style: solid
+    bar_color: blue
+    bar_title: '&fChannelling Spell...'
+    bar_progress: $power/($warmup/50)
+    bar_interval: 1
+    mana: 25
     target: self
     add_modifiers:
     - channelling
@@ -28099,7 +28096,7 @@ magictrident:
     mana: 200
 manabeam:
   name: Mana Beam
-  description: Anchor, then fire a powerful, long-range beam of mana dealing 12 Magic
+  description: Channel, then fire a powerful, long-range beam of mana dealing 12 Magic
     Damage. Deals Critical Damage on Headshots.
   icon: manabeam
   icon_disabled: manabeam
@@ -28111,9 +28108,9 @@ manabeam:
       target_caster: true
       actions:
       - class: Cast
-        spell: anchor
+        spell: channel
         spell_parameters:
-          warmup: 1500
+          warmup: $warmup
     - class: Delay
     - class: Retarget
     - class: PlayEffects
@@ -28166,10 +28163,12 @@ manabeam:
       color_override: color
       effectlib:
         class: ConeEffect
-        iterations: 12
+        iterations: 6
+        particle_size: 0.8
         particle: dust_color_transition
         to_color: '#73FBD3'
         lengthGrow: 0.05
+        radius_grow: 0.01
         update_directions: false
         update_locations: false
     hit:
@@ -28217,7 +28216,7 @@ manabeam:
       sound: entity_player_attack_crit
       sound_pitch: 0.8
   parameters:
-    warmup: 1500
+    warmup: 2000
     hitbox: true
     hitbox_size: 0.3
     tick_size: 2
@@ -28238,7 +28237,7 @@ manabeam:
     mana: 100
 manablast:
   name: Mana Blast
-  description: Channel, then fire a volitile overcharged mana bolt dealing 10 Magic
+  description: Channel, then fire a volitile overcharged mana bolt dealing 12 Magic
     Damage in an area upon impact.
   category: arcane
   icon: manablast
@@ -28252,7 +28251,7 @@ manablast:
       - class: Cast
         spell: channel
         spell_parameters:
-          warmup: 800
+          warmup: $warmup
     - class: Delay
     - class: Retarget
     - class: PlayEffects
@@ -28324,7 +28323,7 @@ manablast:
       location: target
       sound_pitch: 4
   parameters:
-    warmup: 800
+    warmup: 1200
     range: 48
     velocity: 60
     gravity: 0.025
@@ -28332,14 +28331,14 @@ manablast:
     hitbox: true
     hitbox_size: 0.5
     damage_type: magic
-    damage: 10
+    damage: 12
     falling: true
     target_self_timeout: 300
     target: none
     radius: 2.5
     target_type: Damageable
+    direction: 0,0.4,0
     push: 1
-    direction: 0,0.2,0
     durability_max_distance: 3
     damage_max_distance: 4
     damage_min_distance: 1.5
@@ -28688,6 +28687,57 @@ marktarget:
     cooldown: 30000
   costs:
     mana: 90
+meditate:
+  name: Meditate
+  description: Channel, then increase your Mana Capacity and Recharge by 30% for the
+    next 20 seconds.
+  icon: levitate
+  icon_disabled: levitate
+  actions:
+    cast:
+    - class: ChangeContext
+      target_self: true
+      target_caster: true
+      actions:
+      - class: Cast
+        spell: channel
+        spell_parameters:
+          warmup: $warmup
+    - class: Delay
+    - class: PlayEffects
+      effects: meditate
+    - class: Modifier
+      add_modifiers:
+      - meditate
+      remove_on_finish: true
+    - class: Delay
+      delay: $duration
+  effects:
+    meditate:
+    - location: origin
+      source_location: body
+      effectlib:
+        class: Trace
+        duration: $duration
+        max_way_points: 2
+        particle: glow
+        particle_count: 2
+        particle_offset_x: 0.3
+        particle_offset_z: 0.3
+        particle_offset_y: 0.6
+        particle_data: 0.15
+  parameters:
+    warmup: 3000
+    target: self
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true
+    duration: 20000
+    cooldown: 48000
+  costs:
+    mana: 25
 mendwounds:
   name: Mend Wounds
   icon: potion:#FF0000{1}
@@ -33278,7 +33328,7 @@ test2:
           rotation: 90,0,0
 test3:
   name: Effect test 3
-  description: Projectile VFX
+  description: Self VFX
   icon: acacia_door{18001}
   actions:
     cast:
@@ -33318,6 +33368,37 @@ test3:
   parameters:
     target: self
     warmup: $warmup
+test4:
+  name: Projectile VFX
+  description: Spiral
+  icon: stick
+  actions:
+    cast:
+    - class: EntityProjectile
+      type: arrow
+  effects:
+    tick:
+    - location: target
+      particle: spell_witch
+      particle_count: 1
+      particle_offset: 0
+    projectile:
+    - location: origin
+      effectlib:
+        class: EquationEffect
+        xEquation: '0'
+        yEquation: 0.5sin(0.3141 * 2t)
+        zEquation: 0.5cos(0.3141 * 2t)
+        duration: 10000
+        particles: 2
+        particle: dust_color_transition
+        particle_size: 1
+        color: '#73FBD3'
+        to_color: '#6C2DC7'
+        cycle: true
+  parameters:
+    velocity: 30
+    range: 32
 testmenu:
   parameters:
     auto_close: true

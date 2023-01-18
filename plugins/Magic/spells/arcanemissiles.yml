@@ -1,6 +1,6 @@
 arcanemissiles:
   name: Arcane Missiles
-  description: Channel for 0.8 Seconds, then launch a swarm of seeking arcane missiles dealing 9x25% Attack Damage.
+  description: Channel, then launch a swarm of seeking arcane missiles, each dealing 3 Magic Damage. Number of missiles scales with Wand Power.
   category: arcane
   icon: arcanemissiles
   icon_disabled: arcanemissiles
@@ -9,58 +9,57 @@ arcanemissiles:
     - class: ChangeContext
       target_caster: true
       actions:
-      - class: Cast
-        spell: channel
-        spell_parameters:
-          warmup: 800
+        - class: Cast
+          spell: channel
+          spell_parameters:
+            warmup: $warmup
     - class: Delay
-    - class: Multiply
+      delay: $warmup
+    - class: Retarget
+    - class: CustomProjectile
+      track_target: false
+      ignore_blocks: true
+      hitbox: true
+      hitbox_size: 4
+      target: other
+      range: 30
+      velocity: 1000
+      tick_effects: tick2
+      hit_effects: tick2
+#      requires_entity_target: true
       actions:
+      - class: Message
+        message: lock_on
+        message_type: action_bar
+        message_target: true
+      - class: Multiply
+        multiply: 6*(1+$wandpower/200)
+        actions:
         - class: Delay
-          delay: rand(0,400)
+          delay: rand(0,800)
         - class: PlayEffects
           effects: fire
-        - class: CustomProjectile
+        - class: ChangeContext
+          source_location: body
+          source_pitch_offset: 45
+          source_pitch_min: 90
+          source_pitch_max: 45
           actions:
-            - class: Damage
-            - class: Velocity
-            - class: BreakBlock
+          - class: Spread
+            pitch_max: 30
+            yaw_max: 60
+            outer_probability: 100
+            actions:
+            - class: CustomProjectile
+              reverse: true
+              range: 1000
+              actions:
+                - class: PlayEffects
+                  effects: summon
+                - class: Damage
+                  no_damage_ticks: 0
+                  damage: 3
   effects:
-    summon:
-      - location: origin
-        effectlib:
-           class: Modified
-           duration: $delay
-           parameters:
-             radius: "(t/i) * -2 + 1.5"
-           effect:
-             class: Circle
-             particle_count: 1
-             pitch_offset: 90
-             whole_circle: true
-             orientPitch: true
-             x_rotation: 0
-             y_rotation: 0
-             z_rotation: 0
-             angular_velocity_x: 0
-             angular_velocity_y: 0
-             angular_velocity_z: 0
-             particle: crit_magic
-             update_locations: false
-             update_directions: false
-             orient: false
-      - sound: entity_illusioner_cast_spell
-        sound_pitch: 0.1
-        sound_volume: 0.8
-        delay: 0
-      - sound: entity_illusioner_cast_spell
-        sound_pitch: 0.6
-        sound_volume: 0.4
-        delay: 100
-      - sound: entity_illusioner_cast_spell
-        sound_pitch: 1.2
-        sound_volume: 0.2
-        delay: 200
     fire:
       - sound: item_trident_return
         sound_pitch: -1
@@ -71,7 +70,11 @@ arcanemissiles:
         particle: spell_witch
         particle_offset: 0
         particle_count: 1
-    hit_block:
+    tick2:
+      - particle: redstone
+        location: target
+        particle_offset: 0
+    hit:
       - location: target
         particle: spell_witch
         speed: 1
@@ -84,49 +87,22 @@ arcanemissiles:
         sound_volume: 0.4
         location: target
     hit_entity:
-      - class: EffectSingle
-        location: target
-        particle: dust_color_transition
-        to_color: "#73FBD3"
-        particle_count: 6
-        particle_offset: 0.3
-        particle_size: 0.4
       - sound: entity_player_attack_knockback
         sound_pitch: 1
         sound_volume: 0.4
         location: target
   parameters:
-    warmup: 800
-    multiply: 9
-    velocity: 20
-    range: 96
-    lifetime: 3000
-    spread: 0.6
-    target_type: Damageable
-    damage_type: magic
-    damage: $attack_damage*0.25
-    no_damage_ticks: 0
-    fov: 0.2
+#    fov: 45
+    warmup: 1000
+    velocity: 40
+    range: 48
+    target_type: LivingEntity
+    damage: rand(6,10)
+    track_target: true
+    lifetime: 2000
+    track_speed: 0.25
     use_target_location: false
-    undo: 5000
-    cooldown: 12000
-    plan:
-    - time: 100
-      track_target: true
-      track_speed: 0.05
-      velocity: 80
-    - time: 200
-      track_target: true
-      track_speed: 0.1
-      velocity: 70
-    - time: 300
-      track_target: true
-      track_speed: 0.2
-      velocity: 60
-    - time: 400
-      track_target: true
-      track_speed: 0.3
-      velocity: 50
+    cooldown: 8000
   costs:
     mana: 80
-  
+

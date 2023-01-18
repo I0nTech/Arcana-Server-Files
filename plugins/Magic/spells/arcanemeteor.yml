@@ -1,6 +1,6 @@
 arcanemeteor:
     name: Arcane Meteor
-    description: Call down a meteor of condensed mana from the skies dealing 12 Magic Damage to enemies within the blast radius.
+    description: Call a mana fragment from the stars to strike the world, dealing 12 Magic Damage to enemies within the blast radius.
     icon: arcanemeteor
     icon_disabled: arcanemeteor
     category: arcane
@@ -8,6 +8,16 @@ arcanemeteor:
         cast:
         - class: ChangeContext
           actions:
+          - class: CustomProjectile
+            hit_effects: none
+            tick_effects: none
+            miss_effects: none
+            velocity: 1000
+            range: 1000
+            reflect_count: 0
+            actions:
+            - class: PlayEffects
+              effects: summon
             - class: CustomProjectile
               requires_target: true
               actions:
@@ -20,22 +30,36 @@ arcanemeteor:
                 - class: BreakBlock
                   ignore_result: true
     effects:
-      cast:
-        - location: target
-          effectlib:
-            class: Modified
-            duration: 1000
-            parameters:
-              radius: '(t/i) * 3.5 + 0.5'
-            effect:
-              class: Warp
-              particles: 50
-              rings: 2
-              grow: 0.2
-              relative_offset: 0,0,0
-              particle: crit_magic
-              update_directions: false
-              update_locations: false
+      summon:
+      - location: target
+        effectlib:
+           class: Modified
+           duration: 1400
+           parameters:
+             radius: "(t/i) * 4 + 0.1"
+           effect:
+             class: Vortex
+             particle_count: 1
+             grow: 0
+             pitch: 90
+             offset: 0,0.2,0
+             particle: crit_magic
+             update_locations: false
+             update_directions: false
+             particle_data: 0
+      - sound: entity_illusioner_cast_spell
+        sound_pitch: 0.1
+        sound_volume: 0.8
+        delay: 0
+      - sound: entity_illusioner_cast_spell
+        sound_pitch: 0.6
+        sound_volume: 0.4
+        delay: 100
+      - sound: entity_illusioner_cast_spell
+        sound_pitch: 1.2
+        sound_volume: 0.2
+        delay: 200
+      none:
       tick:
       - location: target
         particle: dust_color_transition
@@ -98,7 +122,7 @@ arcanemeteor:
         speed: 1
         radius: 4
         range: 64
-        velocity: 40
+        velocity: 30
         target: other
         falling: true
         y_offset: 1

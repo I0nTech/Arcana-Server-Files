@@ -1,0 +1,31 @@
+test4:
+  name: Projectile VFX
+  description: Spiral
+  icon: stick
+  actions:
+    cast:
+    - class: EntityProjectile
+      type: arrow
+  effects:
+    tick:
+      - location: target
+        particle: spell_witch
+        particle_count: 1
+        particle_offset: 0
+    projectile:
+      - location: origin
+        effectlib:
+          class: EquationEffect
+          xEquation: "0"
+          yEquation: "0.5sin(0.3141 * 2t)"
+          zEquation: "0.5cos(0.3141 * 2t)"
+          duration: 10000
+          particles: 2
+          particle: dust_color_transition
+          particle_size: 1
+          color: "#73FBD3"
+          to_color: "#6C2DC7"
+          cycle: true
+  parameters:
+    velocity: 30
+    range: 32

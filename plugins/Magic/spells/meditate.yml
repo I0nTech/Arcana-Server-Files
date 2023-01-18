@@ -1,0 +1,50 @@
+meditate:
+  name: Meditate
+  description: Channel, then increase your Mana Capacity and Recharge by 30% for the next 20 seconds.
+  icon: levitate
+  icon_disabled: levitate
+  actions:
+    cast:
+      - class: ChangeContext
+        target_self: true
+        target_caster: true
+        actions:
+        - class: Cast
+          spell: channel
+          spell_parameters:
+            warmup: $warmup
+      - class: Delay
+      - class: PlayEffects
+        effects: meditate
+      - class: Modifier
+        add_modifiers:
+          - meditate
+        remove_on_finish: true
+      - class: Delay
+        delay: $duration
+  effects:
+    meditate:
+      - location: origin
+        source_location: body
+        effectlib:
+          class: Trace
+          duration: $duration
+          max_way_points: 2
+          particle: glow
+          particle_count: 2
+          particle_offset_x: 0.3
+          particle_offset_z: 0.3
+          particle_offset_y: 0.6
+          particle_data: 0.15
+  parameters:
+    warmup: 3000
+    target: self
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true
+    duration: 20000
+    cooldown: 48000
+  costs:
+    mana: 25

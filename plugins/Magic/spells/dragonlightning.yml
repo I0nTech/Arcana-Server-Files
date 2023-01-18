@@ -1,0 +1,84 @@
+dragonlightning:
+    # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+    inherit: false
+    name: Dragon Breath
+    hidden: true
+    actions:
+        cast:
+        - class: CustomProjectile
+          hitbox: true
+          actions:
+          - class: Damage
+          - class: PotionEffect
+            duration: 10000
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_ender_dragon_ambient
+           sound_pitch: 2
+           sound_volume: 5
+           location: origin
+           color_override: color
+           effectlib:
+             class: ConeEffect
+             iterations: 15
+             particle: sweep_attack
+             lengthGrow: 0.1
+             radiusGrow: 0.05
+             updateLocations: false
+             updateDirections: false
+        -  class: EffectSingle
+           requires_entity_target: true
+           sound: entity_ender_dragon_shoot
+           location: target
+           color_override: color
+           effectlib:
+             class: SphereEffect
+             iterations: 200
+             particle: crit_magic
+             radius: 0.1
+             particles: 3
+             offset: 0,-0.5,0
+        tick:
+        - particle: crit
+          location: target
+        - particle: crit_magic
+          color: false
+          particle_count: 10
+          particle_offset_x: 0.3
+          particle_offset_y: 0.3
+          particle_offset_z: 0.3
+          location: target
+        projectile:
+        - class: EffectSingle
+          effectlib:
+             class: SphereEffect
+             particle: end_rod
+             iterations: 100
+             radius: 0.4
+             particles: 15
+        hit:
+        -  class: EffectSingle
+           sound: block_fire_extinguish
+           location: target
+           color2: fc3903
+           firework: burst
+        -  location: target
+           particle: explosion_large
+    parameters:
+        fov: 90
+        hitbox: false
+        velocity: 45
+        range: 78
+        hitbox_size: 0.7
+        target_type: LivingEntity
+        damage: rand(6,10)
+        target_breakables: 1
+        cooldown: 4000
+        potion_effects:
+          confusion: 2
+        track_target: true
+        lifetime: 15000
+        target_self_timeout: 8000
+        track_speed: 0.25
+        use_target_location: false
