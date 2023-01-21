@@ -1,20 +1,22 @@
 testboss:
   inherit: basemob
-  type: vindicator
-  chestplate: netherite_chestplate
-  leggings: netherite_leggings
-  helmet: netherite_helmet
-  boots: netherite_boots
+  type: husk
+  chestplate: diamond_chestplate
+  leggings: diamond_leggings
+  helmet: diamond_helmet
+  boots: diamond_boots
   item: netherite_axe
-  offhand: shield
+  offhand: basic_wand
   disguise:
     type: player
     glowing: true
     skin: IonTech
   name: '&f&l[LVL ??] &r&2The Destroyer'
-  health: 200
-  interval: 500
+  health: 100
+  interval: 3000
   track_radius: 64
+  face_player: true
+  persist: true
   color: "#48d1cc"
   boss_bar:
     bar_color: red
@@ -29,19 +31,21 @@ testboss:
         frostlance: 100
     damage:
       cast:
-        mobrelocate: 30
-        evade: 20
-        fling: 10
+        mobrelocate: 10
+        evade: 30
         siphon|3: 20
     death:
       cast:
       - grant sp 100 money 420
     interval:
       cast:
-        current|5: 20
-        scattershot|3: 10
-        mobbarrage: 20
-        cluster|3: 20
-        mobchase: 10
-        arcanemeteor: 10
-        dive: 10
+        burstshot: 5
+        scattershot: 5
+        meditate: 5
+        manablast: 10
+        focusbolt: 20
+        manabeam: 5
+        triplebolt: 20
+        arcanehail: 5
+        arcanebarrage: 5
+        arcanemissiles: 10

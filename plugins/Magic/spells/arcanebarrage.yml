@@ -1,6 +1,6 @@
 arcanebarrage:
   name: Arcane Barrage
-  description: Launch a precision barrage of arcane spears dealing 20x80% Attack Damage.
+  description: "Launch a continuous barrage of Arcane Spears at a targeted entity or location. Number of spears launched scales with Wand Power."
   category: arcane
   icon: arcanebarrage
   icon_disabled: arcanebarrage
@@ -9,43 +9,62 @@ arcanebarrage:
     - class: CustomProjectile
       ignore_hit_entities: true
       hit_on_miss: true
-      target: block
-      range: 30
+      target: other
+      range: 50
       velocity: 1000
-      tick_effects: tick2
+      tick_effects: test
+      hitbox: true
+      hitbox_size: 3
       actions:
-        - class: ChangeContext
-          source_location: hit
+        - class: Interval
+          duration: 10000
+          interval: 125/(1+$wandpower/100)
           actions:
-            - class: Multiply
-              multiply: 40
+          - class: Asynchronous
+            actions:
+            - class: ChangeContext
+              source_at_target: true
+              target_entity: true
+              target_offset: 0,1,0
               actions:
-                  - class: CustomProjectile
-                    ignore_blocks: true
-                    ignore_hit_entities: true
-                    hit_on_miss: true
-                    target: block
-                    spread: 180
-                    range: 30
-                    velocity: 1000
-                    tick_effects: tick2
-                    actions:
+              - class: PlayEffects
+                effects: test
+              - class: Retarget
+              - class: CustomProjectile
+                ignore_hit_entities: true
+               #hit_on_miss: true
+                target: block
+                spread: 180
+                range: rand(12,18)
+                velocity: 1000
+                tick_effects: none
+                hit_effects: none
+                miss:
                       - class: ChangeContext
                         source_location: hit
-                        random_target_offset: 3,3,3
+                        target_self: true
+                        random_target_offset: 2,2,2
                         actions:
                           - class: Delay
-                            delay: rand(0,1000)
+                            delay: rand(0,2000)
                           - class: PlayEffects
                             effects: summon
                           - class: Delay
                             delay: $delay
                           - class: CustomProjectile
                             tick_effects: tick
-                            velocity: 80
-                            range: 100
+                            velocity: 200
+                            range: 48
                             reverse: true
-
+                            hitbox: true
+                            hitbox_size: 1
+                            actions:
+                                  - class: Damage
+                                    damage: 4
+                                    no_damage_ticks: 0
+                                  - class: Velocity
+                                    push: 0.8
+                                    direction: 0,0.2,0
 
   effects:
     summon:
@@ -68,26 +87,35 @@ arcanebarrage:
         sound_pitch: 0.1
         sound_volume: 0.8
         delay: 0
+        location: both
       - sound: entity_illusioner_cast_spell
         sound_pitch: 0.6
         sound_volume: 0.4
         delay: 100
+        location: both
       - sound: entity_illusioner_cast_spell
         sound_pitch: 1.2
         sound_volume: 0.2
         delay: 200
+        location: both
     fire:
       - sound: item_trident_return
         sound_pitch: -1
         sound_volume: 0.5
         color_override: color
+    test:
+      - location: target
+        particle: redstone
+        target_location: body
+        particle_count: 4
+        particle_offset: 0.8
     tick:
       - location: target
         particle: spell_witch
         particle_offset: 0
         particle_count: 1
-    tick2:
-    hit_block:
+    none:
+    hit:
       - location: target
         particle: spell_witch
         speed: 1
@@ -103,9 +131,10 @@ arcanebarrage:
       - sound: entity_player_attack_knockback
         sound_pitch: 1
         sound_volume: 0.4
-        location: target
+        location: both
   parameters:
     delay: 1000
-    range: 10
+    range: 48
+    target_type: Damageable
   costs:
     mana: 0

@@ -325,6 +325,7 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
+      "cooked_beef": "2023-01-20 22:19:57 -0500",
       "beef": "2022-12-23 18:17:36 -0500",
       "porkchop": "2022-12-25 12:54:57 -0500",
       "mutton": "2023-01-03 17:22:02 -0500",

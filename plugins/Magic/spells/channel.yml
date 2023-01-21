@@ -23,11 +23,11 @@ channel:
             - class: ModifyVariable
               variable: health_change
               value: health - cast_health
-            - class: CheckRequirements
-              requirements:
-               - wand_tags: wand
-              fail:
-               - class: Undo
+#            - class: CheckRequirements
+#              requirements:
+#               - wand_tags: wand
+#              fail:
+#               - class: Undo
             - class: CheckRequirements
               requirements:
               - variables:
@@ -38,6 +38,7 @@ channel:
             - class: CheckTrigger
               trigger: left_click
               actions:
+                - class: Retarget
                 - class: PlayEffects
                   effects: inturrupt
                 - class: ModifyMana
@@ -120,14 +121,14 @@ channel:
         sound_pitch: 1.2
         delay: 200
     inturrupt:
-      - location: origin
+      - location: target
         source_location: body
         particle: glow
-        particle_count: 6
+        particle_count: 12
         particle_offset_x: 0.3
         particle_offset_z: 0.3
         particle_offset_y: 0.6
-        particle_data: 0.3
+        particle_data: 0.6
   parameters:
    warmup: $warmup
    bar_style: solid
@@ -140,4 +141,6 @@ channel:
    add_modifiers:
     - channelling
    remove_on_finish: true
+   cancel_on_death: true
+   cancel_on_world_change: true
    cancel: true

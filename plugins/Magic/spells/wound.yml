@@ -34,7 +34,7 @@ wound:
            sound_volume: 1.2
            effectlib:
              class: Equation
-             iterations: 20
+             iterations: 1
              particle: drip_lava
              particle_count: 1
              particle_offset_x: 0
@@ -45,18 +45,6 @@ wound:
              zEquation: "-t/20 + 0.5"
              updateLocations: false
              updateDirections: false
-        -  location: target
-           requires_entity_target: true
-           use_hit_location: false
-           use_wand_location: false
-           target_offset: 0,-1.3,0
-           effectlib:
-             class: AnimatedBall
-             duration: 2000
-             particle: item_crack
-             material: redstone
-             particles: 4
-             size: 0.3
         -  requires_no_entity_target: true
            sound: entity_player_attack_nodamage
            sound_pitch: 0.6
@@ -67,7 +55,7 @@ wound:
            effectlib:
              class: Equation
              iterations: 3
-             particles: 4
+             particles: 1
              particle: block_crack
              xEquation: "1.2"
              yEquation: "-t/20 + 0.5"
@@ -78,7 +66,7 @@ wound:
            effectlib:
              class: Equation
              iterations: 10
-             particles: 4
+             particles: 1
              period: 1
              particle: fireworks_spark
              xEquation: "1.2"

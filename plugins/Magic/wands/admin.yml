@@ -1,0 +1,13 @@
+admin:
+  class: mage
+  inherit: base_wand
+  name: "&#ccccccAdmin's Staff"
+  renamable: true
+  description: '&8Bursting with power.'
+  effect_color: "#ff0000"
+  icon: 'stick{4}'
+  attributes:
+    mage_mana: 1000
+    mage_mana_regen: 100
+    cooldownreduction: 100
+    wandpower: 50

@@ -1,6 +1,6 @@
 meditate:
   name: Meditate
-  description: Channel, then increase your Mana Capacity and Recharge by 30% for the next 20 seconds.
+  description: Channel, increasing your Mana Recharge by 30% for the next 20 seconds.
   icon: levitate
   icon_disabled: levitate
   actions:

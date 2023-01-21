@@ -1,0 +1,47 @@
+test5:
+  description: Damage Your Target
+  icon: stick
+  cast_on_no_target: false
+  actions:
+    cast:
+    - class: CheckEntity
+      actions: 
+      - class: Damage
+      - class: PlayEffects
+      ignore_result: false
+  effects:
+    cast:
+    - location: target
+      target_location: body
+      effectlib:
+        class: Star
+        particle: redstone
+        color: "800080"
+        iterations: 1
+        particles: 20
+        inner_radius: 0.1
+        spike_height: 4
+    hit: 
+    - location: target
+      target_location: body
+      particle: crit
+      particles: 30
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+      iterations: 1
+    - class: EffectSingle
+      sound: magic.zap
+      sound_pitch: 4
+      sound_volume: 0.5
+      location: target
+  parameters:
+    range: 30
+    damage: 2
+    target: other_entity
+    target_type: Damageable
+    cooldown: 500
+    knockback_resistance: 1
+    hitbox_size: 0.5
+  costs: 
+    mana: 50

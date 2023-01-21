@@ -1,13 +1,11 @@
 electrosurge:
   # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
   inherit: false
-  name: Surge
+  name: Arc Surge
   description: Cascade of stunning lightning bolts
   icon: end_crystal
   icon_disabled: end_crystal
   category: lightning
-  upgrade_required_casts: 1500
-  worth: 7000
   actions:
     cast:
     - class: Multiply
@@ -28,35 +26,24 @@ electrosurge:
       location: origin
     tick:
     - location: target
-      particle: dust_color_transition
+      particle: electric_spark
       particle_count: 1
       particle_offset: 0
-      particle_size: 0.35
+      particle_data: 0.05
       color: '#ffff00'
       to_color: color
     hit:
     - sound: entity_guardian_attack
+      location: both
       sound_pitch: 1.5
       sound_volume: 0.2
-    hit_entity:
-    - class: EffectSingle
-      sound: block_lava_extinguish
-      sound_volume: 0.2
-      sound_pitch: -5
-      location: target
+    - location: target
       particle: electric_spark
       particle_count: 3
-      particle_offset: 0.01
-      particle_data: 0.2
-    hit_block:
-    - class: EffectSingle
-      location: target
-      particle: electric_spark
-      particle_count: 2
-      particle_offset: 0.2
-      particle_data: 0.2
+      particle_offset: 0
+      particle_data: 0.6
   parameters:
-    tick_size: 0.15
+    tick_size: 0.2
     target: other
     delay: rand(0,400)
     source_location: cast
@@ -65,8 +52,7 @@ electrosurge:
     range: rand(24,32)
     target_type: Damageable
     damage_type: lightning
-    entity_damage: 4
-    player_damage: 2
+    damage: 2
     potion_effects:
       slow: 4
       slow_digging: 4
@@ -75,40 +61,13 @@ electrosurge:
     effects_particles: false
     multiply: 14
     hit_count: 2
-    track_target: true
-    use_target_location: false
-    track_speed: 0.6
     update_launch_location: false
     velocity_transform:
       x: 100
-      y: rand(-15,15)
-      z: rand(-15,15)
+      y: rand(-25,25)
+      z: rand(-25,25)
     cooldown: 12000
     no_damage_ticks: 0
   costs:
     mana: 100
-
-electrosurge|2:
-  upgrade_required_casts: 2500
-  parameters:
-    range: rand(32,40)
-    entity_damage: 3.5
-    player_damage: 1.75
-    duration: 1750
-    multiply: 16
-    hit_count: 3
-  costs:
-    mana: 125
-
-
-electrosurge|3:
-  parameters:
-    range: rand(40,48)
-    entity_damage: 4
-    player_damage: 2
-    duration: 2000
-    multiply: 18
-    hit_count: 4
-  costs:
-    mana: 150
 

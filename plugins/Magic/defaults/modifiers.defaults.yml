@@ -54,7 +54,6 @@ channelling:
 meditate:
   stack: true
   attributes:
-    manaboost: 30
     manaregenboost: 30
 boost:
   potion_effects:

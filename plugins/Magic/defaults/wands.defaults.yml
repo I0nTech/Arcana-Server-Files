@@ -150,34 +150,18 @@ testwand:
   creator_id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
   creator: IonTech
 admin:
-  inherit: staff
-  legacy_icon: wand_icon:6
-  icon: stick{CustomModelData:18006}
-  migrate_icon: monster_eggs:2
-  cost_reduction: 2
-  cooldown_reduction: 1
-  protected: true
-  effect_color: '888888'
-  effect_bubbles: true
-  active_spell: levitate
-  spells:
-  - levitate
-  - superbroom
-  - blink|4
-  - missile|4
-  - cloak
-  - time
-  - heal
-  - phase
-  - gather
-  - supergather
-  - regenerate
-  - superregenerate
-  - pickpocket
-  - backup
-  - phasebackup
-  - repair
-  - superrepair
+  class: mage
+  inherit: base_wand
+  name: '&#ccccccAdmin''s Staff'
+  renamable: true
+  description: '&8Bursting with power.'
+  effect_color: '#ff0000'
+  icon: stick{4}
+  attributes:
+    mage_mana: 1000
+    mage_mana_regen: 100
+    cooldownreduction: 100
+    wandpower: 50
 admintool:
   icon: nether_star{"CustomModelData":18001}
   mode: chest
@@ -3161,6 +3145,8 @@ test_sword2:
   icon: diamond_sword
   alternate_spell: pull
   cost_reduction: 1
+  enchantments:
+    damage_all: 5
   spells:
   - shadowcloak
   attributes:

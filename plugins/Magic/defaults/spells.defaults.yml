@@ -19712,7 +19712,7 @@ wound:
       sound_volume: 1.2
       effectlib:
         class: Equation
-        iterations: 20
+        iterations: 1
         particle: drip_lava
         particle_count: 1
         particle_offset_x: 0
@@ -19723,18 +19723,6 @@ wound:
         zEquation: -t/20 + 0.5
         updateLocations: false
         updateDirections: false
-    - location: target
-      requires_entity_target: true
-      use_hit_location: false
-      use_wand_location: false
-      target_offset: 0,-1.3,0
-      effectlib:
-        class: AnimatedBall
-        duration: 2000
-        particle: item_crack
-        material: redstone
-        particles: 4
-        size: 0.3
     - requires_no_entity_target: true
       sound: entity_player_attack_nodamage
       sound_pitch: 0.6
@@ -19745,7 +19733,7 @@ wound:
       effectlib:
         class: Equation
         iterations: 3
-        particles: 4
+        particles: 1
         particle: block_crack
         xEquation: '1.2'
         yEquation: -t/20 + 0.5
@@ -19756,7 +19744,7 @@ wound:
       effectlib:
         class: Equation
         iterations: 10
-        particles: 4
+        particles: 1
         period: 1
         particle: fireworks_spark
         xEquation: '1.2'
@@ -20979,7 +20967,8 @@ anchor:
     cancel: true
 arcanebarrage:
   name: Arcane Barrage
-  description: Launch a precision barrage of arcane spears dealing 20x80% Attack Damage.
+  description: Launch a continuous barrage of Arcane Spears at a targeted entity or
+    location. Number of spears launched scales with Wand Power.
   category: arcane
   icon: arcanebarrage
   icon_disabled: arcanebarrage
@@ -20988,42 +20977,61 @@ arcanebarrage:
     - class: CustomProjectile
       ignore_hit_entities: true
       hit_on_miss: true
-      target: block
-      range: 30
+      target: other
+      range: 50
       velocity: 1000
-      tick_effects: tick2
+      tick_effects: test
+      hitbox: true
+      hitbox_size: 3
       actions:
-      - class: ChangeContext
-        source_location: hit
+      - class: Interval
+        duration: 10000
+        interval: 125/(1+$wandpower/100)
         actions:
-        - class: Multiply
-          multiply: 40
+        - class: Asynchronous
           actions:
-          - class: CustomProjectile
-            ignore_blocks: true
-            ignore_hit_entities: true
-            hit_on_miss: true
-            target: block
-            spread: 180
-            range: 30
-            velocity: 1000
-            tick_effects: tick2
+          - class: ChangeContext
+            source_at_target: true
+            target_entity: true
+            target_offset: 0,1,0
             actions:
-            - class: ChangeContext
-              source_location: hit
-              random_target_offset: 3,3,3
-              actions:
-              - class: Delay
-                delay: rand(0,1000)
-              - class: PlayEffects
-                effects: summon
-              - class: Delay
-                delay: $delay
-              - class: CustomProjectile
-                tick_effects: tick
-                velocity: 80
-                range: 100
-                reverse: true
+            - class: PlayEffects
+              effects: test
+            - class: Retarget
+            - class: CustomProjectile
+              ignore_hit_entities: true
+              target: block
+              spread: 180
+              range: rand(12,18)
+              velocity: 1000
+              tick_effects: none
+              hit_effects: none
+              miss:
+              - class: ChangeContext
+                source_location: hit
+                target_self: true
+                random_target_offset: 2,2,2
+                actions:
+                - class: Delay
+                  delay: rand(0,2000)
+                - class: PlayEffects
+                  effects: summon
+                - class: Delay
+                  delay: $delay
+                - class: CustomProjectile
+                  tick_effects: tick
+                  velocity: 200
+                  range: 48
+                  reverse: true
+                  hitbox: true
+                  hitbox_size: 1
+                  actions:
+                  - class: Damage
+                    damage: 4
+                    no_damage_ticks: 0
+                  - class: Velocity
+                    push: 0.8
+                    direction: 0,0.2,0
   effects:
     summon:
     - class: EffectSingle
@@ -21045,25 +21053,34 @@ arcanebarrage:
       sound_pitch: 0.1
       sound_volume: 0.8
       delay: 0
+      location: both
     - sound: entity_illusioner_cast_spell
       sound_pitch: 0.6
       sound_volume: 0.4
       delay: 100
+      location: both
     - sound: entity_illusioner_cast_spell
       sound_pitch: 1.2
       sound_volume: 0.2
       delay: 200
+      location: both
     fire:
     - sound: item_trident_return
       sound_pitch: -1
       sound_volume: 0.5
       color_override: color
+    test:
+    - location: target
+      particle: redstone
+      target_location: body
+      particle_count: 4
+      particle_offset: 0.8
     tick:
     - location: target
       particle: spell_witch
       particle_offset: 0
       particle_count: 1
-    hit_block:
+    hit:
     - location: target
       particle: spell_witch
       speed: 1
@@ -21079,16 +21096,17 @@ arcanebarrage:
     - sound: entity_player_attack_knockback
       sound_pitch: 1
       sound_volume: 0.4
-      location: target
+      location: both
   parameters:
     delay: 1000
-    range: 10
+    range: 48
+    target_type: Damageable
   costs:
     mana: 0
 arcanehail:
   name: Arcane Hail
   description: Summon arcane spears to fall from the sky, each dealing 8 Magic Damage
-    upon impact.
+    upon impact. Number of spears scales with Wand Power.
   category: arcane
   icon: arcanehail
   icon_disabled: arcanehail
@@ -21129,7 +21147,6 @@ arcanehail:
         effect:
           class: Vortex
           particle_count: 1
-          radials: 30
           grow: 0
           particle: crit_magic
           update_locations: false
@@ -21137,6 +21154,21 @@ arcanehail:
           particle_data: 0
           pitch: 90
           offset: 0,0.2,0
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.1
+      sound_volume: 0.8
+      delay: 0
+      location: both
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.6
+      sound_volume: 0.4
+      delay: 100
+      location: both
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.2
+      sound_volume: 0.2
+      delay: 200
+      location: both
     none: []
     tick:
     - location: target
@@ -21234,14 +21266,17 @@ arcanemeteor:
       sound_pitch: 0.1
       sound_volume: 0.8
       delay: 0
+      location: both
     - sound: entity_illusioner_cast_spell
       sound_pitch: 0.6
       sound_volume: 0.4
       delay: 100
+      location: both
     - sound: entity_illusioner_cast_spell
       sound_pitch: 1.2
       sound_volume: 0.2
       delay: 200
+      location: both
     tick:
     - location: target
       particle: dust_color_transition
@@ -21345,7 +21380,7 @@ arcanemissiles:
       hit_effects: tick2
       actions:
       - class: Message
-        message: lock_on
+        message: '@p &fhas locked on to you!'
         message_type: action_bar
         message_target: true
       - class: Multiply
@@ -21988,11 +22023,6 @@ channel:
           value: health - cast_health
         - class: CheckRequirements
           requirements:
-          - wand_tags: wand
-          fail:
-          - class: Undo
-        - class: CheckRequirements
-          requirements:
           - variables:
             - variable: health_change
               max: -2
@@ -22001,6 +22031,7 @@ channel:
         - class: CheckTrigger
           trigger: left_click
           actions:
+          - class: Retarget
           - class: PlayEffects
             effects: inturrupt
           - class: ModifyMana
@@ -22081,14 +22112,14 @@ channel:
       sound_pitch: 1.2
       delay: 200
     inturrupt:
-    - location: origin
+    - location: target
       source_location: body
       particle: glow
-      particle_count: 6
+      particle_count: 12
       particle_offset_x: 0.3
       particle_offset_z: 0.3
       particle_offset_y: 0.6
-      particle_data: 0.3
+      particle_data: 0.6
   parameters:
     warmup: $warmup
     bar_style: solid
@@ -22101,6 +22132,8 @@ channel:
     add_modifiers:
     - channelling
     remove_on_finish: true
+    cancel_on_death: true
+    cancel_on_world_change: true
     cancel: true
 charge:
   name: Charge
@@ -23088,13 +23121,11 @@ doublejump:
         min: 0.5
 electrosurge:
   inherit: false
-  name: Surge
+  name: Arc Surge
   description: Cascade of stunning lightning bolts
   icon: end_crystal
   icon_disabled: end_crystal
   category: lightning
-  upgrade_required_casts: 1500
-  worth: 7000
   actions:
     cast:
     - class: Multiply
@@ -23115,35 +23146,24 @@ electrosurge:
       location: origin
     tick:
     - location: target
-      particle: dust_color_transition
+      particle: electric_spark
       particle_count: 1
       particle_offset: 0
-      particle_size: 0.35
+      particle_data: 0.05
       color: '#ffff00'
       to_color: color
     hit:
     - sound: entity_guardian_attack
+      location: both
       sound_pitch: 1.5
       sound_volume: 0.2
-    hit_entity:
-    - class: EffectSingle
-      sound: block_lava_extinguish
-      sound_volume: 0.2
-      sound_pitch: -5
-      location: target
+    - location: target
       particle: electric_spark
       particle_count: 3
-      particle_offset: 0.01
-      particle_data: 0.2
-    hit_block:
-    - class: EffectSingle
-      location: target
-      particle: electric_spark
-      particle_count: 2
-      particle_offset: 0.2
-      particle_data: 0.2
+      particle_offset: 0
+      particle_data: 0.6
   parameters:
-    tick_size: 0.15
+    tick_size: 0.2
     target: other
     delay: rand(0,400)
     source_location: cast
@@ -23152,8 +23172,7 @@ electrosurge:
     range: rand(24,32)
     target_type: Damageable
     damage_type: lightning
-    entity_damage: 4
-    player_damage: 2
+    damage: 2
     potion_effects:
       slow: 4
       slow_digging: 4
@@ -23162,39 +23181,15 @@ electrosurge:
     effects_particles: false
     multiply: 14
     hit_count: 2
-    track_target: true
-    use_target_location: false
-    track_speed: 0.6
     update_launch_location: false
     velocity_transform:
       x: 100
-      y: rand(-15,15)
-      z: rand(-15,15)
+      y: rand(-25,25)
+      z: rand(-25,25)
     cooldown: 12000
     no_damage_ticks: 0
   costs:
     mana: 100
-electrosurge|2:
-  upgrade_required_casts: 2500
-  parameters:
-    range: rand(32,40)
-    entity_damage: 3.5
-    player_damage: 1.75
-    duration: 1750
-    multiply: 16
-    hit_count: 3
-  costs:
-    mana: 125
-electrosurge|3:
-  parameters:
-    range: rand(40,48)
-    entity_damage: 4
-    player_damage: 2
-    duration: 2000
-    multiply: 18
-    hit_count: 4
-  costs:
-    mana: 150
 ensnare:
   inherit: false
   name: Ensnare
@@ -28338,7 +28333,7 @@ manablast:
     radius: 2.5
     target_type: Damageable
     direction: 0,0.4,0
-    push: 1
+    push: 1.5
     durability_max_distance: 3
     damage_max_distance: 4
     damage_min_distance: 1.5
@@ -28689,8 +28684,7 @@ marktarget:
     mana: 90
 meditate:
   name: Meditate
-  description: Channel, then increase your Mana Capacity and Recharge by 30% for the
-    next 20 seconds.
+  description: Channel, increasing your Mana Recharge by 30% for the next 20 seconds.
   icon: levitate
   icon_disabled: levitate
   actions:
@@ -32020,6 +32014,8 @@ shadowcloak:
     cancel_on_deactivate: true
     cancel_on_no_permission: true
     cancel_on_damage: 0.5
+  active_costs:
+    mana: 10
 shimmer:
   name: Shimmer
   description: Release multiple blinding blasts of concussive light at a targeted
@@ -33399,6 +33395,53 @@ test4:
   parameters:
     velocity: 30
     range: 32
+test5:
+  description: Damage Your Target
+  icon: stick
+  cast_on_no_target: false
+  actions:
+    cast:
+    - class: CheckEntity
+      actions:
+      - class: Damage
+      - class: PlayEffects
+      ignore_result: false
+  effects:
+    cast:
+    - location: target
+      target_location: body
+      effectlib:
+        class: Star
+        particle: redstone
+        color: '800080'
+        iterations: 1
+        particles: 20
+        inner_radius: 0.1
+        spike_height: 4
+    hit:
+    - location: target
+      target_location: body
+      particle: crit
+      particles: 30
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+      iterations: 1
+    - class: EffectSingle
+      sound: magic.zap
+      sound_pitch: 4
+      sound_volume: 0.5
+      location: target
+  parameters:
+    range: 30
+    damage: 2
+    target: other_entity
+    target_type: Damageable
+    cooldown: 500
+    knockback_resistance: 1
+    hitbox_size: 0.5
+  costs:
+    mana: 50
 testmenu:
   parameters:
     auto_close: true
@@ -33460,10 +33503,9 @@ testmenu:
     - icon: stained_glass_pane
 thunderstorm:
   name: Thunderstorm
-  description: Charge up, then saturate an area with electric bolts
+  description: Charge up, then saturate an area with lightning bolts
   icon: end_crystal
   category: lightning
-  worth: 7000
   actions:
     cast:
     - class: Multiply
@@ -33479,7 +33521,7 @@ thunderstorm:
           - class: CustomProjectile
             actions:
             - class: AreaOfEffect
-              radius: 3
+              radius: 2
               actions:
               - class: Damage
               - class: Electrify
@@ -33511,7 +33553,7 @@ thunderstorm:
     - location: target
       particle: end_rod
       particle_count: 1
-      particle_offset: 0.01
+      particle_offset: 0
     hit:
     - location: target
       particle: end_rod
@@ -33538,6 +33580,7 @@ thunderstorm:
     damage_type: lightning
     target_type: Damageable
     target: block
+    target_self: true
     damage: 7
     no_damage_ticks: 0
     velocity: 100
@@ -33545,7 +33588,8 @@ thunderstorm:
       x: rand(90,150)
       y: rand(-40,40)
       z: rand(-40,40)
-    direction: 0,0,0
+    direction: 0,0.2,0
+    push: 0.6
     cooldown: 30000
   costs:
     mana: 200
@@ -33566,6 +33610,7 @@ triplebolt:
         spell_parameters:
           warmup: $warmup
     - class: Delay
+      delay: $warmup
     - class: Retarget
     - class: PlayEffects
       effects: fire

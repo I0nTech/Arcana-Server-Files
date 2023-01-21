@@ -14,6 +14,7 @@ triplebolt:
         spell_parameters:
           warmup: $warmup
     - class: Delay
+      delay: $warmup
     - class: Retarget
     - class: PlayEffects
       effects: fire

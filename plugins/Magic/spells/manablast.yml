@@ -100,7 +100,7 @@ manablast:
     radius: 2.5
     target_type: Damageable
     direction: 0,0.4,0
-    push: 1
+    push: 1.5
     durability_max_distance: 3
     damage_max_distance: 4
     damage_min_distance: 1.5

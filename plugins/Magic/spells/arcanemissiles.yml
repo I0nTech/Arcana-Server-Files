@@ -29,7 +29,7 @@ arcanemissiles:
 #      requires_entity_target: true
       actions:
       - class: Message
-        message: lock_on
+        message: "@p &fhas locked on to you!"
         message_type: action_bar
         message_target: true
       - class: Multiply

@@ -89,3 +89,5 @@ shadowcloak:
       cancel_on_deactivate: true
       cancel_on_no_permission: true
       cancel_on_damage: 0.5
+    active_costs:
+      mana: 10

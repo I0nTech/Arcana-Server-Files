@@ -6,5 +6,4 @@ channelling:
 meditate:
   stack: true
   attributes:
-    manaboost: 30
     manaregenboost: 30

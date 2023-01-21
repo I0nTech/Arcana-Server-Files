@@ -1,9 +1,8 @@
 thunderstorm:
   name: Thunderstorm
-  description: Charge up, then saturate an area with electric bolts
+  description: Charge up, then saturate an area with lightning bolts
   icon: end_crystal
   category: lightning
-  worth: 7000
   actions:
     cast:
     - class: Multiply
@@ -19,7 +18,7 @@ thunderstorm:
             - class: CustomProjectile
               actions:
                 - class: AreaOfEffect
-                  radius: 3
+                  radius: 2
                   actions:
                     - class: Damage
                     - class: Electrify
@@ -51,7 +50,7 @@ thunderstorm:
       - location: target
         particle: end_rod
         particle_count: 1
-        particle_offset: 0.01
+        particle_offset: 0
     hit:
       - location: target
         particle: end_rod
@@ -78,6 +77,7 @@ thunderstorm:
     damage_type: lightning
     target_type: Damageable
     target: block
+    target_self: true
     damage: 7
     no_damage_ticks: 0
     velocity: 100
@@ -85,7 +85,8 @@ thunderstorm:
       x: rand(90,150)
       y: rand(-40,40)
       z: rand(-40,40)
-    direction: 0,0,0
+    direction: 0,0.2,0
+    push: 0.6
     cooldown: 30000
   costs:
     mana: 200

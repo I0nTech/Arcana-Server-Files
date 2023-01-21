@@ -17,6 +17,8 @@ test_sword2:
   icon: diamond_sword
   alternate_spell: pull
   cost_reduction: 1
+  enchantments:
+    damage_all: 5
   spells:
     - shadowcloak
   attributes:

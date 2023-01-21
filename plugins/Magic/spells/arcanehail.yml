@@ -1,6 +1,6 @@
 arcanehail:
   name: Arcane Hail
-  description: Summon arcane spears to fall from the sky, each dealing 8 Magic Damage upon impact.
+  description: Summon arcane spears to fall from the sky, each dealing 8 Magic Damage upon impact. Number of spears scales with Wand Power.
   category: arcane
   icon: arcanehail
   icon_disabled: arcanehail
@@ -41,7 +41,6 @@ arcanehail:
            effect:
              class: Vortex
              particle_count: 1
-             radials: 30
              grow: 0
              particle: crit_magic
              update_locations: false
@@ -49,6 +48,21 @@ arcanehail:
              particle_data: 0
              pitch: 90
              offset: 0,0.2,0
+      - sound: entity_illusioner_cast_spell
+        sound_pitch: 0.1
+        sound_volume: 0.8
+        delay: 0
+        location: both
+      - sound: entity_illusioner_cast_spell
+        sound_pitch: 0.6
+        sound_volume: 0.4
+        delay: 100
+        location: both
+      - sound: entity_illusioner_cast_spell
+        sound_pitch: 1.2
+        sound_volume: 0.2
+        delay: 200
+        location: both
     none: []
     tick:
       - location: target
