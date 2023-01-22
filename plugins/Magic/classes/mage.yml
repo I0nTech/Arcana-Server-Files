@@ -1,7 +1,6 @@
 mage:
   inherit: base
   spell_inventory: true
-# The default mage class. Please do not modify anything here.
   spells:
     - manashot
   mana_max: (mage_mana+100)*(1+manaboost/100)

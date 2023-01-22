@@ -11,7 +11,7 @@ arcanehail:
       - class: ChangeContext
         actions:
           - class: Delay
-            delay: rand(0,1500)
+            delay: rand(0,1000)
           - class: CustomProjectile
             hit_effects: none
             tick_effects: none
@@ -92,7 +92,7 @@ arcanehail:
     random_target_offset: 15,0,15
     source_pitch: 180
     source_at_target: true
-    velocity: 100
+    velocity: 200
     radius: 2
     push: 0.4
     direction: 0,0.2,0
@@ -102,7 +102,7 @@ arcanehail:
     no_damage_ticks: 0
     damage: 8
     warmup: 1000
-    range: 100
+    range: 48
     cooldown: 16000
   costs:
     mana: 100

@@ -1,10 +1,10 @@
 id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
 name: IonTech
 created: 1673841425319
-updated: 1674274052152
-last_cast: 1674274016009
+updated: 1674424656306
+last_cast: 1674424654731
 cooldown_expiration: 0
-last_death_location: -61.69825289109388,69.79673560066871,234.75777778866944,world,-134.21338,10.895807
+last_death_location: -241.80437132032776,64.7531999805212,346.83521027497363,world,-56.0571,35.724236
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -17,33 +17,39 @@ brush:
 undo:
   455c86ed-c4e7-4ba1-a15a-8b7e61e0c0fa: []
 spells:
+  smite:
+    cast_count: 1
+    last_cast: 1674424540834
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
   channel:
-    cast_count: 787
-    last_cast: 1674274016009
+    cast_count: 908
+    last_cast: 1674424467680
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   frostwave:
-    cast_count: 26
-    last_cast: 1674159750486
+    cast_count: 27
+    last_cast: 1674350763302
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   healbolt:
     cast_count: 0
-    last_cast: 1674274004513
+    last_cast: 1674360212402
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   manabolt:
-    cast_count: 124
-    last_cast: 1674273669719
+    cast_count: 182
+    last_cast: 1674424464330
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   arcanemissiles:
-    cast_count: 1536
-    last_cast: 1674274016010
+    cast_count: 1537
+    last_cast: 1674350328263
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -54,14 +60,14 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   manablast:
-    cast_count: 189
-    last_cast: 1674269883512
+    cast_count: 197
+    last_cast: 1674359500033
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   reflect:
-    cast_count: 25
-    last_cast: 1674272412860
+    cast_count: 35
+    last_cast: 1674350987497
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -78,16 +84,16 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   manabeam:
-    cast_count: 69
-    last_cast: 1674271183957
+    cast_count: 92
+    last_cast: 1674359837286
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   electrosurge:
-    cast_count: 64
-    last_cast: 1674160572636
+    cast_count: 66
+    last_cast: 1674424654731
     last_earn: 0
-    cooldown_expiration: 1674160584636
+    cooldown_expiration: 0
     charges: 0.0
   dummydialog:
     cast_count: 0
@@ -102,8 +108,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   arcanemeteor:
-    cast_count: 64
-    last_cast: 1674269861855
+    cast_count: 78
+    last_cast: 1674359862380
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -120,8 +126,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   triplebolt:
-    cast_count: 102
-    last_cast: 1674161279885
+    cast_count: 149
+    last_cast: 1674424467680
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -132,8 +138,8 @@ spells:
     cooldown_expiration: 1674272768310
     charges: 0.0
   arcanehail:
-    cast_count: 163
-    last_cast: 1674269848968
+    cast_count: 173
+    last_cast: 1674359806889
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -144,8 +150,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   shell:
-    cast_count: 20
-    last_cast: 1674254124978
+    cast_count: 47
+    last_cast: 1674359679333
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -162,14 +168,20 @@ spells:
     cooldown_expiration: 1674018542977
     charges: 0.0
   thunderstorm:
-    cast_count: 6
-    last_cast: 1674073909080
+    cast_count: 7
+    last_cast: 1674351306533
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   pearlrider:
     cast_count: 2
     last_cast: 1674018452007
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  test1:
+    cast_count: 0
+    last_cast: 1674360096806
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -189,7 +201,7 @@ spells:
     cast_count: 2
     last_cast: 1673996953161
     last_earn: 0
-    cooldown_expiration: 1673996968161
+    cooldown_expiration: 0
     charges: 0.0
   recall:
     cast_count: 1
@@ -216,8 +228,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   progressmenu:
-    cast_count: 3
-    last_cast: 1673996485802
+    cast_count: 4
+    last_cast: 1674423346749
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -228,8 +240,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   burstshot:
-    cast_count: 160
-    last_cast: 1674273891859
+    cast_count: 238
+    last_cast: 1674359606735
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -240,8 +252,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   meditate:
-    cast_count: 40
-    last_cast: 1674160383430
+    cast_count: 47
+    last_cast: 1674359811086
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -269,6 +281,12 @@ spells:
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
+  test2:
+    cast_count: 0
+    last_cast: 1674360087857
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
   test3:
     cast_count: 0
     last_cast: 0
@@ -276,8 +294,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   focusbolt:
-    cast_count: 129
-    last_cast: 1674269755614
+    cast_count: 172
+    last_cast: 1674360058932
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -294,14 +312,14 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   colorshop:
-    cast_count: 2
-    last_cast: 1673996486706
+    cast_count: 3
+    last_cast: 1674359455583
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   scattershot:
-    cast_count: 57
-    last_cast: 1674273958256
+    cast_count: 86
+    last_cast: 1674424652083
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -315,10 +333,11 @@ open_wand: false
 gave_welcome_wand: false
 resource_pack_preference: default
 data:
-  sp: 616.0
+  sp: 416.0
   wand_colors:
     magenta: true
     lightgray: true
+    yellow: true
 properties:
   spells:
   - manabeam
@@ -359,8 +378,8 @@ kits:
         last_give: 1673841425466
 classes:
   mage:
-    mana_timestamp: 1674274052061
-    mana: 196.16502
+    mana_timestamp: 1674424656084
+    mana: 329.39496
 transient_modifiers: {}
 active_class: mage
 health: 20.0

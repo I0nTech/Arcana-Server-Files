@@ -51,7 +51,7 @@ undo_on_world_save: true
 max_velocity: 100
 enable_resource_pack: true
 #resource_pack: https://download.mc-packs.net/pack/0c38912a89ab0459d5551cf1797755c5590fdeef.zip
-resource_pack: https://download.mc-packs.net/pack/dd13ccedf3d829e54d73833f97ad560a0194cbf1.zip
+resource_pack: https://download.mc-packs.net/pack/85273ed2cf088594e660666d82f3f1532bbeefb4.zip
 lore_wrap_prefix: ''
 range_formatter: "0.#"
 
