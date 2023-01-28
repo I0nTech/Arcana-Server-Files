@@ -264,6 +264,8 @@ master:
   - mob
   - sunstrike
   - force
+  upgrade: engineer
+  upgrade_item: engineer_upgrade
 staff:
   hidden: true
 student:
@@ -308,6 +310,245 @@ student:
   - whip
   - curse
   - vengeance
+architect:
+  icon: blaze_rod{CustomModelData:18039}
+  legacy_icon: wood_hoe:5
+  legacy_migrate_icon: gold_pickaxe
+  inherit: engineer
+  required_spells:
+  - backup
+  upgrade: conduit
+  upgrade_item: conduit_upgrade
+  override_properties:
+    mana_regeneration: 100
+    mana_max: 500
+  extra_spells:
+  - projector
+  - light
+  spells:
+  - absorb
+  - superalter
+  - supershell
+  - superblast
+  - superbox
+  - supercube
+  - superpyramid
+  - superblob
+  - fill
+  - superdisc
+  - superlaser
+  - superring
+  - superconvert
+  - supercylinder
+  - superwalls
+  - superdome
+  - volley
+  - floodfill
+  - tunnel
+  - light
+  - toggleair
+  - paste
+  brush_count:
+    '7': 100
+    '8': 60
+    '9': 30
+    '10': 10
+  brushes:
+  - clone
+  - replicate
+  - map
+  - map:128
+  - copy
+  - lava
+  - water
+  - soul_sand
+  - wood
+  - log
+  - vine
+  - mycel
+  - quartz_block
+  - leaves
+  - ice
+  - packed_ice
+  - obsidian
+  - redstone_block
+  - schematic|rainbow_blocks
+  - schematic|creeper_rug
+  - schematic|rainbow_blocks
+  - schematic|lantern
+  - schematic|creeper_rug
+  - schematic|elder_tree
+  - schematic|church
+  - schematic|blacksmith
+  - schematic|garden_house
+  - schematic|compact_house
+  - schematic|small_house
+  - schematic|nathanwolf
+  - schematic|warped_house
+  - schematic|geode
+conduit:
+  icon: blaze_rod{CustomModelData:18006}
+  legacy_icon: wood_hoe:6
+  legacy_migrate_icon: gold_pickaxe
+  inherit: architect
+  override_properties:
+    mana_regeneration: 100
+    mana_max: 500
+    hotbar_count: 4
+    consume_reduction: 1
+    cost_reduction: 2
+    allow_container_copy: true
+    level_display:
+      currency: sp
+  spells:
+  - portal
+  - backup
+  - repair
+  - superrepair
+  - superbackup
+  - anvil
+  - day
+  - night
+  - weather
+  - capture
+  - commit
+  - forest
+  - regenerate
+  - superregenerate
+  brushes:
+  - light
+  - schematic|rainbow_blocks
+  - schematic|lantern
+  - schematic|creeper_rug
+  - schematic|elder_tree
+  - schematic|church
+  - schematic|blacksmith
+  - schematic|garden_house
+  - schematic|compact_house
+  - schematic|small_house
+  - schematic|nathanwolf
+engineer:
+  icon: blaze_rod{CustomModelData:18005}
+  legacy_icon: wood_hoe:5
+  legacy_migrate_icon: gold_axe
+  upgrade: architect
+  upgrade_item: architect_upgrade
+  inherit: master
+  override_properties:
+    mana_regeneration: 50
+    mana_max: 300
+    level_display:
+      currency: materia
+  extra_spells:
+  - brushselect
+  spells:
+  - rollback
+  - alter
+  - bridge
+  - toss
+  - convert
+  - recurse
+  - paint
+  - pillar
+  - place
+  - tree
+  - supertorch
+  - raise
+  - flatten
+  brush_count:
+    '4': 100
+    '5': 50
+    '6': 20
+    '7': 10
+  brushes:
+  - erase
+  - stone
+  - dirt
+  - sand
+  - grass
+  - gravel
+  - glass
+  - glowstone
+  - black_wool
+  - blue_wool
+  - brown_wool
+  - cyan_wool
+  - gray_wool
+  - green_wool
+  - light_blue_wool
+  - light_gray_wool
+  - lime_wool
+  - magenta_wool
+  - orange_wool
+  - pink_wool
+  - purple_wool
+  - red_wool
+  - white_wool
+  - yellow_wool
+  - black_terracotta
+  - blue_terracotta
+  - brown_terracotta
+  - cyan_terracotta
+  - gray_terracotta
+  - green_terracotta
+  - light_blue_terracotta
+  - light_gray_terracotta
+  - lime_terracotta
+  - magenta_terracotta
+  - orange_terracotta
+  - pink_terracotta
+  - purple_terracotta
+  - red_terracotta
+  - white_terracotta
+  - yellow_terracotta
+  - black_stained_glass
+  - blue_stained_glass
+  - brown_stained_glass
+  - cyan_stained_glass
+  - gray_stained_glass
+  - green_stained_glass
+  - light_blue_stained_glass
+  - light_gray_stained_glass
+  - lime_stained_glass
+  - magenta_stained_glass
+  - orange_stained_glass
+  - pink_stained_glass
+  - purple_stained_glass
+  - red_stained_glass_pane
+  - white_stained_glass
+  - yellow_stained_glass
+  - black_stained_glass_pane
+  - blue_stained_glass_pane
+  - brown_stained_glass_pane
+  - cyan_stained_glass_pane
+  - gray_stained_glass_pane
+  - green_stained_glass_pane
+  - light_blue_stained_glass_pane
+  - light_gray_stained_glass_pane
+  - lime_stained_glass_pane
+  - magenta_stained_glass_pane
+  - orange_stained_glass_pane
+  - pink_stained_glass_pane
+  - purple_stained_glass_pane
+  - red_stained_glass_pane
+  - white_stained_glass_pane
+  - yellow_stained_glass_pane
+  - black_concrete
+  - blue_concrete
+  - brown_concrete
+  - cyan_concrete
+  - gray_concrete
+  - green_concrete
+  - light_blue_concrete
+  - light_gray_concrete
+  - lime_concrete
+  - magenta_concrete
+  - orange_concrete
+  - pink_concrete
+  - purple_concrete
+  - red_concrete
+  - white_concrete
+  - yellow_concrete
 cantrip:
   name: Cantrip
   inherit: default

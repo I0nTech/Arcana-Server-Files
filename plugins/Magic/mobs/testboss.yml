@@ -5,8 +5,8 @@ testboss:
   leggings: diamond_leggings
   helmet: diamond_helmet
   boots: diamond_boots
-  item: netherite_axe
-  offhand: basic_wand
+  item: diamond_sword
+  offhand: stick{2}
   disguise:
     type: player
     glowing: true
@@ -17,7 +17,8 @@ testboss:
   track_radius: 64
   face_player: true
   persist: true
-  color: "#48d1cc"
+  mage:
+    color: "#800080"
   boss_bar:
     bar_color: red
     bar_flags:
@@ -28,7 +29,7 @@ testboss:
   triggers:
     launch:
       cast:
-        frostlance: 100
+        manabeam: 10
     damage:
       cast:
         mobrelocate: 10
@@ -42,10 +43,11 @@ testboss:
         burstshot: 5
         scattershot: 5
         meditate: 5
+        manabeam: 5
         manablast: 10
         focusbolt: 20
-        manabeam: 5
         triplebolt: 20
         arcanehail: 5
         arcanebarrage: 5
-        arcanemissiles: 10
+        arcanemissiles: 5
+        arcanemeteor: 5

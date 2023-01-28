@@ -7601,6 +7601,7 @@ fling|4:
     cooldown: 200
   costs:
     mana: 90
+  upgrade_required_path: conduit
 force:
   inherit: false
   icon: force
@@ -20828,6 +20829,3983 @@ birth_worm:
     seed_radius: 3
     ignore_region_overrides: true
     animate_spell: worm
+absorb:
+  icon: absorb
+  category: engineering
+  tags: noduel
+  worth: 9999
+  brush_selection: true
+  upgrade_required_casts: 20
+  earns: 50
+  actions:
+    cast:
+    - class: AbsorbAction
+  effects:
+    cast:
+    - sound: entity_generic_drink
+    - class: EffectTrail
+      particle: block_crack
+      reverse: true
+      particle_count: 10
+      particle_offset_x: 0.2
+      particle_offset_y: 0.2
+      particle_offset_z: 0.2
+    - location: target
+      use_block_location: true
+      effectlib:
+        class: Modified
+        iterations: 30
+        parameters:
+          edge_length: max(1, (t / i) * 5 - 2)
+        effect:
+          class: CubeEffect
+          particle: block_crack
+          enable_rotation: false
+          offset: 0.5,0.5,0.5
+  parameters:
+    target: block
+    allow_max_range: false
+    range: 64
+    transparent: transparent_to_construction
+  costs:
+    mana: 30
+absorb|2:
+  alternate_sneak_parameters:
+    wildcard: true
+alter:
+  icon: alter
+  category: engineering
+  tags: noduel
+  worth: 1500
+  earns: 12
+  actions:
+    cast:
+    - class: CycleBlock
+    - class: CycleEntity
+  effects:
+    cast:
+    - sound: block_wool_break
+      sound_volumee: 2
+      location: both
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.3
+      sound_volume: 0.1
+      effectlib:
+        class: ConeEffect
+        iterations: 10
+        particle: redstone
+        speed: 2
+        lengthGrow: 0.1
+        radiusGrow: 0.003
+        updateLocations: false
+        updateDirections: false
+        color: FFFFFF
+        particle_size: 0.5
+        particle_data: 2
+        particle_count: 8
+        particle_offset_y: 0.2
+        particle_offset_x: 0.2
+        particle_offset_z: 0.2
+    - class: EffectTrail
+      particle: redstone
+      particle_size: 2
+      particle_count: 4
+      particle_offset_y: 0.1
+      particle_offset_x: 0.1
+      particle_offset_z: 0.1
+  parameters:
+    target_type: Entity
+    allow_max_range: false
+    range: 32
+    transparent: transparent_to_construction
+    cycle_colors: true
+    cycle_variants: true
+    ignore_region_overrides: true
+    materials:
+    - - dirt
+      - dirt:1
+      - dirt:2
+    - - wood
+      - wood:1
+      - wood:2
+      - wood:3
+      - wood:4
+      - wood:5
+    - - sapling
+      - sapling:1
+      - sapling:2
+      - sapling:3
+      - sapling:4
+      - sapling:5
+    - - water
+      - water:1
+      - water:2
+      - water:3
+      - water:4
+      - water:5
+      - water:6
+      - water:7
+      - water:8
+      - water:9
+      - water:10
+      - water:11
+      - water:12
+      - water:13
+      - water:14
+      - water:15
+    - - stationary_water
+      - stationary_water:1
+      - stationary_water:2
+      - stationary_water:3
+      - stationary_water:4
+      - stationary_water:5
+      - stationary_water:6
+      - stationary_water:7
+      - stationary_water:8
+      - stationary_water:9
+      - stationary_water:10
+      - stationary_water:11
+      - stationary_water:12
+      - stationary_water:13
+      - stationary_water:14
+      - stationary_water:15
+    - - lava
+      - lava:1
+      - lava:2
+      - lava:3
+      - lava:4
+      - lava:5
+      - lava:6
+      - lava:7
+      - lava:8
+      - lava:9
+      - lava:10
+      - lava:11
+      - lava:12
+      - lava:13
+      - lava:14
+      - lava:15
+    - - stationary_lava
+      - stationary_lava:1
+      - stationary_lava:2
+      - stationary_lava:3
+      - stationary_lava:4
+      - stationary_lava:5
+      - stationary_lava:6
+      - stationary_lava:7
+      - stationary_lava:8
+      - stationary_lava:9
+      - stationary_lava:10
+      - stationary_lava:11
+      - stationary_lava:12
+      - stationary_lava:13
+      - stationary_lava:14
+      - stationary_lava:15
+    - - sand
+      - sand:1
+    - - log
+      - log:1
+      - log:2
+      - log:3
+      - log:4
+      - log:5
+      - log:6
+      - log:7
+      - log:8
+      - log:9
+      - log:10
+      - log:11
+      - log:12
+      - log:13
+      - log:14
+      - log:15
+      - log_2
+      - log_2:1
+    - - leaves
+      - leaves:1
+      - leaves:2
+      - leaves:3
+      - leaves:4
+      - leaves:5
+      - leaves:6
+      - leaves:7
+      - leaves:8
+      - leaves:9
+      - leaves:10
+      - leaves:11
+      - leaves:12
+      - leaves:13
+      - leaves:14
+      - leaves:15
+      - leaves_2
+      - leaves_2:1
+      - leaves_2:4
+      - leaves_2:5
+      - leaves_2:8
+      - leaves_2:9
+      - leaves_2:12
+      - leaves_2:13
+    - - dispenser:2
+      - dispenser:3
+      - dispenser:4
+      - dispenser:5
+    - - sandstone
+      - sandstone:1
+      - sandstone:2
+    - - powered_rail
+      - powered_rail:1
+      - powered_rail:2
+      - powered_rail:3
+      - powered_rail:4
+      - powered_rail:5
+      - powered_rail:6
+      - powered_rail:7
+      - powered_rail:8
+      - powered_rail:9
+    - - detector_rail
+      - detector_rail:1
+      - detector_rail:2
+      - detector_rail:3
+      - detector_rail:4
+      - detector_rail:5
+      - detector_rail:6
+      - detector_rail:7
+      - detector_rail:8
+      - detector_rail:9
+    - - piston_sticky_base
+      - piston_sticky_base:1
+      - piston_sticky_base:2
+      - piston_sticky_base:3
+      - piston_sticky_base:4
+      - piston_sticky_base:5
+    - - long_grass
+      - long_grass:1
+      - long_grass:2
+    - - piston_base
+      - piston_base:1
+      - piston_base:2
+      - piston_base:3
+      - piston_base:4
+      - piston_base:5
+    - - yellow_flower
+      - yellow_flower:1
+      - yellow_flower:2
+      - yellow_flower:3
+      - yellow_flower:4
+      - yellow_flower:5
+      - yellow_flower:6
+      - yellow_flower:7
+      - yellow_flower:8
+    - - red_rose
+      - red_rose:1
+      - red_rose:2
+      - red_rose:3
+      - red_rose:4
+      - red_rose:5
+      - red_rose:6
+      - red_rose:7
+      - red_rose:8
+    - - double_step
+      - double_step:1
+      - double_step:2
+      - double_step:3
+      - double_step:4
+      - double_step:5
+      - double_step:6
+      - double_step:7
+      - double_step:8
+      - double_step:9
+      - double_step:10
+      - double_step:11
+      - double_step:12
+      - double_step:13
+      - double_step:14
+      - double_step:15
+    - - step
+      - step:1
+      - step:2
+      - step:3
+      - step:4
+      - step:5
+      - step:6
+      - step:7
+      - step:8
+      - step:9
+      - step:10
+      - step:11
+      - step:12
+      - step:13
+      - step:14
+      - step:15
+    - - wood_stairs
+      - wood_stairs:1
+      - wood_stairs:2
+      - wood_stairs:3
+    - - chest:2
+      - chest:3
+      - chest:4
+      - chest:5
+    - - redstone_wire
+      - redstone_wire:1
+      - redstone_wire:2
+      - redstone_wire:3
+      - redstone_wire:4
+      - redstone_wire:5
+      - redstone_wire:6
+      - redstone_wire:7
+      - redstone_wire:8
+      - redstone_wire:9
+      - redstone_wire:10
+      - redstone_wire:11
+      - redstone_wire:12
+      - redstone_wire:13
+      - redstone_wire:14
+      - redstone_wire:15
+    - - workbench:2
+      - workbench:3
+      - workbench:4
+      - workbench:5
+    - - crops
+      - crops:1
+      - crops:2
+      - crops:3
+      - crops:4
+      - crops:5
+      - crops:6
+      - crops:7
+    - - soil
+      - soil:1
+      - soil:2
+      - soil:3
+      - soil:4
+      - soil:5
+      - soil:6
+      - soil:7
+      - soil:8
+    - - furnace:2
+      - furnace:3
+      - furnace:4
+      - furnace:5
+    - - burning_furnace:2
+      - burning_furnace:3
+      - burning_furnace:4
+      - burning_furnace:5
+    - - sign_post
+      - sign_post:1
+      - sign_post:2
+      - sign_post:3
+      - sign_post:4
+      - sign_post:5
+      - sign_post:6
+      - sign_post:7
+      - sign_post:8
+      - sign_post:9
+      - sign_post:10
+      - sign_post:11
+      - sign_post:12
+      - sign_post:13
+      - sign_post:14
+      - sign_post:15
+    - - ladder
+      - ladder:1
+      - ladder:2
+      - ladder:3
+    - - rails
+      - rails:1
+      - rails:2
+      - rails:3
+      - rails:4
+      - rails:5
+      - rails:6
+      - rails:7
+      - rails:8
+      - rails:9
+    - - cobblestone_stairs
+      - cobblestone_stairs:1
+      - cobblestone_stairs:2
+      - cobblestone_stairs:3
+    - - lever:6
+      - lever:7
+      - lever:8
+      - lever:9
+      - lever:10
+      - lever:11
+      - lever:12
+      - lever:13
+      - lever:14
+    - - stone_button
+      - stone_button:1
+      - stone_button:2
+      - stone_button:3
+      - stone_button:4
+      - stone_button:5
+      - stone_button:6
+      - stone_button:7
+      - stone_button:8
+      - stone_button:9
+      - stone_button:10
+      - stone_button:11
+      - stone_button:12
+      - stone_button:13
+      - stone_button:14
+      - stone_button:15
+    - - snow
+      - snow:1
+      - snow:2
+      - snow:3
+      - snow:4
+      - snow:5
+      - snow:6
+      - snow:7
+    - - cactus
+      - cactus:1
+      - cactus:2
+      - cactus:3
+      - cactus:4
+      - cactus:5
+      - cactus:6
+      - cactus:7
+      - cactus:8
+      - cactus:9
+      - cactus:10
+      - cactus:11
+      - cactus:12
+      - cactus:13
+      - cactus:14
+      - cactus:15
+    - - sugar_cane_block
+      - sugar_cane_block:1
+      - sugar_cane_block:2
+      - sugar_cane_block:3
+      - sugar_cane_block:4
+      - sugar_cane_block:5
+      - sugar_cane_block:6
+      - sugar_cane_block:7
+      - sugar_cane_block:8
+      - sugar_cane_block:9
+      - sugar_cane_block:10
+      - sugar_cane_block:11
+      - sugar_cane_block:12
+      - sugar_cane_block:13
+      - sugar_cane_block:14
+      - sugar_cane_block:15
+    - - fence
+      - fence:1
+      - fence:2
+      - fence:3
+      - fence:4
+      - fence:5
+    - - diode_block_off:2
+      - diode_block_off:3
+      - diode_block_off:4
+      - diode_block_off:5
+    - - diode_block_on:2
+      - diode_block_on:3
+      - diode_block_on:4
+      - diode_block_on:5
+    - - monster_eggs
+      - monster_eggs:1
+      - monster_eggs:2
+      - monster_eggs:3
+      - monster_eggs:4
+      - monster_eggs:5
+    - - smooth_brick
+      - smooth_brick:1
+      - smooth_brick:2
+      - smooth_brick:3
+    - - huge_mushroom_1
+      - huge_mushroom_1:1
+      - huge_mushroom_1:2
+      - huge_mushroom_1:3
+      - huge_mushroom_1:4
+      - huge_mushroom_1:5
+      - huge_mushroom_1:6
+      - huge_mushroom_1:7
+      - huge_mushroom_1:8
+      - huge_mushroom_1:9
+      - huge_mushroom_1:10
+      - huge_mushroom_1:11
+      - huge_mushroom_1:12
+      - huge_mushroom_1:13
+      - huge_mushroom_1:14
+      - huge_mushroom_1:15
+    - - huge_mushroom_2
+      - huge_mushroom_2:1
+      - huge_mushroom_2:2
+      - huge_mushroom_2:3
+      - huge_mushroom_2:4
+      - huge_mushroom_2:5
+      - huge_mushroom_2:6
+      - huge_mushroom_2:7
+      - huge_mushroom_2:8
+      - huge_mushroom_2:9
+      - huge_mushroom_2:10
+      - huge_mushroom_2:11
+      - huge_mushroom_2:12
+      - huge_mushroom_2:13
+      - huge_mushroom_2:14
+      - huge_mushroom_2:15
+    - - pumpkin_stem
+      - pumpkin_stem:1
+      - pumpkin_stem:2
+      - pumpkin_stem:3
+      - pumpkin_stem:4
+      - pumpkin_stem:5
+      - pumpkin_stem:6
+      - pumpkin_stem:7
+    - - melon_stem
+      - melon_stem:1
+      - melon_stem:2
+      - melon_stem:3
+      - melon_stem:4
+      - melon_stem:5
+      - melon_stem:6
+      - melon_stem:7
+    - - brick_stairs
+      - brick_stairs:1
+      - brick_stairs:2
+      - brick_stairs:3
+    - - smooth_stairs
+      - smooth_stairs:1
+      - smooth_stairs:2
+      - smooth_stairs:3
+    - - nether_brick_stairs
+      - nether_brick_stairs:1
+      - nether_brick_stairs:2
+      - nether_brick_stairs:3
+    - - nether_warts
+      - nether_warts:1
+      - nether_warts:2
+      - nether_warts:3
+      - nether_warts:4
+      - nether_warts:5
+      - nether_warts:6
+      - nether_warts:7
+    - - wood_double_step
+      - wood_double_step:1
+      - wood_double_step:2
+      - wood_double_step:3
+      - wood_double_step:4
+      - wood_double_step:5
+      - wood_double_step:6
+      - wood_double_step:7
+      - wood_double_step:8
+      - wood_double_step:9
+      - wood_double_step:10
+      - wood_double_step:11
+      - wood_double_step:12
+      - wood_double_step:13
+      - wood_double_step:14
+      - wood_double_step:15
+    - - wood_step
+      - wood_step:1
+      - wood_step:2
+      - wood_step:3
+      - wood_step:4
+      - wood_step:5
+      - wood_step:6
+      - wood_step:7
+      - wood_step:8
+      - wood_step:9
+      - wood_step:10
+      - wood_step:11
+      - wood_step:12
+      - wood_step:13
+      - wood_step:14
+      - wood_step:15
+    - - sandstone_stairs
+      - sandstone_stairs:1
+      - sandstone_stairs:2
+      - sandstone_stairs:3
+    - - spruce_wood_stairs
+      - spruce_wood_stairs:1
+      - spruce_wood_stairs:2
+      - spruce_wood_stairs:3
+    - - birch_wood_stairs
+      - birch_wood_stairs:1
+      - birch_wood_stairs:2
+      - birch_wood_stairs:3
+    - - jungle_wood_stairs
+      - jungle_wood_stairs:1
+      - jungle_wood_stairs:2
+      - jungle_wood_stairs:3
+    - - carrot
+      - carrot:1
+      - carrot:2
+      - carrot:3
+      - carrot:4
+      - carrot:5
+      - carrot:6
+      - carrot:7
+    - - potato
+      - potato:1
+      - potato:2
+      - potato:3
+      - potato:4
+      - potato:5
+      - potato:6
+      - potato:7
+    - - skull
+      - skull:1
+      - skull:2
+      - skull:3
+      - skull:4
+    - - quartz_block
+      - quartz_block:1
+      - quartz_block:2
+      - quartz_block:3
+      - quartz_block:4
+    - - quartz_stairs
+      - quartz_stairs:1
+      - quartz_stairs:2
+      - quartz_stairs:3
+    - - double_plant
+      - double_plant:1
+      - double_plant:2
+      - double_plant:3
+      - double_plant:4
+      - double_plant:5
+      - double_plant:6
+    - - stone
+      - stone:1
+      - stone:2
+      - stone:3
+      - stone:4
+      - stone:5
+      - stone:6
+    - - sand
+      - red_sand
+  costs:
+    mana: 10
+animation:
+  hidden: true
+  name: Example Animation
+  icon: wood_door
+  actions:
+    cast:
+    - class: Brush
+      brush: schematic:schematic1&erase
+      actions:
+      - class: Volume
+        actions:
+        - class: ModifyBlock
+    - class: Delay
+    - class: Brush
+      brush: schematic:schematic2&erase
+      actions:
+      - class: Volume
+        actions:
+        - class: ModifyBlock
+    - class: Delay
+    - class: Brush
+      brush: schematic:schematic3&erase
+      actions:
+      - class: Volume
+        actions:
+        - class: ModifyBlock
+    - class: Delay
+    - class: Brush
+      brush: schematic:schematic4&erase
+      actions:
+      - class: Volume
+        actions:
+        - class: ModifyBlock
+    - class: Delay
+    - class: Brush
+      brush: schematic:schematic5&erase
+      actions:
+      - class: Volume
+        actions:
+        - class: ModifyBlock
+    - class: Delay
+      delay: 10000
+    - class: Brush
+      brush: schematic:schematic4&erase
+      actions:
+      - class: Volume
+        actions:
+        - class: ModifyBlock
+    - class: Delay
+    - class: Brush
+      brush: schematic:schematic3&erase
+      actions:
+      - class: Volume
+        actions:
+        - class: ModifyBlock
+    - class: Delay
+    - class: Brush
+      brush: schematic:schematic2&erase
+      actions:
+      - class: Volume
+        actions:
+        - class: ModifyBlock
+    - class: Delay
+    - class: Brush
+      brush: schematic:schematic1&erase
+      actions:
+      - class: Volume
+        actions:
+        - class: ModifyBlock
+    - class: Delay
+  parameters:
+    check_destructible: false
+    use_brush_size: true
+    range: 12
+    target: block
+    undo: 2000
+    delay: 1000
+    oty: 1
+    cooldown: 18000
+backup:
+  icon: backup
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 9999
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: block_piston_contract
+      sound_volume: 0.2
+      sound_pitch: 0.5
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.8
+    - class: EffectRing
+      location: target
+      effect: ender_signal
+      radius: 3
+      size: 12
+      target_offset: 0,2,0
+    - class: EffectTrail
+      particle: falling_obsidian_tear
+      particle_count: 4
+      particle_offset: 0.2
+  parameters:
+    allow_max_range: true
+    range: 32
+    max_dimension: 32
+    target: block
+    radius: 5
+    type: cuboid
+    transparent: transparent_to_construction
+    brush: clone
+    check_destructible: false
+    brushmod: erase
+    otworld: ~_backup
+    obworld: ~-_backup
+    brushtarget: true
+    bypass_undo: true
+    cooldown: 10000
+    ignore_region_overrides: true
+  costs:
+    mana: 100
+box:
+  icon: box
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 300
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: entity_player_levelup
+    - class: EffectTrail
+      particle: block_crack
+  parameters:
+    target_type: LivingEntity
+    allow_max_range: false
+    range: 32
+    thickness: 1
+    radius: 3
+    type: cuboid
+    transparent: transparent_to_construction
+    y_offset: 4
+    destructible: destructible_replace
+    ignore_region_overrides: true
+  costs:
+    mana: 60
+bridge:
+  icon: bridge
+  category: engineering
+  tags: noduel
+  worth: 1000
+  earns: 10
+  actions:
+    cast:
+    - class: ChangeContext
+      actions:
+      - class: BlockSearch
+        actions:
+        - class: ModifyBlock
+        - class: PlayEffects
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.3
+      sound_volume: 0.1
+    - sound: block_stone_place
+      location: both
+    search:
+    - particle: block_crack
+      location: target
+      target_location: block_center
+      particle_count: 8
+      particle_offset_x: 0.75
+      particle_offset_y: 0.75
+      particle_offset_z: 0.75
+    - particle: end_rod
+      location: target
+      target_location: block_center
+      particle_count: 4
+      particle_offset_x: 0.55
+      particle_offset_y: 0.55
+      particle_offset_z: 0.55
+    built:
+    - class: EffectSingle
+      effect: step_sound
+      location: target
+      target_location: block_center
+    - class: EffectSingle
+      sound: block_stone_break
+      target_location: block_center
+      effectlib:
+        class: LineEffect
+        particle: block_crack
+        particle_count: 8
+        particles: 40
+        offset: 0,-1,0
+  parameters:
+    effects: built
+    target: self
+    transparent: transparent_to_construction
+    destructible: destructible_replace
+    consume: true
+    direction: forward
+    target_offset: 0,-2,0
+    ignore_region_overrides: true
+  costs:
+    mana: 5
+brushselect:
+  icon: brushselect
+  category: specialty
+  hidden: true
+  show_undoable: false
+  worth: 10
+  quick_cast: true
+  actions:
+    cast:
+    - class: BrushSelect
+  effects:
+    cast:
+      sound: block_ender_chest_open
+      sound_pitch: 1.5
+      sound_volume: 1.1
+column:
+  icon: spell_icon:143
+  icon_disabled: spell_icon_disabled:143
+  alias: superiterate
+  icon_url: http://textures.minecraft.net/texture/58c328c062df8bb125e7bb2cca6dce38c24236733a9f95ca75b04c162c64cb8
+  category: engineering
+  tags: noduel
+  worth: 400
+  actions:
+    cast:
+    - class: Line
+      actions:
+      - class: Disc
+        actions:
+        - class: ModifyBlock
+  parameters:
+    transparent: transparent_to_construction
+    allow_max_range: true
+    range: 64
+    size: 32
+    radius: 3
+    reverse: true
+    increment_data: false
+    orient: true
+    consume: true
+    destructible: destructible_replace
+    ignore_region_overrides: true
+  costs:
+    mana: 200
+commit:
+  icon: commit
+  category: engineering
+  tags: noduel
+  worth: 400
+  actions:
+    cast:
+    - class: Commit
+  effects:
+    cast:
+    - sound: magic.vanish
+      sound_volume: 0.3
+    - sound: block_bell_resonate
+      sound_volume: 2.0
+      sound_pitch: 0.2
+    - sound: block_bell_use
+      sound_volume: 1.2
+      sound_pitch: 0.1
+    - sound: block_conduit_deactivate
+      sound_volume: 0.3
+      sound_pitch: 0.2
+    - effectlib:
+        class: Grid
+        particle: end_rod
+        rotation_x: 1.5707
+        width_cell: 8
+        height_cell: 8
+        rows: 8
+        columns: 8
+        particles_width: 4
+        particles_height: 4
+        particle_count: 2
+        particle_offset: 0.1
+        offset: 0,8,0
+        update_locations: false
+        center: true
+  parameters:
+    target: self
+    bypass_backfire: true
+    loud: true
+    commit_all: false
+  costs:
+    mana: 200
+conduitshop:
+  icon: gold_axe
+  category: npc
+  hidden: true
+  actions:
+    cast:
+    - class: Shop
+    - class: UpgradePath
+  parameters:
+    requirements:
+    - path_end: architect
+    apply_to_caster: true
+    confirm_filler: stained_glass:9
+    confirm: true
+    spells:
+    - none
+    - none
+    - none
+    - none
+    - backup
+convert:
+  icon: convert
+  category: engineering
+  tags: noduel
+  cancellable: false
+  worth: 250
+  upgrade_required_casts: 50
+  actions:
+    cast:
+    - class: Sphere
+      actions:
+      - class: ModifyBlock
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.5
+    - sound: block_stone_break
+      sound_pitch: 0.3
+      sound_volume: 2
+      effectlib:
+        class: ConeEffect
+        iterations: 10
+        particle: block_crack
+        particle_count: 3
+        particle_offset_x: 0.01
+        particle_offset_y: 0.01
+        particle_offset_z: 0.01
+        lengthGrow: 0.1
+        radiusGrow: 0.003
+        updateLocations: false
+        updateDirections: false
+  parameters:
+    target: block
+    allow_max_range: false
+    range: 32
+    check_destructible: false
+    radius: 2
+    replace: true
+    transparent: transparent_to_construction
+    consume: true
+    ignore_region_overrides: true
+  costs:
+    mana: 100
+convert|2:
+  parameters:
+    radius: 3
+convert|3:
+  parameters:
+    radius: 4
+fill:
+  icon: fill
+  category: engineering
+  tags: noduel
+  class: FillSpell
+  worth: 5000
+  deactivate_effects: false
+  earns: 2
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.3
+    - location: selection_to_target
+      effectlib:
+        class: Cuboid
+        duration: 500
+        particle: end_rod
+        block_snap: true
+        padding: 0.1
+        particles: 10
+        particle_count: 4
+        particle_offset_x: 0.02
+        particle_offset_y: 0.02
+        particle_offset_z: 0.02
+    - location: selection_to_target
+      effectlib:
+        padding: 0.2
+        block_snap: true
+        class: Cuboid
+        duration: 1500
+        particle: block_crack
+        particles: 10
+        particle_count: 4
+        particle_offset_x: 0.01
+        particle_offset_y: 0.01
+        particle_offset_z: 0.01
+  parameters:
+    select_self: false
+    allow_max_range: false
+    target: select
+    range: 64
+    max_dimension: 64
+    check_destructible: false
+    transparent: transparent_to_construction
+    consume: true
+    ignore_region_overrides: true
+  costs:
+    mana: 100
+flatten:
+  icon: flatten
+  category: engineering
+  tags: noduel
+  worth: 1000
+  earns: 10
+  upgrade_required_casts: 30
+  actions:
+    cast:
+    - class: Disc
+      actions:
+      - class: Cover
+        actions:
+        - class: LowerBlock
+        - class: PlayEffects
+          effects: lower
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.5
+    - sound: block_stone_break
+      location: both
+    - class: EffectTrail
+      reverse: true
+      particle: block_crack
+      particle_count: 4
+      material: dirt
+    lower:
+    - location: target
+      particle: block_crack
+      particle_count: 10
+      particle_offset_x: 0.5
+      particle_offset_y: 5
+      particle_offset_z: 0.5
+  parameters:
+    range: 32
+    radius: 8
+    vertical_range: 8
+    volume_type: reverse_spiral
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+    faces:
+    - down
+    - north
+    - north_east
+    - east
+    - south_east
+    - south
+    - south_west
+    - west
+    - north_west
+  costs:
+    mana: 50
+flatten|2:
+  parameters:
+    radius: 12
+flatten|3:
+  parameters:
+    radius: 16
+fling|5:
+  glide_restricted: false
+  parameters:
+    min_speed: 4
+    max_speed: 6
+    cooldown: 0
+floodfill:
+  icon: floodfill
+  category: engineering
+  tags: noduel
+  worth: 6000
+  actions:
+    cast:
+    - class: ChangeContext
+      target_attachment: true
+      actions:
+      - class: Recurse
+        actions:
+        - class: ModifyBlock
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.1
+      sound_volume: 0.7
+    - sound: entity_generic_splash
+      sound_volume: 0.9
+      sound_pitch: 0.6
+    - class: EffectTrail
+      particle: block_crack
+      particle_count: 3
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+  parameters:
+    allow_max_range: false
+    range: 32
+    depth: 10
+    destructible: all_air
+    transparent: transparent_to_construction
+    cooldown: 1000
+    consume: true
+    priority_faces: down
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+    faces:
+    - down
+    - north
+    - east
+    - south
+    - west
+  costs:
+    mana: 200
+forest:
+  icon: forest
+  category: elemental
+  worth: 400
+  earns: 10
+  actions:
+    cast:
+    - class: Repeat
+      actions:
+      - class: Spread
+        actions:
+        - class: Cover
+          actions:
+          - class: Tree
+          - class: PlayEffects
+            effects: plant
+          - class: Delay
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.3
+      sound_volume: 1.8
+    - sound: entity_generic_splash
+      sound_pitch: 0.3
+      sound_volume: 1.2
+    - class: EffectTrail
+      particle: block_crack
+      material: log
+      particle_count: 8
+      particle_offset_x: 0.1
+      particle_offset_y: 0.1
+      particle_offset_z: 0.1
+    plant:
+    - location: target
+      sound: entity_generic_splash
+      sound_pitch: 0.6
+      sound_volume: 0.8
+      effectlib:
+        class: Shield
+        particle: water_splash
+        radius: 3
+        duration: 1500
+        particles: 10
+        particle_count: 3
+        particle_offset_x: 0.2
+        particle_offset_y: 0.2
+        particle_offset_z: 0.2
+  parameters:
+    allow_max_range: false
+    range: 64
+    radius: 16
+    repeat: 16
+    delay: 100
+    require_sapling: false
+    cooldown: 30000
+    destructible: destructible,destructible_replace
+    biomes:
+      plains: tree
+      extreme_hills: tree,big_tree,redwood,tall_redwood
+      forest: tree,big_tree,birch,tall_birch
+      taiga: redwood,tall_redwood
+      swampland: tree,brown_mushroom,red_mushroom
+      ice_flats: tree,big_tree,redwood,tall_redwood
+      ice_mountains: tree
+      mushroom_island: brown_mushroom,red_mushroom
+      mushroom_island_shore: brown_mushroom,red_mushroom
+      desert_hills: tree
+      forest_hills: tree
+      taiga_hills: redwood,tall_redwood
+      smaller_extreme_hills: tree
+      jungle: jungle,jungle_bush,small_jungle,cocoa_tree
+      jungle_hills: jungle,jungle_bush,small_jungle,cocoa_tree
+      jungle_edge: tree,big_tree,jungle,jungle_bush,small_jungle,cocoa_tree
+      birch_forest: birch,tall_birch
+      birch_forest_hills: birch,tall_birch
+      roofed_forest: dark_oak,brown_mushroom,red_mushroom
+      taiga_cold: redwood,tall_redwood
+      taiga_cold_hills: redwood,tall_redwood
+      redwood_taiga: redwood,tall_redwood,mega_redwood
+      redwood_taiga_hills: redwood,tall_redwood,mega_redwood
+      extreme_hills_with_trees: tree,big_tree,redwood,tall_redwood
+      savanna: acacia
+      savanna_rock: acacia
+      mesa: tree
+      mesa_rock: tree
+      mesa_clear_rock: tree
+      mutated_plains: tree
+      mutated_desert: tree
+      mutated_forest: tree
+      mutated_taiga: redwood,tall_redwood
+      mutated_swampland: swamp
+      mutated_ice_flats: tree
+      mutated_jungle: jungle,jungle_bush,small_jungle,cocoa_tree
+      mutated_jungle_edge: tree,big_tree,jungle,jungle_bush,small_jungle,cocoa_tree
+      mutated_birch_forest: birch,tall_birch
+      mutated_birch_forest_hills: birch,tall_birch
+      mutated_roofed_forest: dark_oak
+      mutated_taiga_cold: redwood,tall_redwood
+      mutated_redwood_taiga: redwood,tall_redwood
+      mutated_redwood_taiga_hills: redwood,tall_redwood
+      mutated_extreme_hills_with_trees: redwood,tall_redwood
+      mutated_savanna: acacia
+      mutated_savanna_rock: acacia
+      mutated_mesa: tree
+      mutated_mesa_rock: tree
+      mutated_mesa_clear_rock: tree
+      badlands: tree,big_tree,redwood,tall_redwood
+      badlands_plateau: tree,big_tree,redwood,tall_redwood
+      modified_badlands_plateau: tree,big_tree,redwood,tall_redwood
+      modified_wooded_badlands_plateau: tree,big_tree,redwood,tall_redwood
+      eroded_badlands: tree,big_tree,redwood,tall_redwood
+      dark_forest: dark_oak
+      dark_forest_hills: dark_oak
+      giant_spruce_taiga: redwood,tall_redwood
+      giant_spruce_taiga_hills: redwood,tall_redwood
+      giant_tree_taiga: big_tree
+      giant_tree_taiga_hills: big_tree
+      flower_forest: tree,big_tree,birch,tall_birch
+      modified_jungle: jungle,jungle_bush,small_jungle,cocoa_tree
+      modified_jungle_edge: jungle,jungle_bush,small_jungle,cocoa_tree
+      mushroom_field_shore: brown_mushroom,red_mushroom
+      mushroom_fields: brown_mushroom,red_mushroom
+      savanna_plateau: acacia
+      shattered_savanna: acacia
+      shattered_savanna_plateau: acacia
+      snowy_taiga: big_tree
+      snowy_taiga_hills: big_tree
+      snowy_taiga_mountains: big_tree
+      sunflower_plains: tree,big_tree,birch,tall_birch
+      swamp: swamp
+      swamp_hills: swamp
+      taiga_mountains: redwood,tall_redwood
+      tall_birch_forest: tall_birch
+      tall_birch_hills: tall_birch
+      wooded_badlands_plateau: tree,big_tree,redwood,tall_redwood
+      wooded_hills: tree,big_tree,redwood,tall_redwood
+      wooded_mountains: tree,big_tree,redwood,tall_redwood
+  costs:
+    mana: 200
+iterate:
+  icon: iterate
+  category: engineering
+  tags: noduel
+  worth: 3000
+  earns: 13
+  actions:
+    cast:
+    - class: Line
+      actions:
+      - class: ModifyBlock
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: block_grass_step
+    iterate:
+    - class: EffectSingle
+      particle: block_crack
+      particle_count: 21
+      particle_offset_x: 0.5
+      particle_offset_y: 0.5
+      particle_offset_z: 0.5
+      location: target
+  parameters:
+    transparent: transparent_to_construction
+    allow_max_range: false
+    range: 16
+    size: 8
+    increment_data: false
+    destructible: destructible_replace
+    consume: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 50
+light:
+  icon: light
+  category: engineering
+  worth: 500
+  earns: 2
+  actions:
+    cast:
+    - class: ChangeContext
+      target_attachment: true
+      actions:
+      - class: ModifyBlock
+  effects:
+    cast:
+    - sound: block_beacon_activate
+      sound_pitch: 1.8
+    - sound: item_firecharge_use
+      sound_pitch: 1.7
+    - class: EffectTrail
+      particle: smoke_normal
+      particle_count: 10
+      particle_offset_x: 0.2
+      particle_offset_y: 0.2
+      particle_offset_z: 0.2
+  parameters:
+    target: block
+    allow_max_range: true
+    range: 32
+    cooldown: 10000
+    async: false
+    ignore_region_overrides: true
+    brush: light
+    destructible: all_air
+    transparent: transparent_to_construction
+  costs:
+    mana: 200
+materiashop:
+  inherit: buyshop
+  icon: counterspell
+  parameters:
+    apply_to_caster: true
+    cost_type: sp
+    remove_lore: true
+    items:
+    - item: materia:10
+    - placeholder: true
+    - placeholder: true
+    - placeholder: true
+    - item: materia:100
+    - placeholder: true
+    - placeholder: true
+    - placeholder: true
+    - item: materia:1000
+paint:
+  icon: paint
+  category: engineering
+  tags: noduel
+  worth: 1000
+  earns: 10
+  actions:
+    cast:
+    - class: ModifyBlock
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.7
+      sound_volume: 0.1
+    - sound: block_stone_place
+      location: both
+    - effect: step_sound
+      location: target
+      target_location: block_center
+      particle: block_crack
+      particle_count: 16
+      particle_offset_x: 0.75
+      particle_offset_y: 0.75
+      particle_offset_z: 0.75
+    - class: EffectTrail
+      particle: block_crack
+      particle_count: 10
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    - particle: end_rod
+      target_location: block_center
+      location: target
+      particle_count: 4
+      particle_offset_x: 0.55
+      particle_offset_y: 0.55
+      particle_offset_z: 0.55
+  parameters:
+    target: block
+    allow_max_range: false
+    range: 64
+    check_destructible: false
+    transparent: transparent_to_construction
+    consume: true
+    ignore_region_overrides: true
+  costs:
+    mana: 5
+paste:
+  icon: paste
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 850
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.3
+      sound_volume: 1.2
+    - sound: block_beacon_activate
+      sound_pitch: 0.4
+      sound_volume: 0.8
+    - class: EffectTrail
+      particle: end_rod
+      particle_count: 3
+      particle_offset: 0.1
+      iterations: 16
+  parameters:
+    allow_max_range: true
+    check_destructible: false
+    use_brush_size: true
+    max_dimension: 256
+    target: block
+    type: cuboid
+    transparent: transparent_to_construction
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+    consume: true
+  casts:
+    mana: 300
+permafrost:
+  icon: spell_icon:38
+  icon_disabled: spell_icon_disabled:38
+  icon_url: http://textures.minecraft.net/texture/872d9b98a6b34a2762aac1af915873c066c43c2b2b8d689d27626cc5afcb11
+  category: engineering
+  tags: noduel
+  worth: 2000
+  earns: 10
+  actions:
+    cast:
+    - class: Weather
+    - class: Sphere
+      actions:
+      - class: ChangeBiome
+      - class: Freeze
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: magic.zap
+    tick:
+    - location: target
+      particle: snowball
+      particle_count: 4
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    hit:
+    - class: EffectSingle
+      location: target
+      color: F5EFFB
+      firework: ball
+    - class: EffectSingle
+      location: target
+      target_offset: 0,0.2,0
+      effectlib:
+        class: Shield
+        duration: 5000
+        period: 4
+        particle: snowball
+        radius: $radius
+  parameters:
+    target: block
+    allow_max_range: false
+    range: 48
+    radius: 16
+    transparent: freeze_transparent
+    destructible: freezeable
+    ice: ice
+    cooldown: 30000
+    freeze_lava: true
+    biome: ice_spikes
+    weather: storm
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 200
+permamelt:
+  icon: spell_icon:38
+  icon_disabled: spell_icon_disabled:38
+  icon_url: http://textures.minecraft.net/texture/872d9b98a6b34a2762aac1af915873c066c43c2b2b8d689d27626cc5afcb11
+  category: engineering
+  tags: noduel
+  worth: 2000
+  earns: 10
+  actions:
+    cast:
+    - class: Sphere
+      actions:
+      - class: ChangeBiome
+      - class: ModifyBlock
+      - class: Weather
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: magic.zap
+    tick:
+    - location: target
+      particle: snowball
+      particle_count: 4
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    hit:
+    - class: EffectSingle
+      location: target
+      color: F5EFFB
+      firework: ball
+    - class: EffectSingle
+      location: target
+      target_offset: 0,0.2,0
+      effectlib:
+        class: Shield
+        duration: 5000
+        period: 4
+        particle: snowball
+        radius: $radius
+  parameters:
+    target: block
+    allow_max_range: false
+    range: 48
+    radius: 16
+    transparent: transparent
+    destructible: ice
+    cooldown: 30000
+    freeze_lava: true
+    biome: desert
+    weather: normal
+    brush: stationary_water
+    ignore_region_overrides: true
+  costs:
+    mana: 200
+pillar:
+  icon: pillar
+  category: engineering
+  tags: noduel
+  worth: 1000
+  earns: 10
+  actions:
+    cast:
+    - class: BlockSearch
+      actions:
+      - class: ModifyBlock
+      - class: PlayEffects
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.5
+      sound_volume: 0.1
+    - sound: block_stone_place
+      location: both
+    - class: EffectTrail
+      particle: block_crack
+      particle_count: 4
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    search:
+    - particle: block_crack
+      target_location: block_center
+      location: target
+      particle_count: 8
+      particle_offset_x: 0.75
+      particle_offset_y: 0.75
+      particle_offset_z: 0.75
+    - particle: end_rod
+      target_location: block_center
+      location: target
+      particle_count: 4
+      particle_offset_x: 0.55
+      particle_offset_y: 0.55
+      particle_offset_z: 0.55
+    built:
+    - class: EffectSingle
+      effect: step_sound
+      target_location: block_center
+      location: target
+      particle: block_crack
+      particle_count: 16
+      particle_offset_x: 1.5
+      particle_offset_y: 1.5
+      particle_offset_z: 1.5
+  parameters:
+    effects: built
+    allow_max_range: false
+    range: 64
+    transparent: transparent_to_construction
+    direction: up
+    destructible: destructible_replace
+    consume: true
+    ignore_region_overrides: true
+  costs:
+    mana: 5
+place:
+  icon: place
+  category: engineering
+  tags: noduel
+  worth: 1000
+  earns: 5
+  actions:
+    cast:
+    - class: ChangeContext
+      target_attachment: true
+      actions:
+      - class: ModifyBlock
+      - class: PlayEffects
+        effects: placed
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.3
+      sound_volume: 0.1
+    - sound: block_stone_place
+      location: both
+    placed:
+    - effect: step_sound
+      location: target
+      target_location: block_center
+      particle: block_crack
+      particle_count: 16
+      particle_offset_x: 0.75
+      particle_offset_y: 0.75
+      particle_offset_z: 0.75
+    - class: EffectTrail
+      particle: block_crack
+      particle_count: 10
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+      target_location: block_center
+    - particle: end_rod
+      target_location: block_center
+      location: target
+      particle_count: 8
+      particle_offset_x: 0.75
+      particle_offset_y: 0.75
+      particle_offset_z: 0.75
+  parameters:
+    allow_max_range: false
+    range: 64
+    transparent: transparent_to_construction
+    check_destructible: false
+    consume: true
+    ignore_region_overrides: true
+    physics: true
+    auto_block_state: true
+  costs:
+    mana: 10
+raise:
+  icon: raise
+  example_thumbnail: https://thumbs.gfycat.com/ClassicUnhappyElephantbeetle-size_restricted.gif
+  example_link: https://gfycat.com/gifs/detail/ClassicUnhappyElephantbeetle
+  category: engineering
+  tags: noduel
+  worth: 1000
+  earns: 10
+  upgrade_required_casts: 30
+  actions:
+    cast:
+    - class: Disc
+      actions:
+      - class: Cover
+        actions:
+        - class: RaiseBlock
+        - class: PlayEffects
+          effects: raise
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.5
+    - sound: block_stone_break
+      location: both
+    - class: EffectTrail
+      particle: block_crack
+      particle_count: 4
+      material: dirt
+    raise:
+    - location: target
+      particle: block_crack
+      particle_count: 10
+      particle_offset_x: 0.5
+      particle_offset_y: 5
+      particle_offset_z: 0.5
+  parameters:
+    range: 64
+    radius: 8
+    vertical_range: 32
+    consume: true
+    destructible: '!earth'
+    transparent: '!earth'
+    cancel_on_deactivate: false
+    slopes:
+      '1': 100
+      '2': 50
+      '3': 5
+    faces:
+    - down
+    - north
+    - north_east
+    - east
+    - south_east
+    - south
+    - south_west
+    - west
+    - north_west
+  costs:
+    mana: 50
+raise|2:
+  parameters:
+    radius: 12
+raise|3:
+  parameters:
+    radius: 16
+recurse:
+  icon: recurse
+  category: engineering
+  tags: noduel
+  worth: 4000
+  earns: 15
+  upgrade_required_casts: 50
+  actions:
+    cast:
+    - class: Recurse
+      actions:
+      - class: ModifyBlock
+      - class: Skip
+        skip: 4
+        actions:
+        - class: PlayEffects
+          effects: changed
+      - class: Skip
+        actions:
+        - class: Delay
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.5
+    - sound: block_stone_break
+      sound_pitch: 0.7
+      sound_volume: 2
+      effectlib:
+        class: ConeEffect
+        iterations: 10
+        particle: block_crack
+        particle_count: 8
+        particle_offset_x: 0.8
+        particle_offset_y: 0.8
+        particle_offset_z: 0.8
+        length_grow: 0.2
+        radius_grow: 0.004
+        update_locations: false
+        update_directions: false
+    changed:
+    - sound: block_stone_break
+      sound_pitch: 1.5
+      sound_volume: 0.2
+      target_location: block_center
+      particle: block_crack
+      particle_count: 12
+      particle_offset_x: 0.8
+      particle_offset_y: 0.8
+      particle_offset_z: 0.8
+      location: target
+    - particle: end_rod
+      particle_count: 8
+      particle_offset_x: 0.6
+      particle_offset_y: 0.6
+      particle_offset_z: 0.6
+      location: target
+      target_location: block_center
+  parameters:
+    allow_max_range: false
+    range: 32
+    depth: 3
+    delay: 150
+    skip: 1
+    check_destructible: false
+    transparent: transparent_to_construction
+    cooldown: 500
+    replace: true
+    consume: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 30
+recurse|2:
+  parameters:
+    depth: 5
+    delay: 50
+    skip: 2
+recurse|3:
+  parameters:
+    depth: 10
+    delay: 25
+    skip: 5
+recurse|4:
+  parameters:
+    depth: 12
+    delay: 1
+    skip: 100
+regenerate:
+  icon: regenerate
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 300
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: block_piston_extend
+      sound_volume: 0.2
+      sound_pitch: 0.5
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.8
+    - location: target
+      target_offset: 0,1,0
+      effectlib:
+        class: Helix
+        particle: crimson_spore
+        duration: 1000
+        radius: 2
+        particles: 8
+        particle_count: 4
+        particle_offset: 0.05
+    - class: EffectTrail
+      particle: dripping_honey
+      particle_count: 4
+      particle_offset: 0.2
+    - location: target
+      effectlib:
+        class: Star
+        particle: end_rod
+        duration: 1000
+        spike_height: 4
+        particles: 10
+        particle_count: 4
+        particle_offset: 0.05
+    - class: EffectTrail
+      particle: dripping_honey
+      particle_count: 4
+      particle_offset: 0.2
+  parameters:
+    target: block
+    allow_max_range: false
+    range: 32
+    radius: 4
+    type: sphere
+    check_destructible: false
+    indestructible: restricted
+    transparent: transparent_to_construction
+    brush: clone
+    brushmod: erase
+    otworld: ~-_original
+    obworld: ~_original
+    brushtarget: true
+    cooldown: 7000
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+    consume: true
+  costs:
+    mana: 200
+repair:
+  icon: repair
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 300
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: block_piston_extend
+      sound_volume: 0.2
+      sound_pitch: 0.5
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.8
+    - location: target
+      target_offset: 0,1,0
+      effectlib:
+        class: Helix
+        particle: crimson_spore
+        duration: 1000
+        radius: 2
+        particles: 8
+        particle_count: 4
+        particle_offset: 0.05
+    - class: EffectTrail
+      particle: dripping_honey
+      particle_count: 4
+      particle_offset: 0.2
+    - location: target
+      effectlib:
+        class: Star
+        particle: end_rod
+        duration: 1000
+        spike_height: 4
+        particles: 10
+        particle_count: 4
+        particle_offset: 0.05
+    - class: EffectTrail
+      particle: dripping_honey
+      particle_count: 4
+      particle_offset: 0.2
+  parameters:
+    target: block
+    allow_max_range: false
+    range: 32
+    radius: 4
+    type: sphere
+    check_destructible: false
+    indestructible: restricted
+    transparent: transparent_to_construction
+    brush: clone
+    brushmod: erase
+    otworld: ~-_backup
+    obworld: ~_backup
+    brushtarget: true
+    cooldown: 7000
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+    consume: true
+  costs:
+    mana: 200
+rollback:
+  icon: rollback
+  alias: undo
+  category: engineering
+  tags: noduel
+  worth: 9999
+  actions:
+    cast:
+    - class: Undo
+    alternate_up:
+    - class: Undo
+      target_caster: true
+    alternate_down:
+    - class: Undo
+      target_down: true
+  effects:
+    no_target:
+    - sound: block_note_block_bass
+      sound_volume: 0.7
+      sound_pitch: 1.8
+    - class: EffectSingle
+      sound: magic.bonk
+      sound_volume: 1
+      use_target_location: false
+      effectlib:
+        class: Equation
+        iterations: 10
+        xEquation: t/10
+        yEquation: sin(t) * (t/50)
+        zEquation: cos(t) * (t/50) + 1
+        particle: crit
+        particle_count: 10
+        particle_offset_x: 0.1
+        particle_offset_y: 0.1
+        particle_offset_z: 0.1
+        updateDirections: false
+        particles: 20
+    alternate_up:
+    - sound: block_beacon_deactivate
+      sound_pitch: 0.3
+      sound_volume: 1.2
+      location: both
+    - class: EffectSingle
+      sound: magic.shimmer
+      sound_volume: 0.6
+      location: both
+      particle_override: particle_nucleus
+      color_override: colorOrbital
+      effectlib:
+        class: AtomEffect
+        particle_nucleus: enchantment_table
+        particle_orbital: redstone
+        iterations: 8
+    cast:
+    - sound: block_beacon_deactivate
+      sound_pitch: 0.8
+      sound_volume: 1.2
+      location: both
+    - sound: magic.shimmer
+      sound_volume: 1
+      location: both
+    - location: source
+      use_target_location: false
+      effectlib:
+        class: Equation
+        iterations: 30
+        xEquation: t
+        yEquation: sin(t)
+        zEquation: cos(t)
+        particle: enchantment_table
+        particle_count: 20
+        speed: 1
+        particle_offset_x: 0.2
+        particle_offset_y: 0.2
+        particle_offset_z: 0.2
+        updateDirections: false
+    - location: source
+      use_target_location: false
+      effectlib:
+        class: Equation
+        iterations: 10
+        xEquation: t/10
+        yEquation: sin(t) * (t/50)
+        zEquation: cos(t) * (t/50) + 1
+        particle: crit
+        particle_count: 10
+        particle_offset_x: 0.1
+        particle_offset_y: 0.1
+        particle_offset_z: 0.1
+        updateDirections: false
+        particles: 20
+    - location: target
+      effectlib:
+        class: Star
+        particle: falling_obsidian_tear
+        iterations: 1
+        particles: 30
+        spike_height: 1.5
+  parameters:
+    target: block
+    allow_max_range: true
+    range: 64
+    transparent: all_air
+    bypass_backfire: true
+    loud: true
+    cancel: true
+    admin_permission: Magic.undo_others
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 100
+save:
+  icon: backup
+  category: engineering
+  tags: noduel
+  class: SaveSchematicSpell
+  worth: 5000
+  deactivate_effects: false
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.3
+    - location: selection_to_target
+      effectlib:
+        class: Cuboid
+        duration: 500
+        particle: end_rod
+        block_snap: true
+        padding: 0.1
+        particles: 10
+        particle_count: 4
+        particle_offset_x: 0.02
+        particle_offset_y: 0.02
+        particle_offset_z: 0.02
+    - location: selection_to_target
+      effectlib:
+        padding: 0.2
+        block_snap: true
+        class: Cuboid
+        duration: 1500
+        particle: block_crack
+        particles: 10
+        particle_count: 4
+        particle_offset_x: 0.01
+        particle_offset_y: 0.01
+        particle_offset_z: 0.01
+  parameters:
+    select_self: false
+    allow_max_range: false
+    target: select
+    range: 64
+    max_dimension: 64
+    check_destructible: false
+    transparent: transparent_to_construction
+    consume: true
+    ignore_region_overrides: true
+    ignore: bedrock,barrier
+    loud: true
+  costs:
+    mana: 100
+superalter:
+  inherit: alter
+  icon: superalter
+  category: engineering
+  tags: noduel
+  worth: 2000
+  actions:
+    cast:
+    - class: Recurse
+      actions:
+      - class: CycleBlock
+  parameters:
+    range: 64
+    depth: 32
+    transparent: transparent_to_construction
+    destructible: '!air'
+    replace: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 40
+superbackup:
+  icon: superbackup
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 1000
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - class: EffectSingle
+      sound: block_piston_contract
+      sound_volume: 0.2
+      sound_pitch: 0.5
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.8
+    - class: EffectRing
+      location: target_to_selection
+      effect: ender_signal
+      radius: 0
+      size: 12
+      target_offset: 0,2,0
+    - class: EffectTrail
+      particle: falling_obsidian_tear
+      particle_count: 4
+      particle_offset: 0.2
+  parameters:
+    allow_max_range: true
+    range: 32
+    max_dimension: 32
+    target: select
+    type: cuboid
+    transparent: transparent_to_construction
+    brush: clone
+    check_destructible: false
+    brushmod: erase
+    otworld: ~_backup
+    obworld: ~-_backup
+    brushtarget: true
+    bypass_undo: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 400
+superblast:
+  icon: superblast
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 3000
+  effects:
+    cast:
+    - sound: entity_generic_explode
+      location: both
+      sound_pitch: 0.8
+    - sound: block_conduit_deactivate
+      sound_pitch: 0.4
+      sound_volume: 0.5
+    - class: EffectTrail
+      particle: explosion_normal
+      particle_count: 3
+      particle_offset_x: 0.1
+      particle_offset_y: 0.1
+      particle_offset_z: 0.1
+    - particle: explosion_huge
+      location: target
+      particle_count: 6
+      particle_offset_x: 4
+      particle_offset_y: 4
+      particle_offset_z: 4
+    - particle: explosion_large
+      location: target
+      particle_count: 12
+      particle_offset_x: 5
+      particle_offset_y: 5
+      particle_offset_z: 5
+  parameters:
+    allow_max_range: true
+    range: 32
+    brush: air
+    radius: 5
+    type: sphere
+    transparent: transparent_to_construction
+    check_destructible: false
+    speed: 0.9
+    direction: 0,0.8,0
+    falling: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 100
+superblob:
+  icon: superblob
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 4500
+  earns: 2
+  upgrade_required_casts: 50
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - sound: magic.shield
+      sound_volume: 0.3
+    - sound: block_slime_block_hit
+      sound_pitch: 1.5
+      sound_volume: 1.2
+    - sound: block_stone_place
+      sound_pitch: 0.2
+      sound_volume: 1.7
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.3
+    - class: EffectTrail
+      location: origin_to_selection
+      particle: block_crack
+      particle_count: 6
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    - location: selection_to_target
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 1500
+        parameters:
+          radius: (t / i) * a + 0.5
+        effect:
+          class: Sphere
+          particle: block_crack
+          particles: 15
+          particle_count: 10
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
+    - location: selection_to_target
+      radius_override: radius
+      effectlib:
+        class: Sphere
+        duration: 500
+        particle: end_rod
+        particles: 25
+        particle_count: 3
+        particle_offset_x: 0.05
+        particle_offset_y: 0.05
+        particle_offset_z: 0.05
+  parameters:
+    allow_max_range: true
+    check_destructible: false
+    range: 32
+    max_dimension: 16
+    target: select
+    type: sphere
+    transparent: transparent_to_construction
+    consume: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 400
+superblob|2:
+  parameters:
+    max_dimension: 24
+superblob|3:
+  parameters:
+    max_dimension: 32
+superbox:
+  icon: superbox
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 4000
+  upgrade_required_casts: 50
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.4
+    - class: EffectTrail
+      location: origin_to_selection
+      particle: block_crack
+      particle_count: 6
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    - location: selection_to_target
+      target_location: block_center
+      source_location: block_center
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 500
+        parameters:
+          edge_length: a * 2 + 0.5
+        effect:
+          class: Cube
+          particle: end_rod
+          particle_count: 3
+          particle_offset: 0.2
+          angular_velocity_x: 0
+          angular_velocity_y: 0
+          angular_velocity_z: 0
+          particles: 30
+    - location: selection_to_target
+      target_location: block_center
+      source_location: block_center
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 1000
+        parameters:
+          edge_length: a * 2 + 0.5
+        effect:
+          class: Cube
+          particle: block_crack
+          particle_count: 3
+          particle_offset: 0.2
+          angular_velocity_x: 0
+          angular_velocity_y: 0
+          angular_velocity_z: 0
+          particles: 20
+  parameters:
+    allow_max_range: true
+    range: 64
+    max_dimension: 16
+    thickness: 1
+    target: select
+    type: cuboid
+    destructible: destructible_replace
+    transparent: transparent_to_construction
+    consume: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 400
+superbox|2:
+  parameters:
+    max_dimension: 24
+superbox|3:
+  parameters:
+    max_dimension: 32
+supercollapse:
+  icon: supercollapse
+  category: engineering
+  tags: noduel
+  cancellable: false
+  class: ConstructSpell
+  worth: 900
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: entity_generic_explode
+    - class: EffectSingle
+      sound: entity_generic_explode
+      location: target
+      particle: explosion_huge
+    - class: EffectTrail
+      particle: explosion_normal
+  parameters:
+    allow_max_range: true
+    range: 32
+    cooldown: 10000
+    max_dimension: 5
+    brush: air
+    falling: true
+    check_destructible: false
+    target: select
+    type: sphere
+    transparent: transparent_to_construction
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 250
+superconvert:
+  icon: superconvert
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 4000
+  deactivate_effects: false
+  upgrade_required_casts: 50
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.3
+    - class: EffectTrail
+      location: origin_to_selection
+      particle: block_crack
+      particle_count: 6
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    - location: selection_to_target
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 1500
+        parameters:
+          radius: (t / i) * a + 0.5
+        effect:
+          class: Sphere
+          particle: block_crack
+          particles: 15
+          particle_count: 10
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
+    - location: selection_to_target
+      radius_override: radius
+      effectlib:
+        class: Sphere
+        duration: 100
+        particle: end_rod
+        particles: 25
+        particle_count: 3
+        particle_offset_x: 0.05
+        particle_offset_y: 0.05
+        particle_offset_z: 0.05
+  parameters:
+    allow_max_range: false
+    range: 32
+    check_destructible: false
+    max_dimension: 16
+    target: select
+    type: sphere
+    replace: true
+    transparent: transparent_to_construction
+    consume: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+    match_data: false
+    sneak_match_data: true
+  costs:
+    mana: 300
+superconvert|2:
+  parameters:
+    max_dimension: 24
+superconvert|3:
+  parameters:
+    max_dimension: 32
+supercube:
+  icon: supercube
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 5000
+  upgrade_required_casts: 50
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.4
+    - class: EffectTrail
+      location: origin_to_selection
+      particle: block_crack
+      particle_count: 6
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    - location: selection_to_target
+      target_location: block_center
+      source_location: block_center
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 1000
+        parameters:
+          edge_length: a * 2 + 0.5
+        effect:
+          class: Cube
+          particle: end_rod
+          particle_count: 3
+          particle_offset: 0.2
+          angular_velocity_x: 0
+          angular_velocity_y: 0
+          angular_velocity_z: 0
+          particles: 30
+    - location: selection_to_target
+      target_location: block_center
+      source_location: block_center
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 500
+        parameters:
+          edge_length: a * 2 + 0.5
+        effect:
+          class: Cube
+          particle: block_crack
+          particle_count: 3
+          particle_offset: 0.2
+          angular_velocity_x: 0
+          angular_velocity_y: 0
+          angular_velocity_z: 0
+          particles: 20
+  parameters:
+    allow_max_range: true
+    range: 64
+    max_dimension: 16
+    target: select
+    type: cuboid
+    transparent: transparent_to_construction
+    check_destructible: false
+    orient_dimension_min: 0
+    consume: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 400
+supercube|2:
+  parameters:
+    max_dimension: 24
+supercube|3:
+  parameters:
+    max_dimension: 32
+supercylinder:
+  icon: supercylinder
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 3000
+  upgrade_required_casts: 50
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.3
+    - class: EffectTrail
+      location: origin_to_selection
+      particle: block_crack
+      particle_count: 6
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    - location: selection_to_target
+      radius_override: radius
+      effectlib:
+        class: Circle
+        particle: end_rod
+        particle_count: 3
+        particle_offset: 0.2
+        angular_velocity_x: 0
+        angular_velocity_y: 0
+        angular_velocity_z: 0
+        particles: 30
+        whole_circle: true
+        duration: 500
+    - location: selection_to_target
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 1500
+        yEquation: (t/i) * 10
+        parameters:
+          radius: a
+        effect:
+          class: Circle
+          particle: block_crack
+          particle_count: 3
+          particle_offset: 0.2
+          angular_velocity_x: 0
+          angular_velocity_y: 0
+          angular_velocity_z: 0
+          particles: 20
+          whole_circle: true
+  parameters:
+    allow_max_range: true
+    range: 32
+    max_dimension: 16
+    target: select
+    thickness: 1
+    type: cylinder
+    transparent: transparent_to_construction
+    destructible: destructible_replace
+    consume: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 400
+supercylinder|2:
+  parameters:
+    max_dimension: 24
+supercylinder|3:
+  parameters:
+    max_dimension: 32
+superdisc:
+  icon: superdisc
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 2500
+  upgrade_required_casts: 50
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.3
+    - class: EffectTrail
+      location: origin_to_selection
+      particle: block_crack
+      particle_count: 6
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    - location: selection_to_target
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 1500
+        parameters:
+          radius: (t / i) * a + 0.5
+        effect:
+          class: Helix
+          particle: block_crack
+          particles: 10
+          particle_count: 5
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
+          offset: 0,1.2,0
+    - location: selection_to_target
+      radius_override: radius
+      effectlib:
+        class: Helix
+        duration: 500
+        particle: end_rod
+        particles: 25
+        particle_count: 3
+        particle_offset_x: 0.05
+        particle_offset_y: 0.05
+        particle_offset_z: 0.05
+        offset: 0,1,0
+  parameters:
+    allow_max_range: true
+    range: 64
+    max_dimension: 16
+    target: select
+    type: sphere
+    orient_dimension_max: 0
+    orient_dimension_min: 0
+    transparent: transparent_to_construction
+    check_destructible: false
+    orient: true
+    consume: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 200
+superdisc|2:
+  parameters:
+    max_dimension: 24
+superdisc|3:
+  parameters:
+    max_dimension: 32
+superdome:
+  icon: superdome
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 3000
+  upgrade_required_casts: 50
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.3
+    - class: EffectTrail
+      location: origin_to_selection
+      particle: block_crack
+      particle_count: 6
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    - location: selection_to_target
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 1500
+        parameters:
+          radius: (t / i) * a + 0.5
+        effect:
+          class: Sphere
+          particle: block_crack
+          particles: 15
+          particle_count: 10
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
+    - location: selection_to_target
+      radius_override: radius
+      effectlib:
+        class: Sphere
+        duration: 500
+        particle: end_rod
+        particles: 25
+        particle_count: 3
+        particle_offset_x: 0.05
+        particle_offset_y: 0.05
+        particle_offset_z: 0.05
+  parameters:
+    allow_max_range: true
+    range: 64
+    max_dimension: 16
+    thickness: 1
+    target: select
+    type: sphere
+    orient_dimension_min: 0
+    destructible: destructible_replace
+    transparent: transparent_to_construction
+    consume: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 200
+superdome|2:
+  parameters:
+    max_dimension: 24
+superdome|3:
+  parameters:
+    max_dimension: 32
+superfly:
+  icon: superfly
+  hidden: true
+  quick_cast: true
+  category: staff
+  worth: 1500
+  toggle: cancel
+  cancellable: false
+  show_undoable: false
+  undoable: false
+  reactivate: true
+  actions:
+    reactivate:
+    - class: Fly
+    - class: FallProtection
+      duration: 10000
+    cast:
+    - class: Velocity
+      direction: 0,1,0
+      additive: true
+      speed: 2
+    - class: Delay
+      delay: 100
+    - class: Fly
+    - class: FallProtection
+      duration: 10000
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: entity_ender_dragon_flap
+    deactivate:
+    - class: EffectSingle
+      sound: entity_ender_dragon_flap
+      sound_pitch: 0.2
+  parameters:
+    target: self
+    speed: 2.5
+    bypass_undo: true
+supergather:
+  icon: spell_icon:200
+  icon_disabled: spell_icon_disabled:200
+  icon_url: http://textures.minecraft.net/texture/ff78194bb5fe3f374ca6a1727c04247b7bac331cff248bf642acc8e73647e
+  category: staff
+  show_undoable: false
+  class: GotoSpell
+  hidden: true
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: entity_enderman_ambient
+    - class: EffectTrail
+      particle: portal
+      particle_count: 4
+    - class: EffectSingle
+      location: both
+      effectlib:
+        class: WarpEffect
+        particle: portal
+  parameters:
+    target_type: LivingEntity
+    allow_max_range: false
+    range: 64
+    target: other
+    bypass_friendly_fire: true
+  costs:
+    mana: 50
+superhemisphere:
+  icon: spell_icon:95
+  icon_disabled: spell_icon_disabled:95
+  icon_url: http://textures.minecraft.net/texture/812a772ef923c597e12f41986d7bea9a9387055eb17eeebb1d8c6de3ca25f
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 800
+  earns: 2
+  upgrade_required_casts: 50
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.3
+    - class: EffectTrail
+      location: origin_to_selection
+      particle: block_crack
+      particle_count: 6
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    - location: selection_to_target
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 1500
+        parameters:
+          radius: (t / i) * a + 0.5
+        effect:
+          class: Sphere
+          particle: block_crack
+          particles: 15
+          particle_count: 10
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
+    - location: selection_to_target
+      radius_override: radius
+      effectlib:
+        class: Sphere
+        duration: 500
+        particle: end_rod
+        particles: 25
+        particle_count: 3
+        particle_offset_x: 0.05
+        particle_offset_y: 0.05
+        particle_offset_z: 0.05
+  parameters:
+    allow_max_range: true
+    check_destructible: false
+    range: 32
+    max_dimension: 16
+    target: select
+    type: sphere
+    transparent: transparent_to_construction
+    orient_dimension_min: 0
+    consume: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 400
+superhemisphere|2:
+  parameters:
+    max_dimension: 24
+superhemisphere|3:
+  parameters:
+    max_dimension: 32
+superlaser:
+  icon: superlaser
+  category: engineering
+  tags: noduel
+  worth: 450
+  earns: 8
+  upgrade_required_path: architect
+  upgrade_required_casts: 30
+  actions:
+    cast:
+    - class: Line
+      actions:
+      - class: ModifyBlock
+    - class: Repeat
+      actions:
+      - class: Delay
+      - class: Retarget
+        actions:
+        - class: PlayEffects
+          effect: beam
+          ignore_result: true
+        - class: Line
+          ignore_result: true
+          actions:
+          - class: ModifyBlock
+  effects:
+    cast:
+    - sound: entity_guardian_attack
+      sound_pitch: 0.5
+      sound_volume: 0.5
+    - sound: magic.zap_crack
+      location: origin
+    - sound: block_beacon_activate
+      sound_pitch: 0.8
+      sound_volume: 0.8
+    - sound: block_conduit_activate
+      sound_pitch: 0.5
+      sound_volume: 0.6
+    beam:
+    - sound: entity_guardian_attack
+      sound_pitch: 2
+      sound_volume: 2
+    - sound: entity_guardian_attack
+      sound_pitch: 1.5
+      sound_volume: 1.6
+      location: target
+    - class: EffectSingle
+      sound: magic.zap
+      location: origin
+      sound_volume: 0.1
+      effectlib:
+        class: LineEffect
+        particle: redstone
+        iterations: 2
+        color: ff0000
+    - class: EffectSingle
+      sound: magic.zap
+      location: origin
+      sound_volume: 0.1
+      color_override: color
+      relative_offset: 8,0,0
+      effectlib:
+        update_locations: false
+        update_directions: false
+        class: CylinderEffect
+        particle: redstone
+        radius: 0.5
+        height: 16
+        enable_rotation: false
+        particles: 10
+        particle_count: 4
+        particle_offset_x: 0.05
+        particle_offset_y: 0.05
+        particle_offset_z: 0.05
+        duration: 250
+        period: 1
+        offset: 0,-0.1,0
+        orient: true
+        rotation_x: 0
+        rotation_y: 0
+  parameters:
+    target: block
+    target_type: Damageable
+    allow_max_range: true
+    range: 32
+    size: 1
+    start_at_target: true
+    increment_data: false
+    check_destructible: true
+    transparent: all_air
+    brush: air
+    radius: 1.5
+    cooldown: 10000
+    delay: 250
+    repeat: 10
+    orient: true
+    axis: z
+    ignore_region_overrides: true
+  costs:
+    mana: 200
+superlaser|2:
+  upgrade_required_casts: 20
+  parameters:
+    repeat: 11
+superlaser|3:
+  parameters:
+    player_damage: 1
+    entity_damage: 3
+    repeat: 12
+superphase:
+  inherit: phase
+  parameters:
+    target: other
+    target_type: LivingEntity
+    cooldown: 500
+    delay: 0
+superpyramid:
+  icon: superpyramid
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 3000
+  upgrade_required_casts: 50
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.4
+    - class: EffectTrail
+      location: origin_to_selection
+      particle: block_crack
+      particle_count: 6
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    - location: selection_to_target
+      target_location: block_center
+      source_location: block_center
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 500
+        parameters:
+          radius: a + 1
+        effect:
+          class: Pyramid
+          particle: end_rod
+          particle_count: 3
+          particle_offset: 0.2
+          particles: 30
+    - location: selection_to_target
+      target_location: block_center
+      source_location: block_center
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 1000
+        parameters:
+          radius: a + 0.25
+        effect:
+          class: Pyramid
+          particle: block_crack
+          particle_count: 3
+          particle_offset: 0.2
+          particles: 20
+  parameters:
+    allow_max_range: true
+    range: 32
+    max_dimension: 16
+    target: select
+    thickness: 1
+    type: pyramid
+    transparent: transparent_to_construction
+    destructible: destructible_replace
+    consume: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+    orient_dimension_min: 0
+  costs:
+    mana: 400
+superpyramid|2:
+  parameters:
+    max_dimension: 24
+superpyramid|3:
+  parameters:
+    max_dimension: 32
+superregenerate:
+  icon: superregenerate
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 500
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - class: EffectSingle
+      sound: block_piston_extend
+      sound_volume: 0.2
+      sound_pitch: 0.3
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.7
+    - location: target
+      target_offset: 0,1,0
+      effectlib:
+        class: Helix
+        particle: crimson_spore
+        duration: 1000
+        radius: 2
+        particles: 8
+        particle_count: 4
+        particle_offset: 0.05
+    - class: EffectTrail
+      particle: dripping_honey
+      particle_count: 4
+      particle_offset: 0.2
+    - location: selection_to_target
+      radius_override: spike_height
+      effectlib:
+        class: Star
+        particle: end_rod
+        duration: 500
+        particles: 10
+        particle_count: 4
+        particle_offset: 0.05
+    - class: EffectTrail
+      particle: dripping_honey
+      particle_count: 4
+      particle_offset: 0.2
+  parameters:
+    target: select
+    allow_max_range: true
+    max_dimension: 32
+    range: 32
+    type: sphere
+    check_destructible: false
+    indestructible: restricted
+    transparent: transparent_to_construction
+    brush: clone
+    brushmod: erase
+    otworld: ~-_original
+    obworld: ~_original
+    brushtarget: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 400
+superrepair:
+  icon: superrepair
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 500
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - class: EffectSingle
+      sound: block_piston_extend
+      sound_volume: 0.2
+      sound_pitch: 0.3
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.7
+    - location: target
+      target_offset: 0,1,0
+      effectlib:
+        class: Helix
+        particle: crimson_spore
+        duration: 1000
+        radius: 2
+        particles: 8
+        particle_count: 4
+        particle_offset: 0.05
+    - class: EffectTrail
+      particle: dripping_honey
+      particle_count: 4
+      particle_offset: 0.2
+    - location: selection_to_target
+      radius_override: spike_height
+      effectlib:
+        class: Star
+        particle: end_rod
+        duration: 500
+        particles: 10
+        particle_count: 4
+        particle_offset: 0.05
+    - class: EffectTrail
+      particle: dripping_honey
+      particle_count: 4
+      particle_offset: 0.2
+  parameters:
+    target: select
+    allow_max_range: true
+    max_dimension: 32
+    range: 32
+    type: sphere
+    check_destructible: false
+    indestructible: restricted
+    transparent: transparent_to_construction
+    brush: clone
+    brushmod: erase
+    otworld: ~-_backup
+    obworld: ~_backup
+    brushtarget: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 400
+superring:
+  icon: superring
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 4000
+  upgrade_required_casts: 50
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.3
+    - class: EffectTrail
+      location: origin_to_selection
+      particle: block_crack
+      particle_count: 6
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    - location: selection_to_target
+      radius_override: radius
+      effectlib:
+        class: Circle
+        particle: end_rod
+        particle_count: 3
+        particle_offset: 0.2
+        angular_velocity_x: 0
+        angular_velocity_y: 0
+        angular_velocity_z: 0
+        particles: 30
+        whole_circle: true
+        duration: 500
+    - location: selection_to_target
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 1500
+        parameters:
+          radius: a * (t/i) * 0.9
+        effect:
+          class: Circle
+          particle: block_crack
+          particle_count: 3
+          particle_offset: 0.2
+          angular_velocity_x: 0
+          angular_velocity_y: 0
+          angular_velocity_z: 0
+          particles: 20
+          whole_circle: true
+  parameters:
+    allow_max_range: true
+    range: 64
+    max_dimension: 16
+    target: select
+    type: sphere
+    orient_dimension_max: 0
+    orient_dimension_min: 0
+    check_destructible: false
+    orient: true
+    consume: true
+    thickness: 1
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+    transparent: transparent_to_construction
+  costs:
+    mana: 200
+superring|2:
+  parameters:
+    max_dimension: 24
+superring|3:
+  parameters:
+    max_dimension: 32
+supershell:
+  icon: supershell
+  category: engineering
+  tags: noduel
+  class: ConstructSpell
+  worth: 3500
+  upgrade_required_casts: 50
+  effects:
+    no_target:
+    - sound: block_note_block_didgeridoo
+      sound_pitch: 1.75
+      sound_volume: 0.15
+    - location: both
+    - class: EffectTrail
+      particle: spell_mob
+    - class: EffectTrail
+      particle: redstone
+      color: '#880000'
+      particle_count: 8
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.3
+    - class: EffectTrail
+      location: origin_to_selection
+      particle: block_crack
+      particle_count: 6
+      particle_offset_x: 0.01
+      particle_offset_y: 0.01
+      particle_offset_z: 0.01
+    - location: selection_to_target
+      radius_override: variable_a
+      effectlib:
+        class: Modified
+        duration: 1500
+        parameters:
+          radius: (t / i) * a + 0.5
+        effect:
+          class: Sphere
+          particle: block_crack
+          particles: 15
+          particle_count: 10
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
+    - location: selection_to_target
+      radius_override: radius
+      effectlib:
+        class: Sphere
+        duration: 500
+        particle: end_rod
+        particles: 25
+        particle_count: 3
+        particle_offset_x: 0.05
+        particle_offset_y: 0.05
+        particle_offset_z: 0.05
+  parameters:
+    allow_max_range: true
+    range: 64
+    max_dimension: 16
+    thickness: 1
+    target: select
+    type: sphere
+    destructible: destructible_replace
+    transparent: transparent_to_construction
+    consume: true
+    ignore_region_overrides: true
+    cancel_on_deactivate: false
+  costs:
+    mana: 250
+supershell|2:
+  parameters:
+    max_dimension: 24
+supershell|3:
+  parameters:
+    max_dimension: 32
+supertorch:
+  icon: supertorch
+  category: engineering
+  tags: noduel
+  worth: 500
+  earns: 15
+  actions:
+    cast:
+    - class: Torch
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.7
+      sound_volume: 0.6
+    - class: EffectSingle
+      sound: item_firecharge_use
+    - class: EffectTrail
+      particle: block_crack
+      particle_count: 10
+      particle_offset_x: 0.2
+      particle_offset_y: 0.2
+      particle_offset_z: 0.2
+      material: glowstone
+  parameters:
+    allow_max_range: false
+    range: 32
+    allow_glowstone: false
+    cooldown: 1000
+    destructible: destructible_replace
+    ignore_region_overrides: true
+  costs:
+    mana: 50
+    torch: 1
+superwalls:
+  inherit: supercylinder
+  icon: superwalls
+  upgrade_required_casts: 50
+  parameters:
+    max_dimension: 16
+    orient_dimension_max: 16
+superwalls|2:
+  parameters:
+    max_dimension: 24
+superwalls|3:
+  parameters:
+    max_dimension: 32
+toggleair:
+  icon: toggleair
+  quick_cast: true
+  category: engineering
+  worth: 500
+  show_undoable: false
+  actions:
+    cast:
+    - class: Selector
+      onlyair:
+      - class: Modifier
+        add_modifiers:
+        - onlyair
+        remove_modifiers:
+        - ignoreair
+        - noliquid
+        - onlyliquid
+        - nosolid
+        - onlysolid
+        - noplants
+        - onlyplants
+        - noearth
+        - onlyearth
+      noair:
+      - class: Modifier
+        add_modifiers:
+        - ignoreair
+        remove_modifiers:
+        - onlyair
+        - noliquid
+        - onlyliquid
+        - nosolid
+        - onlysolid
+        - noplants
+        - onlyplants
+        - noearth
+        - onlyearth
+      onlyliquid:
+      - class: Modifier
+        add_modifiers:
+        - onlyliquid
+        remove_modifiers:
+        - ignoreair
+        - onlyair
+        - noliquid
+        - nosolid
+        - onlysolid
+        - noplants
+        - onlyplants
+        - noearth
+        - onlyearth
+      noliquid:
+      - class: Modifier
+        add_modifiers:
+        - noliquid
+        remove_modifiers:
+        - ignoreair
+        - onlyair
+        - onlyliquid
+        - nosolid
+        - onlysolid
+        - noplants
+        - onlyplants
+        - noearth
+        - onlyearth
+      onlysolid:
+      - class: Modifier
+        add_modifiers:
+        - onlysolid
+        remove_modifiers:
+        - ignoreair
+        - onlyair
+        - noliquid
+        - onlyliquid
+        - nosolid
+        - noplants
+        - onlyplants
+        - noearth
+        - onlyearth
+      nosolid:
+      - class: Modifier
+        add_modifiers:
+        - nosolid
+        remove_modifiers:
+        - ignoreair
+        - onlyair
+        - noliquid
+        - onlyliquid
+        - onlysolid
+        - noplants
+        - onlyplants
+        - noearth
+        - onlyearth
+      onlyplants:
+      - class: Modifier
+        add_modifiers:
+        - onlyplants
+        remove_modifiers:
+        - ignoreair
+        - onlyair
+        - noliquid
+        - onlyliquid
+        - nosolid
+        - onlysolid
+        - noplants
+        - noearth
+        - onlyearth
+      noplants:
+      - class: Modifier
+        add_modifiers:
+        - noplants
+        remove_modifiers:
+        - ignoreair
+        - onlyair
+        - noliquid
+        - onlyliquid
+        - nosolid
+        - onlysolid
+        - onlyplants
+        - noearth
+        - onlyearth
+      onlyearth:
+      - class: Modifier
+        add_modifiers:
+        - onlyearth
+        remove_modifiers:
+        - ignoreair
+        - onlyair
+        - noliquid
+        - onlyliquid
+        - nosolid
+        - onlysolid
+        - noplants
+        - onlyplants
+        - noearth
+      noearth:
+      - class: Modifier
+        add_modifiers:
+        - noearth
+        remove_modifiers:
+        - ignoreair
+        - onlyair
+        - noliquid
+        - onlyliquid
+        - nosolid
+        - onlysolid
+        - noplants
+        - onlyplants
+        - onlyearth
+      default:
+      - class: Modifier
+        remove_modifiers:
+        - ignoreair
+        - onlyair
+        - noliquid
+        - onlyliquid
+        - nosolid
+        - onlysolid
+        - noplants
+        - onlyplants
+        - noearth
+        - onlyearth
+  parameters:
+    title: Select modifier
+    options:
+    - actions: onlyair
+      icon: bone_meal
+      name: '&aONLY air'
+      slot: 0
+    - actions: noair
+      icon: bone_meal
+      name: '&cIGNORE air'
+      slot: 0
+      requirements:
+      - modifiers: onlyair
+    - actions: onlyliquid
+      icon: water_bucket
+      name: '&aONLY liquid'
+      slot: 1
+    - actions: noliquid
+      icon: water_bucket
+      name: '&cIGNORE liquid'
+      slot: 1
+      requirements:
+      - modifiers: onlyliquid
+    - actions: onlysolid
+      icon: stone
+      name: '&aONLY solid'
+      slot: 2
+    - actions: nosolid
+      icon: stone
+      name: '&cIGNORE solid'
+      slot: 2
+      requirements:
+      - modifiers: onlysolid
+    - actions: onlyplants
+      icon: rose_bush
+      name: '&aONLY plants'
+      slot: 3
+    - actions: noplants
+      icon: rose_bush
+      name: '&cIGNORE plants'
+      slot: 3
+      requirements:
+      - modifiers: onlyplants
+    - actions: onlyearth
+      icon: grass_block
+      name: '&aONLY earth'
+      slot: 4
+    - actions: noearth
+      icon: grass_block
+      name: '&cIGNORE earth'
+      slot: 4
+      requirements:
+      - modifiers: onlyearth
+    - actions: default
+      icon: barrier
+      name: '&fDEFAULT'
+      slot: 8
+      requirements:
+      - modifiers: onlyair,ignoreair,onlyliquid,noliquid,onlysolid,nosolid,onlyplants,noplants
+    target: self
+    auto_close: true
+    message_type: action_bar
+tree:
+  icon: tree
+  category: elemental
+  worth: 5000
+  earns: 20
+  actions:
+    cast:
+    - class: Tree
+  effects:
+    cast:
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.3
+      sound_volume: 0.1
+    - sound: entity_generic_splash
+    - class: EffectTrail
+      particle: block_crack
+      material: log
+      particle_count: 4
+      particle_offset_x: 0.05
+      particle_offset_y: 0.05
+      particle_offset_z: 0.05
+    - location: target
+      effectlib:
+        class: Shield
+        particle: water_splash
+        radius: 3
+        duration: 2000
+        particle_count: 3
+        particle_offset_x: 0.2
+        particle_offset_y: 0.2
+        particle_offset_z: 0.2
+  parameters:
+    allow_max_range: false
+    range: 64
+    require_sapling: false
+    cooldown: 5000
+    destructible: destructible,destructible_replace
+  costs:
+    mana: 20
+    sapling|*: 1
+tunnel:
+  icon: tunnel
+  category: engineering
+  tags: noduel
+  class: TunnelSpell
+  worth: 200
+  effects:
+    cast:
+    - sound: entity_generic_explode
+      sound_volume: 0.2
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.5
+      sound_volume: 0.7
+    - class: EffectTrail
+      length: 16
+      iterations: 10
+      particle: explosion_large
+  parameters:
+    allow_max_range: false
+    range: 32
+    destructible: destructible_mining
+    ignore_region_overrides: true
+  costs:
+    mana: 30
+wolfhouse_base:
+  icon: spell_icon:158
+  icon_disabled: spell_icon_disabled:158
+  hidden: true
+  icon_url: http://textures.minecraft.net/texture/98abd2beac47ec40be793f4ceacf32eac91322557aedf19a81f43ad28355f8b
+  category: engineering
+  worth: 1000
+  cast_on_no_target: false
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: ambient_cave
+    - class: EffectTrail
+      particle: block_crack
+  parameters:
+    cancel_on_deactivate: false
+    target: other
+    ignore_region_overrides: true
+    target_type: LivingEntity
+    allow_max_range: true
+    check_destructible: false
+    physics: defer
+    range: 16
+    type: sphere
+    cooldown: 20000
+    brush: schematic|wolfhouse
+    obx: -3
+    oby: -22
+    obz: 10
+    otx: 1
+    oty: 1
+    brushmod: erase
+    transparent: transparent_to_construction
+    destructible: destructible_replace
+    brush_commands:
+      wolf_generate: castp @p[distance=..7] wolfhouse_build loud true cd true md 150
+        tx ~-6 ty ~22 tz ~11 obx 0 oby -46 obz -1 r 52 brushmod dirt free true
+      wolf_underwater: castp @p[distance=..7] wolfhouse_build cd true md 150 tx ~-5
+        ty ~23 tz ~11 obx 0 oby -46 obz -1 r 52 id water,stationary_water free true
+      wolf_dome: castp @p[distance=..7] wolfhouse_dome
+      wolf_shields: castp @p[distance=..7] wolfhouse_shields
+      wolf_undo: castp @p[distance=..6] rollback free true target_caster true
+      wolf_commit: castp @p[distance=..6] commit free true
+      wolf_nothing: msg @p[distance=..6] Nothing here!
+      wolf_clear: castp @p[distance=..7] wolfhouse_clear
+      wolf_destruct: castp @p[distance=..7] wolfhouse_destruct
+      wolf_convert: castp @p[distance=..7] superconvert target none undo 0 radius
+        64 md 128 ty ~-1 obx -1 obz 2 brush copy free true
+      wolf_phase: castp @p[distance=..2] phase warmup 0 free true
+      wolf_tp_living: tp @p[distance=..4] ~7 ~15 ~-13
+      wolf_tp_observation: tp @p[distance=..3] ~-17 ~62 ~0
+      wolf_tp_hub: tp @p[distance=..4] ~-3 ~-2 ~24
+      wolf_tp_booth: tp @p[distance=..4] ~9 ~2 ~-29
+      wolf_tp_enchanting: tp @p[distance=..3] ~-5 ~35 ~-17
+      wolf_recall_wand: castp @p[distance=..2] recall type wand warmup 0 free true
+      wolf_recall_death: castp @p[distance=..2] recall type death warmup 0 free true
+      wolf_recall_spawn: castp @p[distance=..2] recall type spawn warmup 0 free true
+wolfhouse:
+  inherit: wolfhouse_base
+  actions:
+    cast:
+    - class: Sphere
+      actions:
+      - class: ModifyBlock
+      - class: Skip
+        actions:
+        - class: Delay
+  parameters:
+    delay: 100
+    skip: 4
+    radius: 4
+    physics: false
+  costs:
+    mana: 1000
+wolfhouse_build:
+  inherit: wolfhouse_base
+  class: ConstructSpell
+  parameters:
+    target: none
+    undo: 0
+    type: sphere
+    max_dimension: 100
+    radius: 35
+    tx: ~-5
+    ty: ~16
+    tz: ~12
+    destructible: destructible_replace
+    transparent: transparent_to_construction
+    ignore_region_overrides: true
+wolfhouse_clear:
+  inherit: wolfhouse_build
+  parameters:
+    brush: erase
+    radius: 36
+wolfhouse_destruct:
+  inherit: wolfhouse_clear
+  parameters:
+    check_destructible: false
+    radius: 60
+wolfhouse_dome:
+  inherit: wolfhouse_build
+  parameters:
+    brush: stained_glass:15
+    thickness: 1
+wolfhouse_shields:
+  inherit: wolfhouse_dome
+  parameters:
+    brush: obisidian
 anchor:
   name: Higher Channelling
   description: You shouldn't see this...
@@ -20967,8 +24945,9 @@ anchor:
     cancel: true
 arcanebarrage:
   name: Arcane Barrage
-  description: Launch a continuous barrage of Arcane Spears at a targeted entity or
-    location. Number of spears launched scales with Wand Power.
+  description: Launch a omnidirectional barrage of Arcane Spears at a targeted entity
+    or location for 10 seconds, each dealing 6 Magic Damage. Number of spears launched
+    scales with Wand Power.
   category: arcane
   icon: arcanebarrage
   icon_disabled: arcanebarrage
@@ -20980,13 +24959,14 @@ arcanebarrage:
       target: other
       range: 50
       velocity: 1000
-      tick_effects: test
+      tick_effects: none
+      hit_effects: none
       hitbox: true
       hitbox_size: 3
       actions:
       - class: Interval
         duration: 10000
-        interval: 125/(1+$wandpower/100)
+        interval: 150/(1+$wandpower/100)
         actions:
         - class: Asynchronous
           actions:
@@ -20996,7 +24976,7 @@ arcanebarrage:
             target_offset: 0,1,0
             actions:
             - class: PlayEffects
-              effects: test
+              effects: targeted
             - class: Retarget
             - class: CustomProjectile
               ignore_hit_entities: true
@@ -21027,7 +25007,7 @@ arcanebarrage:
                   hitbox_size: 1
                   actions:
                   - class: Damage
-                    damage: 4
+                    damage: 6
                     no_damage_ticks: 0
                   - class: Velocity
                     push: 0.8
@@ -21069,12 +25049,14 @@ arcanebarrage:
       sound_pitch: -1
       sound_volume: 0.5
       color_override: color
-    test:
+    targeted:
     - location: target
-      particle: redstone
+      particle: dust_color_transition
       target_location: body
-      particle_count: 4
-      particle_offset: 0.8
+      particle_count: 3
+      particle_offset_x: 0.3
+      particle_offset_z: 0.3
+      particle_offset_y: 0.6
     tick:
     - location: target
       particle: spell_witch
@@ -21101,40 +25083,48 @@ arcanebarrage:
     delay: 1000
     range: 48
     target_type: Damageable
+    cooldown: 24000
   costs:
-    mana: 0
+    mana: 150
 arcanehail:
   name: Arcane Hail
-  description: Summon arcane spears to fall from the sky, each dealing 8 Magic Damage
-    upon impact. Number of spears scales with Wand Power.
+  description: Summon arcane spears to fall from the sky for 8 seconds, each dealing
+    6 Magic Damage in a radius upon impact. Number of spears summoned scales with
+    Wand Power.
   category: arcane
   icon: arcanehail
   icon_disabled: arcanehail
   actions:
     cast:
-    - class: Multiply
+    - class: Interval
+      duration: 8000
+      interval: 150/(1+$wandpower/100)
       actions:
-      - class: ChangeContext
+      - class: Asynchronous
         actions:
-        - class: Delay
-          delay: rand(0,1000)
-        - class: CustomProjectile
-          hit_effects: none
-          tick_effects: none
-          miss_effects: none
-          velocity: 1000
-          range: 1000
+        - class: ChangeContext
           actions:
-          - class: PlayEffects
-            effects: summon
-        - class: Delay
-          delay: $warmup
-        - class: CustomProjectile
-          actions:
-          - class: AreaOfEffect
+          - class: CustomProjectile
+            requires_target: true
+            target: block
+            hit_effects: none
+            tick_effects: none
+            miss_effects: none
+            velocity: 1000
+            range: 1000
             actions:
-            - class: Velocity
-            - class: Damage
+            - class: PlayEffects
+              effects: summon
+          - class: Delay
+            delay: $warmup
+          - class: CustomProjectile
+            requires_target: true
+            target_self: true
+            actions:
+            - class: AreaOfEffect
+              actions:
+              - class: Velocity
+              - class: Damage
   effects:
     summon:
     - class: EffectSingle
@@ -21193,28 +25183,28 @@ arcanehail:
       sound_volume: 0.4
       location: target
   parameters:
-    multiply: 12(1+wandpower/200)
     target_offset: 0,30,0
     random_target_offset: 15,0,15
     source_pitch: 180
     source_at_target: true
+    target_self_timeout: 300
     velocity: 200
     radius: 2
     push: 0.4
     direction: 0,0.2,0
-    target: block
-    target_self: true
+    target: other
+    target_type: Damageable
     damage_type: magic
     no_damage_ticks: 0
-    damage: 8
+    damage: 6
     warmup: 1000
     range: 48
-    cooldown: 16000
+    cooldown: 24000
   costs:
-    mana: 100
+    mana: 150
 arcanemeteor:
   name: Arcane Meteor
-  description: Call a mana fragment from the stars to strike the world, dealing 12
+  description: Call a mana fragment from the stars to strike the world, dealing 20
     Magic Damage to enemies within the blast radius.
   icon: arcanemeteor
   icon_disabled: arcanemeteor
@@ -21227,6 +25217,7 @@ arcanemeteor:
         hit_effects: none
         tick_effects: none
         miss_effects: none
+        target: block
         velocity: 1000
         range: 1000
         reflect_count: 0
@@ -21249,12 +25240,12 @@ arcanemeteor:
     - location: target
       effectlib:
         class: Modified
-        duration: 1400
+        duration: 1800
         parameters:
           radius: (t/i) * 4 + 0.1
         effect:
           class: Vortex
-          particle_count: 1
+          particle_count: 2
           grow: 0
           pitch: 90
           offset: 0,0.2,0
@@ -21324,13 +25315,13 @@ arcanemeteor:
     push: 1.2
     direction: 0,0.2,0
     random_source_offset: 10,0,10
-    source_offset: 0,40,0
+    source_offset: 0,55,0
     target_self_timeout: 1000
     hit_on_miss: true
     damage_type: magic
     damage_min_distance: 2
     damage_max_distance: 6
-    damage: 16
+    damage: 20
     destructible: solid
     destructible_override: true
     destructible_durability: 50
@@ -21348,7 +25339,7 @@ arcanemeteor:
     undo: 5000
     undo_speed: 0.5
   costs:
-    mana: 125
+    mana: 150
 arcanemissiles:
   name: Arcane Missiles
   description: Channel, then launch a swarm of seeking arcane missiles, each dealing
@@ -28091,7 +32082,7 @@ magictrident:
     mana: 200
 manabeam:
   name: Mana Beam
-  description: Channel, then fire a powerful, long-range beam of mana dealing 12 Magic
+  description: Channel, then fire a powerful, long-range beam of mana dealing 16 Magic
     Damage. Deals Critical Damage on Headshots.
   icon: manabeam
   icon_disabled: manabeam
@@ -28123,6 +32114,20 @@ manabeam:
       - class: PlayEffects
         effect: crit
   effects:
+    cast:
+    - location: origin
+      color_override: color
+      effectlib:
+        class: Line
+        length: $range
+        particle: dust_color_transition
+        to_color: '#FF00FF'
+        particle_size: 0.4
+        particle_count: 1
+        period: 2
+        iterations: 24
+        update_directions: true
+        update_locations: true
     fire:
     - sound: block_beacon_power_select
       sound_pitch: 0.3
@@ -28218,7 +32223,7 @@ manabeam:
     velocity: 125
     range: 64
     damage_type: magic
-    damage: 12
+    damage: 16
     entity_hit_count: 10
     block_hit_count: 3
     no_damage_ticks: 0

@@ -1,34 +1,40 @@
 arcanehail:
   name: Arcane Hail
-  description: Summon arcane spears to fall from the sky, each dealing 8 Magic Damage upon impact. Number of spears scales with Wand Power.
+  description: Summon arcane spears to fall from the sky for 8 seconds, each dealing 6 Magic Damage in a radius upon impact. Number of spears summoned scales with Wand Power.
   category: arcane
   icon: arcanehail
   icon_disabled: arcanehail
   actions:
     cast:
-    - class: Multiply
+    - class: Interval
+      duration: 8000
+      interval: 150/(1+$wandpower/100)
       actions:
-      - class: ChangeContext
+      - class: Asynchronous
         actions:
-          - class: Delay
-            delay: rand(0,1000)
-          - class: CustomProjectile
-            hit_effects: none
-            tick_effects: none
-            miss_effects: none
-            velocity: 1000
-            range: 1000
-            actions:
-            - class: PlayEffects
-              effects: summon
-          - class: Delay
-            delay: $warmup
-          - class: CustomProjectile
-            actions:
-            - class: AreaOfEffect
+        - class: ChangeContext
+          actions:
+            - class: CustomProjectile
+              requires_target: true
+              target: block
+              hit_effects: none
+              tick_effects: none
+              miss_effects: none
+              velocity: 1000
+              range: 1000
               actions:
-                - class: Velocity
-                - class: Damage
+              - class: PlayEffects
+                effects: summon
+            - class: Delay
+              delay: $warmup
+            - class: CustomProjectile
+              requires_target: true
+              target_self: true
+              actions:
+              - class: AreaOfEffect
+                actions:
+                  - class: Velocity
+                  - class: Damage
   effects:
     summon:
       - class: EffectSingle
@@ -87,22 +93,22 @@ arcanehail:
         sound_volume: 0.4
         location: target
   parameters:
-    multiply: 12(1+wandpower/200)
     target_offset: 0,30,0
     random_target_offset: 15,0,15
     source_pitch: 180
     source_at_target: true
+    target_self_timeout: 300
     velocity: 200
     radius: 2
     push: 0.4
     direction: 0,0.2,0
-    target: block
-    target_self: true
+    target: other
+    target_type: Damageable
     damage_type: magic
     no_damage_ticks: 0
-    damage: 8
+    damage: 6
     warmup: 1000
     range: 48
-    cooldown: 16000
+    cooldown: 24000
   costs:
-    mana: 100
+    mana: 150

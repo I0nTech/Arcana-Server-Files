@@ -1,6 +1,6 @@
 manabeam:
   name: Mana Beam
-  description: Channel, then fire a powerful, long-range beam of mana dealing 12 Magic Damage. Deals Critical Damage on Headshots.
+  description: Channel, then fire a powerful, long-range beam of mana dealing 16 Magic Damage. Deals Critical Damage on Headshots.
   icon: manabeam
   icon_disabled: manabeam
   category: arcane
@@ -32,6 +32,21 @@ manabeam:
           effect: crit
 
   effects:
+      cast:
+        - location: origin
+          color_override: color
+#          visibility: origin
+          effectlib:
+            class: Line
+            length: $range
+            particle: dust_color_transition
+            to_color: "#FF00FF"
+            particle_size: 0.4
+            particle_count: 1
+            period: 2
+            iterations: 24
+            update_directions: true
+            update_locations: true
       fire:
       - sound: block_beacon_power_select
         sound_pitch: 0.3
@@ -125,7 +140,7 @@ manabeam:
     velocity: 125
     range: 64
     damage_type: magic
-    damage: 12
+    damage: 16
     entity_hit_count: 10
     block_hit_count: 3
     no_damage_ticks: 0

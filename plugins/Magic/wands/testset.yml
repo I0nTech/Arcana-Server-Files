@@ -15,7 +15,8 @@ test_sword2:
   inherit: base_scepter
 #  class: mage
   icon: diamond_sword
-  alternate_spell: pull
+  right_click: alt_cast
+  alternate_spell: windslash
   cost_reduction: 1
   enchantments:
     damage_all: 5
@@ -24,6 +25,23 @@ test_sword2:
   attributes:
     attackdamage: 7
     attackspeed: -2.4
+#    costreduction: 100
+
+test_bow:
+  name: "&fTest Bow"
+  description: "Test"
+  inherit: base_scepter
+  icon: crossbow
+  cast_min_bowpull: 0.9
+  no_bowpull: cancel
+  active_spell: manabolt
+  modifiable: false
+  slotted:
+   - castsource_eyes
+  spell_inventory: false
+  cost_reduction: 1
+  attributes:
+    manaboost: 10
 #    costreduction: 100
 
 test_axe:

@@ -64,14 +64,13 @@ basic_wand:
   inherit: base_wand
   name: '&bManastone Wand'
   renamable: true
-  description: '&8Bursting with power.'
+  description: '&8Mage''s first wand.'
   effect_color: '#7fffd4'
   active_spell: magicbullet
   icon: stick{1}
   attributes:
-    mage_mana: 100
-    mage_mana_regen: 10
-    wandpower: 50
+    mage_mana: 20
+    mage_mana_regen: 5
 base_wand:
   inherit: base_keep
   hidden: true
@@ -882,6 +881,7 @@ gui_bossbar:
     properties:
       use_active_name: true
 controls_bowcaster:
+  inherit: false
   slot: controls
   left_click: cycle_active_hotbar
   left_click_sneak: cycle_active_hotbar_reverse
@@ -2359,6 +2359,793 @@ science:
   - blast|4
   - disintegrate
   - phase
+architect:
+  inherit: engineer
+  path: architect
+  icon: blaze_rod{CustomModelData:18039}
+  legacy_icon: wand_icon:5
+  legacy_migrate_icon: gold_pickaxe
+  effect_color: 8B008B
+  mana_regeneration: 100
+  mana_max: 500
+  active_spell: levitate
+  hotbar_count: 3
+  level_spells_to_path: architect
+  spells:
+  - levitate|5
+  - fling|4
+  - blink|6
+  - place
+  - paint
+  - alter
+  - brushselect
+  - rollback
+  - absorb
+  - toggleair
+  - newpage
+  - fill
+  - superblob
+  - superconvert
+  - supershell
+  - superbox
+  - superdisc
+  - superring
+  - floodfill
+  - bridge
+  - pillar
+  - convert
+  - recurse
+  - toss
+  - iterate
+  - tunnel
+  - supertorch
+  - raise
+  - flatten
+  - tree
+  - commit
+  - newpage
+  - superdome
+  - supercube
+  - superpyramid
+  - superwalls
+  - supercylinder
+  - superalter
+  - superlaser
+  - volley
+  - light
+  brushes:
+  - erase@10
+  - copy@11
+  - clone@12
+  - replicate@13
+  - map@14
+  - map:128@15
+  - stone
+  - dirt
+  - sand
+  - grass
+  - gravel
+  - glass
+  - glowstone
+  - white_terracotta
+  - white_stained_glass
+  - white_stained_glass_pane
+  - lava
+  - water
+  - soul_sand
+  - wood
+  - log
+  - vine
+  - mycel
+  - quartz_block
+  - leaves
+  - ice
+  - packed_ice
+  - obsidian
+  - redstone_block
+  - schematic|rainbow_blocks
+  - schematic|creeper_rug
+  - schematic|rainbow_blocks
+  - schematic|lantern
+  - schematic|creeper_rug
+  - schematic|elder_tree
+  - schematic|church
+  - schematic|blacksmith
+  - schematic|garden_house
+  - schematic|compact_house
+  - schematic|small_house
+  - schematic|nathanwolf
+  - schematic|warped_house
+  - black_wool
+  - blue_wool
+  - brown_wool
+  - cyan_wool
+  - gray_wool
+  - green_wool
+  - light_blue_wool
+  - light_gray_wool
+  - lime_wool
+  - magenta_wool
+  - orange_wool
+  - pink_wool
+  - purple_wool
+  - red_wool
+  - white_wool
+  - yellow_wool
+  - black_terracotta
+  - blue_terracotta
+  - brown_terracotta
+  - cyan_terracotta
+  - gray_terracotta
+  - green_terracotta
+  - light_blue_terracotta
+  - light_gray_terracotta
+  - lime_terracotta
+  - magenta_terracotta
+  - orange_terracotta
+  - pink_terracotta
+  - purple_terracotta
+  - red_terracotta
+  - white_terracotta
+  - yellow_terracotta
+  - black_stained_glass
+  - blue_stained_glass
+  - brown_stained_glass
+  - cyan_stained_glass
+  - gray_stained_glass
+  - green_stained_glass
+  - light_blue_stained_glass
+  - light_gray_stained_glass
+  - lime_stained_glass
+  - magenta_stained_glass
+  - orange_stained_glass
+  - pink_stained_glass
+  - purple_stained_glass
+  - red_stained_glass_pane
+  - white_stained_glass
+  - yellow_stained_glass
+  - black_stained_glass_pane
+  - blue_stained_glass_pane
+  - brown_stained_glass_pane
+  - cyan_stained_glass_pane
+  - gray_stained_glass_pane
+  - green_stained_glass_pane
+  - light_blue_stained_glass_pane
+  - light_gray_stained_glass_pane
+  - lime_stained_glass_pane
+  - magenta_stained_glass_pane
+  - orange_stained_glass_pane
+  - pink_stained_glass_pane
+  - purple_stained_glass_pane
+  - red_stained_glass_pane
+  - white_stained_glass_pane
+  - yellow_stained_glass_pane
+  - black_concrete
+  - blue_concrete
+  - brown_concrete
+  - cyan_concrete
+  - gray_concrete
+  - green_concrete
+  - light_blue_concrete
+  - light_gray_concrete
+  - lime_concrete
+  - magenta_concrete
+  - orange_concrete
+  - pink_concrete
+  - purple_concrete
+  - red_concrete
+  - white_concrete
+  - yellow_concrete
+architectstaff:
+  inherit: base_wand
+  path: staff
+  active_spell: pillar
+  active_brush: copy
+  protected: true
+  powered: true
+  cost_reduction: 2
+  effect_color: 8af553b2025f,0,8af553b2025f
+  icon: blaze_rod{CustomModelData:18039}
+  legacy_icon: wand_icon:6
+  legacy_migrate_icon: gold_pickaxe
+  sp_multiplier: 0
+  level_spells: true
+  spells:
+  - absorb@8
+  - alter@22
+  - backup@23
+  - blink|6@0
+  - box@24
+  - bridge@9
+  - cloak@47
+  - column@45
+  - commit@32
+  - convert@26
+  - fill@13
+  - gather@4
+  - heal@5
+  - iterate@28
+  - levitate|4@1
+  - missile|4@2
+  - paint@12
+  - phasebackup@49
+  - pickpocket@48
+  - pillar@10
+  - place@11
+  - recurse@29
+  - repair@14
+  - rollback@15
+  - superalter@34
+  - superbackup@41
+  - superblob@18
+  - superbox@25
+  - superbroom@7
+  - superconvert@21
+  - superdisc@20
+  - superdome@30
+  - superkill@3
+  - superpyramid@27
+  - superrepair@50
+  - superring@33
+  - supershell@19
+  - time@6
+  - torch|4@31
+  - supertorch
+  - fling|4
+  - lockpick
+  brushes:
+  - clone@43
+  - cobblestone
+  - copy@17
+  - diamond_block
+  - dirt
+  - emerald_block
+  - erase@16
+  - glass
+  - glowstone
+  - gold_block
+  - iron_block
+  - lapis_block
+  - map@42
+  - obsidian
+  - quartz_block
+  - quartz_block:1
+  - quartz_block:2
+  - redstone_block
+  - replicate@44
+  - sand
+  - schematic:beacon
+  - schematic:blacksmith
+  - schematic:cage
+  - schematic:church
+  - schematic:compact_house
+  - schematic:creeper_rug
+  - schematic:garden_house
+  - schematic:lantern
+  - schematic:rainbow_blocks
+  - schematic:small_house
+  - schematic:tent
+  - stained_clay
+  - stained_glass
+  - stained_glass_pane
+  - stone
+  - thin_glass
+  - wood
+conduit:
+  inherit: architect
+  path: conduit
+  consume_reduction: 1
+  cost_reduction: 1
+  icon: blaze_rod{CustomModelData:18006}
+  legacy_icon: wand_icon:6
+  legacy_migrate_icon: gold_pickaxe
+  effect_color: 8B008B
+  effect_bubbles: true
+  active_spell: levitate
+  hotbar_count: 4
+  level_spells_to_path: conduit
+  spells:
+  - levitate|6
+  - fling|5
+  - blink|6
+  - place
+  - paint
+  - alter
+  - brushselect
+  - rollback
+  - absorb
+  - toggleair
+  - newpage
+  - fill
+  - superblob
+  - superconvert
+  - supershell
+  - superbox
+  - superdisc
+  - superring
+  - floodfill
+  - backup
+  - repair
+  - superrepair
+  - superbackup
+  - paste
+  - day
+  - night
+  - capture
+  - bridge
+  - pillar
+  - convert
+  - recurse
+  - toss
+  - iterate
+  - tunnel
+  - supertorch
+  - raise
+  - flatten
+  - tree
+  - commit
+  - newpage
+  - superdome
+  - supercube
+  - superpyramid
+  - superwalls
+  - supercylinder
+  - superalter
+  - superlaser
+  - volley
+  - light
+  - newpage
+  - portal
+  - anvil
+  - forest
+  - weather
+  brushes:
+  - erase@10
+  - copy@11
+  - clone@12
+  - replicate@13
+  - map@14
+  - map:128@15
+  - stone
+  - dirt
+  - sand
+  - grass
+  - gravel
+  - glass
+  - glowstone
+  - white_terracotta
+  - white_stained_glass
+  - white_stained_glass_pane
+  - light
+  - lava
+  - water
+  - soul_sand
+  - wood
+  - log
+  - vine
+  - mycel
+  - quartz_block
+  - leaves
+  - ice
+  - packed_ice
+  - obsidian
+  - redstone_block
+  - schematic|rainbow_blocks
+  - schematic|creeper_rug
+  - schematic|rainbow_blocks
+  - schematic|lantern
+  - schematic|creeper_rug
+  - schematic|elder_tree
+  - schematic|church
+  - schematic|blacksmith
+  - schematic|garden_house
+  - schematic|compact_house
+  - schematic|small_house
+  - schematic|nathanwolf
+  - schematic|warped_house
+  - black_wool
+  - blue_wool
+  - brown_wool
+  - cyan_wool
+  - gray_wool
+  - green_wool
+  - light_blue_wool
+  - light_gray_wool
+  - lime_wool
+  - magenta_wool
+  - orange_wool
+  - pink_wool
+  - purple_wool
+  - red_wool
+  - white_wool
+  - yellow_wool
+  - black_terracotta
+  - blue_terracotta
+  - brown_terracotta
+  - cyan_terracotta
+  - gray_terracotta
+  - green_terracotta
+  - light_blue_terracotta
+  - light_gray_terracotta
+  - lime_terracotta
+  - magenta_terracotta
+  - orange_terracotta
+  - pink_terracotta
+  - purple_terracotta
+  - red_terracotta
+  - white_terracotta
+  - yellow_terracotta
+  - black_stained_glass
+  - blue_stained_glass
+  - brown_stained_glass
+  - cyan_stained_glass
+  - gray_stained_glass
+  - green_stained_glass
+  - light_blue_stained_glass
+  - light_gray_stained_glass
+  - lime_stained_glass
+  - magenta_stained_glass
+  - orange_stained_glass
+  - pink_stained_glass
+  - purple_stained_glass
+  - red_stained_glass_pane
+  - white_stained_glass
+  - yellow_stained_glass
+  - black_stained_glass_pane
+  - blue_stained_glass_pane
+  - brown_stained_glass_pane
+  - cyan_stained_glass_pane
+  - gray_stained_glass_pane
+  - green_stained_glass_pane
+  - light_blue_stained_glass_pane
+  - light_gray_stained_glass_pane
+  - lime_stained_glass_pane
+  - magenta_stained_glass_pane
+  - orange_stained_glass_pane
+  - pink_stained_glass_pane
+  - purple_stained_glass_pane
+  - red_stained_glass_pane
+  - white_stained_glass_pane
+  - yellow_stained_glass_pane
+  - black_concrete
+  - blue_concrete
+  - brown_concrete
+  - cyan_concrete
+  - gray_concrete
+  - green_concrete
+  - light_blue_concrete
+  - light_gray_concrete
+  - lime_concrete
+  - magenta_concrete
+  - orange_concrete
+  - pink_concrete
+  - purple_concrete
+  - red_concrete
+  - white_concrete
+  - yellow_concrete
+  - schematic|rainbow_blocks
+  - schematic|lantern
+  - schematic|creeper_rug
+  - schematic|elder_tree
+  - schematic|church
+  - schematic|blacksmith
+  - schematic|garden_house
+  - schematic|compact_house
+  - schematic|small_house
+  - schematic|nathanwolf
+conduitwand:
+  inherit: conduit
+engineer:
+  inherit: master
+  effect_color: 00FF00
+  path: engineer
+  icon: blaze_rod{CustomModelData:18005}
+  legacy_icon: wand_icon:5
+  legacy_migrate_icon: gold_axe
+  mana_regeneration: 50
+  mana_max: 300
+  hotbar_count: 2
+  level_spells_to_path: engineer
+  spells:
+  - levitate|4
+  - fling|4
+  - blink|6
+  - place
+  - paint
+  - alter
+  - brushselect
+  - rollback
+  - newpage
+  - bridge
+  - pillar
+  - convert
+  - recurse
+  - toss
+  - iterate
+  - tunnel
+  - supertorch
+  - raise
+  - flatten
+  - tree
+  - commit
+  brushes:
+  - erase@8
+  - stone
+  - dirt
+  - sand
+  - grass
+  - gravel
+  - glass
+  - glowstone
+  - white_terracotta
+  - white_stained_glass
+  - white_stained_glass_pane
+engineer_upgrade:
+  icon: blaze_rod{CustomModelData:18005}
+  legacy_icon: wand_icon:5
+  upgrade: true
+  hidden: true
+  indestructible: false
+  spells:
+  - brushselect
+  - place
+  brushes:
+  - dirt
+  - cobblestone
+architect_upgrade:
+  icon: blaze_rod{CustomModelData:18039}
+  legacy_icon: wand_icon:5
+  upgrade: true
+  hidden: true
+  indestructible: false
+  spells:
+  - absorb
+conduit_upgrade:
+  icon: blaze_rod{CustomModelData:18006}
+  legacy_icon: wand_icon:6
+  upgrade: true
+  hidden: true
+  indestructible: false
+wolf:
+  inherit: base_wand
+  mode: inventory
+  class: wolf
+  level_spells: true
+  icon: blaze_rod{CustomModelData:18007}
+  legacy_icon: wand_icon:7
+  protected: true
+  powered: true
+  cost_reduction: 2
+  cooldown_reduction: 2
+  consume_reduction: 1
+  allow_container_copy: true
+  hotbar_count: 4
+  sp_multiplier: 0
+  effect_color: 0,aa0000000000,cc0000000000
+  effect_particle: ENCHANTMENT_TABLE
+  overrides:
+  - max_dimension 1024
+  - floodfill.depth 256
+  - recurse.depth 256
+  - recall.warmup 0
+  - phase.warmup 0
+  - gather.warmup 0
+  potion_effects:
+  - saturation
+  - regeneration
+  spells:
+  - levitate
+  - fling
+  - blink
+  - superheal
+  - day
+  - superkill
+  - testdummy
+  - debugger
+  - place
+  - absorb
+  - pillar
+  - bridge
+  - fill
+  - superblob
+  - superconvert
+  - rollback
+  - alter
+  - supershell
+  - superbox
+  - superdisc
+  - superring
+  - floodfill
+  - paste
+  - commit
+  - paint
+  - toggleair
+  - newpage
+  - superbroom
+  - repair
+  - backup
+  - superbackup
+  - superrepair
+  - save
+  - regenerate
+  - superregenerate
+  - portal
+  - night
+  - capture
+  - anvil
+  - forest
+  - weather
+  - wolfhouse
+  - workbench
+  - stash
+  - disposal
+  - pickpocket
+  - lockpick
+  - newpage
+  - convert
+  - recurse
+  - toss
+  - iterate
+  - tunnel
+  - supertorch
+  - raise
+  - flatten
+  - tree
+  - superdome
+  - supercube
+  - superpyramid
+  - superwalls
+  - supercylinder
+  - superalter
+  - superlaser
+  - volley
+  - light
+  brushes:
+  - erase@26
+  - copy@27
+  - clone@28
+  - replicate@29
+  - map@30
+  - map:128@31
+  - light
+  - barrier
+  - stone
+  - dirt
+  - sand
+  - grass
+  - gravel
+  - glass
+  - glowstone
+  - sea_lantern
+  - shroomlight
+  - lava
+  - water
+  - soul_sand
+  - wood
+  - log
+  - vine
+  - mycel
+  - quartz_block
+  - leaves
+  - ice
+  - packed_ice
+  - obsidian
+  - redstone_block
+  - bedrock
+  - diamond_block
+  - emerald_block
+  - gold_block
+  - iron_block
+  - lapis_block
+  - black_wool
+  - blue_wool
+  - brown_wool
+  - cyan_wool
+  - gray_wool
+  - green_wool
+  - light_blue_wool
+  - light_gray_wool
+  - lime_wool
+  - magenta_wool
+  - orange_wool
+  - pink_wool
+  - purple_wool
+  - red_wool
+  - white_wool
+  - yellow_wool
+  - black_terracotta
+  - blue_terracotta
+  - brown_terracotta
+  - cyan_terracotta
+  - gray_terracotta
+  - green_terracotta
+  - light_blue_terracotta
+  - light_gray_terracotta
+  - lime_terracotta
+  - magenta_terracotta
+  - orange_terracotta
+  - pink_terracotta
+  - purple_terracotta
+  - red_terracotta
+  - white_terracotta
+  - yellow_terracotta
+  - black_stained_glass
+  - blue_stained_glass
+  - brown_stained_glass
+  - cyan_stained_glass
+  - gray_stained_glass
+  - green_stained_glass
+  - light_blue_stained_glass
+  - light_gray_stained_glass
+  - lime_stained_glass
+  - magenta_stained_glass
+  - orange_stained_glass
+  - pink_stained_glass
+  - purple_stained_glass
+  - red_stained_glass_pane
+  - white_stained_glass
+  - yellow_stained_glass
+  - black_stained_glass_pane
+  - blue_stained_glass_pane
+  - brown_stained_glass_pane
+  - cyan_stained_glass_pane
+  - gray_stained_glass_pane
+  - green_stained_glass_pane
+  - light_blue_stained_glass_pane
+  - light_gray_stained_glass_pane
+  - lime_stained_glass_pane
+  - magenta_stained_glass_pane
+  - orange_stained_glass_pane
+  - pink_stained_glass_pane
+  - purple_stained_glass_pane
+  - red_stained_glass_pane
+  - white_stained_glass_pane
+  - yellow_stained_glass_pane
+  - black_concrete
+  - blue_concrete
+  - brown_concrete
+  - cyan_concrete
+  - gray_concrete
+  - green_concrete
+  - light_blue_concrete
+  - light_gray_concrete
+  - lime_concrete
+  - magenta_concrete
+  - orange_concrete
+  - pink_concrete
+  - purple_concrete
+  - red_concrete
+  - white_concrete
+  - yellow_concrete
+  - end_portal
+  - nether_portal
+  - schematic|rainbow_blocks
+  - schematic|creeper_rug
+  - schematic|rainbow_blocks
+  - schematic|lantern
+  - schematic|creeper_rug
+  - schematic|elder_tree
+  - schematic|church
+  - schematic|blacksmith
+  - schematic|garden_house
+  - schematic|compact_house
+  - schematic|small_house
+  - schematic|nathanwolf
+  - schematic|warped_house
+  - schematic:stash_chest
+  - schematic:beacon
+  - schematic:flare_beacon
+  - schematic:elder_tree
+wolfhouse:
+  mode: cast
+  active_spell: wolfhouse
+  icon: skull:http://textures.minecraft.net/texture/98abd2beac47ec40be793f4ceacf32eac91322557aedf19a81f43ad28355f8b
+  indestructible: false
+  cost_reduction: 2
+  uses: 1
+  effect_color: FFAA00
+  spells:
+  - wolfhouse
 appearance_woodenhoe:
   name: '&fWooden Hoe Appearance'
   description: '&7Change your wand''s icon to a Wooden Hoe. Purely cosmetic - offers
@@ -2589,7 +3376,6 @@ base_scepter:
   stackable: false
   allow_offhand: false
   spell_inventory: false
-  right_click: alt_cast
   active_spell: false
   cooldown_reduction: (cooldownreduction)/100
   cost_reduction: (costreduction)/100
@@ -2600,6 +3386,7 @@ base_scepter:
     generic_attack_speed: 0
   slots:
   - gui
+  - castsource
   slotted:
   - gui_none
   lore:
@@ -2765,6 +3552,22 @@ base_upgrade:
   stackable: false
   force: true
   glow: true
+base_bowcaster:
+  icon: bow
+  hidden: true
+  inherit: base_bound
+  mode: inventory
+  left_click: cycle_active_hotbar
+  left_click_sneak: cycle_active_hotbar_reverse
+  drop: toggle
+  right_click: none
+  swap: cycle_hotbar
+  swap_sneak: cycle_hotbar_reverse
+  no_bowpull: none
+  xp_display: true
+  renamable: true
+  quiet: 1
+  cast_location: 0.5,0,0.35
 castsource_wand:
   name: Cast from Wand
   description: All spells begin from the tip of your wand
@@ -3143,7 +3946,8 @@ test_sword2:
   description: Test
   inherit: base_scepter
   icon: diamond_sword
-  alternate_spell: pull
+  right_click: alt_cast
+  alternate_spell: windslash
   cost_reduction: 1
   enchantments:
     damage_all: 5
@@ -3152,6 +3956,21 @@ test_sword2:
   attributes:
     attackdamage: 7
     attackspeed: -2.4
+test_bow:
+  name: '&fTest Bow'
+  description: Test
+  inherit: base_scepter
+  icon: crossbow
+  cast_min_bowpull: 0.9
+  no_bowpull: cancel
+  active_spell: manabolt
+  modifiable: false
+  slotted:
+  - castsource_eyes
+  spell_inventory: false
+  cost_reduction: 1
+  attributes:
+    manaboost: 10
 test_axe:
   name: '&fTest Axe'
   description: Infused with bullshit

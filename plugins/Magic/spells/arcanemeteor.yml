@@ -1,6 +1,6 @@
 arcanemeteor:
     name: Arcane Meteor
-    description: Call a mana fragment from the stars to strike the world, dealing 12 Magic Damage to enemies within the blast radius.
+    description: Call a mana fragment from the stars to strike the world, dealing 20 Magic Damage to enemies within the blast radius.
     icon: arcanemeteor
     icon_disabled: arcanemeteor
     category: arcane
@@ -12,6 +12,7 @@ arcanemeteor:
             hit_effects: none
             tick_effects: none
             miss_effects: none
+            target: block
             velocity: 1000
             range: 1000
             reflect_count: 0
@@ -34,12 +35,12 @@ arcanemeteor:
       - location: target
         effectlib:
            class: Modified
-           duration: 1400
+           duration: 1800
            parameters:
              radius: "(t/i) * 4 + 0.1"
            effect:
              class: Vortex
-             particle_count: 1
+             particle_count: 2
              grow: 0
              pitch: 90
              offset: 0,0.2,0
@@ -110,13 +111,13 @@ arcanemeteor:
         push: 1.2
         direction: 0,0.2,0
         random_source_offset: 10,0,10
-        source_offset: 0,40,0
+        source_offset: 0,55,0
         target_self_timeout: 1000
         hit_on_miss: true
         damage_type: magic
         damage_min_distance: 2
         damage_max_distance: 6
-        damage: 16
+        damage: 20
         destructible: solid
         destructible_override: true
         destructible_durability: 50
@@ -134,4 +135,4 @@ arcanemeteor:
         undo: 5000
         undo_speed: 0.5
     costs:
-        mana: 125
+        mana: 150

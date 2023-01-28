@@ -75,7 +75,6 @@ base_scepter:
   stackable: false
   allow_offhand: false
   spell_inventory: false
-  right_click: alt_cast
   active_spell: false
   cooldown_reduction: (cooldownreduction)/100
   cost_reduction: (costreduction)/100
@@ -86,6 +85,7 @@ base_scepter:
     generic_attack_speed: 0
   slots:
   - gui
+  - castsource
   slotted:
   - gui_none
   lore:
@@ -260,22 +260,22 @@ base_upgrade:
 
 
 
-#base_bowcaster:
-#  icon: bow
-#  hidden: true
-#  inherit: base_bound
-#  mode: inventory
-#  left_click: cycle_active_hotbar
-#  left_click_sneak: cycle_active_hotbar_reverse
-#  drop: toggle
-#  right_click: none
-#  swap: cycle_hotbar
-# swap_sneak: cycle_hotbar_reverse
-#  no_bowpull: none
-#  xp_display: true
-#  renamable: true
-#  quiet: 1
-#  cast_location: 0.5,0,0.35
+base_bowcaster:
+  icon: bow
+  hidden: true
+  inherit: base_bound
+  mode: inventory
+  left_click: cycle_active_hotbar
+  left_click_sneak: cycle_active_hotbar_reverse
+  drop: toggle
+  right_click: none
+  swap: cycle_hotbar
+  swap_sneak: cycle_hotbar_reverse
+  no_bowpull: none
+  xp_display: true
+  renamable: true
+  quiet: 1
+  cast_location: 0.5,0,0.35
 #  locked: false
 #  unique: true
 #  enchantable: false

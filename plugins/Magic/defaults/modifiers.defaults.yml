@@ -27,6 +27,356 @@ protected:
   protected: true
 reflective:
   reflect_chance: 0.5
+ignoreair:
+  overrides:
+    fill:
+      check_destructible: true
+      destructible: '!all_air'
+    superblob:
+      check_destructible: true
+      destructible: '!all_air'
+    supercube:
+      check_destructible: true
+      destructible: '!all_air'
+    supercylinder:
+      check_destructible: true
+      destructible: '!all_air'
+    superdisc:
+      check_destructible: true
+      destructible: '!all_air'
+    superdome:
+      check_destructible: true
+      destructible: '!all_air'
+    superhemisphere:
+      check_destructible: true
+      destructible: '!all_air'
+    superpyramid:
+      check_destructible: true
+      destructible: '!all_air'
+    superring:
+      check_destructible: true
+      destructible: '!all_air'
+    supershell:
+      check_destructible: true
+      destructible: '!all_air'
+    superwalls:
+      check_destructible: true
+      destructible: '!all_air'
+onlyair:
+  overrides:
+    fill:
+      check_destructible: true
+      destructible: all_air
+    superblob:
+      check_destructible: true
+      destructible: all_air
+    supercube:
+      check_destructible: true
+      destructible: all_air
+    supercylinder:
+      check_destructible: true
+      destructible: all_air
+    superdisc:
+      check_destructible: true
+      destructible: all_air
+    superdome:
+      check_destructible: true
+      destructible: all_air
+    superhemisphere:
+      check_destructible: true
+      destructible: all_air
+    superpyramid:
+      check_destructible: true
+      destructible: all_air
+    superring:
+      check_destructible: true
+      destructible: all_air
+    supershell:
+      check_destructible: true
+      destructible: all_air
+    superwalls:
+      check_destructible: true
+      destructible: all_air
+onlyearth:
+  overrides:
+    fill:
+      check_destructible: true
+      destructible: earth
+    superblob:
+      check_destructible: true
+      destructible: earth
+    supercube:
+      check_destructible: true
+      destructible: earth
+    supercylinder:
+      check_destructible: true
+      destructible: earth
+    superdisc:
+      check_destructible: true
+      destructible: earth
+    superdome:
+      check_destructible: true
+      destructible: earth
+    superhemisphere:
+      check_destructible: true
+      destructible: earth
+    superpyramid:
+      check_destructible: true
+      destructible: earth
+    superring:
+      check_destructible: true
+      destructible: earth
+    supershell:
+      check_destructible: true
+      destructible: earth
+    superwalls:
+      check_destructible: true
+      destructible: earth
+noearth:
+  overrides:
+    fill:
+      check_destructible: true
+      destructible: '!earth'
+    superblob:
+      check_destructible: true
+      destructible: '!earth'
+    supercube:
+      check_destructible: true
+      destructible: '!earth'
+    supercylinder:
+      check_destructible: true
+      destructible: '!earth'
+    superdisc:
+      check_destructible: true
+      destructible: '!earth'
+    superdome:
+      check_destructible: true
+      destructible: '!earth'
+    superhemisphere:
+      check_destructible: true
+      destructible: '!earth'
+    superpyramid:
+      check_destructible: true
+      destructible: '!earth'
+    superring:
+      check_destructible: true
+      destructible: '!earth'
+    supershell:
+      check_destructible: true
+      destructible: '!earth'
+    superwalls:
+      check_destructible: true
+      destructible: '!earth'
+onlyliquid:
+  overrides:
+    fill:
+      check_destructible: true
+      destructible: liquid
+    superblob:
+      check_destructible: true
+      destructible: liquid
+    supercube:
+      check_destructible: true
+      destructible: liquid
+    supercylinder:
+      check_destructible: true
+      destructible: liquid
+    superdisc:
+      check_destructible: true
+      destructible: liquid
+    superdome:
+      check_destructible: true
+      destructible: liquid
+    superhemisphere:
+      check_destructible: true
+      destructible: liquid
+    superpyramid:
+      check_destructible: true
+      destructible: liquid
+    superring:
+      check_destructible: true
+      destructible: liquid
+    supershell:
+      check_destructible: true
+      destructible: liquid
+    superwalls:
+      check_destructible: true
+      destructible: liquid
+noliquid:
+  overrides:
+    fill:
+      check_destructible: true
+      destructible: '!liquid'
+    superblob:
+      check_destructible: true
+      destructible: '!liquid'
+    supercube:
+      check_destructible: true
+      destructible: '!liquid'
+    supercylinder:
+      check_destructible: true
+      destructible: '!liquid'
+    superdisc:
+      check_destructible: true
+      destructible: '!liquid'
+    superdome:
+      check_destructible: true
+      destructible: '!liquid'
+    superhemisphere:
+      check_destructible: true
+      destructible: '!liquid'
+    superpyramid:
+      check_destructible: true
+      destructible: '!liquid'
+    superring:
+      check_destructible: true
+      destructible: '!liquid'
+    supershell:
+      check_destructible: true
+      destructible: '!liquid'
+    superwalls:
+      check_destructible: true
+      destructible: '!liquid'
+onlyplants:
+  overrides:
+    fill:
+      check_destructible: true
+      destructible: plants
+    superblob:
+      check_destructible: true
+      destructible: plants
+    supercube:
+      check_destructible: true
+      destructible: plants
+    supercylinder:
+      check_destructible: true
+      destructible: plants
+    superdisc:
+      check_destructible: true
+      destructible: plants
+    superdome:
+      check_destructible: true
+      destructible: plants
+    superhemisphere:
+      check_destructible: true
+      destructible: plants
+    superpyramid:
+      check_destructible: true
+      destructible: plants
+    superring:
+      check_destructible: true
+      destructible: plants
+    supershell:
+      check_destructible: true
+      destructible: plants
+    superwalls:
+      check_destructible: true
+      destructible: plants
+noplants:
+  overrides:
+    fill:
+      check_destructible: true
+      destructible: '!plants'
+    superblob:
+      check_destructible: true
+      destructible: '!plants'
+    supercube:
+      check_destructible: true
+      destructible: '!plants'
+    supercylinder:
+      check_destructible: true
+      destructible: '!plants'
+    superdisc:
+      check_destructible: true
+      destructible: '!plants'
+    superdome:
+      check_destructible: true
+      destructible: '!plants'
+    superhemisphere:
+      check_destructible: true
+      destructible: '!plants'
+    superpyramid:
+      check_destructible: true
+      destructible: '!plants'
+    superring:
+      check_destructible: true
+      destructible: '!plants'
+    supershell:
+      check_destructible: true
+      destructible: '!plants'
+    superwalls:
+      check_destructible: true
+      destructible: '!plants'
+onlysolid:
+  overrides:
+    fill:
+      check_destructible: true
+      destructible: solid
+    superblob:
+      check_destructible: true
+      destructible: solid
+    supercube:
+      check_destructible: true
+      destructible: solid
+    supercylinder:
+      check_destructible: true
+      destructible: solid
+    superdisc:
+      check_destructible: true
+      destructible: solid
+    superdome:
+      check_destructible: true
+      destructible: solid
+    superhemisphere:
+      check_destructible: true
+      destructible: solid
+    superpyramid:
+      check_destructible: true
+      destructible: solid
+    superring:
+      check_destructible: true
+      destructible: solid
+    supershell:
+      check_destructible: true
+      destructible: solid
+    superwalls:
+      check_destructible: true
+      destructible: solid
+nosolid:
+  overrides:
+    fill:
+      check_destructible: true
+      destructible: '!solid'
+    superblob:
+      check_destructible: true
+      destructible: '!solid'
+    supercube:
+      check_destructible: true
+      destructible: '!solid'
+    supercylinder:
+      check_destructible: true
+      destructible: '!solid'
+    superdisc:
+      check_destructible: true
+      destructible: '!solid'
+    superdome:
+      check_destructible: true
+      destructible: '!solid'
+    superhemisphere:
+      check_destructible: true
+      destructible: '!solid'
+    superpyramid:
+      check_destructible: true
+      destructible: '!solid'
+    superring:
+      check_destructible: true
+      destructible: '!solid'
+    supershell:
+      check_destructible: true
+      destructible: '!solid'
+    superwalls:
+      check_destructible: true
+      destructible: '!solid'
 magicdamageboost:
   stack: true
 tundradebuff:

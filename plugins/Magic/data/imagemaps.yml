@@ -1,0 +1,13 @@
+'0':
+  world: world
+  url: http://textures.minecraft.net/texture/1e15e310b0519c72a04ca51ae560e6e476c46ad02bb1777a5a749576c4839216
+  x: 8
+  y: 8
+  width: 8
+  height: 8
+  enabled: true
+  name: Photo of IonTech
+  player: IonTech
+  slice: false
+  x_overlay: 40
+  y_overlay: 8
