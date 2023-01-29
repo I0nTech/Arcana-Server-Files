@@ -1442,27 +1442,73 @@ arrow_poison:
   costs:
     arrow: 1
 arrow_regular:
+  inherit: false
   icon: arrow
   legacy_icon: arrow
-  category: combat
-  worth: 100
-  earns: 2
   actions:
     cast:
-    - class: Projectile
+    - class: EntityProjectile
+      actions:
+      - class: Damage
+      headshot:
+      - class: Damage
+        damage_multiplier: 1.5
+      - class: PlayEffects
+        effect: crit
   effects:
     cast:
     - class: EffectSingle
       sound: entity_arrow_shoot
       location: origin
+      sound_pitch: 1.1
+    projectile:
+    - location: origin
+      effectlib:
+        class: EquationEffect
+        xEquation: sin(t)
+        yEquation: 0.5sin(0.3141 * t)
+        zEquation: 0.5cos(0.3141 * t)
+        duration: 10000
+        particles: 4
+        particle: dust_color_transition
+        particle_size: 0.8
+        color: '#73FBD3'
+        to_color: '#6C2DC7'
+        cycle: true
+        offset: 0,-0.5,0
+    hit:
+    - location: target
+      particle: end_rod
+      particle_count: 1
+      particle_offset: 0
+      sound: entity_arrow_hit
+    dink:
+    - location: origin
+      sound: entity_arrow_hit_player
+    crit:
+    - location: target
+      particle: crit_magic
+      particle_count: 24
+      particle_offset: 0.25
+      particle_data: rand(0.3,0.8)
+    - location: both
+      sound: entity_player_attack_knockback
+      sound_pitch: 2
+    - location: both
+      sound: entity_player_attack_crit
+      sound_pitch: 0.8
   parameters:
+    type: arrow
+    interval: 1
     target: none
-    projectile: TippedArrow
-    speed: bowpull * 3
-    spread: 1 - bowpull
-    arrow_damage: 2 * bowpull
-    tick_increase: 0
-    pickup: disallowed
+    velocity: 64*bowpull
+    gravity: 0.017/bowpull
+    damage: bowpull*(rand(7,9) + power*1.5)
+    damage_type: physical
+    no_damage_ticks: 0
+    target_type: Damageable
+    hitbox: true
+    hitbox_size: 0.2
   costs:
     arrow: 1
 arrow_shock:
@@ -31975,7 +32021,6 @@ magicshield:
       sound_pitch: 4
   parameters:
     target: other_entity
-    target_type: LivingEntity
     interval: 50
     range: 3
     push: 2
@@ -32089,6 +32134,14 @@ manabeam:
   category: arcane
   actions:
     cast:
+    - class: Asynchronous
+      actions:
+      - class: Interval
+        duration: $warmup
+        interval: 2
+        actions:
+        - class: PlayEffects
+          effects: laser
     - class: ChangeContext
       target_self: true
       target_caster: true
@@ -32114,7 +32167,7 @@ manabeam:
       - class: PlayEffects
         effect: crit
   effects:
-    cast:
+    laser:
     - location: origin
       color_override: color
       effectlib:
@@ -32124,10 +32177,6 @@ manabeam:
         to_color: '#FF00FF'
         particle_size: 0.4
         particle_count: 1
-        period: 2
-        iterations: 24
-        update_directions: true
-        update_locations: true
     fire:
     - sound: block_beacon_power_select
       sound_pitch: 0.3
@@ -32224,8 +32273,8 @@ manabeam:
     range: 64
     damage_type: magic
     damage: 16
-    entity_hit_count: 10
-    block_hit_count: 3
+    entity_hit_count: 12
+    block_hit_count: 12
     no_damage_ticks: 0
     target_type: Damageable
     destructible: solid
@@ -32567,8 +32616,7 @@ manashot:
       particle_offset_y: 1
       particle_offset_z: 0.2
     hit_entity:
-    - class: EffectSingle
-      location: target
+    - location: target
       particle: dust_color_transition
       size: 0.1
       to_color: '#73FBD3'

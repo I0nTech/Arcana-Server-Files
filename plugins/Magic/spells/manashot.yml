@@ -46,8 +46,7 @@ manashot:
         particle_offset_y: 1
         particle_offset_z: 0.2
       hit_entity:
-      - class: EffectSingle
-        location: target
+      - location: target
         particle: dust_color_transition
         size: 0.1
         to_color: "#73FBD3"

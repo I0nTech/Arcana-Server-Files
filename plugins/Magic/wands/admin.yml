@@ -7,7 +7,7 @@ admin:
   effect_color: "#ff0000"
   icon: 'stick{4}'
   attributes:
-    mage_mana: 1000
-    mage_mana_regen: 100
-    cooldownreduction: 100
-    wandpower: 50
+    mage_mana: 500
+    mage_mana_regen: 50
+    cooldownreduction: 50
+    wandpower: 100

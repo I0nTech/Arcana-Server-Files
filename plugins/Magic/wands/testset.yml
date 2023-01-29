@@ -28,20 +28,18 @@ test_sword2:
 #    costreduction: 100
 
 test_bow:
-  name: "&fTest Bow"
-  description: "Test"
+  name: "&fMagic Bow"
+  description: "Converts arrows fired into Magic Arrows with special properties. Arrows fired cannot be retrieved."
   inherit: base_scepter
-  icon: crossbow
-  cast_min_bowpull: 0.9
+  icon: bow
+  cast_min_bowpull: 0.1
   no_bowpull: cancel
-  active_spell: manabolt
+  active_spell: arrow_regular
   modifiable: false
   slotted:
-   - castsource_eyes
+   - castsource_body
   spell_inventory: false
   cost_reduction: 1
-  attributes:
-    manaboost: 10
 #    costreduction: 100
 
 test_axe:

@@ -1,10 +1,10 @@
 id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
 name: IonTech
-created: 1674767783023
-updated: 1674768019809
-last_cast: 1674768017062
+created: 1674940284523
+updated: 1675027854643
+last_cast: 1675027853695
 cooldown_expiration: 0
-last_death_location: ''
+last_death_location: -222.46887423393335,70.0,-129.56058325668,world,141.32617,-20.681723
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -15,35 +15,180 @@ brush:
   scale: 1.0
   erase: true
 undo:
-  455c86ed-c4e7-4ba1-a15a-8b7e61e0c0fa: []
+  455c86ed-c4e7-4ba1-a15a-8b7e61e0c0fa:
+  - blocks:
+    - -107,71,208,world|air
+    - -107,71,207,world|air
+    - -33,66,209,world|air
+    time_to_live: 0
+    name: Deflector
+    mode: NO_PHYSICS
 spells:
-  shadowcloak:
-    cast_count: 0
-    last_cast: 0
+  channel:
+    cast_count: 169
+    last_cast: 1675027850700
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  arrow_regular:
+  healbolt:
     cast_count: 0
-    last_cast: 0
+    last_cast: 1674959446707
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   manabolt:
-    cast_count: 6
-    last_cast: 1674768017062
+    cast_count: 71
+    last_cast: 1675027844007
     last_earn: 0
-    cooldown_expiration: 1674768017862
+    cooldown_expiration: 0
     charges: 0.0
-  arrow_poison:
+  arrow_ice:
+    cast_count: 2
+    last_cast: 1674942430459
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemissiles:
+    cast_count: 12
+    last_cast: 1675026532405
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  controlsmenu:
+    cast_count: 1
+    last_cast: 1675023985246
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manablast:
+    cast_count: 10
+    last_cast: 1675027850701
+    last_earn: 0
+    cooldown_expiration: 1675027854701
+    charges: 0.0
+  reflect:
+    cast_count: 3
+    last_cast: 1675026492946
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  walls:
+    cast_count: 2
+    last_cast: 1675026504848
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  laser:
     cast_count: 0
-    last_cast: 0
+    last_cast: 1674958830521
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arrow_grapple:
+    cast_count: 5
+    last_cast: 1674942409468
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  progressmenu:
+    cast_count: 2
+    last_cast: 1675023981083
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   manashot:
-    cast_count: 0
-    last_cast: 0
+    cast_count: 106
+    last_cast: 1675027811047
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  magicshield:
+    cast_count: 5
+    last_cast: 1675026624247
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabeam:
+    cast_count: 89
+    last_cast: 1675026390451
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  burstshot:
+    cast_count: 80
+    last_cast: 1675027822298
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemeteor:
+    cast_count: 25
+    last_cast: 1675026377300
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  superkill:
+    cast_count: 1
+    last_cast: 1675025935413
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  meditate:
+    cast_count: 1
+    last_cast: 1675025495152
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  triplebolt:
+    cast_count: 27
+    last_cast: 1675026349452
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shadowcloak:
+    cast_count: 2
+    last_cast: 1674959361963
+    last_earn: 0
+    cooldown_expiration: 1674959541963
+    charges: 0.0
+  windslash:
+    cast_count: 7
+    last_cast: 1675025126549
+    last_earn: 0
+    cooldown_expiration: 1675025129049
+    charges: 0.0
+  arcanehail:
+    cast_count: 5
+    last_cast: 1675026454499
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanebarrage:
+    cast_count: 15
+    last_cast: 1675026466045
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arrow_regular:
+    cast_count: 1748
+    last_cast: 1675025558350
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 30
+    last_cast: 1675026336247
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  shell:
+    cast_count: 5
+    last_cast: 1675026531198
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  scattershot:
+    cast_count: 20
+    last_cast: 1675027832000
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -53,26 +198,38 @@ resource_pack_preference: default
 data: {}
 properties:
   spells:
-  - arrow_regular
+  - manabeam
+  - burstshot
+  - arcanemeteor
   - manabolt
-  - arrow_poison
+  - meditate
+  - triplebolt
+  - arcanemissiles
+  - arcanehail
+  - manablast
+  - reflect
+  - arcanebarrage
+  - walls
+  - focusbolt
+  - shell
+  - scattershot
   - manashot
+  - magicshield
+  version: 7
 kits:
   start:
-    last_give: 1674767783164
+    last_give: 1674940284674
     given_items:
       iron_ingot:
         amount: 64
-        last_give: 1674767783164
+        last_give: 1674940284674
       bread:
         amount: 32
-        last_give: 1674767783164
+        last_give: 1674940284674
 classes:
   mage:
-    mana_timestamp: 1674767897112
-    mana: 120.0
-  archer_mage:
-    mana: 0.0
+    mana_timestamp: 1675027854640
+    mana: 600.0
 transient_modifiers: {}
-active_class: archer_mage
+active_class: mage
 health: 20.0

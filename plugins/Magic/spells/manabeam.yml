@@ -6,14 +6,22 @@ manabeam:
   category: arcane
   actions:
     cast:
+    - class: Asynchronous
+      actions:
+        - class: Interval
+          duration: $warmup
+          interval: 2
+          actions:
+          - class: PlayEffects
+            effects: laser
     - class: ChangeContext
       target_self: true
       target_caster: true
       actions:
-      - class: Cast
-        spell: channel
-        spell_parameters:
-          warmup: $warmup
+        - class: Cast
+          spell: channel
+          spell_parameters:
+            warmup: $warmup
     - class: Delay
     - class: Retarget
     - class: PlayEffects
@@ -32,10 +40,9 @@ manabeam:
           effect: crit
 
   effects:
-      cast:
+      laser:
         - location: origin
           color_override: color
-#          visibility: origin
           effectlib:
             class: Line
             length: $range
@@ -43,10 +50,6 @@ manabeam:
             to_color: "#FF00FF"
             particle_size: 0.4
             particle_count: 1
-            period: 2
-            iterations: 24
-            update_directions: true
-            update_locations: true
       fire:
       - sound: block_beacon_power_select
         sound_pitch: 0.3
@@ -141,8 +144,8 @@ manabeam:
     range: 64
     damage_type: magic
     damage: 16
-    entity_hit_count: 10
-    block_hit_count: 3
+    entity_hit_count: 12
+    block_hit_count: 12
     no_damage_ticks: 0
     target_type: Damageable
     destructible: solid

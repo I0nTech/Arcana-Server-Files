@@ -1616,7 +1616,7 @@ testboss:
         burstshot: 5
         scattershot: 5
         meditate: 5
-        manabeam: 5
+        manabeam: 500
         manablast: 10
         focusbolt: 20
         triplebolt: 20

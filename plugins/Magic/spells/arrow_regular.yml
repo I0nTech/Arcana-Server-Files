@@ -1,0 +1,71 @@
+arrow_regular:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: arrow
+  legacy_icon: arrow
+  actions:
+    cast:
+    - class: EntityProjectile
+      actions:
+        - class: Damage
+      headshot:
+        - class: Damage
+          damage_multiplier: 1.5
+        - class: PlayEffects
+          effect: crit
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: entity_arrow_shoot
+      location: origin
+      sound_pitch: 1.1
+    projectile:
+      - location: origin
+        effectlib:
+          class: EquationEffect
+          xEquation: "sin(t)"
+          yEquation: "0.5sin(0.3141 * t)"
+          zEquation: "0.5cos(0.3141 * t)"
+          duration: 10000
+          particles: 4
+          particle: dust_color_transition
+          particle_size: 0.8
+          color: "#73FBD3"
+          to_color: "#6C2DC7"
+          cycle: true
+          offset: 0,-0.5,0
+    hit:
+    - location: target
+      particle: end_rod
+      particle_count: 1
+      particle_offset: 0
+      sound: entity_arrow_hit
+    dink:
+    - location: origin
+      sound: entity_arrow_hit_player
+    crit:
+      - location: target
+        particle: crit_magic
+        particle_count: 24
+        particle_offset: 0.25
+        particle_data: rand(0.3,0.8)
+      - location: both
+        sound: entity_player_attack_knockback
+        sound_pitch: 2
+      - location: both
+        sound: entity_player_attack_crit
+        sound_pitch: 0.8
+  parameters:
+    type: arrow
+    interval: 1
+    target: none
+    velocity: 64*bowpull
+    gravity: 0.017/bowpull
+    damage: bowpull*(rand(7,9) + power*1.5)
+    damage_type: physical
+    no_damage_ticks: 0
+    target_type: Damageable
+    hitbox: true
+    hitbox_size: 0.2
+  costs:
+    arrow: 1
