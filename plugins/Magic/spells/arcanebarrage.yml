@@ -1,6 +1,6 @@
 arcanebarrage:
   name: Arcane Barrage
-  description: "Launch a omnidirectional barrage of Arcane Spears at a targeted entity or location for 10 seconds, each dealing 6 Magic Damage. Number of spears launched scales with Wand Power."
+  description: "Launch a omnidirectional barrage of Arcane Spears at a targeted entity or location for 8 seconds, each dealing 6 Magic Damage. Number of spears launched scales with Wand Power."
   category: arcane
   icon: arcanebarrage
   icon_disabled: arcanebarrage
@@ -15,11 +15,11 @@ arcanebarrage:
       tick_effects: none
       hit_effects: none
       hitbox: true
-      hitbox_size: 3
+      hitbox_size: 1
       actions:
         - class: Interval
-          duration: 10000
-          interval: 150/(1+$wandpower/100)
+          duration: 8000
+          interval: 200/(1+$wandpower/100)
           actions:
           - class: Asynchronous
             actions:
@@ -108,6 +108,7 @@ arcanebarrage:
       - location: target
         particle: dust_color_transition
         target_location: body
+        requires_entity_target: true
         particle_count: 3
         particle_offset_x: 0.3
         particle_offset_z: 0.3

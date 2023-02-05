@@ -9,7 +9,7 @@ base:
     mana: mana_regeneration
     mana_timestamp: mana_regeneration
     spell_levels: class
-    spells: mage
+    spells: class
     brushes: class
     hotbar_count: subclass
     attributes: mage,wand
@@ -51,13 +51,10 @@ vanilla:
       value: 0.4
       operation: base
 archer_mage:
-  inherit: base
-  locked: false
-  path: archer
-  active_spell: arrow_regular
+  inherit: mage
+  spell_inventory: true
   spells:
   - arrow_regular
-  - arrow_poison
 battle_mage:
   parent: caster
   locked: false
@@ -80,10 +77,10 @@ caster:
 mage:
   inherit: base
   spell_inventory: true
-  spells:
-  - manashot
   mana_max: (mage_mana+100)*(1+manaboost/100)
   mana_regeneration: (mage_mana_regen+5)*(1+manaregenboost/100)
+  spells:
+  - manashot
   entity_attributes:
     generic_max_health:
       value: vitality

@@ -18,6 +18,7 @@ wand_slots:
   castsource:
     hidden: true
     replaceable: true
+    default_slotted: castsource_body
   Attunement:
     replaceable: true
   Capacitor:

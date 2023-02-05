@@ -8,7 +8,7 @@ base:
     mana: mana_regeneration
     mana_timestamp: mana_regeneration
     spell_levels: class
-    spells: mage
+    spells: class
     brushes: class
     hotbar_count: subclass
     attributes: mage,wand

@@ -74,7 +74,6 @@ basic_wand:
 base_wand:
   inherit: base_keep
   hidden: true
-  locked: false
   renamable: true
   unique: true
   indestructible: true
@@ -153,14 +152,12 @@ admin:
   inherit: base_wand
   name: '&#ccccccAdmin''s Staff'
   renamable: true
-  description: '&8Bursting with power.'
+  description: '&8Overloading Authority.'
   effect_color: '#ff0000'
   icon: stick{4}
   attributes:
     mage_mana: 500
     mage_mana_regen: 50
-    cooldownreduction: 50
-    wandpower: 100
 admintool:
   icon: nether_star{"CustomModelData":18001}
   mode: chest
@@ -882,15 +879,19 @@ gui_bossbar:
       use_active_name: true
 controls_bowcaster:
   inherit: false
+  hidden: true
   slot: controls
+  upgrade: true
+  mode: inventory
+  drop: toggle
   left_click: cycle_active_hotbar
   left_click_sneak: cycle_active_hotbar_reverse
   right_click: none
   right_click_sneak: none
   swappable: true
   swap: none
+  use_active_name: true
   swap_sneak: none
-  hotbar_count: 1
 controls_bow_hybrid:
   inherit: controls_bowcaster
 crackedbroomstick:
@@ -3362,6 +3363,55 @@ appearance_diamond:
   upgrade: true
   icon: diamond
   upgrade_icon: diamond
+base_bowcaster:
+  inherit: base_keep
+  hidden: true
+  icon: bow
+  renamable: true
+  unique: true
+  indestructible: true
+  enchantable: true
+  craftable: true
+  effect_bubbles: false
+  unstashable: false
+  cancel_interact_on_right_click: true
+  cancel_interact_on_left_click: true
+  allow_offhand: true
+  stack: true
+  stackable: false
+  cooldown_reduction: (cooldownreduction)/100
+  cost_reduction: (costreduction)/100
+  power: (wandpower)/100
+  cast_min_bowpull: 0.1
+  no_bowpull: cancel
+  item_attribute_slot: hand
+  item_attributes:
+    GENERIC_ATTACK_SPEED: 0
+    generic_attack_damage: -1
+  lore:
+  - $spells
+  - $description
+  - ''
+  - $slots
+  - ''
+  - '&7When in Main Hand:'
+  - $attributes
+  slotted:
+  - castsource_body
+  - controls_bowcaster
+  slots:
+  - Attunement
+  - gui
+  - controls
+  - spellmode
+  - swappable
+  - castsource
+  tags:
+  - buffable
+  - transformable
+  - effectable
+  - tweakable
+  - wand
 base_scepter:
   hidden: true
   locked: false
@@ -3552,22 +3602,6 @@ base_upgrade:
   stackable: false
   force: true
   glow: true
-base_bowcaster:
-  icon: bow
-  hidden: true
-  inherit: base_bound
-  mode: inventory
-  left_click: cycle_active_hotbar
-  left_click_sneak: cycle_active_hotbar_reverse
-  drop: toggle
-  right_click: none
-  swap: cycle_hotbar
-  swap_sneak: cycle_hotbar_reverse
-  no_bowpull: none
-  xp_display: true
-  renamable: true
-  quiet: 1
-  cast_location: 0.5,0,0.35
 castsource_wand:
   name: Cast from Wand
   description: All spells begin from the tip of your wand
@@ -3958,18 +3992,13 @@ test_sword2:
     attackspeed: -2.4
 test_bow:
   name: '&fMagic Bow'
-  description: Converts arrows fired into Magic Arrows with special properties. Arrows
-    fired cannot be retrieved.
-  inherit: base_scepter
-  icon: bow
-  cast_min_bowpull: 0.1
-  no_bowpull: cancel
-  active_spell: arrow_regular
-  modifiable: false
-  slotted:
-  - castsource_body
-  spell_inventory: false
-  cost_reduction: 1
+  description: Fires magic arrows.
+  icon: bow{1}
+  class: archer_mage
+  inherit: base_bowcaster
+  attributes:
+    mage_mana: 10
+    mage_mana_regen: 10
 test_axe:
   name: '&fTest Axe'
   description: Infused with bullshit

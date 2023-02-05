@@ -1,0 +1,5 @@
+archer_mage:
+  inherit: mage
+  spell_inventory: true
+  spells:
+    - arrow_regular

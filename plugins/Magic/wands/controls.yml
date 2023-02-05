@@ -53,14 +53,17 @@ controls_inventory:
   use_active_name: true
 
 controls_bowcaster:
-  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
   inherit: false
+  hidden: true
   slot: controls
+  upgrade: true
+  mode: inventory
+  drop: toggle
   left_click: cycle_active_hotbar
   left_click_sneak: cycle_active_hotbar_reverse
   right_click: none
   right_click_sneak: none
   swappable: true
   swap: none
+  use_active_name: true
   swap_sneak: none
-  hotbar_count: 1

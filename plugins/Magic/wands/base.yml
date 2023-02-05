@@ -12,7 +12,6 @@ base_wand:
   hidden: true
 #  hide_flags: 126
 #  quiet: 1
-  locked: false
   renamable: true
   unique: true
   indestructible: true
@@ -46,6 +45,59 @@ base_wand:
   - Attunement
   - Conduit
   - Engram
+  - gui
+  - controls
+  - spellmode
+  - swappable
+  - castsource
+  tags:
+  - buffable
+  - transformable
+  - effectable
+  - tweakable
+  - wand
+
+base_bowcaster:
+  inherit: base_keep
+  hidden: true
+#  hide_flags: 126
+#  quiet: 1
+  icon: bow
+  renamable: true
+  unique: true
+  indestructible: true
+  enchantable: true
+  craftable: true
+  effect_bubbles: false
+  unstashable: false
+  cancel_interact_on_right_click: true
+  cancel_interact_on_left_click: true
+  allow_offhand: true
+  stack: true
+  stackable: false
+  cooldown_reduction: (cooldownreduction)/100
+  cost_reduction: (costreduction)/100
+  power: (wandpower)/100
+  cast_min_bowpull: 0.1
+  no_bowpull: cancel
+  item_attribute_slot: hand
+  item_attributes:
+    GENERIC_ATTACK_SPEED: 0
+    generic_attack_damage: -1
+  lore:
+#  - $hotbar
+  - $spells
+  - "$description"
+  - ''
+  - $slots
+  - ''
+  - '&7When in Main Hand:'
+  - "$attributes"
+  slotted:
+  - castsource_body
+  - controls_bowcaster
+  slots:
+  - Attunement
   - gui
   - controls
   - spellmode
@@ -260,22 +312,22 @@ base_upgrade:
 
 
 
-base_bowcaster:
-  icon: bow
-  hidden: true
-  inherit: base_bound
-  mode: inventory
-  left_click: cycle_active_hotbar
-  left_click_sneak: cycle_active_hotbar_reverse
-  drop: toggle
-  right_click: none
-  swap: cycle_hotbar
-  swap_sneak: cycle_hotbar_reverse
-  no_bowpull: none
-  xp_display: true
-  renamable: true
-  quiet: 1
-  cast_location: 0.5,0,0.35
+#base_bowcaster:
+#  icon: bow
+#  hidden: true
+#  inherit: base_bound
+#  mode: inventory
+#  left_click: cycle_active_hotbar
+#  left_click_sneak: cycle_active_hotbar_reverse
+#  drop: toggle
+#  right_click: none
+#  swap: cycle_hotbar
+#  swap_sneak: cycle_hotbar_reverse
+#  no_bowpull: none
+#  xp_display: true
+#  renamable: true
+#  quiet: 1
+#  cast_location: 0.5,0,0.35
 #  locked: false
 #  unique: true
 #  enchantable: false

@@ -1,10 +1,10 @@
 id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
 name: IonTech
-created: 1674940284523
-updated: 1675028080346
-last_cast: 1675028071048
+created: 1675568696611
+updated: 1675570092151
+last_cast: 1675570049010
 cooldown_expiration: 0
-last_death_location: -94.0832262722424,70.0,213.41472283017822,world,179.28761,69.980606
+last_death_location: -121.33824346277285,72.0,176.8845532895798,world,32.519775,-69.0275
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -15,225 +15,71 @@ brush:
   scale: 1.0
   erase: true
 undo:
-  455c86ed-c4e7-4ba1-a15a-8b7e61e0c0fa:
-  - blocks:
-    - -107,71,208,world|air
-    - -107,71,207,world|air
-    - -33,66,209,world|air
-    - -103,70,207,world|air
-    - -108,70,195,world|air
-    - -96,70,194,world|air
-    - -109,70,195,world|air
-    - -100,70,195,world|air
-    - -107,70,195,world|grass
-    - -109,70,200,world|air
-    - -97,70,194,world|grass
-    - -108,70,194,world|grass
-    - -98,70,194,world|air
-    - -35,65,206,world|air
-    - -33,66,206,world|air
-    - -30,67,213,world|air
-    - -97,70,195,world|grass
-    - -96,70,193,world|air
-    - -29,67,210,world|air
-    - -36,66,205,world|air
-    - -30,68,214,world|air
-    - -97,70,192,world|air
-    - -30,67,210,world|grass
-    - -29,67,211,world|tall_grass?minecraft:tall_grass[half=lower]
-    - -29,68,211,world|tall_grass?minecraft:tall_grass[half=upper]
-    - -34,66,207,world|air
-    - -30,67,214,world|air
-    - -31,68,214,world|air
-    - -36,65,205,world|grass
-    - -37,65,205,world|air
-    - -37,66,206,world|air
-    - -35,65,205,world|grass
-    - -33,66,207,world|grass
-    - -34,66,208,world|grass
-    - -29,67,214,world|grass
-    - -30,68,215,world|tall_grass?minecraft:tall_grass[half=upper]
-    - -30,67,215,world|tall_grass?minecraft:tall_grass[half=lower]
-    - -30,67,212,world|grass
-    - -31,67,214,world|grass
-    - -96,70,192,world|grass
-    - -99,70,195,world|air
-    - -97,71,195,world|air
-    - -35,66,207,world|grass
-    - -31,67,213,world|grass
-    - -37,65,206,world|grass
-    - -98,70,195,world|tall_grass?minecraft:tall_grass[half=lower]
-    - -98,71,195,world|tall_grass?minecraft:tall_grass[half=upper]
-    - -109,70,194,world|grass
-    time_to_live: 0
-    name: Deflector
-    mode: NO_PHYSICS
+  455c86ed-c4e7-4ba1-a15a-8b7e61e0c0fa: []
 spells:
-  channel:
-    cast_count: 182
-    last_cast: 1675028054453
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  healbolt:
-    cast_count: 0
-    last_cast: 1674959446707
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  manabolt:
-    cast_count: 73
-    last_cast: 1675028071048
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  arrow_ice:
-    cast_count: 2
-    last_cast: 1674942430459
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  arcanemissiles:
-    cast_count: 16
-    last_cast: 1675027924655
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  controlsmenu:
-    cast_count: 1
-    last_cast: 1675023985246
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
   manablast:
-    cast_count: 10
-    last_cast: 1675027850701
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  reflect:
-    cast_count: 5
-    last_cast: 1675027989096
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  walls:
-    cast_count: 3
-    last_cast: 1675028010747
-    last_earn: 0
-    cooldown_expiration: 1675028018247
-    charges: 0.0
-  laser:
-    cast_count: 0
-    last_cast: 1674958830521
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  arrow_grapple:
-    cast_count: 5
-    last_cast: 1674942409468
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  progressmenu:
-    cast_count: 2
-    last_cast: 1675023981083
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  manashot:
-    cast_count: 123
-    last_cast: 1675028008649
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  magicshield:
-    cast_count: 6
-    last_cast: 1675028042284
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  manabeam:
-    cast_count: 91
-    last_cast: 1675027886254
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  burstshot:
-    cast_count: 83
-    last_cast: 1675028023747
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  arcanemeteor:
-    cast_count: 27
-    last_cast: 1675027905547
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  superkill:
-    cast_count: 1
-    last_cast: 1675025935413
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  meditate:
-    cast_count: 2
-    last_cast: 1675028054454
-    last_earn: 0
-    cooldown_expiration: 1675028078454
-    charges: 0.0
-  triplebolt:
-    cast_count: 30
-    last_cast: 1675027862352
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  shadowcloak:
-    cast_count: 2
-    last_cast: 1674959361963
-    last_earn: 0
-    cooldown_expiration: 1674959541963
-    charges: 0.0
-  windslash:
-    cast_count: 7
-    last_cast: 1675025126549
-    last_earn: 0
-    cooldown_expiration: 1675025129049
-    charges: 0.0
-  arcanehail:
-    cast_count: 7
-    last_cast: 1675027964088
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  arcanebarrage:
-    cast_count: 16
-    last_cast: 1675027931997
+    cast_count: 12
+    last_cast: 1675569854374
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   arrow_regular:
-    cast_count: 1748
-    last_cast: 1675025558350
+    cast_count: 122
+    last_cast: 1675569979425
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  focusbolt:
-    cast_count: 33
-    last_cast: 1675027873948
+  arrow:
+    cast_count: 0
+    last_cast: 1675569948319
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  shell:
+  arrow_bomb:
+    cast_count: 10
+    last_cast: 1675569335720
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  channel:
+    cast_count: 12
+    last_cast: 1675569854373
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  railgun:
+    cast_count: 0
+    last_cast: 1675570049010
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 0
+    last_cast: 1675568705269
+    last_earn: 0
+    cooldown_expiration: 1675568706069
+    charges: 0.0
+  absorb:
     cast_count: 6
-    last_cast: 1675028000995
+    last_cast: 1675569858020
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  scattershot:
-    cast_count: 21
-    last_cast: 1675028031651
+  arrow|6:
+    cast_count: 2
+    last_cast: 1675570030419
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arrow_poison:
+    cast_count: 45
+    last_cast: 1675569538574
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manashot:
+    cast_count: 0
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -243,38 +89,40 @@ resource_pack_preference: default
 data: {}
 properties:
   spells:
-  - manabeam
-  - burstshot
-  - arcanemeteor
-  - manabolt
-  - meditate
-  - triplebolt
-  - arcanemissiles
-  - arcanehail
   - manablast
-  - reflect
-  - arcanebarrage
-  - walls
-  - focusbolt
-  - shell
-  - scattershot
-  - manashot
-  - magicshield
-  version: 7
+  - absorb
+  - arrow_poison
 kits:
   start:
-    last_give: 1674940284674
+    last_give: 1675568696763
     given_items:
       iron_ingot:
         amount: 64
-        last_give: 1674940284674
+        last_give: 1675568696763
       bread:
         amount: 32
-        last_give: 1674940284674
+        last_give: 1675568696763
 classes:
   mage:
-    mana_timestamp: 1675028080283
-    mana: 100.0
+    mana_timestamp: 1675569913258
+    mana: 120.0
+    brushes:
+    - glass
+    - oak_log?minecraft:oak_log[axis=y]
+    - grass
+    - oak_leaves?minecraft:oak_leaves[distance=4,persistent=false,waterlogged=false]
+    - oak_leaves?minecraft:oak_leaves[distance=5,persistent=false,waterlogged=false]
+    - blue_concrete
+    locked: true
+  archer_mage:
+    mana_timestamp: 1675570092059
+    mana: 110.0
+    spells:
+    - arrow_regular
+    - arrow
+    - railgun
+    spell_levels:
+      arrow: 6
 transient_modifiers: {}
-active_class: mage
-health: 19.19999885559082
+active_class: archer_mage
+health: 18.0

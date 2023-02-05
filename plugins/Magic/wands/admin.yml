@@ -3,11 +3,9 @@ admin:
   inherit: base_wand
   name: "&#ccccccAdmin's Staff"
   renamable: true
-  description: '&8Bursting with power.'
+  description: '&8Overloading Authority.'
   effect_color: "#ff0000"
   icon: 'stick{4}'
   attributes:
     mage_mana: 500
     mage_mana_regen: 50
-    cooldownreduction: 50
-    wandpower: 100

@@ -1,12 +1,12 @@
 mage:
   inherit: base
   spell_inventory: true
-  spells:
-    - manashot
   mana_max: (mage_mana+100)*(1+manaboost/100)
   mana_regeneration: (mage_mana_regen+5)*(1+manaregenboost/100)
 #  mana_max_boost: manaboost/100
 #  mana_regeneration_boost: manaregenboost/100
+  spells:
+    - manashot
   entity_attributes:
     generic_max_health:
       value: vitality
