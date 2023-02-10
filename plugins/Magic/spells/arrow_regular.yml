@@ -3,6 +3,9 @@ arrow_regular:
   inherit: false
   icon: arrow
   legacy_icon: arrow
+  passive: true
+  triggers:
+    - trigger: launch
   actions:
     cast:
     - class: EntityProjectile
@@ -18,7 +21,8 @@ arrow_regular:
     - class: EffectSingle
       sound: entity_arrow_shoot
       location: origin
-      sound_pitch: 1.1
+      sound_pitch: 1.3
+      sound_volume: 0.5
     projectile:
       - location: origin
         effectlib:

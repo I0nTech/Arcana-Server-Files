@@ -1,429 +1,376 @@
-[22:41:29] [ServerMain/INFO]: Building unoptimized datafixer
-[22:41:30] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[22:41:32] [ServerMain/INFO]: Loaded 7 recipes
-[22:41:33] [Server thread/INFO]: Starting minecraft server version 1.19.3
-[22:41:33] [Server thread/INFO]: Loading properties
-[22:41:33] [Server thread/INFO]: This server is running Paper version git-Paper-376 (MC: 1.19.3) (Implementing API version 1.19.3-R0.1-SNAPSHOT) (Git: 1719345)
-[22:41:34] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:41:34] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:41:34] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[22:41:34] [Server thread/INFO]: Default game type: SURVIVAL
-[22:41:34] [Server thread/INFO]: Generating keypair
-[22:41:34] [Server thread/INFO]: Starting Minecraft server on *:25565
-[22:41:34] [Server thread/INFO]: Using default channel type
-[22:41:34] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[22:41:34] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[22:41:35] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.11.2
-[22:41:35] [Server thread/INFO]: [PlugWoman] Loading PlugWoman vfec830f
-[22:41:35] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v4.5.1
-[22:41:35] [Server thread/INFO]: [ViaVersion] ViaVersion 4.5.1 is now loaded, injecting!
-[22:41:36] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.12 -> 1.13 mappings...
-[22:41:36] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13 -> 1.13.2 mappings...
-[22:41:36] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.14 mappings...
-[22:41:36] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.14 -> 1.15 mappings...
-[22:41:36] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[22:41:36] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.15 -> 1.16 mappings...
-[22:41:36] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.16 -> 1.16.2 mappings...
-[22:41:36] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.16.2 -> 1.17 mappings...
-[22:41:36] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.17 -> 1.18 mappings...
-[22:41:36] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.18 -> 1.19 mappings...
-[22:41:36] [Server thread/INFO]: [CorrectFallDamage] Loading CorrectFallDamage v1.0
-[22:41:36] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v4.5.1
-[22:41:36] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.19 -> 1.19.3 mappings...
-[22:41:36] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[22:41:36] [Via-Mappingloader-0/INFO]: [ViaBackwards] Loading 1.10 -> 1.9.4 mappings...
-[22:41:36] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.11 -> 1.10 mappings...
-[22:41:36] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.12 -> 1.11 mappings...
-[22:41:36] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.13 -> 1.12 mappings...
-[22:41:36] [Via-Mappingloader-0/INFO]: [ViaBackwards] Loading 1.13.2 -> 1.13 mappings...
-[22:41:36] [Via-Mappingloader-0/INFO]: [ViaBackwards] Loading 1.14 -> 1.13.2 mappings...
-[22:41:36] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.15 -> 1.14 mappings...
-[22:41:36] [Via-Mappingloader-1/INFO]: [ViaBackwards] Loading 1.16 -> 1.15 mappings...
-[22:41:36] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.16.2 -> 1.16 mappings...
-[22:41:36] [Via-Mappingloader-1/INFO]: [ViaBackwards] Loading 1.17 -> 1.16.2 mappings...
-[22:41:36] [Via-Mappingloader-1/INFO]: [ViaBackwards] Loading 1.18 -> 1.17 mappings...
-[22:41:36] [Via-Mappingloader-1/INFO]: [ViaBackwards] Loading 1.19 -> 1.18 mappings...
-[22:41:36] [Via-Mappingloader-1/INFO]: [ViaBackwards] Loading 1.19.3 -> 1.19 mappings...
-[22:41:36] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.0.0-SNAPSHOT-b608
-[22:41:37] [Server thread/INFO]: [LibsDisguises] Loading LibsDisguises v10.0.32-SNAPSHOT
-[22:41:37] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.55
-[22:41:38] [Server thread/INFO]: [HoloMobHealth] Loading HoloMobHealth v2.3.2.0
-[22:41:38] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
-[22:41:38] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v2.5.1-SNAPSHOT-332;f8acaf5
-[22:41:39] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@c891d39]
-[22:41:39] [Server thread/INFO]: [Essentials] Loading Essentials v2.20.0-dev+39-312d169
-[22:41:39] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.20.0-dev+39-312d169
-[22:41:39] [Server thread/INFO]: [TAB] Loading TAB v3.2.1
-[22:41:39] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn v2.20.0-dev+39-312d169
-[22:41:39] [Server thread/INFO]: [Magic] Loading Magic v10.8.6-SNAPSHOT-394e5e7
-[22:41:39] [Server thread/INFO]: [Magic] Loading modern compatibility layer for server version 1.19.3
-[22:41:39] [Server thread/INFO]: [Magic] Async chunk loading API found
-[22:41:39] [Server thread/INFO]: [Magic] Chat component API found
-[22:41:39] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:41:39] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0-SNAPSHOT-b608
-[22:41:39] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.55
-[22:41:39] [Server thread/INFO]:         __    
-[22:41:39] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.55
-[22:41:39] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[22:41:39] [Server thread/INFO]: 
-[22:41:39] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[22:41:40] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[22:41:40] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[22:41:40] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[22:41:40] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1474ms)
-[22:41:40] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[22:41:40] [Server thread/WARN]: [Vault] Loaded class com.earth2me.essentials.api.Economy from Essentials v2.20.0-dev+39-312d169 which is not a depend or softdepend of this plugin.
-[22:41:40] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
-[22:41:40] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[22:41:40] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[22:41:41] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
-[22:41:41] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.5.1-SNAPSHOT-332;f8acaf5
-[22:41:41] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
-[22:41:41] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
-[22:41:41] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[22:41:41] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
-[22:41:41] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_19_R2.PaperweightFaweAdapter as the Bukkit adapter
-[22:41:42] [Server thread/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 16 build(s) out of date.
-You are running build 332, the latest version is build 348.
+[19:31:37] [ServerMain/INFO]: Building unoptimized datafixer
+[19:31:40] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[19:31:43] [ServerMain/INFO]: Loaded 7 recipes
+[19:31:44] [Server thread/INFO]: Starting minecraft server version 1.19.3
+[19:31:44] [Server thread/INFO]: Loading properties
+[19:31:45] [Server thread/INFO]: This server is running Paper version git-Paper-376 (MC: 1.19.3) (Implementing API version 1.19.3-R0.1-SNAPSHOT) (Git: 1719345)
+[19:31:45] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[19:31:45] [Server thread/INFO]: Using 4 threads for Netty based IO
+[19:31:45] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[19:31:46] [Server thread/INFO]: Default game type: SURVIVAL
+[19:31:46] [Server thread/INFO]: Generating keypair
+[19:31:46] [Server thread/INFO]: Starting Minecraft server on *:25565
+[19:31:46] [Server thread/INFO]: Using default channel type
+[19:31:46] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[19:31:46] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[19:31:48] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.11.2
+[19:31:48] [Server thread/INFO]: [PlugWoman] Loading PlugWoman vfec830f
+[19:31:48] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v4.5.1
+[19:31:48] [Server thread/INFO]: [ViaVersion] ViaVersion 4.5.1 is now loaded, injecting!
+[19:31:49] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.12 -> 1.13 mappings...
+[19:31:49] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13 -> 1.13.2 mappings...
+[19:31:49] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.14 mappings...
+[19:31:49] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.14 -> 1.15 mappings...
+[19:31:49] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[19:31:49] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.15 -> 1.16 mappings...
+[19:31:49] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.16 -> 1.16.2 mappings...
+[19:31:49] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.16.2 -> 1.17 mappings...
+[19:31:49] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.17 -> 1.18 mappings...
+[19:31:49] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.18 -> 1.19 mappings...
+[19:31:49] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.19 -> 1.19.3 mappings...
+[19:31:49] [Server thread/INFO]: [CorrectFallDamage] Loading CorrectFallDamage v1.0
+[19:31:49] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v4.5.1
+[19:31:49] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[19:31:50] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.10 -> 1.9.4 mappings...
+[19:31:50] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.11 -> 1.10 mappings...
+[19:31:50] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.12 -> 1.11 mappings...
+[19:31:50] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.13 -> 1.12 mappings...
+[19:31:50] [Via-Mappingloader-0/INFO]: [ViaBackwards] Loading 1.13.2 -> 1.13 mappings...
+[19:31:50] [Via-Mappingloader-0/INFO]: [ViaBackwards] Loading 1.14 -> 1.13.2 mappings...
+[19:31:50] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.15 -> 1.14 mappings...
+[19:31:50] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.16 -> 1.15 mappings...
+[19:31:50] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.16.2 -> 1.16 mappings...
+[19:31:50] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.17 -> 1.16.2 mappings...
+[19:31:50] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.18 -> 1.17 mappings...
+[19:31:50] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.19 -> 1.18 mappings...
+[19:31:50] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.19.3 -> 1.19 mappings...
+[19:31:50] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.0.0-SNAPSHOT-b608
+[19:31:51] [Server thread/INFO]: [LibsDisguises] Loading LibsDisguises v10.0.32-SNAPSHOT
+[19:31:51] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.55
+[19:31:53] [Server thread/INFO]: [HoloMobHealth] Loading HoloMobHealth v2.3.2.0
+[19:31:53] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[19:31:53] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v2.5.1-SNAPSHOT-332;f8acaf5
+[19:31:54] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@6986eef7]
+[19:31:54] [Server thread/INFO]: [Essentials] Loading Essentials v2.20.0-dev+39-312d169
+[19:31:54] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.20.0-dev+39-312d169
+[19:31:54] [Server thread/INFO]: [TAB] Loading TAB v3.2.1
+[19:31:54] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn v2.20.0-dev+39-312d169
+[19:31:54] [Server thread/INFO]: [Magic] Loading Magic v10.8.6-SNAPSHOT-394e5e7
+[19:31:54] [Server thread/INFO]: [Magic] Loading modern compatibility layer for server version 1.19.3
+[19:31:54] [Server thread/INFO]: [Magic] Async chunk loading API found
+[19:31:54] [Server thread/INFO]: [Magic] Chat component API found
+[19:31:54] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:31:54] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0-SNAPSHOT-b608
+[19:31:54] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.55
+[19:31:55] [Server thread/INFO]:         __    
+[19:31:55] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.55
+[19:31:55] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[19:31:55] [Server thread/INFO]: 
+[19:31:55] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[19:31:56] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[19:31:57] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[19:31:57] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[19:31:57] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2856ms)
+[19:31:57] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[19:31:57] [Server thread/WARN]: [Vault] Loaded class com.earth2me.essentials.api.Economy from Essentials v2.20.0-dev+39-312d169 which is not a depend or softdepend of this plugin.
+[19:31:57] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[19:31:58] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[19:31:58] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[19:31:58] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[19:31:58] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.5.1-SNAPSHOT-332;f8acaf5
+[19:31:58] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[19:31:58] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[19:31:58] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[19:31:58] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[19:31:58] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_19_R2.PaperweightFaweAdapter as the Bukkit adapter
+[19:32:01] [Server thread/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 23 build(s) out of date.
+You are running build 332, the latest version is build 355.
 Update at https://www.spigotmc.org/resources/13932/
-[22:41:42] [Server thread/INFO]: [Magic] Enabling Magic v10.8.6-SNAPSHOT-394e5e7
-[22:41:42] [Server thread/INFO]: [Magic] EffectLib initialized
-[22:41:44] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_19_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[22:41:48] [Server thread/INFO]: [Magic] Loaded 26 attributes
-[22:41:48] [Server thread/INFO]: Magic checking resource pack for updates: https://download.mc-packs.net/pack/0a7756600c8982781c9fd7c7827d2ef4d32cb832.zip
-[22:41:48] [Server thread/INFO]: Preparing level "world"
-[22:41:48] [Server thread/INFO]: -------- World Settings For [world] --------
-[22:41:48] [Server thread/INFO]: Simulation Distance: 10
-[22:41:48] [Server thread/INFO]: View Distance: 10
-[22:41:48] [Server thread/INFO]: Item Merge Radius: 6.0
-[22:41:48] [Server thread/INFO]: Item Despawn Rate: 4000
-[22:41:48] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[22:41:48] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[22:41:48] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[22:41:48] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[22:41:48] [Server thread/INFO]: Experience Merge Radius: 4.0
-[22:41:48] [Server thread/INFO]: Mob Spawn Range: 6
-[22:41:48] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Cane Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Melon Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Potato Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Vine Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: CaveVines Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: GlowBerry Growth Modifier: 100%
-[22:41:48] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 28 / Ra 48 / Mi 8 / Tiv false / Isa false
-[22:41:48] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
-[22:41:48] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[22:41:48] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
-[22:41:48] [Server thread/INFO]: Max TNT Explosions: 100
-[22:41:48] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
-[22:41:49] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[22:41:49] [Server thread/INFO]: Simulation Distance: 10
-[22:41:49] [Server thread/INFO]: View Distance: 10
-[22:41:49] [Server thread/INFO]: Item Merge Radius: 6.0
-[22:41:49] [Server thread/INFO]: Item Despawn Rate: 4000
-[22:41:49] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[22:41:49] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[22:41:49] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[22:41:49] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[22:41:49] [Server thread/INFO]: Experience Merge Radius: 4.0
-[22:41:49] [Server thread/INFO]: Mob Spawn Range: 6
-[22:41:49] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Cane Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Melon Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Potato Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Vine Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: CaveVines Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: GlowBerry Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 28 / Ra 48 / Mi 8 / Tiv false / Isa false
-[22:41:49] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
-[22:41:49] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[22:41:49] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
-[22:41:49] [Server thread/INFO]: Max TNT Explosions: 100
-[22:41:49] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
-[22:41:49] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[22:41:49] [Server thread/INFO]: Simulation Distance: 10
-[22:41:49] [Server thread/INFO]: View Distance: 10
-[22:41:49] [Server thread/INFO]: Item Merge Radius: 6.0
-[22:41:49] [Server thread/INFO]: Item Despawn Rate: 4000
-[22:41:49] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[22:41:49] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[22:41:49] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[22:41:49] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[22:41:49] [Server thread/INFO]: Experience Merge Radius: 4.0
-[22:41:49] [Server thread/INFO]: Mob Spawn Range: 6
-[22:41:49] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Cane Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Melon Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Potato Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Vine Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: CaveVines Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: GlowBerry Growth Modifier: 100%
-[22:41:49] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 28 / Ra 48 / Mi 8 / Tiv false / Isa false
-[22:41:49] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
-[22:41:49] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[22:41:49] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
-[22:41:49] [Server thread/INFO]: Max TNT Explosions: 100
-[22:41:49] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
-[22:41:49] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[22:41:49] [Server thread/INFO]: Time elapsed: 148 ms
-[22:41:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[22:41:49] [Server thread/INFO]: Time elapsed: 21 ms
-[22:41:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[22:41:49] [Server thread/INFO]: Time elapsed: 17 ms
-[22:41:49] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.2
-[22:41:49] [Server thread/WARN]: [PlaceholderAPI] Loaded class com.viaversion.viaversion.api.type.Type from ViaVersion v4.5.1 which is not a depend or softdepend of this plugin.
-[22:41:49] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[22:41:49] [Server thread/INFO]: [PlugWoman] Enabling PlugWoman vfec830f
-[22:41:50] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.5.1
-[22:41:50] [Server thread/INFO]: [CorrectFallDamage] Enabling CorrectFallDamage v1.0
-[22:41:50] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.5.1
-[22:41:50] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v10.0.32-SNAPSHOT
-[22:41:50] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises.jar
-[22:41:50] [Server thread/INFO]: [LibsDisguises] Discovered nms version: v1_19_R2 (v1_19_R2)
-[22:41:50] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1159
-[22:41:50] [Server thread/INFO]: [LibsDisguises] Build Date: 03/02/2023 23:14
-[22:41:50] [Server thread/WARN]: [LibsDisguises] If you own the plugin, place the premium jar downloaded from https://www.spigotmc.org/resources/libs-disguises.32453/ in plugins/LibsDisguises/
-[22:41:50] [Server thread/INFO]: [LibsDisguises] You are running the free version, commands limited to non-players and operators. (Console, Command Blocks, Admins)
-[22:41:52] [Server thread/INFO]: [LibsDisguises] Loaded custom disguise libraryaddict
-[22:41:52] [Server thread/INFO]: [LibsDisguises] Loaded 1 custom disguise
-[22:41:52] [Server thread/INFO]: [LibsDisguises] Config is up to date!
-[22:41:52] [Server thread/INFO]: [HoloMobHealth] Enabling HoloMobHealth v2.3.2.0
-[22:41:53] [Server thread/INFO]: [HoloMobHealth] Loading languages...
-[22:41:53] [Server thread/INFO]: [HoloMobHealth] Hooked into PlaceholderAPI!
-[22:41:53] [Server thread/INFO]: [HoloMobHealth] Opened Sqlite database successfully
-[22:41:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: holomobhealth [1.0.0]
-[22:41:53] [Server thread/INFO]: [HoloMobHealth] HoloMobHealth has been Enabled!
-[22:41:53] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0-dev+39-312d169
-[22:41:54] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[22:41:54] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[22:41:54] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
-[22:41:54] [Server thread/INFO]: [Essentials] Using locale en_CA
-[22:41:54] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[22:41:54] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[22:41:54] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
-[22:41:54] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
-[22:41:54] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.20.0-dev+39-312d169
-[22:41:54] [Server thread/INFO]: [EssentialsChat] Secure signed chat and previews are enabled.
-[22:41:54] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
-[22:41:54] [Server thread/INFO]: [TAB] Enabling TAB v3.2.1
-[22:41:54] [Server thread/INFO]: [TAB] Server version: 1.19.3 (v1_19_R2)
-[22:41:54] [Server thread/INFO]: [TAB] Loaded NMS hook in 18ms
-[22:41:54] [Server thread/INFO]: [TAB] Enabled in 430ms
-[22:41:54] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.20.0-dev+39-312d169
-[22:41:54] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
-[22:41:55] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[22:41:55] [Server thread/INFO]: Running delayed init tasks
-[22:41:55] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.19.3 (761)
-[22:41:55] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
-[22:41:55] [Server thread/INFO]: [Magic] Vault found, 'currency' cost types available
-[22:41:55] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Fetching version information...
-[22:41:56] [Craft Scheduler Thread - 6 - Vault/INFO]: [Vault] Checking for Updates ... 
-[22:41:56] [Craft Scheduler Thread - 6 - Vault/INFO]: [Vault] No new version available
-[22:41:57] [Server thread/INFO]: [Magic] Factions not found
-[22:41:57] [Server thread/INFO]: [Magic] WorldGuard not found, region protection and pvp checks will not be used.
-[22:41:57] [Server thread/INFO]: [Magic] Towny not found, region protection and pvp checks will not be used.
-[22:41:57] [Server thread/INFO]: [Magic] Lockette nor LockettePro found, will not integrate.
-[22:41:57] [Server thread/INFO]: [Magic] GriefPrevention not found, claim protection will not be used.
-[22:41:57] [Server thread/INFO]: [Magic] NoCheatPlus not found, will not integrate.
-[22:41:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: magic [10.8.6-SNAPSHOT-394e5e7]
-[22:41:57] [Server thread/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
-[22:41:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ascii [1.0.0]
-[22:41:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: checkitem [2.6.4]
-[22:41:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: math [1.4.1]
-[22:41:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player [2.0.3]
-[22:41:57] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion playerstats due to a missing plugin: PlayerStats
-[22:41:57] [Server thread/INFO]: 4 placeholder hook(s) registered! 1 placeholder hook(s) have an update available.
-[22:41:57] [Server thread/INFO]: Done (23.264s)! For help, type "help"
-[22:41:57] [Server thread/INFO]: Timings Reset
-[22:41:57] [Craft Scheduler Thread - 5 - Essentials/WARN]: [Essentials] You're 1 EssentialsX dev build(s) out of date!
-[22:41:57] [Craft Scheduler Thread - 5 - Essentials/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html
-[22:41:57] [Server thread/INFO]: Resource pack modified, redownloading (1675568515000 > 1675479069000)
-[22:41:57] [Server thread/INFO]: Resource pack hash set to CndWYAyJgngcn9fHgn0u9NMsuDI=
-[22:42:03] [Craft Scheduler Thread - 4 - HoloMobHealth/INFO]: [HoloMobHealth] Loaded all 1 languages!
-[22:42:33] [User Authenticator #0/INFO]: UUID of player IonTech is e14876ba-5a6f-45b9-a01a-b8a30a2961aa
-[22:42:34] [Server thread/INFO]: IonTech joined the game
-[22:42:34] [Server thread/INFO]: IonTech[/127.0.0.1:65442] logged in with entity id 205 at ([world]-222.043060395628, 68.49520087700593, 261.68985991779914)
-[22:43:16] [Server thread/INFO]: IonTech issued server command: /meditor class archer_mage
-[22:43:48] [Server thread/INFO]: IonTech issued server command: //mconfig load 7cwscwew
-[22:44:01] [Server thread/INFO]: IonTech issued server command: /heal
-[22:44:08] [Server thread/INFO]: IonTech issued server command: /mage reset
-[22:44:34] [Server thread/INFO]: IonTech issued server command: /meditor class mage
-[22:44:51] [Server thread/INFO]: IonTech issued server command: //mconfig load u4qlhove
-[22:44:56] [Server thread/INFO]: IonTech issued server command: /mage reset
-[22:45:16] [Server thread/INFO]: IonTech issued server command: /wand add arrow_poison
-[22:46:19] [Server thread/INFO]: IonTech issued server command: /heal
-[22:47:08] [Server thread/INFO]: IonTech issued server command: /meditor messages
-[22:47:56] [Server thread/INFO]: IonTech issued server command: //mconfig load 7cwscwew
-[22:48:04] [Server thread/INFO]: IonTech issued server command: /magic reload
-[22:48:28] [Server thread/INFO]: IonTech issued server command: /meditor wand base
-[22:48:38] [Server thread/INFO]: IonTech issued server command: /meditor class base
-[22:48:54] [Server thread/INFO]: IonTech issued server command: //mconfig load 4czwwfyv
-[22:49:02] [Server thread/INFO]: IonTech issued server command: /wand add absorb
-[22:49:29] [Server thread/INFO]: IonTech issued server command: /mage deactivate mage
-[22:49:34] [Server thread/INFO]: IonTech issued server command: /fly
-[22:49:44] [Server thread/INFO]: IonTech issued server command: /mage activate IonTech archer_mage
-[22:50:04] [Server thread/INFO]: IonTech issued server command: /mage activate IonTech archer_mage
-[22:50:15] [Server thread/INFO]: IonTech issued server command: /heal
-[22:50:18] [Server thread/INFO]: IonTech issued server command: /mgive arrow 64
-[22:50:31] [Server thread/INFO]: IonTech issued server command: /mage activate IonTech archer_mage
-[22:50:38] [Server thread/INFO]: IonTech issued server command: /mage deactivate archer_mage
-[22:50:54] [Server thread/INFO]: IonTech issued server command: /mage activate IonTech
-[22:51:08] [Server thread/INFO]: IonTech issued server command: /mage activate mage
-[22:51:13] [Server thread/INFO]: IonTech issued server command: /mage activate IonTech mage
-[22:51:34] [Server thread/INFO]: IonTech issued server command: /mage switch mage archer_mage
-[22:51:45] [Server thread/INFO]: IonTech issued server command: /mage switch archer_mage
-[22:51:55] [Server thread/INFO]: IonTech issued server command: /mage deactivate
-[22:51:56] [Server thread/INFO]: IonTech issued server command: /mage deactivate
-[22:51:59] [Server thread/INFO]: IonTech issued server command: /mage activate
-[22:52:04] [Server thread/INFO]: IonTech issued server command: /mage switch archer_mage
-[22:52:26] [Server thread/INFO]: IonTech issued server command: /mage
-[22:52:33] [Server thread/INFO]: IonTech issued server command: /mage unlock archer_mage
-[22:52:36] [Server thread/INFO]: IonTech issued server command: /mage unlock mage
-[22:52:40] [Server thread/INFO]: IonTech issued server command: /mage switch archer_mage
-[22:52:45] [Server thread/INFO]: IonTech issued server command: /mage switch mage
-[22:52:59] [Server thread/INFO]: IonTech issued server command: /meditor wand testset
-[22:53:14] [Server thread/INFO]: IonTech issued server command: //mconfig load aibvv5jr
-[22:53:36] [Server thread/INFO]: IonTech issued server command: /mage switch archer_mage
-[22:54:12] [Server thread/INFO]: IonTech was slain by Zombie
-[22:54:22] [Server thread/INFO]: IonTech issued server command: //mconfig load 7cwscwew
-[22:54:31] [Server thread/INFO]: IonTech issued server command: /mage switch archer_mage
-[22:54:34] [Server thread/INFO]: IonTech issued server command: /mage switch mage
-[22:54:45] [Server thread/INFO]: IonTech issued server command: /wand add manablast
-[22:54:54] [Server thread/INFO]: IonTech issued server command: /mage switch archer_mage
-[22:55:02] [Server thread/INFO]: IonTech issued server command: /mgive arrow 64
-[22:55:44] [Server thread/INFO]: IonTech issued server command: /mage switch mage
-[22:56:17] [Server thread/INFO]: IonTech was doomed to fall by IonTech using [Mana Blast (Admin's Staff)]
-[22:56:24] [Server thread/INFO]: IonTech issued server command: /mage switch archer_mage
-[22:56:30] [Server thread/INFO]: IonTech issued server command: /mage activate archer_mage
-[22:56:35] [Server thread/INFO]: IonTech issued server command: /mage activate mage
-[22:56:48] [Server thread/INFO]: IonTech issued server command: /mage unlock mage
-[22:56:49] [Server thread/INFO]: IonTech issued server command: /mage activate mage
-[22:57:29] [Server thread/INFO]: IonTech was shot by Skeleton
-[22:58:46] [Server thread/INFO]: IonTech issued server command: /mgive basic_wand
-[22:59:23] [Server thread/INFO]: IonTech was shot by Arrow
-[23:00:27] [Server thread/INFO]: IonTech issued server command: /meditor wand default
-[23:00:40] [Server thread/INFO]: IonTech issued server command: /meditor config slots
-[23:00:47] [Server thread/INFO]: IonTech issued server command: /meditor config slotted
-[23:01:25] [Server thread/INFO]: IonTech issued server command: /meditor config wand_slots
-[23:02:09] [Server thread/INFO]: IonTech issued server command: //mconfig load wyjqd2yx
-[23:02:38] [Server thread/INFO]: IonTech issued server command: /fly
-[23:03:47] [Server thread/INFO]: IonTech issued server command: /
-[23:03:47] [Server thread/INFO]: IonTech issued server command: //mconfig load u4qlhove
-[23:03:55] [Server thread/INFO]: IonTech issued server command: /mage switch mage
-[23:03:59] [Server thread/INFO]: IonTech issued server command: /mage switch mage
-[23:04:00] [Server thread/INFO]: IonTech issued server command: /mage switch mage
-[23:04:02] [Server thread/INFO]: IonTech issued server command: /mage switch mage
-[23:04:03] [Server thread/INFO]: IonTech issued server command: /mage switch mage
-[23:04:45] [Server thread/INFO]: IonTech issued server command: //mconfig load u4qlhove
-[23:04:54] [Server thread/INFO]: IonTech issued server command: /
-[23:04:55] [Server thread/INFO]: IonTech issued server command: //mconfig load 7cwscwew
-[23:05:13] [Server thread/INFO]: IonTech issued server command: /mage switch archer_mage
-[23:05:23] [Server thread/INFO]: IonTech issued server command: /wand add arrow 100
-[23:05:33] [Server thread/INFO]: IonTech issued server command: /mgive arrow 1000
-[23:05:57] [Server thread/INFO]: IonTech issued server command: /wand add arrow|6
-[23:06:40] [Server thread/INFO]: IonTech issued server command: /wand add railgun
-[23:07:02] [Server thread/INFO]: IonTech issued server command: /mgive mana 1000
-[23:07:17] [Server thread/INFO]: IonTech issued server command: /cast railgun
-[23:07:18] [Server thread/INFO]: IonTech issued server command: /cast railgun
-[23:07:19] [Server thread/INFO]: IonTech issued server command: /cast railgun
-[23:07:20] [Server thread/INFO]: IonTech issued server command: /cast railgun
-[23:07:21] [Server thread/INFO]: IonTech issued server command: /cast railgun
-[23:07:22] [Server thread/INFO]: IonTech issued server command: /cast railgun
-[23:07:29] [Server thread/INFO]: IonTech issued server command: /cast railgun
-[23:08:12] [Server thread/INFO]: IonTech issued server command: /stop
-[23:08:12] [Server thread/INFO]: [IonTech: Stopping the server]
-[23:08:12] [Server thread/INFO]: Stopping server
-[23:08:12] [Server thread/INFO]: [Magic] Disabling Magic v10.8.6-SNAPSHOT-394e5e7
-[23:08:12] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion magic
-[23:08:12] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin Magic was disabled.
-[23:08:12] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.20.0-dev+39-312d169
-[23:08:12] [Server thread/INFO]: [TAB] Disabling TAB v3.2.1
-[23:08:12] [Server thread/INFO]: [TAB] Disabled in 2ms
-[23:08:12] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.20.0-dev+39-312d169
-[23:08:12] [Server thread/INFO]: [Essentials] Disabling Essentials v2.20.0-dev+39-312d169
-[23:08:12] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
-[23:08:12] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.5.1-SNAPSHOT-332;f8acaf5
-[23:08:12] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[23:08:12] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
-[23:08:12] [Server thread/INFO]: [HoloMobHealth] Disabling HoloMobHealth v2.3.2.0
-[23:08:12] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion holomobhealth
-[23:08:12] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin HoloMobHealth was disabled.
-[23:08:12] [Server thread/INFO]: [HoloMobHealth] HoloMobHealth has been Disabled!
-[23:08:12] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.55
-[23:08:12] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[23:08:12] [Server thread/INFO]: [LuckPerms] Closing storage...
-[23:08:12] [Server thread/INFO]: [LuckPerms] Goodbye!
-[23:08:12] [Server thread/INFO]: [LibsDisguises] Disabling LibsDisguises v10.0.32-SNAPSHOT
-[23:08:12] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0-SNAPSHOT-b608
-[23:08:12] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v4.5.1
-[23:08:12] [Server thread/INFO]: [CorrectFallDamage] Disabling CorrectFallDamage v1.0
-[23:08:12] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v4.5.1
-[23:08:12] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
-[23:08:12] [Server thread/INFO]: [PlugWoman] Disabling PlugWoman vfec830f
-[23:08:12] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.2
-[23:08:12] [Server thread/INFO]: Saving players
-[23:08:12] [Server thread/INFO]: IonTech lost connection: Server closed
-[23:08:12] [Server thread/INFO]: IonTech left the game
-[23:08:12] [Server thread/INFO]: Saving worlds
-[23:08:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[23:08:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[23:08:12] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[23:08:12] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[23:08:14] [Server thread/INFO]: [ChunkHolderManager] Saved 710 block chunks, 746 entity chunks, 0 poi chunks in world 'world' in 1.66s
-[23:08:14] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[23:08:14] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[23:08:14] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[23:08:14] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[23:08:14] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[23:08:14] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 5 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
-[23:08:14] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23:08:14] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[23:08:14] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[23:08:14] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[23:08:14] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[23:08:14] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.03s
-[23:08:14] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23:08:14] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[23:08:14] [Server thread/INFO]: Saving usercache.json
-[23:08:14] [Server thread/INFO]: Flushing Chunk IO
-[23:08:14] [Server thread/INFO]: Closing Thread Pool
-[23:08:14] [Server thread/INFO]: Closing Server
+[19:32:01] [Server thread/INFO]: [Magic] Enabling Magic v10.8.6-SNAPSHOT-394e5e7
+[19:32:01] [Server thread/INFO]: [Magic] EffectLib initialized
+[19:32:04] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_19_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[19:32:10] [Server thread/INFO]: [Magic] Loaded 26 attributes
+[19:32:11] [Server thread/INFO]: Magic checking resource pack for updates: https://download.mc-packs.net/pack/0a7756600c8982781c9fd7c7827d2ef4d32cb832.zip
+[19:32:12] [Server thread/INFO]: Preparing level "world"
+[19:32:12] [Server thread/INFO]: -------- World Settings For [world] --------
+[19:32:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:32:12] [Server thread/INFO]: View Distance: 10
+[19:32:12] [Server thread/INFO]: Simulation Distance: 10
+[19:32:12] [Server thread/INFO]: Item Merge Radius: 6.0
+[19:32:12] [Server thread/INFO]: Item Despawn Rate: 4000
+[19:32:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:32:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:32:12] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[19:32:12] [Server thread/INFO]: Mob Spawn Range: 6
+[19:32:12] [Server thread/INFO]: Experience Merge Radius: 4.0
+[19:32:12] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 28 / Ra 48 / Mi 8 / Tiv false / Isa false
+[19:32:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Potato Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Vine Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: CaveVines Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: GlowBerry Growth Modifier: 100%
+[19:32:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:32:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
+[19:32:12] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[19:32:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[19:32:12] [Server thread/INFO]: Max TNT Explosions: 100
+[19:32:13] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[19:32:13] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:32:13] [Server thread/INFO]: View Distance: 10
+[19:32:13] [Server thread/INFO]: Simulation Distance: 10
+[19:32:13] [Server thread/INFO]: Item Merge Radius: 6.0
+[19:32:13] [Server thread/INFO]: Item Despawn Rate: 4000
+[19:32:13] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:32:13] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:32:13] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[19:32:13] [Server thread/INFO]: Mob Spawn Range: 6
+[19:32:13] [Server thread/INFO]: Experience Merge Radius: 4.0
+[19:32:13] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 28 / Ra 48 / Mi 8 / Tiv false / Isa false
+[19:32:13] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Potato Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Vine Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: CaveVines Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: GlowBerry Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:32:13] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
+[19:32:13] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[19:32:13] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[19:32:13] [Server thread/INFO]: Max TNT Explosions: 100
+[19:32:13] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[19:32:13] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:32:13] [Server thread/INFO]: View Distance: 10
+[19:32:13] [Server thread/INFO]: Simulation Distance: 10
+[19:32:13] [Server thread/INFO]: Item Merge Radius: 6.0
+[19:32:13] [Server thread/INFO]: Item Despawn Rate: 4000
+[19:32:13] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:32:13] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:32:13] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[19:32:13] [Server thread/INFO]: Mob Spawn Range: 6
+[19:32:13] [Server thread/INFO]: Experience Merge Radius: 4.0
+[19:32:13] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 28 / Ra 48 / Mi 8 / Tiv false / Isa false
+[19:32:13] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Potato Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Vine Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: TwistingVines Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: WeepingVines Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: CaveVines Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: GlowBerry Growth Modifier: 100%
+[19:32:13] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:32:13] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
+[19:32:13] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[19:32:13] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[19:32:13] [Server thread/INFO]: Max TNT Explosions: 100
+[19:32:13] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[19:32:13] [Server thread/INFO]: Time elapsed: 189 ms
+[19:32:13] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[19:32:13] [Server thread/INFO]: Time elapsed: 130 ms
+[19:32:13] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[19:32:13] [Server thread/INFO]: Time elapsed: 19 ms
+[19:32:13] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.2
+[19:32:13] [Server thread/WARN]: [PlaceholderAPI] Loaded class com.viaversion.viaversion.api.type.Type from ViaVersion v4.5.1 which is not a depend or softdepend of this plugin.
+[19:32:13] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[19:32:14] [Server thread/INFO]: [PlugWoman] Enabling PlugWoman vfec830f
+[19:32:14] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.5.1
+[19:32:14] [Server thread/INFO]: [CorrectFallDamage] Enabling CorrectFallDamage v1.0
+[19:32:14] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.5.1
+[19:32:14] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v10.0.32-SNAPSHOT
+[19:32:14] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises.jar
+[19:32:14] [Server thread/INFO]: [LibsDisguises] Discovered nms version: v1_19_R2 (v1_19_R2)
+[19:32:14] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1159
+[19:32:14] [Server thread/INFO]: [LibsDisguises] Build Date: 03/02/2023 23:14
+[19:32:14] [Server thread/WARN]: [LibsDisguises] If you own the plugin, place the premium jar downloaded from https://www.spigotmc.org/resources/libs-disguises.32453/ in plugins/LibsDisguises/
+[19:32:14] [Server thread/INFO]: [LibsDisguises] You are running the free version, commands limited to non-players and operators. (Console, Command Blocks, Admins)
+[19:32:18] [Server thread/INFO]: [LibsDisguises] Loaded custom disguise libraryaddict
+[19:32:18] [Server thread/INFO]: [LibsDisguises] Loaded 1 custom disguise
+[19:32:18] [Server thread/INFO]: [LibsDisguises] Config is up to date!
+[19:32:18] [Server thread/INFO]: [HoloMobHealth] Enabling HoloMobHealth v2.3.2.0
+[19:32:19] [Server thread/INFO]: [HoloMobHealth] Loading languages...
+[19:32:19] [Server thread/INFO]: [HoloMobHealth] Hooked into PlaceholderAPI!
+[19:32:20] [Server thread/INFO]: [HoloMobHealth] Opened Sqlite database successfully
+[19:32:20] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: holomobhealth [1.0.0]
+[19:32:20] [Server thread/INFO]: [HoloMobHealth] HoloMobHealth has been Enabled!
+[19:32:20] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0-dev+39-312d169
+[19:32:20] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[19:32:20] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[19:32:20] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
+[19:32:20] [Server thread/INFO]: [Essentials] Using locale en_CA
+[19:32:20] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[19:32:21] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[19:32:21] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[19:32:21] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[19:32:21] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.20.0-dev+39-312d169
+[19:32:21] [Server thread/INFO]: [EssentialsChat] Secure signed chat and previews are enabled.
+[19:32:21] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[19:32:21] [Server thread/INFO]: [TAB] Enabling TAB v3.2.1
+[19:32:21] [Server thread/INFO]: [TAB] Server version: 1.19.3 (v1_19_R2)
+[19:32:21] [Server thread/INFO]: [TAB] Loaded NMS hook in 36ms
+[19:32:21] [Server thread/INFO]: [TAB] Enabled in 255ms
+[19:32:21] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.20.0-dev+39-312d169
+[19:32:21] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[19:32:21] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[19:32:21] [Server thread/INFO]: Running delayed init tasks
+[19:32:22] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.19.3 (761)
+[19:32:22] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[19:32:22] [Server thread/INFO]: [Magic] Vault found, 'currency' cost types available
+[19:32:22] [Craft Scheduler Thread - 8 - Essentials/INFO]: [Essentials] Fetching version information...
+[19:32:22] [Craft Scheduler Thread - 9 - Vault/INFO]: [Vault] Checking for Updates ... 
+[19:32:23] [Craft Scheduler Thread - 9 - Vault/INFO]: [Vault] No new version available
+[19:32:23] [Craft Scheduler Thread - 8 - Essentials/WARN]: [Essentials] You're 2 EssentialsX dev build(s) out of date!
+[19:32:23] [Craft Scheduler Thread - 8 - Essentials/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html
+[19:32:23] [Server thread/INFO]: [Magic] Factions not found
+[19:32:23] [Server thread/INFO]: [Magic] WorldGuard not found, region protection and pvp checks will not be used.
+[19:32:23] [Server thread/INFO]: [Magic] Towny not found, region protection and pvp checks will not be used.
+[19:32:23] [Server thread/INFO]: [Magic] Lockette nor LockettePro found, will not integrate.
+[19:32:23] [Server thread/INFO]: [Magic] GriefPrevention not found, claim protection will not be used.
+[19:32:23] [Server thread/INFO]: [Magic] NoCheatPlus not found, will not integrate.
+[19:32:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: magic [10.8.6-SNAPSHOT-394e5e7]
+[19:32:23] [Server thread/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[19:32:23] [Server thread/INFO]: Resource pack modified, redownloading (1675989144000 > 1675736333000)
+[19:32:23] [Server thread/INFO]: Resource pack hash set to CndWYAyJgngcn9fHgn0u9NMsuDI=
+[19:32:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ascii [1.0.0]
+[19:32:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: checkitem [2.6.4]
+[19:32:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: math [1.4.1]
+[19:32:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player [2.0.3]
+[19:32:23] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion playerstats due to a missing plugin: PlayerStats
+[19:32:23] [Server thread/INFO]: 4 placeholder hook(s) registered! 1 placeholder hook(s) have an update available.
+[19:32:23] [Server thread/INFO]: Done (38.967s)! For help, type "help"
+[19:32:23] [Server thread/INFO]: Timings Reset
+[19:32:26] [Craft Scheduler Thread - 4 - HoloMobHealth/INFO]: [HoloMobHealth] Loaded all 1 languages!
+[19:33:08] [User Authenticator #0/INFO]: UUID of player IonTech is e14876ba-5a6f-45b9-a01a-b8a30a2961aa
+[19:33:09] [Server thread/INFO]: IonTech joined the game
+[19:33:09] [Server thread/INFO]: IonTech[/127.0.0.1:61569] logged in with entity id 205 at ([world]-222.4256866682363, 69.19366615334314, 190.8835072060888)
+[19:34:25] [Server thread/INFO]: IonTech issued server command: /heal
+[19:35:33] [Server thread/INFO]: IonTech issued server command: /heal
+[19:35:35] [Server thread/INFO]: IonTech issued server command: /fly
+[19:35:46] [Server thread/INFO]: IonTech issued server command: /meditor wand controls_bowcaster
+[19:36:35] [Server thread/INFO]: IonTech issued server command: /mgive arrow 64
+[19:37:16] [Server thread/INFO]: IonTech issued server command: /meditor wand base
+[19:37:20] [Server thread/INFO]: IonTech issued server command: /mmob clear
+[19:38:11] [Server thread/INFO]: IonTech issued server command: //mconfig load k16ygn0x
+[19:38:53] [Server thread/INFO]: IonTech issued server command: /meditor wand test_bow
+[19:39:09] [Server thread/INFO]: IonTech issued server command: /god
+[19:39:21] [Server thread/INFO]: IonTech issued server command: /meditor wand testset
+[19:39:38] [Server thread/INFO]: IonTech issued server command: /meditor wand controls_bowcaster
+[19:39:40] [Server thread/INFO]: IonTech issued server command: /meditor wand controls
+[19:40:44] [Server thread/INFO]: IonTech issued server command: //mconfig load gqyu01v8
+[19:41:07] [Server thread/INFO]: IonTech issued server command: //mconfig load k16ygn0x
+[19:41:33] [Server thread/INFO]: IonTech lost connection: Disconnected
+[19:41:33] [Server thread/INFO]: IonTech left the game
+[19:43:22] [Server thread/INFO]: Fetching configuration...
+[19:43:22] [Server thread/INFO]: Overwrote file controls.yml
+[19:43:22] [Server thread/INFO]: Please wait while the configuration is reloaded and validated
+[19:43:23] [Server thread/INFO]: Finished loading, No issues found!
+[19:43:23] [Server thread/INFO]: Magic configuration reloaded.
+[19:43:28] [User Authenticator #1/INFO]: UUID of player IonTech is e14876ba-5a6f-45b9-a01a-b8a30a2961aa
+[19:43:28] [Server thread/INFO]: IonTech joined the game
+[19:43:28] [Server thread/INFO]: IonTech[/127.0.0.1:61778] logged in with entity id 1683 at ([world]-473.3452562216927, 74.0, 385.69999998807907)
+[19:44:18] [Server thread/INFO]: IonTech issued server command: //mconfig load gqyu01v8
+[19:44:27] [Server thread/INFO]: IonTech issued server command: /mgive arrow 64
+[19:45:01] [Server thread/INFO]: IonTech issued server command: //mconfig load gqyu01v8
+[19:46:02] [Server thread/INFO]: IonTech issued server command: //mconfig load gqyu01v8
+[19:46:28] [Server thread/INFO]: IonTech issued server command: //mconfig load gqyu01v8
+[19:46:56] [Server thread/INFO]: IonTech issued server command: //mconfig load gqyu01v8
+[19:47:52] [Server thread/INFO]: IonTech issued server command: //mconfig load k16ygn0x
+[19:48:26] [Server thread/INFO]: IonTech issued server command: //mconfig load k16ygn0x
+[19:48:53] [Server thread/INFO]: IonTech issued server command: //mconfig load k16ygn0x
+[19:51:28] [Server thread/INFO]: IonTech issued server command: /heal
+[19:51:40] [Server thread/INFO]: IonTech lost connection: Disconnected
+[19:51:41] [Server thread/INFO]: IonTech left the game
+[19:51:49] [Server thread/INFO]: Stopping the server
+[19:51:49] [Server thread/INFO]: Stopping server
+[19:51:49] [Server thread/INFO]: [Magic] Disabling Magic v10.8.6-SNAPSHOT-394e5e7
+[19:51:49] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion magic
+[19:51:49] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin Magic was disabled.
+[19:51:49] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.20.0-dev+39-312d169
+[19:51:49] [Server thread/INFO]: [TAB] Disabling TAB v3.2.1
+[19:51:49] [Server thread/INFO]: [TAB] Disabled in 2ms
+[19:51:49] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.20.0-dev+39-312d169
+[19:51:49] [Server thread/INFO]: [Essentials] Disabling Essentials v2.20.0-dev+39-312d169
+[19:51:49] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[19:51:49] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.5.1-SNAPSHOT-332;f8acaf5
+[19:51:49] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[19:51:49] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[19:51:49] [Server thread/INFO]: [HoloMobHealth] Disabling HoloMobHealth v2.3.2.0
+[19:51:49] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion holomobhealth
+[19:51:49] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin HoloMobHealth was disabled.
+[19:51:49] [Server thread/INFO]: [HoloMobHealth] HoloMobHealth has been Disabled!
+[19:51:49] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.55
+[19:51:49] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[19:51:49] [Server thread/INFO]: [LuckPerms] Closing storage...
+[19:51:49] [Server thread/INFO]: [LuckPerms] Goodbye!
+[19:51:49] [Server thread/INFO]: [LibsDisguises] Disabling LibsDisguises v10.0.32-SNAPSHOT
+[19:51:49] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0-SNAPSHOT-b608
+[19:51:49] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v4.5.1
+[19:51:49] [Server thread/INFO]: [CorrectFallDamage] Disabling CorrectFallDamage v1.0
+[19:51:49] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v4.5.1
+[19:51:49] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
+[19:51:49] [Server thread/INFO]: [PlugWoman] Disabling PlugWoman vfec830f
+[19:51:49] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.2
+[19:51:49] [Server thread/INFO]: Saving players
+[19:51:49] [Server thread/INFO]: Saving worlds
+[19:51:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:51:49] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[19:51:49] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[19:51:49] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[19:51:49] [Server thread/INFO]: [ChunkHolderManager] Saved 17 block chunks, 33 entity chunks, 0 poi chunks in world 'world' in 0.09s
+[19:51:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:51:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[19:51:50] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[19:51:50] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[19:51:50] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[19:51:50] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 5 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
+[19:51:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:51:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[19:51:50] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[19:51:50] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[19:51:50] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[19:51:50] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.02s
+[19:51:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:51:50] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19:51:50] [Server thread/INFO]: Saving usercache.json
+[19:51:50] [Server thread/INFO]: Flushing Chunk IO
+[19:51:50] [Server thread/INFO]: Closing Thread Pool
+[19:51:50] [Server thread/INFO]: Closing Server

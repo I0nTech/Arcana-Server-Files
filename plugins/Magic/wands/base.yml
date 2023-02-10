@@ -78,7 +78,7 @@ base_bowcaster:
   cooldown_reduction: (cooldownreduction)/100
   cost_reduction: (costreduction)/100
   power: (wandpower)/100
-  cast_min_bowpull: 0.1
+  cast_min_bowpull: 1.5
   no_bowpull: cancel
   item_attribute_slot: hand
   item_attributes:

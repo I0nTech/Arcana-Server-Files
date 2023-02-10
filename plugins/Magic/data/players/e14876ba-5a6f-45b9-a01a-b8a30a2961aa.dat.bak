@@ -1,8 +1,8 @@
 id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
 name: IonTech
 created: 1675568696611
-updated: 1675570015208
-last_cast: 1675570011569
+updated: 1675990041861
+last_cast: 1675990022961
 cooldown_expiration: 0
 last_death_location: -121.33824346277285,72.0,176.8845532895798,world,32.519775,-69.0275
 fall_protection_count: 0
@@ -17,17 +17,11 @@ brush:
 undo:
   455c86ed-c4e7-4ba1-a15a-8b7e61e0c0fa: []
 spells:
-  manablast:
-    cast_count: 12
-    last_cast: 1675569854374
+  arrowstorm:
+    cast_count: 3
+    last_cast: 1675989218470
     last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  arrow_regular:
-    cast_count: 122
-    last_cast: 1675569979425
-    last_earn: 0
-    cooldown_expiration: 0
+    cooldown_expiration: 1675989219470
     charges: 0.0
   arrow:
     cast_count: 0
@@ -35,21 +29,21 @@ spells:
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  arrow_bomb:
-    cast_count: 10
-    last_cast: 1675569335720
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
   channel:
-    cast_count: 12
-    last_cast: 1675569854373
+    cast_count: 17
+    last_cast: 1675989874368
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   railgun:
     cast_count: 0
-    last_cast: 0
+    last_cast: 1675570049010
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  counterspell:
+    cast_count: 0
+    last_cast: 1675736657922
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -65,15 +59,45 @@ spells:
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  arrow|6:
-    cast_count: 2
-    last_cast: 1675570011570
+  meditate:
+    cast_count: 5
+    last_cast: 1675989874369
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   arrow_poison:
     cast_count: 45
     last_cast: 1675569538574
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manablast:
+    cast_count: 12
+    last_cast: 1675569854374
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arrow_regular:
+    cast_count: 505
+    last_cast: 1675990022961
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arrow_bomb:
+    cast_count: 42
+    last_cast: 1675989921568
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arrowrain:
+    cast_count: 0
+    last_cast: 1675736677521
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arrow|6:
+    cast_count: 7
+    last_cast: 1675990021514
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -92,6 +116,7 @@ properties:
   - manablast
   - absorb
   - arrow_poison
+  version: 7
 kits:
   start:
     last_give: 1675568696763
@@ -115,14 +140,17 @@ classes:
     - blue_concrete
     locked: true
   archer_mage:
-    mana_timestamp: 1675570015158
+    mana_timestamp: 1675990041854
     mana: 110.0
     spells:
+    - arrowstorm
     - arrow_regular
     - arrow
     - railgun
+    - arrow_bomb
+    - meditate
     spell_levels:
       arrow: 6
 transient_modifiers: {}
 active_class: archer_mage
-health: 18.0
+health: 20.0
