@@ -30,3 +30,6 @@ ticks-per:
   axolotl-spawns: 400
   ambient-spawns: 400
 aliases: now-in-commands.yml
+worlds:
+  world:
+    generator: Terra:OVERWORLD

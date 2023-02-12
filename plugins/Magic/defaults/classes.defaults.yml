@@ -104,7 +104,7 @@ mage:
       value: attackdamage
       operation: add
     generic_attack_speed:
-      value: 4+attackspeed
+      value: attackspeed
       operation: add
     generic_luck:
       value: 0

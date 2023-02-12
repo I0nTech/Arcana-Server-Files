@@ -59,11 +59,10 @@ controls_bowcaster:
   upgrade: true
   mode: inventory
   drop: toggle
-  left_click: cast
-  left_click_sneak: cycle_active_hotbar
+  left_click: cycle_active_hotbar
+  left_click_sneak: cycle_active_hotbar_reverse
   right_click: none
-  right_click_sneak: cancel
-  swappable: true
+  right_click_sneak: none
   swap: none
   use_active_name: true
   swap_sneak: none

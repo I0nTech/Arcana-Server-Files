@@ -884,11 +884,10 @@ controls_bowcaster:
   upgrade: true
   mode: inventory
   drop: toggle
-  left_click: cast
-  left_click_sneak: cycle_active_hotbar
+  left_click: cycle_active_hotbar
+  left_click_sneak: cycle_active_hotbar_reverse
   right_click: none
-  right_click_sneak: cancel
-  swappable: true
+  right_click_sneak: none
   swap: none
   use_active_name: true
   swap_sneak: none
@@ -3382,7 +3381,7 @@ base_bowcaster:
   cooldown_reduction: (cooldownreduction)/100
   cost_reduction: (costreduction)/100
   power: (wandpower)/100
-  cast_min_bowpull: 1.5
+  cast_min_bowpull: 0.1
   no_bowpull: cancel
   item_attribute_slot: hand
   item_attributes:
@@ -3997,8 +3996,8 @@ test_bow:
   class: archer_mage
   inherit: base_bowcaster
   attributes:
-    mage_mana: 10
-    mage_mana_regen: 10
+    mage_mana: 100
+    mage_mana_regen: 15
 test_axe:
   name: '&fTest Axe'
   description: Infused with bullshit
