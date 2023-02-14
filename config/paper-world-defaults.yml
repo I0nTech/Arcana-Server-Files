@@ -165,6 +165,7 @@ entities:
       mode: SAFE_REGEN
       safe-regen-delete-range: 32
     filter-bad-tile-entity-nbt-from-falling-blocks: true
+    filter-nbt-data-from-spawn-eggs-and-related: true
     filtered-entity-tag-nbt-paths:
     - Pos
     - Motion

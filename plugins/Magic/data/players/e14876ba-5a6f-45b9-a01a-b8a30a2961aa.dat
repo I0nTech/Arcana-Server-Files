@@ -1,10 +1,10 @@
 id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
 name: IonTech
-created: 1675568696611
-updated: 1675990301477
-last_cast: 1675990294715
+created: 1676157503780
+updated: 1676237095146
+last_cast: 1676237080664
 cooldown_expiration: 0
-last_death_location: -121.33824346277285,72.0,176.8845532895798,world,32.519775,-69.0275
+last_death_location: -83.69999998807907,72.20000004768372,196.07680802562945,world,94.43536,22.334635
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -15,95 +15,35 @@ brush:
   scale: 1.0
   erase: true
 undo:
-  455c86ed-c4e7-4ba1-a15a-8b7e61e0c0fa: []
+  711d2bc4-225b-48c1-9d84-a4607f218921: []
 spells:
-  arrowstorm:
-    cast_count: 3
-    last_cast: 1675989218470
-    last_earn: 0
-    cooldown_expiration: 1675989219470
-    charges: 0.0
-  arrow:
-    cast_count: 0
-    last_cast: 1675569948319
+  manabeam:
+    cast_count: 1
+    last_cast: 1676157608950
     last_earn: 0
     cooldown_expiration: 0
+    charges: 0.0
+  kill|3:
+    cast_count: 2
+    last_cast: 1676237080664
+    last_earn: 0
+    cooldown_expiration: 1676237110664
     charges: 0.0
   channel:
-    cast_count: 17
-    last_cast: 1675989874368
+    cast_count: 1
+    last_cast: 1676157608949
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  railgun:
-    cast_count: 0
-    last_cast: 1675570049010
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  counterspell:
-    cast_count: 0
-    last_cast: 1675736657922
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  manabolt:
-    cast_count: 0
-    last_cast: 1675568705269
-    last_earn: 0
-    cooldown_expiration: 1675568706069
-    charges: 0.0
-  absorb:
-    cast_count: 6
-    last_cast: 1675569858020
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  meditate:
-    cast_count: 5
-    last_cast: 1675989874369
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  arrow_poison:
-    cast_count: 45
-    last_cast: 1675569538574
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  manablast:
-    cast_count: 12
-    last_cast: 1675569854374
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  arrow_regular:
-    cast_count: 555
-    last_cast: 1675990269016
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  arrow_bomb:
-    cast_count: 43
-    last_cast: 1675990274013
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  arrowrain:
-    cast_count: 0
-    last_cast: 1675736677521
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  arrow|6:
+  superkill:
     cast_count: 8
-    last_cast: 1675990267564
+    last_cast: 1676236028669
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   manashot:
-    cast_count: 0
-    last_cast: 0
+    cast_count: 16
+    last_cast: 1676237071703
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -112,45 +52,27 @@ gave_welcome_wand: false
 resource_pack_preference: default
 data: {}
 properties:
-  spells:
-  - manablast
-  - absorb
-  - arrow_poison
   version: 7
 kits:
   start:
-    last_give: 1675568696763
+    last_give: 1676157503936
     given_items:
       iron_ingot:
         amount: 64
-        last_give: 1675568696763
+        last_give: 1676157503936
       bread:
         amount: 32
-        last_give: 1675568696763
+        last_give: 1676157503936
 classes:
   mage:
-    mana_timestamp: 1675569913258
-    mana: 120.0
-    brushes:
-    - glass
-    - oak_log?minecraft:oak_log[axis=y]
-    - grass
-    - oak_leaves?minecraft:oak_leaves[distance=4,persistent=false,waterlogged=false]
-    - oak_leaves?minecraft:oak_leaves[distance=5,persistent=false,waterlogged=false]
-    - blue_concrete
-    locked: true
-  archer_mage:
-    mana_timestamp: 1675990300767
-    mana: 110.0
+    mana_timestamp: 1676237095095
+    mana: 600.0
     spells:
-    - arrowstorm
-    - arrow_regular
-    - arrow
-    - railgun
-    - arrow_bomb
-    - meditate
+    - superkill
+    - kill
+    - manashot
     spell_levels:
-      arrow: 6
+      kill: 3
 transient_modifiers: {}
-active_class: archer_mage
+active_class: mage
 health: 20.0
