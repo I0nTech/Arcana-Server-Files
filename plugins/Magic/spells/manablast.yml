@@ -25,13 +25,10 @@ manablast:
             delay: 200
           - class: PlayEffects
             effects: explode
-          - class: ChangeContext
-            target_offset: 0,-0.5,0
+          - class: AreaOfEffect
             actions:
-            - class: AreaOfEffect
-              actions:
-                - class: Damage
-                - class: Velocity
+            - class: Velocity
+            - class: Damage
           - class: Sphere
             actions:
               - class: BreakBlock
@@ -100,7 +97,7 @@ manablast:
     falling: true
     target_self_timeout: 300
     target: none
-    radius: 3.5
+    radius: 2.5
     target_type: Damageable
     direction: 0,0.4,0
     push: 1.5

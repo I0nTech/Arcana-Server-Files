@@ -993,6 +993,7 @@
 "MANGROVE_PLANKS": "MANGROVE_PLANKS"
 
 # Used for the disguise option Material
+"BAMBOO_PLANKS": "BAMBOO_PLANKS"
 
 # Used for the disguise option Material
 "CRIMSON_PLANKS": "CRIMSON_PLANKS"
@@ -1001,6 +1002,7 @@
 "WARPED_PLANKS": "WARPED_PLANKS"
 
 # Used for the disguise option Material
+"BAMBOO_MOSAIC": "BAMBOO_MOSAIC"
 
 # Used for the disguise option Material
 "OAK_SAPLING": "OAK_SAPLING"
@@ -1252,6 +1254,7 @@
 "WARPED_STEM": "WARPED_STEM"
 
 # Used for the disguise option Material
+"BAMBOO_BLOCK": "BAMBOO_BLOCK"
 
 # Used for the disguise option Material
 "STRIPPED_OAK_LOG": "STRIPPED_OAK_LOG"
@@ -1308,6 +1311,7 @@
 "STRIPPED_WARPED_HYPHAE": "STRIPPED_WARPED_HYPHAE"
 
 # Used for the disguise option Material
+"STRIPPED_BAMBOO_BLOCK": "STRIPPED_BAMBOO_BLOCK"
 
 # Used for the disguise option Material
 "OAK_WOOD": "OAK_WOOD"
@@ -1574,8 +1578,10 @@
 "MANGROVE_SLAB": "MANGROVE_SLAB"
 
 # Used for the disguise option Material
+"BAMBOO_SLAB": "BAMBOO_SLAB"
 
 # Used for the disguise option Material
+"BAMBOO_MOSAIC_SLAB": "BAMBOO_MOSAIC_SLAB"
 
 # Used for the disguise option Material
 "CRIMSON_SLAB": "CRIMSON_SLAB"
@@ -1653,6 +1659,7 @@
 "BOOKSHELF": "BOOKSHELF"
 
 # Used for the disguise option Material
+"CHISELED_BOOKSHELF": "CHISELED_BOOKSHELF"
 
 # Used for the disguise option Material
 "MOSSY_COBBLESTONE": "MOSSY_COBBLESTONE"
@@ -1736,6 +1743,7 @@
 "MANGROVE_FENCE": "MANGROVE_FENCE"
 
 # Used for the disguise option Material
+"BAMBOO_FENCE": "BAMBOO_FENCE"
 
 # Used for the disguise option Material
 "CRIMSON_FENCE": "CRIMSON_FENCE"
@@ -1948,8 +1956,10 @@
 "MANGROVE_STAIRS": "MANGROVE_STAIRS"
 
 # Used for the disguise option Material
+"BAMBOO_STAIRS": "BAMBOO_STAIRS"
 
 # Used for the disguise option Material
+"BAMBOO_MOSAIC_STAIRS": "BAMBOO_MOSAIC_STAIRS"
 
 # Used for the disguise option Material
 "CRIMSON_STAIRS": "CRIMSON_STAIRS"
@@ -2837,6 +2847,7 @@
 "MANGROVE_BUTTON": "MANGROVE_BUTTON"
 
 # Used for the disguise option Material
+"BAMBOO_BUTTON": "BAMBOO_BUTTON"
 
 # Used for the disguise option Material
 "CRIMSON_BUTTON": "CRIMSON_BUTTON"
@@ -2878,6 +2889,7 @@
 "MANGROVE_PRESSURE_PLATE": "MANGROVE_PRESSURE_PLATE"
 
 # Used for the disguise option Material
+"BAMBOO_PRESSURE_PLATE": "BAMBOO_PRESSURE_PLATE"
 
 # Used for the disguise option Material
 "CRIMSON_PRESSURE_PLATE": "CRIMSON_PRESSURE_PLATE"
@@ -2910,6 +2922,7 @@
 "MANGROVE_DOOR": "MANGROVE_DOOR"
 
 # Used for the disguise option Material
+"BAMBOO_DOOR": "BAMBOO_DOOR"
 
 # Used for the disguise option Material
 "CRIMSON_DOOR": "CRIMSON_DOOR"
@@ -2942,6 +2955,7 @@
 "MANGROVE_TRAPDOOR": "MANGROVE_TRAPDOOR"
 
 # Used for the disguise option Material
+"BAMBOO_TRAPDOOR": "BAMBOO_TRAPDOOR"
 
 # Used for the disguise option Material
 "CRIMSON_TRAPDOOR": "CRIMSON_TRAPDOOR"
@@ -2971,6 +2985,7 @@
 "MANGROVE_FENCE_GATE": "MANGROVE_FENCE_GATE"
 
 # Used for the disguise option Material
+"BAMBOO_FENCE_GATE": "BAMBOO_FENCE_GATE"
 
 # Used for the disguise option Material
 "CRIMSON_FENCE_GATE": "CRIMSON_FENCE_GATE"
@@ -3060,8 +3075,10 @@
 "MANGROVE_CHEST_BOAT": "MANGROVE_CHEST_BOAT"
 
 # Used for the disguise option Material
+"BAMBOO_RAFT": "BAMBOO_RAFT"
 
 # Used for the disguise option Material
+"BAMBOO_CHEST_RAFT": "BAMBOO_CHEST_RAFT"
 
 # Used for the disguise option Material
 "STRUCTURE_BLOCK": "STRUCTURE_BLOCK"
@@ -3361,6 +3378,7 @@
 "MANGROVE_SIGN": "MANGROVE_SIGN"
 
 # Used for the disguise option Material
+"BAMBOO_SIGN": "BAMBOO_SIGN"
 
 # Used for the disguise option Material
 "CRIMSON_SIGN": "CRIMSON_SIGN"
@@ -3369,24 +3387,34 @@
 "WARPED_SIGN": "WARPED_SIGN"
 
 # Used for the disguise option Material
+"OAK_HANGING_SIGN": "OAK_HANGING_SIGN"
 
 # Used for the disguise option Material
+"SPRUCE_HANGING_SIGN": "SPRUCE_HANGING_SIGN"
 
 # Used for the disguise option Material
+"BIRCH_HANGING_SIGN": "BIRCH_HANGING_SIGN"
 
 # Used for the disguise option Material
+"JUNGLE_HANGING_SIGN": "JUNGLE_HANGING_SIGN"
 
 # Used for the disguise option Material
+"ACACIA_HANGING_SIGN": "ACACIA_HANGING_SIGN"
 
 # Used for the disguise option Material
+"DARK_OAK_HANGING_SIGN": "DARK_OAK_HANGING_SIGN"
 
 # Used for the disguise option Material
+"MANGROVE_HANGING_SIGN": "MANGROVE_HANGING_SIGN"
 
 # Used for the disguise option Material
+"BAMBOO_HANGING_SIGN": "BAMBOO_HANGING_SIGN"
 
 # Used for the disguise option Material
+"CRIMSON_HANGING_SIGN": "CRIMSON_HANGING_SIGN"
 
 # Used for the disguise option Material
+"WARPED_HANGING_SIGN": "WARPED_HANGING_SIGN"
 
 # Used for the disguise option Material
 "BUCKET": "BUCKET"
@@ -3701,6 +3729,7 @@
 "CAT_SPAWN_EGG": "CAT_SPAWN_EGG"
 
 # Used for the disguise option Material
+"CAMEL_SPAWN_EGG": "CAMEL_SPAWN_EGG"
 
 # Used for the disguise option Material
 "CAVE_SPIDER_SPAWN_EGG": "CAVE_SPIDER_SPAWN_EGG"
@@ -3730,6 +3759,7 @@
 "ELDER_GUARDIAN_SPAWN_EGG": "ELDER_GUARDIAN_SPAWN_EGG"
 
 # Used for the disguise option Material
+"ENDER_DRAGON_SPAWN_EGG": "ENDER_DRAGON_SPAWN_EGG"
 
 # Used for the disguise option Material
 "ENDERMAN_SPAWN_EGG": "ENDERMAN_SPAWN_EGG"
@@ -3768,6 +3798,7 @@
 "HUSK_SPAWN_EGG": "HUSK_SPAWN_EGG"
 
 # Used for the disguise option Material
+"IRON_GOLEM_SPAWN_EGG": "IRON_GOLEM_SPAWN_EGG"
 
 # Used for the disguise option Material
 "LLAMA_SPAWN_EGG": "LLAMA_SPAWN_EGG"
@@ -3839,6 +3870,7 @@
 "SLIME_SPAWN_EGG": "SLIME_SPAWN_EGG"
 
 # Used for the disguise option Material
+"SNOW_GOLEM_SPAWN_EGG": "SNOW_GOLEM_SPAWN_EGG"
 
 # Used for the disguise option Material
 "SPIDER_SPAWN_EGG": "SPIDER_SPAWN_EGG"
@@ -3883,6 +3915,7 @@
 "WITCH_SPAWN_EGG": "WITCH_SPAWN_EGG"
 
 # Used for the disguise option Material
+"WITHER_SPAWN_EGG": "WITHER_SPAWN_EGG"
 
 # Used for the disguise option Material
 "WITHER_SKELETON_SPAWN_EGG": "WITHER_SKELETON_SPAWN_EGG"
@@ -3963,6 +3996,7 @@
 "DRAGON_HEAD": "DRAGON_HEAD"
 
 # Used for the disguise option Material
+"PIGLIN_HEAD": "PIGLIN_HEAD"
 
 # Used for the disguise option Material
 "NETHER_STAR": "NETHER_STAR"
@@ -4448,26 +4482,37 @@
 "MANGROVE_WALL_SIGN": "MANGROVE_WALL_SIGN"
 
 # Used for the disguise option Material
+"BAMBOO_WALL_SIGN": "BAMBOO_WALL_SIGN"
 
 # Used for the disguise option Material
+"OAK_WALL_HANGING_SIGN": "OAK_WALL_HANGING_SIGN"
 
 # Used for the disguise option Material
+"SPRUCE_WALL_HANGING_SIGN": "SPRUCE_WALL_HANGING_SIGN"
 
 # Used for the disguise option Material
+"BIRCH_WALL_HANGING_SIGN": "BIRCH_WALL_HANGING_SIGN"
 
 # Used for the disguise option Material
+"ACACIA_WALL_HANGING_SIGN": "ACACIA_WALL_HANGING_SIGN"
 
 # Used for the disguise option Material
+"JUNGLE_WALL_HANGING_SIGN": "JUNGLE_WALL_HANGING_SIGN"
 
 # Used for the disguise option Material
+"DARK_OAK_WALL_HANGING_SIGN": "DARK_OAK_WALL_HANGING_SIGN"
 
 # Used for the disguise option Material
+"MANGROVE_WALL_HANGING_SIGN": "MANGROVE_WALL_HANGING_SIGN"
 
 # Used for the disguise option Material
+"CRIMSON_WALL_HANGING_SIGN": "CRIMSON_WALL_HANGING_SIGN"
 
 # Used for the disguise option Material
+"WARPED_WALL_HANGING_SIGN": "WARPED_WALL_HANGING_SIGN"
 
 # Used for the disguise option Material
+"BAMBOO_WALL_HANGING_SIGN": "BAMBOO_WALL_HANGING_SIGN"
 
 # Used for the disguise option Material
 "REDSTONE_WALL_TORCH": "REDSTONE_WALL_TORCH"
@@ -4608,6 +4653,7 @@
 "DRAGON_WALL_HEAD": "DRAGON_WALL_HEAD"
 
 # Used for the disguise option Material
+"PIGLIN_WALL_HEAD": "PIGLIN_WALL_HEAD"
 
 # Used for the disguise option Material
 "WHITE_WALL_BANNER": "WHITE_WALL_BANNER"
@@ -5289,140 +5335,3 @@
 
 # Used for the disguise option SoundGroup
 "ZOMBIFIED_PIGLIN": "ZOMBIFIED_PIGLIN"
-# Used for the disguise option Material
-"BAMBOO_PLANKS": "BAMBOO_PLANKS"
-
-# Used for the disguise option Material
-"BAMBOO_MOSAIC": "BAMBOO_MOSAIC"
-
-# Used for the disguise option Material
-"BAMBOO_BLOCK": "BAMBOO_BLOCK"
-
-# Used for the disguise option Material
-"STRIPPED_BAMBOO_BLOCK": "STRIPPED_BAMBOO_BLOCK"
-
-# Used for the disguise option Material
-"BAMBOO_SLAB": "BAMBOO_SLAB"
-
-# Used for the disguise option Material
-"BAMBOO_MOSAIC_SLAB": "BAMBOO_MOSAIC_SLAB"
-
-# Used for the disguise option Material
-"CHISELED_BOOKSHELF": "CHISELED_BOOKSHELF"
-
-# Used for the disguise option Material
-"BAMBOO_FENCE": "BAMBOO_FENCE"
-
-# Used for the disguise option Material
-"BAMBOO_STAIRS": "BAMBOO_STAIRS"
-
-# Used for the disguise option Material
-"BAMBOO_MOSAIC_STAIRS": "BAMBOO_MOSAIC_STAIRS"
-
-# Used for the disguise option Material
-"BAMBOO_BUTTON": "BAMBOO_BUTTON"
-
-# Used for the disguise option Material
-"BAMBOO_PRESSURE_PLATE": "BAMBOO_PRESSURE_PLATE"
-
-# Used for the disguise option Material
-"BAMBOO_DOOR": "BAMBOO_DOOR"
-
-# Used for the disguise option Material
-"BAMBOO_TRAPDOOR": "BAMBOO_TRAPDOOR"
-
-# Used for the disguise option Material
-"BAMBOO_FENCE_GATE": "BAMBOO_FENCE_GATE"
-
-# Used for the disguise option Material
-"BAMBOO_RAFT": "BAMBOO_RAFT"
-
-# Used for the disguise option Material
-"BAMBOO_CHEST_RAFT": "BAMBOO_CHEST_RAFT"
-
-# Used for the disguise option Material
-"BAMBOO_SIGN": "BAMBOO_SIGN"
-
-# Used for the disguise option Material
-"OAK_HANGING_SIGN": "OAK_HANGING_SIGN"
-
-# Used for the disguise option Material
-"SPRUCE_HANGING_SIGN": "SPRUCE_HANGING_SIGN"
-
-# Used for the disguise option Material
-"BIRCH_HANGING_SIGN": "BIRCH_HANGING_SIGN"
-
-# Used for the disguise option Material
-"JUNGLE_HANGING_SIGN": "JUNGLE_HANGING_SIGN"
-
-# Used for the disguise option Material
-"ACACIA_HANGING_SIGN": "ACACIA_HANGING_SIGN"
-
-# Used for the disguise option Material
-"DARK_OAK_HANGING_SIGN": "DARK_OAK_HANGING_SIGN"
-
-# Used for the disguise option Material
-"MANGROVE_HANGING_SIGN": "MANGROVE_HANGING_SIGN"
-
-# Used for the disguise option Material
-"BAMBOO_HANGING_SIGN": "BAMBOO_HANGING_SIGN"
-
-# Used for the disguise option Material
-"CRIMSON_HANGING_SIGN": "CRIMSON_HANGING_SIGN"
-
-# Used for the disguise option Material
-"WARPED_HANGING_SIGN": "WARPED_HANGING_SIGN"
-
-# Used for the disguise option Material
-"CAMEL_SPAWN_EGG": "CAMEL_SPAWN_EGG"
-
-# Used for the disguise option Material
-"ENDER_DRAGON_SPAWN_EGG": "ENDER_DRAGON_SPAWN_EGG"
-
-# Used for the disguise option Material
-"IRON_GOLEM_SPAWN_EGG": "IRON_GOLEM_SPAWN_EGG"
-
-# Used for the disguise option Material
-"SNOW_GOLEM_SPAWN_EGG": "SNOW_GOLEM_SPAWN_EGG"
-
-# Used for the disguise option Material
-"WITHER_SPAWN_EGG": "WITHER_SPAWN_EGG"
-
-# Used for the disguise option Material
-"PIGLIN_HEAD": "PIGLIN_HEAD"
-
-# Used for the disguise option Material
-"BAMBOO_WALL_SIGN": "BAMBOO_WALL_SIGN"
-
-# Used for the disguise option Material
-"OAK_WALL_HANGING_SIGN": "OAK_WALL_HANGING_SIGN"
-
-# Used for the disguise option Material
-"SPRUCE_WALL_HANGING_SIGN": "SPRUCE_WALL_HANGING_SIGN"
-
-# Used for the disguise option Material
-"BIRCH_WALL_HANGING_SIGN": "BIRCH_WALL_HANGING_SIGN"
-
-# Used for the disguise option Material
-"ACACIA_WALL_HANGING_SIGN": "ACACIA_WALL_HANGING_SIGN"
-
-# Used for the disguise option Material
-"JUNGLE_WALL_HANGING_SIGN": "JUNGLE_WALL_HANGING_SIGN"
-
-# Used for the disguise option Material
-"DARK_OAK_WALL_HANGING_SIGN": "DARK_OAK_WALL_HANGING_SIGN"
-
-# Used for the disguise option Material
-"MANGROVE_WALL_HANGING_SIGN": "MANGROVE_WALL_HANGING_SIGN"
-
-# Used for the disguise option Material
-"CRIMSON_WALL_HANGING_SIGN": "CRIMSON_WALL_HANGING_SIGN"
-
-# Used for the disguise option Material
-"WARPED_WALL_HANGING_SIGN": "WARPED_WALL_HANGING_SIGN"
-
-# Used for the disguise option Material
-"BAMBOO_WALL_HANGING_SIGN": "BAMBOO_WALL_HANGING_SIGN"
-
-# Used for the disguise option Material
-"PIGLIN_WALL_HEAD": "PIGLIN_WALL_HEAD"

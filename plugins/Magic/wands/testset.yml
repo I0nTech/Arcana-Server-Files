@@ -34,8 +34,8 @@ test_bow:
   class: archer_mage
   inherit: base_bowcaster
   attributes:
-    mage_mana: 100
-    mage_mana_regen: 15
+    mage_mana: 10
+    mage_mana_regen: 10
 
 test_axe:
   name: "&fTest Axe"
