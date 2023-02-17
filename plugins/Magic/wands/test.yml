@@ -1,0 +1,7 @@
+test:
+  hotbar_inventory_count: 1
+  version: 7
+  active_spell: manashot
+  inherit: test_axe
+  creator_id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
+  creator: IonTech

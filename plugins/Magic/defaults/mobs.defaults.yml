@@ -1279,6 +1279,18 @@ dummyarmored:
   chestplate: test_chestplate
   leggings: test_leggings
   boots: test_boots
+dummydiamond:
+  inherit: false
+  type: husk
+  health: 10000
+  ai: false
+  helmet: diamond_helmet
+  chestplate: diamond_chestplate
+  leggings: diamond_leggings
+  boots: diamond_boots
+fireworklaunched:
+  type: firework
+  ShotAtAngle: true
 floweringzombie:
   name: '&bFlowering Zombie'
   type: zombie

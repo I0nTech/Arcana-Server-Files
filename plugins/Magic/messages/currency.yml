@@ -29,6 +29,6 @@ currency:
     name: '&aDollars'
     name_singular: '&aDollar'
     amount: '$$amount'
-  item:
-    name_singular: Emerald
-    name: Emeralds
+  arrow:
+    name_singular: 'arrows'
+    name: 'arrows'

@@ -40,6 +40,22 @@ gui_actionbar:
       invert: true
       properties:
         use_active_name: true
+gui_manabar:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: gui_actionbar
+  upgrade: true
+  xp_display: none
+  level_display:
+    mode: mana
+  slot: gui
+  use_active_name: false
+  action_bar:
+    message: '$hotbar`{font:"default",text:" $extra"}`'
+    font: "magic"
+    open_message: ""
+    interval: 1
+    delay: 100
 gui_bossbar:
   # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
   inherit: false

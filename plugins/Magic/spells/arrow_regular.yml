@@ -66,5 +66,7 @@ arrow_regular:
     gravity: 0.017/bowpull
     reflect_count: 2
     damage: bowpull*(rand(7,9) + power*1.5)
+    magic_damage: false
   costs:
     arrow: 1
+    mana: 20

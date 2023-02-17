@@ -1,0 +1,23 @@
+lore:
+  name: loretest
+  description: Damage Your Target
+  icon: stick
+  actions:
+    cast:
+    - class: CheckLore
+      pattern: a
+      actions:
+        - class: Message
+          message: Success
+      fail: 
+        - class: Message
+          message: fail
+  effects:
+    cast:
+    - location: target
+      effectlib:
+        class: Sphere
+        duration: 2000
+    - sound: magic.zap
+  parameters:
+    target: self

@@ -1,0 +1,9 @@
+wand_sets:
+  manamines:
+    required: 1
+    bonuses:
+      attributes:
+        vitality: 10
+      spells:
+      - manamines
+      - critical

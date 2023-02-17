@@ -1,10 +1,10 @@
 id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
 name: IonTech
-created: 1676157503780
-updated: 1676237095146
-last_cast: 1676237080664
+created: 1676434486229
+updated: 1676594114645
+last_cast: 1676594104912
 cooldown_expiration: 0
-last_death_location: -83.69999998807907,72.20000004768372,196.07680802562945,world,94.43536,22.334635
+last_death_location: -113.43580277932946,63.0,209.48144865416708,world,-16.147743,1.3618984
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -15,35 +15,185 @@ brush:
   scale: 1.0
   erase: true
 undo:
-  711d2bc4-225b-48c1-9d84-a4607f218921: []
+  37bd7de3-453b-4a7e-a2ac-a38127258ab0: []
 spells:
-  manabeam:
-    cast_count: 1
-    last_cast: 1676157608950
+  manamines:
+    cast_count: 15
+    last_cast: 1676490417055
+    last_earn: 0
+    cooldown_expiration: 1676483528183
+    charges: 0.0
+  critical:
+    cast_count: 10
+    last_cast: 1676483675429
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  kill|3:
-    cast_count: 2
-    last_cast: 1676237080664
+  lore:
+    cast_count: 5
+    last_cast: 1676492019510
     last_earn: 0
-    cooldown_expiration: 1676237110664
+    cooldown_expiration: 0
+    charges: 0.0
+  anvil:
+    cast_count: 2
+    last_cast: 1676586869231
+    last_earn: 0
+    cooldown_expiration: 0
     charges: 0.0
   channel:
-    cast_count: 1
-    last_cast: 1676157608949
+    cast_count: 65
+    last_cast: 1676590923522
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  superkill:
-    cast_count: 8
-    last_cast: 1676236028669
+  localrain:
+    cast_count: 2
+    last_cast: 1676491777093
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manabolt:
+    cast_count: 89
+    last_cast: 1676586839709
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  mossysiphon:
+    cast_count: 0
+    last_cast: 1676590954784
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemissiles:
+    cast_count: 2
+    last_cast: 1676491261489
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  controlsmenu:
+    cast_count: 2
+    last_cast: 1676492085495
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  slashbase:
+    cast_count: 9
+    last_cast: 1676591402219
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  manablast:
+    cast_count: 49
+    last_cast: 1676590893130
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  wound:
+    cast_count: 0
+    last_cast: 1676592420138
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  laser:
+    cast_count: 3
+    last_cast: 1676492024311
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  eat_food:
+    cast_count: 1
+    last_cast: 1676490431535
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  progressmenu:
+    cast_count: 4
+    last_cast: 1676492134032
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   manashot:
-    cast_count: 16
-    last_cast: 1676237071703
+    cast_count: 124
+    last_cast: 1676587657164
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arcanemeteor:
+    cast_count: 3
+    last_cast: 1676485520095
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  magictrident:
+    cast_count: 1
+    last_cast: 1676590959520
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  blast:
+    cast_count: 9
+    last_cast: 1676491215041
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  boon|4:
+    cast_count: 1
+    last_cast: 1676590989180
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  windslash:
+    cast_count: 7
+    last_cast: 1676586851610
+    last_earn: 0
+    cooldown_expiration: 1676586854110
+    charges: 0.0
+  arcanehail:
+    cast_count: 4
+    last_cast: 1676590933842
+    last_earn: 0
+    cooldown_expiration: 1676491260581
+    charges: 0.0
+  arcanebarrage:
+    cast_count: 1
+    last_cast: 1676485111813
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arrow_regular:
+    cast_count: 146
+    last_cast: 1676587285959
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  focusbolt:
+    cast_count: 14
+    last_cast: 1676590923522
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  wandinstructions:
+    cast_count: 8
+    last_cast: 1676492200144
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  arrow_bomb:
+    cast_count: 61
+    last_cast: 1676587497791
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  slash:
+    cast_count: 987
+    last_cast: 1676594104912
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  locator:
+    cast_count: 0
+    last_cast: 1676491779980
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -55,24 +205,31 @@ properties:
   version: 7
 kits:
   start:
-    last_give: 1676157503936
+    last_give: 1676434486371
     given_items:
       iron_ingot:
         amount: 64
-        last_give: 1676157503936
+        last_give: 1676434486371
       bread:
         amount: 32
-        last_give: 1676157503936
+        last_give: 1676434486371
 classes:
   mage:
-    mana_timestamp: 1676237095095
-    mana: 600.0
+    mana_timestamp: 1676594114102
+    mana: 240.0
     spells:
-    - superkill
-    - kill
+    - manablast
+    - boon
+    - arrow_regular
+    - focusbolt
+    - laser
+    - lore
+    - arrow_bomb
+    - manabolt
+    - slash
     - manashot
     spell_levels:
-      kill: 3
+      boon: 4
 transient_modifiers: {}
 active_class: mage
 health: 20.0

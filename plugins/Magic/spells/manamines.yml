@@ -1,11 +1,7 @@
-# This is the key name of this spell
-# It must be unique across the server, and is used in configs and commands such as /mage, /wand and /mgive
-# to refer to this spell.
 manamines:
   name: Mana Mines
   description: Scatter floating orbs of mana that detonate upon contact
   icon: fire_coral_fan
-  worth: 7000
   triggers:
     - trigger: damage
       max_health: 6
@@ -48,23 +44,25 @@ manamines:
     message_type: action_bar
     push: 0.6
     tick_size: 0.2
-    player_damage: 3
-    entity_damage: 6
+    damage: 2
+    target_self_timeout: 2000
     lifetime: 30000
     velocity: rand(2,4)
     hitbox: true
     spread: 360
-    hitbox_size: 0.4
+    hitbox_size: 0.2
     multiply: 40
     no_damage_ticks: 0
     radius: 2
     reflective: solid
     target: other_entity
+    ignore_hit_entities: true
     quiet: true
     plan:
     - time: rand(200,1200)
       velocity: 0.1
       tick_size: 0.02
+      ignore_hit_entities: false
     cooldown: 30000
 
 

@@ -19,6 +19,7 @@ base_wand:
   craftable: true
   effect_bubbles: false
   unstashable: false
+  modifiable: true
   cancel_interact_on_right_click: true
   cancel_interact_on_left_click: true
   allow_offhand: true
@@ -126,8 +127,8 @@ base_scepter:
   stack: true
   stackable: false
   allow_offhand: false
-  spell_inventory: false
-  active_spell: false
+  active_spell: none
+  hotbar_inventory_count: 1
   cooldown_reduction: (cooldownreduction)/100
   cost_reduction: (costreduction)/100
   power: (wandpower)/100
@@ -139,7 +140,7 @@ base_scepter:
   - gui
   - castsource
   slotted:
-  - gui_none
+  - gui_manabar
   lore:
   - $sets
   - "$description"
@@ -303,12 +304,11 @@ base_upgrade:
   unique: false
   craftable: false
   enchantable: false
-  renamable: true
+  renamable: false
   modifiable: true
   stack: true
   stackable: false
   force: true
-  glow: true
 
 
 

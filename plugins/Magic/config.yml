@@ -8,7 +8,6 @@ cache_data_on_prelogin: true
 auto_save: 0
 
 default_mage_class: mage
-use_magic_damage: true
 wand_hide_flags: 126
 particle_range: 128
 

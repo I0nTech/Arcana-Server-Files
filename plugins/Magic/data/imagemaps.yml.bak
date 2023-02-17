@@ -5,7 +5,7 @@
   y: 8
   width: 8
   height: 8
-  enabled: true
+  enabled: false
   name: Photo of IonTech
   player: IonTech
   slice: false

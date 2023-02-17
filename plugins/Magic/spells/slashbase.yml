@@ -1,0 +1,148 @@
+slashbase:
+  name: Base Slash
+  description: Slash an enemy
+  icon: diamond_sword
+  actions:
+    none:
+    cast:
+    - class: ModifyVariable
+      variable: arc
+    - class: Repeat
+      repeat: abs($arc)/30
+      actions:
+      - class: ModifyVariable
+        variable: rot
+        default: arc/2
+        value: rot-($arc/abs($arc)*30)
+      - class: Parallel
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: rot
+          actions:
+          - class: Serial
+            actions: slashbody
+        - class: ChangeContext
+          source_yaw_offset: rot+6*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashbody
+        - class: ChangeContext
+          source_yaw_offset: rot+12*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashbody
+        - class: ChangeContext
+          source_yaw_offset: rot+18*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashbody
+        - class: ChangeContext
+          source_yaw_offset: rot+24*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashbody
+        - class: ChangeContext
+          source_yaw_offset: rot
+          actions:
+          - class: Serial
+            actions: slashtip
+        - class: ChangeContext
+          source_yaw_offset: rot+6*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashtip
+        - class: ChangeContext
+          source_yaw_offset: rot+12*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashtip
+        - class: ChangeContext
+          source_yaw_offset: rot+18*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashtip
+        - class: ChangeContext
+          source_yaw_offset: rot+24*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashtip
+  effects:
+    cast:
+    - location: origin
+      sound: entity_player_attack_sweep
+      sound_volume: 2
+      sound_pitch: 1.2
+    slash:
+    - location: target
+      particle: crit
+      particle_count: 8
+      particle_data: 0.1
+      particle_offset: 0.8,0,0.8
+    slashend:
+    - location: target
+      particle: electric_spark
+      particle_count: 8
+      particle_data: 0.4
+      particle_offset: 0
+    hit_block:
+    - location: target
+      particle: smoke_normal
+      particle_count: 1
+      particle_offset_x: 0.2
+      particle_offset_z: 0.2
+      particle_offset_y: 0.2
+      particle_data: 0.5
+    hit_entity:
+    - location: target
+      source_location: body
+      particle: crit_magic
+      particle_count: 1
+      particle_offset_x: 0.2
+      particle_offset_z: 0.2
+      particle_offset_y: 0.6
+      particle_data: 0.2
+    - location: target
+      sound: entity_player_attack_crit
+      sound_pitch: 1.5
+      sound_volume: 0.2
+    - location: target
+      sound: entity_player_attack_knockback
+      sound_pitch: 2
+      sound_volume: 0.2
+  parameters:
+    slashbody:
+      - class: Delay
+      - class: Asynchronous
+        actions:
+        - class: CustomProjectile
+          range: $range
+          miss_effects: slash
+    slashtip:
+      - class: Delay
+      - class: Asynchronous
+        actions:
+        - class: CustomProjectile
+          range: $range+1
+          miss_effects: slashend
+          actions:
+           - class: BreakBlock
+           - class: Velocity
+           - class: Damage
+# Don't Touch!
+    miss_effects: slash
+    relative_source_offset: 0,-0.2,0
+    target_type: Damageable
+    target: none
+    delay: 0.1
+#Modifiable Parameters
+#   orient_pitch: false  <-- If you want this to only be a horizontal cut
+    default: 180
+    range: 5
+    damage: 10
+    push: 0
+    direction: false
+    hitbox: true
+    hitbox_size: 0.25
+    velocity: 5000
+    undo: 6000
+    entity_hit_count: 999

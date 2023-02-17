@@ -1003,7 +1003,8 @@ arrow_bomb:
       particle_offset: 0.5
   parameters:
     type: arrow
-    velocity: 64*bowpull
+    item: diamond{1}
+    velocity: 100*bowpull
     gravity: 0.017/bowpull
     damage: bowpull*(rand(7,9) + power*1.5)
     hitbox: true
@@ -1493,8 +1494,10 @@ arrow_regular:
     gravity: 0.017/bowpull
     reflect_count: 2
     damage: bowpull*(rand(7,9) + power*1.5)
+    magic_damage: false
   costs:
     arrow: 1
+    mana: 20
 arrow_shock:
   icon: arrow_shock
   category: combat
@@ -31776,6 +31779,29 @@ lightshield:
       track_target: true
       velocity_transform: ''
       velocity: 20
+lore:
+  name: loretest
+  description: Damage Your Target
+  icon: stick
+  actions:
+    cast:
+    - class: CheckLore
+      pattern: a
+      actions:
+      - class: Message
+        message: Success
+      fail:
+      - class: Message
+        message: fail
+  effects:
+    cast:
+    - location: target
+      effectlib:
+        class: Sphere
+        duration: 2000
+    - sound: magic.zap
+  parameters:
+    target: self
 magenta:
   creator: junk2013
   creator_id: not your friend
@@ -32495,7 +32521,6 @@ manamines:
   name: Mana Mines
   description: Scatter floating orbs of mana that detonate upon contact
   icon: fire_coral_fan
-  worth: 7000
   triggers:
   - trigger: damage
     max_health: 6
@@ -32538,23 +32563,25 @@ manamines:
     message_type: action_bar
     push: 0.6
     tick_size: 0.2
-    player_damage: 3
-    entity_damage: 6
+    damage: 2
+    target_self_timeout: 2000
     lifetime: 30000
     velocity: rand(2,4)
     hitbox: true
     spread: 360
-    hitbox_size: 0.4
+    hitbox_size: 0.2
     multiply: 40
     no_damage_ticks: 0
     radius: 2
     reflective: solid
     target: other_entity
+    ignore_hit_entities: true
     quiet: true
     plan:
     - time: rand(200,1200)
       velocity: 0.1
       tick_size: 0.02
+      ignore_hit_entities: false
     cooldown: 30000
 manashot:
   name: Mana Shot
@@ -33638,6 +33665,10 @@ napalm|3:
     repeat: 14
   costs:
     mana: 200
+none:
+  name: ''
+  description: Damage Your Target
+  icon: stick
 orbitalstrike:
   name: Orbital Strike
   description: Bring down the skies.
@@ -36490,42 +36521,209 @@ slam:
   costs:
     mana: 60
 slash:
-  name: Slash Test
-  description: Damage Your Target
-  icon: diamond_sword{18104}
+  name: Slash
+  description: Slash an enemy
+  icon: diamond_sword
   actions:
     cast:
-    - class: Message
-      message: test
-    - class: CustomProjectile
+    - class: Equation
+      orient: true
+      orient_pitch: true
+      iterations: 32
+      x_equation: 3*sin(t/10)
+      y_equation: 0cos(t/10)
+      z_equation: 3*cos(t/10)
+      actions:
+      - class: ChangeContext
+        actions:
+        - class: Asynchronous
+          actions:
+          - class: CustomProjectile
+            range: 3
+            hitbox: true
+            hitbox_size: 0.5
+            velocity: 100
+            block_hit_count: 100
+            entity_hit_count: 100
+            miss_effects: slashend
+            tick_effects: none
+            actions:
+            - class: Damage
+              damage: 10
+      - class: Skip
+        skip: 8
+        actions:
+        - class: Delay
   effects:
     cast:
+    - location: origin
+      sound: entity_player_attack_sweep
+      sound_volume: 2
+      sound_pitch: 1.2
+    slashend:
     - location: target
-      source_location: body
-      effectlib:
-        class: Equation
-        particle: redstone
-        particle_offset: 0.2
-        particles: 180
-        x_equation: (t*-4+6)sin(0.05t-1)
-        y_equation: '0'
-        z_equation: (t*-4+6)cos(0.05t-1)
-        update_locations: false
-        update_directions: false
-        orient: false
+      particle: electric_spark
+      particle_count: 1
+      particle_data: 0
+      particle_offset: 0
     tick:
     - location: target
-      particle: redstone
+      particle: crit
+      particle_count: 1
+      particle_offset: 0
+    hit_entity:
+    - location: target
+      particle: block_dust
       particle_offset: 0
       particle_count: 2
+      material: redstone_block
   parameters:
-    range: 32
-    velocity: 0
-    velocity_transform:
-      x: 3sin(0.05t-1)
-      y: 0
-      z: 3cos(0.05t-1)
     target: other
+    range: 0
+slashbase:
+  name: Base Slash
+  description: Slash an enemy
+  icon: diamond_sword
+  actions:
+    cast:
+    - class: ModifyVariable
+      variable: arc
+    - class: Repeat
+      repeat: abs($arc)/30
+      actions:
+      - class: ModifyVariable
+        variable: rot
+        default: arc/2
+        value: rot-($arc/abs($arc)*30)
+      - class: Parallel
+        actions:
+        - class: ChangeContext
+          source_yaw_offset: rot
+          actions:
+          - class: Serial
+            actions: slashbody
+        - class: ChangeContext
+          source_yaw_offset: rot+6*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashbody
+        - class: ChangeContext
+          source_yaw_offset: rot+12*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashbody
+        - class: ChangeContext
+          source_yaw_offset: rot+18*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashbody
+        - class: ChangeContext
+          source_yaw_offset: rot+24*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashbody
+        - class: ChangeContext
+          source_yaw_offset: rot
+          actions:
+          - class: Serial
+            actions: slashtip
+        - class: ChangeContext
+          source_yaw_offset: rot+6*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashtip
+        - class: ChangeContext
+          source_yaw_offset: rot+12*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashtip
+        - class: ChangeContext
+          source_yaw_offset: rot+18*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashtip
+        - class: ChangeContext
+          source_yaw_offset: rot+24*$arc/abs($arc)
+          actions:
+          - class: Serial
+            actions: slashtip
+  effects:
+    cast:
+    - location: origin
+      sound: entity_player_attack_sweep
+      sound_volume: 2
+      sound_pitch: 1.2
+    slash:
+    - location: target
+      particle: crit
+      particle_count: 8
+      particle_data: 0.1
+      particle_offset: 0.8,0,0.8
+    slashend:
+    - location: target
+      particle: electric_spark
+      particle_count: 8
+      particle_data: 0.4
+      particle_offset: 0
+    hit_block:
+    - location: target
+      particle: smoke_normal
+      particle_count: 1
+      particle_offset_x: 0.2
+      particle_offset_z: 0.2
+      particle_offset_y: 0.2
+      particle_data: 0.5
+    hit_entity:
+    - location: target
+      source_location: body
+      particle: crit_magic
+      particle_count: 1
+      particle_offset_x: 0.2
+      particle_offset_z: 0.2
+      particle_offset_y: 0.6
+      particle_data: 0.2
+    - location: target
+      sound: entity_player_attack_crit
+      sound_pitch: 1.5
+      sound_volume: 0.2
+    - location: target
+      sound: entity_player_attack_knockback
+      sound_pitch: 2
+      sound_volume: 0.2
+  parameters:
+    slashbody:
+    - class: Delay
+    - class: Asynchronous
+      actions:
+      - class: CustomProjectile
+        range: $range
+        miss_effects: slash
+    slashtip:
+    - class: Delay
+    - class: Asynchronous
+      actions:
+      - class: CustomProjectile
+        range: $range+1
+        miss_effects: slashend
+        actions:
+        - class: BreakBlock
+        - class: Velocity
+        - class: Damage
+    miss_effects: slash
+    relative_source_offset: 0,-0.2,0
+    target_type: Damageable
+    target: none
+    delay: 0.1
+    default: 180
+    range: 5
+    damage: 10
+    push: 0
+    direction: false
+    hitbox: true
+    hitbox_size: 0.25
+    velocity: 5000
+    undo: 6000
+    entity_hit_count: 999
 smitemob:
   name: Smite
   description: Strike your target with lightning

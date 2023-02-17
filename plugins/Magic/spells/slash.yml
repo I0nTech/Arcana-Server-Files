@@ -1,37 +1,62 @@
 slash:
-  name: Slash Test
-  description: Damage Your Target
-  icon: diamond_sword{18104}
+  name: Slash
+  description: Slash an enemy
+  icon: diamond_sword
   actions:
+    none:
     cast:
-    - class: Message
-      message: "test"
-    - class: CustomProjectile
+      - class: Equation
+        orient: true
+        orient_pitch: true
+        iterations: 32
+        x_equation: 3*sin(t/10)
+        y_equation: 0cos(t/10)
+        z_equation: 3*cos(t/10)
+        actions:
+          - class: ChangeContext
+            actions:
+             - class: Asynchronous
+               actions:
+               - class: CustomProjectile
+                 range: 3
+                 hitbox: true
+                 hitbox_size: 0.5
+                 velocity: 100
+                 block_hit_count: 100
+                 entity_hit_count: 100
+                 miss_effects: slashend
+                 tick_effects: none
+                 actions:
+                   - class: Damage
+                     damage: 10
+          - class: Skip
+            skip: 8
+            actions:
+            - class: Delay
   effects:
     cast:
-    - location: target
-      source_location: body
-      effectlib:
-        class: Equation
-        particle: redstone
-        particle_offset: 0.2
-        particles: 180
-        x_equation: "(t*-4+6)sin(0.05t-1)"
-        y_equation: "0"
-        z_equation: "(t*-4+6)cos(0.05t-1)"
-        update_locations: false
-        update_directions: false
-        orient: false
+      - location: origin
+        sound: entity_player_attack_sweep
+        sound_volume: 2
+        sound_pitch: 1.2
+    none: 
+    slashend:
+      - location: target
+        particle: electric_spark
+        particle_count: 1
+        particle_data: 0
+        particle_offset: 0
     tick:
       - location: target
-        particle: redstone
+        particle: crit
+        particle_count: 1
+        particle_offset: 0
+    hit_entity:
+      - location: target
+        particle: block_dust
         particle_offset: 0
         particle_count: 2
+        material: redstone_block
   parameters:
-    range: 32
-    velocity: 0
-    velocity_transform:
-      x: 3sin(0.05t-1)
-      y: 0
-      z: 3cos(0.05t-1)
     target: other
+    range: 0

@@ -391,6 +391,9 @@ currency:
     name: Emeralds
   materia:
     name: '&3Materia'
+  arrow:
+    name_singular: arrows
+    name: arrows
 dynmap:
   spells_markerset: Spell Casts
   wands_markerset: Wands

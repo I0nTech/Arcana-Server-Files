@@ -1,0 +1,10 @@
+dummydiamond:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  type: husk
+  health: 10000
+  ai: false
+  helmet: diamond_helmet
+  chestplate: diamond_chestplate
+  leggings: diamond_leggings
+  boots: diamond_boots

@@ -55,7 +55,8 @@ arrow_bomb:
       particle_offset: 0.5
   parameters:
     type: arrow
-    velocity: 64*bowpull
+    item: diamond{1}
+    velocity: 100*bowpull
     gravity: 0.017/bowpull
     damage: bowpull*(rand(7,9) + power*1.5)
     hitbox: true

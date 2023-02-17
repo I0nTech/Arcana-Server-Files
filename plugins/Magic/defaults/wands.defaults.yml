@@ -81,6 +81,7 @@ base_wand:
   craftable: true
   effect_bubbles: false
   unstashable: false
+  modifiable: true
   cancel_interact_on_right_click: true
   cancel_interact_on_left_click: true
   allow_offhand: true
@@ -3424,8 +3425,8 @@ base_scepter:
   stack: true
   stackable: false
   allow_offhand: false
-  spell_inventory: false
-  active_spell: false
+  active_spell: none
+  hotbar_inventory_count: 1
   cooldown_reduction: (cooldownreduction)/100
   cost_reduction: (costreduction)/100
   power: (wandpower)/100
@@ -3437,7 +3438,7 @@ base_scepter:
   - gui
   - castsource
   slotted:
-  - gui_none
+  - gui_manabar
   lore:
   - $sets
   - $description
@@ -3595,12 +3596,11 @@ base_upgrade:
   unique: false
   craftable: false
   enchantable: false
-  renamable: true
+  renamable: false
   modifiable: true
   stack: true
   stackable: false
   force: true
-  glow: true
 castsource_wand:
   name: Cast from Wand
   description: All spells begin from the tip of your wand
@@ -3800,6 +3800,21 @@ exampleboots:
   inherit: base_boots
   name: WhyamIhere Boots
   icon: leather_boots:#0000FF
+gui_manabar:
+  inherit: false
+  icon: gui_actionbar
+  upgrade: true
+  xp_display: none
+  level_display:
+    mode: mana
+  slot: gui
+  use_active_name: false
+  action_bar:
+    message: $hotbar`{font:"default",text:" $extra"}`
+    font: magic
+    open_message: ''
+    interval: 1
+    delay: 100
 ion_space_helmet:
   name: §cIon's Space Helmet
   inherit: false
@@ -3964,37 +3979,55 @@ sandboxarmor:
   - §7This selector will show
   - §7all currently available
   - §7armor sets.
+test:
+  hotbar_inventory_count: 1
+  version: 7
+  active_spell: manashot
+  inherit: test_axe
+  creator_id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
+  creator: IonTech
+test1:
+  version: 7
+  inherit: test
+  creator_id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
+  creator: IonTech
+test2:
+  version: 7
+  inherit: test_axe
+  creator_id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
+  creator: IonTech
 test_sword:
   name: '&fTest Sword'
   description: Test
   inherit: base_scepter
   class: mage
   icon: diamond_sword
-  alternate_spell: magicbullet
+  right_click: alt_cast
+  alternate_spell: slash
   attributes:
     attackdamage: 7.5
     attackspeed: -2.4
 test_sword2:
   name: '&fTest Sword 2'
   description: Test
+  class: mage
   inherit: base_scepter
   icon: diamond_sword
   right_click: alt_cast
   alternate_spell: windslash
-  cost_reduction: 1
   enchantments:
     damage_all: 5
-  spells:
-  - shadowcloak
   attributes:
     attackdamage: 7
     attackspeed: -2.4
 test_bow:
   name: '&fMagic Bow'
   description: Fires magic arrows.
+  spell_inventory: false
   icon: bow{1}
-  class: archer_mage
+  class: mage
   inherit: base_bowcaster
+  active_spell: arrow_regular
   attributes:
     mage_mana: 100
     mage_mana_regen: 15
@@ -4004,10 +4037,22 @@ test_axe:
   inherit: base_scepter
   class: mage
   icon: diamond_axe
-  alternate_spell: manamines
+  sets: manamines
   attributes:
     attackdamage: 9
     attackspeed: -3
+test_upgrade:
+  inherit: base_upgrade
+  name: Capacitor
+  slot: Engram
+  attributes:
+    manaregenboost: 100
+test_upgrade2:
+  inherit: base_upgrade
+  name: Capacitor
+  slot: Engram
+  attributes:
+    manaboost: 100
 test_helmet:
   name: Test Helmet
   description: bee
