@@ -1,0 +1,69 @@
+magneticshield:
+  name: Magnetic Shield
+  description: Summon a forward-facing barrier which repels entities. Does not reflect magic.
+  icon: sheild
+  icon_disabled: sheild
+  toggle: undo_if_active
+  disable_mana_regeneration: true
+  boss_bar:
+    bar_title: "$spell"
+    bar_color: white
+    bar_style: progress
+  actions:
+    cast:
+    - class: Interval
+      actions:
+        - class: ChangeContext
+          source_pitch: 0
+          actions:
+          - class: PlayEffects
+            effects: shield
+          - class: ConeOfEffect
+            actions:
+              - class: PlayEffects
+                effects: block
+              - class: Velocity
+              - class: Damage
+  effects:
+    shield:
+    - location: origin
+      source_location: feet
+      effectlib:
+        class: Wave
+        particle: electric_spark
+        particle_count: 1
+        pitch: 0
+        rows: 8
+        height: 4
+        height_back: 0
+        length_back: 0
+        yaw_offset: 180
+        relative_offset: -3,-1.5,0
+        particle_data: 0.1
+        type: instant
+        cloud_particle: electric_spark
+        update_directions: true
+        update_locations: true
+    block:
+    - location: target
+      particle: electric_spark
+      particle_count: 2
+      particle_data: 0.5
+      sound: item_shield_break
+      sound_volume: 0.2
+      sound_pitch: 4
+  parameters:
+    target: other_entity
+    interval: 100
+    range: 3
+    push: 0.5
+    duration: 8000
+    no_damage_ticks: 0
+    damage: 2
+    cooldown: 16000
+    cancel_on_cast_other: true
+    cancel_on_no_wand: true
+  costs:
+    mana: 30
+  active_costs:
+    mana: 20

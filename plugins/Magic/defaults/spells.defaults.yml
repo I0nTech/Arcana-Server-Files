@@ -32137,6 +32137,76 @@ magictrident:
     set_target: true
   costs:
     mana: 200
+magneticshield:
+  name: Magnetic Shield
+  description: Summon a forward-facing barrier which repels entities. Does not reflect
+    magic.
+  icon: sheild
+  icon_disabled: sheild
+  toggle: undo_if_active
+  disable_mana_regeneration: true
+  boss_bar:
+    bar_title: $spell
+    bar_color: white
+    bar_style: progress
+  actions:
+    cast:
+    - class: Interval
+      actions:
+      - class: ChangeContext
+        source_pitch: 0
+        actions:
+        - class: PlayEffects
+          effects: shield
+        - class: ConeOfEffect
+          actions:
+          - class: PlayEffects
+            effects: block
+          - class: Velocity
+          - class: Damage
+  effects:
+    shield:
+    - location: origin
+      source_location: feet
+      effectlib:
+        class: Wave
+        particle: electric_spark
+        particle_count: 1
+        pitch: 0
+        rows: 8
+        height: 4
+        height_back: 0
+        length_back: 0
+        yaw_offset: 180
+        relative_offset: -3,-1.5,0
+        particle_data: 0.1
+        type: instant
+        cloud_particle: electric_spark
+        update_directions: true
+        update_locations: true
+    block:
+    - location: target
+      particle: electric_spark
+      particle_count: 2
+      particle_data: 0.5
+      sound: item_shield_break
+      sound_volume: 0.2
+      sound_pitch: 4
+  parameters:
+    target: other_entity
+    interval: 100
+    range: 3
+    push: 0.5
+    duration: 8000
+    no_damage_ticks: 0
+    damage: 2
+    cooldown: 16000
+    cancel_on_cast_other: true
+    cancel_on_no_wand: true
+  costs:
+    mana: 30
+  active_costs:
+    mana: 20
 manabeam:
   name: Mana Beam
   description: Channel, then fire a powerful, long-range beam of mana dealing 16 Magic
@@ -36522,38 +36592,36 @@ slam:
     mana: 60
 slash:
   name: Slash
-  description: Slash an enemy
+  description: Slash an enemy, horizontally
   icon: diamond_sword
   actions:
     cast:
-    - class: Equation
-      orient: true
-      orient_pitch: true
-      iterations: 32
-      x_equation: 3*sin(t/10)
-      y_equation: 0cos(t/10)
-      z_equation: 3*cos(t/10)
+    - class: ChangeContext
+      source_yaw_offset: (4-4)*22.5
       actions:
-      - class: ChangeContext
+      - class: Equation
+        orient: true
+        orient_pitch: true
+        iterations: 4*(8-8/5)
+        x_equation: 3*sin(t/8)
+        y_equation: 1*cos(t/8)
+        z_equation: 3*cos(t/8)
         actions:
+        - class: PlayEffects
+          effects: slash
         - class: Asynchronous
           actions:
           - class: CustomProjectile
-            range: 3
-            hitbox: true
-            hitbox_size: 0.5
-            velocity: 100
-            block_hit_count: 100
-            entity_hit_count: 100
             miss_effects: slashend
             tick_effects: none
             actions:
             - class: Damage
-              damage: 10
-      - class: Skip
-        skip: 8
-        actions:
-        - class: Delay
+            - class: Velocity
+        - class: Skip
+          skip: $skip
+          actions:
+          - class: Delay
+            delay: 1
   effects:
     cast:
     - location: origin
@@ -36566,20 +36634,40 @@ slash:
       particle_count: 1
       particle_data: 0
       particle_offset: 0
-    tick:
+    slash:
     - location: target
-      particle: crit
-      particle_count: 1
-      particle_offset: 0
+      effectlib:
+        duration: 100
+        class: Equation
+        x_equation: -(1/(t/2+1))
+        particle: crit_magic
+        particles: 3
     hit_entity:
     - location: target
       particle: block_dust
       particle_offset: 0
       particle_count: 2
       material: redstone_block
+    - location: target
+      sound: entity_player_attack_crit
+      sound_pitch: 1.5
+      sound_volume: 0.2
+    - location: target
+      sound: entity_player_attack_knockback
+      sound_pitch: 2
+      sound_volume: 0.2
   parameters:
-    target: other
-    range: 0
+    target: none
+    source_location: body
+    range: 3
+    damage: 6
+    push: 1
+    direction: 0,0.2,0
+    skip: 8
+    velocity: 1000
+    hit_count: 3
+    hitbox: true
+    hitbox_size: 0.5
 slashbase:
   name: Base Slash
   description: Slash an enemy
@@ -36724,6 +36812,171 @@ slashbase:
     velocity: 5000
     undo: 6000
     entity_hit_count: 999
+slashblood:
+  name: Blood Slash
+  description: Slash an enemy, horizontally
+  icon: diamond_sword
+  actions:
+    cast:
+    - class: ChangeContext
+      source_yaw_offset: (5-4)*22.5
+      actions:
+      - class: Equation
+        orient: true
+        orient_pitch: true
+        iterations: 5*(8-8/5)
+        x_equation: 3*sin(t/8)
+        y_equation: cos(t/8)
+        z_equation: 3*cos(t/8)
+        actions:
+        - class: PlayEffects
+          effects: slash
+        - class: Asynchronous
+          actions:
+          - class: CustomProjectile
+            miss_effects: slash
+            tick_effects: none
+            actions:
+            - class: Damage
+            - class: Velocity
+        - class: Skip
+          skip: $skip
+          actions:
+          - class: Delay
+            delay: 1
+  effects:
+    cast:
+    - location: origin
+      sound: entity_player_attack_sweep
+      sound_volume: 2
+      sound_pitch: 1.2
+    slash:
+    - location: target
+      effectlib:
+        duration: 100
+        class: Equation
+        auto_orient: true
+        x_equation: 0.5/(t+1)
+        particle: electric_spark
+        particle_size: 0.5
+        color: '#8b0000'
+        particles: 4
+    - location: target
+      effectlib:
+        duration: 150
+        class: Equation
+        auto_orient: true
+        x_equation: (1/(t/3+1))
+        particle: dust_color_transition
+        particle_size: 1
+        color: '#8b0000'
+        to_color: '#FF0000'
+        particles: 4
+    hit_entity:
+    - location: target
+      particle: block_dust
+      particle_offset: 0
+      particle_count: 2
+      material: redstone_block
+    - location: target
+      sound: entity_player_attack_crit
+      sound_pitch: 1.5
+      sound_volume: 0.2
+    - location: target
+      sound: entity_player_attack_knockback
+      sound_pitch: 2
+      sound_volume: 0.2
+  parameters:
+    target: none
+    source_location: body
+    range: 3
+    damage: 4
+    direction: 0,0.5,0
+    push: 1
+    skip: 8
+    velocity: 1000
+    hit_count: 3
+    hitbox: true
+    hitbox_size: 0.2
+    cooldown: 1000
+slashvert:
+  name: Slash
+  description: Slash an enemy, vertically
+  icon: diamond_sword
+  actions:
+    cast:
+    - class: ChangeContext
+      source_yaw_offset: (4-4)*22.5
+      actions:
+      - class: Equation
+        orient: true
+        orient_pitch: true
+        iterations: 4*(8-8/5)
+        x_equation: 3*sin(t/8)
+        y_equation: 3*cos(t/8)
+        z_equation: 1*cos(t/8)
+        actions:
+        - class: PlayEffects
+          effects: slash
+        - class: Asynchronous
+          actions:
+          - class: CustomProjectile
+            miss_effects: slashend
+            tick_effects: none
+            actions:
+            - class: Damage
+            - class: Velocity
+        - class: Skip
+          skip: $skip
+          actions:
+          - class: Delay
+            delay: 1
+  effects:
+    cast:
+    - location: origin
+      sound: entity_player_attack_sweep
+      sound_volume: 2
+      sound_pitch: 1.2
+    slashend:
+    - location: target
+      particle: electric_spark
+      particle_count: 1
+      particle_data: 0
+      particle_offset: 0
+    slash:
+    - location: target
+      effectlib:
+        duration: 100
+        class: Equation
+        x_equation: -(1/(t/2+1))
+        particle: crit_magic
+        particles: 3
+    hit_entity:
+    - location: target
+      particle: block_dust
+      particle_offset: 0
+      particle_count: 2
+      material: redstone_block
+    - location: target
+      sound: entity_player_attack_crit
+      sound_pitch: 1.5
+      sound_volume: 0.2
+    - location: target
+      sound: entity_player_attack_knockback
+      sound_pitch: 2
+      sound_volume: 0.2
+  parameters:
+    target: none
+    source_location: body
+    range: 3
+    damage: 6
+    push: 1
+    direction: 0,0.2,0
+    skip: 8
+    velocity: 1000
+    hit_count: 3
+    hitbox: true
+    hitbox_size: 0.5
 smitemob:
   name: Smite
   description: Strike your target with lightning
@@ -37833,6 +38086,148 @@ thunderstorm:
     cooldown: 30000
   costs:
     mana: 200
+totem:
+  name: Modular Totem
+  description: Place a totem at your current location which switches between applying
+    constant Healing or a Magic Damage buff to those within range upon sneaking.
+  icon: totem_of_undying
+  toggle: undo_if_active
+  toggleable: true
+  actions:
+    cast:
+    - class: Asynchronous
+      actions:
+      - class: EntityProjectile
+        lifetime: $duration
+        velocity: 0
+        ignore_blocks: true
+        ignore_hit_entities: true
+        target: block
+        type: ender_signal
+        item: totem_of_undying
+    - class: ModifyVariable
+      variable: mode
+      value: 0
+    - class: Interval
+      interval: 1
+      duration: $duration
+      actions:
+      - class: CheckTrigger
+        trigger: sneak
+        actions:
+        - class: CheckRequirements
+          requirements:
+          - variables:
+            - variable: mode
+              value: 0
+          actions:
+          - class: Message
+            message: '&fSwitching to Empowering'
+            message_type: action_bar
+          - class: ModifyVariable
+            variable: mode
+            value: 1
+          fail:
+          - class: Message
+            message: '&fSwitching to Healing'
+            message_type: action_bar
+          - class: ModifyVariable
+            variable: mode
+            value: 0
+      - class: CheckRequirements
+        requirements:
+        - variables:
+          - variable: mode
+            value: 0
+        actions:
+        - class: AreaOfEffect
+          actions:
+          - class: Modifier
+            remove_modifiers:
+            - boost
+          - class: PlayEffects
+            effects: heal
+          - class: Heal
+          - class: Delay
+            delay: 1000
+        fail:
+        - class: AreaOfEffect
+          actions:
+          - class: PlayEffects
+            effects: empower
+          - class: Modifier
+            add_modifiers:
+            - boost
+            remove_on_finish: true
+            duration: 600
+          - class: Delay
+            delay: 500
+  effects:
+    cast:
+    - location: origin
+      color_override: color
+      source_location: head
+      effectlib:
+        class: Circle
+        radius: $radius
+        whole_circle: true
+        particle: redstone
+        particles: 40
+        duration: $duration
+        angular_velocity_y: 0.1
+        update_locations: false
+    miss:
+    - location: target
+      particle: reverse_portal
+      particle_count: 20
+      particle_offset: 0
+      particle_data: 0.5
+    undo:
+    - location: target
+      particle: reverse_portal
+      particle_count: 20
+      particle_offset: 0
+      particle_data: 0.5
+    heal:
+    - class: EffectSingle
+      location: target
+      effectlib:
+        class: Modified
+        duration: 500
+        parameters:
+          radius: (t/i) * -1 + 1
+        effect:
+          class: Sphere
+          particle_increase: 0.25
+          particles: 1
+          particle_offset_x: 0.3
+          particle_offset_z: 0.3
+          particle_offset_y: 0.6
+          offset: 0,-0.8,0
+          particle: spell_mob_ambient
+          color: '#FF00FF'
+          update_locations: true
+    empower:
+    - location: target
+      source_location: body
+      particle: glow
+      particle_count: 6
+      particle_offset_x: 0.3
+      particle_offset_z: 0.3
+      particle_offset_y: 0.6
+      particle_data: 0.6
+  parameters:
+    source_location: head
+    radius: 7
+    duration: 30000
+    target_type: Player
+    target: self
+    percentage: 0.05
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true
 triplebolt:
   name: Triple Bolt
   description: Channel, then fire a spread of mana bolts in a \|/ pattern, each dealing

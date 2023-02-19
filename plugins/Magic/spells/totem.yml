@@ -1,0 +1,141 @@
+totem:
+  name: Modular Totem
+  description: Place a totem at your current location which switches between applying constant Healing or a Magic Damage buff to those within range upon sneaking.
+  icon: totem_of_undying
+  toggle: undo_if_active
+  toggleable: true
+  actions:
+    cast:
+    - class: Asynchronous #Summon Totem entity
+      actions:
+      - class: EntityProjectile
+        lifetime: $duration
+        velocity: 0
+        ignore_blocks: true
+        ignore_hit_entities: true
+        target: block
+        type: ender_signal
+        item: totem_of_undying
+    - class: ModifyVariable #Check mode and switch
+      variable: mode
+      value: 0
+    - class: Interval
+      interval: 1
+      duration: $duration
+      actions:
+        - class: CheckTrigger
+          trigger: sneak
+          actions:
+          - class: CheckRequirements
+            requirements:
+              - variables:
+                - variable: mode
+                  value: 0
+            actions:
+              - class: Message
+                message: "&fSwitching to Empowering"
+                message_type: action_bar
+              - class: ModifyVariable
+                variable: mode
+                value: 1
+            fail:
+              - class: Message
+                message: "&fSwitching to Healing"
+                message_type: action_bar
+              - class: ModifyVariable
+                variable: mode
+                value: 0
+        - class: CheckRequirements #Effects based on mode
+          requirements:
+          - variables:
+            - variable: mode
+              value: 0
+          actions:
+          - class: AreaOfEffect
+            actions:
+              - class: Modifier
+                remove_modifiers:
+                - boost
+              - class: PlayEffects
+                effects: heal
+              - class: Heal
+              - class: Delay
+                delay: 1000
+          fail:
+          - class: AreaOfEffect
+            actions:
+              - class: PlayEffects
+                effects: empower
+              - class: Modifier
+                add_modifiers:
+                - boost
+                remove_on_finish: true
+                duration: 600
+              - class: Delay
+                delay: 500
+  effects:
+    cast:
+    - location: origin
+      color_override: color
+      source_location: head
+      effectlib:
+        class: Circle
+        radius: $radius
+        whole_circle: true
+        particle: redstone
+        particles: 40
+        duration: $duration
+        angular_velocity_y: 0.1
+        update_locations: false
+    miss:
+    - location: target
+      particle: reverse_portal
+      particle_count: 20
+      particle_offset: 0
+      particle_data: 0.5
+    undo:
+    - location: target
+      particle: reverse_portal
+      particle_count: 20
+      particle_offset: 0
+      particle_data: 0.5
+    heal:
+      - class: EffectSingle
+        location: target
+        effectlib:
+           class: Modified
+           duration: 500
+           parameters:
+               radius: "(t/i) * -1 + 1"
+           effect:
+             class: Sphere
+             particle_increase: 0.25
+             particles: 1
+             particle_offset_x: 0.3
+             particle_offset_z: 0.3
+             particle_offset_y: 0.6
+             offset: 0,-0.8,0
+             particle: spell_mob_ambient
+             color: "#FF00FF"
+             update_locations: true
+    empower:
+      - location: target
+        source_location: body
+        particle: glow
+        particle_count: 6
+        particle_offset_x: 0.3
+        particle_offset_z: 0.3
+        particle_offset_y: 0.6
+        particle_data: 0.6
+  parameters:
+    source_location: head
+    radius: 7
+    duration: 30000
+    target_type: Player
+    target: self
+    percentage: 0.05 #Percentage to heal
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true

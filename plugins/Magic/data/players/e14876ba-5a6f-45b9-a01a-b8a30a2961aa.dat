@@ -1,10 +1,10 @@
 id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
 name: IonTech
 created: 1676434486229
-updated: 1676594114645
-last_cast: 1676594104912
+updated: 1676767347957
+last_cast: 1676767343758
 cooldown_expiration: 0
-last_death_location: -113.43580277932946,63.0,209.48144865416708,world,-16.147743,1.3618984
+last_death_location: -392.04747652810414,65.0,159.6167222192853,world,7.939453,-1.4796867
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -42,8 +42,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   channel:
-    cast_count: 65
-    last_cast: 1676590923522
+    cast_count: 76
+    last_cast: 1676660436293
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -53,9 +53,15 @@ spells:
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
+  slashvert:
+    cast_count: 85
+    last_cast: 1676767221357
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
   manabolt:
-    cast_count: 89
-    last_cast: 1676586839709
+    cast_count: 166
+    last_cast: 1676659439693
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -78,14 +84,14 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   slashbase:
-    cast_count: 9
-    last_cast: 1676591402219
+    cast_count: 29
+    last_cast: 1676664148544
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   manablast:
-    cast_count: 49
-    last_cast: 1676590893130
+    cast_count: 52
+    last_cast: 1676660436293
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -107,6 +113,18 @@ spells:
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
+  powerorb:
+    cast_count: 0
+    last_cast: 1676652542454
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  totem:
+    cast_count: 90
+    last_cast: 1676664548577
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
   progressmenu:
     cast_count: 4
     last_cast: 1676492134032
@@ -116,6 +134,24 @@ spells:
   manashot:
     cast_count: 124
     last_cast: 1676587657164
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  magicshield:
+    cast_count: 4
+    last_cast: 1676664121041
+    last_earn: 0
+    cooldown_expiration: 1676664137041
+    charges: 0.0
+  electrosurge:
+    cast_count: 0
+    last_cast: 1676739289468
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  healfield:
+    cast_count: 0
+    last_cast: 1676654727602
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -138,8 +174,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   boon|4:
-    cast_count: 1
-    last_cast: 1676590989180
+    cast_count: 2
+    last_cast: 1676657211675
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -162,14 +198,14 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   arrow_regular:
-    cast_count: 146
-    last_cast: 1676587285959
+    cast_count: 168
+    last_cast: 1676659346987
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   focusbolt:
-    cast_count: 14
-    last_cast: 1676590923522
+    cast_count: 22
+    last_cast: 1676659642140
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -179,15 +215,27 @@ spells:
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
+  magneticshield:
+    cast_count: 5
+    last_cast: 1676666208778
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  slashblood:
+    cast_count: 283
+    last_cast: 1676767343759
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
   arrow_bomb:
-    cast_count: 61
-    last_cast: 1676587497791
+    cast_count: 89
+    last_cast: 1676657206475
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   slash:
-    cast_count: 987
-    last_cast: 1676594104912
+    cast_count: 3448
+    last_cast: 1676767242757
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -215,19 +263,25 @@ kits:
         last_give: 1676434486371
 classes:
   mage:
-    mana_timestamp: 1676594114102
+    mana_timestamp: 1676767347873
     mana: 240.0
     spells:
-    - manablast
     - boon
+    - lore
+    - slashvert
+    - manabolt
+    - slashbase
+    - manablast
     - arrow_regular
     - focusbolt
     - laser
-    - lore
+    - magneticshield
+    - slashblood
+    - totem
     - arrow_bomb
-    - manabolt
     - slash
     - manashot
+    - magicshield
     spell_levels:
       boon: 4
 transient_modifiers: {}

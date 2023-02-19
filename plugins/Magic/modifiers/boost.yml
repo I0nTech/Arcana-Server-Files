@@ -1,5 +1,3 @@
 boost:
-  potion_effects:
-    fire_resistance: 0
   strength:
     magic: 0.4
