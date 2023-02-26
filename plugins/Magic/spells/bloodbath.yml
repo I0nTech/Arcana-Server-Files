@@ -1,0 +1,111 @@
+bloodbath:
+  name: Blood Bath
+  description: Cover an area with your blood, dealing damage to those caught inside and pulling them towards the center
+  icon: stick
+  actions:
+    cast:
+      - class: ChangeContext
+        target_caster: true
+        actions:
+          - class: Damage
+            percentage: 0.1
+            damage_type: bleed
+          - class: Velocity
+            direction: 0,0,0
+      - class: ChangeContext
+        source_pitch: 180
+        actions:
+        - class: CustomProjectile
+          source_location: feet
+          range: 3
+          actions:
+            - class: PlayEffects
+              effects: start
+            - class: Delay
+            - class: PlayEffects
+              effect: bloodbath
+            - class: Repeat
+              repeat: 10
+              actions:
+                - class: PlayEffects
+                  effects: pulse
+                - class: AreaOfEffect
+                  radius: 8
+                  actions:
+                    - class: Damage
+                    - class: Velocity
+                      push: -0.4
+                - class: Delay
+                  delay: 1000
+  effects:
+    start:
+      - location: target
+        effectlib:
+           class: Modified
+           duration: $warmup
+           parameters:
+             radius: "(t/i) * 8 + 0.1"
+           effect:
+             class: Vortex
+             particle_count: 1
+             grow: 0
+             helixes: 12
+             particle: dust_color_transition
+             color: "#ff0000"
+             to_color: "#8b0000"
+             update_locations: false
+             update_directions: false
+             particle_data: 0
+             offset: 0,0.1,0
+             pitch: 90
+    bloodbath:
+    - class: EffectSingle
+      location: target
+      target_location: hit
+      effectlib:
+        class: Modified
+        duration: $duration
+        period: 1
+        parameters:
+          radius: '(t/i)+8'
+          rotation: t/6
+        effect:
+          class: Helix
+          particle: dust_color_transition
+          color: "#ff0000"
+          to_color: "#8b0000"
+          particle_offset_y: 0.2
+          particles: 20
+          strands: 3
+          curve: -2
+          pitch: -90
+          yaw: 0
+          offset: 0,0.5,0
+          update_locations: false
+          update_directions: false
+    pulse:
+      - location: target
+        effectlib:
+           class: Modified
+           duration: 1000
+           parameters:
+             radius: "(t/i) + 8"
+           effect:
+             class: Vortex
+             particle_count: 1
+             grow: 0
+             helixes: 4
+             particle: spell_mob
+             color: "#8b0000"
+             update_locations: false
+             update_directions: false
+             particle_data: 0
+             offset: 0,0.1,0
+             pitch: 90
+  parameters:
+    target: none
+    warmup: 1000
+    duration: 10000
+    radius: 8
+    y_radius: 1
+    damage: 1

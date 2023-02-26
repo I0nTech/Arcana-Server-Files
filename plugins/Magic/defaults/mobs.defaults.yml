@@ -1598,12 +1598,13 @@ testboss:
     skin: IonTech
   name: '&f&l[LVL ??] &r&2The Destroyer'
   health: 100
-  interval: 3000
+  interval: 1
   track_radius: 64
   face_player: true
   persist: true
   mage:
-    color: '#800080'
+    spells:
+    - bloodlifesteal
   boss_bar:
     bar_color: red
     bar_flags:
@@ -1617,25 +1618,17 @@ testboss:
         manabeam: 10
     damage:
       cast:
-        mobrelocate: 10
-        evade: 30
         siphon|3: 20
     death:
       cast:
       - grant sp 100 money 420
     interval:
       cast:
-        burstshot: 5
-        scattershot: 5
-        meditate: 5
-        manabeam: 500
-        manablast: 10
-        focusbolt: 20
-        triplebolt: 20
-        arcanehail: 5
-        arcanebarrage: 5
-        arcanemissiles: 5
-        arcanemeteor: 5
+        slashblood: 1
+        slashblood2: 1
+        slashblood3: 1
+        slashbloodexecute: 1
+        bloodexecute: 3
 testnpc:
   inherit: base_npc
   name: testnpc

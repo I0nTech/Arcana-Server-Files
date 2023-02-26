@@ -1498,6 +1498,7 @@ requirements:
   no_template: '&cYou may not do that with $wand&c.'
   no_modifier: '&cYou must have &6$modifier &cto do that.'
   no_region: '&cYou may not do that here.'
+  no_world: '&You may not do that here.'
   no_path: '&cYou may not learn here.'
   no_class: '&cYou must be a $class'
   no_required_path: '&cYou must be at least $path&r!'

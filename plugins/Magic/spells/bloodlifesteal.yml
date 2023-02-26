@@ -1,0 +1,66 @@
+bloodlifesteal:
+  name: Lifesteal
+  description: Leech away blood from damaged enemies to heal your wounds
+  icon: glistering_melon_slice
+  passive: true
+  toggleable: false
+  triggers:
+    - trigger: damage_dealt
+      damage_type: magic
+  actions:
+    cast:
+    - class: ChangeContext
+      swap_source_and_target: true
+      source_pitch: 0
+      actions:
+      - class: CustomProjectile
+        target: last_damager
+        actions:
+          - class: Heal
+  effects:
+    cast:
+    - location: origin
+      sound: entity_mooshroom_shear
+    tick:
+      - location: target
+        particle: spell_mob
+        color: "#c71585"
+        particle_count: 3
+      - location: target
+        particle: dust_color_transition
+        color: "#ff0000"
+        to_color: "#8b0000"
+        particle_count: 1
+        particle_offset: 0.1
+    hit_entity:
+    - location: target
+      particle: heart
+      particle_count: 1
+    - sound: entity_experience_orb_pickup
+      sound_pitch: 5
+      sound_volume: 0.2
+  parameters:
+    source_location: body
+    target: damage_target
+    target_type: Player
+    ignore_blocks: true
+    ignore_hit_entities: true
+    spread: 3
+    lifetime: 2000
+    velocity: 10
+    amount: $damage_dealt/4
+    hitbox: true
+    hitbox_size: 0.2
+    track_target: false
+    cooldown: 500
+    velocity_transform:
+      orient: true
+      x: rand(-6,6) * cos(t)
+      y: 3
+      z: rand(-6,6) * sin(t)
+    plan:
+    - time: 400
+      track_speed: 0.4
+      track_target: true
+      velocity_transform: ''
+      velocity: 30

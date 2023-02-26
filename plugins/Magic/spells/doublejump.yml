@@ -1,9 +1,9 @@
 doublejump:
   name: Double Jump
   description: Jump once, jump twice, doesnt work in midair
+  mode: hidden
   icon: none
   inherit: base_passive
-  hidden: true
   triggers:
     - jump
   actions:

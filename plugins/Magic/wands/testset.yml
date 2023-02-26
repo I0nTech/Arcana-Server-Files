@@ -1,14 +1,22 @@
 test_sword:
-  name: "&fTest Sword"
-  description: "Test"
+  name: "&#8b0000Sanguine"
+  description: |
+    Attacks leave behind bloody
+    slashes which cleave through
+    enemies.
   inherit: base_scepter
   class: mage
-  icon: diamond_sword
-  right_click: alt_cast
-  alternate_spell: slash
+  icon: stone_sword{2}
+  left_click: alt_cast
+  alternate_spell: slashbloodcombo
+  right_click: alt_cast2
+  alternate_spell2: bloodexecute
+  effect_color: "#8b0000"
+  enchantments:
+    damage_all: 1
   attributes:
-    attackdamage: 7.5
-    attackspeed: -2.4
+    attackdamage: 8
+    attackspeed: -2.8
 
 test_sword2:
   name: "&fTest Sword 2"
@@ -18,8 +26,6 @@ test_sword2:
   icon: diamond_sword
   right_click: alt_cast
   alternate_spell: windslash
-  enchantments:
-    damage_all: 5
   attributes:
     attackdamage: 7
     attackspeed: -2.4

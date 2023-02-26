@@ -1,0 +1,134 @@
+bloodexecute:
+  name: Guillotine
+  description: Charge, then unleash a flurry of bloody slashes which execute enemies below 20% Max HP.
+  icon: stick
+  actions:
+    cast:
+      - class: PotionEffect
+        duration: 2000
+        add_effects:
+          slow: 3
+      - class: Delay
+        delay: 2000
+      - class: Cast
+        spell: slashbloodexecute
+        spell_parameters:
+          orient_pitch: false
+          source_yaw_offset: (4-6)*22.5
+          iterations: 8*(12-12/5)
+          x_equation: 6*sin(t/12)
+          y_equation: 3*cos(t/12) #Diagonal, (-1,1)
+          z_equation: -6*cos(t/12)
+      - class: Delay
+      - class: Cast
+        spell: slashbloodexecute
+        spell_parameters:
+          orient_pitch: false
+          source_yaw_offset: (6-4)*22.5
+          iterations: 8*(12-12/5)
+          x_equation: 6*sin(t/12)
+          y_equation: 1*cos(t/12) #Diagonal, (-1,1)
+          z_equation: 6*cos(t/12)
+      - class: Delay
+      - class: Cast
+        spell: slashbloodexecute
+        spell_parameters:
+          orient_pitch: false
+          source_yaw_offset: (4-6)*22.5
+          iterations: 8*(12-12/5)
+          x_equation: 6*sin(t/12)
+          y_equation: 2cos(t/12) #Diagonal, (-1,1)
+          z_equation: -6*cos(t/12)
+      - class: Delay
+      - class: Cast
+        spell: slashbloodexecute
+        spell_parameters:
+          orient_pitch: false
+          source_yaw_offset: (6-4)*22.5
+          iterations: 8*(12-12/5)
+          x_equation: 6*sin(t/12)
+          y_equation: 2*cos(t/12) #Diagonal, (-1,1)
+          z_equation: 6*cos(t/12)
+      - class: Delay
+      - class: Cast
+        spell: slashbloodexecute
+        spell_parameters:
+          orient_pitch: false
+          source_yaw_offset: (6-4)*22.5
+          iterations: 8*(12-12/5)
+          x_equation: 6*sin(t/12)
+          y_equation: 1*cos(t/12) #Diagonal, (-1,1)
+          z_equation: 6*cos(t/12)
+      - class: Delay
+      - class: Cast
+        orient_pitch: false
+        spell: slashbloodexecute
+        spell_parameters:
+          source_yaw_offset: (4-6)*22.5
+          iterations: 8*(12-12/5)
+          x_equation: 6*sin(t/12)
+          y_equation: 3*cos(t/12) #Diagonal, (-1,1)
+          z_equation: -6*cos(t/12)
+      - class: Cast
+        orient_pitch: false
+        spell: slashbloodexecute
+        spell_parameters:
+          source_yaw_offset: (6-4)*22.5
+          iterations: 8*(12-12/5)
+          x_equation: 6*sin(t/12)
+          y_equation: 4*cos(t/12) #Diagonal, (-1,1)
+          z_equation: -6*cos(t/12)
+      - class: Delay
+      - class: Cast
+        orient_pitch: false
+        spell: slashbloodexecute
+        spell_parameters:
+          source_yaw_offset: (4-6)*22.5
+          iterations: 8*(12-12/5)
+          x_equation: -6*sin(t/12)
+          y_equation: 2*cos(t/12) #Diagonal, (-1,1)
+          z_equation: 6*cos(t/12)
+      - class: Cast
+        orient_pitch: false
+        spell: slashbloodexecute
+        spell_parameters:
+          source_yaw_offset: (6-4)*22.5
+          iterations: 8*(12-12/5)
+          x_equation: 6*sin(t/12)
+          y_equation: 4*cos(t/12) #Diagonal, (-1,1)
+          z_equation: 6*cos(t/12)
+      - class: Cast
+        orient_pitch: false
+        spell: slashbloodexecute
+        spell_parameters:
+          source_yaw_offset: 0
+          source_pitch_offset: (4-8)*22.5
+          iterations: 8*(12-12/5)
+          x_equation: 6*sin(t/10)
+          y_equation: 6*cos(t/10)
+          z_equation: 0cos(t/10)
+  effects:
+    cast:
+      - location: target
+        effectlib:
+           class: Modified
+           duration: $warmup
+           parameters:
+               radius: "(t/i) * -4 + 4"
+           effect:
+             class: Sphere
+             particles: 4
+             particle_offset_x: 0.3
+             particle_offset_z: 0.3
+             particle_offset_y: 0.6
+             offset: 0,-0.5,0
+             particle: dust_color_transition
+             particle_size: 1
+             color: "#EE4B2B"
+             to_color: "#8b0000"
+             update_locations: true
+  parameters:
+    warmup: 2000
+    target: self
+    delay: 125
+    cooldown: 10000

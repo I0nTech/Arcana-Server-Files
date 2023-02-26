@@ -3,29 +3,20 @@ slash:
   description: Slash an enemy, horizontally
   icon: diamond_sword
   actions:
-    none:
     cast:
     - class: ChangeContext
-      source_yaw_offset: (4-4)*22.5 #Control of angle
       actions:
       - class: Equation
-        orient: true
-        orient_pitch: true
-        iterations: 4*(8-8/5) #1 is 45 degrees, 4 is 180 degrees, 8 is 360
-        x_equation: 3*sin(t/8)
-        y_equation: 1*cos(t/8) #Diagonal, (-1,1)
-        z_equation: 3*cos(t/8)
         actions:
           - class: PlayEffects
             effects: slash
           - class: Asynchronous
             actions:
               - class: CustomProjectile
-                miss_effects: slashend
+                miss_effects: none
                 tick_effects: none
                 actions:
                   - class: Damage
-                  - class: Velocity
           - class: Skip
             skip: $skip
             actions:
@@ -38,19 +29,22 @@ slash:
         sound_volume: 2
         sound_pitch: 1.2
     none:
-    slashend:
-      - location: target
-        particle: electric_spark
-        particle_count: 1
-        particle_data: 0
-        particle_offset: 0
     slash:
       - location: target
         effectlib:
-          duration: 100
+          duration: 150
           class: Equation
-          x_equation: -(1/(t/2+1))
-          particle: crit_magic
+          auto_orient: true
+          x_equation: -(0.5*sin(t/5)-0.5)
+          particle: electric_spark
+          particles: 3
+      - location: target
+        effectlib:
+          duration: 150
+          class: Equation
+          auto_orient: true
+          x_equation: -(1*sin(t/5)-1)
+          particle: redstone
           particles: 3
     hit_entity:
       - location: target
@@ -67,14 +61,20 @@ slash:
         sound_pitch: 2
         sound_volume: 0.2
   parameters:
+    orient: true
+    orient_pitch: true
+    iterations: 5*(12-12/5) #1 is 45 degrees, 4 is 180 degrees, 8 is 360
+    x_equation: 5*sin(t/12)
+    y_equation: 0*cos(t/12) #Diagonal, (-1,1)
+    z_equation: 5*cos(t/12)
+    source_yaw_offset: (5-4)*22.5 #Control of angle
+
     target: none
-    source_location: body
-    range: 3
+    skip: 6
+    source_location: head
+    range: 5
     damage: 6
-    push: 1
-    direction: 0,0.2,0
-    skip: 8
     velocity: 1000
     hit_count: 3
     hitbox: true
-    hitbox_size: 0.5
+    hitbox_size: 0.2

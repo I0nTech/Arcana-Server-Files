@@ -1,0 +1,124 @@
+slashbloodexecute:
+  name: Execution
+  description: Fling a crescent arc of blood
+  icon: stick
+  actions:
+    cast:
+    - class: ChangeContext
+      actions:
+      - class: Equation
+        actions:
+          - class: Asynchronous
+            actions:
+              - class: PlayEffects
+                effects: slash
+              - class: CustomProjectile
+                miss_effects: none
+                actions:
+                  - class: Damage
+                  - class: CheckHealth
+                    max_health: 20
+                    as_percentages: true
+                    actions:
+                      - class: Kill
+                      - class: PlayEffects
+                        effects: execute
+                      - class: ChangeContext
+                        target_caster: true
+                        actions:
+                          - class: Modifier
+                            duration: 15000
+                            add_modifiers:
+                              - bloodboost
+                          - class: Heal
+                            percentage: 0.2
+                  - class: BreakBlock
+          - class: Skip
+            skip: $skip
+            actions:
+            - class: Delay
+              delay: 1
+
+  effects:
+    cast:
+      - location: origin
+        sound: entity_wither_shoot
+        sound_volume: 2
+        sound_pitch: 2
+    none:
+    test:
+      - location: target
+        particle: electric_spark
+        particle_count: 1
+        particle_offset: 0
+    slash:
+      - location: target
+        effectlib:
+          duration: 150
+          class: Equation
+          auto_orient: true
+          x_equation: -(0.75*sin(t/5)-0.75)
+          particle: block_dust
+          material: redstone_block
+          particles: 3
+      - location: target
+        effectlib:
+          duration: 150
+          class: Equation
+          auto_orient: true
+          x_equation: -(1.5*sin(t/5)-1.5)
+          particle: dust_color_transition
+          particle_size: 1
+          color: "#EE4B2B"
+          to_color: "#8b0000"
+          particles: 3
+    execute:
+      - location: target
+        particle: explosion_large
+        particle_count: 1
+        particle_offset: 0
+      - location: target
+        particle: soul
+        particle_count: 12
+        particle_data: 0.6
+        particle_offset: 0
+      - location: target
+        sound: entity_wither_skeleton_death
+        sound_pitch: 1.5
+        sound_volume: 2
+    hit_entity:
+      - location: target
+        particle: block_dust
+        particle_offset: 0
+        particle_count: 2
+        material: redstone_block
+      - location: target
+        sound: entity_player_attack_crit
+        sound_pitch: 1.5
+        sound_volume: 0.2
+      - location: target
+        sound: entity_player_attack_knockback
+        sound_pitch: 2
+        sound_volume: 0.2
+  parameters:
+    orient: true
+    orient_pitch: true
+    source_yaw_offset: (6-4)*22.5 #Control of angle
+    source_pitch_offset: 0
+    iterations: 6*(12-12/5) #1 is 45 degrees, 4 is 180 degrees, 8 is 360
+    x_equation: 6*sin(t/12)
+    y_equation: 0cos(t/12) #Diagonal, (-1,1)
+    z_equation: 6*cos(t/12)
+    undo: 3000
+    undo_speed: 8
+
+    target: none
+    target_type: Damageable
+    source_location: body
+    skip: 6
+    damage: $attack_damage+0.5*max(0,$sharpness-1)+min($sharpness,1)
+    range: 6
+    velocity: 2000
+    hit_count: 3
+    hitbox: true
+    hitbox_size: 0.2

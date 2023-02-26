@@ -64,7 +64,6 @@ arrow_regular:
     no_damage_ticks: 0
     velocity: 64*bowpull
     gravity: 0.017/bowpull
-    reflect_count: 2
     damage: bowpull*(rand(7,9) + power*1.5)
     magic_damage: false
   costs:

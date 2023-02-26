@@ -5,9 +5,11 @@ diamondpickaxethrow:
     actions:
         cast:
         - class: ChangeContext
-          source_offset: 0,-0.7,0
+          source_offset: 0,0,0
           actions:
           - class: ArmorStandProjectile
+            orient_right_arm: true
+            
             actions:
             - class: Damage
     effects:
@@ -53,10 +55,9 @@ diamondpickaxethrow:
         range: 32
         cooldown: 5000
         reorient: true
-        location_offset: 1,0,0
         right_arm_transform:
             x: 0
-            y: "3*(t/i)"
-            z: 0
+            y: 0
+            z: -1
     costs:
         mana: 80

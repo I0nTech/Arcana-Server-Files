@@ -1,0 +1,75 @@
+bloodorb:
+  name: Blood Orb
+  description: Sacrifice health to throw a orb of cursed blood, weakening and damaging opponents
+  icon: stick
+  actions:
+    cast:
+    - class: ChangeContext
+      target_caster: true
+      actions:
+        - class: Damage
+          percentage: 0.1
+          damage_type: bleed
+        - class: Velocity
+          direction: 0,0,0
+    - class: CustomProjectile
+      actions:
+        - class: Damage
+        - class: Modifier
+        - class: PlayEffects
+          effects: bleed
+  effects:
+    cast:
+      - location: origin
+        sound: magic.burn
+    tick:
+      - location: target
+        particle: dust_color_transition
+        color: "#ff0000"
+        to_color: "#8b0000"
+        particle_count: 1
+        particle_offset: 0.1
+      - location: target
+        particle: spell_mob
+        color: "#8b0000"
+        particle_count: 1
+        particle_offset: 0
+      - location: target
+        particle: spell_mob_ambient
+        color: "#000000"
+        particle_count: 1
+        particle_offset: 0
+    hit:
+      - location: target
+        particle: block_dust
+        material: redstone_block
+        particle_count: 8
+        particle_offset: 0.3
+    bleed:
+      - location: target
+        effectlib:
+          class: Trace
+          duration: $duration
+          max_way_points: 2
+          particle: block_dust
+          material: redstone_block
+          particle_count: 2
+          particle_offset: 0
+          particle_data: 0.15
+  parameters:
+    interval: 2
+    target: none
+    target_type: Damageable
+    damage: 4
+    lifetime: 3000
+    duration: 4000
+    remove_on_finish: true
+    add_modifiers:
+      - weaken
+    hitbox: true
+    hitbox_size: 0.1
+    velocity: 64*0.5
+    gravity: 0.017/0.5
+    target_self_timeout: 100
+    no_damage_ticks: 0
+    cooldown: 3000

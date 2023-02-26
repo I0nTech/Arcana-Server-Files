@@ -405,6 +405,9 @@ meditate:
   stack: true
   attributes:
     manaregenboost: 30
+bloodboost:
+  strength:
+    magic: 0.2
 boost:
   strength:
     magic: 0.4
@@ -420,3 +423,6 @@ frozen:
   potion_effects:
     weakness: 2
     slow: 2
+weaken:
+  weakness:
+    magic: 0.4

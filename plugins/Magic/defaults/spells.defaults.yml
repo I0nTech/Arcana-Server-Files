@@ -1492,7 +1492,6 @@ arrow_regular:
     no_damage_ticks: 0
     velocity: 64*bowpull
     gravity: 0.017/bowpull
-    reflect_count: 2
     damage: bowpull*(rand(7,9) + power*1.5)
     magic_damage: false
   costs:
@@ -25162,8 +25161,7 @@ arcanehail:
               - class: Damage
   effects:
     summon:
-    - class: EffectSingle
-      location: target
+    - location: target
       effectlib:
         class: Modified
         duration: $warmup
@@ -25822,6 +25820,550 @@ blizzard:
     cooldown: 30000
   costs:
     mana: 200
+bloodbath:
+  name: Blood Bath
+  description: Cover an area with your blood, dealing damage to those caught inside
+    and pulling them towards the center
+  icon: stick
+  actions:
+    cast:
+    - class: ChangeContext
+      target_caster: true
+      actions:
+      - class: Damage
+        percentage: 0.1
+        damage_type: bleed
+      - class: Velocity
+        direction: 0,0,0
+    - class: ChangeContext
+      source_pitch: 180
+      actions:
+      - class: CustomProjectile
+        source_location: feet
+        range: 3
+        actions:
+        - class: PlayEffects
+          effects: start
+        - class: Delay
+        - class: PlayEffects
+          effect: bloodbath
+        - class: Repeat
+          repeat: 10
+          actions:
+          - class: PlayEffects
+            effects: pulse
+          - class: AreaOfEffect
+            radius: 8
+            actions:
+            - class: Damage
+            - class: Velocity
+              push: -0.4
+          - class: Delay
+            delay: 1000
+  effects:
+    start:
+    - location: target
+      effectlib:
+        class: Modified
+        duration: $warmup
+        parameters:
+          radius: (t/i) * 8 + 0.1
+        effect:
+          class: Vortex
+          particle_count: 1
+          grow: 0
+          helixes: 12
+          particle: dust_color_transition
+          color: '#ff0000'
+          to_color: '#8b0000'
+          update_locations: false
+          update_directions: false
+          particle_data: 0
+          offset: 0,0.1,0
+          pitch: 90
+    bloodbath:
+    - class: EffectSingle
+      location: target
+      target_location: hit
+      effectlib:
+        class: Modified
+        duration: $duration
+        period: 1
+        parameters:
+          radius: (t/i)+8
+          rotation: t/6
+        effect:
+          class: Helix
+          particle: dust_color_transition
+          color: '#ff0000'
+          to_color: '#8b0000'
+          particle_offset_y: 0.2
+          particles: 20
+          strands: 3
+          curve: -2
+          pitch: -90
+          yaw: 0
+          offset: 0,0.5,0
+          update_locations: false
+          update_directions: false
+    pulse:
+    - location: target
+      effectlib:
+        class: Modified
+        duration: 1000
+        parameters:
+          radius: (t/i) + 8
+        effect:
+          class: Vortex
+          particle_count: 1
+          grow: 0
+          helixes: 4
+          particle: spell_mob
+          color: '#8b0000'
+          update_locations: false
+          update_directions: false
+          particle_data: 0
+          offset: 0,0.1,0
+          pitch: 90
+  parameters:
+    target: none
+    warmup: 1000
+    duration: 10000
+    radius: 8
+    y_radius: 1
+    damage: 1
+bloodclone:
+  inherit: false
+  icon: testdummy
+  name: Blood Clones
+  description: Sacrifice health to summon a weak clone from your blood.
+  disable_mana_regeneration: true
+  requires: LibsDisguises
+  actions:
+    cast:
+    - class: ChangeContext
+      target_caster: true
+      actions:
+      - class: Damage
+        percentage: 0.1
+        damage_type: bleed
+      - class: Velocity
+        direction: 0,0,0
+    - class: ChangeContext
+      target_entity: true
+      actions:
+      - class: SpawnEntity
+        set_target: true
+        spawn:
+        - class: ModifyMaxHealth
+          max_health: 5
+        actions:
+        - class: PlayEffects
+          effects: burst
+        - class: ChangeContext
+          target_caster: true
+          actions:
+          - class: Stop
+  effects:
+    cast:
+    - sound: magic.vanish
+      sound_pitch: 1.5
+      sound_volume: 0.5
+    - sound: block_fire_extinguish
+      sound_pitch: 0.2
+      sound_volume: 0.6
+    burst:
+    - location: target
+      target_location: body
+      particle: block_dust
+      material: redstone_block
+      particle_count: 12
+      particle_offset_x: 0.3
+      particle_offset_y: 0.6
+      particle_offset_z: 0.3
+  parameters:
+    target: self
+    cooldown: 3000
+    duration: 10000
+    type: husk
+    silent: true
+    disguise_target: self
+    on_block: false
+    target_source: false
+  costs:
+    mana: 25
+bloodexecute:
+  name: Guillotine
+  description: Charge, then unleash a flurry of bloody slashes which execute enemies
+    below 20% Max HP.
+  icon: stick
+  actions:
+    cast:
+    - class: PotionEffect
+      duration: 2000
+      add_effects:
+        slow: 3
+    - class: Delay
+      delay: 2000
+    - class: Cast
+      spell: slashbloodexecute
+      spell_parameters:
+        orient_pitch: false
+        source_yaw_offset: (4-6)*22.5
+        iterations: 8*(12-12/5)
+        x_equation: 6*sin(t/12)
+        y_equation: 3*cos(t/12)
+        z_equation: -6*cos(t/12)
+    - class: Delay
+    - class: Cast
+      spell: slashbloodexecute
+      spell_parameters:
+        orient_pitch: false
+        source_yaw_offset: (6-4)*22.5
+        iterations: 8*(12-12/5)
+        x_equation: 6*sin(t/12)
+        y_equation: 1*cos(t/12)
+        z_equation: 6*cos(t/12)
+    - class: Delay
+    - class: Cast
+      spell: slashbloodexecute
+      spell_parameters:
+        orient_pitch: false
+        source_yaw_offset: (4-6)*22.5
+        iterations: 8*(12-12/5)
+        x_equation: 6*sin(t/12)
+        y_equation: 2cos(t/12)
+        z_equation: -6*cos(t/12)
+    - class: Delay
+    - class: Cast
+      spell: slashbloodexecute
+      spell_parameters:
+        orient_pitch: false
+        source_yaw_offset: (6-4)*22.5
+        iterations: 8*(12-12/5)
+        x_equation: 6*sin(t/12)
+        y_equation: 2*cos(t/12)
+        z_equation: 6*cos(t/12)
+    - class: Delay
+    - class: Cast
+      spell: slashbloodexecute
+      spell_parameters:
+        orient_pitch: false
+        source_yaw_offset: (6-4)*22.5
+        iterations: 8*(12-12/5)
+        x_equation: 6*sin(t/12)
+        y_equation: 1*cos(t/12)
+        z_equation: 6*cos(t/12)
+    - class: Delay
+    - class: Cast
+      orient_pitch: false
+      spell: slashbloodexecute
+      spell_parameters:
+        source_yaw_offset: (4-6)*22.5
+        iterations: 8*(12-12/5)
+        x_equation: 6*sin(t/12)
+        y_equation: 3*cos(t/12)
+        z_equation: -6*cos(t/12)
+    - class: Cast
+      orient_pitch: false
+      spell: slashbloodexecute
+      spell_parameters:
+        source_yaw_offset: (6-4)*22.5
+        iterations: 8*(12-12/5)
+        x_equation: 6*sin(t/12)
+        y_equation: 4*cos(t/12)
+        z_equation: -6*cos(t/12)
+    - class: Delay
+    - class: Cast
+      orient_pitch: false
+      spell: slashbloodexecute
+      spell_parameters:
+        source_yaw_offset: (4-6)*22.5
+        iterations: 8*(12-12/5)
+        x_equation: -6*sin(t/12)
+        y_equation: 2*cos(t/12)
+        z_equation: 6*cos(t/12)
+    - class: Cast
+      orient_pitch: false
+      spell: slashbloodexecute
+      spell_parameters:
+        source_yaw_offset: (6-4)*22.5
+        iterations: 8*(12-12/5)
+        x_equation: 6*sin(t/12)
+        y_equation: 4*cos(t/12)
+        z_equation: 6*cos(t/12)
+    - class: Cast
+      orient_pitch: false
+      spell: slashbloodexecute
+      spell_parameters:
+        source_yaw_offset: 0
+        source_pitch_offset: (4-8)*22.5
+        iterations: 8*(12-12/5)
+        x_equation: 6*sin(t/10)
+        y_equation: 6*cos(t/10)
+        z_equation: 0cos(t/10)
+  effects:
+    cast:
+    - location: target
+      effectlib:
+        class: Modified
+        duration: $warmup
+        parameters:
+          radius: (t/i) * -4 + 4
+        effect:
+          class: Sphere
+          particles: 4
+          particle_offset_x: 0.3
+          particle_offset_z: 0.3
+          particle_offset_y: 0.6
+          offset: 0,-0.5,0
+          particle: dust_color_transition
+          particle_size: 1
+          color: '#EE4B2B'
+          to_color: '#8b0000'
+          update_locations: true
+  parameters:
+    warmup: 2000
+    target: self
+    delay: 125
+    cooldown: 10000
+bloodleap:
+  name: Blood Leap
+  description: Sacrifice health to leap forwards and damage those you land on.
+  icon: feather{CustomModelData:18001}
+  icon_disabled: feather{CustomModelData:18002}
+  passive: true
+  toggleable: false
+  triggers:
+  - sneak
+  actions:
+    cast:
+    - class: CheckBlock
+      allowed: solid
+      source_location: feet
+      direction: down
+      fail:
+      - class: PlayEffects
+        effects: fail
+      - class: Delay
+        delay: 100
+      - class: ApplyCooldown
+        spells:
+        - bloodleap
+        clear: true
+      actions:
+      - class: ChangeContext
+        target_caster: true
+        actions:
+        - class: Damage
+          percentage: 0.1
+          damage_type: bleed
+        - class: Velocity
+          direction: 0,0,0
+      - class: ChangeContext
+        source_pitch_min: -15
+        source_pitch_max: -30
+        actions:
+        - class: Velocity
+        - class: FallProtection
+        - class: PlayEffects
+          effects: leap
+        - class: Interval
+          duration: $duration
+          interval: 1
+          actions:
+          - class: Retarget
+          - class: PlayEffects
+            effects: trace
+          - class: CheckTrigger
+            trigger: land
+            actions:
+            - class: PlayEffects
+              effects: circle
+            - class: AreaOfEffect
+              actions:
+              - class: Damage
+            - class: Stop
+  effects:
+    circle:
+    - location: target
+      target_location: feet
+      effectlib:
+        class: Modified
+        duration: 800
+        parameters:
+          radius: (t/i) * 2 + 3
+        effect:
+          class: Vortex
+          particle_count: 1
+          grow: 0
+          helixes: 8
+          particle: dust_color_transition
+          color: '#ff0000'
+          to_color: '#8b0000'
+          update_locations: false
+          update_directions: false
+          particle_data: 0
+          pitch: 90
+    trace:
+    - location: target
+      particle: dust_color_transition
+      color: '#ff0000'
+      to_color: '#8b0000'
+      particle_size: 5
+      particle_count: 1
+      particle_offset: 0
+  parameters:
+    quiet: true
+    duration: 4000
+    target: self
+    speed: 2
+    radius: 4
+    damage: 4
+    cooldown: 3000
+    source_use_movement_direction: true
+bloodlifesteal:
+  name: Lifesteal
+  description: Leech away blood from damaged enemies to heal your wounds
+  icon: glistering_melon_slice
+  passive: true
+  toggleable: false
+  triggers:
+  - trigger: damage_dealt
+    damage_type: magic
+  actions:
+    cast:
+    - class: ChangeContext
+      swap_source_and_target: true
+      source_pitch: 0
+      actions:
+      - class: CustomProjectile
+        target: last_damager
+        actions:
+        - class: Heal
+  effects:
+    cast:
+    - location: origin
+      sound: entity_mooshroom_shear
+    tick:
+    - location: target
+      particle: spell_mob
+      color: '#c71585'
+      particle_count: 3
+    - location: target
+      particle: dust_color_transition
+      color: '#ff0000'
+      to_color: '#8b0000'
+      particle_count: 1
+      particle_offset: 0.1
+    hit_entity:
+    - location: target
+      particle: heart
+      particle_count: 1
+    - sound: entity_experience_orb_pickup
+      sound_pitch: 5
+      sound_volume: 0.2
+  parameters:
+    source_location: body
+    target: damage_target
+    target_type: Player
+    ignore_blocks: true
+    ignore_hit_entities: true
+    spread: 3
+    lifetime: 2000
+    velocity: 10
+    amount: $damage_dealt/4
+    hitbox: true
+    hitbox_size: 0.2
+    track_target: false
+    cooldown: 500
+    velocity_transform:
+      orient: true
+      x: rand(-6,6) * cos(t)
+      y: 3
+      z: rand(-6,6) * sin(t)
+    plan:
+    - time: 400
+      track_speed: 0.4
+      track_target: true
+      velocity_transform: ''
+      velocity: 30
+bloodorb:
+  name: Blood Orb
+  description: Sacrifice health to throw a orb of cursed blood, weakening and damaging
+    opponents
+  icon: stick
+  actions:
+    cast:
+    - class: ChangeContext
+      target_caster: true
+      actions:
+      - class: Damage
+        percentage: 0.1
+        damage_type: bleed
+      - class: Velocity
+        direction: 0,0,0
+    - class: CustomProjectile
+      actions:
+      - class: Damage
+      - class: Modifier
+      - class: PlayEffects
+        effects: bleed
+  effects:
+    cast:
+    - location: origin
+      sound: magic.burn
+    tick:
+    - location: target
+      particle: dust_color_transition
+      color: '#ff0000'
+      to_color: '#8b0000'
+      particle_count: 1
+      particle_offset: 0.1
+    - location: target
+      particle: spell_mob
+      color: '#8b0000'
+      particle_count: 1
+      particle_offset: 0
+    - location: target
+      particle: spell_mob_ambient
+      color: '#000000'
+      particle_count: 1
+      particle_offset: 0
+    hit:
+    - location: target
+      particle: block_dust
+      material: redstone_block
+      particle_count: 8
+      particle_offset: 0.3
+    bleed:
+    - location: target
+      effectlib:
+        class: Trace
+        duration: $duration
+        max_way_points: 2
+        particle: block_dust
+        material: redstone_block
+        particle_count: 2
+        particle_offset: 0
+        particle_data: 0.15
+  parameters:
+    interval: 2
+    target: none
+    target_type: Damageable
+    damage: 4
+    lifetime: 3000
+    duration: 4000
+    remove_on_finish: true
+    add_modifiers:
+    - weaken
+    hitbox: true
+    hitbox_size: 0.1
+    velocity: 64*0.5
+    gravity: 0.017/0.5
+    target_self_timeout: 100
+    no_damage_ticks: 0
+    cooldown: 3000
 boom|3:
   parameters:
     entity_damage: 19
@@ -26179,7 +26721,7 @@ charge:
           target_caster: true
         - class: Interval
           interval: 1
-          duration: 750
+          duration: 1000
           actions:
           - class: ModifyVariable
           - class: PotionEffect
@@ -26210,21 +26752,6 @@ charge:
                 - class: Velocity
                   push: 4
   effects:
-    cast:
-    - class: EffectSingle
-      sound: entity_ender_dragon_growl
-      sound_pitch: 0.3
-      sound_volume: 0.5
-      location: origin
-      effectlib:
-        class: ConeEffect
-        iterations: 15
-        particle: sweep_attack
-        lengthGrow: 0.1
-        radiusGrow: 0.02
-        yaw_offset: 90
-        updateLocations: false
-        updateDirections: false
     charge:
     - location: target
       particle: explosion_large
@@ -26235,6 +26762,10 @@ charge:
       particle: explosion_normal
       particle_count: 3
       particle_data: 0.2
+    - location: origin
+      sound: entity_ravager_step
+      sound_pitch: 0.3
+      sound_volume: 0.5
     chargeend:
     - class: EffectSingle
       sound: item_shield_block
@@ -26251,7 +26782,7 @@ charge:
     target_type: Damageable
     potion_effects:
       damage_resistance: 3
-    duration: 2000
+    duration: 100
     range: 200
     velocity: 200
     hitbox: true
@@ -26846,9 +27377,10 @@ diamondpickaxethrow:
   actions:
     cast:
     - class: ChangeContext
-      source_offset: 0,-0.7,0
+      source_offset: 0,0,0
       actions:
       - class: ArmorStandProjectile
+        orient_right_arm: true
         actions:
         - class: Damage
   effects:
@@ -26894,11 +27426,10 @@ diamondpickaxethrow:
     range: 32
     cooldown: 5000
     reorient: true
-    location_offset: 1,0,0
     right_arm_transform:
       x: 0
-      y: 3*(t/i)
-      z: 0
+      y: 0
+      z: -1
   costs:
     mana: 80
 dive:
@@ -27093,9 +27624,9 @@ dolphindance:
 doublejump:
   name: Double Jump
   description: Jump once, jump twice, doesnt work in midair
+  mode: hidden
   icon: none
   inherit: base_passive
-  hidden: true
   triggers:
   - jump
   actions:
@@ -30269,12 +30800,13 @@ healbolt:
   name: Heal Bolt
   description: Healing
   icon: glistering_melon_slice
-  worth: 4000
   actions:
     cast:
     - class: ConeOfEffect
+      range: 30
       actions:
       - class: CustomProjectile
+        interval: 2
         actions:
         - class: Heal
   effects:
@@ -30289,9 +30821,8 @@ healbolt:
     - location: target
       particle: redstone
       particle_offset: 0.1
-      particle_count: 3
+      particle_count: 1
       color: '#00ff7f'
-      particle_size: 0.4
     hit_entity:
     - location: target
       particle: heart
@@ -30303,13 +30834,12 @@ healbolt:
     source_location: body
     fov: 360
     spread: 3
-    range: 32
-    velocity: 6
+    lifetime: 3000
+    velocity: 10
     percentage: 0.1
     hitbox: true
     hitbox_size: 0.1
-    target_type: Player
-    only_friendly: true
+    target_type: Damageable
     track_target: true
     velocity_transform:
       orient: false
@@ -30318,7 +30848,7 @@ healbolt:
       z: rand(-6,6) * sin(t)
     plan:
     - time: 400
-      track_speed: 0.6
+      track_speed: 0.4
       velocity_transform: ''
       velocity: 30
 healfield:
@@ -31339,8 +31869,12 @@ leap:
       source_location: feet
       direction: down
       fail:
+      - class: Message
+        message: failed
       - class: ApplyCooldown
-        clear: true
+        reduce: 10000
+        spells:
+        - leap
       actions:
       - class: ChangeContext
         source_pitch_min: -30
@@ -36597,26 +37131,18 @@ slash:
   actions:
     cast:
     - class: ChangeContext
-      source_yaw_offset: (4-4)*22.5
       actions:
       - class: Equation
-        orient: true
-        orient_pitch: true
-        iterations: 4*(8-8/5)
-        x_equation: 3*sin(t/8)
-        y_equation: 1*cos(t/8)
-        z_equation: 3*cos(t/8)
         actions:
         - class: PlayEffects
           effects: slash
         - class: Asynchronous
           actions:
           - class: CustomProjectile
-            miss_effects: slashend
+            miss_effects: none
             tick_effects: none
             actions:
             - class: Damage
-            - class: Velocity
         - class: Skip
           skip: $skip
           actions:
@@ -36628,19 +37154,22 @@ slash:
       sound: entity_player_attack_sweep
       sound_volume: 2
       sound_pitch: 1.2
-    slashend:
-    - location: target
-      particle: electric_spark
-      particle_count: 1
-      particle_data: 0
-      particle_offset: 0
     slash:
     - location: target
       effectlib:
-        duration: 100
+        duration: 150
         class: Equation
-        x_equation: -(1/(t/2+1))
-        particle: crit_magic
+        auto_orient: true
+        x_equation: -(0.5*sin(t/5)-0.5)
+        particle: electric_spark
+        particles: 3
+    - location: target
+      effectlib:
+        duration: 150
+        class: Equation
+        auto_orient: true
+        x_equation: -(1*sin(t/5)-1)
+        particle: redstone
         particles: 3
     hit_entity:
     - location: target
@@ -36657,17 +37186,22 @@ slash:
       sound_pitch: 2
       sound_volume: 0.2
   parameters:
+    orient: true
+    orient_pitch: true
+    iterations: 5*(12-12/5)
+    x_equation: 5*sin(t/12)
+    y_equation: 0*cos(t/12)
+    z_equation: 5*cos(t/12)
+    source_yaw_offset: (5-4)*22.5
     target: none
-    source_location: body
-    range: 3
+    skip: 6
+    source_location: head
+    range: 5
     damage: 6
-    push: 1
-    direction: 0,0.2,0
-    skip: 8
     velocity: 1000
     hit_count: 3
     hitbox: true
-    hitbox_size: 0.5
+    hitbox_size: 0.2
 slashbase:
   name: Base Slash
   description: Slash an enemy
@@ -36814,31 +37348,22 @@ slashbase:
     entity_hit_count: 999
 slashblood:
   name: Blood Slash
-  description: Slash an enemy, horizontally
+  description: Slash an enemy
   icon: diamond_sword
   actions:
     cast:
     - class: ChangeContext
-      source_yaw_offset: (5-4)*22.5
       actions:
       - class: Equation
-        orient: true
-        orient_pitch: true
-        iterations: 5*(8-8/5)
-        x_equation: 3*sin(t/8)
-        y_equation: cos(t/8)
-        z_equation: 3*cos(t/8)
         actions:
         - class: PlayEffects
           effects: slash
         - class: Asynchronous
           actions:
           - class: CustomProjectile
-            miss_effects: slash
-            tick_effects: none
+            miss_effects: none
             actions:
             - class: Damage
-            - class: Velocity
         - class: Skip
           skip: $skip
           actions:
@@ -36849,29 +37374,28 @@ slashblood:
     - location: origin
       sound: entity_player_attack_sweep
       sound_volume: 2
-      sound_pitch: 1.2
+      sound_pitch: 1
     slash:
     - location: target
       effectlib:
         duration: 100
         class: Equation
         auto_orient: true
-        x_equation: 0.5/(t+1)
+        x_equation: 0.5/(t+1)+0.5
         particle: electric_spark
         particle_size: 0.5
-        color: '#8b0000'
         particles: 4
     - location: target
       effectlib:
-        duration: 150
+        duration: 100
         class: Equation
         auto_orient: true
-        x_equation: (1/(t/3+1))
+        x_equation: 1/(t/3+1)+0.5
         particle: dust_color_transition
         particle_size: 1
-        color: '#8b0000'
-        to_color: '#FF0000'
-        particles: 4
+        color: '#EE4B2B'
+        to_color: '#8b0000'
+        particles: 8
     hit_entity:
     - location: target
       particle: block_dust
@@ -36887,18 +37411,321 @@ slashblood:
       sound_pitch: 2
       sound_volume: 0.2
   parameters:
+    orient: true
+    orient_pitch: true
+    source_yaw_offset: (5-4)*22.5
+    source_pitch_offset: 0
+    iterations: 5*(10-10/5)
+    x_equation: 3.5*sin(t/10)
+    y_equation: cos(t/10)
+    z_equation: 3.5*cos(t/10)
     target: none
+    target_type: Damageable
     source_location: body
     range: 3
-    damage: 4
-    direction: 0,0.5,0
-    push: 1
-    skip: 8
+    damage: $attack_damage+0.5*max(0,$sharpness-1)+min($sharpness,1)
+    skip: 12
     velocity: 1000
     hit_count: 3
     hitbox: true
     hitbox_size: 0.2
-    cooldown: 1000
+slashblood2:
+  inherit: slashblood
+  parameters:
+    source_yaw_offset: -(5-4)*22.5
+    x_equation: 3.5*sin(t/10)
+    y_equation: cos(t/10)
+    z_equation: -3.5*cos(t/10)
+  effects:
+    cast:
+    - location: origin
+      sound: entity_player_attack_sweep
+      sound_volume: 2
+      sound_pitch: 1
+slashblood3:
+  inherit: slashblood
+  parameters:
+    source_pitch_offset: (4-5)*22.5
+    source_yaw_offset: 0
+    x_equation: 3.5*sin(t/10)
+    y_equation: 3.5*cos(t/10)
+    z_equation: 2*cos(t/10)+0.75
+  effects:
+    cast:
+    - location: origin
+      sound: entity_player_attack_sweep
+      sound_volume: 2
+      sound_pitch: 1
+slashbloodcombo:
+  name: Bloody Slashes
+  description: Left-click to continue a 4-hit combo. The final swing launches a wave
+    of blood and resets this spell's cooldown.
+  icon: red_dye
+  actions:
+    cast:
+    - class: Cast
+      spell: slashblood
+    - class: Delay
+    - class: Interval
+      duration: 3000
+      interval: 1
+      actions:
+      - class: CheckTrigger
+        trigger: left_click
+        actions:
+        - class: ModifyVariable
+          variable: combo
+          value: combo+1
+        - class: Message
+          message: '%attribute_player_value_GENERIC_ATTACK_SPEED%'
+        - class: CheckRequirements
+          requirements:
+          - variables:
+            - variable: combo
+              value: 1
+          actions:
+          - class: Cast
+            spell: slashblood2
+          - class: Delay
+        - class: CheckRequirements
+          requirements:
+          - variables:
+            - variable: combo
+              value: 2
+          actions:
+          - class: Cast
+            spell: slashblood3
+          - class: Delay
+        - class: CheckRequirements
+          requirements:
+          - variables:
+            - variable: combo
+              min: 2
+          actions:
+          - class: Cast
+            spell: slashbloodfinal
+          - class: Delay
+          - class: ApplyCooldown
+            clear: true
+            spells:
+            - slashbloodcombo
+          - class: Stop
+  effects: []
+  parameters:
+    target: self
+    delay: 1/%attribute_player_value_GENERIC_ATTACK_SPEED%*1000
+    cooldown: 4000
+slashbloodexecute:
+  name: Execution
+  description: Fling a crescent arc of blood
+  icon: stick
+  actions:
+    cast:
+    - class: ChangeContext
+      actions:
+      - class: Equation
+        actions:
+        - class: Asynchronous
+          actions:
+          - class: PlayEffects
+            effects: slash
+          - class: CustomProjectile
+            miss_effects: none
+            actions:
+            - class: Damage
+            - class: CheckHealth
+              max_health: 20
+              as_percentages: true
+              actions:
+              - class: Kill
+              - class: PlayEffects
+                effects: execute
+              - class: ChangeContext
+                target_caster: true
+                actions:
+                - class: Modifier
+                  duration: 15000
+                  add_modifiers:
+                  - bloodboost
+                - class: Heal
+                  percentage: 0.2
+            - class: BreakBlock
+        - class: Skip
+          skip: $skip
+          actions:
+          - class: Delay
+            delay: 1
+  effects:
+    cast:
+    - location: origin
+      sound: entity_wither_shoot
+      sound_volume: 2
+      sound_pitch: 2
+    test:
+    - location: target
+      particle: electric_spark
+      particle_count: 1
+      particle_offset: 0
+    slash:
+    - location: target
+      effectlib:
+        duration: 150
+        class: Equation
+        auto_orient: true
+        x_equation: -(0.75*sin(t/5)-0.75)
+        particle: block_dust
+        material: redstone_block
+        particles: 3
+    - location: target
+      effectlib:
+        duration: 150
+        class: Equation
+        auto_orient: true
+        x_equation: -(1.5*sin(t/5)-1.5)
+        particle: dust_color_transition
+        particle_size: 1
+        color: '#EE4B2B'
+        to_color: '#8b0000'
+        particles: 3
+    execute:
+    - location: target
+      particle: explosion_large
+      particle_count: 1
+      particle_offset: 0
+    - location: target
+      particle: soul
+      particle_count: 12
+      particle_data: 0.6
+      particle_offset: 0
+    - location: target
+      sound: entity_wither_skeleton_death
+      sound_pitch: 1.5
+      sound_volume: 2
+    hit_entity:
+    - location: target
+      particle: block_dust
+      particle_offset: 0
+      particle_count: 2
+      material: redstone_block
+    - location: target
+      sound: entity_player_attack_crit
+      sound_pitch: 1.5
+      sound_volume: 0.2
+    - location: target
+      sound: entity_player_attack_knockback
+      sound_pitch: 2
+      sound_volume: 0.2
+  parameters:
+    orient: true
+    orient_pitch: true
+    source_yaw_offset: (6-4)*22.5
+    source_pitch_offset: 0
+    iterations: 6*(12-12/5)
+    x_equation: 6*sin(t/12)
+    y_equation: 0cos(t/12)
+    z_equation: 6*cos(t/12)
+    undo: 3000
+    undo_speed: 8
+    target: none
+    target_type: Damageable
+    source_location: body
+    skip: 6
+    damage: $attack_damage+0.5*max(0,$sharpness-1)+min($sharpness,1)
+    range: 6
+    velocity: 2000
+    hit_count: 3
+    hitbox: true
+    hitbox_size: 0.2
+slashbloodfinal:
+  name: Blood Crescent
+  description: Fling a crescent arc of blood
+  icon: stick
+  actions:
+    cast:
+    - class: ChangeContext
+      actions:
+      - class: Equation
+        actions:
+        - class: Asynchronous
+          actions:
+          - class: PlayEffects
+            effects: slash
+          - class: CustomProjectile
+            miss_effects: none
+            actions:
+            - class: Damage
+            - class: BreakBlock
+        - class: Skip
+          skip: $skip
+          actions:
+          - class: Delay
+            delay: 1
+  effects:
+    cast:
+    - location: origin
+      sound: entity_player_attack_sweep
+      sound_volume: 2
+      sound_pitch: 1
+    test:
+    - location: target
+      particle: electric_spark
+      particle_count: 1
+      particle_offset: 0
+    slash:
+    - location: target
+      effectlib:
+        duration: 150
+        class: Equation
+        auto_orient: true
+        x_equation: -(0.75*sin(t/5)-0.75)
+        particle: block_dust
+        material: redstone_block
+        particles: 3
+    - location: target
+      effectlib:
+        duration: 150
+        class: Equation
+        auto_orient: true
+        x_equation: -(1.5*sin(t/5)-1.5)
+        particle: dust_color_transition
+        particle_size: 1
+        color: '#EE4B2B'
+        to_color: '#8b0000'
+        particles: 3
+    hit_entity:
+    - location: target
+      particle: block_dust
+      particle_offset: 0
+      particle_count: 2
+      material: redstone_block
+    - location: target
+      sound: entity_player_attack_crit
+      sound_pitch: 1.5
+      sound_volume: 0.2
+    - location: target
+      sound: entity_player_attack_knockback
+      sound_pitch: 2
+      sound_volume: 0.2
+  parameters:
+    orient: true
+    orient_pitch: true
+    source_yaw_offset: (4-6)*22.5
+    source_pitch_offset: 0
+    iterations: 6*(12-12/5)
+    x_equation: 6*sin(t/12)
+    y_equation: -1cos(t/12)-0.25
+    z_equation: -6*cos(t/12)
+    undo: 3000
+    undo_speed: 8
+    target: none
+    source_location: body
+    skip: 6
+    damage: $attack_damage*1.25+0.5*max(0,$sharpness-1)+min($sharpness,1)
+    range: 6
+    velocity: 2000
+    hit_count: 3
+    hitbox: true
+    hitbox_size: 0.2
 slashvert:
   name: Slash
   description: Slash an enemy, vertically
@@ -37894,47 +38721,51 @@ test5:
   cast_on_no_target: false
   actions:
     cast:
-    - class: CheckEntity
-      actions:
-      - class: Damage
-      - class: PlayEffects
-      ignore_result: false
+    - class: PlayEffects
+      effects: slash
   effects:
-    cast:
+    slash:
     - location: target
-      target_location: body
       effectlib:
-        class: Star
-        particle: redstone
-        color: '800080'
-        iterations: 1
-        particles: 20
-        inner_radius: 0.1
-        spike_height: 4
-    hit:
-    - location: target
-      target_location: body
-      particle: crit
-      particles: 30
-      particle_offset_x: 0.05
-      particle_offset_y: 0.05
-      particle_offset_z: 0.05
-      iterations: 1
-    - class: EffectSingle
-      sound: magic.zap
-      sound_pitch: 4
-      sound_volume: 0.5
-      location: target
+        class: Equation
+        iterations: 5*(8-8/5)
+        x_equation: 4*sin(t/8)
+        y_equation: 0cos(t/8)
+        z_equation: 4*cos(t/8)
+        particle: electric_spark
+        particles: 1
   parameters:
-    range: 30
-    damage: 2
-    target: other_entity
-    target_type: Damageable
-    cooldown: 500
-    knockback_resistance: 1
-    hitbox_size: 0.5
-  costs:
-    mana: 50
+    target: self
+test6:
+  name: Blood Crescent
+  description: Fling a crescent arc of blood
+  icon: stick
+  actions:
+    cast:
+    - class: ChangeContext
+      source_yaw_offset: (8-4)*22.5
+      actions:
+      - class: Equation
+        orient: true
+        orient_pitch: true
+        iterations: 8*(8-8/5)
+        x_equation: 3sin(t/8)
+        z_equation: 3cos(t/8)
+        actions:
+        - class: PlayEffects
+          effects: slash
+  effects:
+    slash:
+    - location: target
+      particle: end_rod
+      particle_count: 0
+      particle_offset_x: 0
+      particle_offset_y: 1
+      particle_offset_z: 0
+      speed: 1
+      particle_data: 0.7
+  parameters:
+    range: 0
 testmenu:
   parameters:
     auto_close: true

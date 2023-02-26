@@ -1,10 +1,10 @@
 id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
 name: IonTech
-created: 1676434486229
-updated: 1676767347957
-last_cast: 1676767343758
+created: 1677174003998
+updated: 1677285169762
+last_cast: 1677285166785
 cooldown_expiration: 0
-last_death_location: -392.04747652810414,65.0,159.6167222192853,world,7.939453,-1.4796867
+last_death_location: -389.69999998807907,64.0,164.69999998807907,world,-158.96124,15.816469
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -17,273 +17,247 @@ brush:
 undo:
   37bd7de3-453b-4a7e-a2ac-a38127258ab0: []
 spells:
-  manamines:
-    cast_count: 15
-    last_cast: 1676490417055
+  bloodleap:
+    cast_count: 33
+    last_cast: 1677284784934
     last_earn: 0
-    cooldown_expiration: 1676483528183
+    cooldown_expiration: 1677284787934
     charges: 0.0
-  critical:
-    cast_count: 10
-    last_cast: 1676483675429
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  lore:
-    cast_count: 5
-    last_cast: 1676492019510
+  slashblood3:
+    cast_count: 336
+    last_cast: 1677285041936
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  anvil:
-    cast_count: 2
-    last_cast: 1676586869231
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  channel:
-    cast_count: 76
-    last_cast: 1676660436293
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  localrain:
-    cast_count: 2
-    last_cast: 1676491777093
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  slashvert:
-    cast_count: 85
-    last_cast: 1676767221357
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  manabolt:
-    cast_count: 166
-    last_cast: 1676659439693
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  mossysiphon:
+  repair:
     cast_count: 0
-    last_cast: 1676590954784
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  arcanemissiles:
-    cast_count: 2
-    last_cast: 1676491261489
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  controlsmenu:
-    cast_count: 2
-    last_cast: 1676492085495
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  slashbase:
-    cast_count: 29
-    last_cast: 1676664148544
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  manablast:
-    cast_count: 52
-    last_cast: 1676660436293
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  wound:
+  backup:
     cast_count: 0
-    last_cast: 1676592420138
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  laser:
-    cast_count: 3
-    last_cast: 1676492024311
+  slashblood2:
+    cast_count: 379
+    last_cast: 1677285039735
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  eat_food:
-    cast_count: 1
-    last_cast: 1676490431535
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  powerorb:
+  debugger:
     cast_count: 0
-    last_cast: 1676652542454
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  totem:
-    cast_count: 90
-    last_cast: 1676664548577
+  healbolt:
+    cast_count: 23
+    last_cast: 1677283805685
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  progressmenu:
-    cast_count: 4
-    last_cast: 1676492134032
+  heal:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  slashbloodfinal:
+    cast_count: 258
+    last_cast: 1677284995034
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  dive:
+    cast_count: 26
+    last_cast: 1677285144633
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  supergather:
+    cast_count: 0
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   manashot:
-    cast_count: 124
-    last_cast: 1676587657164
+    cast_count: 60
+    last_cast: 1677285166785
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  magicshield:
-    cast_count: 4
-    last_cast: 1676664121041
+  bloodclone:
+    cast_count: 1
+    last_cast: 1677277215160
     last_earn: 0
-    cooldown_expiration: 1676664137041
+    cooldown_expiration: 0
     charges: 0.0
-  electrosurge:
+  slashbloodexecute:
+    cast_count: 150
+    last_cast: 1677284654538
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  phase:
     cast_count: 0
-    last_cast: 1676739289468
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  healfield:
+  superbroom:
     cast_count: 0
-    last_cast: 1676654727602
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
+    charges: 0.0
+  charge:
+    cast_count: 67
+    last_cast: 1677285036486
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  levitate:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  slashbloodcombo:
+    cast_count: 411
+    last_cast: 1677285038530
+    last_earn: 0
+    cooldown_expiration: 1677285042530
     charges: 0.0
   arcanemeteor:
-    cast_count: 3
-    last_cast: 1676485520095
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  magictrident:
     cast_count: 1
-    last_cast: 1676590959520
+    last_cast: 1677285125217
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  blast:
-    cast_count: 9
-    last_cast: 1676491215041
+  gather:
+    cast_count: 0
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  boon|4:
-    cast_count: 2
-    last_cast: 1676657211675
+  bloodorb:
+    cast_count: 18
+    last_cast: 1677283524031
     last_earn: 0
     cooldown_expiration: 0
+    charges: 0.0
+  superrepair:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  bloodlifesteal:
+    cast_count: 164
+    last_cast: 1677285165431
+    last_earn: 0
+    cooldown_expiration: 1677285165931
     charges: 0.0
   windslash:
-    cast_count: 7
-    last_cast: 1676586851610
+    cast_count: 0
+    last_cast: 1677284656080
     last_earn: 0
-    cooldown_expiration: 1676586854110
+    cooldown_expiration: 0
     charges: 0.0
   arcanehail:
     cast_count: 4
-    last_cast: 1676590933842
-    last_earn: 0
-    cooldown_expiration: 1676491260581
-    charges: 0.0
-  arcanebarrage:
-    cast_count: 1
-    last_cast: 1676485111813
+    last_cast: 1677285133681
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  arrow_regular:
-    cast_count: 168
-    last_cast: 1676659346987
+  phasebackup:
+    cast_count: 0
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  focusbolt:
-    cast_count: 22
-    last_cast: 1676659642140
+  bloodbath:
+    cast_count: 6
+    last_cast: 1677277216086
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  wandinstructions:
-    cast_count: 8
-    last_cast: 1676492200144
+  bloodexecute:
+    cast_count: 15
+    last_cast: 1677284651630
     last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  magneticshield:
-    cast_count: 5
-    last_cast: 1676666208778
-    last_earn: 0
-    cooldown_expiration: 0
+    cooldown_expiration: 1677284661630
     charges: 0.0
   slashblood:
-    cast_count: 283
-    last_cast: 1676767343759
+    cast_count: 411
+    last_cast: 1677285038530
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
-  arrow_bomb:
-    cast_count: 89
-    last_cast: 1676657206475
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  slash:
-    cast_count: 3448
-    last_cast: 1676767242757
-    last_earn: 0
-    cooldown_expiration: 0
-    charges: 0.0
-  locator:
+  testdummy:
     cast_count: 0
-    last_cast: 1676491779980
+    last_cast: 0
     last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  time:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  missile|4:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  blink|4:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  projectile:
+    cast_count: 10
+    last_cast: 1677176774291
+    last_earn: 1677176774291
     cooldown_expiration: 0
     charges: 0.0
 open_wand: false
 gave_welcome_wand: false
 resource_pack_preference: default
-data: {}
+data:
+  sp: 0.0
 properties:
   version: 7
 kits:
   start:
-    last_give: 1676434486371
+    last_give: 1677174004146
     given_items:
       iron_ingot:
         amount: 64
-        last_give: 1676434486371
+        last_give: 1677174004146
       bread:
         amount: 32
-        last_give: 1676434486371
+        last_give: 1677174004146
 classes:
   mage:
-    mana_timestamp: 1676767347873
-    mana: 240.0
+    mana_timestamp: 1677285168385
+    mana: 17.509975
     spells:
-    - boon
-    - lore
-    - slashvert
-    - manabolt
-    - slashbase
-    - manablast
-    - arrow_regular
-    - focusbolt
-    - laser
-    - magneticshield
-    - slashblood
-    - totem
-    - arrow_bomb
-    - slash
+    - bloodleap
+    - bloodlifesteal
+    - arcanehail
+    - bloodbath
+    - charge
+    - dive
+    - bloodorb
     - manashot
-    - magicshield
-    spell_levels:
-      boon: 4
+    - bloodclone
 transient_modifiers: {}
 active_class: mage
-health: 20.0
+health: 18.13793182373047

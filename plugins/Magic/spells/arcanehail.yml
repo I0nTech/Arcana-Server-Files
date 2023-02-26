@@ -37,8 +37,7 @@ arcanehail:
                   - class: Damage
   effects:
     summon:
-      - class: EffectSingle
-        location: target
+      - location: target
         effectlib:
            class: Modified
            duration: $warmup

@@ -2,12 +2,13 @@ healbolt:
   name: Heal Bolt
   description: Healing
   icon: glistering_melon_slice
-  worth: 4000
   actions:
     cast:
     - class: ConeOfEffect
+      range: 30
       actions:
       - class: CustomProjectile
+        interval: 2
         actions:
            - class: Heal
   effects:
@@ -22,9 +23,8 @@ healbolt:
       - location: target
         particle: redstone
         particle_offset: 0.1
-        particle_count: 3
+        particle_count: 1
         color: "#00ff7f"
-        particle_size: 0.4
     hit_entity:
     - location: target
       particle: heart
@@ -36,13 +36,12 @@ healbolt:
     source_location: body
     fov: 360
     spread: 3
-    range: 32
-    velocity: 6
+    lifetime: 3000
+    velocity: 10
     percentage: 0.1
     hitbox: true
     hitbox_size: 0.1
-    target_type: Player
-    only_friendly: true
+    target_type: Damageable
     track_target: true
     velocity_transform:
       orient: false
@@ -51,6 +50,6 @@ healbolt:
       z: rand(-6,6) * sin(t)
     plan:
     - time: 400
-      track_speed: 0.6
+      track_speed: 0.4
       velocity_transform: ''
       velocity: 30

@@ -1,6 +1,6 @@
 teleportenabled: true
 teleportauto: false
-godmode: true
+godmode: false
 muted: false
 jailed: false
 ip-address: 127.0.0.1
@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1676767347975
-  login: 1676766745016
+  logout: 1677285168389
+  login: 1677283725435
 money: '0'
 lastlocation:
   world: 37bd7de3-453b-4a7e-a2ac-a38127258ab0
@@ -31,8 +31,8 @@ last-account-name: IonTech
 logoutlocation:
   world: 37bd7de3-453b-4a7e-a2ac-a38127258ab0
   world-name: world
-  x: -445.788858466544
-  y: 65.0
-  z: 151.03687510600813
-  yaw: 105.69224548339844
-  pitch: -5.330543518066406
+  x: -355.18132938730776
+  y: 64.0
+  z: 138.87548799950252
+  yaw: -100.06298828125
+  pitch: 2.841592788696289

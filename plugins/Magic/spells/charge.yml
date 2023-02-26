@@ -15,7 +15,7 @@ charge:
               target_caster: true
             - class: Interval
               interval: 1
-              duration: 750
+              duration: 1000
               actions:
               - class: ModifyVariable
               - class: PotionEffect
@@ -46,21 +46,6 @@ charge:
                       - class: Velocity
                         push: 4
     effects:
-        cast:
-        -  class: EffectSingle
-           sound: entity_ender_dragon_growl
-           sound_pitch: 0.3
-           sound_volume: 0.5
-           location: origin
-           effectlib:
-             class: ConeEffect
-             iterations: 15
-             particle: sweep_attack
-             lengthGrow: 0.1
-             radiusGrow: 0.02
-             yaw_offset: 90
-             updateLocations: false
-             updateDirections: false
         charge:
         - location: target
           particle: explosion_large
@@ -71,6 +56,10 @@ charge:
           particle: explosion_normal
           particle_count: 3
           particle_data: 0.2
+        - location: origin
+          sound: entity_ravager_step
+          sound_pitch: 0.3
+          sound_volume: 0.5
         chargeend:
         -  class: EffectSingle
            sound: item_shield_block
@@ -87,7 +76,7 @@ charge:
         target_type: Damageable
         potion_effects:
           damage_resistance: 3
-        duration: 2000
+        duration: 100
         range: 200
         velocity: 200
         hitbox: true

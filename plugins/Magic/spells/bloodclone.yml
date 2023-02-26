@@ -1,0 +1,60 @@
+bloodclone:
+  inherit: false
+  icon: testdummy
+  name: Blood Clones
+  description: Sacrifice health to summon a weak clone from your blood.
+  disable_mana_regeneration: true
+  requires: LibsDisguises
+  actions:
+    cast:
+    - class: ChangeContext
+      target_caster: true
+      actions:
+        - class: Damage
+          percentage: 0.1
+          damage_type: bleed
+        - class: Velocity
+          direction: 0,0,0
+    - class: ChangeContext
+      target_entity: true
+      actions:
+      - class: SpawnEntity
+        set_target: true
+        spawn:
+        - class: ModifyMaxHealth
+          max_health: 5
+        actions:
+        - class: PlayEffects
+          effects: burst
+        - class: ChangeContext
+          target_caster: true
+          actions:
+          - class: Stop
+  effects:
+    cast:
+    - sound: magic.vanish
+      sound_pitch: 1.5
+      sound_volume: 0.5
+    - sound: block_fire_extinguish
+      sound_pitch: 0.2
+      sound_volume: 0.6
+    burst:
+      - location: target
+        target_location: body
+        particle: block_dust
+        material: redstone_block
+        particle_count: 12
+        particle_offset_x: 0.3
+        particle_offset_y: 0.6
+        particle_offset_z: 0.3
+  parameters:
+    target: self
+    cooldown: 3000
+    duration: 10000
+    type: husk
+    silent: true
+    disguise_target: self
+    on_block: false
+    target_source: false
+  costs:
+    mana: 25

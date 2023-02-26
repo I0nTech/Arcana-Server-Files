@@ -1,6 +1,3 @@
-# This is the key name of this spell
-# It must be unique across the server, and is used in configs and commands such as /mage, /wand and /mgive
-# to refer to this spell.
 leap:
     icon: feather{CustomModelData:18001}
     icon_disabled: feather{CustomModelData:18002}
@@ -15,8 +12,12 @@ leap:
           source_location: feet
           direction: down
           fail:
+            - class: Message
+              message: failed
             - class: ApplyCooldown
-              clear: true
+              reduce: 10000
+              spells:
+                - leap
           actions:
           - class: ChangeContext
             source_pitch_min: -30

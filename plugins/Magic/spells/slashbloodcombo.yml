@@ -1,0 +1,66 @@
+slashbloodcombo:
+  name: Bloody Slashes
+  description: "Left-click to continue a 4-hit combo. The final swing launches a wave of blood and resets this spell's cooldown."
+  icon: red_dye
+  actions:
+    cast:
+    - class: Cast
+      spell: slashblood
+    - class: Delay
+    - class: Interval
+      duration: 3000
+      interval: 1
+      actions:
+        - class: CheckTrigger
+          trigger: left_click
+          actions:
+          - class: ModifyVariable
+            variable: combo
+            value: combo+1
+#          - class: Message
+#            message: $combo
+          - class: Message
+            message: "%attribute_player_value_GENERIC_ATTACK_SPEED%"
+          - class: CheckRequirements
+            requirements:
+              - variables:
+                - variable: combo
+                  value: 1
+            actions:
+              - class: Cast
+                spell: slashblood2
+              - class: Delay
+#              - class: Message
+#                message: hit 1
+          - class: CheckRequirements
+            requirements:
+              - variables:
+                - variable: combo
+                  value: 2
+            actions:
+              - class: Cast
+                spell: slashblood3
+              - class: Delay
+ #             - class: Message
+ #               message: hit 2
+          - class: CheckRequirements
+            requirements:
+              - variables:
+                - variable: combo
+                  min: 2
+            actions:
+              - class: Cast
+                spell: slashbloodfinal
+#              - class: Message
+#                message: hit 3, greater than 3
+              - class: Delay
+              - class: ApplyCooldown
+                clear: true
+                spells:
+                - slashbloodcombo
+              - class: Stop
+  effects: []
+  parameters:
+    target: self
+    delay: 1/%attribute_player_value_GENERIC_ATTACK_SPEED%*1000
+    cooldown: 4000

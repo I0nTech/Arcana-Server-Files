@@ -1,0 +1,95 @@
+bloodleap:
+    name: Blood Leap
+    description: Sacrifice health to leap forwards and damage those you land on.
+    icon: feather{CustomModelData:18001}
+    icon_disabled: feather{CustomModelData:18002}
+    passive: true
+    toggleable: false
+    triggers:
+      - sneak
+    actions:
+        cast:
+        - class: CheckBlock
+          allowed: solid
+          source_location: feet
+          direction: down
+          fail:
+            - class: PlayEffects
+              effects: fail
+            - class: Delay
+              delay: 100
+            - class: ApplyCooldown
+              spells:
+                - bloodleap
+              clear: true
+          actions:
+            - class: ChangeContext
+              target_caster: true
+              actions:
+                - class: Damage
+                  percentage: 0.1
+                  damage_type: bleed
+                - class: Velocity
+                  direction: 0,0,0
+            - class: ChangeContext
+              source_pitch_min: -15
+              source_pitch_max: -30
+              actions:
+                - class: Velocity
+                - class: FallProtection
+                - class: PlayEffects
+                  effects: leap
+                - class: Interval
+                  duration: $duration
+                  interval: 1
+                  actions:
+                    - class: Retarget
+                    - class: PlayEffects
+                      effects: trace
+                    - class: CheckTrigger
+                      trigger: land
+                      actions:
+                        - class: PlayEffects
+                          effects: circle
+                        - class: AreaOfEffect
+                          actions:
+                            - class: Damage
+                        - class: Stop
+    effects:
+        circle:
+        - location: target
+          target_location: feet
+          effectlib:
+             class: Modified
+             duration: 800
+             parameters:
+               radius: "(t/i) * 2 + 3"
+             effect:
+               class: Vortex
+               particle_count: 1
+               grow: 0
+               helixes: 8
+               particle: dust_color_transition
+               color: "#ff0000"
+               to_color: "#8b0000"
+               update_locations: false
+               update_directions: false
+               particle_data: 0
+               pitch: 90
+        trace:
+        - location: target
+          particle: dust_color_transition
+          color: "#ff0000"
+          to_color: "#8b0000"
+          particle_size: 5
+          particle_count: 1
+          particle_offset: 0
+    parameters:
+        quiet: true
+        duration: 4000
+        target: self
+        speed: 2
+        radius: 4
+        damage: 4
+        cooldown: 3000
+        source_use_movement_direction: true
