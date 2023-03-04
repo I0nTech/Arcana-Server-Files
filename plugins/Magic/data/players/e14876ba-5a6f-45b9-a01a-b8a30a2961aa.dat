@@ -1,8 +1,8 @@
 id: e14876ba-5a6f-45b9-a01a-b8a30a2961aa
 name: IonTech
 created: 1677174003998
-updated: 1677285169762
-last_cast: 1677285166785
+updated: 1677778123364
+last_cast: 1677778107548
 cooldown_expiration: 0
 last_death_location: -389.69999998807907,64.0,164.69999998807907,world,-158.96124,15.816469
 fall_protection_count: 0
@@ -18,14 +18,14 @@ undo:
   37bd7de3-453b-4a7e-a2ac-a38127258ab0: []
 spells:
   bloodleap:
-    cast_count: 33
-    last_cast: 1677284784934
+    cast_count: 40
+    last_cast: 1677777780887
     last_earn: 0
-    cooldown_expiration: 1677284787934
+    cooldown_expiration: 0
     charges: 0.0
   slashblood3:
-    cast_count: 336
-    last_cast: 1677285041936
+    cast_count: 410
+    last_cast: 1677778106552
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -42,8 +42,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   slashblood2:
-    cast_count: 379
-    last_cast: 1677285039735
+    cast_count: 461
+    last_cast: 1677778105696
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -66,14 +66,14 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   slashbloodfinal:
-    cast_count: 258
-    last_cast: 1677284995034
+    cast_count: 318
+    last_cast: 1677778107360
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   dive:
-    cast_count: 26
-    last_cast: 1677285144633
+    cast_count: 27
+    last_cast: 1677777644547
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -84,8 +84,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   manashot:
-    cast_count: 60
-    last_cast: 1677285166785
+    cast_count: 61
+    last_cast: 1677776906889
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -96,8 +96,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   slashbloodexecute:
-    cast_count: 150
-    last_cast: 1677284654538
+    cast_count: 345
+    last_cast: 1677777924855
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -114,8 +114,8 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   charge:
-    cast_count: 67
-    last_cast: 1677285036486
+    cast_count: 69
+    last_cast: 1677777632950
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -126,10 +126,10 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   slashbloodcombo:
-    cast_count: 411
-    last_cast: 1677285038530
+    cast_count: 498
+    last_cast: 1677778104842
     last_earn: 0
-    cooldown_expiration: 1677285042530
+    cooldown_expiration: 0
     charges: 0.0
   arcanemeteor:
     cast_count: 1
@@ -156,10 +156,10 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   bloodlifesteal:
-    cast_count: 164
-    last_cast: 1677285165431
+    cast_count: 214
+    last_cast: 1677778107548
     last_earn: 0
-    cooldown_expiration: 1677285165931
+    cooldown_expiration: 1677778108048
     charges: 0.0
   windslash:
     cast_count: 0
@@ -180,26 +180,32 @@ spells:
     cooldown_expiration: 0
     charges: 0.0
   bloodbath:
-    cast_count: 6
-    last_cast: 1677277216086
+    cast_count: 33
+    last_cast: 1677778067237
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   bloodexecute:
-    cast_count: 15
-    last_cast: 1677284651630
+    cast_count: 34
+    last_cast: 1677777921939
     last_earn: 0
-    cooldown_expiration: 1677284661630
+    cooldown_expiration: 1677777931939
     charges: 0.0
   slashblood:
-    cast_count: 411
-    last_cast: 1677285038530
+    cast_count: 498
+    last_cast: 1677778104842
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
   testdummy:
     cast_count: 0
     last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  slash:
+    cast_count: 10
+    last_cast: 1677776831794
     last_earn: 0
     cooldown_expiration: 0
     charges: 0.0
@@ -246,8 +252,8 @@ kits:
         last_give: 1677174004146
 classes:
   mage:
-    mana_timestamp: 1677285168385
-    mana: 17.509975
+    mana_timestamp: 1677778122756
+    mana: 100.0
     spells:
     - bloodleap
     - bloodlifesteal
@@ -260,4 +266,4 @@ classes:
     - bloodclone
 transient_modifiers: {}
 active_class: mage
-health: 18.13793182373047
+health: 20.0

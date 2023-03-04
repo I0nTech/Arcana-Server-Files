@@ -37381,9 +37381,8 @@ slashblood:
         duration: 100
         class: Equation
         auto_orient: true
-        x_equation: 0.5/(t+1)+0.5
+        x_equation: 0.5/(t/3+1)+0.5
         particle: electric_spark
-        particle_size: 0.5
         particles: 4
     - location: target
       effectlib:
@@ -37449,7 +37448,7 @@ slashblood3:
     source_yaw_offset: 0
     x_equation: 3.5*sin(t/10)
     y_equation: 3.5*cos(t/10)
-    z_equation: 2*cos(t/10)+0.75
+    z_equation: 0*cos(t/10)
   effects:
     cast:
     - location: origin
