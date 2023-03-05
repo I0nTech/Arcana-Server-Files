@@ -38765,6 +38765,33 @@ test6:
       particle_data: 0.7
   parameters:
     range: 0
+test8:
+  name: Blood Crescent
+  description: Fling a crescent arc of blood
+  icon: stick
+  actions:
+    cast:
+    - class: PlayEffects
+      effects: circle
+  effects:
+    circle:
+    - location: origin
+      effectlib:
+        class: Vortex
+        particle: end_rod
+        radius: 4
+        particles: 20
+        particle_count: 0
+        particle_offset_x: 0
+        particle_offset_y: 1
+        particle_offset_z: 0
+        particle_data: 1
+        angular_velocity_x: 0
+        angular_velocity_y: 0
+        angular_velocity_z: 0
+        pitch: 0
+  parameters:
+    range: 0
 testmenu:
   parameters:
     auto_close: true
