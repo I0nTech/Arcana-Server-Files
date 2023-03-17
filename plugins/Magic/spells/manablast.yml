@@ -39,7 +39,7 @@ manablast:
       fire:
       - sound: item_axe_scrape
         sound_pitch: 2
-        sound_volume: 0.5
+        sound_volume: 1
         color_override: color
       tick:
       - location: target
@@ -92,7 +92,6 @@ manablast:
     range: 48
     velocity: 60
     gravity: 0.025
-    drag: 0.3
     hitbox: true
     hitbox_size: 0.5
     damage_type: magic

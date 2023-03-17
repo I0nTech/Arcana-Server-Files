@@ -1,6 +1,6 @@
 meditate:
   name: Meditate
-  description: Channel, increasing your Mana Recharge by 30% for the next 20 seconds.
+  description: Channel, then apply a buff increasing your Mana Recharge rate by 25%.
   icon: levitate
   icon_disabled: levitate
   actions:
@@ -44,7 +44,7 @@ meditate:
     bypass_pvp: true
     bypass_friendly_fire: true
     bypass_undo: true
-    duration: 20000
+    duration: 24000
     cooldown: 48000
   costs:
     mana: 25

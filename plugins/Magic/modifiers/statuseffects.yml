@@ -6,3 +6,35 @@ frozen:
   potion_effects:
     weakness: 2
     slow: 2
+channelling:
+  potion_effects:
+    slow: 4
+    jump: -1
+
+meditate:
+  stack: true
+  attributes:
+    manaregenboost: 25
+overcharge:
+  stack: true
+  attributes:
+    wandpower: 25
+
+boost:
+  stack: true
+  strength:
+    magic: 0.4
+weaken:
+  stack: true
+  weakness:
+    magic: 0.4
+
+bloodboost:
+  stack: true
+  strength:
+    magic: 0.2
+
+shielded:
+  stack: true
+  protection:
+    overall: 0.8

@@ -377,44 +377,6 @@ nosolid:
     superwalls:
       check_destructible: true
       destructible: '!solid'
-magicdamageboost:
-  stack: true
-tundradebuff:
-  stack: true
-assassinbuff:
-  stack: true
-twilightbuff:
-  stack: true
-twilightbuffupgraded:
-  stack: true
-emeraldbuff:
-  stack: true
-fortifiedbuff:
-  stack: true
-upgfortifiedbuff:
-  stack: true
-manaregenboost(10%):
-  mana_regeneration_boost: 0.1
-manaregenboost(15%):
-  mana_regeneration_boost: 0.15
-channelling:
-  potion_effects:
-    slow: 4
-    jump: -1
-meditate:
-  stack: true
-  attributes:
-    manaregenboost: 30
-bloodboost:
-  strength:
-    magic: 0.2
-boost:
-  strength:
-    magic: 0.4
-shielded:
-  stack: true
-  protection:
-    overall: 0.8
 stunned:
   potion_effects:
     slow_digging: 4
@@ -423,6 +385,31 @@ frozen:
   potion_effects:
     weakness: 2
     slow: 2
+channelling:
+  potion_effects:
+    slow: 4
+    jump: -1
+meditate:
+  stack: true
+  attributes:
+    manaregenboost: 25
+overcharge:
+  stack: true
+  attributes:
+    wandpower: 25
+boost:
+  stack: true
+  strength:
+    magic: 0.4
 weaken:
+  stack: true
   weakness:
     magic: 0.4
+bloodboost:
+  stack: true
+  strength:
+    magic: 0.2
+shielded:
+  stack: true
+  protection:
+    overall: 0.8

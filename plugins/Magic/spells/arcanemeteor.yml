@@ -18,9 +18,10 @@ arcanemeteor:
             reflect_count: 0
             actions:
             - class: PlayEffects
-              effects: summon
+              effects: mark
             - class: CustomProjectile
               requires_target: true
+              lifetime: 10000
               actions:
               - class: AreaOfEffect
                 actions:
@@ -31,38 +32,63 @@ arcanemeteor:
                 - class: BreakBlock
                   ignore_result: true
     effects:
-      summon:
-      - location: target
-        effectlib:
-           class: Modified
-           duration: 1800
-           parameters:
-             radius: "(t/i) * 4 + 0.1"
-           effect:
-             class: Vortex
-             particle_count: 2
-             grow: 0
-             pitch: 90
-             offset: 0,0.2,0
-             particle: crit_magic
-             update_locations: false
-             update_directions: false
-             particle_data: 0
-      - sound: entity_illusioner_cast_spell
-        sound_pitch: 0.1
-        sound_volume: 0.8
-        delay: 0
-        location: both
-      - sound: entity_illusioner_cast_spell
-        sound_pitch: 0.6
-        sound_volume: 0.4
-        delay: 100
-        location: both
-      - sound: entity_illusioner_cast_spell
-        sound_pitch: 1.2
-        sound_volume: 0.2
-        delay: 200
-        location: both
+      mark:
+        - location: target
+          effectlib:
+            class: Modified
+            duration: 1500
+            period: 1
+            variable_a: $radius
+            parameters:
+              radius: "(t/i)*a"
+            effect:
+              class: Vortex
+              particle_count: 2
+              grow: 0
+              pitch: 90
+              offset: 0,0.2,0
+              particle: crit_magic
+              update_locations: false
+              update_directions: false
+              particle_data: 0
+        - location: target
+          effectlib:
+            class: Modified
+            duration: 1500
+            period: 1
+            variable_a: $radius
+            parameters:
+              radius: "(t/i)*1.2*a"
+            effect:
+              class: Circle
+              particle: nautilus
+              whole_circle: true
+              update_directions: false
+              update_locations: false
+              angular_velocity_x: 0
+              angular_velocity_z: 0
+              angular_velocity_y: 0
+              particle_offset: 0
+              particles: 4
+              particle_count: 1
+              pitch: 0
+              yaw: 45
+              offset: 0,0.2,0
+        - sound: entity_illusioner_cast_spell
+          sound_pitch: 0.1
+          sound_volume: 0.8
+          delay: 0
+          location: both
+        - sound: entity_illusioner_cast_spell
+          sound_pitch: 0.6
+          sound_volume: 0.4
+          delay: 100
+          location: both
+        - sound: entity_illusioner_cast_spell
+          sound_pitch: 1.2
+          sound_volume: 0.2
+          delay: 200
+          location: both
       none:
       tick:
       - location: target
@@ -126,7 +152,7 @@ arcanemeteor:
         speed: 1
         radius: 4
         range: 64
-        velocity: 30
+        velocity: 40
         target: other
         falling: true
         y_offset: 1

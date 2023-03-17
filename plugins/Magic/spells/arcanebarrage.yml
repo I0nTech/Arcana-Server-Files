@@ -1,6 +1,6 @@
 arcanebarrage:
   name: Arcane Barrage
-  description: "Launch a omnidirectional barrage of Arcane Spears at a targeted entity or location for 8 seconds, each dealing 6 Magic Damage. Number of spears launched scales with Wand Power."
+  description: "Launch a omnidirectional barrage of Arcane Spears at a targeted entity or location, each dealing 6 Magic Damage. Number of spears launched scales with Wand Power."
   category: arcane
   icon: arcanebarrage
   icon_disabled: arcanebarrage
@@ -18,8 +18,8 @@ arcanebarrage:
       hitbox_size: 1
       actions:
         - class: Interval
-          duration: 8000
-          interval: 200/(1+$wandpower/100)
+          duration: 2000
+          interval: 24/(1+$wandpower/100)
           actions:
           - class: Asynchronous
             actions:
@@ -36,106 +36,106 @@ arcanebarrage:
                #hit_on_miss: true
                 target: block
                 spread: 180
-                range: rand(12,18)
+                range: rand(18,24)
                 velocity: 1000
                 tick_effects: none
                 hit_effects: none
                 miss:
                       - class: ChangeContext
                         source_location: hit
-                        target_self: true
-                        random_target_offset: 2,2,2
+                        random_target_offset: 2,1,2
                         actions:
-                          - class: Delay
-                            delay: rand(0,2000)
                           - class: PlayEffects
                             effects: summon
                           - class: Delay
                             delay: $delay
+                          - class: PlayEffects
+                            effects: fire
                           - class: CustomProjectile
                             tick_effects: tick
                             velocity: 200
                             range: 48
                             reverse: true
-                            hitbox: true
-                            hitbox_size: 1
                             actions:
+                             - class: AreaOfEffect
+                               radius: 1
+                               actions:
                                   - class: Damage
                                     damage: 6
                                     no_damage_ticks: 0
-                                  - class: Velocity
-                                    push: 0.8
-                                    direction: 0,0.2,0
 
   effects:
-    summon:
-      - class: EffectSingle
-        location: target
-        effectlib:
-           class: Modified
-           duration: $delay
-           parameters:
-             radius: "(t/i) * 2 + 0.1"
-           effect:
-             class: Vortex
-             particle_count: 1
-             grow: 0
-             particle: crit_magic
-             update_locations: false
-             update_directions: false
-             particle_data: 0
-      - sound: entity_illusioner_cast_spell
-        sound_pitch: 0.1
-        sound_volume: 0.8
-        delay: 0
-        location: both
-      - sound: entity_illusioner_cast_spell
-        sound_pitch: 0.6
-        sound_volume: 0.4
-        delay: 100
-        location: both
-      - sound: entity_illusioner_cast_spell
-        sound_pitch: 1.2
-        sound_volume: 0.2
-        delay: 200
-        location: both
-    fire:
+      summon:
+        - class: EffectSingle
+          location: target
+          effectlib:
+             class: Modified
+             duration: $delay
+             parameters:
+               radius: "(t/i) * 2 + 0.1"
+             effect:
+               class: Vortex
+               particle_count: 1
+               grow: 0
+               particle: crit_magic
+               update_locations: false
+               update_directions: false
+               particle_data: 0
+        - sound: entity_illusioner_cast_spell
+          sound_pitch: 0.1
+          sound_volume: 0.8
+          delay: 0
+          location: both
+        - sound: entity_illusioner_cast_spell
+          sound_pitch: 0.6
+          sound_volume: 0.4
+          delay: 100
+          location: both
+        - sound: entity_illusioner_cast_spell
+          sound_pitch: 1.2
+          sound_volume: 0.2
+          delay: 200
+          location: both
+      fire:
       - sound: item_trident_return
-        sound_pitch: -1
-        sound_volume: 0.5
+        sound_pitch: 2
+        sound_volume: 0.9
         color_override: color
-    targeted:
+      tick:
       - location: target
         particle: dust_color_transition
-        target_location: body
-        requires_entity_target: true
-        particle_count: 3
-        particle_offset_x: 0.3
-        particle_offset_z: 0.3
-        particle_offset_y: 0.6
-    tick:
+        particle_offset: 0
+        particle_count: 1
+        particle_size: 1
+        color: "#ff00ff"
+        to_color: "#8b008b"
       - location: target
         particle: spell_witch
         particle_offset: 0
         particle_count: 1
-    none:
-    hit:
-      - location: target
-        particle: spell_witch
-        speed: 1
-        particle_data: 0.2
-        particle_offset: 0.1
-        offset: 0,0.5,0
-        particle_count: 6
-      - sound: item_trident_hit
-        sound_pitch: 1
-        sound_volume: 0.4
-        location: target
-    hit_entity:
-      - sound: entity_player_attack_knockback
-        sound_pitch: 1
-        sound_volume: 0.4
-        location: both
+        particle_data: 2
+      hit:
+        - location: target
+          particle: spell_witch
+          speed: 1
+          particle_data: 0.2
+          particle_offset: 0.1
+          offset: 0,0.5,0
+          particle_count: 6
+        - sound: item_trident_hit
+          sound_pitch: 1
+          sound_volume: 0.4
+          location: target
+      targeted:
+        - location: target
+          particle: dust_color_transition
+          target_location: body
+          requires_entity_target: true
+          particle_count: 3
+          particle_offset_x: 0.3
+          particle_offset_z: 0.3
+          particle_offset_y: 0.6
+      none:
   parameters:
     delay: 1000
     range: 48

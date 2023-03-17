@@ -1,0 +1,28 @@
+test9:
+  icon: diamond_sword{18102}
+  name: counter
+  actions:
+    cast:
+    - class: Repeat
+      actions:
+        - class: ModifyVariable
+          variable: count
+          value: $count+1
+          scope: cast
+        - class: Message
+          message: $count
+        - class: AreaOfEffect
+          radius: $count
+        - class: PlayEffects
+          effects: burst
+  effects:
+    burst:
+      - location: origin
+        effectlib:
+          class: Sphere
+          radius: $count
+          particle: electric_spark
+          particles: 12
+  parameters:
+    target: self
+    repeat: 12

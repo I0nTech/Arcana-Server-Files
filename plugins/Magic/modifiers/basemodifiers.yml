@@ -1,9 +1,0 @@
-channelling:
-  potion_effects:
-    slow: 4
-    jump: -1
-
-meditate:
-  stack: true
-  attributes:
-    manaregenboost: 30

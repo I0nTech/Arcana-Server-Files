@@ -1,28 +1,17 @@
 auralburst:
-  name: Aural Detonation
-  description: Anchor for 2 seconds, then erupt in a self-centered burst of Mana dealing 6x150% Attack Damage.
+  name: Aural Burst
+  description: Ward yourself with a veil of mana. Upon taking damage, unleash a self-centered blast of mana, dealing x damage and knocking away enemies
   icon: arcanestar
   icon_disabled: arcanestar
   category: arcane
   actions:
     cast:
-    - class: ChangeContext
-      target_self: true
-      target_caster: true
-      actions:
-      - class: Cast
-        spell: anchor
-        spell_parameters:
-          warmup: 2000
-    - class: Delay
-    - class: Retarget
-    - class: ChangeContext
-      target_caster: true
-      actions:
       - class: PlayEffects
         effects: burst
       - class: Repeat
         actions:
+        - class: ModifyVariable
+          variable: count
         - class: AreaOfEffect
           actions:
           - class: Damage
@@ -37,6 +26,7 @@ auralburst:
       sound_volume: 5
       sound_pitch: -2
       location: origin
+      color_override: color
       effectlib:
         class: Sphere
         radius: 1
@@ -45,10 +35,10 @@ auralburst:
         duration: 500
         iterations: 1
         particle: dust_color_transition
-        color_override: color
-        to_color: "#73FBD3"
+        to_color: "#ff00ff"
         offset: 0,-1,0
   parameters:
+    target: self
     warmup: 2000
     damage_type: magic
     damage: 3
@@ -57,8 +47,7 @@ auralburst:
     damage_max_distance: 12
     no_damage_ticks: 0
     target_type: Damageable
-    radius: 6
-    y_offset: 0.6
+    y_offset: 0.5
     cooldown: 15000
     living_entity_speed: 1
     push: 0.85

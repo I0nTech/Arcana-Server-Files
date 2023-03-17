@@ -1,19 +1,21 @@
 arcanehail:
   name: Arcane Hail
-  description: Summon arcane spears to fall from the sky for 8 seconds, each dealing 6 Magic Damage in a radius upon impact. Number of spears summoned scales with Wand Power.
+  description: Summon arcane spears to fall from the sky for 12 seconds, each dealing 6 Magic Damage in a radius upon impact. Number of spears summoned scales with Wand Power.
   category: arcane
   icon: arcanehail
   icon_disabled: arcanehail
   actions:
     cast:
     - class: Interval
-      duration: 8000
-      interval: 200/(1+$wandpower/100)
+      duration: 12000
+      interval: 50/(1+$wandpower/100)
       actions:
       - class: Asynchronous
         actions:
         - class: ChangeContext
           actions:
+            - class: PlayEffects
+              effects: summon
             - class: CustomProjectile
               requires_target: true
               target: block
@@ -24,9 +26,11 @@ arcanehail:
               range: 1000
               actions:
               - class: PlayEffects
-                effects: summon
+                effects: mark
             - class: Delay
               delay: $warmup
+            - class: PlayEffects
+              effects: fire
             - class: CustomProjectile
               requires_target: true
               target_self: true
@@ -36,63 +40,93 @@ arcanehail:
                   - class: Velocity
                   - class: Damage
   effects:
-    summon:
+      summon:
+        - location: target
+          effectlib:
+             class: Modified
+             duration: $warmup
+             parameters:
+               radius: "(t/i) * 2 + 0.1"
+             effect:
+               class: Vortex
+               particle_count: 1
+               grow: 0
+               particle: crit_magic
+               update_locations: false
+               update_directions: false
+               particle_data: 0
+               pitch: 90
+        - sound: entity_illusioner_cast_spell
+          sound_pitch: 0.1
+          sound_volume: 0.8
+          delay: 0
+          location: both
+        - sound: entity_illusioner_cast_spell
+          sound_pitch: 0.6
+          sound_volume: 0.4
+          delay: 100
+          location: both
+        - sound: entity_illusioner_cast_spell
+          sound_pitch: 1.2
+          sound_volume: 0.2
+          delay: 200
+          location: both
+      mark:
+        - location: target
+          effectlib:
+            class: Modified
+            duration: 400
+            period: 1
+            variable_a: $radius
+            parameters:
+              radius: "(t/i)*a + 0.2"
+            effect:
+              class: Circle
+              particle: nautilus
+              whole_circle: true
+              update_directions: false
+              update_locations: false
+              angular_velocity_x: 0
+              angular_velocity_z: 0
+              angular_velocity_y: 0
+              particle_offset: 0
+              particles: 4
+              particle_count: 1
+              pitch: 0
+              offset: 0,0.3,0
+      none: []
+      fire:
+      - sound: item_trident_return
+        sound_pitch: 2
+        sound_volume: 0.9
+        color_override: color
+      tick:
       - location: target
-        effectlib:
-           class: Modified
-           duration: $warmup
-           parameters:
-             radius: "(t/i) * 2 + 0.1"
-           effect:
-             class: Vortex
-             particle_count: 1
-             grow: 0
-             particle: crit_magic
-             update_locations: false
-             update_directions: false
-             particle_data: 0
-             pitch: 90
-             offset: 0,0.2,0
-      - sound: entity_illusioner_cast_spell
-        sound_pitch: 0.1
-        sound_volume: 0.8
-        delay: 0
-        location: both
-      - sound: entity_illusioner_cast_spell
-        sound_pitch: 0.6
-        sound_volume: 0.4
-        delay: 100
-        location: both
-      - sound: entity_illusioner_cast_spell
-        sound_pitch: 1.2
-        sound_volume: 0.2
-        delay: 200
-        location: both
-    none: []
-    tick:
+        particle: dust_color_transition
+        particle_offset: 0
+        particle_count: 1
+        particle_size: 1
+        color: "#ff00ff"
+        to_color: "#8b008b"
       - location: target
         particle: spell_witch
         particle_offset: 0
         particle_count: 1
-    hit:
-      - location: target
-        particle: spell_witch
-        speed: 1
-        particle_data: 0.2
-        particle_offset: 0.1
-        offset: 0,0.5,0
-        particle_count: 6
-      - sound: item_trident_hit
-        sound_pitch: 1
-        sound_volume: 0.4
-        location: target
-    hit_entity:
-      - sound: entity_player_attack_knockback
-        sound_pitch: 1
-        sound_volume: 0.4
-        location: target
+        particle_data: 2
+      hit:
+        - location: target
+          particle: spell_witch
+          speed: 1
+          particle_data: 0.2
+          particle_offset: 0.1
+          offset: 0,0.5,0
+          particle_count: 6
+        - sound: item_trident_hit
+          sound_pitch: 1
+          sound_volume: 0.4
+          location: target
   parameters:
-    target_offset: 0,30,0
+    target_offset: 0,25,0
     random_target_offset: 15,0,15
     source_pitch: 180
     source_at_target: true
@@ -106,7 +140,7 @@ arcanehail:
     damage_type: magic
     no_damage_ticks: 0
     damage: 6
-    warmup: 1000
+    warmup: 800
     range: 48
     cooldown: 24000
   costs:

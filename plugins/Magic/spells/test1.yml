@@ -9,7 +9,7 @@ test1:
     projectile:
     - location: origin
       effectlib:
-        class: EquationEffect
+        class: Equation
         particle: REDSTONE
         color: E224E8
         particles: 20

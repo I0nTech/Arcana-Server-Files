@@ -1,0 +1,66 @@
+overcharge:
+  name: Overcharge
+  description: Channel, then apply a buff increasing the power of your spells by 25%.
+  icon: levitate
+  icon_disabled: levitate
+  actions:
+    cast:
+      - class: ChangeContext
+        target_self: true
+        target_caster: true
+        actions:
+        - class: Cast
+          spell: channel
+          spell_parameters:
+            warmup: $warmup
+      - class: Delay
+      - class: PlayEffects
+        effects: buff
+      - class: Modifier
+        add_modifiers:
+          - overcharge
+        remove_on_finish: true
+      - class: Delay
+        delay: $duration
+  effects:
+    buff:
+      - location: origin
+        source_location: body
+        effectlib:
+          class: EquationEffect
+          xEquation: "0.5sin(0.3141 * 0.5t)"
+          yEquation: "0.5cos(0.2t)"
+          zEquation: "0.5cos(0.3141 * 0.5t)"
+          duration: $duration
+          particles: 3
+          particle: dust_color_transition
+          particle_size: 0.8
+          color: "#73FBD3"
+          to_color: "#6C2DC7"
+          cycle: true
+      - location: origin
+        source_location: body
+        effectlib:
+          class: EquationEffect
+          xEquation: "-0.5sin(0.3141 * 0.5t)"
+          yEquation: "0.5cos(0.2t)"
+          zEquation: "-0.5cos(0.3141 * 0.5t)"
+          duration: $duration
+          particles: 3
+          particle: dust_color_transition
+          particle_size: 0.8
+          color: "#73FBD3"
+          to_color: "#6C2DC7"
+          cycle: true
+  parameters:
+    warmup: 3000
+    target: self
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true
+    duration: 24000
+    cooldown: 48000
+  costs:
+    mana: 25

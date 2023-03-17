@@ -1,5 +1,0 @@
-shielded:
-  stack: true
-  protection:
-    overall: 0.8
-# Entity affected takes 80% less damage from all sources.

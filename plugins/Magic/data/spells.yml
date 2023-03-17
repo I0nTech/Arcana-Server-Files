@@ -44,10 +44,13 @@ superring:
   cast_count: 0
   last_cast: 0
 magicshield:
-  cast_count: 58546795222925312
+  cast_count: 4611686087146864640
   last_cast: 0
 bloodclone:
-  cast_count: 205832
+  cast_count: 210771968
+  last_cast: 0
+overcharge:
+  cast_count: 44
   last_cast: 0
 rubberize:
   cast_count: 0
@@ -65,7 +68,7 @@ Health_but_die:
   cast_count: 0
   last_cast: 0
 magictrident:
-  cast_count: 67108864
+  cast_count: 68719476736
   last_cast: 0
 dragonlightning:
   cast_count: 0
@@ -77,7 +80,7 @@ rainbowboots:
   cast_count: 0
   last_cast: 0
 arcanehail:
-  cast_count: -4410149934431469552
+  cast_count: 3458765201015325635
   last_cast: 0
 frostbiteupgraded:
   cast_count: 0
@@ -92,7 +95,7 @@ respawn:
   cast_count: 0
   last_cast: 0
 bloodleap:
-  cast_count: 2985967
+  cast_count: 3057630208
   last_cast: 0
 sponge:
   cast_count: 0
@@ -119,7 +122,7 @@ virus:
   cast_count: 0
   last_cast: 0
 arrow_fire:
-  cast_count: 50331648
+  cast_count: 51539607552
   last_cast: 0
 spshop:
   cast_count: 0
@@ -155,10 +158,10 @@ superphase:
   cast_count: 0
   last_cast: 0
 superbroom:
-  cast_count: 4096
+  cast_count: 4194304
   last_cast: 0
 charge:
-  cast_count: 272
+  cast_count: 278528
   last_cast: 0
 spawnershop:
   cast_count: 0
@@ -176,7 +179,7 @@ food:
   cast_count: 0
   last_cast: 0
 blast:
-  cast_count: 2415919104
+  cast_count: 2473901162496
   last_cast: 0
 stamina_of_gods:
   cast_count: 0
@@ -203,10 +206,10 @@ flowersellshop:
   cast_count: 0
   last_cast: 0
 arrowstorm:
-  cast_count: 633318697598976
+  cast_count: 648518346341351424
   last_cast: 0
 manamines:
-  cast_count: 6979321856
+  cast_count: 7146825580544
   last_cast: 0
 debugger:
   cast_count: 0
@@ -227,7 +230,7 @@ glider:
   cast_count: 0
   last_cast: 0
 fling:
-  cast_count: 8192
+  cast_count: 8388608
   last_cast: 0
 stun:
   cast_count: 0
@@ -251,16 +254,16 @@ powerorb:
   cast_count: 0
   last_cast: 0
 arrow_blink:
-  cast_count: 16777216
+  cast_count: 17179869184
   last_cast: 0
 trinketshop:
   cast_count: 0
   last_cast: 0
 slashbloodfinal:
-  cast_count: 20717729
+  cast_count: 21214954520
   last_cast: 0
 arrow_grapple:
-  cast_count: 720575940379279360
+  cast_count: 0
   last_cast: 0
 workbench:
   cast_count: 0
@@ -272,7 +275,7 @@ enchantwand:
   cast_count: 0
   last_cast: 0
 siphoningfield:
-  cast_count: 16384
+  cast_count: 16777216
   last_cast: 0
 tsukoyomi:
   cast_count: 0
@@ -296,7 +299,7 @@ count:
   cast_count: 0
   last_cast: 0
 arcanemeteor:
-  cast_count: -809434071284318204
+  cast_count: 1242994321787981892
   last_cast: 0
 gather:
   cast_count: 0
@@ -326,7 +329,7 @@ pentagram:
   cast_count: 0
   last_cast: 0
 shell:
-  cast_count: 49539595901075456
+  cast_count: -4611686018427387904
   last_cast: 0
 rainbowhelmet:
   cast_count: 0
@@ -338,7 +341,7 @@ remove_protection:
   cast_count: 0
   last_cast: 0
 firepulse:
-  cast_count: 50331648
+  cast_count: 51539607552
   last_cast: 0
 mute30m:
   cast_count: 0
@@ -347,7 +350,7 @@ emp:
   cast_count: 0
   last_cast: 0
 paste:
-  cast_count: -4611686018427387904
+  cast_count: 0
   last_cast: 0
 ride:
   cast_count: 0
@@ -365,10 +368,10 @@ buyshop:
   cast_count: 0
   last_cast: 0
 laser:
-  cast_count: 805306368
+  cast_count: 824633720832
   last_cast: 0
 superalter:
-  cast_count: 4611686018427387904
+  cast_count: 0
   last_cast: 0
 tripleshuriken:
   cast_count: 0
@@ -377,10 +380,10 @@ add_sharpness:
   cast_count: 0
   last_cast: 0
 dragonwingblast:
-  cast_count: 0
+  cast_count: 4
   last_cast: 0
 decoy:
-  cast_count: 8192
+  cast_count: 8388608
   last_cast: 0
 snoop:
   cast_count: 0
@@ -407,7 +410,7 @@ masterattack:
   cast_count: 0
   last_cast: 0
 arrow_poison:
-  cast_count: 3759661264016506880
+  cast_count: -5476377052393242624
   last_cast: 0
 add_damage:
   cast_count: 0
@@ -428,7 +431,7 @@ mobshop:
   cast_count: 0
   last_cast: 0
 scattershot:
-  cast_count: -7253047199880183808
+  cast_count: 6917529027641082001
   last_cast: 0
 spsellshop:
   cast_count: 0
@@ -452,13 +455,13 @@ orbitalstrike:
   cast_count: 0
   last_cast: 0
 channel:
-  cast_count: -4898588099069546880
+  cast_count: 1360174601782043626
   last_cast: 0
 doublejump:
-  cast_count: 153931628150784
+  cast_count: 157625987226402816
   last_cast: 0
 convert:
-  cast_count: 4611686018427387904
+  cast_count: 0
   last_cast: 0
 commandspell:
   cast_count: 0
@@ -497,10 +500,10 @@ fishshop:
   cast_count: 0
   last_cast: 0
 slashbloodexecute:
-  cast_count: 940646
+  cast_count: 963221504
   last_cast: 0
 manabeam:
-  cast_count: -8775263856751535616
+  cast_count: -2305825417020833752
   last_cast: 0
 rolldice:
   cast_count: 0
@@ -518,7 +521,7 @@ lightorb:
   cast_count: 0
   last_cast: 0
 slashbloodcombo:
-  cast_count: 200506911
+  cast_count: 205319076898
   last_cast: 0
 buysellshop:
   cast_count: 0
@@ -530,7 +533,7 @@ animation:
   cast_count: 0
   last_cast: 0
 windslash:
-  cast_count: 4926979779824975872
+  cast_count: -9180581655641849856
   last_cast: 0
 morecrops2:
   cast_count: 0
@@ -554,16 +557,16 @@ petrify:
   cast_count: 0
   last_cast: 0
 anvil:
-  cast_count: -4611686018158952448
+  cast_count: 274877906944
   last_cast: 0
 pearlrider:
   cast_count: 0
   last_cast: 0
 localrain:
-  cast_count: 536870912
+  cast_count: 549755813888
   last_cast: 0
 save:
-  cast_count: -9223372036854775808
+  cast_count: 4
   last_cast: 0
 clayshop:
   cast_count: 0
@@ -572,7 +575,7 @@ disposal:
   cast_count: 0
   last_cast: 0
 controlsmenu:
-  cast_count: 4687121312722714624
+  cast_count: 3458765063576354816
   last_cast: 0
 remove_fall_protection:
   cast_count: 0
@@ -590,10 +593,10 @@ goto:
   cast_count: 0
   last_cast: 0
 walls:
-  cast_count: 22517998136853504
+  cast_count: 4611686018428436480
   last_cast: 0
 gravitationalend:
-  cast_count: 51539607552
+  cast_count: 52776558133248
   last_cast: 0
 bubble:
   cast_count: 0
@@ -608,7 +611,7 @@ meteorswarm:
   cast_count: 0
   last_cast: 0
 totem:
-  cast_count: 2334138368
+  cast_count: 2390157688832
   last_cast: 0
 add_fall_protection:
   cast_count: 0
@@ -617,7 +620,7 @@ rainbowleggings:
   cast_count: 0
   last_cast: 0
 mobrelocate:
-  cast_count: -5677913230207345664
+  cast_count: -3458764513813200896
   last_cast: 0
 camera:
   cast_count: 0
@@ -638,7 +641,7 @@ manageshop:
   cast_count: 0
   last_cast: 0
 burstshot:
-  cast_count: 4817162751426166784
+  cast_count: 7493989779944505490
   last_cast: 0
 focusbolt_cast:
   cast_count: 0
@@ -650,13 +653,13 @@ counterspell:
   cast_count: 0
   last_cast: 0
 superkill:
-  cast_count: 9007276564152320
+  cast_count: -9223292872017575936
   last_cast: 0
 torch:
   cast_count: 0
   last_cast: 0
 meditate:
-  cast_count: -5029447660424134656
+  cast_count: -3512807709348986856
   last_cast: 0
 fxdemo:
   cast_count: 0
@@ -683,10 +686,10 @@ rabbitsfoot:
   cast_count: 0
   last_cast: 0
 bloodexecute:
-  cast_count: 197582
+  cast_count: 202323968
   last_cast: 0
 anchor:
-  cast_count: 0
+  cast_count: 22
   last_cast: 0
 primalsavagery:
   cast_count: 0
@@ -695,7 +698,7 @@ camoarmor:
   cast_count: 0
   last_cast: 0
 sword_netherite:
-  cast_count: 3377699720527872
+  cast_count: 3458764513820540928
   last_cast: 0
 spell_skeletoncharm1:
   cast_count: 0
@@ -707,19 +710,19 @@ soulburn:
   cast_count: 0
   last_cast: 0
 slashblood3:
-  cast_count: 85846861
+  cast_count: 87907185694
   last_cast: 0
 slashblood4:
-  cast_count: 2736128
+  cast_count: 2801795072
   last_cast: 0
 brushselect:
   cast_count: 0
   last_cast: 0
 slashblood2:
-  cast_count: 148482557
+  cast_count: 152046138402
   last_cast: 0
 arrow:
-  cast_count: 985162418487296
+  cast_count: 1008806316530991104
   last_cast: 0
 firetrail:
   cast_count: 0
@@ -728,7 +731,7 @@ fireshield:
   cast_count: 0
   last_cast: 0
 healbolt:
-  cast_count: 8792152372534081796
+  cast_count: 1152921504638570496
   last_cast: 0
 crudbroom:
   cast_count: 0
@@ -758,7 +761,7 @@ plantshop:
   cast_count: 0
   last_cast: 0
 raise:
-  cast_count: -4611686018427387904
+  cast_count: 0
   last_cast: 0
 birth_snake:
   cast_count: 0
@@ -770,7 +773,7 @@ castshield:
   cast_count: 0
   last_cast: 0
 alter:
-  cast_count: -4611686018427387904
+  cast_count: 0
   last_cast: 0
 worm_death:
   cast_count: 0
@@ -785,7 +788,7 @@ broom:
   cast_count: 0
   last_cast: 0
 superregenerate:
-  cast_count: 4611686018427387904
+  cast_count: 0
   last_cast: 0
 admission:
   cast_count: 0
@@ -797,7 +800,7 @@ marktarget:
   cast_count: 0
   last_cast: 0
 fill:
-  cast_count: 0
+  cast_count: 16
   last_cast: 0
 playershop:
   cast_count: 0
@@ -809,7 +812,7 @@ deposits:
   cast_count: 0
   last_cast: 0
 shadowcloak:
-  cast_count: 8502796098086109184
+  cast_count: 1649267441664
   last_cast: 0
 feed:
   cast_count: 0
@@ -842,7 +845,7 @@ phase_reverseside:
   cast_count: 0
   last_cast: 0
 box:
-  cast_count: -9223372036854775808
+  cast_count: 0
   last_cast: 0
 sandblast:
   cast_count: 0
@@ -854,7 +857,7 @@ wound:
   cast_count: 0
   last_cast: 0
 auralburst:
-  cast_count: 0
+  cast_count: 68
   last_cast: 0
 flamethrower:
   cast_count: 0
@@ -866,7 +869,7 @@ singularity:
   cast_count: 0
   last_cast: 0
 dive:
-  cast_count: 106
+  cast_count: 108544
   last_cast: 0
 morecrops:
   cast_count: 0
@@ -902,7 +905,7 @@ wolfhouse_base:
   cast_count: 0
   last_cast: 0
 bloodlifesteal:
-  cast_count: 226116
+  cast_count: 231542784
   last_cast: 0
 spawn:
   cast_count: 0
@@ -911,7 +914,7 @@ earth:
   cast_count: 0
   last_cast: 0
 arrow_bomb:
-  cast_count: 17671410029707264
+  cast_count: -351220203289313280
   last_cast: 0
 pulse:
   cast_count: 0
@@ -950,7 +953,7 @@ paint:
   cast_count: 0
   last_cast: 0
 manabolt:
-  cast_count: 998110289264287744
+  cast_count: 7494012152605323660
   last_cast: 0
 cure:
   cast_count: 0
@@ -959,16 +962,16 @@ seeker_launcher:
   cast_count: 0
   last_cast: 0
 absorb:
-  cast_count: -9221683186994511872
+  cast_count: 1729382256910270464
   last_cast: 0
 animate:
   cast_count: 0
   last_cast: 0
 arcanemissiles:
-  cast_count: -4664603313512120320
+  cast_count: 1152922054362661942
   last_cast: 0
 wolfhouse_build:
-  cast_count: 4611686018427387904
+  cast_count: 0
   last_cast: 0
 skills:
   cast_count: 0
@@ -983,7 +986,7 @@ tribolt:
   cast_count: 0
   last_cast: 0
 reflect:
-  cast_count: 36028797018963968
+  cast_count: 512
   last_cast: 0
 freeze:
   cast_count: 0
@@ -1064,7 +1067,7 @@ toss:
   cast_count: 0
   last_cast: 0
 triplebolt:
-  cast_count: 7188870905190154240
+  cast_count: 1152921504606852190
   last_cast: 0
 superrepair:
   cast_count: 0
@@ -1079,13 +1082,13 @@ shuriken:
   cast_count: 0
   last_cast: 0
 pillar:
-  cast_count: -9223372036854775808
+  cast_count: 0
   last_cast: 0
 magneticshield:
-  cast_count: 83886080
+  cast_count: 85899345920
   last_cast: 0
 slashblood:
-  cast_count: 2105276615
+  cast_count: 2155803253794
   last_cast: 0
 woolshop:
   cast_count: 0
@@ -1145,7 +1148,7 @@ appraiser:
   cast_count: 0
   last_cast: 0
 iterate:
-  cast_count: -4611686018427387904
+  cast_count: 0
   last_cast: 0
 rollback:
   cast_count: 0
@@ -1178,13 +1181,13 @@ monster:
   cast_count: 0
   last_cast: 0
 pull:
-  cast_count: 4611686018427387904
+  cast_count: 0
   last_cast: 0
 torture:
   cast_count: 0
   last_cast: 0
 focusbolt:
-  cast_count: -6971572219696623488
+  cast_count: 3556254026080
   last_cast: 0
 cloak:
   cast_count: 0
@@ -1208,7 +1211,7 @@ smite:
   cast_count: 0
   last_cast: 0
 magicboat:
-  cast_count: 536870912
+  cast_count: 549755813888
   last_cast: 0
 bomb:
   cast_count: 0
@@ -1238,7 +1241,7 @@ life3:
   cast_count: 0
   last_cast: 0
 eat_food:
-  cast_count: 268435456
+  cast_count: 274877906944
   last_cast: 0
 neutron:
   cast_count: 0
@@ -1259,7 +1262,7 @@ aqualung:
   cast_count: 0
   last_cast: 0
 manashot:
-  cast_count: 6097135198934139122
+  cast_count: 8466946794730026180
   last_cast: 0
 wandshop:
   cast_count: 0
@@ -1274,7 +1277,7 @@ dummyrespawn:
   cast_count: 0
   last_cast: 0
 flameblade:
-  cast_count: -9223372036854775808
+  cast_count: 0
   last_cast: 0
 frostlance:
   cast_count: 0
@@ -1289,7 +1292,7 @@ camohelmet:
   cast_count: 0
   last_cast: 0
 arcanebarrage:
-  cast_count: -6436769767150845952
+  cast_count: -5764607248156326720
   last_cast: 0
 itemshop:
   cast_count: 0
@@ -1298,7 +1301,7 @@ mobmultishot:
   cast_count: 0
   last_cast: 0
 recurse:
-  cast_count: -9223372036854775808
+  cast_count: 0
   last_cast: 0
 ledgershop:
   cast_count: 0
@@ -1322,7 +1325,7 @@ blind:
   cast_count: 0
   last_cast: 0
 boon:
-  cast_count: 83886080
+  cast_count: 85899345920
   last_cast: 0
 wraithupgraded:
   cast_count: 0
@@ -1331,7 +1334,7 @@ axeshop:
   cast_count: 0
   last_cast: 0
 lore:
-  cast_count: 1342177280
+  cast_count: 1374389534720
   last_cast: 0
 boom:
   cast_count: 0
@@ -1364,7 +1367,7 @@ stoneshop:
   cast_count: 0
   last_cast: 0
 slashbase:
-  cast_count: 939542528
+  cast_count: 962091548672
   last_cast: 0
 lava:
   cast_count: 0
@@ -1394,7 +1397,7 @@ superblast:
   cast_count: 0
   last_cast: 0
 multibang:
-  cast_count: 35184372088832
+  cast_count: 36028797018963968
   last_cast: 0
 morelogs2:
   cast_count: 0
@@ -1418,10 +1421,10 @@ arrow_railgun:
   cast_count: 0
   last_cast: 0
 arrow_shock:
-  cast_count: 8388608
+  cast_count: 8589934592
   last_cast: 0
 arrow_regular:
-  cast_count: 5668800533184410496
+  cast_count: -5872637237672411136
   last_cast: 0
 repeaterspell:
   cast_count: 0
@@ -1460,7 +1463,7 @@ vortex:
   cast_count: 0
   last_cast: 0
 slashvert:
-  cast_count: 791674880
+  cast_count: 810675077120
   last_cast: 0
 none:
   cast_count: 0
@@ -1481,7 +1484,7 @@ locator2:
   cast_count: 0
   last_cast: 0
 siphon:
-  cast_count: 5126222275854522596
+  cast_count: -8070450532191072256
   last_cast: 0
 frost:
   cast_count: 0
@@ -1550,7 +1553,7 @@ ironpickaxethrow:
   cast_count: 0
   last_cast: 0
 wandinstructions:
-  cast_count: 2147483648
+  cast_count: 2199023256064
   last_cast: 0
 oretali2:
   cast_count: 0
@@ -1646,7 +1649,7 @@ bigpink:
   cast_count: 0
   last_cast: 0
 leap:
-  cast_count: 155648
+  cast_count: 159383552
   last_cast: 0
 place:
   cast_count: 0
@@ -1679,7 +1682,7 @@ simulate3:
   cast_count: 0
   last_cast: 0
 kill:
-  cast_count: 4294967296
+  cast_count: 4398046511104
   last_cast: 0
 piggyback:
   cast_count: 0
@@ -1691,7 +1694,7 @@ iceshard:
   cast_count: 0
   last_cast: 0
 test4:
-  cast_count: 1048576
+  cast_count: 1073741824
   last_cast: 0
 bowappearanceshop:
   cast_count: 0
@@ -1726,8 +1729,14 @@ test8:
 firewall:
   cast_count: 0
   last_cast: 0
+test9:
+  cast_count: 10
+  last_cast: 0
 test6:
   cast_count: 0
+  last_cast: 0
+test7:
+  cast_count: 59062
   last_cast: 0
 eruption:
   cast_count: 0
@@ -1745,7 +1754,7 @@ note08:
   cast_count: 0
   last_cast: 0
 projectile:
-  cast_count: 640
+  cast_count: 655360
   last_cast: 0
 fangsline:
   cast_count: 0
@@ -1769,7 +1778,7 @@ frostwave:
   cast_count: 0
   last_cast: 0
 arrow_ice:
-  cast_count: 288230376193654784
+  cast_count: 42949672960
   last_cast: 0
 birth_hunter:
   cast_count: 0
@@ -1796,7 +1805,7 @@ note15:
   cast_count: 0
   last_cast: 0
 manablast:
-  cast_count: -6246237583731293184
+  cast_count: 4872907836370190718
   last_cast: 0
 note14:
   cast_count: 0
@@ -1814,7 +1823,7 @@ note10:
   cast_count: 0
   last_cast: 0
 evade:
-  cast_count: -2060396829521988608
+  cast_count: -6917529027627450368
   last_cast: 0
 firetornado:
   cast_count: 0
@@ -1880,7 +1889,7 @@ disarm:
   cast_count: 0
   last_cast: 0
 bloodorb:
-  cast_count: 2275072
+  cast_count: 2329673728
   last_cast: 0
 generalshop:
   cast_count: 0
@@ -1946,7 +1955,7 @@ repair:
   cast_count: 0
   last_cast: 0
 critical:
-  cast_count: 2684354560
+  cast_count: 2748779069440
   last_cast: 0
 permamelt:
   cast_count: 0
@@ -1958,7 +1967,7 @@ volley:
   cast_count: 0
   last_cast: 0
 turtleshell:
-  cast_count: -4611686018427387904
+  cast_count: 0
   last_cast: 0
 farmsellshop:
   cast_count: 0
@@ -1976,7 +1985,7 @@ implosion:
   cast_count: 0
   last_cast: 0
 platform:
-  cast_count: 4611686018427387904
+  cast_count: 0
   last_cast: 0
 superheal:
   cast_count: 0
@@ -1985,19 +1994,19 @@ birdsofafeather:
   cast_count: 0
   last_cast: 0
 cat:
-  cast_count: 4611686018427387904
+  cast_count: 0
   last_cast: 0
 pyroclasm:
   cast_count: 0
   last_cast: 0
 airstrike:
-  cast_count: 562949953421312
+  cast_count: 576460752303423488
   last_cast: 0
 firecircle:
   cast_count: 0
   last_cast: 0
 progressmenu:
-  cast_count: 7010978720982761472
+  cast_count: 3458765613332169216
   last_cast: 0
 ghast:
   cast_count: 0
@@ -2036,7 +2045,7 @@ icewall:
   cast_count: 0
   last_cast: 0
 bloodbath:
-  cast_count: 56710
+  cast_count: 58071040
   last_cast: 0
 glacialspears:
   cast_count: 0
@@ -2048,7 +2057,7 @@ growth:
   cast_count: 0
   last_cast: 0
 slash:
-  cast_count: 107985977364
+  cast_count: 110577640820736
   last_cast: 0
 skyward:
   cast_count: 0

@@ -14675,21 +14675,19 @@ recall_death:
     warmup: 0
 reflect:
   inherit: false
+  name: Reflect
+  description: Summon a reflective barrier which rebounds spells.
   icon: barrier
   icon_disabled: barrier
   category: arcane
-  name: Reflect
-  description: Summon a disk-shaped reflective shield.
   actions:
     cast:
     - class: Disc
       actions:
+      - class: PlayEffects
+        effects: summon
       - class: ModifyBlock
-      - class: Skip
-        skip: 8
-        actions:
-        - class: Delay
-          delay: 1
+        physics: true
   effects:
     cast:
     - class: EffectSingle
@@ -14699,37 +14697,10 @@ reflect:
     - sound: block_beacon_activate
       sound_pitch: 2
       sound_volume: 0.8
-    - location: source
-      source_location: eyes
-      sound: block_glass_break
-      sound_pitch: 2
-      sound_volume: 0.3
-      relative_offset: 2.2,0,0
-      effectlib:
-        class: Modified
-        duration: 400
-        period: 1
-        variable_a: $radius
-        parameters:
-          radius: (t/i)*a*1.2 + 0.2
-        effect:
-          class: Circle
-          particle: nautilus
-          orient: true
-          whole_circle: true
-          update_directions: false
-          update_locations: false
-          angular_velocity_x: 1
-          angular_velocity_z: 0
-          angular_velocity_y: 0
-          z_rotation: 1.57
-          particle_offset: 0.1,0.1,0.1
-          particles: 10
-          particle_count: 2
   parameters:
     allow_max_range: true
     range: 3
-    radius: 3
+    radius: 2
     axis: z
     brush: stained_glass
     orient: true
@@ -14738,14 +14709,15 @@ reflect:
     destructible: destructible_replace
     check_destructible: true
     brushcolor: true
-    undo: 8000
+    undo: 4000
     cooldown: 3000
-    breakable: 3
+    breakable: 2
     reflect_chance: 1
+    undo_speed: 1
     bypass_confusion: true
     bypass_backfire: true
   costs:
-    mana: 30
+    mana: 25
 reflect|2:
   upgrade_required_path: student
   upgrade_required_casts: 50
@@ -24979,8 +24951,8 @@ anchor:
 arcanebarrage:
   name: Arcane Barrage
   description: Launch a omnidirectional barrage of Arcane Spears at a targeted entity
-    or location for 8 seconds, each dealing 6 Magic Damage. Number of spears launched
-    scales with Wand Power.
+    or location, each dealing 6 Magic Damage. Number of spears launched scales with
+    Wand Power.
   category: arcane
   icon: arcanebarrage
   icon_disabled: arcanebarrage
@@ -24998,8 +24970,8 @@ arcanebarrage:
       hitbox_size: 1
       actions:
       - class: Interval
-        duration: 8000
-        interval: 200/(1+$wandpower/100)
+        duration: 2000
+        interval: 24/(1+$wandpower/100)
         actions:
         - class: Asynchronous
           actions:
@@ -25015,36 +24987,33 @@ arcanebarrage:
               ignore_hit_entities: true
               target: block
               spread: 180
-              range: rand(12,18)
+              range: rand(18,24)
               velocity: 1000
               tick_effects: none
               hit_effects: none
               miss:
               - class: ChangeContext
                 source_location: hit
-                target_self: true
-                random_target_offset: 2,2,2
+                random_target_offset: 2,1,2
                 actions:
-                - class: Delay
-                  delay: rand(0,2000)
                 - class: PlayEffects
                   effects: summon
                 - class: Delay
                   delay: $delay
+                - class: PlayEffects
+                  effects: fire
                 - class: CustomProjectile
                   tick_effects: tick
                   velocity: 200
                   range: 48
                   reverse: true
-                  hitbox: true
-                  hitbox_size: 1
                   actions:
-                  - class: Damage
-                    damage: 6
-                    no_damage_ticks: 0
-                  - class: Velocity
-                    push: 0.8
-                    direction: 0,0.2,0
+                  - class: AreaOfEffect
+                    radius: 1
+                    actions:
+                    - class: Damage
+                      damage: 6
+                      no_damage_ticks: 0
   effects:
     summon:
     - class: EffectSingle
@@ -25079,23 +25048,22 @@ arcanebarrage:
       location: both
     fire:
     - sound: item_trident_return
-      sound_pitch: -1
-      sound_volume: 0.5
+      sound_pitch: 2
+      sound_volume: 0.9
       color_override: color
-    targeted:
+    tick:
     - location: target
       particle: dust_color_transition
-      target_location: body
-      requires_entity_target: true
-      particle_count: 3
-      particle_offset_x: 0.3
-      particle_offset_z: 0.3
-      particle_offset_y: 0.6
-    tick:
+      particle_offset: 0
+      particle_count: 1
+      particle_size: 1
+      color: '#ff00ff'
+      to_color: '#8b008b'
     - location: target
       particle: spell_witch
       particle_offset: 0
       particle_count: 1
+      particle_data: 2
     hit:
     - location: target
       particle: spell_witch
@@ -25108,11 +25076,15 @@ arcanebarrage:
       sound_pitch: 1
       sound_volume: 0.4
       location: target
-    hit_entity:
-    - sound: entity_player_attack_knockback
-      sound_pitch: 1
-      sound_volume: 0.4
-      location: both
+    targeted:
+    - location: target
+      particle: dust_color_transition
+      target_location: body
+      requires_entity_target: true
+      particle_count: 3
+      particle_offset_x: 0.3
+      particle_offset_z: 0.3
+      particle_offset_y: 0.6
   parameters:
     delay: 1000
     range: 48
@@ -25122,7 +25094,7 @@ arcanebarrage:
     mana: 150
 arcanehail:
   name: Arcane Hail
-  description: Summon arcane spears to fall from the sky for 8 seconds, each dealing
+  description: Summon arcane spears to fall from the sky for 12 seconds, each dealing
     6 Magic Damage in a radius upon impact. Number of spears summoned scales with
     Wand Power.
   category: arcane
@@ -25131,13 +25103,15 @@ arcanehail:
   actions:
     cast:
     - class: Interval
-      duration: 8000
-      interval: 200/(1+$wandpower/100)
+      duration: 12000
+      interval: 50/(1+$wandpower/100)
       actions:
       - class: Asynchronous
         actions:
         - class: ChangeContext
           actions:
+          - class: PlayEffects
+            effects: summon
           - class: CustomProjectile
             requires_target: true
             target: block
@@ -25148,9 +25122,11 @@ arcanehail:
             range: 1000
             actions:
             - class: PlayEffects
-              effects: summon
+              effects: mark
           - class: Delay
             delay: $warmup
+          - class: PlayEffects
+            effects: fire
           - class: CustomProjectile
             requires_target: true
             target_self: true
@@ -25176,7 +25152,6 @@ arcanehail:
           update_directions: false
           particle_data: 0
           pitch: 90
-          offset: 0,0.2,0
     - sound: entity_illusioner_cast_spell
       sound_pitch: 0.1
       sound_volume: 0.8
@@ -25192,12 +25167,48 @@ arcanehail:
       sound_volume: 0.2
       delay: 200
       location: both
+    mark:
+    - location: target
+      effectlib:
+        class: Modified
+        duration: 400
+        period: 1
+        variable_a: $radius
+        parameters:
+          radius: (t/i)*a + 0.2
+        effect:
+          class: Circle
+          particle: nautilus
+          whole_circle: true
+          update_directions: false
+          update_locations: false
+          angular_velocity_x: 0
+          angular_velocity_z: 0
+          angular_velocity_y: 0
+          particle_offset: 0
+          particles: 4
+          particle_count: 1
+          pitch: 0
+          offset: 0,0.3,0
     none: []
+    fire:
+    - sound: item_trident_return
+      sound_pitch: 2
+      sound_volume: 0.9
+      color_override: color
     tick:
+    - location: target
+      particle: dust_color_transition
+      particle_offset: 0
+      particle_count: 1
+      particle_size: 1
+      color: '#ff00ff'
+      to_color: '#8b008b'
     - location: target
       particle: spell_witch
       particle_offset: 0
       particle_count: 1
+      particle_data: 2
     hit:
     - location: target
       particle: spell_witch
@@ -25210,13 +25221,8 @@ arcanehail:
       sound_pitch: 1
       sound_volume: 0.4
       location: target
-    hit_entity:
-    - sound: entity_player_attack_knockback
-      sound_pitch: 1
-      sound_volume: 0.4
-      location: target
   parameters:
-    target_offset: 0,30,0
+    target_offset: 0,25,0
     random_target_offset: 15,0,15
     source_pitch: 180
     source_at_target: true
@@ -25230,7 +25236,7 @@ arcanehail:
     damage_type: magic
     no_damage_ticks: 0
     damage: 6
-    warmup: 1000
+    warmup: 800
     range: 48
     cooldown: 24000
   costs:
@@ -25256,9 +25262,10 @@ arcanemeteor:
         reflect_count: 0
         actions:
         - class: PlayEffects
-          effects: summon
+          effects: mark
         - class: CustomProjectile
           requires_target: true
+          lifetime: 10000
           actions:
           - class: AreaOfEffect
             actions:
@@ -25269,13 +25276,15 @@ arcanemeteor:
             - class: BreakBlock
               ignore_result: true
   effects:
-    summon:
+    mark:
     - location: target
       effectlib:
         class: Modified
-        duration: 1800
+        duration: 1500
+        period: 1
+        variable_a: $radius
         parameters:
-          radius: (t/i) * 4 + 0.1
+          radius: (t/i)*a
         effect:
           class: Vortex
           particle_count: 2
@@ -25286,6 +25295,29 @@ arcanemeteor:
           update_locations: false
           update_directions: false
           particle_data: 0
+    - location: target
+      effectlib:
+        class: Modified
+        duration: 1500
+        period: 1
+        variable_a: $radius
+        parameters:
+          radius: (t/i)*1.2*a
+        effect:
+          class: Circle
+          particle: nautilus
+          whole_circle: true
+          update_directions: false
+          update_locations: false
+          angular_velocity_x: 0
+          angular_velocity_z: 0
+          angular_velocity_y: 0
+          particle_offset: 0
+          particles: 4
+          particle_count: 1
+          pitch: 0
+          yaw: 45
+          offset: 0,0.2,0
     - sound: entity_illusioner_cast_spell
       sound_pitch: 0.1
       sound_volume: 0.8
@@ -25363,7 +25395,7 @@ arcanemeteor:
     speed: 1
     radius: 4
     range: 64
-    velocity: 30
+    velocity: 40
     target: other
     falling: true
     y_offset: 1
@@ -25400,8 +25432,8 @@ arcanemissiles:
       target: other
       range: 30
       velocity: 1000
-      tick_effects: tick2
-      hit_effects: tick2
+      tick_effects: none
+      hit_effects: none
       actions:
       - class: Message
         message: '@p &fhas locked on to you!'
@@ -25435,34 +25467,33 @@ arcanemissiles:
                 no_damage_ticks: 0
                 damage: 3
   effects:
+    none: []
     fire:
     - sound: item_trident_return
-      sound_pitch: -1
-      sound_volume: 0.5
+      sound_pitch: 2
+      sound_volume: 0.9
       color_override: color
     tick:
+    - location: target
+      particle: dust_color_transition
+      particle_offset: 0
+      particle_count: 1
+      particle_size: 1
+      color: '#ff00ff'
+      to_color: '#8b008b'
     - location: target
       particle: spell_witch
       particle_offset: 0
       particle_count: 1
-    tick2:
-    - particle: redstone
-      location: target
-      particle_offset: 0
+      particle_data: 2
     hit:
     - location: target
       particle: spell_witch
-      speed: 1
       particle_data: 0.2
       particle_offset: 0.1
       offset: 0,0.5,0
       particle_count: 6
     - sound: item_trident_hit
-      sound_pitch: 1
-      sound_volume: 0.4
-      location: target
-    hit_entity:
-    - sound: entity_player_attack_knockback
       sound_pitch: 1
       sound_volume: 0.4
       location: target
@@ -25476,7 +25507,7 @@ arcanemissiles:
     lifetime: 2000
     track_speed: 0.25
     use_target_location: false
-    cooldown: 8000
+    cooldown: 12000
   costs:
     mana: 80
 arrowstorm:
@@ -25596,38 +25627,27 @@ assassin:
     - hidden
     - assassinbuff
 auralburst:
-  name: Aural Detonation
-  description: Anchor for 2 seconds, then erupt in a self-centered burst of Mana dealing
-    6x150% Attack Damage.
+  name: Aural Burst
+  description: Ward yourself with a veil of mana. Upon taking damage, unleash a self-centered
+    blast of mana, dealing x damage and knocking away enemies
   icon: arcanestar
   icon_disabled: arcanestar
   category: arcane
   actions:
     cast:
-    - class: ChangeContext
-      target_self: true
-      target_caster: true
+    - class: PlayEffects
+      effects: burst
+    - class: Repeat
       actions:
-      - class: Cast
-        spell: anchor
-        spell_parameters:
-          warmup: 2000
-    - class: Delay
-    - class: Retarget
-    - class: ChangeContext
-      target_caster: true
-      actions:
-      - class: PlayEffects
-        effects: burst
-      - class: Repeat
+      - class: ModifyVariable
+        variable: count
+      - class: AreaOfEffect
         actions:
-        - class: AreaOfEffect
-          actions:
-          - class: Damage
-          - class: Velocity
-            direction: 0,0.1,0
-          - class: Delay
-            delay: 100
+        - class: Damage
+        - class: Velocity
+          direction: 0,0.1,0
+        - class: Delay
+          delay: 100
   effects:
     burst:
     - class: EffectSingle
@@ -25635,6 +25655,7 @@ auralburst:
       sound_volume: 5
       sound_pitch: -2
       location: origin
+      color_override: color
       effectlib:
         class: Sphere
         radius: 1
@@ -25643,10 +25664,10 @@ auralburst:
         duration: 500
         iterations: 1
         particle: dust_color_transition
-        color_override: color
-        to_color: '#73FBD3'
+        to_color: '#ff00ff'
         offset: 0,-1,0
   parameters:
+    target: self
     warmup: 2000
     damage_type: magic
     damage: 3
@@ -25655,8 +25676,7 @@ auralburst:
     damage_max_distance: 12
     no_damage_ticks: 0
     target_type: Damageable
-    radius: 6
-    y_offset: 0.6
+    y_offset: 0.5
     cooldown: 15000
     living_entity_speed: 1
     push: 0.85
@@ -32942,7 +32962,7 @@ manablast:
     fire:
     - sound: item_axe_scrape
       sound_pitch: 2
-      sound_volume: 0.5
+      sound_volume: 1
       color_override: color
     tick:
     - location: target
@@ -32995,7 +33015,6 @@ manablast:
     range: 48
     velocity: 60
     gravity: 0.025
-    drag: 0.3
     hitbox: true
     hitbox_size: 0.5
     damage_type: magic
@@ -33357,7 +33376,7 @@ marktarget:
     mana: 90
 meditate:
   name: Meditate
-  description: Channel, increasing your Mana Recharge by 30% for the next 20 seconds.
+  description: Channel, then apply a buff increasing your Mana Recharge rate by 25%.
   icon: levitate
   icon_disabled: levitate
   actions:
@@ -33401,7 +33420,7 @@ meditate:
     bypass_pvp: true
     bypass_friendly_fire: true
     bypass_undo: true
-    duration: 20000
+    duration: 24000
     cooldown: 48000
   costs:
     mana: 25
@@ -34685,6 +34704,72 @@ oretali4:
     passive: true
     target: block_broken
     probability: 0.2
+overcharge:
+  name: Overcharge
+  description: Channel, then apply a buff increasing the power of your spells by 25%.
+  icon: levitate
+  icon_disabled: levitate
+  actions:
+    cast:
+    - class: ChangeContext
+      target_self: true
+      target_caster: true
+      actions:
+      - class: Cast
+        spell: channel
+        spell_parameters:
+          warmup: $warmup
+    - class: Delay
+    - class: PlayEffects
+      effects: buff
+    - class: Modifier
+      add_modifiers:
+      - overcharge
+      remove_on_finish: true
+    - class: Delay
+      delay: $duration
+  effects:
+    buff:
+    - location: origin
+      source_location: body
+      effectlib:
+        class: EquationEffect
+        xEquation: 0.5sin(0.3141 * 0.5t)
+        yEquation: 0.5cos(0.2t)
+        zEquation: 0.5cos(0.3141 * 0.5t)
+        duration: $duration
+        particles: 3
+        particle: dust_color_transition
+        particle_size: 0.8
+        color: '#73FBD3'
+        to_color: '#6C2DC7'
+        cycle: true
+    - location: origin
+      source_location: body
+      effectlib:
+        class: EquationEffect
+        xEquation: -0.5sin(0.3141 * 0.5t)
+        yEquation: 0.5cos(0.2t)
+        zEquation: -0.5cos(0.3141 * 0.5t)
+        duration: $duration
+        particles: 3
+        particle: dust_color_transition
+        particle_size: 0.8
+        color: '#73FBD3'
+        to_color: '#6C2DC7'
+        cycle: true
+  parameters:
+    warmup: 3000
+    target: self
+    target_self: true
+    only_friendly: true
+    bypass_pvp: true
+    bypass_friendly_fire: true
+    bypass_undo: true
+    duration: 24000
+    cooldown: 48000
+  costs:
+    mana: 25
 pearlrider:
   name: Pearl Rider
   description: AHHHHH
@@ -37423,7 +37508,7 @@ slashblood:
     source_location: body
     range: 3
     damage: $attack_damage+0.5*max(0,$sharpness-1)+min($sharpness,1)
-    skip: 12
+    skip: 24
     velocity: 1000
     hit_count: 3
     hitbox: true
@@ -37475,8 +37560,6 @@ slashbloodcombo:
         - class: ModifyVariable
           variable: combo
           value: combo+1
-        - class: Message
-          message: '%attribute_player_value_GENERIC_ATTACK_SPEED%'
         - class: CheckRequirements
           requirements:
           - variables:
@@ -38103,84 +38186,6 @@ spawn:
       commands:
       - warp spawn
       console: true
-spell_skeletoncharm1:
-  creator: dragoninja54
-  creator_id: 0335fb17-2f43-41ac-b070-011932852c24
-  name: skeletoncharm1
-  description: you shouldnt see this
-  icon: stick
-  actions:
-    cast:
-    - class: ChangeContext
-      source_is_target: true
-      actions:
-      - class: Repeat
-        actions:
-        - class: Spread
-          actions:
-          - class: SpawnEntity
-            set_target: true
-          - class: Aggro
-          - class: Delay
-  effects:
-    cast:
-    - location: target
-      effectlib:
-        class: Sphere
-        duration: 2000
-    - sound: magic.zap
-  parameters:
-    allow_replacement: false
-    entity_parameters:
-      brain:
-        goals:
-        - type: melee_attack
-          priority: 1
-        - type: follow_owner
-          priority: 2
-        - type: look_at_player
-          priority: 3
-        targets:
-        - owner_hurt_target
-        - owner_hurt_by_target
-    entity_types:
-      basicskeleton: 100
-    target_type: LivingEntity
-    allow_max_range: false
-    range: 32
-    undo: 60000
-    cooldown: 75000
-    repeat: 8
-    radius: 3
-stamina_of_gods:
-  creator: junk2013
-  creator_id: d86cb940-161b-4166-a867-e6954b0d8161
-  name: God's Resistance
-  description: Gives you resistance but lowers your health to 1.
-  icon: cod{18001}
-  actions:
-    cast:
-    - class: PotionEffect
-  effects:
-    cast:
-    - location: origin
-      source_location: body
-      effectlib:
-        class: Circle
-        sphere_radius: 6
-        duration: 5000
-    - sound: block_campfire_crackle
-  parameters:
-    duration: 20000
-    potion_effects:
-      damage_resistance: 255
-    target_self: true
-    target: self
-    range: 5
-    damage: 0
-  costs:
-    mana: 300
-    health: 19
 summon_archers:
   name: Summon Archers
   description: Summon a group of skeletal archers to assist you in your battle
@@ -38594,7 +38599,7 @@ test1:
     projectile:
     - location: origin
       effectlib:
-        class: EquationEffect
+        class: Equation
         particle: REDSTONE
         color: E224E8
         particles: 20
@@ -38765,8 +38770,124 @@ test6:
       particle_data: 0.7
   parameters:
     range: 0
+test7:
+  name: Mana Cascade
+  description: Fires several slow-moving homing bolts of Mana.
+  icon: stick
+  actions:
+    cast:
+    - class: CustomProjectile
+      target: block
+      actions:
+      - class: Multiply
+        repeat: 12
+        actions:
+        - class: Delay
+          delay: rand(0,800)
+        - class: ChangeContext
+          relative_source_offset:
+            x: -1
+            y: rand(-12,12)
+            z: rand(-12,12)
+          random_target_offset: 2,1,2
+          actions:
+          - class: ChangeContext
+            source_direction_at_target: true
+            source_is_target: true
+            target_location: hit
+            actions:
+            - class: PlayEffects
+              effects: summon
+          - class: Delay
+            delay: 800
+          - class: PlayEffects
+            effects: fire
+          - class: CustomProjectile
+            interval: 1
+            actions:
+            - class: AreaOfEffect
+              actions:
+              - class: Damage
+              - class: Velocity
+  effects:
+    summon:
+    - class: EffectSingle
+      location: origin
+      effectlib:
+        class: Modified
+        duration: 800
+        parameters:
+          radius: (t/i) * 2 + 0.1
+        effect:
+          class: Vortex
+          particle_count: 1
+          grow: 0
+          particle: crit_magic
+          auto_orient: true
+          update_locations: false
+          update_directions: false
+          particle_data: 0
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.1
+      sound_volume: 0.8
+      delay: 0
+      location: both
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 0.6
+      sound_volume: 0.4
+      delay: 100
+      location: both
+    - sound: entity_illusioner_cast_spell
+      sound_pitch: 1.2
+      sound_volume: 0.2
+      delay: 200
+      location: both
+    fire:
+    - sound: item_trident_return
+      sound_pitch: 2
+      sound_volume: 0.9
+      color_override: color
+    tick:
+    - location: target
+      particle: dust_color_transition
+      particle_offset: 0
+      particle_count: 1
+      particle_size: 1
+      color: '#ff00ff'
+      to_color: '#8b008b'
+    - location: target
+      particle: spell_witch
+      particle_offset: 0
+      particle_count: 1
+      particle_data: 2
+    hit:
+    - location: target
+      particle: spell_witch
+      speed: 1
+      particle_data: 0.2
+      particle_offset: 0.1
+      offset: 0,0.5,0
+      particle_count: 6
+    - sound: item_trident_hit
+      sound_pitch: 1
+      sound_volume: 0.4
+      location: target
+  parameters:
+    range: 64
+    velocity: 80
+    hitbox: true
+    hitbox_size: 0.15
+    damage_type: magic
+    damage: 4
+    no_damage_ticks: 0
+    target: other
+    target_type: Damageable
+    undo: 2000
+    radius: 1
+    push: 0.4
+    direction: 0,0.2,0
 test8:
-  name: Blood Crescent
+  name: VFX
   description: Fling a crescent arc of blood
   icon: stick
   actions:
@@ -38792,6 +38913,34 @@ test8:
         pitch: 0
   parameters:
     range: 0
+test9:
+  icon: diamond_sword{18102}
+  name: counter
+  actions:
+    cast:
+    - class: Repeat
+      actions:
+      - class: ModifyVariable
+        variable: count
+        value: $count+1
+        scope: cast
+      - class: Message
+        message: $count
+      - class: AreaOfEffect
+        radius: $count
+      - class: PlayEffects
+        effects: burst
+  effects:
+    burst:
+    - location: origin
+      effectlib:
+        class: Sphere
+        radius: $count
+        particle: electric_spark
+        particles: 12
+  parameters:
+    target: self
+    repeat: 12
 testmenu:
   parameters:
     auto_close: true

@@ -19,8 +19,6 @@ slashbloodcombo:
             value: combo+1
 #          - class: Message
 #            message: $combo
-          - class: Message
-            message: "%attribute_player_value_GENERIC_ATTACK_SPEED%"
           - class: CheckRequirements
             requirements:
               - variables:

@@ -1,20 +1,19 @@
 reflect:
     inherit: false
+    name: Reflect
+    description: Summon a reflective barrier which rebounds spells.
     icon: barrier
     icon_disabled: barrier
     category: arcane
-    name: Reflect
-    description: Summon a disk-shaped reflective shield.
     actions:
         cast:
         - class: Disc
           actions:
+           - class: PlayEffects
+             effects: summon
            - class: ModifyBlock
-           - class: Skip
-             skip: 8
-             actions:
-              - class: Delay
-                delay: 1
+             physics: true
+             
     effects:
         cast:
         -  class: EffectSingle
@@ -24,37 +23,10 @@ reflect:
         -  sound: block_beacon_activate
            sound_pitch: 2
            sound_volume: 0.8
-        -  location: source
-           source_location: eyes
-           sound: block_glass_break
-           sound_pitch: 2
-           sound_volume: 0.3
-           relative_offset: 2.2,0,0
-           effectlib:
-             class: Modified
-             duration: 400
-             period: 1
-             variable_a: $radius
-             parameters:
-               radius: "(t/i)*a*1.2 + 0.2"
-             effect:
-               class: Circle
-               particle: nautilus
-               orient: true
-               whole_circle: true
-               update_directions: false
-               update_locations: false
-               angular_velocity_x: 1
-               angular_velocity_z: 0
-               angular_velocity_y: 0
-               z_rotation: 1.57
-               particle_offset: 0.1,0.1,0.1
-               particles: 10
-               particle_count: 2
     parameters:
         allow_max_range: true
         range: 3
-        radius: 3
+        radius: 2
         axis: z
         brush: stained_glass
         orient: true
@@ -63,11 +35,12 @@ reflect:
         destructible: destructible_replace
         check_destructible: true
         brushcolor: true
-        undo: 8000
+        undo: 4000
         cooldown: 3000
-        breakable: 3
+        breakable: 2
         reflect_chance: 1
+        undo_speed: 1
         bypass_confusion: true
         bypass_backfire: true
     costs:
-        mana: 30
+        mana: 25

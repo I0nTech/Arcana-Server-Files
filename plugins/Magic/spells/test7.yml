@@ -1,0 +1,116 @@
+test7:
+  name: Mana Cascade
+  description: Fires several slow-moving homing bolts of Mana.
+  icon: stick
+  actions:
+    cast:
+     - class: CustomProjectile
+       target: block
+       actions:
+          - class: Multiply
+            repeat: 12
+            actions:
+            - class: Delay
+              delay: rand(0,800)
+            - class: ChangeContext
+              relative_source_offset:
+                x: -1
+                y: rand(-12,12)
+                z: rand(-12,12)
+              random_target_offset: 2,1,2
+              actions:
+                - class: ChangeContext
+                  source_direction_at_target: true
+                  source_is_target: true
+                  target_location: hit
+                  actions:
+                    - class: PlayEffects
+                      effects: summon
+                - class: Delay
+                  delay: 800
+                - class: PlayEffects
+                  effects: fire
+                - class: CustomProjectile
+                  interval: 1
+                  actions:
+                  - class: AreaOfEffect
+                    actions:
+                      - class: Damage
+                      - class: Velocity
+  effects:
+      summon:
+        - class: EffectSingle
+          location: origin
+          effectlib:
+             class: Modified
+             duration: 800
+             parameters:
+               radius: "(t/i) * 2 + 0.1"
+             effect:
+               class: Vortex
+               particle_count: 1
+               grow: 0
+               particle: crit_magic
+               auto_orient: true
+               update_locations: false
+               update_directions: false
+               particle_data: 0
+        - sound: entity_illusioner_cast_spell
+          sound_pitch: 0.1
+          sound_volume: 0.8
+          delay: 0
+          location: both
+        - sound: entity_illusioner_cast_spell
+          sound_pitch: 0.6
+          sound_volume: 0.4
+          delay: 100
+          location: both
+        - sound: entity_illusioner_cast_spell
+          sound_pitch: 1.2
+          sound_volume: 0.2
+          delay: 200
+          location: both
+      fire:
+      - sound: item_trident_return
+        sound_pitch: 2
+        sound_volume: 0.9
+        color_override: color
+      tick:
+      - location: target
+        particle: dust_color_transition
+        particle_offset: 0
+        particle_count: 1
+        particle_size: 1
+        color: "#ff00ff"
+        to_color: "#8b008b"
+      - location: target
+        particle: spell_witch
+        particle_offset: 0
+        particle_count: 1
+        particle_data: 2
+      hit:
+        - location: target
+          particle: spell_witch
+          speed: 1
+          particle_data: 0.2
+          particle_offset: 0.1
+          offset: 0,0.5,0
+          particle_count: 6
+        - sound: item_trident_hit
+          sound_pitch: 1
+          sound_volume: 0.4
+          location: target
+  parameters:
+    range: 64
+    velocity: 80
+    hitbox: true
+    hitbox_size: 0.15
+    damage_type: magic
+    damage: 4
+    no_damage_ticks: 0
+    target: other
+    target_type: Damageable
+    undo: 2000
+    radius: 1
+    push: 0.4
+    direction: 0,0.2,0

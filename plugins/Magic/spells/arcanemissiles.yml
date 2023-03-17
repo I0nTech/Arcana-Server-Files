@@ -24,8 +24,8 @@ arcanemissiles:
       target: other
       range: 30
       velocity: 1000
-      tick_effects: tick2
-      hit_effects: tick2
+      tick_effects: none
+      hit_effects: none
 #      requires_entity_target: true
       actions:
       - class: Message
@@ -60,39 +60,37 @@ arcanemissiles:
                   no_damage_ticks: 0
                   damage: 3
   effects:
-    fire:
+      none: []
+      fire:
       - sound: item_trident_return
-        sound_pitch: -1
-        sound_volume: 0.5
+        sound_pitch: 2
+        sound_volume: 0.9
         color_override: color
-    tick:
+      tick:
+      - location: target
+        particle: dust_color_transition
+        particle_offset: 0
+        particle_count: 1
+        particle_size: 1
+        color: "#ff00ff"
+        to_color: "#8b008b"
       - location: target
         particle: spell_witch
         particle_offset: 0
         particle_count: 1
-    tick2:
-      - particle: redstone
-        location: target
-        particle_offset: 0
-    hit:
-      - location: target
-        particle: spell_witch
-        speed: 1
-        particle_data: 0.2
-        particle_offset: 0.1
-        offset: 0,0.5,0
-        particle_count: 6
-      - sound: item_trident_hit
-        sound_pitch: 1
-        sound_volume: 0.4
-        location: target
-    hit_entity:
-      - sound: entity_player_attack_knockback
-        sound_pitch: 1
-        sound_volume: 0.4
-        location: target
+        particle_data: 2
+      hit:
+        - location: target
+          particle: spell_witch
+          particle_data: 0.2
+          particle_offset: 0.1
+          offset: 0,0.5,0
+          particle_count: 6
+        - sound: item_trident_hit
+          sound_pitch: 1
+          sound_volume: 0.4
+          location: target
   parameters:
-#    fov: 45
     warmup: 1000
     velocity: 40
     range: 48
@@ -102,7 +100,7 @@ arcanemissiles:
     lifetime: 2000
     track_speed: 0.25
     use_target_location: false
-    cooldown: 8000
+    cooldown: 12000
   costs:
     mana: 80
 

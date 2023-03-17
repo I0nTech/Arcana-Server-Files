@@ -80,7 +80,7 @@ slashblood:
     source_location: body
     range: 3
     damage: $attack_damage+0.5*max(0,$sharpness-1)+min($sharpness,1)
-    skip: 12
+    skip: 24
     velocity: 1000
     hit_count: 3
     hitbox: true
