@@ -1,0 +1,24 @@
+test10:
+  name: Frost Nova
+  description: VFX test
+  icon: acacia_door{18001}
+  actions:
+    cast:
+    - class: PlayEffects
+      effects: test
+  effects:
+    test:
+    - location: origin
+      particle: falling_dust
+      material: blue_ice
+      particle_count: 20
+      particle_offset: 2,2,2
+      particle_data: 2
+    - location: origin
+      particle: block_dust
+      material: blue_ice
+      particle_count: 20
+      particle_offset: 2,2,2
+      speed: 2
+  parameters:
+    target: self

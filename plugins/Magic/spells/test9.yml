@@ -3,26 +3,56 @@ test9:
   name: counter
   actions:
     cast:
-    - class: Repeat
+    - class: ChangeContext
+      source_location: feet
       actions:
-        - class: ModifyVariable
-          variable: count
-          value: $count+1
-          scope: cast
-        - class: Message
-          message: $count
-        - class: AreaOfEffect
-          radius: $count
-        - class: PlayEffects
-          effects: burst
+        - class: Repeat
+          actions:
+            - class: ModifyVariable
+              value: $count+1
+              variable: count
+              scope: cast
+            - class: Cylinder
+              x_size: $count
+              z_size: $count
+              y_size: 0
+              thickness: $count/($repeat/$repeat*3)
+              actions:
+                - class: Cover
+                  target_above: true
+                  actions:
+                    - class: PlayEffects
+                      effects: burst
+                    - class: AreaOfEffect
+                      radius: 1
+                      y_radius: 2
+                      actions:
+                        - class: Ignite
+            - class: Delay
+              delay: 75
   effects:
     burst:
-      - location: origin
-        effectlib:
-          class: Sphere
-          radius: $count
-          particle: electric_spark
-          particles: 12
+      - location: target
+        target_location: block
+        particle: lava
+        particle_count: 1
+        particle_offset: 0.25,0,0.25
+        probability: 0.1
+      - location: target
+        target_location: block
+        particle: flame
+        particle_count: 1
+        particle_offset: 0,0,0
+        particle_data: 0.1
+        probability: 0.5
+      - location: target
+        sound: block_fire_ambient
+    test:
+      - location: target
+        target_location: block
+        particle: electric_spark
+        particle_count: 1
+        particle_offset: 0.25,0,0.25
   parameters:
     target: self
-    repeat: 12
+    repeat: 16

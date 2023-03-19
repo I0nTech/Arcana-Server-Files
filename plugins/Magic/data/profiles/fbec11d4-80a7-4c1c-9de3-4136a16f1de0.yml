@@ -1,6 +1,0 @@
-uuid: fbec11d4-80a7-4c1c-9de3-4136a16f1de0
-skin: http://textures.minecraft.net/texture/65fa1ec985f1de430ad28cd592337ee5ee261accd27b82162d178d8381ecadb2
-profile: '{  "id" : "fbec11d480a74c1c9de34136a16f1de0",  "name" : "MHF_Rabbit",  "properties"
-  : [ {    "name" : "textures",    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTY1MTcwODc2MjE3MCwKICAicHJvZmlsZUlkIiA6ICJmYmVjMTFkNDgwYTc0YzFjOWRlMzQxMzZhMTZmMWRlMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNSEZfUmFiYml0IiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY1ZmExZWM5ODVmMWRlNDMwYWQyOGNkNTkyMzM3ZWU1ZWUyNjFhY2NkMjdiODIxNjJkMTc4ZDgzODFlY2FkYjIiCiAgICB9CiAgfQp9"  }
-  ]}'
-name: MHF_Rabbit
